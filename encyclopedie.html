@@ -1,337 +1,233 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>L'Encyclopédie des Solutions Nomades - Zen Chez Toi</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="L'Encyclopédie des Solutions Nomades Zen Chez Toi.">
+  <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
+  <title>Encyclopédie | Zen Chez Toi</title>
 
-    <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
-    <meta name="p:domain_verify" content="549770272775"/>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_CLIENT_ID" crossorigin="anonymous"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRV5YNRL57"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JRV5YNRL57');
+  </script>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_CLIENT_ID" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root { --bg: #fdfaf5; --text: #332a22; --muted: #685e55; --accent: #d97757; --dark: #1f140e; --surface: rgba(255,255,255,.92); --border: rgba(0,0,0,0.08); }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: 'Inter', sans-serif; color: var(--text); background: var(--bg); line-height: 1.7; padding-bottom: 40px; }
+    a, button, input { transition: 0.3s; }
+    a { text-decoration: none; color: inherit; }
+
+    /* NAV */
+    .main-nav { position: sticky; top: 0; z-index: 100; background: rgba(253, 250, 245, 0.96); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+    .nav-wrap { max-width: 1200px; margin: 0 auto; padding: 14px 16px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px; }
+    .nav-links { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+    .nav-wrap a { font-size: 0.8rem; text-transform: uppercase; font-weight: 700; color: var(--muted); letter-spacing: 0.1em; padding: 5px 8px; }
+    .nav-wrap a:hover { color: var(--accent); }
+    .nav-wrap a.pinterest-link { color: #E60023; }
+    .dot { color: rgba(0,0,0,0.12); font-size: 0.7rem; }
+    .nav-search input { border-radius: 999px; border: 1px solid rgba(0,0,0,0.14); padding: 6px 12px; font: inherit; background: #fff; }
+
+    /* HERO */
+    .hero { max-width: 960px; margin: 0 auto; padding: 72px 20px 24px; text-align: center; }
+    .hero-kicker { text-transform: uppercase; letter-spacing: 0.16em; font-size: 0.78rem; color: var(--muted); font-weight: 700; margin-bottom: 8px; }
+    h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.4rem, 5vw, 3.4rem); margin: 0 0 10px; line-height: 1.1; color: var(--dark); }
+    .hero-sub { max-width: 640px; margin: 0 auto; color: var(--muted); font-size: 1.02rem; }
+
+    /* VOLUMES */
+    main { max-width: 1000px; margin: 0 auto; padding: 20px 20px 80px; }
+    .volume-card { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 40px; margin-bottom: 40px; display: flex; gap: 40px; flex-wrap: wrap; box-shadow: 0 12px 28px rgba(0,0,0,0.03); }
+    .vol-content { flex: 1; min-width: 300px; }
+    .vol-title { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; color: var(--dark); margin: 0 0 5px; line-height: 1.2; }
+    .vol-subtitle { text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.8rem; color: var(--muted); font-weight: 700; margin-bottom: 15px; display: block; }
+    .vol-price { color: var(--accent); font-weight: 800; font-size: 1.5rem; margin-bottom: 20px; }
+    .vol-desc { color: var(--muted); margin-bottom: 25px; }
     
-    <meta name="description" content="Les 5 volumes de l'Encyclopédie des Solutions Nomades : Maison, Jardin, Corps, Bien-être et Ésotérisme.">
-    <link rel="icon" type="image/png" href="assets/logo.png">
+    .vol-list { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; list-style: none; padding: 0; margin-bottom: 30px; font-size: 0.95rem;}
+    .vol-list li { position: relative; padding-left: 18px; }
+    .vol-list li::before { content: "•"; position: absolute; left: 0; color: var(--accent); font-weight: bold; }
 
-    <style>
-        :root {
-            --bg-sable: #f5f2ec; --blanc: #ffffff; --brun-sombre: #2b2622; --or-zen: #a67b51;
-            --maison: #6a7f8f; --jardin: #7b9074; --corps: #cca8a0; --bienetre: #d4a259; --eso: #826a8f;
-        }
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.6; overflow-x: hidden; }
+    .btn-buy { display: inline-block; padding: 14px 28px; background: var(--dark); color: #fff; border-radius: 999px; font-weight: 700; transition: 0.3s; }
+    .btn-buy:hover { background: var(--accent); transform: translateY(-2px); }
 
-        /* HEADER */
-        header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 1000; }
-        .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
-        .logo-area { display: flex; align-items: center; gap: 25px; }
-        .logo img { max-height: 90px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); }
-        
-        .pinterest-badge { 
-            display: inline-flex; align-items: center; justify-content: center; 
-            width: 32px; height: 32px; border: 1px solid rgba(255,255,255,0.4); 
-            border-radius: 50%; color: #ffffff; text-decoration: none; 
-            font-family: 'Georgia', serif; font-style: italic; font-size: 1.1rem;
-            transition: all 0.4s ease; background: rgba(255,255,255,0.1); backdrop-filter: blur(2px);
-        }
-        .pinterest-badge:hover { background: var(--or-zen); border-color: var(--or-zen); transform: rotate(15deg) scale(1.1); box-shadow: 0 4px 15px rgba(166, 123, 81, 0.3); }
+    /* FOOTER & DISCLAIMER */
+    .footer { background: var(--dark); color: #f3dfca; padding: 60px 20px 80px; text-align: center; margin-top: 40px; }
+    .footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 2.6rem; margin-bottom: 12px; }
+    .footer-logo em { color: var(--accent); font-style: italic; }
+    .footer-links { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; opacity: 0.72; font-size: 0.88rem; margin: 16px 0; }
+    #disclaimer-bar { position: fixed; bottom: 0; left: 0; width: 100%; background: rgba(0,0,0,0.95); color: rgba(255,255,255,0.6); font-size: 0.75rem; text-align: center; padding: 10px; z-index: 1000; border-top: 1px solid rgba(255,255,255,0.1); }
 
-        nav ul { list-style: none; display: flex; gap: 30px; align-items: center; }
-        nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
-        nav a:hover { color: var(--or-zen); }
-
-        /* HERO */
-        .hero {
-            height: 100vh;
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/hero-accueil.jpg') center/cover no-repeat;
-            display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff;
-        }
-        .hero h1 { font-size: 3.2em; font-weight: normal; letter-spacing: 4px; text-shadow: 0 2px 10px rgba(0,0,0,0.5); font-variant: small-caps; line-height: 1.2; max-width: 900px; }
-        .hero p { font-size: 1.4em; font-style: italic; margin-top: 20px; text-shadow: 0 2px 5px rgba(0,0,0,0.5); }
-
-        /* SÉPARATEURS */
-        .section-separator { text-align: center; margin: 80px 0 40px; }
-        .section-separator img { height: 40px; opacity: 0.6; margin-bottom: 20px; }
-        .section-title { font-size: 2.5em; font-weight: normal; font-variant: small-caps; letter-spacing: 2px; }
-
-        /* CONTAINER & GRID */
-        .container { max-width: 1400px; margin: 0 auto; padding: 0 20px 80px; }
-        .grid-5 { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; margin-bottom: 60px; }
-        .card { background: var(--blanc); border-radius: 12px; text-decoration: none; color: inherit; transition: 0.4s; box-shadow: 0 4px 15px rgba(0,0,0,0.05); overflow: hidden; display: flex; flex-direction: column; border-bottom: 5px solid transparent; }
-        .card:hover { transform: translateY(-10px); box-shadow: 0 12px 30px rgba(0,0,0,0.1); }
-        .card-img { height: 160px; background-size: cover; background-position: center; }
-        .card-content { padding: 25px 15px; text-align: center; flex-grow: 1; }
-        .card h3 { font-size: 1.1em; font-weight: normal; font-variant: small-caps; }
-
-        .card.maison { border-bottom-color: var(--maison); }
-        .card.jardin { border-bottom-color: var(--jardin); }
-        .card.corps { border-bottom-color: var(--corps); }
-        .card.bienetre { border-bottom-color: var(--bienetre); }
-        .card.eso { border-bottom-color: var(--eso); }
-
-        /* VOLUME CARDS */
-        .volume-card { 
-            background: var(--blanc); border-radius: 12px; margin-bottom: 80px; 
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05); overflow: hidden; 
-            display: flex; flex-direction: row; align-items: stretch;
-        }
-        
-        .vol-img { width: 40%; background-size: cover; background-position: center; min-height: 400px; }
-        .vol-body { width: 60%; padding: 60px; border-left: 8px solid; }
-
-        .v-maison .vol-body { border-left-color: var(--maison); }
-        .v-jardin .vol-body { border-left-color: var(--jardin); }
-        .v-corps .vol-body { border-left-color: var(--corps); }
-        .v-bienetre .vol-body { border-left-color: var(--bienetre); }
-        .v-eso .vol-body { border-left-color: var(--eso); }
-
-        .vol-header h2 { font-size: 2.2em; font-variant: small-caps; margin-bottom: 10px; }
-        .v-maison h2 { color: var(--maison); }
-        .v-jardin h2 { color: var(--jardin); }
-        .v-corps h2 { color: var(--corps); }
-        .v-bienetre h2 { color: var(--bienetre); }
-        .v-eso h2 { color: var(--eso); }
-
-        .vol-header .price { font-size: 1.8em; font-weight: bold; color: var(--or-zen); margin: 20px 0; }
-        .vol-header .btn-buy { 
-            display: inline-block; padding: 12px 30px; background: var(--brun-sombre); 
-            color: #fff; text-decoration: none; border-radius: 50px; font-variant: small-caps; 
-            font-weight: bold; transition: 0.3s; 
-        }
-        .vol-header .btn-buy:hover { background: var(--or-zen); transform: translateY(-3px); }
-
-        .vol-content { margin-top: 30px; }
-        .vol-content p { font-size: 1.1em; font-style: italic; color: #555; margin-bottom: 25px; }
-        .vol-content h4 { font-variant: small-caps; font-size: 1.2em; margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
-        
-        .product-list { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; list-style: none; }
-        .product-list li { position: relative; padding-left: 20px; font-size: 0.95em; }
-        .product-list li::before { content: "◈"; position: absolute; left: 0; color: var(--or-zen); opacity: 0.6; }
-
-        /* PRICING FINAL */
-        .pricing-section { background-color: var(--blanc); padding: 80px 20px; text-align: center; border-radius: 20px; margin-top: 40px; }
-        .pricing-grid { display: flex; justify-content: center; gap: 60px; flex-wrap: wrap; margin-top: 40px; }
-        .amount { font-size: 2.5em; color: var(--or-zen); font-weight: bold; }
-
-        /* FOOTER */
-        footer { background: var(--brun-sombre); color: #fff; padding: 60px 20px; text-align: center; }
-        .footer-logo-small { height: 45px; margin-bottom: 25px; }
-        .footer-nav-compact { display: flex; gap: 25px; list-style: none; justify-content: center; margin-bottom: 25px; padding: 0; }
-        .footer-nav-compact a { color: #fff; text-decoration: none; font-size: 0.9em; opacity: 0.7; font-variant: small-caps; }
-
-        @media (max-width: 1000px) { 
-            .grid-5 { grid-template-columns: repeat(3, 1fr); }
-            .volume-card { flex-direction: column; }
-            .vol-img { width: 100%; height: 250px; min-height: 250px; }
-            .vol-body { width: 100%; padding: 40px 20px; border-left: none; border-top: 8px solid; }
-        }
-        @media (max-width: 600px) { .grid-5 { grid-template-columns: 1fr; } .product-list { grid-template-columns: 1fr; } }
-    </style>
+    @media (max-width: 768px) { .volume-card { padding: 25px; gap: 20px; } .vol-list { grid-template-columns: 1fr; } }
+  </style>
 </head>
 <body>
 
-    <header>
-        <div class="nav-container">
-            <div class="logo-area">
-                <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
-                <a href="https://www.pinterest.com/VOTRE_PROFIL" class="pinterest-badge" target="_blank">p</a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="grimoire.html">Grimoire</a></li>
-                    <li><a href="blog.html">Journal</a></li>
-                    <li><a href="livre-or.html">Livre d'Or</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <nav class="main-nav" aria-label="Navigation principale">
+    <div class="nav-wrap">
+      <div class="nav-links">
+        <a href="index.html">Accueil</a><span class="dot">&bull;</span>
+        <a href="grimoire.html">Grimoire</a><span class="dot">&bull;</span>
+        <a href="blog.html">Blog</a><span class="dot">&bull;</span>
+        <a href="https://www.pinterest.com/VOTRE_PROFIL" target="_blank" class="pinterest-link">Pinterest</a>
+      </div>
+      <form class="nav-search" action="recherche.html" method="get">
+        <input type="search" name="q" placeholder="Rechercher..." aria-label="Rechercher sur le site">
+      </form>
+    </div>
+  </nav>
 
-    <main>
-        <section class="hero">
-            <h1>L'Encyclopédie des Solutions Nomades</h1>
-            <p>"La quintessence du savoir naturel, répartie en 5 tomes et 50 sagesses."</p>
-        </section>
+  <header class="hero">
+    <div class="hero-kicker">Collection Alchimiste</div>
+    <h1>L'Encyclopédie Nomade</h1>
+    <p class="hero-sub">La quintessence du savoir naturel, répartie en 5 tomes. Téléchargeables et accessibles partout, tout le temps.</p>
+  </header>
 
-        <div style="max-width: 1400px; margin: 30px auto; text-align: center;">
-            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-YOUR_CLIENT_ID" data-ad-slot="YOUR_AD_SLOT" data-ad-format="auto" data-full-width-responsive="true"></ins>
-            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-        </div>
+  <main>
+    <div style="text-align: center; margin-bottom: 40px;">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-YOUR_CLIENT_ID" data-ad-slot="YOUR_AD_SLOT" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
 
-        <div class="section-separator">
-            <img src="assets/logo.png" alt="Zen">
-            <h2 class="section-title">Parcourir l'Œuvre</h2>
-        </div>
-
-        <div class="container">
-            <div class="grid-5">
-                <a href="#vol1" class="card maison"><div class="card-img" style="background-image: url('assets/hero-maison.jpg');"></div><div class="card-content"><h3>Vol 1 : Fondations</h3></div></a>
-                <a href="#vol2" class="card jardin"><div class="card-img" style="background-image: url('assets/hero-jardin.jpg');"></div><div class="card-content"><h3>Vol 2 : Enracinement</h3></div></a>
-                <a href="#vol3" class="card corps"><div class="card-img" style="background-image: url('assets/hero-corps.jpg');"></div><div class="card-content"><h3>Vol 3 : Éclosion</h3></div></a>
-                <a href="#vol4" class="card bienetre"><div class="card-img" style="background-image: url('assets/hero-bienetre.jpg');"></div><div class="card-content"><h3>Vol 4 : Harmonie</h3></div></a>
-                <a href="#vol5" class="card eso"><div class="card-img" style="background-image: url('assets/hero-eso.jpg');"></div><div class="card-content"><h3>Vol 5 : Élévation</h3></div></a>
-            </div>
-
-            <div id="vol1" class="volume-card v-maison">
-                <div class="vol-img" style="background-image: url('assets/hero-maison.jpg');"></div>
-                <div class="vol-body">
-                    <div class="vol-header">
-                        <h2>Vol 1 : Les Fondations</h2>
-                        <p>Le Côté Maison - L'Art de l'Entretien Sain</p>
-                        <div class="price">14.90 €</div>
-                        <a href="#" class="btn-buy">Acquérir ce Volume</a>
-                    </div>
-                    <div class="vol-content">
-                        <p>Dépolluez votre intérieur et maîtrisez les bases de l'alchimie ménagère naturelle.</p>
-                        <h4>Les 10 Sagesses incluses :</h4>
-                        <ul class="product-list">
-                            <li>Bicarbonate de Soude</li>
-                            <li>Vinaigre Blanc</li>
-                            <li>Savon Noir</li>
-                            <li>Percarbonate de Soude</li>
-                            <li>Cristaux de Soude</li>
-                            <li>Acide Citrique</li>
-                            <li>Terre de Sommières</li>
-                            <li>Blanc de Meudon</li>
-                            <li>Lessive de Cendre</li>
-                            <li>Savon de Marseille</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div id="vol2" class="volume-card v-jardin">
-                <div class="vol-img" style="background-image: url('assets/hero-jardin.jpg');"></div>
-                <div class="vol-body">
-                    <div class="vol-header">
-                        <h2>Vol 2 : L'Enracinement</h2>
-                        <p>Le Côté Jardin & Matières Brutes</p>
-                        <div class="price">14.90 €</div>
-                        <a href="#" class="btn-buy">Acquérir ce Volume</a>
-                    </div>
-                    <div class="vol-content">
-                        <p>Prenez soin de la terre et découvrez les matières premières pour protéger vos espaces extérieurs.</p>
-                        <h4>Les 10 Sagesses incluses :</h4>
-                        <ul class="product-list">
-                            <li>Huile de Neem</li>
-                            <li>Huile de Lin</li>
-                            <li>Térébenthine</li>
-                            <li>Terre de Diatomée</li>
-                            <li>Pierre d'Argile</li>
-                            <li>Argile Verte</li>
-                            <li>Poudre d'Ortie</li>
-                            <li>Cire d'Abeille</li>
-                            <li>Charbon Actif</li>
-                            <li>Ail</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div id="vol3" class="volume-card v-corps">
-                <div class="vol-img" style="background-image: url('assets/hero-corps.jpg');"></div>
-                <div class="vol-body">
-                    <div class="vol-header">
-                        <h2>Vol 3 : L'Éclosion</h2>
-                        <p>Le Côté Corps - Hygiène & Cosmétique Brute</p>
-                        <div class="price">14.90 €</div>
-                        <a href="#" class="btn-buy">Acquérir ce Volume</a>
-                    </div>
-                    <div class="vol-content">
-                        <p>Révélez votre beauté au naturel avec des ingrédients purs pour le soin de la peau et des cheveux.</p>
-                        <h4>Les 10 Sagesses incluses :</h4>
-                        <ul class="product-list">
-                            <li>Aloe Vera</li>
-                            <li>Beurre de Karité</li>
-                            <li>Huile de Coco</li>
-                            <li>Huile d'Amande Douce</li>
-                            <li>Huile de Jojoba</li>
-                            <li>Huile de Ricin</li>
-                            <li>Pierre d'Alun</li>
-                            <li>Argile Blanche</li>
-                            <li>Glycérine</li>
-                            <li>Savon de Castille</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div id="vol4" class="volume-card v-bienetre">
-                <div class="vol-img" style="background-image: url('assets/hero-bienetre.jpg');"></div>
-                <div class="vol-body">
-                    <div class="vol-header">
-                        <h2>Vol 4 : L'Harmonie</h2>
-                        <p>Le Côté Bien-Être - Aromathérapie & Apothicairerie</p>
-                        <div class="price">14.90 €</div>
-                        <a href="#" class="btn-buy">Acquérir ce Volume</a>
-                    </div>
-                    <div class="vol-content">
-                        <p>Apaisez les maux du quotidien et retrouvez l'équilibre grâce aux essences végétales.</p>
-                        <h4>Les 10 Sagesses incluses :</h4>
-                        <ul class="product-list">
-                            <li>Tea Tree</li>
-                            <li>Lavande Vraie</li>
-                            <li>Menthe Poivrée</li>
-                            <li>Eucalyptus</li>
-                            <li>Ravintsara</li>
-                            <li>Gaulthérie</li>
-                            <li>Hélichryse</li>
-                            <li>Citron</li>
-                            <li>Ylang-Ylang</li>
-                            <li>Miel</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div id="vol5" class="volume-card v-eso">
-                <div class="vol-img" style="background-image: url('assets/hero-eso.jpg');"></div>
-                <div class="vol-body">
-                    <div class="vol-header">
-                        <h2>Vol 5 : L'Élévation</h2>
-                        <p>Le Côté Ésotérisme - Rituels & Énergies</p>
-                        <div class="price">14.90 €</div>
-                        <a href="#" class="btn-buy">Acquérir ce Volume</a>
-                    </div>
-                    <div class="vol-content">
-                        <p>Connectez-vous au sacré et purifiez votre environnement avec les outils de l'alchimiste.</p>
-                        <h4>Les 10 Sagesses incluses :</h4>
-                        <ul class="product-list">
-                            <li>Sauge</li>
-                            <li>Palo Santo</li>
-                            <li>Oliban</li>
-                            <li>Myrrhe</li>
-                            <li>Benjoin</li>
-                            <li>Sang de Dragon</li>
-                            <li>Sel de l'Himalaya</li>
-                            <li>Rose</li>
-                            <li>Binchotan</li>
-                            <li>Élixir de Cristal</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <section class="pricing-section">
-                <p style="font-style: italic; color: #666; margin-bottom: 15px;">Poursuivre la voie de l'Alchimiste</p>
-                <div class="pricing-grid">
-                    <div class="price-item"><h4>Le Pack Trio</h4><span class="amount">24.90 €</span></div>
-                    <div class="price-item"><h4>L'Intégrale (5 Vols)</h4><span class="amount">39.90 €</span></div>
-                </div>
-            </section>
-
-        </div>
-    </main>
-
-    <footer>
-        <img src="assets/logo.png" class="footer-logo-small" alt="Zen">
-        <ul class="footer-nav-compact">
-            <li><a href="mentions-legales.html">Mentions</a></li>
-            <li><a href="confidentialite.html">Confidentialité</a></li>
-            <li><a href="cookies.html">Cookies</a></li>
-            <li><a href="livre-or.html">Livre d'Or</a></li>
+    <div class="volume-card" id="vol1">
+      <div class="vol-content">
+        <span class="vol-subtitle">Le Côté Maison</span>
+        <h2 class="vol-title">Vol 1 : Les Fondations</h2>
+        <div class="vol-price">14.90 €</div>
+        <p class="vol-desc">Dépolluez votre intérieur et maîtrisez l'art de l'entretien naturel sans aucun produit chimique.</p>
+        <ul class="vol-list">
+            <li>Bicarbonate de Soude</li>
+            <li>Vinaigre Blanc</li>
+            <li>Savon Noir</li>
+            <li>Savon de Marseille</li>
+            <li>Cristaux de Soude</li>
+            <li>Percarbonate de Soude</li>
+            <li>Acide Citrique</li>
+            <li>Terre de Sommières</li>
+            <li>Blanc de Meudon</li>
+            <li>Lessive de Cendre</li>
         </ul>
-        <p style="font-size: 0.8em; opacity: 0.5;">&copy; 2026 Zen Chez Toi - L'Harmonie au Naturel</p>
-    </footer>
+        <a href="#" class="btn-buy">Acquérir ce volume</a>
+      </div>
+    </div>
+
+    <div class="volume-card" id="vol2">
+      <div class="vol-content">
+        <span class="vol-subtitle">Le Côté Jardin</span>
+        <h2 class="vol-title">Vol 2 : L'Enracinement</h2>
+        <div class="vol-price">14.90 €</div>
+        <p class="vol-desc">Protégez vos plantes et nourrissez votre terre avec bienveillance grâce aux remèdes bruts de la terre.</p>
+        <ul class="vol-list">
+            <li>Huile de Neem</li>
+            <li>Huile de Lin</li>
+            <li>Térébenthine</li>
+            <li>Terre de Diatomée</li>
+            <li>Pierre d'Argile</li>
+            <li>Argile Verte</li>
+            <li>Poudre d'Ortie</li>
+            <li>Cire d'Abeille</li>
+            <li>Charbon Actif</li>
+            <li>Ail</li>
+        </ul>
+        <a href="#" class="btn-buy">Acquérir ce volume</a>
+      </div>
+    </div>
+
+    <div class="volume-card" id="vol3">
+      <div class="vol-content">
+        <span class="vol-subtitle">Le Côté Corps</span>
+        <h2 class="vol-title">Vol 3 : L'Éclosion</h2>
+        <div class="vol-price">14.90 €</div>
+        <p class="vol-desc">Nourrissez et purifiez votre peau de la façon la plus brute et saine possible.</p>
+        <ul class="vol-list">
+            <li>Aloe Vera</li>
+            <li>Beurre de Karité</li>
+            <li>Huile de Coco</li>
+            <li>Huile d'Amande Douce</li>
+            <li>Huile de Jojoba</li>
+            <li>Huile de Ricin</li>
+            <li>Pierre d'Alun</li>
+            <li>Argile Blanche</li>
+            <li>Glycérine</li>
+            <li>Savon de Castille</li>
+        </ul>
+        <a href="#" class="btn-buy">Acquérir ce volume</a>
+      </div>
+    </div>
+
+    <div class="volume-card" id="vol4">
+      <div class="vol-content">
+        <span class="vol-subtitle">Le Côté Bien-Être</span>
+        <h2 class="vol-title">Vol 4 : L'Harmonie</h2>
+        <div class="vol-price">14.90 €</div>
+        <p class="vol-desc">Renforcez votre immunité et apaisez vos tensions grâce aux huiles essentielles et plantes apothicaires.</p>
+        <ul class="vol-list">
+            <li>Tea Tree</li>
+            <li>Lavande Vraie</li>
+            <li>Menthe Poivrée</li>
+            <li>Eucalyptus</li>
+            <li>Ravintsara</li>
+            <li>Gaulthérie</li>
+            <li>Hélichryse</li>
+            <li>Citron</li>
+            <li>Ylang-Ylang</li>
+            <li>Miel</li>
+        </ul>
+        <a href="#" class="btn-buy">Acquérir ce volume</a>
+      </div>
+    </div>
+
+    <div class="volume-card" id="vol5">
+      <div class="vol-content">
+        <span class="vol-subtitle">Le Côté Ésotérisme</span>
+        <h2 class="vol-title">Vol 5 : L'Élévation</h2>
+        <div class="vol-price">14.90 €</div>
+        <p class="vol-desc">Purifiez vos énergies et connectez-vous au sacré avec les outils traditionnels de l'alchimiste.</p>
+        <ul class="vol-list">
+            <li>Sauge</li>
+            <li>Palo Santo</li>
+            <li>Oliban</li>
+            <li>Myrrhe</li>
+            <li>Benjoin</li>
+            <li>Sang de Dragon</li>
+            <li>Sel de l'Himalaya</li>
+            <li>Rose</li>
+            <li>Binchotan</li>
+            <li>Élixir de Cristal</li>
+        </ul>
+        <a href="#" class="btn-buy">Acquérir ce volume</a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-logo">Zen <em>Chez</em> Toi</div>
+    <div class="footer-links">
+      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="confidentialite.html">Politique de confidentialité</a>
+      <a href="cookies.html">Gestion des cookies</a>
+      <a href="index.html">Accueil</a>
+      <a href="blog.html">Blog</a>
+    </div>
+    <p style="margin-top:20px; opacity:0.3; font-size:0.8rem;">
+      © 2026 Zen Chez Toi — Tous droits réservés.
+    </p>
+  </footer>
+
+  <div id="disclaimer-bar">
+    🔗 Liens affiliés Amazon : En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.
+  </div>
 
 </body>
 </html>

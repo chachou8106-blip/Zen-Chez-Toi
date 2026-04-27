@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S&eacute;lection du Ma&icirc;tre : Les 12 Incontournables du Temple</title>
+    
+    <meta name="description" content="D&eacute;couvrez la s&eacute;lection exclusive des 12 produits essentiels pour le soin du corps au naturel. Huiles v&eacute;g&eacute;tales bio, beurres pr&eacute;cieux et accessoires de beaut&eacute; durable.">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+
+    <style>
+        :root {
+            --bg-sable: #f5f2ec; --blanc: #ffffff; --brun-sombre: #2b2622; --or-zen: #a67b51;
+            --maison: #6a7f8f; --jardin: #7b9074; --corps: #cca8a0; --bienetre: #d4a259; --eso: #826a8f;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.8; overflow-x: hidden; }
+
+        header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; }
+        .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
+        .logo img { max-height: 90px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); }
+        .pinterest-badge { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; font-size: 1.1rem; transition: 0.4s ease; background: rgba(255,255,255,0.1); backdrop-filter: blur(2px); }
+        .pinterest-badge:hover { background: var(--corps); border-color: var(--corps); transform: rotate(15deg) scale(1.1); }
+        
+        nav ul { list-style: none; display: flex; gap: 20px; align-items: center; }
+        nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); }
+
+        .dropdown { position: relative; display: inline-block; padding: 15px 0; cursor: pointer; }
+        .dropdown-content { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background-color: var(--brun-sombre); min-width: 180px; box-shadow: 0px 8px 16px rgba(0,0,0,0.3); z-index: 2100; border-radius: 8px; overflow: hidden; }
+        .dropdown-content a { color: rgba(255,255,255,0.8) !important; padding: 12px 20px; text-decoration: none; display: block; font-size: 0.95em; text-shadow: none; font-weight: bold; border-bottom: 1px solid rgba(255,255,255,0.1); text-align: center; font-variant: small-caps; }
+        .dropdown-content a:hover { background-color: var(--corps); color: #fff !important; }
+        .dropdown:hover .dropdown-content { display: block; }
+
+        .hero { height: 70vh; background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), url('assets/hero-corps.jpg') center/cover no-repeat; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; border-bottom: 8px solid var(--corps); }
+        .maitre-phrase { font-size: 1.4em; font-variant: small-caps; letter-spacing: 5px; font-weight: bold; margin-bottom: 20px; text-shadow: -1px -1px 0 var(--corps), 1px -1px 0 var(--corps), -1px 1px 0 var(--corps), 1px 1px 0 var(--corps); color: #ffebcd; }
+        .hero h1 { font-size: 5em; font-weight: normal; margin-bottom: 20px; text-shadow: -2px -2px 0 var(--corps), 2px -2px 0 var(--corps), -2px 2px 0 var(--corps), 2px 2px 0 var(--corps); }
+
+        .container { max-width: 1200px; margin: -60px auto 80px; padding: 0 20px; position: relative; z-index: 10; }
+        
+        .seo-intro { background: var(--blanc); padding: 60px; border-radius: 30px; box-shadow: 0 15px 40px rgba(0,0,0,0.05); text-align: justify; margin-bottom: 50px; }
+        .seo-intro h2 { color: var(--corps); font-size: 2.2em; margin-bottom: 30px; text-align: center; font-weight: normal; }
+        .seo-intro p { font-size: 1.15rem; color: #444; line-height: 2; margin-bottom: 20px; }
+
+        .selection-banner { background: var(--brun-sombre); color: #fff; padding: 60px; border-radius: 30px; margin-bottom: 50px; text-align: center; border: 2px solid var(--corps); position: relative; }
+        .selection-banner h3 { font-size: 2.4em; margin-bottom: 20px; color: #ffebcd; font-weight: normal; }
+        .selection-banner p { font-size: 1.2rem; opacity: 0.9; margin-bottom: 35px; max-width: 800px; margin: 0 auto 35px; }
+
+        .grid-selection { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 80px; }
+        .product-card { background: var(--blanc); border-radius: 20px; padding: 40px 20px; text-align: center; text-decoration: none; color: var(--brun-sombre); box-shadow: 0 5px 15px rgba(0,0,0,0.03); border-top: 5px solid transparent; transition: 0.4s ease; border: 1px solid #eee; display: flex; flex-direction: column; justify-content: space-between; }
+        .product-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(204, 168, 160, 0.2); border-color: var(--corps); }
+        .product-card h3 { font-size: 1.6em; font-weight: normal; margin-bottom: 15px; font-family: 'Georgia', serif; }
+        .product-card p { font-size: 1em; color: #666; margin-bottom: 25px; line-height: 1.6; }
+        .amazon-btn-full { display: inline-block; padding: 15px 25px; background: var(--brun-sombre); color: #fff; text-decoration: none; border-radius: 50px; font-weight: bold; font-variant: small-caps; transition: 0.3s; }
+        .product-card:hover .amazon-btn-full { background: var(--corps); }
+
+        .encyclo-box { background: #fff; padding: 80px 40px; border-radius: 30px; border: 3px solid var(--corps); text-align: center; margin-bottom: 80px; box-shadow: 0 20px 50px rgba(0,0,0,0.05); }
+        .encyclo-box h2 { font-size: 2.6em; color: var(--brun-sombre); margin-bottom: 20px; }
+        .pills-row { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-bottom: 40px; }
+        .pill { padding: 12px 25px; border: 2px solid; border-radius: 50px; font-variant: small-caps; font-weight: bold; text-decoration: none; background: #fff; transition: 0.3s; font-size: 1em; }
+        .p1 { border-color: var(--maison); color: var(--maison); } .p1:hover { background: var(--maison); color: #fff; }
+        .p2 { border-color: var(--jardin); color: var(--jardin); } .p2:hover { background: var(--jardin); color: #fff; }
+        .p3 { border-color: var(--corps); color: #fff; background: var(--corps); }
+        .p4 { border-color: var(--bienetre); color: var(--bienetre); } .p4:hover { background: var(--bienetre); color: #fff; }
+        .p5 { border-color: var(--eso); color: var(--eso); } .p5:hover { background: var(--eso); color: #fff; }
+
+        .btn-integrale { display: inline-block; padding: 20px 50px; background: var(--brun-sombre); color: #fff; text-decoration: none; border-radius: 50px; font-weight: bold; font-variant: small-caps; font-size: 1.2em; transition: 0.3s; }
+        .btn-integrale:hover { background: var(--corps); transform: translateY(-5px); }
+
+        footer { background: var(--brun-sombre); color: #fff; padding: 60px 20px; text-align: center; }
+        .footer-logo-small { height: 45px; margin-bottom: 25px; }
+        .footer-nav-compact { display: flex; gap: 25px; list-style: none; justify-content: center; margin-bottom: 25px; padding: 0; flex-wrap: wrap; }
+        .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.7; font-variant: small-caps; }
+        #disclaimer-bar { background: var(--brun-sombre); color: rgba(255,255,255,0.7); font-size: 0.8rem; text-align: center; padding: 12px; border-top: 1px solid rgba(255,255,255,0.1); }
+
+        @media (max-width: 1000px) { .hero h1 { font-size: 3.5em; } .nav-container { flex-direction: column; gap: 15px; } .seo-intro, .encyclo-box { padding: 40px 20px; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo-area">
+                <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
+                <a href="https://www.pinterest.com/" class="pinterest-badge" target="_blank">p</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li class="dropdown">
+                        <a href="grimoire.html">Grimoire</a>
+                        <div class="dropdown-content">
+                            <a href="maison.html">Monde &Acirc;tre</a>
+                            <a href="jardin.html">Monde Terre</a>
+                            <a href="corps.html">Monde Temple</a>
+                            <a href="bienetre.html">Monde S&egrave;ve</a>
+                            <a href="eso.html">Monde Secret</a>
+                        </div>
+                    </li>
+                    <li><a href="encyclopedie.html">L&apos;Encyclop&eacute;die</a></li>
+                    <li><a href="blog.html">Le Journal</a></li>
+                    <li><a href="livre-or.html">Livre d&apos;Or</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <p class="maitre-phrase">Volume 3 : L&apos;&Eacute;closion</p>
+        <h1>Le Monde du Temple</h1>
+    </section>
+
+    <main class="container">
+        
+        <section class="seo-intro">
+            <h2>Cosm&eacute;tique Naturelle & S&eacute;lection Corps</h2>
+            <p>Le <b>Monde du Temple</b> est l&apos;espace d&eacute;di&eacute; au soin de soi par la puret&eacute; v&eacute;g&eacute;tale. Comment prendre soin de sa peau naturellement ? Quelles <b>huiles v&eacute;g&eacute;tales</b> utiliser ? J'ai r&eacute;uni ici les 12 produits fondamentaux pour sanctifier votre corps, choisis pour leur puret&eacute; et leur efficacit&eacute; alchimique.</p>
+            <p>Du <b>beurre de karit&eacute;</b> brut &agrave; l'<b>huile de ricin</b>, d&eacute;couvrez les outils indispensables d'une beaut&eacute; authentique et durable.</p>
+        </section>
+
+        <section class="selection-banner">
+            <h3>Les 12 Incontournables du Temple</h3>
+            <p>Ma s&eacute;lection exclusive pour l&apos;&eacute;clat et la sant&eacute; de votre peau.</p>
+        </section>
+
+        <div class="grid-selection">
+            <div class="product-card">
+                <h3>Gel d&apos;Aloe Vera Bio</h3>
+                <p>Hydrate, apaise et r&eacute;pare l&apos;&eacute;piderme en profondeur.</p>
+                <a href="https://www.amazon.fr/B-T-cosmetic-wellness-Apr%C3%A8s-Soleil/dp/B07FS3VJR1?crid=2B3L9CEMXT167&dib=eyJ2IjoiMSJ9.Qpqle5rVpGuzS0bxG3EkcTdBjgHqOgUUDNH96D6cCl1zjATGy2YaRZtnhXNbcma7nQOg95bs65LSiL6ECQWQrazABahOWa_1KAmv-MIFfKAVfpBe_8cz_1fq5mBHVad38qvFKXa1FGhu1_FvI0Z8yRLdhpOkisuTEQRy7Oyx-BZ8dyloSna13oHtXdFTqzsJiySaupqTGtv1vL215TQ-f6QFNKT1Ctdi7YAsbObtXNrkJO-s0yCR-6cixMoXYUpcMCZ3a9Yll_lfTzvfoxkVC4upSr-ScccPabdxbSC96VI.92T9sBjchZ8q-5GTZFmk2nmiHkgDWKNDtRV_Agm82-M&dib_tag=se&keywords=gel%2Baloe%2Bvera%2Bbio&qid=1777124457&rdc=1&sprefix=gel%2Baloe%2Bvera%2B%2Caps%2C341&sr=8-7&th=1&linkCode=ll2&tag=zencheztoi-21&linkId=d7d801349cb5ecd77df808379916cb07&ref_=as_li_ss_tl" class="amazon-btn-full" target="_blank">Voir sur Amazon</a>
+            </div>
+
+            <div class="product-card">
+                <h3>Beurre de Karit&eacute; Brut</h3>
+                <p>Nourrit intensivement et prot&egrave;ge les zones sèches.</p>
+                <a href="https://www.amazon.fr/Beurre-Karit%C3%A9-400-Biologique-additifs/dp/B09QT25SCC?crid=2YYOWFNLDXL47&dib=eyJ2IjoiMSJ9.JX5_d-bL8SO135ZO6gTyuNZMYdXR4WMZ8xrZnozRFjgV96sbvvmC0oM5tbluR4FkEfKJrz8AcBPYtIHu4pYpSrmubaBijj0-tdmJOFLKX1zRafg2WFdwTpKkZ_zCUzcGT7Guvkrk3GBaDt2riaSF-4I8KXGeGxN5fkkqLxyPPIoDzrBysEC5v2ZmVzuTSCmZ1ZIn00r9MbDhAsQpopuaiccbcU9_Pf5g5IZpicF-IzGjGSZpWmT2shhwofeG30B_7SEQH1OFrKYtq95BQW8Wx7r4vbwKR7RnOtxbaqYANI4.OQdOUJtrPEEfagMviYPkqQr7ESdZkU1WLijzK5LZbRI&dib_tag=se&keywords=beurre%2Bde%2Bkarite%2Bbio%2Bnon%2Braffin%C3%A9&qid=1777119727&sprefix=karite%2Bbio%2B%2Caps%2C246&sr=8-6&th=1&linkCode=ll2&tag=zencheztoi-21&linkId=980115ed333a7d2bc6a9a9369c3739c6&ref_=as_li_ss_tl" class="amazon-btn-full" target="_blank">Voir sur Amazon</a>
+            </div>
+
+            <div class="product-card">
+                <h3>Huile de Coco Bio</h3>
+                <p>Indispensable pour les cheveux et les soins DIY.</p>
+                <a href="https://www.amazon.fr/Huile-Coco-Bio-1000-Plan%C3%A8te/dp/B0CJK2J58V?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3SC2VOROU94PC&dib=eyJ2IjoiMSJ9.ef0xIapaDiZERT1Oe6aN8oMYdd9TYYtpXt-ySPhC2SdtFKN9iyxmIEXWjEU-uDldiifhcr2lHlGtaAA6M6PaoYcRD7nkKVGVDAY8IBu53xNac2L8JacLdvhgNmV_I-fdLOmnNnPwXh7HrsswpbvdU8mG6RzCN_ryM8g2AbM__7-21SZTnuev26wJpf8SLk2_cTPDEkSP3eJPa6E8DJw5sJKtif_KIiFu_BEpzvirTW9dJHgKp6J-zymBv-FUxG5NhgfC9aWe51XBnzlN2Z9XiLbRyI5ccONfCAMAzdtX64I._xxepOGtYEd9zebX82TReUOWSVBSdNEuzkxNI4mgqMk&dib_tag=se&keywords=huile%2Bcoco%2Bvierge%2Bbio&qid=1777120387&rdc=1&sprefix=huile%2Bcoco%2Bvierge%2Bbio%2B%2Caps%2C250&sr=8-8&th=1&linkCode=ll2&tag=zencheztoi-21&linkId=9f32a7ecd2d5081da30324041a6332f5&ref_=as_li_ss_tl" class="amazon-btn-full" target="_blank">Voir sur Amazon</a>
+            </div>
+
+            <div class="product-card">
+                <h3>Huile d&apos;Amande Douce</h3>
+                <p>Apaisante pour les peaux les plus sensibles.</p>
+                <a href="https://www.amazon.fr/Adoucissante-Pr%C3%A9vention-vergetures-bleumarine-Bretania/dp/B01HVLA61S?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=35QFRGOTUHG83&dib=eyJ2IjoiMSJ9.ZCUcK4uHEFq8sBMY-a2EuGO0Ez1FSR1HvpmXioaV9rNhXMFVxgf01-BnLdUctAvMFamoOl7f4H2hI7dz4yctIeGh1e6qwJdWHVv1paYuxiYgAmjfmnlURqHN3LXiv87yhLRsnitNu1uHelqSzS7XI6nYkAvZ5wmyM_URq7WkHsvejI4K8XOz6YbWLBsd-HAVrwxoMT6k-YfFArz6dC7PW-XsYK_zSbvkNqGXU0ESzqV-h-sakLez3QCrmZJHtl2O.CTX47Wn53gjsBclUikflmCobdZs1-SDj1kU1BIwfrG0&dib_tag=se&keywords=huile%2Bamande%2Bdouce%2Bbio%2Bvierge%2B250ml%2Bfrance&qid=1777125648&rdc=1&s=hpc&sprefix=huile%2Bamande%2Bdouce%2Bbio%2Bvierge%2B250ml%2Bfranc%2Chpc%2C288&sr=1-30&xpid=TwvJ_O2GY2g-e&th=1&linkCode=ll2&tag=zencheztoi-21&linkId=669db4ce094cb9df599e17145a2e627a&ref_=as_li_ss_tl" class="amazon-btn-full" target="_blank">Voir sur Amazon</a>
+            </div>
+
+            <div class="product-card">
+                <h3>Huile de Jojoba Bio</h3>
+                <p>R&eacute;quilibre le s&eacute;bum du visage et des cheveux.</p>
+                <a href="https://www.amazon.fr/Huile-Jojoba-Naturelle-Press%C3%A9e-froid/dp/B01IL9FLSM?content-id=amzn1.sym.2b04206e-43f5-4bd8-b39d-d4671ceea54e%3Aamzn1.sym.2b04206e-43f5-4bd8-b39d-d4671ceea54e&crid=28W8RKK84UQ4J&cv_ct_cx=huile%2Bde%2Bjojoba%2Bbio%2Bpress%C3%A9e%2B%C3%A0%2Bfroid&keywords=huile%2Bde%2Bjojoba%2Bbio%2Bpress%C3%A9e%2B%C3%A0%2Bfroid&pd_rd_i=B01IL9FLSM&pd_rd_r=23417b4d-3c11-4310-8b12-246e54b0c11d&pd_rd_w=6ryvH&pd_rd_wg=82aFG&pf_rd_p=2b04206e-43f5-4bd8-b39d-d4671ceea54e&pf_rd_r=G3TT7MPSCNJPQBTWQCA6&qid=1777124818&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=huile%2Bde%2Bjojoba%2Caps%2C327&sr=1-2-1c0bc4f8-9a4b-47e4-b117-3d30b74c13f1-spons&aref=WC1m0yXiye&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1&linkCode=ll2&tag=zencheztoi-21&linkId=1092221a836985efe5691a49ff7efa38&ref_=as_li_ss_tl" class="amazon-btn-full" target="_blank">Voir sur Amazon</a>
+            </div>
+
+            <div class="product-card">
+                <h3>Huile de Ricin Bio</h3>
+                <p>Fortifie les phan&egrave;res et booste la pousse.</p>
+                <a href="https://www.amazon.fr/Huile-RICIN-Bio-Organic-Naturelle/dp/B094D7TX3M?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3G9EE47P6WCD7&dib=eyJ2IjoiMSJ9.-oZ-nCVolVPJQjHGVH270CpfBjQ9ePJYiQ3aqmMCZW8oesKvJDHwqC0PaMwywq3A8v1Zs5TXIxUbV7vEcnK6tr7iF_TujYTTxPJ1n4GDIwxc-rm_YaPEBO9tr4z7oJan4fdELw1dIxpUgkNeo39ksmzn2hJPjE9wcDIRokZPi1vtKmy3sBPTcibKcb8W9M51Sv8xJfFAFy0r4TetGI5pmxdvMn9eNyRdyoT08Ux7lzoIemDsmakJ8tmzzcUSzs7mO_XggmUnNEtbSk8urXXdDmKSknI3yOeUO6jDzDwKBMY.I-bSTHXfX26beBkrMgOh41iU4yvP-9zHhwyS1d0X-vM&dib_tag=se&keywords=huile%2Bde%2Bricin%2Bbio%2Bpressee%2Ba%2Bfroid&qid=1777122620&sprefix=huile%2Bde%2Bricin%2Bbio%2Bpressee%2Ba%2Bfroid%2Caps%2C449&sr=8-6&th=1&linkCode=ll2&tag=zencheztoi-21&linkId=c58e85088c1403d1bc5299fdd6d9cb8a&ref_=as_li_ss_tl" class="amazon-btn-full" target="_blank">Voir sur Amazon</a>
+            </div>
+
+            <div class="product-card">
+                <h3>Pierre d&apos;Alun</h3>
+                <p>Le d&eacute;odorant min&eacute;ral pur et sans parfum.</p>
+                <a href="https://www.amazon.fr/Laboratoires-Osma-Pierre-Alun-Bloc/dp/B0029XGZMA?crid=2N8M05GZ5O6PZ&dib=eyJ2IjoiMSJ9.7M8H9XF.I1o3piNKKnMyJV7OitUY2EZZqzi8ItYqNuAH5Nw9pe8&linkCode=ll2&tag=zencheztoi-21" class="amazon-btn-full" target="_blank">Voir sur Amazon</a>
+            </div>
+
+            <div class="product-card">
+                <h3>Argile Blanche Surfine</h3>
+                <p>Douceur min&eacute;rale pour les peaux fragiles.</p>
+                <a href="https://www.amazon.fr/Cattier-Vrac-Argile-Blanche-Surfine/dp/B07YQG22XL?crid=A3HO58AWQUX9&dib=eyJ2IjoiMSJ9.8JDgsac9FizPfjsIq9DxhWF7qLBb2POoBqm_lLq7ns3e6Xq96zSaOqSffuZL155N1wsf2Wj2obCKEcvjzUo5cKFFapB3YbP0sAqBf_Ofg2Yu5V8X-43Itk_8LbRcqD5xs6RJdgI_2T6l_xjM9Ln7VOVeSF7IArmxc_ycqP8EGpaLezEl3mUo1K7NU9-Hs4yMjjKDhCZy8htEKfX4ye5ShKjuPMkDGJvcTADmc3yInO8UlnbxORRugigYTRCdKm5a2CXM_AczEE75WNbES7MHL4wW414Qx4PWErMzRwKWK7Q.nf8mkJPSz1ztR-Qtxgt5Rx4rh9oOQwx1aVqa9zE3zGs&linkCode=ll2&tag=zencheztoi-21" class="amazon-btn-full" target="_blank">Voir sur Amazon</a>
+            </div>
+
+            <div class="product-card">
+                <h3>Glyc&eacute;rine V&eacute;g&eacute;tale</h3>
+                <p>Humectant majeur pour vos pr&eacute;parations bio.</p>
+                <a href="https://www.amazon.fr/Naissance-Glyc%C3%A9rine-V%C3%A9g&eacute;tale-Liquide-100ml/dp/B004RG9TTC?linkCode=ll2&tag=zencheztoi-21" class="amazon-btn-full" target="_blank">Voir sur Amazon</a>
+            </div>
+
+            <div class="product-card">
+                <h3>Savon de Castille Liquide</h3>
+                <p>Base lavante universelle ultra-douce.</p>
+                <a href="https://www.amazon.fr/Castille-liquide-litre-Sulfate-parab%C3%A8ne/dp/B07D8X6GTK?crid=3VPSRO2L2PIYM&dib=eyJ2IjoiMSJ9.ibVLk79mgyk25re6UnhBHciuqxNENW-KevYlUNUJoS64183LxHQ4rdHQin33zXnUg63dPp1H9aZPrgZfv0VR8FSgy6-ei-eNCW3eBd7UPeLXTg1-tgG5u4oRQEIER9M2H1M8DQQ6mZUl4pfnWa2ENhg4URirXqbWB27i571p0yoxBaSfWhJR63DGi4B4AjpkwykL0NhbNBBpTgE5ppm3Bb1B6Zk1vz_gsZecrifk6LbeEe6TYLm3w12oFrpuT0NpWe-3mlKsyGQzDDF4r96r5PQp5IU8Jl1ZBVWCNfhtOls.A5bPQYHW-jY9-Zd3cfAJB99dm1Mt1tAAYai03j4AYcs&linkCode=ll2&tag=zencheztoi-21" class="amazon-btn-full" target="_blank">Voir sur Amazon</a>
+            </div>
+
+            <div class="product-card">
+                <h3>Loofah Naturel</h3>
+                <p>Exfoliation douce par les fibres v&eacute;g&eacute;tales.</p>
+                <a href="https://www.amazon.fr/dp/B07K6RLZ9T?linkCode=ll2&tag=zencheztoi-21" class="amazon-btn-full" target="_blank">Voir sur Amazon</a>
+            </div>
+
+            <div class="product-card">
+                <h3>Brosse Bambou Picots Bois</h3>
+                <p>D&eacute;m&ecirc;le sans &eacute;lectricit&eacute; statique.</p>
+                <a href="https://www.amazon.fr/Brosse-Cheveux-Bambou-Naturelle-Antistatique/dp/B07H8GS8LH?linkCode=ll2&tag=zencheztoi-21" class="amazon-btn-full" target="_blank">Voir sur Amazon</a>
+            </div>
+        </div>
+
+        <section class="encyclo-box">
+            <h2>L&apos;Encyclop&eacute;die des Solutions Nomades</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 30px; color: #666;">Conservez tout le savoir de l&apos;&eacute;closion et des 5 mondes en un seul clic.</p>
+            <div class="pills-row">
+                <a href="encyclopedie.html" class="pill p1">Vol 1</a>
+                <a href="encyclopedie.html" class="pill p2">Vol 2</a>
+                <a href="encyclopedie.html" class="pill p3">Vol 3 (PDF)</a>
+                <a href="encyclopedie.html" class="pill p4">Vol 4</a>
+                <a href="encyclopedie.html" class="pill p5">Vol 5</a>
+            </div>
+            <a href="encyclopedie.html" class="btn-integrale">Obtenir l&apos;Int&eacute;grale du Ma&icirc;tre</a>
+        </section>
+
+    </main>
+
+    <div id="disclaimer-bar">🔗 Liens affili&eacute;s Amazon : Partenaire Amazon, je r&eacute;alise un b&eacute;n&eacute;fice sur les achats remplissant les conditions requises.</div>
+
+    <footer>
+        <img src="assets/logo.png" class="footer-logo-small" alt="Zen Chez Toi">
+        <p style="font-style: italic; font-size: 1.1em; color: rgba(255,255,255,0.9); margin-bottom: 25px;">L&apos;Harmonie au Naturel.</p>
+        <ul class="footer-nav-compact">
+            <li><a href="mentions-legales.html">Mentions l&eacute;gales</a></li>
+            <li><a href="confidentialite.html">Confidentialit&eacute;</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+            <li><a href="livre-or.html">Livre d&apos;Or</a></li>
+        </ul>
+        <p style="font-size: 0.8em; opacity: 0.5;">&copy; 2026 Zen Chez Toi &bull; L&apos;Harmonie au Naturel.</p>
+    </footer>
+
+</body>
+</html>

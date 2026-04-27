@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S&eacute;lection du Ma&icirc;tre : Les 12 Incontournables de la S&egrave;ve</title>
+    
+    <meta name="description" content="D&eacute;couvrez la s&eacute;lection exclusive des 12 solutions naturelles pour le bien-&ecirc;tre. Sommeil, stress, &eacute;nergie et vitalit&eacute; : le meilleur de l'aromath&eacute;rapie et des plantes.">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+
+    <style>
+        :root {
+            --bg-sable: #f5f2ec; --blanc: #ffffff; --brun-sombre: #2b2622; --or-zen: #a67b51;
+            --maison: #6a7f8f; --jardin: #7b9074; --corps: #cca8a0; --bienetre: #d4a259; --eso: #826a8f;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.8; overflow-x: hidden; }
+
+        header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; }
+        .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
+        .logo img { max-height: 90px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); }
+        .pinterest-badge { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; font-size: 1.1rem; transition: 0.4s ease; background: rgba(255,255,255,0.1); backdrop-filter: blur(2px); }
+        .pinterest-badge:hover { background: var(--bienetre); border-color: var(--bienetre); transform: rotate(15deg) scale(1.1); }
+        
+        nav ul { list-style: none; display: flex; gap: 20px; align-items: center; }
+        nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); }
+
+        .dropdown { position: relative; display: inline-block; padding: 15px 0; cursor: pointer; }
+        .dropdown-content { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background-color: var(--brun-sombre); min-width: 180px; box-shadow: 0px 8px 16px rgba(0,0,0,0.3); z-index: 2100; border-radius: 8px; overflow: hidden; }
+        .dropdown-content a { color: rgba(255,255,255,0.8) !important; padding: 12px 20px; text-decoration: none; display: block; font-size: 0.95em; text-shadow: none; font-weight: bold; border-bottom: 1px solid rgba(255,255,255,0.1); text-align: center; font-variant: small-caps; }
+        .dropdown-content a:hover { background-color: var(--bienetre); color: #fff !important; }
+        .dropdown:hover .dropdown-content { display: block; }
+
+        .hero { height: 70vh; background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), url('assets/hero-bienetre.jpg') center/cover no-repeat; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; border-bottom: 8px solid var(--bienetre); }
+        .maitre-phrase { font-size: 1.4em; font-variant: small-caps; letter-spacing: 5px; font-weight: bold; margin-bottom: 20px; text-shadow: -1px -1px 0 var(--bienetre), 1px -1px 0 var(--bienetre), -1px 1px 0 var(--bienetre), 1px 1px 0 var(--bienetre); color: #ffebcd; }
+        .hero h1 { font-size: 5em; font-weight: normal; margin-bottom: 20px; text-shadow: -2px -2px 0 var(--bienetre), 2px -2px 0 var(--bienetre), -2px 2px 0 var(--bienetre), 2px 2px 0 var(--bienetre); }
+
+        .container { max-width: 1200px; margin: -60px auto 80px; padding: 0 20px; position: relative; z-index: 10; }
+        
+        .seo-intro { background: var(--blanc); padding: 60px; border-radius: 30px; box-shadow: 0 15px 40px rgba(0,0,0,0.05); text-align: justify; margin-bottom: 50px; }
+        .seo-intro h2 { color: var(--bienetre); font-size: 2.2em; margin-bottom: 30px; text-align: center; font-weight: normal; }
+        .seo-intro p { font-size: 1.15rem; color: #444; line-height: 2; margin-bottom: 20px; }
+
+        .selection-banner { background: var(--brun-sombre); color: #fff; padding: 60px; border-radius: 30px; margin-bottom: 50px; text-align: center; border: 2px solid var(--bienetre); position: relative; }
+        .selection-banner h3 { font-size: 2.4em; margin-bottom: 20px; color: #ffebcd; font-weight: normal; }
+        .selection-banner p { font-size: 1.2rem; opacity: 0.9; margin-bottom: 35px; max-width: 800px; margin: 0 auto 35px; }
+
+        .grid-selection { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 80px; }
+        .product-card { background: var(--blanc); border-radius: 20px; padding: 0; text-align: center; border: 1px solid #eee; transition: 0.4s ease; display: flex; flex-direction: column; overflow: hidden; height: 100%; }
+        .product-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(212, 162, 89, 0.2); border-color: var(--bienetre); }
+        .photo-slot { height: 220px; background: #fdfaf5; display: flex; align-items: center; justify-content: center; padding: 10px; }
+        .photo-slot img { max-width: 100%; max-height: 100%; object-fit: contain; }
+        .card-body { padding: 30px; display: flex; flex-direction: column; flex: 1; }
+        .product-card h3 { font-size: 1.4em; color: var(--brun-sombre); margin-bottom: 15px; font-family: 'Georgia', serif; font-weight: normal; }
+        .product-card p { font-size: 0.95em; color: #666; margin-bottom: 25px; line-height: 1.6; flex: 1; }
+        .amazon-btn-full { display: inline-block; padding: 15px 25px; background: var(--brun-sombre); color: #fff; text-decoration: none; border-radius: 50px; font-weight: bold; font-variant: small-caps; transition: 0.3s; }
+        .product-card:hover .amazon-btn-full { background: var(--bienetre); }
+
+        .encyclo-box { background: #fff; padding: 80px 40px; border-radius: 30px; border: 3px solid var(--bienetre); text-align: center; margin-bottom: 80px; box-shadow: 0 20px 50px rgba(0,0,0,0.05); }
+        .encyclo-box h2 { font-size: 2.6em; color: var(--brun-sombre); margin-bottom: 20px; }
+        .pills-row { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-bottom: 40px; }
+        .pill { padding: 12px 25px; border: 2px solid; border-radius: 50px; font-variant: small-caps; font-weight: bold; text-decoration: none; background: #fff; transition: 0.3s; font-size: 1em; }
+        .p1 { border-color: var(--maison); color: var(--maison); } .p1:hover { background: var(--maison); color: #fff; }
+        .p2 { border-color: var(--jardin); color: var(--jardin); } .p2:hover { background: var(--jardin); color: #fff; }
+        .p3 { border-color: var(--corps); color: var(--corps); } .p3:hover { background: var(--corps); color: #fff; }
+        .p4 { border-color: var(--bienetre); color: #fff; background: var(--bienetre); }
+        .p5 { border-color: var(--eso); color: var(--eso); } .p5:hover { background: var(--eso); color: #fff; }
+        .btn-integrale { display: inline-block; padding: 20px 50px; background: var(--brun-sombre); color: #fff; text-decoration: none; border-radius: 50px; font-weight: bold; font-variant: small-caps; font-size: 1.2em; transition: 0.3s; }
+        .btn-integrale:hover { background: var(--bienetre); transform: translateY(-5px); }
+
+        footer { background: var(--brun-sombre); color: #fff; padding: 60px 20px; text-align: center; }
+        .footer-logo-small { height: 45px; margin-bottom: 25px; }
+        .footer-nav-compact { display: flex; gap: 25px; list-style: none; justify-content: center; margin-bottom: 25px; padding: 0; flex-wrap: wrap; }
+        .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.7; font-variant: small-caps; }
+        #disclaimer-bar { background: var(--brun-sombre); color: rgba(255,255,255,0.7); font-size: 0.8rem; text-align: center; padding: 12px; border-top: 1px solid rgba(255,255,255,0.1); }
+
+        @media (max-width: 1000px) { .hero h1 { font-size: 3.5em; } .nav-container { flex-direction: column; gap: 15px; } .seo-intro, .encyclo-box { padding: 40px 20px; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo-area">
+                <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
+                <a href="https://www.pinterest.com/" class="pinterest-badge" target="_blank">p</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li class="dropdown">
+                        <a href="grimoire.html">Grimoire</a>
+                        <div class="dropdown-content">
+                            <a href="maison.html">Monde &Acirc;tre</a>
+                            <a href="jardin.html">Monde Terre</a>
+                            <a href="corps.html">Monde Temple</a>
+                            <a href="bienetre.html">Monde S&egrave;ve</a>
+                            <a href="eso.html">Monde Secret</a>
+                        </div>
+                    </li>
+                    <li><a href="encyclopedie.html">L&apos;Encyclop&eacute;die</a></li>
+                    <li><a href="blog.html">Le Journal</a></li>
+                    <li><a href="livre-or.html">Livre d&apos;Or</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <p class="maitre-phrase">Volume 4 : L&apos;Harmonie</p>
+        <h1>Le Monde de la S&egrave;ve</h1>
+    </section>
+
+    <main class="container">
+        
+        <section class="seo-intro">
+            <h2>L&apos;Aromath&eacute;rapie et les Rem&egrave;des Naturels pour l&apos;Harmonie</h2>
+            <p>Bienvenue dans le <b>Monde de la S&egrave;ve</b>, l&apos;univers d&eacute;di&eacute; &agrave; la force vitale et &agrave; l&apos;apaisement par l&apos;<b>aromath&eacute;rapie</b>. Comment renforcer ses d&eacute;fenses immunitaires naturellement ? Quelles sont les meilleures <b>huiles essentielles</b> pour soulager le stress ou am&eacute;liorer le sommeil ? Ce quatri&egrave;me volume de notre Grimoire explore l'alchimie de l'harmonie, une approche globale pour &eacute;quilibrer vos &eacute;nergies et soigner les maux du quotidien.</p>
+            <p>De la puissance antivirale du <b>ravintsara</b> &agrave; l&apos;immortalit&eacute; cutan&eacute;e de l&apos;<b>h&eacute;lichryse</b>, d&eacute;couvrez les solutions naturelles s&eacute;lectionn&eacute;es pour leur puret&eacute; botanique et leur puissance vibratoire.</p>
+        </section>
+
+        <section class="selection-banner">
+            <h3>La S&eacute;lection du Ma&icirc;tre : Vos 12 Incontournables</h3>
+            <p>Retrouvez ma s&eacute;lection exclusive des 12 produits essentiels pour le Monde de la S&egrave;ve. Des essences les plus pures aux rem&egrave;des s&eacute;culaires.</p>
+        </section>
+
+        <div class="grid-selection">
+            <div class="product-card">
+                <div class="photo-slot"><img src="assets/melatonine.jpg" alt="M&eacute;latonine naturelle"></div>
+                <div class="card-body">
+                    <h3>M&eacute;latonine Naturelle</h3>
+                    <p>Aide &agrave; signaler l&apos;heure du sommeil et &agrave; resynchroniser l&apos;horloge biologique pour un endormissement rapide.</p>
+                    <a href="https://www.amazon.fr/dp/B0BBLSJTDG?linkCode=ll2&tag=zencheztoi-21&linkId=c8f9905e966241786704a3197f0c69b3&ref_=as_li_ss_tl" class="amazon-btn-full" target="_blank" rel="nofollow sponsored">D&eacute;couvrir sur Amazon</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="photo-slot"><img src="assets/tisane-sommeil.jpg" alt="Tisane sommeil passiflore m&eacute;lisse"></div>
+                <div class="card-body">
+                    <h3>Tisane Sommeil Bio</h3>
+                    <p>L'alliance de la passiflore et de la m&eacute;lisse pour installer un sommeil plus profond et continu, sans r&eacute;veils nocturnes.</p>
+                    <a href="https://www.amazon.fr/dp/B0FVFZCRXK?linkCode=ll2&tag=zencheztoi-21&linkId=57b73106f8a97f8ae4f89441414233e6&ref_=as_li_ss_tl" class="amazon-btn-full" target="_blank" rel="nofollow sponsored">D&eacute;couvrir sur Amazon</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="photo-slot"><img src="assets/ashwagandha.jpg" alt="Ashwagandha bio"></div>
+                <div class="card-body">
+                    <h3>Ashwagandha Bio</h3>
+                    <p>Plante adaptog&egrave;ne majeure qui aide l&apos;organisme &agrave; r&eacute;duire le taux de cortisol et &agrave; mieux r&eacute;pondre au stress chronique.</p>
+                    <a href="https://www.amazon.fr/dp/B0C66R1DB9?linkCode=ll2&tag=zencheztoi-21&linkId=1c3b4f280e51924137c00a86c44820b5&ref_=as_li_ss_tl" class="amazon-btn-full" target="_blank" rel="nofollow sponsored">D&eacute;couvrir sur Amazon</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="photo-slot"><img src="assets/magnesium.jpg" alt="Magn&eacute;sium bisglycinate"></div>
+                <div class="card-body">
+                    <h3>Magn&eacute;sium Bisglycinate</h3>
+                    <p>Le min&eacute;ral anti-stress essentiel. Forme hautement assimilable pour calmer l&apos;anxi&eacute;t&eacute; et les ruminations mentales.</p>
+                    <a href="https://www.amazon.fr/dp/B07DFTD7BW?linkCode=ll2&tag=zencheztoi-21&linkId=4c166f2e4eec4cb3a05be1deb253a4df&ref_=as_li_ss_tl" class="amazon-btn-full" target="_blank" rel="nofollow sponsored">D&eacute;couvrir sur Amazon</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="photo-slot"><img src="assets/ginseng-rhodiola.jpg" alt="Ginseng rhodiola"></div>
+                <div class="card-body">
+                    <h3>Ginseng & Rhodiola</h3>
+                    <p>Soutient l&apos;&eacute;nergie physique et mentale sur la dur&eacute;e pour lutter contre la fatigue chronique sans effet rebond.</p>
+                    <a href="https://www.amazon.fr/dp/B0D7MRB19L?linkCode=ll2&tag=zencheztoi-21&linkId=fc7b356ebe4be02e3d74a53c2774b4bc&ref_=as_li_ss_tl" class="amazon-btn-full" target="_blank" rel="nofollow sponsored">D&eacute;couvrir sur Amazon</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="photo-slot"><img src="assets/probiotiques.jpg" alt="Probiotiques"></div>
+                <div class="card-body">
+                    <h3>Probiotiques Complexes</h3>
+                    <p>R&eacute;&eacute;quilibrent la flore intestinale pour am&eacute;liorer le confort digestif et renforcer les d&eacute;fenses immunitaires.</p>
+                    <a href="https://www.amazon.fr/dp/B07GFBPZJD?linkCode=ll2&tag=zencheztoi-21&linkId=4736434ed4e14846b77d192ff834e2e5&ref_=as_li_ss_tl" class="amazon-btn-full" target="_blank" rel="nofollow sponsored">D&eacute;couvrir sur Amazon</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="photo-slot"><img src="assets/psyllium.jpg" alt="Psyllium blond"></div>
+                <div class="card-body">
+                    <h3>Psyllium Blond Bio</h3>
+                    <p>Fibre naturelle douce qui r&eacute;gule le transit sans agresser la muqueuse pour un confort intestinal retrouv&eacute;.</p>
+                    <a href="https://www.amazon.fr/dp/B0BYFYVJFG?linkCode=ll2&tag=zencheztoi-21&linkId=8f3e3fcb2be125a4c58614c3336fa720&ref_=as_li_ss_tl" class="amazon-btn-full" target="_blank" rel="nofollow sponsored">D&eacute;couvrir sur Amazon</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="photo-slot"><img src="assets/omega3.jpg" alt="Om&eacute;ga-3 algues"></div>
+                <div class="card-body">
+                    <h3>Om&eacute;ga-3 (DHA Algues)</h3>
+                    <p>Carburant essentiel du cerveau. Am&eacute;liore la concentration et dissipe le brouillard mental naturellement.</p>
+                    <a href="https://www.amazon.fr/dp/B07BRY1FRZ?linkCode=ll2&tag=zencheztoi-21&linkId=6c2ff7d2ed3ac38395224207c72bcab1&ref_=as_li_ss_tl" class="amazon-btn-full" target="_blank" rel="nofollow sponsored">D&eacute;couvrir sur Amazon</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="photo-slot"><img src="assets/acerola.jpg" alt="Ac&eacute;rola vitamine C"></div>
+                <div class="card-body">
+                    <h3>Ac&eacute;rola Bio</h3>
+                    <p>Vitamine C naturelle hautement assimilable pour soutenir les d&eacute;fenses immunitaires et r&eacute;duire la fatigue.</p>
+                    <a href="https://www.amazon.fr/dp/B013TD0PXQ?linkCode=ll2&tag=zencheztoi-21&linkId=edbf548bbb18bfecc270dbed988233b4&ref_=as_li_ss_tl" class="amazon-btn-full" target="_blank" rel="nofollow sponsored">D&eacute;couvrir sur Amazon</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="photo-slot"><img src="assets/safran-griffonia.jpg" alt="Safran griffonia"></div>
+                <div class="card-body">
+                    <h3>Safran & Griffonia</h3>
+                    <p>Agissent naturellement sur la s&eacute;rotonine pour r&eacute;&eacute;quilibrer l&apos;humeur et chasser le moral en berne.</p>
+                    <a href="https://www.amazon.fr/dp/B06XKGJP7C?linkCode=ll2&tag=zencheztoi-21&linkId=4237dfc89973566131ff9ef3de553132&ref_=as_li_ss_tl" class="amazon-btn-full" target="_blank" rel="nofollow sponsored">D&eacute;couvrir sur Amazon</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="photo-slot"><img src="assets/cbd.jpg" alt="Huile CBD"></div>
+                <div class="card-body">
+                    <h3>Huile CBD Bio</h3>
+                    <p>Aide &agrave; rel&acirc;cher les tensions musculaires et le corps crisp&eacute; par le stress accumul&eacute; sans effet psychoactif.</p>
+                    <a href="https://www.amazon.fr/dp/B00K2YZQTY?linkCode=ll2&tag=zencheztoi-21&linkId=e2661ccfc991158e717806f4060f7710&ref_=as_li_ss_tl" class="amazon-btn-full" target="_blank" rel="nofollow sponsored">D&eacute;couvrir sur Amazon</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="photo-slot"><img src="assets/curcuma.jpg" alt="Curcuma poivre noir"></div>
+                <div class="card-body">
+                    <h3>Curcuma & Poivre Noir</h3>
+                    <p>L'anti-inflammatoire naturel par excellence pour soulager les articulations et les g&ecirc;nes diffuses.</p>
+                    <a href="https://www.amazon.fr/dp/B0D9BC4YMK?linkCode=ll2&tag=zencheztoi-21&linkId=cf5dbde287086172f31cc015eb9e1a4a&ref_=as_li_ss_tl" class="amazon-btn-full" target="_blank" rel="nofollow sponsored">D&eacute;couvrir sur Amazon</a>
+                </div>
+            </div>
+        </div>
+
+        <section class="encyclo-box">
+            <h2>L&apos;Encyclop&eacute;die des Solutions Nomades</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 30px; color: #666;">Conservez tout le savoir de l&apos;harmonie et des 5 mondes en un seul clic.</p>
+            <div class="pills-row">
+                <a href="encyclopedie.html" class="pill p1">Vol 1</a>
+                <a href="encyclopedie.html" class="pill p2">Vol 2</a>
+                <a href="encyclopedie.html" class="pill p3">Vol 3</a>
+                <a href="encyclopedie.html" class="pill p4">Vol 4 (PDF)</a>
+                <a href="encyclopedie.html" class="pill p5">Vol 5</a>
+            </div>
+            <a href="encyclopedie.html" class="btn-integrale">Obtenir l&apos;Int&eacute;grale du Ma&icirc;tre</a>
+        </section>
+
+    </main>
+
+    <div id="disclaimer-bar">🔗 Liens affili&eacute;s Amazon : Partenaire Amazon, je r&eacute;alise un b&eacute;n&eacute;fice sur les achats remplissant les conditions requises.</div>
+
+    <footer>
+        <img src="assets/logo.png" class="footer-logo-small" alt="Zen Chez Toi">
+        <p style="font-style: italic; font-size: 1.1em; color: rgba(255,255,255,0.9); margin-bottom: 25px;">L&apos;Harmonie au Naturel.</p>
+        <ul class="footer-nav-compact">
+            <li><a href="mentions-legales.html">Mentions l&eacute;gales</a></li>
+            <li><a href="confidentialite.html">Confidentialit&eacute;</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+            <li><a href="livre-or.html">Livre d&apos;Or</a></li>
+        </ul>
+        <p style="font-size: 0.8em; opacity: 0.5;">&copy; 2026 Zen Chez Toi &bull; L&apos;Harmonie au Naturel.</p>
+    </footer>
+
+</body>
+</html>

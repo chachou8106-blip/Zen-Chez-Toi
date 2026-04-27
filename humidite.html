@@ -27,13 +27,22 @@
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.8; overflow-x: hidden; }
 
-        /* HEADER 360° */
+        /* HEADER IDENTIQUE A INDEX.HTML */
         header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 1000; }
         .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
+        .logo-area { display: flex; align-items: center; gap: 25px; }
         .logo img { max-height: 90px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); }
-        .pinterest-badge { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; font-family: 'Georgia', serif; font-style: italic; font-size: 1.1rem; transition: 0.4s ease; background: rgba(255,255,255,0.1); backdrop-filter: blur(2px); }
-        .pinterest-badge:hover { background: var(--or-zen); border-color: var(--or-zen); transform: rotate(15deg) scale(1.1); }
-        nav ul { list-style: none; display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
+        
+        .pinterest-badge { 
+            display: inline-flex; align-items: center; justify-content: center; 
+            width: 32px; height: 32px; border: 1px solid rgba(255,255,255,0.4); 
+            border-radius: 50%; color: #ffffff; text-decoration: none; 
+            font-family: 'Georgia', serif; font-style: italic; font-size: 1.1rem;
+            transition: all 0.4s ease; background: rgba(255,255,255,0.1); backdrop-filter: blur(2px);
+        }
+        .pinterest-badge:hover { background: var(--maison); border-color: var(--maison); transform: rotate(15deg) scale(1.1); box-shadow: 0 4px 15px rgba(106, 127, 143, 0.3); }
+
+        nav ul { list-style: none; display: flex; gap: 30px; align-items: center; flex-wrap: wrap; }
         nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
         nav a:hover { color: var(--maison); }
 
@@ -54,9 +63,15 @@
         .article-container ul { margin: 0 0 25px 40px; font-size: 1.1em; color: #444; }
         .article-container li { margin-bottom: 10px; }
         .quote-block { border-left: 4px solid var(--maison); padding: 20px 30px; background: var(--maison-light); font-style: italic; font-size: 1.15em; color: #555; margin: 40px 0; border-radius: 0 12px 12px 0; }
+        
+        .lettrine::first-letter {
+            float: left; font-size: 3.5em; line-height: 0.8; padding-right: 8px; padding-top: 8px;
+            color: var(--maison); font-family: 'Georgia', serif;
+        }
 
         /* ENCART PRODUIT AFFILIÉ IN-TEXT */
-        .product-highlight { display: flex; align-items: center; gap: 30px; padding: 30px; border: 1px dashed var(--maison); border-radius: 12px; background: #fdfdfc; margin: 40px 0; }
+        .product-highlight { display: flex; align-items: center; gap: 30px; padding: 30px; border: 1px dashed var(--maison); border-radius: 12px; background: #fdfdfc; margin: 40px 0; transition: transform 0.3s ease; }
+        .product-highlight:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(106,127,143,0.1); }
         .product-highlight img { width: 120px; height: 120px; object-fit: cover; border-radius: 8px; }
         .product-text h4 { font-size: 1.2em; color: var(--maison); margin-bottom: 10px; }
         .product-text p { font-size: 0.95em; margin-bottom: 15px; }
@@ -74,7 +89,9 @@
         .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.7; font-variant: small-caps; transition: 0.3s; }
         .footer-nav-compact a:hover { opacity: 1; color: var(--or-zen); }
 
-        @media (max-width: 768px) { .article-container { padding: 30px; margin-top: -20px; } .hero-article h1 { font-size: 2.2em; } .product-highlight { flex-direction: column; text-align: center; } .nav-container { flex-direction: column; gap: 15px; } nav ul { justify-content: center; } }
+        /* RESPONSIVE */
+        @media (max-width: 992px) { .nav-container { padding: 0 20px; } }
+        @media (max-width: 768px) { .article-container { padding: 30px; margin-top: -20px; } .hero-article h1 { font-size: 2.2em; } .product-highlight { flex-direction: column; text-align: center; } .nav-container { flex-direction: column; gap: 15px; } nav ul { justify-content: center; gap: 15px; } }
     </style>
 </head>
 <body>
@@ -106,32 +123,32 @@
         </section>
 
         <article class="article-container">
-            <p><strong>Buée sur les vitres, odeur de linge qui ne sèche pas, petites traces sombres derrière un meuble…</strong> L’humidité peut vite peser sur l’ambiance de votre foyer. Il existe pourtant des gestes simples et quelques aides naturelles pour alléger tout ça.</p>
+            <p class="lettrine"><strong>Buée sur les vitres au petit matin, odeur persistante de linge qui ne sèche pas, apparition de petites traces sombres derrière une commode…</strong> L’humidité excessive est le fléau silencieux de nombreux foyers. Au-delà de l'inconfort thermique qu'elle provoque, elle peut vite peser sur l’ambiance de votre sanctuaire et altérer la qualité de l'air que vous respirez. Il existe pourtant des rituels simples et des matières naturelles pour alléger cette atmosphère lourde.</p>
 
             <div class="quote-block">
-                L’objectif n’est pas de tout assécher, mais de rester dans une zone de confort, souvent située autour de 40 à 60 % d’humidité relative.
+                L’objectif de l'alchimiste n’est pas de tout assécher cliniquement, mais de retrouver l'équilibre. Un foyer sain respire généralement dans une zone de confort située entre 40 et 60 % d’humidité relative.
             </div>
 
-            <h2>Repérer les signes et agir doucement</h2>
-            <p>Il vaut mieux agir dès les premiers signes d’humidité : buée persistante, sensation de froid humide, odeurs de renfermé, petites moisissures sur les joints ou les murs. Si votre linge met un temps infini à sécher, c'est un excellent indicateur.</p>
+            <h2>Écouter les murmures de l'eau : repérer les signes</h2>
+            <p>Il est primordial d'agir dès les premiers signaux subtils envoyés par votre maison. L'eau cherche toujours un chemin. Une buée qui refuse de disparaître sur le bas des fenêtres, une sensation de froid pénétrant malgré le chauffage allumé, ou de légères moisissures qui s'articulent sur les joints de la salle d'eau sont des indicateurs clairs. Si vos serviettes éponge mettent un temps infini à sécher, l'air de la pièce est saturé.</p>
 
-            <h2>Les gestes simples du quotidien</h2>
-            <p>La première réponse reste la ventilation naturelle : ouvrir les fenêtres 10 à 15 minutes chaque jour pour renouveler l’air, même en plein hiver. Limitez ce qui charge l’air en vapeur : couvrez les casseroles, utilisez la hotte, et ventilez davantage après la douche.</p>
+            <h2>Le rituel de l'air : les gestes du quotidien</h2>
+            <p>Avant d'invoquer la moindre matière, la première réponse demeure <strong>la ventilation naturelle</strong>. L'air doit circuler. Ouvrir les fenêtres 10 à 15 minutes chaque matin permet de renouveler l’air chargé de la nuit, et ce, même en plein cœur de l'hiver. Au quotidien, limitez ce qui charge inutilement l’air en vapeur : couvrez systématiquement vos casseroles en cuisine, utilisez votre hotte aspirante, et aérez généreusement la salle de bain après chaque douche.</p>
 
-            <h2>Remèdes naturels pour petites zones</h2>
-            <p>Pour une chambre un peu humide, un placard, ou une salle d’eau, plusieurs astuces naturelles reviennent souvent :</p>
+            <h2>Les éponges minérales : remèdes d'alchimiste</h2>
+            <p>Pour réguler une chambre un peu trop confinée, un placard sombre ou une petite salle d’eau, Mère Nature a prévu des éponges hygroscopiques formidables :</p>
             <ul>
-                <li><strong>Gros sel & bicarbonate :</strong> Placés dans un bol, ils servent d'absorbeurs simples. On les remplace lorsqu'ils sont saturés d'eau.</li>
-                <li><strong>Le charbon de bois :</strong> Une méthode naturelle et économique pour les petits espaces.</li>
+                <li><strong>Le duo Gros Sel & Bicarbonate :</strong> Placés dans un simple bol en argile, ils servent d'absorbeurs rustiques et redoutablement efficaces. Il suffit de les remplacer lorsqu'ils forment une croûte saturée d'eau.</li>
+                <li><strong>Le Charbon Actif :</strong> Véritable merveille de la nature, sa structure extrêmement poreuse en fait un piège naturel parfait pour capturer non seulement les molécules d'eau, mais également les mauvaises odeurs de moisi.</li>
             </ul>
 
-            <h2>Outils utiles pour gérer l’humidité</h2>
-            <p>Sans multiplier les produits, quelques solutions peuvent vous aider à garder un air plus neutre dans les pièces sensibles.</p>
+            <h2>Les alliés discrets de la maison saine</h2>
+            <p>Sans multiplier les appareils complexes, quelques solutions physiques bien choisies peuvent vous soulager durablement et maintenir un air sain dans les pièces les plus sensibles.</p>
 
             <div class="product-highlight">
                 <img src="assets/logo.png" alt="Déshumidificateur AbsoDry" style="background:#eee;"> <div class="product-text">
                     <h4>Déshumidificateur d’air AbsoDry Duo Family</h4>
-                    <p>Un petit déshumidificateur sans électricité, pratique pour les pièces très humides (salle de bain, buanderie). Il absorbe l’excès d’humidité en continu et en silence.</p>
+                    <p>Un petit déshumidificateur esthétique et sans électricité, idéal pour les pièces gorgées de vapeur (salle de bain, buanderie). Il absorbe l’excès d’humidité en continu, sans émettre le moindre son, rétablissant la sérénité du lieu.</p>
                     <a href="https://www.amazon.fr/AbsoDry-Duo-Family-D%C3%A9shumidificateur-moisissure/dp/B0BLHJB1BQ?dib=eyJ2IjoiMSJ9.XZW7gjnID_fM3qfFJJX2TVyJN-2VzZcSm3hCtc9BgvYPMZ0rDNr9V96ypHsH4PGXygvR7l2vKlUZ3kZdKPyTnl8dPL-QBmHT23tKmZQ2NE4V9rm5DwlUGOyMPL8wkyj9V2-9Q_Oh6JTsLIq8pBhbdLTQ6K_4ta7oegLfd3r3fUasz1o5ZLE50eZb2aAyGMWq_-eAREIJ7QPCRhaDFh2Lm2KbvMckMugvi1zKEMT-8xya0OZmjE9GgC1xLEOKXIJildda2qI6bEYhz3bDED_dSaYq4ze1tcLPl2EkkRAH2VQ.u2AjU1xaGyk8mJN5DIXleMLMIPP11cFa-kwU3tw5iV8&dib_tag=se&keywords=d%C3%A9shumidificateur%2Bnaturel&qid=1776771994&sr=8-49-spons&aref=7aVAFdKVxn&sp_csd=d2lkZ2V0TmFtZT1zcF9idGY&th=1&linkCode=ll2&tag=zencheztoi-21&linkId=1b9be134e5fc1e007cd3f8c7c4a56478&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="btn-amazon">Voir sur Amazon</a>
                 </div>
             </div>
@@ -140,7 +157,7 @@
                 <img src="assets/logo.png" alt="Charbon de bambou" style="background:#eee;">
                 <div class="product-text">
                     <h4>Sachets de charbon de bambou réutilisables</h4>
-                    <p>À suspendre dans les placards, chaussures ou petites pièces humides. Ils absorbent l’humidité et les odeurs, et se rechargent simplement en les plaçant au soleil.</p>
+                    <p>De véritables talismans naturels. À suspendre dans les placards, les penderies ou les chaussures. Ils neutralisent silencieusement l’humidité et les effluves, et se régénèrent comme par magie en les exposant quelques heures au soleil.</p>
                     <a href="https://www.amazon.fr/absorbeurs-crochets-%C3%A9liminer-purifiants-dhumidit%C3%A9/dp/B0CQMS6QMS?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1Q242M4PG7QPT&dib=eyJ2IjoiMSJ9.vypIAjbL_7EH4fp3JC_Oq49_tNlar20UKt7bnnvzON6iYmGcHrDeYNLOlZ0GMQuG9fDXnhe5-MBrJUd91KKZ3aBP7l6UUSbSkDtbG6R3uSTRi8lzsjkE9yVGkT4uRD754qnZLjUvfHDJfRBQPQgG3CJOR2wrv1e2BXeIS5Y6bHZtVMTlJWmLQaRmbjd2QrG6Fue70-Bw5FXjJ41tF7Hf0HgZiFXc2Ul2-roGUe69NMFeejtqzh6raw-JCHa50sdnzEJGBAPdiHACG7B5cM_H2j4_dBwZO9eXEjsrKZuTy2c.2_1QNMNjTYkUinkczBj62Stq07Jhf5qRxbaco2sdszQ&dib_tag=se&keywords=charbon%2Bde%2Bbambou%2Banti%2Bhumidit%C3%A9%2Breutilisable%2Bpetite%2Bentreprise&qid=1776772830&sprefix=charbon%2Bde%2Bbambou%2Banti%2Bhumidit%C3%A9%2Breutilisable%2Bpetite%2Bentreprise%2Caps%2C222&sr=8-24&th=1&linkCode=ll2&tag=zencheztoi-21&linkId=f506ca29b0607c0508e8b11289a76ece&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="btn-amazon">Voir sur Amazon</a>
                 </div>
             </div>
@@ -149,13 +166,13 @@
                 <img src="assets/sputnik.jpg" alt="Station météo Sputnik">
                 <div class="product-text">
                     <h4>Station météo analogique Sputnik</h4>
-                    <p>Une superbe station bois & métal avec hygromètre intégré. Idéal pour garder une ambiance confortable (entre 40 et 60%) en se fiant à des mesures plutôt qu'à ses seules sensations.</p>
+                    <p>L'outil d'observation par excellence. Une superbe station mêlant le bois chaud et le métal froid, dotée d'un hygromètre de précision. Idéale pour surveiller le taux d'humidité ambiant et ne plus se fier uniquement à ses propres ressentis thermiques.</p>
                     <a href="https://www.amazon.fr/TFA-Dostmann-20-2047-52-Sputnik-Station-m%C3%A9t%C3%A9o/dp/B000JG4NS0?content-id=amzn1.sym.2b04206e-43f5-4bd8-b39d-d4671ceea54e%3Aamzn1.sym.2b04206e-43f5-4bd8-b39d-d4671ceea54e&crid=RP8ERRFVYMW&cv_ct_cx=station%2Bm%C3%A9t%C3%A9o%2Banalogique%2Bbois&keywords=station%2Bm%C3%A9t%C3%A9o%2Banalogique%2Bbois&pd_rd_i=B000JG2RQA&pd_rd_r=e64c840d-2d6e-4d91-8172-13688376414f&pd_rd_w=fYHO2&pd_rd_wg=UrY62&pf_rd_p=2b04206e-43f5-4bd8-b39d-d4671ceea54e&pf_rd_r=X7376QMR43JVK6AT88S8&qid=1776773160&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=station%2Bm%C3%A9t%C3%A9o%2Banalogique%2Caps%2C275&sr=1-4-1c0bc4f8-9a4b-47e4-b117-3d30b74c13f1-spons&ufe=app_do%3Aamzn1.fos.49fccda8-a887-4188-817b-b9a64bb30e43&aref=Ju9YmIda6L&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1&linkCode=ll2&tag=zencheztoi-21&linkId=28c2af13aa88f60eafd302ec9dd29488&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="btn-amazon">Voir sur Amazon</a>
                 </div>
             </div>
 
             <h2>Prendre l’humidité au sérieux, sans panique</h2>
-            <p>Ne laissez pas l’humidité s’installer, mais ne dramatisez pas chaque trace isolée. Entre gestes simples, remèdes maison et observation, vous pouvez construire une approche progressive qui respecte à la fois votre maison et votre énergie.</p>
+            <p>Il ne faut pas laisser l’eau stagnante s’installer, car elle finit toujours par altérer la matière. Cependant, il est inutile de dramatiser chaque trace isolée. En alliant les gestes simples de la ventilation, la puissance des minéraux absorbants et une observation bienveillante, vous construirez un équilibre sain qui respectera à la fois l'intégrité de votre maison et votre propre énergie.</p>
 
             <div class="ad-container">
                 <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-7501098246029504" data-ad-slot="YOUR_AD_SLOT"></ins>

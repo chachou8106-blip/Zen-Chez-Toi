@@ -1,519 +1,266 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Recherche Zen Chez Toi : retrouvez facilement les articles Maison, Jardin, Bien-être, Corps et Ésotérisme.">
-  <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
-  <title>Recherche | Zen Chez Toi</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Résultats de Recherche - Zen Chez Toi</title>
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRV5YNRL57"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-JRV5YNRL57');
-  </script>
+    <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
+    <link rel="icon" type="image/png" href="assets/logo.png">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-sable: #f5f2ec; --blanc: #ffffff; --brun-sombre: #2b2622; --or-zen: #a67b51;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.6; overflow-x: hidden; }
 
-  <style>
-    :root {
-      --bg: #fdfaf5;
-      --text: #332a22;
-      --muted: #685e55;
-      --accent: #d97757;
-      --dark: #1f140e;
-      --surface: rgba(255,255,255,.92);
-      --border: rgba(0,0,0,0.08);
-    }
+        /* HEADER & BADGE PINTEREST ZEN */
+        header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 1000; }
+        .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
+        .logo-area { display: flex; align-items: center; gap: 25px; }
+        .logo img { max-height: 90px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); }
+        
+        .pinterest-badge { 
+            display: inline-flex; align-items: center; justify-content: center; 
+            width: 32px; height: 32px; border: 1px solid rgba(255,255,255,0.4); 
+            border-radius: 50%; color: #ffffff; text-decoration: none; 
+            font-family: 'Georgia', serif; font-style: italic; font-size: 1.1rem;
+            transition: all 0.4s ease; background: rgba(255,255,255,0.1); backdrop-filter: blur(2px);
+        }
+        .pinterest-badge:hover { background: var(--or-zen); border-color: var(--or-zen); transform: rotate(15deg) scale(1.1); box-shadow: 0 4px 15px rgba(166, 123, 81, 0.3); }
 
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+        nav ul { list-style: none; display: flex; gap: 30px; align-items: center; }
+        nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
+        nav a:hover { color: var(--or-zen); }
 
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      color: var(--text);
-      background: var(--bg);
-      line-height: 1.7;
-      padding-bottom: 40px;
-    }
+        /* HERO ZEN Raccourci pour la recherche */
+        .hero {
+            height: 45vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/hero-accueil.jpg') center/cover no-repeat;
+            display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff;
+            margin-bottom: -40px;
+        }
+        .hero h1 { font-size: 3em; font-weight: normal; letter-spacing: 4px; text-shadow: 0 2px 10px rgba(0,0,0,0.5); font-variant: small-caps; line-height: 1.2; }
 
-    a, button, input {
-      transition: 0.3s;
-    }
+        /* BARRE DE RECHERCHE */
+        .search-area { background: transparent; padding: 0 20px; text-align: center; position: relative; z-index: 10; }
+        .search-container { max-width: 700px; margin: 0 auto; position: relative; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-radius: 50px; }
+        .search-container input { width: 100%; padding: 22px 35px; border: 2px solid var(--blanc); border-radius: 50px; font-size: 1.1em; outline: none; background: var(--blanc); }
+        .search-container input:focus { border-color: var(--or-zen); }
+        .search-container button { position: absolute; right: 8px; top: 8px; bottom: 8px; padding: 0 30px; border-radius: 40px; border: none; background: var(--brun-sombre); color: white; cursor: pointer; font-variant: small-caps; font-weight: bold; font-size: 1.1em; transition: 0.3s; }
+        .search-container button:hover { background: var(--or-zen); }
 
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
+        /* ZONE DES RÉSULTATS (Style Grimoire) */
+        .results-wrapper { max-width: 1400px; margin: 60px auto; padding: 0 20px; min-height: 35vh; }
+        .result-count { font-style: italic; color: #666; margin-bottom: 30px; text-align: center; font-size: 1.2em; }
+        
+        .chapitre { background: var(--blanc); padding: 50px; border-radius: 12px; margin-bottom: 50px; box-shadow: 0 10px 30px rgba(0,0,0,0.02); }
+        .index-grid { column-count: 3; column-gap: 50px; list-style: none; }
+        .index-grid li { margin-bottom: 15px; break-inside: avoid-column; position: relative; padding-left: 25px; }
+        .index-grid li::before { content: "◈"; position: absolute; left: 0; color: var(--or-zen); opacity: 0.5; }
+        .index-grid a { text-decoration: none; color: var(--brun-sombre); transition: 0.2s; font-size: 1.1em; }
+        .index-grid a:hover { color: var(--or-zen); padding-left: 5px; }
+        .category-tag { font-size: 0.75em; color: #888; font-style: italic; margin-left: 8px; }
 
-    a:focus-visible,
-    button:focus-visible,
-    input:focus-visible {
-      outline: 2px solid var(--accent);
-      outline-offset: 3px;
-    }
+        .no-results { text-align: center; padding: 40px; background: var(--blanc); border-radius: 12px; font-style: italic; color: var(--brun-sombre); }
 
-    .main-nav {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: rgba(253, 250, 245, 0.96);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(0,0,0,0.08);
-    }
+        /* FOOTER */
+        footer { background: var(--brun-sombre); color: #fff; padding: 60px 20px; text-align: center; margin-top: auto; }
+        .footer-logo-small { height: 45px; margin-bottom: 25px; }
+        .footer-nav-compact { display: flex; gap: 25px; list-style: none; justify-content: center; margin-bottom: 25px; padding: 0; }
+        .footer-nav-compact a { color: #fff; text-decoration: none; font-size: 0.9em; opacity: 0.7; font-variant: small-caps; }
 
-    .nav-wrap {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 14px 16px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 14px;
-      flex-wrap: wrap;
-    }
-
-    .nav-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .nav-wrap a {
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      font-weight: 700;
-      color: var(--muted);
-      letter-spacing: 0.1em;
-      padding: 5px 8px;
-    }
-
-    .nav-wrap a:hover,
-    .nav-wrap a.active {
-      color: var(--accent);
-    }
-
-    .dot {
-      color: rgba(0,0,0,0.12);
-      font-size: 0.7rem;
-    }
-
-    .nav-search {
-      min-width: 180px;
-    }
-
-    .nav-search input {
-      width: 100%;
-      border-radius: 999px;
-      border: 1px solid rgba(0,0,0,0.14);
-      padding: 6px 12px;
-      font: inherit;
-      background: #fff;
-    }
-
-    .hero {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 72px 20px 24px;
-      text-align: center;
-    }
-
-    .hero-kicker {
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      font-size: 0.78rem;
-      color: var(--muted);
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-
-    h1 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(2.4rem, 5vw, 3.4rem);
-      margin: 0 0 10px;
-      line-height: 1.1;
-    }
-
-    .hero-sub {
-      max-width: 640px;
-      margin: 0 auto;
-      color: var(--muted);
-      font-size: 1.02rem;
-    }
-
-    main {
-      max-width: 920px;
-      margin: 0 auto;
-      padding: 20px 20px 80px;
-    }
-
-    .search-panel {
-      background: var(--surface);
-      border-radius: 22px;
-      padding: 24px;
-      box-shadow: 0 12px 28px rgba(0,0,0,0.05);
-      border: 1px solid var(--border);
-      margin-bottom: 26px;
-    }
-
-    .search-panel form {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-
-    .search-panel input[type="search"] {
-      flex: 1 1 220px;
-      min-height: 46px;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      padding: 0 16px;
-      font: inherit;
-    }
-
-    .search-panel button {
-      min-height: 46px;
-      border-radius: 999px;
-      border: none;
-      padding: 0 18px;
-      font: inherit;
-      font-weight: 700;
-      background: var(--dark);
-      color: #fff;
-      cursor: pointer;
-    }
-
-    .search-panel button:hover {
-      background: var(--accent);
-    }
-
-    /* --- NOUVEAUX STYLES POUR LES RÉSULTATS HARMONISÉS --- */
-    .results-container {
-      margin-top: 30px;
-    }
-
-    .result-count {
-      text-align: center;
-      color: var(--muted);
-      font-style: italic;
-      margin-bottom: 30px;
-    }
-
-    .results-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 20px;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .result-item {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 20px;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.02);
-    }
-
-    .result-item:hover {
-      border-color: var(--accent);
-      transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-    }
-
-    .result-item a {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-
-    .result-title {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.4rem;
-      font-weight: 600;
-      color: var(--dark);
-    }
-
-    .category-tag {
-      font-size: 0.7rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--accent);
-      font-weight: 700;
-    }
-
-    .no-results {
-      background: #fff;
-      border-radius: 20px;
-      padding: 40px 22px;
-      border: 1px dashed var(--border);
-      color: var(--muted);
-      text-align: center;
-    }
-
-    .footer {
-      background: var(--dark);
-      color: #f3dfca;
-      padding: 60px 20px 80px;
-      text-align: center;
-      margin-top: 10px;
-    }
-
-    .footer-logo {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 2.6rem;
-      margin-bottom: 12px;
-    }
-
-    .footer-logo em {
-      color: var(--accent);
-      font-style: italic;
-    }
-
-    .footer-links {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      flex-wrap: wrap;
-      opacity: 0.72;
-      font-size: 0.88rem;
-      margin: 16px 0;
-    }
-
-    #disclaimer-bar {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background: rgba(0,0,0,0.95);
-      color: rgba(255,255,255,0.6);
-      font-size: 0.75rem;
-      text-align: center;
-      padding: 10px;
-      z-index: 1000;
-      border-top: 1px solid rgba(255,255,255,0.1);
-    }
-
-    @media (max-width: 760px) {
-      .nav-wrap { justify-content: center; }
-      .nav-search { width: 100%; max-width: 260px; }
-      .hero { padding-top: 52px; }
-      .results-grid { grid-template-columns: 1fr; }
-    }
-  </style>
+        @media (max-width: 992px) { .index-grid { column-count: 2; } }
+        @media (max-width: 600px) { .index-grid { column-count: 1; } .hero h1 { font-size: 2.2em; } }
+    </style>
 </head>
 <body>
 
-  <nav class="main-nav" aria-label="Navigation principale">
-    <div class="nav-wrap">
-      <div class="nav-links">
-        <a href="index.html">Accueil</a><span class="dot">&bull;</span>
-        <a href="blog.html">Blog</a><span class="dot">&bull;</span>
-        <a href="eso.html">Ésotérisme</a><span class="dot">&bull;</span>
-        <a href="jardin.html">Jardin</a><span class="dot">&bull;</span>
-        <a href="maison.html">Maison</a><span class="dot">&bull;</span>
-        <a href="bienetre.html">Bien-être</a><span class="dot">&bull;</span>
-        <a href="corps.html">Corps</a>
-      </div>
-      <form class="nav-search" action="recherche.html" method="get">
-        <input type="search" name="q" placeholder="Rechercher..." aria-label="Rechercher sur le site">
-      </form>
-    </div>
-  </nav>
+    <header>
+        <div class="nav-container">
+            <div class="logo-area">
+                <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
+                <a href="https://www.pinterest.com/VOTRE_PROFIL" class="pinterest-badge" target="_blank">p</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="grimoire.html">Grimoire</a></li>
+                    <li><a href="blog.html">Journal</a></li>
+                    <li><a href="encyclopedie.html">Encyclopédie</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <header class="hero">
-    <div class="hero-kicker">L'Oracle du Grimoire</div>
-    <h1>Recherche sur Zen Chez Toi</h1>
-    <p class="hero-sub">
-      Interrogez notre base de connaissances alchimiques. Retrouvez instantanément la fiche de n'importe quel ingrédient, matière ou remède naturel.
-    </p>
-  </header>
+    <main>
+        <section class="hero">
+            <h1>L'Oracle du Grimoire</h1>
+        </section>
 
-  <main>
-    <section class="search-panel" aria-label="Formulaire de recherche">
-      <form action="recherche.html" method="get">
-        <input type="search" name="q" id="searchInput" placeholder="Taper un mot-clé (ex : vitres, humidité, citron...)" aria-label="Mot-clé à rechercher" required>
-        <button type="submit">Rechercher</button>
-      </form>
-    </section>
+        <section class="search-area">
+            <div class="search-container">
+                <form action="recherche.html" method="GET">
+                    <input type="text" name="q" id="searchInput" placeholder="Sommeil, pucerons, taches, cristaux..." aria-label="Rechercher" required>
+                    <button type="submit">Interroger</button>
+                </form>
+            </div>
+        </section>
 
-    <section class="results-container">
-      <p class="result-count" id="resultCount">Saisissez un mot-clé ci-dessus pour interroger le grimoire.</p>
-      <ul class="results-grid" id="resultsList" style="display: none;">
+        <div class="results-wrapper">
+            <p class="result-count" id="resultCount">En attente d'une requête...</p>
+            
+            <section class="chapitre" id="resultsSection" style="display: none;">
+                <ul class="index-grid" id="resultsList">
+                    </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <img src="assets/logo.png" class="footer-logo-small" alt="Zen">
+        <ul class="footer-nav-compact">
+            <li><a href="mentions-legales.html">Mentions</a></li>
+            <li><a href="confidentialite.html">Confidentialité</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+            <li><a href="livre-or.html">Livre d'Or</a></li>
         </ul>
-    </section>
-  </main>
+        <p style="font-size: 0.8em; opacity: 0.5;">&copy; 2026 Zen Chez Toi - L'Harmonie au Naturel</p>
+    </footer>
 
-  <footer class="footer">
-    <div class="footer-logo">Zen <em>Chez</em> Toi</div>
-    <div class="footer-links">
-      <a href="mentions-legales.html">Mentions légales</a>
-      <a href="confidentialite.html">Politique de confidentialité</a>
-      <a href="cookies.html">Gestion des cookies</a>
-      <a href="index.html">Accueil</a>
-      <a href="blog.html">Blog</a>
-    </div>
-    <p style="margin-top:20px; opacity:0.3; font-size:0.8rem;">
-      © 2026 Zen Chez Toi — Tous droits réservés.
-    </p>
-  </footer>
+    <script>
+        const database = [
+            // Vol 1 : Maison
+            { title: "Bicarbonate de Soude", url: "bicarbonate.html", cat: "Maison" },
+            { title: "Vinaigre Blanc", url: "vinaigre-blanc.html", cat: "Maison" },
+            { title: "Savon Noir", url: "savon-noir.html", cat: "Maison" },
+            { title: "Percarbonate de Soude", url: "percarbonate.html", cat: "Maison" },
+            { title: "Cristaux de Soude", url: "cristaux-soude.html", cat: "Maison" },
+            { title: "Acide Citrique", url: "acide-citrique.html", cat: "Maison" },
+            { title: "Terre de Sommières", url: "terre-sommieres.html", cat: "Maison" },
+            { title: "Blanc de Meudon", url: "blanc-meudon.html", cat: "Maison" },
+            { title: "Cendre de Bois", url: "lessive-cendre.html", cat: "Maison" },
+            { title: "Savon de Marseille", url: "savon-marseille.html", cat: "Maison" },
+            // Vol 2 : Jardin
+            { title: "Huile de Neem", url: "huile-neem.html", cat: "Jardin" },
+            { title: "Huile de Lin", url: "huile-lin.html", cat: "Jardin" },
+            { title: "Térébenthine", url: "terebenthine.html", cat: "Jardin" },
+            { title: "Terre de Diatomée", url: "terre-diatomee.html", cat: "Jardin" },
+            { title: "Pierre d'Argile", url: "pierre-argile.html", cat: "Jardin" },
+            { title: "Argile Verte", url: "argile-verte.html", cat: "Jardin" },
+            { title: "Poudre d'Ortie", url: "poudre-ortie.html", cat: "Jardin" },
+            { title: "Cire d'Abeille", url: "cire-abeille.html", cat: "Jardin" },
+            { title: "Charbon Actif", url: "charbon-actif.html", cat: "Jardin" },
+            { title: "Ail", url: "ail.html", cat: "Jardin" },
+            // Vol 3 : Corps
+            { title: "Aloe Vera", url: "aloe-vera.html", cat: "Corps" },
+            { title: "Beurre de Karité", url: "beurre-karite.html", cat: "Corps" },
+            { title: "Huile de Coco", url: "huile-coco.html", cat: "Corps" },
+            { title: "Huile d'Amande Douce", url: "huile-amande.html", cat: "Corps" },
+            { title: "Huile de Jojoba", url: "huile-jojoba.html", cat: "Corps" },
+            { title: "Huile de Ricin", url: "huile-ricin.html", cat: "Corps" },
+            { title: "Pierre d'Alun", url: "alun.html", cat: "Corps" },
+            { title: "Argile Blanche", url: "argile-blanche.html", cat: "Corps" },
+            { title: "Glycérine", url: "glycerine.html", cat: "Corps" },
+            { title: "Savon de Castille", url: "savon-castille.html", cat: "Corps" },
+            // Vol 4 : Bien-être
+            { title: "Tea Tree", url: "tea-tree.html", cat: "Bien-Être" },
+            { title: "Lavande Vraie", url: "lavande-vraie.html", cat: "Bien-Être" },
+            { title: "Menthe Poivrée", url: "menthe-poivree.html", cat: "Bien-Être" },
+            { title: "Eucalyptus", url: "eucalyptus.html", cat: "Bien-Être" },
+            { title: "Ravintsara", url: "ravintsara.html", cat: "Bien-Être" },
+            { title: "Gaulthérie", url: "gaultherie.html", cat: "Bien-Être" },
+            { title: "Hélichryse", url: "helichryse.html", cat: "Bien-Être" },
+            { title: "Citron", url: "citron.html", cat: "Bien-Être" },
+            { title: "Ylang-Ylang", url: "ylang-ylang.html", cat: "Bien-Être" },
+            { title: "Miel", url: "miel.html", cat: "Bien-Être" },
+            // Vol 5 : Eso
+            { title: "Sauge", url: "sauge.html", cat: "Ésotérisme" },
+            { title: "Palo Santo", url: "palo-santo.html", cat: "Ésotérisme" },
+            { title: "Oliban", url: "oliban.html", cat: "Ésotérisme" },
+            { title: "Myrrhe", url: "myrrhe.html", cat: "Ésotérisme" },
+            { title: "Benjoin", url: "benjoin.html", cat: "Ésotérisme" },
+            { title: "Sang de Dragon", url: "sang-dragon.html", cat: "Ésotérisme" },
+            { title: "Sel de l'Himalaya", url: "sel-himalaya.html", cat: "Ésotérisme" },
+            { title: "Rose", url: "rose.html", cat: "Ésotérisme" },
+            { title: "Binchotan", url: "binchotan.html", cat: "Ésotérisme" },
+            { title: "Élixir de Cristal", url: "elixir-cristal.html", cat: "Ésotérisme" },
+            // Placard à Soucis
+            { title: "Anti-Stress", url: "anti-stress.html", cat: "Remède" },
+            { title: "Araignées", url: "araignees.html", cat: "Remède" },
+            { title: "Articulations", url: "articulations.html", cat: "Remède" },
+            { title: "Canalisations", url: "canalisations.html", cat: "Remède" },
+            { title: "Cellulite", url: "cellulite.html", cat: "Remède" },
+            { title: "Chute de Cheveux", url: "chute-cheveux.html", cat: "Remède" },
+            { title: "Cochenilles", url: "cochenilles-thrips.html", cat: "Remède" },
+            { title: "Dégraissant", url: "degraissant.html", cat: "Remède" },
+            { title: "Digestion", url: "digestion.html", cat: "Remède" },
+            { title: "Éclat Peau", url: "eclat-peau.html", cat: "Remède" },
+            { title: "Fatigue & Vitalité", url: "energie-vitalite.html", cat: "Remède" },
+            { title: "Feuilles Jaunes", url: "feuilles-jaunes.html", cat: "Remède" },
+            { title: "Concentration", url: "focus.html", cat: "Remède" },
+            { title: "Humidité", url: "humidite.html", cat: "Remède" },
+            { title: "Immunité", url: "immunite.html", cat: "Remède" },
+            { title: "Insectes", url: "insectes.html", cat: "Remède" },
+            { title: "Jambes Lourdes", url: "jambes-lourdes.html", cat: "Remède" },
+            { title: "Limaces", url: "limaces.html", cat: "Remède" },
+            { title: "Mal de Dos", url: "mal-de-dos.html", cat: "Remède" },
+            { title: "Mauvaises Odeurs", url: "mauvaises-odeurs.html", cat: "Remède" },
+            { title: "Agitation Mentale", url: "meditation.html", cat: "Remède" },
+            { title: "Mildiou", url: "mildiou.html", cat: "Remède" },
+            { title: "Oïdium", url: "oidium.html", cat: "Remède" },
+            { title: "Peau Sèche", url: "peau-seche.html", cat: "Remède" },
+            { title: "Pieds Fatigués", url: "pieds-fatigues.html", cat: "Remède" },
+            { title: "Posture", url: "posture.html", cat: "Remède" },
+            { title: "Pucerons", url: "pucerons.html", cat: "Remède" },
+            { title: "Tensions & Stress", url: "relaxation.html", cat: "Remède" },
+            { title: "Entretien Bois", url: "soin-bois.html", cat: "Remède" },
+            { title: "Sol Épuisé", url: "sol-epuise.html", cat: "Remède" },
+            { title: "Sommeil", url: "sommeil-profond.html", cat: "Remède" },
+            { title: "Taches", url: "taches-difficiles.html", cat: "Remède" },
+            { title: "Muscles", url: "tensions-musculaires.html", cat: "Remède" },
+            { title: "Varices", url: "varices.html", cat: "Remède" },
+            { title: "Vitres", url: "vitres-eclatantes.html", cat: "Remède" },
+            { title: "Souplesse", url: "yoga-etirements.html", cat: "Remède" }
+        ];
 
-  <div id="disclaimer-bar">
-    🔗 Liens affiliés Amazon : En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.
-  </div>
+        document.addEventListener("DOMContentLoaded", () => {
+            const params = new URLSearchParams(window.location.search);
+            const query = params.get('q');
+            const searchInput = document.getElementById('searchInput');
+            const resultCount = document.getElementById('resultCount');
+            const resultsSection = document.getElementById('resultsSection');
+            const resultsList = document.getElementById('resultsList');
 
-  <script>
-    const database = [
-        // Vol 1 : Maison
-        { title: "Bicarbonate de Soude", url: "bicarbonate.html", cat: "Maison" },
-        { title: "Vinaigre Blanc", url: "vinaigre-blanc.html", cat: "Maison" },
-        { title: "Savon Noir", url: "savon-noir.html", cat: "Maison" },
-        { title: "Percarbonate de Soude", url: "percarbonate.html", cat: "Maison" },
-        { title: "Cristaux de Soude", url: "cristaux-soude.html", cat: "Maison" },
-        { title: "Acide Citrique", url: "acide-citrique.html", cat: "Maison" },
-        { title: "Terre de Sommières", url: "terre-sommieres.html", cat: "Maison" },
-        { title: "Blanc de Meudon", url: "blanc-meudon.html", cat: "Maison" },
-        { title: "Cendre de Bois", url: "lessive-cendre.html", cat: "Maison" },
-        { title: "Savon de Marseille", url: "savon-marseille.html", cat: "Maison" },
-        // Vol 2 : Jardin
-        { title: "Huile de Neem", url: "huile-neem.html", cat: "Jardin" },
-        { title: "Huile de Lin", url: "huile-lin.html", cat: "Jardin" },
-        { title: "Térébenthine", url: "terebenthine.html", cat: "Jardin" },
-        { title: "Terre de Diatomée", url: "terre-diatomee.html", cat: "Jardin" },
-        { title: "Pierre d'Argile", url: "pierre-argile.html", cat: "Jardin" },
-        { title: "Argile Verte", url: "argile-verte.html", cat: "Jardin" },
-        { title: "Poudre d'Ortie", url: "poudre-ortie.html", cat: "Jardin" },
-        { title: "Cire d'Abeille", url: "cire-abeille.html", cat: "Jardin" },
-        { title: "Charbon Actif", url: "charbon-actif.html", cat: "Jardin" },
-        { title: "Ail", url: "ail.html", cat: "Jardin" },
-        // Vol 3 : Corps
-        { title: "Aloe Vera", url: "aloe-vera.html", cat: "Corps" },
-        { title: "Beurre de Karité", url: "beurre-karite.html", cat: "Corps" },
-        { title: "Huile de Coco", url: "huile-coco.html", cat: "Corps" },
-        { title: "Huile d'Amande Douce", url: "huile-amande.html", cat: "Corps" },
-        { title: "Huile de Jojoba", url: "huile-jojoba.html", cat: "Corps" },
-        { title: "Huile de Ricin", url: "huile-ricin.html", cat: "Corps" },
-        { title: "Pierre d'Alun", url: "alun.html", cat: "Corps" },
-        { title: "Argile Blanche", url: "argile-blanche.html", cat: "Corps" },
-        { title: "Glycérine", url: "glycerine.html", cat: "Corps" },
-        { title: "Savon de Castille", url: "savon-castille.html", cat: "Corps" },
-        // Vol 4 : Bien-être
-        { title: "Tea Tree", url: "tea-tree.html", cat: "Bien-Être" },
-        { title: "Lavande Vraie", url: "lavande-vraie.html", cat: "Bien-Être" },
-        { title: "Menthe Poivrée", url: "menthe-poivree.html", cat: "Bien-Être" },
-        { title: "Eucalyptus", url: "eucalyptus.html", cat: "Bien-Être" },
-        { title: "Ravintsara", url: "ravintsara.html", cat: "Bien-Être" },
-        { title: "Gaulthérie", url: "gaultherie.html", cat: "Bien-Être" },
-        { title: "Hélichryse", url: "helichryse.html", cat: "Bien-Être" },
-        { title: "Citron", url: "citron.html", cat: "Bien-Être" },
-        { title: "Ylang-Ylang", url: "ylang-ylang.html", cat: "Bien-Être" },
-        { title: "Miel", url: "miel.html", cat: "Bien-Être" },
-        // Vol 5 : Eso
-        { title: "Sauge", url: "sauge.html", cat: "Ésotérisme" },
-        { title: "Palo Santo", url: "palo-santo.html", cat: "Ésotérisme" },
-        { title: "Oliban", url: "oliban.html", cat: "Ésotérisme" },
-        { title: "Myrrhe", url: "myrrhe.html", cat: "Ésotérisme" },
-        { title: "Benjoin", url: "benjoin.html", cat: "Ésotérisme" },
-        { title: "Sang de Dragon", url: "sang-dragon.html", cat: "Ésotérisme" },
-        { title: "Sel de l'Himalaya", url: "sel-himalaya.html", cat: "Ésotérisme" },
-        { title: "Rose", url: "rose.html", cat: "Ésotérisme" },
-        { title: "Binchotan", url: "binchotan.html", cat: "Ésotérisme" },
-        { title: "Élixir de Cristal", url: "elixir-cristal.html", cat: "Ésotérisme" },
-        // Placard à Soucis
-        { title: "Anti-Stress", url: "anti-stress.html", cat: "Remède" },
-        { title: "Araignées", url: "araignees.html", cat: "Remède" },
-        { title: "Articulations", url: "articulations.html", cat: "Remède" },
-        { title: "Canalisations", url: "canalisations.html", cat: "Remède" },
-        { title: "Cellulite", url: "cellulite.html", cat: "Remède" },
-        { title: "Chute de Cheveux", url: "chute-cheveux.html", cat: "Remède" },
-        { title: "Cochenilles", url: "cochenilles-thrips.html", cat: "Remède" },
-        { title: "Dégraissant", url: "degraissant.html", cat: "Remède" },
-        { title: "Digestion", url: "digestion.html", cat: "Remède" },
-        { title: "Éclat Peau", url: "eclat-peau.html", cat: "Remède" },
-        { title: "Fatigue & Vitalité", url: "energie-vitalite.html", cat: "Remède" },
-        { title: "Feuilles Jaunes", url: "feuilles-jaunes.html", cat: "Remède" },
-        { title: "Concentration", url: "focus.html", cat: "Remède" },
-        { title: "Humidité", url: "humidite.html", cat: "Remède" },
-        { title: "Immunité", url: "immunite.html", cat: "Remède" },
-        { title: "Insectes", url: "insectes.html", cat: "Remède" },
-        { title: "Jambes Lourdes", url: "jambes-lourdes.html", cat: "Remède" },
-        { title: "Limaces", url: "limaces.html", cat: "Remède" },
-        { title: "Mal de Dos", url: "mal-de-dos.html", cat: "Remède" },
-        { title: "Mauvaises Odeurs", url: "mauvaises-odeurs.html", cat: "Remède" },
-        { title: "Agitation Mentale", url: "meditation.html", cat: "Remède" },
-        { title: "Mildiou", url: "mildiou.html", cat: "Remède" },
-        { title: "Oïdium", url: "oidium.html", cat: "Remède" },
-        { title: "Peau Sèche", url: "peau-seche.html", cat: "Remède" },
-        { title: "Pieds Fatigués", url: "pieds-fatigues.html", cat: "Remède" },
-        { title: "Posture", url: "posture.html", cat: "Remède" },
-        { title: "Pucerons", url: "pucerons.html", cat: "Remède" },
-        { title: "Tensions & Stress", url: "relaxation.html", cat: "Remède" },
-        { title: "Entretien Bois", url: "soin-bois.html", cat: "Remède" },
-        { title: "Sol Épuisé", url: "sol-epuise.html", cat: "Remède" },
-        { title: "Sommeil", url: "sommeil-profond.html", cat: "Remède" },
-        { title: "Taches", url: "taches-difficiles.html", cat: "Remède" },
-        { title: "Muscles", url: "tensions-musculaires.html", cat: "Remède" },
-        { title: "Varices", url: "varices.html", cat: "Remède" },
-        { title: "Vitres", url: "vitres-eclatantes.html", cat: "Remède" },
-        { title: "Souplesse", url: "yoga-etirements.html", cat: "Remède" }
-    ];
+            if (query) {
+                searchInput.value = query;
+                const lowerQuery = query.toLowerCase().trim();
 
-    document.addEventListener("DOMContentLoaded", () => {
-        const params = new URLSearchParams(window.location.search);
-        const query = params.get('q');
-        const searchInput = document.getElementById('searchInput');
-        const resultCount = document.getElementById('resultCount');
-        const resultsList = document.getElementById('resultsList');
+                const matches = database.filter(item => 
+                    item.title.toLowerCase().includes(lowerQuery) || 
+                    item.cat.toLowerCase().includes(lowerQuery)
+                );
 
-        if (query) {
-            // Remettre le texte dans la barre
-            searchInput.value = query;
-            const lowerQuery = query.toLowerCase().trim();
-
-            // Filtrer (par titre ou catégorie)
-            const matches = database.filter(item => 
-                item.title.toLowerCase().includes(lowerQuery) || 
-                item.cat.toLowerCase().includes(lowerQuery)
-            );
-
-            // Affichage
-            if (matches.length > 0) {
-                resultCount.innerHTML = `L'Oracle a trouvé <strong>${matches.length}</strong> réponse(s) pour "<em>${query}</em>" :`;
-                resultsList.style.display = "grid";
-                
-                matches.forEach(match => {
-                    const li = document.createElement('li');
-                    li.className = 'result-item';
-                    li.innerHTML = `
-                      <a href="${match.url}">
-                        <span class="category-tag">${match.cat}</span>
-                        <span class="result-title">${match.title}</span>
-                      </a>
-                    `;
-                    resultsList.appendChild(li);
-                });
+                if (matches.length > 0) {
+                    resultCount.innerHTML = `L'Oracle a trouvé <strong>${matches.length}</strong> réponse(s) pour "<em>${query}</em>" :`;
+                    resultsSection.style.display = "block";
+                    resultsList.innerHTML = "";
+                    
+                    matches.forEach(match => {
+                        const li = document.createElement('li');
+                        li.innerHTML = `<a href="${match.url}">${match.title} <span class="category-tag">(${match.cat})</span></a>`;
+                        resultsList.appendChild(li);
+                    });
+                } else {
+                    resultCount.innerHTML = "";
+                    resultsSection.style.display = "block";
+                    resultsList.innerHTML = `<div class="no-results">Le grimoire reste silencieux... Aucune recette trouvée pour "<em>${query}</em>".<br><br>Essayez un mot simple comme "vinaigre", "sommeil" ou "peau".</div>`;
+                }
             } else {
-                resultsList.style.display = "block"; // Pour le bloc no-results
-                resultCount.innerHTML = "";
-                resultsList.innerHTML = `
-                  <div class="no-results">
-                    <h2 style="font-family:'Cormorant Garamond',serif; color:var(--dark); margin-bottom:10px;">Le grimoire reste silencieux...</h2>
-                    <p>Aucune recette trouvée pour "<em>${query}</em>".<br>Essayez un mot plus simple comme "vinaigre", "sommeil" ou "peau".</p>
-                  </div>
-                `;
+                resultCount.innerText = "Saisissez un mot-clé ci-dessus pour interroger le grimoire.";
             }
-        }
-    });
-  </script>
-
+        });
+    </script>
 </body>
 </html>

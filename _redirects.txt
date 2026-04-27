@@ -1,0 +1,7 @@
+# Redirection des URL netlify vers le .fr
+https://zencd.netlify.app/* https://www.zencheztoi.fr/:splat 301!
+https://zencheztoi.netlify.app/* https://www.zencheztoi.fr/:splat 301!
+
+# Redirection du .com vers le .fr (pour le SEO)
+https://www.zencheztoi.com/* https://www.zencheztoi.fr/:splat 301!
+https://zencheztoi.com/* https://www.zencheztoi.fr/:splat 301!

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Corps & Soins - Zen Chez Toi</title>
+
+    <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
+    <meta name="p:domain_verify" content="549770272775"/>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRV5YNRL57"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-JRV5YNRL57');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7501098246029504" crossorigin="anonymous"></script>
+    
+    <meta name="description" content="Un univers pour soulager, soutenir et apaiser le corps avec des pistes concrètes, des pages utiles et des sélections choisies.">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+
+    <style>
+        :root {
+            --bg-sable: #f5f2ec; --blanc: #ffffff; --brun-sombre: #2b2622; --or-zen: #a67b51;
+            --corps: #cca8a0; --corps-light: #f7ebe8;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.6; overflow-x: hidden; scroll-behavior: smooth; }
+
+        header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 1000; }
+        .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
+        .logo img { max-height: 90px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); }
+        
+        .pinterest-badge { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; font-family: 'Georgia', serif; font-style: italic; font-size: 1.1rem; transition: 0.4s ease; background: rgba(255,255,255,0.1); backdrop-filter: blur(2px); }
+        .pinterest-badge:hover { background: var(--or-zen); border-color: var(--or-zen); transform: rotate(15deg) scale(1.1); }
+
+        nav ul { list-style: none; display: flex; gap: 30px; align-items: center; }
+        nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
+        nav a:hover { color: var(--corps); }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(17,10,8,0.4), rgba(17,10,8,0.5)), url('assets/hero-corps.jpg') center/cover no-repeat;
+            display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px;
+        }
+        .hero h1 { font-size: 3.2em; font-weight: normal; letter-spacing: 2px; text-shadow: 0 2px 10px rgba(0,0,0,0.5); max-width: 900px; line-height: 1.2; font-variant: small-caps; }
+        .hero p { font-size: 1.3em; font-style: italic; margin-top: 20px; text-shadow: 0 2px 5px rgba(0,0,0,0.5); max-width: 700px; opacity: 0.9; }
+        .hero-btn { margin-top: 30px; padding: 15px 35px; border-radius: 50px; border: 1px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.1); color: #fff; text-decoration: none; font-variant: small-caps; font-weight: bold; transition: 0.3s; backdrop-filter: blur(5px); }
+        .hero-btn:hover { background: var(--corps); border-color: var(--corps); color: var(--brun-sombre); }
+
+        /* ◈ L'ALCHIMIE DU QUOTIDIEN */
+        .search-area { background: var(--blanc); padding: 80px 20px; text-align: center; }
+        .section-title { font-size: 2.5em; font-weight: normal; font-variant: small-caps; letter-spacing: 2px; color: var(--corps); }
+        .alchimiste-quote { font-style: italic; color: #666; margin-bottom: 30px; font-size: 1.1em; }
+        .search-container { max-width: 700px; margin: 0 auto; position: relative; }
+        .search-container input { width: 100%; padding: 22px 35px; border: 2px solid var(--bg-sable); border-radius: 50px; font-size: 1.1em; outline: none; }
+        .search-container button { position: absolute; right: 10px; top: 10px; padding: 12px 30px; border-radius: 40px; border: none; background: var(--or-zen); color: white; cursor: pointer; font-variant: small-caps; font-weight: bold; }
+
+        .section-separator { text-align: center; margin: 60px 0 30px; }
+        .section-separator img { height: 40px; opacity: 0.6; margin-bottom: 20px; }
+        
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* CONTENT BOXES */
+        .grid-layout { display: grid; grid-template-columns: 1.4fr 0.9fr; gap: 30px; align-items: start; margin-bottom: 50px; }
+        .card { background: var(--blanc); padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); border-top: 5px solid var(--corps); }
+        .eyebrow { letter-spacing: 0.15em; text-transform: uppercase; font-size: 0.8rem; color: var(--corps); margin-bottom: 10px; font-weight: bold; }
+        .card h2 { font-size: 1.8em; margin-bottom: 15px; font-weight: normal; font-variant: small-caps; }
+        .card p { color: #555; margin-bottom: 20px; font-size: 1.05em; }
+        
+        .link-list { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+        .link-list a { padding: 8px 18px; border: 1px solid #eee; border-radius: 50px; color: var(--brun-sombre); text-decoration: none; font-size: 0.9em; transition: 0.3s; background: var(--bg-sable); }
+        .link-list a:hover { background: var(--corps); color: var(--brun-sombre); border-color: var(--corps); }
+
+        .aside-card { background: var(--corps-light); padding: 30px; border-radius: 12px; border: 1px solid rgba(0,0,0,0.05); }
+        .aside-card h3 { font-variant: small-caps; margin-bottom: 15px; color: var(--corps); }
+
+        /* FOCUS BOX AFFILIATION */
+        .focus-box { background: var(--blanc); padding: 40px; border-radius: 12px; border: 1px solid #eee; margin: 50px auto; max-width: 900px; box-shadow: 0 10px 30px rgba(0,0,0,0.02); text-align: center; }
+        .focus-box h3 { font-size: 1.5em; color: var(--corps); margin-bottom: 15px; }
+        .btn-amazon { display: inline-block; padding: 12px 30px; border: 2px solid var(--corps); color: var(--corps); text-decoration: none; border-radius: 50px; font-weight: bold; margin-top: 20px; transition: 0.3s; }
+        .btn-amazon:hover { background: var(--corps); color: #fff; }
+
+        /* LIVRE D'OR */
+        .livredor-section { max-width: 720px; margin: 60px auto; background: var(--blanc); padding: 40px; border-radius: 12px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.03); }
+        .livredor-form { display: flex; flex-direction: column; gap: 15px; margin-top: 20px; }
+        .livredor-form input, .livredor-form textarea { padding: 15px; border-radius: 8px; border: 1px solid #ddd; font-family: 'Georgia', serif; font-size: 1em; }
+        .livredor-form button { padding: 15px; border-radius: 50px; border: none; background: var(--brun-sombre); color: #fff; font-variant: small-caps; font-weight: bold; cursor: pointer; transition: 0.3s; }
+        .livredor-form button:hover { background: var(--corps); }
+
+        /* DISCLAIMER */
+        #disclaimer-bar { position: fixed; bottom: 0; left: 0; width: 100%; background: rgba(0,0,0,0.9); color: rgba(255,255,255,0.7); font-size: 0.75rem; text-align: center; padding: 10px; z-index: 1000; }
+
+        footer { background: var(--brun-sombre); color: #fff; padding: 60px 20px 80px; text-align: center; }
+        .footer-logo-small { height: 45px; margin-bottom: 25px; }
+        .footer-nav-compact { display: flex; gap: 25px; list-style: none; justify-content: center; margin-bottom: 25px; padding: 0; }
+        .footer-nav-compact a { color: #fff; text-decoration: none; font-size: 0.9em; opacity: 0.7; font-variant: small-caps; }
+
+        @media (max-width: 900px) { .grid-layout { grid-template-columns: 1fr; } .hero h1 { font-size: 2.5em; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo-area">
+                <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
+                <a href="https://www.pinterest.com/" class="pinterest-badge" target="_blank">p</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="grimoire.html">Grimoire</a></li>
+                    <li><a href="encyclopedie.html">Encyclopédie</a></li>
+                    <li><a href="blog.html">Journal</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Quand le corps fatigue, il demande surtout qu’on l’écoute un peu mieux.</h1>
+            <p>Jambes lourdes, digestion, peau, posture, tensions ou petits inconforts : des pistes simples pour soulager sans surcharger.</p>
+            <a href="#contenu" class="hero-btn">Voir les pistes corps</a>
+        </section>
+
+        <section class="search-area">
+            <h2 class="section-title">L'Alchimie du Quotidien</h2>
+            <p class="alchimiste-quote">"Cherche la solution, elle est déjà en toi... ou dans ce grimoire."</p>
+            <div class="search-container">
+                <form action="recherche.html" method="GET">
+                    <input type="text" name="q" placeholder="Digestion, tensions, peau..." aria-label="Rechercher">
+                    <button type="submit">Chercher</button>
+                </form>
+            </div>
+        </section>
+
+        <div id="contenu" class="section-separator">
+            <img src="assets/logo.png" alt="Zen">
+            <h2 class="section-title">Soulager sans surcharger</h2>
+        </div>
+
+        <div class="container">
+            <div class="grid-layout">
+                <article class="card">
+                    <div class="eyebrow">Corps</div>
+                    <h2>L'écoute au quotidien</h2>
+                    <p>Cette page rassemble tes grandes thématiques corps : articulations, jambes lourdes, digestion, éclat de peau, tensions musculaires, odeurs corporelles, posture et autres inconforts du quotidien.</p>
+                    <p style="font-style: italic; color: #888;">L’idée est de guider vers la bonne page selon le besoin, puis de laisser chaque sujet développer ses conseils et ses quelques produits utiles.</p>
+                    
+                    <div class="link-list">
+                        <a href="articulations.html">Articulations</a>
+                        <a href="cellulite.html">Cellulite</a>
+                        <a href="chute-cheveux.html">Chute de cheveux</a>
+                        <a href="digestion.html">Digestion</a>
+                        <a href="eclat-de-peau.html">Éclat de peau</a>
+                        <a href="immunite.html">Immunité</a>
+                        <a href="jambes-lourdes.html">Jambes lourdes</a>
+                        <a href="mal-de-dos.html">Mal de dos</a>
+                        <a href="odeurs-corps.html">Odeurs du corps</a>
+                        <a href="peau-seche.html">Peau sèche</a>
+                        <a href="pieds-fatigues.html">Pieds fatigués</a>
+                        <a href="posture.html">Posture</a>
+                        <a href="tensions-musculaires.html">Tensions musculaires</a>
+                        <a href="varices.html">Varices</a>
+                    </div>
+                </article>
+
+                <aside class="aside-card">
+                    <div class="eyebrow">Intérêt</div>
+                    <h3>Rassurer puis orienter</h3>
+                    <p>Les personnes qui arrivent ici cherchent souvent une réponse simple à un inconfort concret : douleur, lourdeur, sécheresse, digestion difficile ou fatigue physique.</p>
+                    <p style="margin-top:15px; font-size: 0.9em; color: var(--muted);">Ta mission est de les aider à se repérer vite, puis de les envoyer vers la bonne page ou vers ta sélection essentielle si elles veulent aller au plus direct.</p>
+                    <a href="corps-selection.html" style="display:block; margin-top:20px; font-weight:bold; color:var(--brun-sombre); text-decoration:underline;">Voir les Essentiels du Corps</a>
+                </aside>
+            </div>
+
+            <section class="focus-box">
+                <div class="eyebrow">Focus Produit</div>
+                <h3>Transpiration : confort au quotidien</h3>
+                <p>La transpiration est un mécanisme naturel. L’enjeu n’est pas de la bloquer à tout prix, mais surtout de limiter les odeurs et de se sentir plus à l’aise au quotidien.</p>
+                <p style="color: #666; font-style: italic;">Un déodorant à la sauge, d’origine naturelle, peut être une piste intéressante si tu veux quelque chose de plus doux.</p>
+                <a href="https://www.amazon.fr/Weleda-9921-D%C3%A9odorant-sauge-200/dp/B000ORV01C?linkCode=ll2&tag=zencheztoi-21&linkId=846603fd154ccea3c6fe674c9963c8d2&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored noopener noreferrer" class="btn-amazon">Voir le déodorant à la sauge</a>
+            </section>
+
+            <div style="max-width: 900px; margin: 40px auto; text-align: center;">
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7501098246029504" data-ad-slot="5678468169" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            </div>
+
+            <section class="livredor-section">
+                <h2>Livre d’or Corps</h2>
+                <p style="color: #666;">Ton retour aide à garder cet univers utile, doux et concret.</p>
+                <form class="livredor-form" onsubmit="event.preventDefault(); alert('Merci pour votre message 💛');">
+                    <input type="text" placeholder="Prénom" required>
+                    <textarea placeholder="Votre message" rows="4" required></textarea>
+                    <button type="submit">Envoyer mon message</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <img src="assets/logo.png" class="footer-logo-small" alt="Zen">
+        <ul class="footer-nav-compact">
+            <li><a href="mentions-legales.html">Mentions</a></li>
+            <li><a href="confidentialite.html">Confidentialité</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+            <li><a href="livre-or.html">Livre d'Or</a></li>
+        </ul>
+        <p style="font-size: 0.8em; opacity: 0.5;">&copy; 2026 Zen Chez Toi Corps • Confort, équilibre et solutions utiles</p>
+    </footer>
+
+    <div id="disclaimer-bar">
+        🔗 Liens affiliés Amazon : En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.
+    </div>
+
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</body>
+</html>

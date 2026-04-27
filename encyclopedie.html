@@ -20,7 +20,7 @@
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.6; overflow-x: hidden; }
 
-        /* HEADER & BADGE PINTEREST ZEN */
+        /* HEADER */
         header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 1000; }
         .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
         .logo-area { display: flex; align-items: center; gap: 25px; }
@@ -39,7 +39,7 @@
         nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
         nav a:hover { color: var(--or-zen); }
 
-        /* HERO PLEINE PAGE (100vh) ET TITRE ZEN */
+        /* HERO */
         .hero {
             height: 100vh;
             background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/hero-accueil.jpg') center/cover no-repeat;
@@ -53,7 +53,7 @@
         .section-separator img { height: 40px; opacity: 0.6; margin-bottom: 20px; }
         .section-title { font-size: 2.5em; font-weight: normal; font-variant: small-caps; letter-spacing: 2px; }
 
-        /* GRILLES DE JONCTION (ANCres) */
+        /* CONTAINER & GRID */
         .container { max-width: 1400px; margin: 0 auto; padding: 0 20px 80px; }
         .grid-5 { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; margin-bottom: 60px; }
         .card { background: var(--blanc); border-radius: 12px; text-decoration: none; color: inherit; transition: 0.4s; box-shadow: 0 4px 15px rgba(0,0,0,0.05); overflow: hidden; display: flex; flex-direction: column; border-bottom: 5px solid transparent; }
@@ -68,7 +68,7 @@
         .card.bienetre { border-bottom-color: var(--bienetre); }
         .card.eso { border-bottom-color: var(--eso); }
 
-        /* DESIGN DES VOLUMES AVEC IMAGES HERO (RESPONSIVE) */
+        /* VOLUME CARDS */
         .volume-card { 
             background: var(--blanc); border-radius: 12px; margin-bottom: 80px; 
             box-shadow: 0 10px 30px rgba(0,0,0,0.05); overflow: hidden; 
@@ -107,7 +107,7 @@
         .product-list li { position: relative; padding-left: 20px; font-size: 0.95em; }
         .product-list li::before { content: "◈"; position: absolute; left: 0; color: var(--or-zen); opacity: 0.6; }
 
-        /* SECTION PRIX FINALE */
+        /* PRICING FINAL */
         .pricing-section { background-color: var(--blanc); padding: 80px 20px; text-align: center; border-radius: 20px; margin-top: 40px; }
         .pricing-grid { display: flex; justify-content: center; gap: 60px; flex-wrap: wrap; margin-top: 40px; }
         .amount { font-size: 2.5em; color: var(--or-zen); font-weight: bold; }
@@ -118,22 +118,13 @@
         .footer-nav-compact { display: flex; gap: 25px; list-style: none; justify-content: center; margin-bottom: 25px; padding: 0; }
         .footer-nav-compact a { color: #fff; text-decoration: none; font-size: 0.9em; opacity: 0.7; font-variant: small-caps; }
 
-        /* GESTION DU RESPONSIVE */
         @media (max-width: 1000px) { 
             .grid-5 { grid-template-columns: repeat(3, 1fr); }
             .volume-card { flex-direction: column; }
             .vol-img { width: 100%; height: 250px; min-height: 250px; }
             .vol-body { width: 100%; padding: 40px 20px; border-left: none; border-top: 8px solid; }
-            .v-maison .vol-body { border-top-color: var(--maison); }
-            .v-jardin .vol-body { border-top-color: var(--jardin); }
-            .v-corps .vol-body { border-top-color: var(--corps); }
-            .v-bienetre .vol-body { border-top-color: var(--bienetre); }
-            .v-eso .vol-body { border-top-color: var(--eso); }
         }
-        @media (max-width: 600px) { 
-            .grid-5 { grid-template-columns: repeat(1, 1fr); }
-            .product-list { grid-template-columns: 1fr; } 
-        }
+        @media (max-width: 600px) { .grid-5 { grid-template-columns: 1fr; } .product-list { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
@@ -142,7 +133,7 @@
         <div class="nav-container">
             <div class="logo-area">
                 <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
-                <a href="https://www.pinterest.com/VOTRE_PROFIL" class="pinterest-badge" target="_blank" title="Inspiration Zen">p</a>
+                <a href="https://www.pinterest.com/VOTRE_PROFIL" class="pinterest-badge" target="_blank">p</a>
             </div>
             <nav>
                 <ul>
@@ -158,7 +149,7 @@
     <main>
         <section class="hero">
             <h1>L'Encyclopédie des Solutions Nomades</h1>
-            <p>"La quintessence du savoir naturel, répartie en 5 tomes."</p>
+            <p>"La quintessence du savoir naturel, répartie en 5 tomes et 50 sagesses."</p>
         </section>
 
         <div style="max-width: 1400px; margin: 30px auto; text-align: center;">
@@ -185,24 +176,24 @@
                 <div class="vol-body">
                     <div class="vol-header">
                         <h2>Vol 1 : Les Fondations</h2>
-                        <p>Le Côté Maison</p>
+                        <p>Le Côté Maison - L'Art de l'Entretien Sain</p>
                         <div class="price">14.90 €</div>
                         <a href="#" class="btn-buy">Acquérir ce Volume</a>
                     </div>
                     <div class="vol-content">
-                        <p>Dépolluez votre intérieur et maîtrisez l'art de l'entretien naturel. Les 10 essentiels pour une maison saine, sans produits toxiques.</p>
-                        <h4>Les 10 fiches maîtresses incluses :</h4>
+                        <p>Dépolluez votre intérieur et maîtrisez les bases de l'alchimie ménagère naturelle.</p>
+                        <h4>Les 10 Sagesses incluses :</h4>
                         <ul class="product-list">
                             <li>Bicarbonate de Soude</li>
                             <li>Vinaigre Blanc</li>
                             <li>Savon Noir</li>
-                            <li>Savon de Marseille</li>
-                            <li>Cristaux de Soude</li>
                             <li>Percarbonate de Soude</li>
+                            <li>Cristaux de Soude</li>
                             <li>Acide Citrique</li>
-                            <li>Pierre d'Argile</li>
+                            <li>Terre de Sommières</li>
                             <li>Blanc de Meudon</li>
-                            <li>Gros Sel</li>
+                            <li>Lessive de Cendre</li>
+                            <li>Savon de Marseille</li>
                         </ul>
                     </div>
                 </div>
@@ -213,24 +204,24 @@
                 <div class="vol-body">
                     <div class="vol-header">
                         <h2>Vol 2 : L'Enracinement</h2>
-                        <p>Le Côté Jardin</p>
+                        <p>Le Côté Jardin & Matières Brutes</p>
                         <div class="price">14.90 €</div>
                         <a href="#" class="btn-buy">Acquérir ce Volume</a>
                     </div>
                     <div class="vol-content">
-                        <p>Protégez vos plantes et nourrissez votre terre avec bienveillance. Les 10 remèdes ancestraux pour un jardin luxuriant.</p>
-                        <h4>Les 10 fiches maîtresses incluses :</h4>
+                        <p>Prenez soin de la terre et découvrez les matières premières pour protéger vos espaces extérieurs.</p>
+                        <h4>Les 10 Sagesses incluses :</h4>
                         <ul class="product-list">
                             <li>Huile de Neem</li>
+                            <li>Huile de Lin</li>
+                            <li>Térébenthine</li>
                             <li>Terre de Diatomée</li>
-                            <li>Cendre de Bois</li>
+                            <li>Pierre d'Argile</li>
+                            <li>Argile Verte</li>
                             <li>Poudre d'Ortie</li>
+                            <li>Cire d'Abeille</li>
+                            <li>Charbon Actif</li>
                             <li>Ail</li>
-                            <li>Marc de Café</li>
-                            <li>Binchotan</li>
-                            <li>Sel d'Epsom</li>
-                            <li>Soufre</li>
-                            <li>Argile Jaune</li>
                         </ul>
                     </div>
                 </div>
@@ -241,24 +232,24 @@
                 <div class="vol-body">
                     <div class="vol-header">
                         <h2>Vol 3 : L'Éclosion</h2>
-                        <p>Le Côté Corps</p>
+                        <p>Le Côté Corps - Hygiène & Cosmétique Brute</p>
                         <div class="price">14.90 €</div>
                         <a href="#" class="btn-buy">Acquérir ce Volume</a>
                     </div>
                     <div class="vol-content">
-                        <p>Révélez votre beauté brute. Les 10 trésors de la nature pour nourrir, purifier et réparer votre peau et vos cheveux.</p>
-                        <h4>Les 10 fiches maîtresses incluses :</h4>
+                        <p>Révélez votre beauté au naturel avec des ingrédients purs pour le soin de la peau et des cheveux.</p>
+                        <h4>Les 10 Sagesses incluses :</h4>
                         <ul class="product-list">
-                            <li>Argile Verte</li>
-                            <li>Argile Blanche</li>
-                            <li>Huile de Coco</li>
-                            <li>Beurre de Karité</li>
-                            <li>Huile de Ricin</li>
                             <li>Aloe Vera</li>
+                            <li>Beurre de Karité</li>
+                            <li>Huile de Coco</li>
+                            <li>Huile d'Amande Douce</li>
+                            <li>Huile de Jojoba</li>
+                            <li>Huile de Ricin</li>
+                            <li>Pierre d'Alun</li>
+                            <li>Argile Blanche</li>
+                            <li>Glycérine</li>
                             <li>Savon de Castille</li>
-                            <li>Cire d'Abeille</li>
-                            <li>Huile de Nigelle</li>
-                            <li>Sel de la Mer Morte</li>
                         </ul>
                     </div>
                 </div>
@@ -269,24 +260,24 @@
                 <div class="vol-body">
                     <div class="vol-header">
                         <h2>Vol 4 : L'Harmonie</h2>
-                        <p>Le Côté Bien-Être</p>
+                        <p>Le Côté Bien-Être - Aromathérapie & Apothicairerie</p>
                         <div class="price">14.90 €</div>
                         <a href="#" class="btn-buy">Acquérir ce Volume</a>
                     </div>
                     <div class="vol-content">
-                        <p>Apaisez votre esprit et renforcez votre immunité. Les 10 alliés santé pour retrouver un équilibre intérieur profond.</p>
-                        <h4>Les 10 fiches maîtresses incluses :</h4>
+                        <p>Apaisez les maux du quotidien et retrouvez l'équilibre grâce aux essences végétales.</p>
+                        <h4>Les 10 Sagesses incluses :</h4>
                         <ul class="product-list">
-                            <li>Lavande Vraie</li>
                             <li>Tea Tree</li>
-                            <li>Eucalyptus</li>
+                            <li>Lavande Vraie</li>
                             <li>Menthe Poivrée</li>
-                            <li>Magnésium</li>
-                            <li>Ashwagandha</li>
-                            <li>Tisane Sommeil</li>
-                            <li>Probiotiques</li>
-                            <li>Acérola</li>
-                            <li>Mélatonine</li>
+                            <li>Eucalyptus</li>
+                            <li>Ravintsara</li>
+                            <li>Gaulthérie</li>
+                            <li>Hélichryse</li>
+                            <li>Citron</li>
+                            <li>Ylang-Ylang</li>
+                            <li>Miel</li>
                         </ul>
                     </div>
                 </div>
@@ -297,24 +288,24 @@
                 <div class="vol-body">
                     <div class="vol-header">
                         <h2>Vol 5 : L'Élévation</h2>
-                        <p>Le Côté Ésotérisme</p>
+                        <p>Le Côté Ésotérisme - Rituels & Énergies</p>
                         <div class="price">14.90 €</div>
                         <a href="#" class="btn-buy">Acquérir ce Volume</a>
                     </div>
                     <div class="vol-content">
-                        <p>Connectez-vous à l'invisible et purifiez vos énergies. Les 10 supports mystiques de l'alchimiste moderne.</p>
-                        <h4>Les 10 fiches maîtresses incluses :</h4>
+                        <p>Connectez-vous au sacré et purifiez votre environnement avec les outils de l'alchimiste.</p>
+                        <h4>Les 10 Sagesses incluses :</h4>
                         <ul class="product-list">
+                            <li>Sauge</li>
+                            <li>Palo Santo</li>
                             <li>Oliban</li>
                             <li>Myrrhe</li>
                             <li>Benjoin</li>
-                            <li>Encens</li>
-                            <li>Quartz Rose</li>
-                            <li>Diamant</li>
+                            <li>Sang de Dragon</li>
+                            <li>Sel de l'Himalaya</li>
+                            <li>Rose</li>
+                            <li>Binchotan</li>
                             <li>Élixir de Cristal</li>
-                            <li>Pendule</li>
-                            <li>Tarot</li>
-                            <li>Runes</li>
                         </ul>
                     </div>
                 </div>
@@ -324,7 +315,7 @@
                 <p style="font-style: italic; color: #666; margin-bottom: 15px;">Poursuivre la voie de l'Alchimiste</p>
                 <div class="pricing-grid">
                     <div class="price-item"><h4>Le Pack Trio</h4><span class="amount">24.90 €</span></div>
-                    <div class="price-item"><h4>L'Intégrale</h4><span class="amount">39.90 €</span></div>
+                    <div class="price-item"><h4>L'Intégrale (5 Vols)</h4><span class="amount">39.90 €</span></div>
                 </div>
             </section>
 

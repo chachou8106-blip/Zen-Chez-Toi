@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Le Monde du Jardin : La Terre – Zen Chez Toi</title>
+    <title>Vol 2 : La Terre – Zen Chez Toi</title>
     
     <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
     <meta name="p:domain_verify" content="549770272775"/>
@@ -16,7 +16,7 @@
     </script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7501098246029504" crossorigin="anonymous"></script>
 
-    <meta name="description" content="Découvrez le Monde du Jardin, que nous appelons la Terre. L'art de cultiver sainement et de protéger naturellement vos plantes.">
+    <meta name="description" content="Découvrez le Volume 2 : La Terre. L'art de cultiver sainement et de protéger naturellement vos plantes avec l'alchimie végétale.">
     <link rel="icon" type="image/png" href="assets/logo.png">
 
     <style>
@@ -27,17 +27,34 @@
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.8; overflow-x: hidden; }
 
-        /* HEADER & PINTEREST */
+        /* --- LOGOS SHINE (HEADER & FOOTER) --- */
         header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; }
         .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
         
-        /* LOGO HEADER AVEC AURA LUMINEUSE (VALIDÉ) */
+        .logo { display: inline-block; text-decoration: none; }
         .logo img { 
             max-height: 90px; 
-            filter: drop-shadow(0 0 10px rgba(255,255,255,0.8)) drop-shadow(0 0 2px rgba(255,255,255,1));
-            transition: 0.3s;
+            filter: drop-shadow(0 0 5px rgba(255,255,255,0.4));
+            transition: all 0.5s ease; 
         }
-        
+        /* Halo blanc pur sur le header */
+        .logo:hover img { 
+            filter: drop-shadow(0 0 20px #ffffff) drop-shadow(0 0 10px #ffffff);
+            transform: scale(1.03);
+        }
+
+        .footer-logo img { 
+            height: 60px; 
+            filter: invert(1) grayscale(1) brightness(1.5) opacity(0.6); 
+            transition: all 0.5s ease; 
+            margin-bottom: 30px; 
+        }
+        .footer-logo:hover img { 
+            filter: invert(1) grayscale(1) brightness(2.5) opacity(1) drop-shadow(0 0 15px #ffffff); 
+            transform: scale(1.05); 
+        }
+
+        /* NAVIGATION & PINTEREST */
         .header-right { display: flex; align-items: center; gap: 40px; }
         nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
         nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
@@ -51,104 +68,62 @@
             transition: all 0.4s ease; background: rgba(255,255,255,0.1); backdrop-filter: blur(2px);
             padding-bottom: 3px;
         }
-        .pinterest-badge:hover { background: var(--or-zen); border-color: var(--or-zen); transform: rotate(15deg) scale(1.1); }
+        .pinterest-badge:hover { background: var(--or-zen); border-color: var(--or-zen); transform: rotate(15deg) scale(1.1); color: #fff; }
 
         .dropdown { position: relative; display: inline-block; padding: 15px 0; cursor: pointer; }
         .dropdown-content { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background-color: var(--brun-sombre); min-width: 180px; box-shadow: 0px 8px 16px rgba(0,0,0,0.3); z-index: 2100; border-radius: 8px; overflow: hidden; }
-        .dropdown-content a { color: rgba(255,255,255,0.8) !important; padding: 12px 20px; text-decoration: none; display: block; font-size: 0.95em; text-shadow: none; font-weight: bold; border-bottom: 1px solid rgba(255,255,255,0.1); text-align: center; font-variant: small-caps; }
+        .dropdown-content a { color: rgba(255,255,255,0.8) !important; padding: 12px 20px; text-decoration: none; display: block; font-size: 0.95em; border-bottom: 1px solid rgba(255,255,255,0.1); text-align: center; font-variant: small-caps; }
         .dropdown-content a:hover { background-color: var(--jardin); color: #fff !important; }
         .dropdown:hover .dropdown-content { display: block; }
 
-        /* RÉGLAGES PRÉCIS DES CONTOURS JARDIN */
-        .outline-1-8 { 
-            text-shadow: -1.8px -1.8px 0 var(--jardin), 1.8px -1.8px 0 var(--jardin), -1.8px 1.8px 0 var(--jardin), 1.8px 1.8px 0 var(--jardin);
-        }
-        .outline-1-6 { 
-            text-shadow: -1.6px -1.6px 0 var(--jardin), 1.6px -1.6px 0 var(--jardin), -1.6px 1.6px 0 var(--jardin), 1.6px 1.6px 0 var(--jardin);
-        }
+        /* CONTOURS AFFINÉS (1.6 / 1.4) */
+        .outline-1-6 { text-shadow: -1.6px -1.6px 0 var(--jardin), 1.6px -1.6px 0 var(--jardin), -1.6px 1.6px 0 var(--jardin), 1.6px 1.6px 0 var(--jardin); }
+        .outline-1-4 { text-shadow: -1.4px -1.4px 0 var(--jardin), 1.4px -1.4px 0 var(--jardin), -1.4px 1.4px 0 var(--jardin), 1.4px 1.4px 0 var(--jardin); }
 
-        /* HERO JARDIN */
+        /* HERO */
         .hero { height: 100vh; background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url('assets/hero-jardin.jpg') center/cover no-repeat fixed; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; }
-        .maitre-phrase { font-size: 2.2em; font-variant: small-caps; letter-spacing: 6px; font-weight: bold; margin-bottom: 15px; color: #fff; }
+        .vol-phrase { font-size: 2.2em; font-variant: small-caps; letter-spacing: 6px; font-weight: bold; margin-bottom: 15px; }
         .hero h1 { font-size: 5.5em; font-weight: normal; margin-bottom: 30px; line-height: 1.1; font-variant: small-caps; }
         .tagline { font-size: 1.8em; font-style: italic; max-width: 900px; line-height: 1.4; }
 
-        /* INTRODUCTION JARDIN */
+        /* INTRODUCTION */
         .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
         .histoire-section { background: var(--blanc); padding: 80px; border-radius: 30px; margin-top: -120px; position: relative; z-index: 10; box-shadow: 0 25px 60px rgba(0,0,0,0.08); border-top: 4px solid var(--jardin); }
         .histoire-section h2 { font-size: 2.8em; color: var(--jardin); margin-bottom: 40px; text-align: center; font-weight: normal; font-variant: small-caps; }
         .histoire-text { column-count: 2; column-gap: 60px; text-align: justify; font-size: 1.15rem; color: #444; line-height: 2.2; }
 
-        /* ENCADRÉS HUB IDENTIQUES */
+        /* ENCADRÉS HUB */
         .encadre-hero { margin: 80px 0; border-radius: 30px; overflow: hidden; border: 5px solid var(--jardin); box-shadow: 0 20px 50px rgba(0,0,0,0.2); }
-        .cadre-fond { 
-            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('assets/hero-jardin.jpg') center/cover no-repeat fixed;
-            padding: 80px 40px; text-align: center;
-        }
+        .cadre-fond { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('assets/hero-jardin.jpg') center/cover no-repeat fixed; padding: 80px 40px; text-align: center; }
         .liste-selectionnable { display: flex; flex-direction: column; gap: 15px; max-width: 650px; margin: 40px auto 0; }
-        .item-link { 
-            background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); 
-            border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; 
-            padding: 18px 35px; display: flex; align-items: center; justify-content: space-between;
-            text-decoration: none; color: #fff; transition: 0.3s;
-        }
+        .item-link { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; padding: 18px 35px; display: flex; align-items: center; justify-content: space-between; text-decoration: none; color: #fff; transition: 0.3s; }
         .item-link:hover { background: var(--jardin); border-color: #fff; transform: scale(1.03); }
         .item-link span { font-weight: bold; font-variant: small-caps; font-size: 1.15em; }
 
         /* TRANSITION */
         .msg-transition { text-align: center; margin: 100px 0; }
         .msg-transition p { font-size: 1.6em; font-style: italic; color: var(--brun-sombre); max-width: 850px; margin: 0 auto 35px; line-height: 1.6; }
-        .btn-selection {
-            display: inline-block; padding: 22px 60px; 
-            background: var(--brun-sombre); color: #fff; text-decoration: none;
-            border-radius: 50px; font-variant: small-caps; font-weight: bold;
-            font-size: 1.3em; border: 2px solid var(--jardin); transition: 0.3s;
-        }
+        .btn-selection { display: inline-block; padding: 22px 60px; background: var(--brun-sombre); color: #fff; text-decoration: none; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 1.3em; border: 2px solid var(--jardin); transition: 0.3s; }
         .btn-selection:hover { background: var(--jardin); transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
 
         /* ENCYCLOPÉDIE PILLS */
         .encyclopedie-section { background-color: var(--blanc); padding: 80px 20px; text-align: center; border-top: 1px solid #eee; }
         .pills-row { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 30px; }
         .pill { padding: 10px 20px; border: 2px solid; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 0.9em; text-decoration: none; background: #fff; transition: 0.3s; }
-        .p1 { border-color: var(--maison); color: var(--maison); } .p1:hover { background: var(--maison); color: #fff; }
-        .p2 { border-color: var(--jardin); color: var(--jardin); } .p2:hover { background: var(--jardin); color: #fff; }
-        .p3 { border-color: var(--corps); color: var(--corps); } .p3:hover { background: var(--corps); color: #fff; }
-        .p4 { border-color: var(--bienetre); color: var(--bienetre); } .p4:hover { background: var(--bienetre); color: #fff; }
-        .p5 { border-color: var(--eso); color: var(--eso); } .p5:hover { background: var(--eso); color: #fff; }
+        .p1 { border-color: var(--maison); color: var(--maison); } .p2 { border-color: var(--jardin); color: var(--jardin); } .p3 { border-color: var(--corps); color: var(--corps); } .p4 { border-color: var(--bienetre); color: var(--bienetre); } .p5 { border-color: var(--eso); color: var(--eso); }
+        .pill:hover { background: currentColor; color: #fff; }
 
-        /* FOOTER STYLE INDEX (VALIDÉ) */
-        footer { background: var(--brun-sombre); color: #fff; padding: 80px 20px; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); }
-        .footer-logo img { height: 60px; margin-bottom: 30px; filter: invert(1) grayscale(1) brightness(2) opacity(0.7); transition: 0.3s;}
-        .footer-logo:hover img { filter: invert(1) grayscale(1) brightness(2) opacity(1); }
+        /* FOOTER */
+        footer { background: var(--brun-sombre); color: #fff; padding: 60px 20px; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); }
         .footer-quote { font-style: italic; font-size: 1.2em; color: rgba(255,255,255,0.9); max-width: 700px; margin: 0 auto 40px; line-height: 1.6; }
-        .footer-nav-compact { display: flex; gap: 30px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; flex-wrap: wrap; }
-        .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.6; font-variant: small-caps; font-size: 1em; transition: 0.3s; }
+        .footer-nav-compact { display: flex; gap: 20px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; flex-wrap: wrap; }
+        .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.6; font-variant: small-caps; transition: 0.3s; }
         .footer-nav-compact a:hover { opacity: 1; color: var(--jardin); }
-        .copyright { font-size: 0.85em; opacity: 0.4; letter-spacing: 1px; }
-
         #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.5); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
 
         /* RESPONSIVE */
-        @media (max-width: 1024px) {
-            .hero h1 { font-size: 4em; }
-            .histoire-text { column-count: 1; }
-            .histoire-section { padding: 40px; }
-        }
-        @media (max-width: 768px) {
-            .nav-container { padding: 0 20px; flex-direction: column; gap: 20px; }
-            .header-right { gap: 20px; flex-wrap: wrap; justify-content: center; }
-            nav ul { gap: 15px; }
-            .hero h1 { font-size: 2.8em; margin-bottom: 20px; }
-            .maitre-phrase { font-size: 1.5em; letter-spacing: 3px; }
-            .tagline { font-size: 1.3em; }
-            .histoire-section { margin-top: -60px; padding: 30px 20px; }
-            .cadre-fond { padding: 40px 20px; }
-            .btn-selection { padding: 15px 30px; font-size: 1.1em; }
-        }
-        @media (max-width: 480px) {
-            .hero h1 { font-size: 2.2em; }
-            .logo img { max-height: 60px; }
-        }
+        @media (max-width: 1024px) { .hero h1 { font-size: 4em; } .histoire-text { column-count: 1; } .histoire-section { padding: 40px; } }
+        @media (max-width: 768px) { .nav-container { padding: 0 20px; flex-direction: column; gap: 20px; } .header-right { gap: 20px; flex-wrap: wrap; justify-content: center; } .hero h1 { font-size: 2.8em; } .histoire-section { margin-top: -60px; padding: 30px 20px; } }
     </style>
 </head>
 <body>
@@ -180,9 +155,9 @@
     </header>
 
     <section class="hero">
-        <p class="maitre-phrase outline-1-8">Maître de la Terre</p>
-        <h1 class="outline-1-6">Monde du Jardin</h1>
-        <p class="tagline outline-1-6">"La Terre ne ment jamais : cultivez l'équilibre, nourrissez le vivant et protégez votre éden avec la force des éléments originels."</p>
+        <p class="vol-phrase outline-1-6">Vol 2 : La Terre</p>
+        <h1 class="outline-1-4">Monde du Jardin</h1>
+        <p class="tagline outline-1-4">"La Terre ne ment jamais : cultivez l'équilibre, nourrissez le vivant et protégez votre éden avec la force des éléments originels."</p>
     </section>
 
     <main class="container">
@@ -202,32 +177,32 @@
 
         <section class="encadre-hero">
             <div class="cadre-fond">
-                <h3 class="outline-1-6" style="color:#fff; font-size:2.8em; font-variant:small-caps; margin-bottom:10px;">Les 10 Sagesses de la Terre</h3>
-                <p class="outline-1-6" style="color:#fff; font-style:italic; font-size:1.1em; margin-bottom:10px;">Maîtrisez les éléments pour protéger votre éden.</p>
+                <h3 class="outline-1-4" style="color:#fff; font-size:2.8em; font-variant:small-caps; margin-bottom:10px;">Les 10 Sagesses de la Terre</h3>
+                <p class="outline-1-4" style="color:#fff; font-style:italic; font-size:1.1em; margin-bottom:10px;">Maîtrisez les éléments pour protéger votre éden.</p>
                 <div class="liste-selectionnable">
-                    <a href="huile-neem.html" class="item-link"><span>1. Huile de Neem</span> <span>→</span></a>
-                    <a href="huile-lin.html" class="item-link"><span>2. Huile de Lin</span> <span>→</span></a>
-                    <a href="terebenthine.html" class="item-link"><span>3. Essence de Térébenthine</span> <span>→</span></a>
-                    <a href="terre-diatomee.html" class="item-link"><span>4. Terre de Diatomée</span> <span>→</span></a>
-                    <a href="pierre-argile.html" class="item-link"><span>5. Pierre d'Argile</span> <span>→</span></a>
-                    <a href="argile-verte.html" class="item-link"><span>6. Argile Verte Alchimique</span> <span>→</span></a>
-                    <a href="poudre-ortie.html" class="item-link"><span>7. Poudre d'Ortie</span> <span>→</span></a>
-                    <a href="cire-abeille.html" class="item-link"><span>8. Cire d'Abeille</span> <span>→</span></a>
-                    <a href="charbon-actif.html" class="item-link"><span>9. Charbon Actif</span> <span>→</span></a>
-                    <a href="ail.html" class="item-link"><span>10. Macération d'Ail</span> <span>→</span></a>
+                    <a href="huile-neem.html" class="item-link"><span>1. la Sentinelle Amère (Neem)</span> <span>→</span></a>
+                    <a href="huile-lin.html" class="item-link"><span>2. La Sève de Protection (Lin)</span> <span>→</span></a>
+                    <a href="terebenthine.html" class="item-link"><span>3. le Solvant de la Forêt (Térébenthine)</span> <span>→</span></a>
+                    <a href="terre-diatomee.html" class="item-link"><span>4. Le Bouclier Minéral (Diatomée)</span> <span>→</span></a>
+                    <a href="pierre-argile.html" class="item-link"><span>5. le polisseur universel (Pierre Argile)</span> <span>→</span></a>
+                    <a href="argile-verte.html" class="item-link"><span>6. la terre de la régénération (Argile Verte)</span> <span>→</span></a>
+                    <a href="poudre-ortie.html" class="item-link"><span>7. la Reine Sauvage (Ortie)</span> <span>→</span></a>
+                    <a href="cire-abeille.html" class="item-link"><span>8. L'Onguent Solaire (Cire)</span> <span>→</span></a>
+                    <a href="charbon-actif.html" class="item-link"><span>9. l'eponge de l'ombre (Charbon)</span> <span>→</span></a>
+                    <a href="ail.html" class="item-link"><span>10. la sentinelle des sols (Ail)</span> <span>→</span></a>
                 </div>
             </div>
         </section>
 
         <section class="msg-transition">
             <p>"Votre jardin réclame un soin urgent ? Laissez le Maître vous guider vers la solution naturelle la plus adaptée."</p>
-            <a href="jardin-selection.html" class="btn-selection">Découvrir la Sélection Jardin</a>
+            <a href="jardin-selection.html" class="btn-selection">Découvrir la Sélection</a>
         </section>
 
         <section class="encadre-hero">
             <div class="cadre-fond">
-                <h3 class="outline-1-6" style="color:#fff; font-size:2.8em; font-variant:small-caps; margin-bottom:10px;">Le Journal de la Terre</h3>
-                <p class="outline-1-6" style="color:#fff; font-style:italic; font-size:1.1em; margin-bottom:10px;">Chroniques du vivant et secrets de culture saine.</p>
+                <h3 class="outline-1-4" style="color:#fff; font-size:2.8em; font-variant:small-caps; margin-bottom:10px;">Le Journal de la Terre</h3>
+                <p class="outline-1-4" style="color:#fff; font-style:italic; font-size:1.1em; margin-bottom:10px;">Chroniques du vivant et secrets de culture saine.</p>
                 <div class="liste-selectionnable">
                     <a href="pucerons.html" class="item-link"><span>Pucerons & Parasites : Solutions</span> <span>→</span></a>
                     <a href="oidium.html" class="item-link"><span>Oïdium : Le Champignon Blanc</span> <span>→</span></a>
@@ -250,11 +225,11 @@
     <section class="encyclopedie-section">
         <h2 style="font-variant: small-caps; font-size: 2.2em; color: var(--brun-sombre); margin-bottom:10px;">L'Encyclopédie</h2>
         <div class="pills-row">
-            <a href="maison.html" class="pill p1">Vol 1 : Maison</a>
-            <a href="jardin.html" class="pill p2">Vol 2 : Jardin</a>
-            <a href="corps.html" class="pill p3">Vol 3 : Corps</a>
-            <a href="bienetre.html" class="pill p4">Vol 4 : Bien-être</a>
-            <a href="eso.html" class="pill p5">Vol 5 : Éso</a>
+            <a href="maison.html" class="pill p1">Vol 1 : Les Fondations</a>
+            <a href="jardin.html" class="pill p2">Vol 2 : La Terre</a>
+            <a href="corps.html" class="pill p3">Vol 3 : Le Temple</a>
+            <a href="bienetre.html" class="pill p4">Vol 4 : La Sève</a>
+            <a href="eso.html" class="pill p5">Vol 5 : Le Secret</a>
         </div>
     </section>
 
@@ -264,9 +239,10 @@
         <ul class="footer-nav-compact">
             <li><a href="mentions-legales.html">Mentions légales</a></li>
             <li><a href="confidentialite.html">Confidentialité</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
             <li><a href="livre-or.html">Livre d'Or</a></li>
         </ul>
-        <p style="font-size: 0.85em; opacity: 0.4; margin-top: 20px;">&copy; 2026 Zen Chez Toi • L'Harmonie au Naturel.</p>
+        <p style="font-size: 0.8em; opacity: 0.4; margin-top: 20px;">&copy; 2026 Zen Chez Toi • L'Harmonie au Naturel.</p>
     </footer>
 
     <div id="disclaimer-bar">🔗 Liens affiliés Amazon : Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.</div>

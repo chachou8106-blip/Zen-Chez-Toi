@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S&eacute;lection du Ma&icirc;tre : Les 12 Incontournables de l&apos;&Acirc;tre</title>
+    
+    <meta name="description" content="D&eacute;couvrez la s&eacute;lection exclusive des 12 produits essentiels pour un entretien naturel et &eacute;cologique de la maison. Vinaigre, bicarbonate, savon noir et outils sains.">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+
+    <style>
+        :root {
+            --bg-sable: #f5f2ec; --blanc: #ffffff; --brun-sombre: #2b2622; --or-zen: #a67b51;
+            --maison: #6a7f8f; --jardin: #7b9074; --corps: #cca8a0; --bienetre: #d4a259; --eso: #826a8f;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.8; overflow-x: hidden; }
+
+        header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; }
+        .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
+        .logo img { max-height: 90px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); }
+        .pinterest-badge { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; font-size: 1.1rem; transition: 0.4s ease; background: rgba(255,255,255,0.1); backdrop-filter: blur(2px); }
+        .pinterest-badge:hover { background: var(--maison); border-color: var(--maison); transform: rotate(15deg) scale(1.1); }
+        
+        nav ul { list-style: none; display: flex; gap: 20px; align-items: center; }
+        nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); }
+
+        .dropdown { position: relative; display: inline-block; padding: 15px 0; cursor: pointer; }
+        .dropdown-content { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background-color: var(--brun-sombre); min-width: 180px; box-shadow: 0px 8px 16px rgba(0,0,0,0.3); z-index: 2100; border-radius: 8px; overflow: hidden; }
+        .dropdown-content a { color: rgba(255,255,255,0.8) !important; padding: 12px 20px; text-decoration: none; display: block; font-size: 0.95em; text-shadow: none; font-weight: bold; border-bottom: 1px solid rgba(255,255,255,0.1); text-align: center; font-variant: small-caps; }
+        .dropdown-content a:hover { background-color: var(--maison); color: #fff !important; }
+        .dropdown:hover .dropdown-content { display: block; }
+
+        .hero { height: 60vh; background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), url('assets/hero-maison.jpg') center/cover no-repeat; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; border-bottom: 8px solid var(--maison); }
+        .maitre-phrase { font-size: 1.4em; font-variant: small-caps; letter-spacing: 5px; font-weight: bold; margin-bottom: 20px; text-shadow: -1px -1px 0 var(--maison), 1px -1px 0 var(--maison), -1px 1px 0 var(--maison), 1px 1px 0 var(--maison); color: #ffebcd; }
+        .hero h1 { font-size: 4em; font-weight: normal; margin-bottom: 20px; text-shadow: -2px -2px 0 var(--maison), 2px -2px 0 var(--maison), -2px 2px 0 var(--maison), 2px 2px 0 var(--maison); }
+
+        .container { max-width: 1200px; margin: -60px auto 80px; padding: 0 20px; position: relative; z-index: 10; }
+        
+        .intro-text { background: var(--blanc); padding: 60px; border-radius: 30px; box-shadow: 0 15px 40px rgba(0,0,0,0.05); text-align: center; margin-bottom: 50px; }
+        .intro-text h2 { color: var(--maison); font-size: 2.2em; margin-bottom: 20px; font-weight: normal; }
+        .intro-text p { font-size: 1.15rem; color: #444; line-height: 1.8; max-width: 900px; margin: 0 auto; }
+
+        .grid-selection { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin-bottom: 80px; }
+        .product-card { background: var(--blanc); border-radius: 20px; padding: 40px 30px; text-align: center; border: 1px solid #eee; transition: 0.4s ease; display: flex; flex-direction: column; justify-content: space-between; height: 100%; }
+        .product-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(106, 127, 143, 0.2); border-color: var(--maison); }
+        .product-card h3 { font-size: 1.6em; color: var(--brun-sombre); margin-bottom: 15px; font-family: 'Georgia', serif; font-weight: normal; }
+        .product-card p { font-size: 1em; color: #666; margin-bottom: 25px; line-height: 1.6; }
+        .amazon-link { display: inline-block; padding: 15px 30px; background: var(--brun-sombre); color: #fff; text-decoration: none; border-radius: 50px; font-weight: bold; font-variant: small-caps; transition: 0.3s; }
+        .product-card:hover .amazon-link { background: var(--maison); }
+
+        .encyclo-box { background: #fff; padding: 80px 40px; border-radius: 30px; border: 3px solid var(--maison); text-align: center; margin-bottom: 80px; box-shadow: 0 20px 50px rgba(0,0,0,0.05); }
+        .encyclo-box h2 { font-size: 2.6em; color: var(--brun-sombre); margin-bottom: 20px; }
+        .pills-row { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-bottom: 40px; }
+        .pill { padding: 12px 25px; border: 2px solid; border-radius: 50px; font-variant: small-caps; font-weight: bold; text-decoration: none; background: #fff; transition: 0.3s; font-size: 1em; }
+        .p1 { border-color: var(--maison); color: #fff; background: var(--maison); }
+        .p2 { border-color: var(--jardin); color: var(--jardin); } .p2:hover { background: var(--jardin); color: #fff; }
+        .p3 { border-color: var(--corps); color: var(--corps); } .p3:hover { background: var(--corps); color: #fff; }
+        .p4 { border-color: var(--bienetre); color: var(--bienetre); } .p4:hover { background: var(--bienetre); color: #fff; }
+        .p5 { border-color: var(--eso); color: var(--eso); } .p5:hover { background: var(--eso); color: #fff; }
+
+        footer { background: var(--brun-sombre); color: #fff; padding: 60px 20px; text-align: center; }
+        .footer-logo-small { height: 45px; margin-bottom: 25px; }
+        .footer-nav-compact { display: flex; gap: 25px; list-style: none; justify-content: center; margin-bottom: 25px; padding: 0; flex-wrap: wrap; }
+        .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.7; font-variant: small-caps; }
+        #disclaimer-bar { background: var(--brun-sombre); color: rgba(255,255,255,0.7); font-size: 0.8rem; text-align: center; padding: 12px; border-top: 1px solid rgba(255,255,255,0.1); }
+
+        @media (max-width: 1000px) { .hero h1 { font-size: 2.8em; } .nav-container { flex-direction: column; gap: 15px; } .intro-text { padding: 40px 20px; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo-area">
+                <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
+                <a href="https://www.pinterest.com/" class="pinterest-badge" target="_blank">p</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li class="dropdown">
+                        <a href="grimoire.html">Grimoire</a>
+                        <div class="dropdown-content">
+                            <a href="maison.html">Monde &Acirc;tre</a>
+                            <a href="jardin.html">Monde Terre</a>
+                            <a href="corps.html">Monde Temple</a>
+                            <a href="bienetre.html">Monde S&egrave;ve</a>
+                            <a href="eso.html">Monde Secret</a>
+                        </div>
+                    </li>
+                    <li><a href="encyclopedie.html">L&apos;Encyclop&eacute;die</a></li>
+                    <li><a href="blog.html">Le Journal</a></li>
+                    <li><a href="livre-or.html">Livre d&apos;Or</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <p class="maitre-phrase">La S&eacute;lection du Ma&icirc;tre</p>
+        <h1>Les Incontournables de l&apos;&Acirc;tre</h1>
+    </section>
+
+    <main class="container">
+        
+        <section class="intro-text">
+            <h2>B&acirc;tir les Fondations d&apos;un Foyer Sain</h2>
+            <p>Le <b>Monde de l&apos;&Acirc;tre</b> est celui du retour &agrave; l&apos;essentiel. J'ai s&eacute;lectionn&eacute; pour vous les 12 mati&egrave;res brutes et outils fondamentaux pour entretenir votre sanctuaire sans chimie de synth&egrave;se. Chaque produit a &eacute;t&eacute; choisi pour sa puret&eacute;, son origine et sa puissance alchimique.</p>
+        </section>
+
+        <div class="grid-selection">
+            <div class="product-card">
+                <h3>Vinaigre Blanc (Bidon 5L)</h3>
+                <p>Le roi du nettoyage multi-usages. Concentr&eacute; et &eacute;conomique pour tout d&eacute;tartrer et d&eacute;sinfecter naturellement.</p>
+                <a href="https://www.amazon.fr/SPADO-Origines-concentr%C3%A9e-alimentaire-Fabrication/dp/B08M946GXG?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1BIYF350OLOUU&dib=eyJ2IjoiMSJ9.XD2MGlcmtqu09YwV4IPk9qwvcXpEIMK8JyOlH6cqqsSpxr433YyiWWIYnr9N3TnaLTo9YaaTv78xza4ZGI69-_p2wXSV29wpUelMJ02fRz3HjBaKUGRSN8_rESQPiJPncE8Vqc1hF4WK58sywhky4c8bDXPpNRvSUoBEI8QMT7o_zDyyfhxw50sctWJrj_gT640G2BPLKwl0ryabq3FKiAUfBG_0gODJ_icn_bN6TvlTUiPv21Hq_6sYAFA_82lTwV2Sh34Ni813rrHMPIQqpFNbLqXOWn8rfQrwy_YCUrQ.YHqCvO6DEEN-cezllqj_0ZSS9ASWHIWaPFUhcaZpGvM&dib_tag=se&keywords=vinaigre%2Bblanc%2B5l%2Bmade%2Bin%2Bfrance&qid=1777072249&sprefix=vinaigre%2Bblanc%2B5l%2Bmade%2Bin%2Bfrance%2Caps%2C215&sr=8-2&th=1&linkCode=ll2&tag=zencheztoi-21&linkId=510fa575acc55ca110b66f081b441398&ref_=as_li_ss_tl" class="amazon-link" target="_blank" rel="nofollow sponsored">Voir sur Amazon</a>
+            </div>
+
+            <div class="product-card">
+                <h3>Vinaigre Multi-Usages (1L)</h3>
+                <p>Le flacon traditionnel de Marius Fabre. Id&eacute;al pour les surfaces de la cuisine et de la salle de bain.</p>
+                <a href="https://www.amazon.fr/MARIUS-FABRE-Multi-Usages-D%C3%A9tartrant-Anticalcaire/dp/B0CJTYWG95?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=N3ISY788ZJXL&dib=eyJ2IjoiMSJ9.aJWGGpXP_PL7PykqgoX2Q8FFu_Jy9XjpZmasfpYm_kL6Vzo77XiWnDtX4ZlcjeEpz4W8LL28pjmOxhO-lTtNv41H4nfjKajEKY0fjfJosygV2-Q1TaAVQSwq8fcPY0HCChwKY7lJDe1Y2PwUO5maNw.Lq5YLvTu_CF2yOxnXU76JZSslxQof90p2dRNiBD21PA&dib_tag=se&keywords=vinaigre+blanc+france+bio+1l+spado&qid=1777072025&sprefix=vinaigre+blanc+france+bio+1l+spado%2Caps%2C242&sr=8-50&xpid=zW_fAEJHsN81B&linkCode=ll2&tag=zencheztoi-21&linkId=3597c0087e212d56724ff19b087fd25e&ref_=as_li_ss_tl" class="amazon-link" target="_blank" rel="nofollow sponsored">Voir sur Amazon</a>
+            </div>
+
+            <div class="product-card">
+                <h3>Bicarbonate de Soude (1kg)</h3>
+                <p>L'indispensable poudre d&eacute;graissante et d&eacute;sodorisante. Grade alimentaire pour une s&eacute;curit&eacute; totale au foyer.</p>
+                <a href="https://www.amazon.fr/Bicarbonate-Soude-DOYPACK-50kg-zipp%C3%A9/dp/B08T7DLBX9?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1PAW07X3TMKRD&dib=eyJ2IjoiMSJ9.NCF3Z6UWQwBNN5GcWRPcXMB4hnbQa9HjugMrgda85_PQNKh1x54WFHQzwrMjgpqVIXxzsMXc8F4Wd-S-4CQ1SRaEp5isnt-EYTOWjmoCUSHuYeRy8GrM5ML13f78U_Ha38WLtcOBEVHUeBgLEnE9UxYi9JFri074qco1lioQlmXKdqIZ0mHeq4l3Vr8Uo9lWCLZF9KClRAnuT0I51J7tHD1jluIvGKaFSGRgSusEOBnsMLEgZU0oawcr-IQltOAn0qsNKMLPhgtfBeQX6fTb84j-SSjovPkNlLdgMGe2b_A.dTSCO5UGKTR1pxuTdHFo-UaXTqVyEqY4BYZ2DAkl8UE&dib_tag=se&keywords=bicarbonate+de+soude+alimentaire+bio+1+kg&qid=1777067223&sprefix=bicarbonate+de+soude+alimentaire+bio+1+kg%2Caps%2C237&sr=8-29&linkCode=ll2&tag=zencheztoi-21&linkId=f311c888e531d02cdc496f0a579266f5&ref_=as_li_ss_tl" class="amazon-link" target="_blank" rel="nofollow sponsored">Voir sur Amazon</a>
+            </div>
+
+            <div class="product-card">
+                <h3>Percarbonate de Soude</h3>
+                <p>Le d&eacute;tachant et blanchissant naturel &agrave; l'oxyg&egrave;ne actif. Redonne de l&apos;&eacute;clat au linge blanc sans chlore.</p>
+                <a href="https://www.amazon.fr/Percarbonate-Soude-avec-doseur-lint%C3%A9rieur/dp/B06XSBMG4H?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3MXXMGG3FVGB9&dib=eyJ2IjoiMSJ9.gYXKp_g0VarNmVoopWVsFJLkQn2PaAQABCthLU9fJqS3y5BxP5rVjnnGo_orX53lnFljAogiwA5a2ML4WxYIQlCK-KnLGndT_MaLx3JnVLuiowRLl2p-i8Za9GlxwVSGz46j4DbsIQC3VPkIDytPsOy349G7aljw2tMYBq_-gTt6QVEjQLmOdVfJ52Ar_y-7OZqBogoPOAwz3vDsl_K_UEMltywEV0w1nxPVIZNI9KDfNHu6u_s5jWCEDnMekIQsqGdHnW29WY0NWgnkub0vM5EG1BgXKQ_Rbw6tMLpvJFA.8rd4FK6hGwnA5mHLHVw7khvsh4zJGvvmKGQXXI77dlg&dib_tag=se&keywords=percarbonate+de+soude+poudre+bio&qid=1777068029&sprefix=percarbonate+de+soude+poudre+bio+%2Caps%2C245&sr=8-3-spons&aref=j3gtxxxcGW&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1&linkCode=ll2&tag=zencheztoi-21&linkId=306857235d7b87b6edd11994a28c5fdd&ref_=as_li_ss_tl" class="amazon-link" target="_blank" rel="nofollow sponsored">Voir sur Amazon</a>
+            </div>
+
+            <div class="product-card">
+                <h3>V&eacute;ritable Cube de Marseille</h3>
+                <p>Pur v&eacute;g&eacute;tal (72% d'huile d'olive), forg&eacute; au chaudron. Le socle absolu de l'hygi&egrave;ne domestique saine.</p>
+                <a href="https://www.amazon.fr/Marius-Fabre-Marseille-lHuile-dOlive/dp/B0722CG99V?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3IX5WTNDFMZL4&dib=eyJ2IjoiMSJ9.I6LBdrWP6wYEqrFRGGF_nYg3kRi3slugpBsnAF-hFciLFYzU7hYvgUnWzmGkLIGJOWs2SWN4zLSEQpSmspg4zdBLS77XhTufBIwJ16KXEOBtERwiB8MBN72152azMEJ9kODZQurt1A_AzIeFwekJ28dlbohdaHiX-Tz8BWsDYh0ccrZgn0QYfFoGs6w4Gm_08H_H41xeI5a0jI4jieE0zxkCrhAIhyZbodi-Ns8RYbWpopWzopGgH44K88qKmDgLJFNNF_Krm1GJPMBAYUxwn0tX8swfr64T9Eh9a5HFNgw.Y5i_KgTBMq0uDHtoBC-uerdf5DK7TMGcro7kpIF6UFg&dib_tag=se&keywords=savon%2Bde%2Bmarseille%2B72%2B%25%2Bvert%2Bbio&qid=1777019054&sprefix=savon%2Bde%2Bmarseille%2B72%2B%25%2Bvert%2Bbio%2B%2Caps%2C233&sr=8-1&th=1&linkCode=ll2&tag=zencheztoi-21&linkId=b81883e4d689ff40fa92e4f1a1ff51ef&ref_=as_li_ss_tl" class="amazon-link" target="_blank" rel="nofollow sponsored">Voir sur Amazon</a>
+            </div>
+
+            <div class="product-card">
+                <h3>Copeaux de Savon de Marseille</h3>
+                <p>Pr&ecirc;ts &agrave; fondre pour fabriquer votre propre lessive liquide naturelle et hypoallerg&eacute;nique.</p>
+                <a href="https://www.amazon.fr/Marius-Fabre-Marseille-lHuile-dOlive/dp/B06XVCWQ5Y?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3IX5WTNDFMZL4&dib=eyJ2IjoiMSJ9.I6LBdrWP6wYEqrFRGGF_nYg3kRi3slugpBsnAF-hFciLFYzU7hYvgUnWzmGkLIGJOWs2SWN4zLSEQpSmspg4zdBLS77XhTufBIwJ16KXEOBtERwiB8MBN72152azMEJ9kODZQurt1A_AzIeFwekJ28dlbohdaHiX-Tz8BWsDYh0ccrZgn0QYfFoGs6w4Gm_08H_H41xeI5a0jI4jieE0zxkCrhAIhyZbodi-Ns8RYbWpopWzopGgH44K88qKmDgLJFNNF_Krm1GJPMBAYUxwn0tX8swfr64T9Eh9a5HFNgw.Y5i_KgTBMq0uDHtoBC-uerdf5DK7TMGcro7kpIF6UFg&dib_tag=se&keywords=savon%2Bde%2Bmarseille%2B72%2B%25%2Bvert%2Bbio&qid=1777019054&sprefix=savon%2Bde%2Bmarseille%2B72%2B%25%2Bvert%2Bbio%2B%2Caps%2C233&sr=8-1&th=1&linkCode=ll2&tag=zencheztoi-21&linkId=9526dd2c3e45698e5d41805e14c4bd17&ref_=as_li_ss_tl" class="amazon-link" target="_blank" rel="nofollow sponsored">Voir sur Amazon</a>
+            </div>
+
+            <div class="product-card">
+                <h3>Acide Citrique Alimentaire</h3>
+                <p>Le puissant d&eacute;tartrant d&apos;origine naturelle. Id&eacute;al pour les cafeti&egrave;res, bouilloires et lave-linges.</p>
+                <a href="https://www.amazon.fr/Citrique-alimentaire-pharmaceutique-lint%C3%A9rieur-EluOecolo/dp/B07HN8XYR7?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2K8B47AGTRUU6&dib=eyJ2IjoiMSJ9.MK3GjexStarXXvzg4Hvbev_judEnDnL43ttEOBu9EMiIw5IbLjPvZ5jiARCChuWtsDW44cYCMHSoC7WLZX2rkghGgNiNkgOIjDajUxBQF9Qi_mWuo1N_ruQaYu7V-P4MJ7egukmslGDAse8-9VGL9esi3Qe32TNFe-ZABPb_gNDfmbQEiMB7zLL52J60VmTIddqvtJTgBPQhRB8EWWP7qKrteDmnAztmNqnyOQrpevxHrBXsyIYPGWfEFsVNwGKIOqCUMG2MKaRyg-akXdnAI3yUzTyR2vYGW6rWebGyEso.MRhofhPtSC9yD8OQAxU-2ohpggW8CwMePfC3yvnOl8g&dib_tag=se&keywords=acide+citrique+alimentaire+bio&qid=1777106396&sprefix=acide+citrique+alimentaire+bio%2Caps%2C229&sr=8-3-spons&aref=fyxUV0s6tp&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1&linkCode=ll2&tag=zencheztoi-21&linkId=4fda9fe8bab167bc0520142285c0b27d&ref_=as_li_ss_tl" class="amazon-link" target="_blank" rel="nofollow sponsored">Voir sur Amazon</a>
+            </div>
+
+            <div class="product-card">
+                <h3>Acide Citrique Anhydre</h3>
+                <p>Puret&eacute; maximale pour vos pr&eacute;parations de bombes de bain ou produits m&eacute;nagers en poudre.</p>
+                <a href="https://www.amazon.fr/Citrique-Anhydre-alimentaire-pharmaceutique-lint%C3%A9rieur/dp/B00EUCTBU4?th=1&linkCode=ll2&tag=zencheztoi-21&linkId=f40ec7b664892d61c85c7bc8be026728&ref_=as_li_ss_tl" class="amazon-link" target="_blank" rel="nofollow sponsored">Voir sur Amazon</a>
+            </div>
+
+            <div class="product-card">
+                <h3>Vinaigre de Cidre (avec m&egrave;re)</h3>
+                <p>S&eacute;lectionn&eacute; pour sa puret&eacute; biologique. Id&eacute;al en cuisine comme pour certains soins m&eacute;nagers d&eacute;licats.</p>
+                <a href="https://www.amazon.fr/Vinaigre-Biologique-Meilleure-Digestion-Glyc%C3%A9mie/dp/B0B1VXMD5P?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2SZUUH865I2JM&dib=eyJ2IjoiMSJ9.uksIALdb-JdCtksG8GQebHOLKAZHyzkeBnvTwJitxqtxajE7c4aOzRWKqMLgtfJYvo4AWum_aBzJt1XuwAnXlDhrsXeBoM6IYtd9sAawf9FQCACDpVwHwG1bcO5_YpY9AY9z6cxE0YprNIwoMhvg3jW7GFMmvbX9HLzPPaxJd7VDlUPsKC0SnYc9d7m_3gxCeIRyRxP085tfaJ2pAiNtLDt5tFbGiMQPo8iJCUBG2KOi3OsdkdbRMJ-RduMu8c7Rv5FOgJEi3ntrRYmoAJUvddkfK-cT9NQriPyvC27HOos.289fVZzieXbe3EjLkAO6MmSkWnCfmwseBmwxU75hjhg&dib_tag=se&keywords=Vinaigre%2Bde%2BCidre%2BBio%2C%2BNon%2BPasteuris%C3%A9%2C%2Bavec%2B%22La%2BM%C3%A8re%22.&qid=1777015711&sprefix=vinaigre%2Bde%2Bcidre%2Bbio%2C%2Bnon%2Bpasteuris%C3%A9%2C%2Bavec%2B%22la%2Bm%C3%A8re%22.%2Caps%2C228&sr=8-6&th=1&linkCode=ll2&tag=zencheztoi-21&linkId=f5a0e940d168686ddd0643673ceb84cd&ref_=as_li_ss_tl" class="amazon-link" target="_blank" rel="nofollow sponsored">Voir sur Amazon</a>
+            </div>
+
+            <div class="product-card">
+                <h3>Blanc de Meudon (Pot 500g)</h3>
+                <p>La craie naturelle pour faire briller l&apos;argenterie, le cuivre et les vitres sans rayer.</p>
+                <a href="https://www.amazon.fr/Cemacr%C3%A9-Blanc-Meudon-Cuill%C3%A8re-alimentaire/dp/B098L78P77?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2A6JFIB1S28T2&dib=eyJ2IjoiMSJ9.Mte5bBUSqLpJJSAkJ9p7oD8KH08p9OSyAMJCxy3x5ubgIYyVWa580N9bqpbb2O-NYXNZ5bvXYsJ_8Q9w0Z5Do2kvssg1lI1bPT1cy6fA3h69SBy3LlGhTls0j50lUhngR83YpVQtV7aNMntKjeNiPJ6lDKMhWTp9Z-zrUNiTIwY.9qSJiEalXWSwwGs5RTqY8_B0jlzMhdvoitBT0sNdKvQ&dib_tag=se&keywords=blanc+de+meudon+bio+made+in+france&qid=1777107993&sprefix=blanc+de+meudon+bio+cmade+in+france%2Caps%2C229&sr=8-2&linkCode=ll2&tag=zencheztoi-21&linkId=ea7d5ed29dec8eebe41241d98163c4d9&ref_=as_li_ss_tl" class="amazon-link" target="_blank" rel="nofollow sponsored">Voir sur Amazon</a>
+            </div>
+
+            <div class="product-card">
+                <h3>Blanc de Meudon (Sachet)</h3>
+                <p>Poudre fine et purifi&eacute;e pour les grands travaux de nettoyage et l'entretien des métaux.</p>
+                <a href="https://www.amazon.fr/Blanc-Meudon-500g-cuill%C3%A8re-alimentaire/dp/B0B177MN1D?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=39R3GIXRD5I5N&dib=eyJ2IjoiMSJ9.oT4fE1BzbZRSAVSw_AtaCBr2W9XeLk5YkN_rVGcBCLNShIsQejNpW4kvqbj-9qFrvocmmDlswLIVcU2QApKsaPOR3J35H5kVQyqYsbr3GJKpqh5byEdubet0tbJ8JXN9M3TZ7jSs__vqAXe5vtxvfoeDPttDWWCfImhYS2Lk8F_0D3wCDenXSxfCo7AfxqtFGHZkJ17-us0OHuc1jxheiPK0XYXja90qPHcm-3dmlxBlCeAq-DLfYwzjZF0opZDe.8vU_OsUpuIj4FL4MYbxQxrVHyVNkig_EXsZENt0_jMA&dib_tag=se&keywords=blanc+de+meudon+vrac&qid=1777108174&sprefix=blanc+de+meudon+vrac%2Caps%2C289&sr=8-8&linkCode=ll2&tag=zencheztoi-21&linkId=fb44546415c7301b4cd7e3d1d743e7f4&ref_=as_li_ss_tl" class="amazon-link" target="_blank" rel="nofollow sponsored">Voir sur Amazon</a>
+            </div>
+
+            <div class="product-card">
+                <h3>Terre de Sommi&egrave;res (5kg)</h3>
+                <p>L'argile d&eacute;tachante &agrave; sec radicale. Absorbe les taches de gras sur les tapis, canap&eacute;s et vêtements.</p>
+                <a href="https://www.amazon.fr/Terre-Sommi%C3%A8res-D%C3%A9tachant-Absorbant-D%C3%A9shydratation/dp/B0DKJLBCX8?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1FHRBM4J327NB&dib=eyJ2IjoiMSJ9.xxiu217x5kJvMZYyagmmoUTl8XGGEmkxCekNRoDC5TGEUUz9q6tIafr5Wi8tRWXEVj30x3XglgfXeZTKBbwkA3gC1i89ML2zokiB7wK7hBP7gj7URQ_1SFO7d1UHLSrPwnmcAnQRVfK7yjKN7VOwwpEnVUc9rY-5Ycul6Sr_gozN_sgzIMfgvtNia1JNx6b3J0LmEeI0LaCoP3sUSV3eQriHwHHOTPE3EexCoIBAkW8oFBFUtibmbT7LnLpiH3c91ZQf4Y3RKJb4qk5Gi3kPyNQ6FVEJqBWqIy7EbUn3p-U.OrmqFN9CAhQq4AV8jlbbfI-8BNsqW2O1MDYowNPw0tE&dib_tag=se&keywords=terre+de+sommieres+bio+5+kg&qid=1777235054&sprefix=terre+de+sommieres+bio+5+kg%2Caps%2C253&sr=8-7&linkCode=ll2&tag=zencheztoi-21&linkId=09b6390be9fa2034abac7ca424448307&ref_=as_li_ss_tl" class="amazon-link" target="_blank" rel="nofollow sponsored">Voir sur Amazon</a>
+            </div>
+        </div>
+
+        <section class="encyclo-box">
+            <h2>L&apos;Encyclop&eacute;die des Solutions Nomades</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 30px; color: #666;">Conservez tout le savoir des fondations et des 5 mondes en un seul clic.</p>
+            <div class="pills-row">
+                <a href="encyclopedie.html" class="pill p1">Vol 1 (PDF)</a>
+                <a href="encyclopedie.html" class="pill p2">Vol 2</a>
+                <a href="encyclopedie.html" class="pill p3">Vol 3</a>
+                <a href="encyclopedie.html" class="pill p4">Vol 4</a>
+                <a href="encyclopedie.html" class="pill p5">Vol 5</a>
+            </div>
+            <a href="encyclopedie.html" class="btn-integrale" style="display: inline-block; padding: 20px 50px; background: var(--brun-sombre); color: #fff; text-decoration: none; border-radius: 50px; font-weight: bold; font-variant: small-caps; font-size: 1.2em; transition: 0.3s;">Obtenir l&apos;Int&eacute;grale du Ma&icirc;tre</a>
+        </section>
+
+    </main>
+
+    <div id="disclaimer-bar">🔗 Liens affili&eacute;s Amazon : Partenaire Amazon, je r&eacute;alise un b&eacute;n&eacute;fice sur les achats remplissant les conditions requises.</div>
+
+    <footer>
+        <img src="assets/logo.png" class="footer-logo-small" alt="Zen Chez Toi">
+        <p style="font-style: italic; font-size: 1.1em; color: rgba(255,255,255,0.9); margin-bottom: 25px;">L&apos;Harmonie au Naturel.</p>
+        <ul class="footer-nav-compact">
+            <li><a href="mentions-legales.html">Mentions l&eacute;gales</a></li>
+            <li><a href="confidentialite.html">Confidentialit&eacute;</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+            <li><a href="livre-or.html">Livre d&apos;Or</a></li>
+        </ul>
+        <p style="font-size: 0.8em; opacity: 0.5;">&copy; 2026 Zen Chez Toi &bull; L&apos;Harmonie au Naturel.</p>
+    </footer>
+
+</body>
+</html>

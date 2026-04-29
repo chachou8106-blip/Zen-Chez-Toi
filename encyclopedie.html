@@ -3,138 +3,227 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>L'Encyclopédie des Solutions Nomades - Zen Chez Toi</title>
+    <title>L'Encyclopédie Nomade – Zen Chez Toi</title>
 
     <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
     <meta name="p:domain_verify" content="549770272775"/>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_CLIENT_ID" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRV5YNRL57"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-JRV5YNRL57');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7501098246029504" crossorigin="anonymous"></script>
     
-    <meta name="description" content="Les 5 volumes de l'Encyclopédie des Solutions Nomades : Maison, Jardin, Corps, Bien-être et Ésotérisme.">
+    <meta name="description" content="Pénétrez dans la Grande Bibliothèque. Découvrez l'Encyclopédie des Solutions Nomades et ses grimoires alchimiques.">
     <link rel="icon" type="image/png" href="assets/logo.png">
 
     <style>
         :root {
-            --bg-sable: #f5f2ec; --blanc: #ffffff; --brun-sombre: #2b2622; --or-zen: #a67b51;
-            --maison: #6a7f8f; --jardin: #7b9074; --corps: #cca8a0; --bienetre: #d4a259; --eso: #826a8f;
+            /* Univers de l'Encyclopédie (Fondations sombres) */
+            --bg-biblio: #161211; 
+            --texte-biblio: #e8e3d3;
+            --brun-sombre: #2b2622; 
+            --or-zen: #a67b51;
+            --or-brillant: #d4af37;
+            
+            /* Couleurs Magiques des 5 Mondes */
+            --maison: #6a7f8f; 
+            --jardin: #7b9074; 
+            --corps: #cca8a0; 
+            --bienetre: #d4a259; 
+            --eso: #826a8f;
         }
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.6; overflow-x: hidden; }
+        
+        /* THEME SOMBRE UNIQUE */
+        body { 
+            font-family: 'Georgia', serif; 
+            background-color: var(--bg-biblio); 
+            color: var(--texte-biblio); 
+            line-height: 1.8; 
+            overflow-x: hidden; 
+        }
 
-        /* HEADER & BADGE PINTEREST ZEN (Design Officiel) */
-        header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 1000; }
+        /* --- HEADER --- */
+        header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; border-bottom: 1px solid rgba(166, 123, 81, 0.2); background: linear-gradient(rgba(22,18,17,0.8), transparent); }
         .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
-        .logo-area { display: flex; align-items: center; gap: 25px; }
-        .logo img { max-height: 90px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); }
         
-        .pinterest-badge { 
-            display: inline-flex; align-items: center; justify-content: center; 
-            width: 32px; height: 32px; border: 1px solid rgba(255,255,255,0.4); 
-            border-radius: 50%; color: #ffffff; text-decoration: none; 
-            font-family: 'Georgia', serif; font-style: italic; font-size: 1.1rem;
-            transition: all 0.4s ease; background: rgba(255,255,255,0.1); backdrop-filter: blur(2px);
-        }
-        .pinterest-badge:hover { background: var(--or-zen); border-color: var(--or-zen); transform: rotate(15deg) scale(1.1); box-shadow: 0 4px 15px rgba(166, 123, 81, 0.3); }
+        /* LOGO AURA INTERACTIVE (Off par défaut) */
+        .logo { display: inline-block; text-decoration: none; }
+        .logo img { max-height: 90px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2)); transition: 0.5s ease; }
+        .logo:hover img { filter: drop-shadow(0 0 25px #ffffff) drop-shadow(0 0 10px #ffffff); transform: scale(1.03); }
 
-        nav ul { list-style: none; display: flex; gap: 30px; align-items: center; }
+        .header-right { display: flex; align-items: center; gap: 40px; }
+        nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
         nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
-        nav a:hover { color: var(--or-zen); }
+        nav a:hover { color: var(--or-brillant); text-shadow: 0 0 10px var(--or-zen); }
 
-        /* HERO PLEINE PAGE (100vh) */
-        .hero {
-            height: 100vh;
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/hero-accueil.jpg') center/cover no-repeat;
-            display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff;
+        .dropdown { position: relative; display: inline-block; padding: 15px 0; cursor: pointer; }
+        .dropdown-content { 
+            display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); 
+            background-color: var(--bg-biblio); min-width: 180px; box-shadow: 0px 10px 20px rgba(0,0,0,0.8); 
+            z-index: 2100; border-radius: 4px; overflow: hidden; border: 1px solid var(--or-zen);
         }
-        .hero h1 { font-size: 3.2em; font-weight: normal; letter-spacing: 4px; text-shadow: 0 2px 10px rgba(0,0,0,0.5); font-variant: small-caps; line-height: 1.2; max-width: 900px; }
-        .hero p { font-size: 1.4em; font-style: italic; margin-top: 20px; text-shadow: 0 2px 5px rgba(0,0,0,0.5); }
-
-        /* SÉPARATEURS */
-        .section-separator { text-align: center; margin: 80px 0 40px; }
-        .section-separator img { height: 40px; opacity: 0.6; margin-bottom: 20px; }
-        .section-title { font-size: 2.5em; font-weight: normal; font-variant: small-caps; letter-spacing: 2px; }
-
-        /* GRILLES DE JONCTION (Ancres) */
-        .container { max-width: 1400px; margin: 0 auto; padding: 0 20px 80px; }
-        .grid-5 { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; margin-bottom: 60px; }
-        .card { background: var(--blanc); border-radius: 12px; text-decoration: none; color: inherit; transition: 0.4s; box-shadow: 0 4px 15px rgba(0,0,0,0.05); overflow: hidden; display: flex; flex-direction: column; border-bottom: 5px solid transparent; }
-        .card:hover { transform: translateY(-10px); box-shadow: 0 12px 30px rgba(0,0,0,0.1); }
-        .card-img { height: 160px; background-size: cover; background-position: center; }
-        .card-content { padding: 25px 15px; text-align: center; flex-grow: 1; }
-        .card h3 { font-size: 1.1em; font-weight: normal; font-variant: small-caps; }
-
-        .card.maison { border-bottom-color: var(--maison); }
-        .card.jardin { border-bottom-color: var(--jardin); }
-        .card.corps { border-bottom-color: var(--corps); }
-        .card.bienetre { border-bottom-color: var(--bienetre); }
-        .card.eso { border-bottom-color: var(--eso); }
-
-        /* DESIGN DES VOLUMES AVEC IMAGES HERO */
-        .volume-card { 
-            background: var(--blanc); border-radius: 12px; margin-bottom: 80px; 
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05); overflow: hidden; 
-            display: flex; flex-direction: row; align-items: stretch;
+        .dropdown-content a { 
+            color: var(--texte-biblio) !important; padding: 12px 20px; text-decoration: none; 
+            display: block; font-size: 0.95em; text-shadow: none; font-weight: bold; 
+            border-bottom: 1px solid rgba(166, 123, 81, 0.2); text-align: center; font-variant: small-caps; 
         }
+        .dropdown-content a:hover { background-color: var(--or-zen); color: #fff !important; }
+        .dropdown:hover .dropdown-content { display: block; }
+
+        .pinterest-badge { 
+            display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; 
+            border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; 
+            font-family: 'Georgia', serif; font-style: italic; font-size: 1.2rem; transition: all 0.4s ease; 
+            background: rgba(255,255,255,0.1); backdrop-filter: blur(2px); padding-bottom: 3px;
+        }
+        .pinterest-badge:hover { background: var(--or-brillant); border-color: var(--or-brillant); transform: rotate(15deg) scale(1.1); color: #000; box-shadow: 0 0 15px var(--or-brillant); }
+
+        /* --- HERO BIBLIOTHÈQUE --- */
+        .hero { 
+            height: 75vh; min-height: 550px;
+            background: linear-gradient(rgba(22, 18, 17, 0.8), rgba(22, 18, 17, 0.6)), url('assets/hero-eso.jpg') center/cover no-repeat fixed; 
+            display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0 20px; 
+            border-bottom: 1px solid var(--or-zen); box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+        }
+        .hero h1 { 
+            font-size: 4.5em; font-weight: normal; margin-bottom: 20px; line-height: 1.1; font-variant: small-caps; max-width: 1000px; 
+            color: var(--or-brillant); text-shadow: 0 0 30px rgba(212, 175, 55, 0.4), 0 2px 5px rgba(0,0,0,1); 
+        }
+        .tagline { font-size: 1.8em; font-style: italic; opacity: 0.9; text-shadow: 0 2px 10px rgba(0,0,0,0.8); }
+
+        /* --- INTRODUCTION MAGIQUE --- */
+        .magie-intro {
+            text-align: center; margin: -50px auto 100px; background: #211a18;
+            padding: 60px 50px; position: relative; z-index: 10;
+            border: 1px solid var(--or-zen); outline: 1px solid var(--or-zen); outline-offset: 6px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6), inset 0 0 30px rgba(0,0,0,0.5); max-width: 900px;
+        }
+        .magie-intro h2 { font-size: 2.5em; font-variant: small-caps; color: var(--or-brillant); margin-bottom: 25px; text-shadow: 0 0 10px rgba(212, 175, 55, 0.2); }
+        .magie-intro p { font-size: 1.15em; line-height: 1.8; color: #d0c8b6; }
+
+        /* --- LES GRIMOIRES --- */
+        .manuscrits-container { max-width: 1200px; margin: 0 auto 120px; padding: 0 20px; }
         
-        .vol-img { width: 40%; background-size: cover; background-position: center; min-height: 400px; }
-        .vol-body { width: 60%; padding: 60px; border-left: 8px solid; }
-
-        .v-maison .vol-body { border-left-color: var(--maison); }
-        .v-jardin .vol-body { border-left-color: var(--jardin); }
-        .v-corps .vol-body { border-left-color: var(--corps); }
-        .v-bienetre .vol-body { border-left-color: var(--bienetre); }
-        .v-eso .vol-body { border-left-color: var(--eso); }
-
-        .vol-header h2 { font-size: 2.2em; font-variant: small-caps; margin-bottom: 10px; }
-        .v-maison h2 { color: var(--maison); }
-        .v-jardin h2 { color: var(--jardin); }
-        .v-corps h2 { color: var(--corps); }
-        .v-bienetre h2 { color: var(--bienetre); }
-        .v-eso h2 { color: var(--eso); }
-
-        .vol-header .price { font-size: 1.8em; font-weight: bold; color: var(--or-zen); margin: 20px 0; }
-        .vol-header .btn-buy { 
-            display: inline-block; padding: 12px 30px; background: var(--brun-sombre); 
-            color: #fff; text-decoration: none; border-radius: 50px; font-variant: small-caps; 
-            font-weight: bold; transition: 0.3s; 
+        .manuscrit-row { 
+            display: flex; align-items: center; gap: 60px; margin-bottom: 100px; 
+            padding-bottom: 50px; border-bottom: 1px dashed rgba(166, 123, 81, 0.3);
         }
-        .vol-header .btn-buy:hover { background: var(--or-zen); transform: translateY(-3px); }
-
-        .vol-content { margin-top: 30px; }
-        .vol-content p { font-size: 1.1em; font-style: italic; color: #555; margin-bottom: 25px; }
-        .vol-content h4 { font-variant: small-caps; font-size: 1.2em; margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+        .manuscrit-row:nth-child(even) { flex-direction: row-reverse; }
+        .manuscrit-row:last-child { border-bottom: none; margin-bottom: 60px; }
         
-        .product-list { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; list-style: none; }
-        .product-list li { position: relative; padding-left: 20px; font-size: 0.95em; }
-        .product-list li::before { content: "◈"; position: absolute; left: 0; color: var(--or-zen); opacity: 0.6; }
-        .product-list a { text-decoration: none; color: inherit; transition: 0.3s; }
-        .product-list a:hover { color: var(--or-zen); padding-left: 5px; }
-
-        /* SECTION PRIX FINALE */
-        .pricing-section { background-color: var(--blanc); padding: 80px 20px; text-align: center; border-radius: 20px; margin-top: 40px; }
-        .pricing-grid { display: flex; justify-content: center; gap: 60px; flex-wrap: wrap; margin-top: 40px; }
-        .amount { font-size: 2.5em; color: var(--or-zen); font-weight: bold; }
-
-        /* FOOTER (Officiel) */
-        footer { background: var(--brun-sombre); color: #fff; padding: 60px 20px; text-align: center; }
-        .footer-logo-small { height: 45px; margin-bottom: 25px; }
-        .footer-nav-compact { display: flex; gap: 25px; list-style: none; justify-content: center; margin-bottom: 25px; padding: 0; }
-        .footer-nav-compact a { color: #fff; text-decoration: none; font-size: 0.9em; opacity: 0.7; font-variant: small-caps; }
-
-        /* RESPONSIVE */
-        @media (max-width: 1000px) { 
-            .grid-5 { grid-template-columns: repeat(3, 1fr); }
-            .volume-card { flex-direction: column; }
-            .vol-img { width: 100%; height: 250px; min-height: 250px; }
-            .vol-body { width: 100%; padding: 40px 20px; border-left: none; border-top: 8px solid; }
-            .v-maison .vol-body { border-top-color: var(--maison); }
-            .v-jardin .vol-body { border-top-color: var(--jardin); }
-            .v-corps .vol-body { border-top-color: var(--corps); }
-            .v-bienetre .vol-body { border-top-color: var(--bienetre); }
-            .v-eso .vol-body { border-top-color: var(--eso); }
+        .manuscrit-visuel { 
+            flex: 1; height: 450px; background-size: cover; 
+            background-position: center; position: relative; overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.2); outline: 1px solid transparent; outline-offset: 8px;
+            transition: 0.6s ease;
         }
-        @media (max-width: 600px) { 
-            .grid-5 { grid-template-columns: repeat(1, 1fr); }
-            .product-list { grid-template-columns: 1fr; } 
+        .manuscrit-visuel::after {
+            content: ''; position: absolute; inset: 0; 
+            background: radial-gradient(circle, transparent 40%, rgba(22,18,17,0.8) 100%);
+        }
+
+        .manuscrit-texte { flex: 1; padding: 20px 0; }
+        .manuscrit-texte h3 { font-size: 2.5em; font-variant: small-caps; margin-bottom: 20px; transition: 0.4s; }
+        .manuscrit-texte p { font-size: 1.15em; color: #bcaaa4; margin-bottom: 40px; font-style: italic; line-height: 1.9; }
+        
+        .btn-magique {
+            display: inline-block; padding: 15px 40px; font-variant: small-caps; letter-spacing: 1px;
+            font-weight: bold; text-decoration: none; transition: 0.4s; font-size: 1.1em;
+            background: rgba(255,255,255,0.02); position: relative; overflow: hidden;
+            border: 1px solid;
+        }
+
+        /* INJECTION DES COULEURS DES UNIVERS */
+        .row-maison h3 { color: var(--maison); text-shadow: 0 0 15px rgba(106, 127, 143, 0.3); }
+        .row-maison .btn-magique { color: var(--maison); border-color: var(--maison); }
+        .row-maison .btn-magique:hover { background: var(--maison); color: #fff; box-shadow: 0 0 20px rgba(106, 127, 143, 0.6); }
+        .row-maison:hover .manuscrit-visuel { border-color: var(--maison); outline-color: var(--maison); box-shadow: 0 0 35px rgba(106, 127, 143, 0.5); transform: scale(1.02); }
+
+        .row-jardin h3 { color: var(--jardin); text-shadow: 0 0 15px rgba(123, 144, 116, 0.3); }
+        .row-jardin .btn-magique { color: var(--jardin); border-color: var(--jardin); }
+        .row-jardin .btn-magique:hover { background: var(--jardin); color: #fff; box-shadow: 0 0 20px rgba(123, 144, 116, 0.6); }
+        .row-jardin:hover .manuscrit-visuel { border-color: var(--jardin); outline-color: var(--jardin); box-shadow: 0 0 35px rgba(123, 144, 116, 0.5); transform: scale(1.02); }
+
+        .row-corps h3 { color: var(--corps); text-shadow: 0 0 15px rgba(204, 168, 160, 0.3); }
+        .row-corps .btn-magique { color: var(--corps); border-color: var(--corps); }
+        .row-corps .btn-magique:hover { background: var(--corps); color: var(--bg-biblio); box-shadow: 0 0 20px rgba(204, 168, 160, 0.6); }
+        .row-corps:hover .manuscrit-visuel { border-color: var(--corps); outline-color: var(--corps); box-shadow: 0 0 35px rgba(204, 168, 160, 0.5); transform: scale(1.02); }
+
+        .row-bienetre h3 { color: var(--bienetre); text-shadow: 0 0 15px rgba(212, 162, 89, 0.3); }
+        .row-bienetre .btn-magique { color: var(--bienetre); border-color: var(--bienetre); }
+        .row-bienetre .btn-magique:hover { background: var(--bienetre); color: var(--bg-biblio); box-shadow: 0 0 20px rgba(212, 162, 89, 0.6); }
+        .row-bienetre:hover .manuscrit-visuel { border-color: var(--bienetre); outline-color: var(--bienetre); box-shadow: 0 0 35px rgba(212, 162, 89, 0.5); transform: scale(1.02); }
+
+        .row-eso h3 { color: var(--eso); text-shadow: 0 0 15px rgba(130, 106, 143, 0.3); }
+        .row-eso .btn-magique { color: var(--eso); border-color: var(--eso); }
+        .row-eso .btn-magique:hover { background: var(--eso); color: #fff; box-shadow: 0 0 20px rgba(130, 106, 143, 0.6); }
+        .row-eso:hover .manuscrit-visuel { border-color: var(--eso); outline-color: var(--eso); box-shadow: 0 0 35px rgba(130, 106, 143, 0.5); transform: scale(1.02); }
+
+        /* --- L'ÉCHANGE ALCHIMIQUE --- */
+        .offres-epurees { max-width: 1200px; margin: 0 auto 120px; padding: 0 20px; text-align: center; }
+        .offres-header { margin-bottom: 80px; }
+        .offres-header h2 { font-size: 3em; font-variant: small-caps; color: var(--or-brillant); margin-bottom: 10px; text-shadow: 0 0 15px rgba(212, 175, 55, 0.3); }
+        .offres-header p { font-style: italic; color: #bcaaa4; font-size: 1.3em; }
+
+        .offres-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 50px; }
+        
+        .offre-zen { 
+            background: rgba(255,255,255,0.02); padding: 50px 30px; 
+            border: 1px solid rgba(166, 123, 81, 0.3); transition: 0.4s;
+            position: relative; display: flex; flex-direction: column;
+            box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+        }
+        .offre-zen:hover { border-color: var(--or-brillant); transform: translateY(-10px); background: rgba(166, 123, 81, 0.05); box-shadow: 0 15px 40px rgba(0,0,0,0.5), inset 0 0 20px rgba(212, 175, 55, 0.1); }
+        
+        .offre-zen.integrale { 
+            background: rgba(166, 123, 81, 0.08); border: 1px solid var(--or-brillant); 
+            outline: 1px solid var(--or-brillant); outline-offset: 4px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); 
+        }
+        .offre-zen.integrale:hover { box-shadow: 0 20px 50px rgba(212, 175, 55, 0.2); }
+        
+        .badge-sacre {
+            position: absolute; top: -15px; left: 50%; transform: translateX(-50%);
+            background: var(--or-brillant); color: var(--bg-biblio); padding: 5px 25px; 
+            font-variant: small-caps; font-weight: bold; font-size: 0.9em; letter-spacing: 2px;
+            box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+        }
+
+        .offre-name { font-size: 1.8em; font-variant: small-caps; margin-bottom: 10px; color: var(--texte-biblio); }
+        .offre-price { font-size: 3.5em; font-weight: normal; color: var(--or-brillant); margin-bottom: 20px; display: block; font-family: sans-serif; letter-spacing: -2px; text-shadow: 0 0 15px rgba(212, 175, 55, 0.2);}
+        .offre-desc { font-style: italic; font-size: 1.05em; color: #bcaaa4; margin-bottom: 40px; flex-grow: 1; }
+        
+        .btn-gold-outline {
+            display: inline-block; padding: 15px 40px; background: transparent; color: var(--or-brillant);
+            border: 1px solid var(--or-brillant); font-variant: small-caps; 
+            font-weight: bold; text-decoration: none; transition: 0.4s; font-size: 1.1em; width: 100%;
+        }
+        .btn-gold-outline:hover { background: var(--or-brillant); color: var(--bg-biblio); box-shadow: 0 0 20px rgba(212, 175, 55, 0.4); }
+
+        /* --- FOOTER --- */
+        footer { background: #0c0908; color: #fff; padding: 80px 20px; text-align: center; border-top: 1px solid rgba(166, 123, 81, 0.3); }
+        .footer-logo img { height: 60px; filter: invert(1) grayscale(1) brightness(1.5) opacity(0.6); transition: 0.5s; margin-bottom: 30px; }
+        .footer-logo:hover img { filter: invert(1) grayscale(1) brightness(2.5) opacity(1) drop-shadow(0 0 15px #fff); }
+        .footer-nav-compact { display: flex; gap: 30px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; }
+        .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.6; font-variant: small-caps; transition: 0.3s; }
+        .footer-nav-compact a:hover { opacity: 1; color: var(--or-brillant); text-shadow: 0 0 8px var(--or-brillant); }
+
+        #disclaimer-bar { background: #000000; color: rgba(255,255,255,0.3); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
+
+        /* CORRECTION RESPONSIVE (MOULE VALIDÉ) */
+        @media (max-width: 900px) {
+            .manuscrit-row, .manuscrit-row:nth-child(even) { flex-direction: column; gap: 40px; text-align: center; }
+            .manuscrit-visuel { width: 100%; height: 300px; outline-offset: 4px; }
+            .magie-intro { padding: 40px 20px; margin-top: -30px; outline-offset: 4px; }
+        }
+        @media (max-width: 768px) {
+            .nav-container { flex-direction: column; gap: 20px; }
+            /* Protection du Hero Mobile */
+            .hero { padding-top: 300px !important; justify-content: flex-start !important; height: auto !important; padding-bottom: 60px; }
+            .hero h1 { font-size: 3em; }
         }
     </style>
 </head>
@@ -142,207 +231,145 @@
 
     <header>
         <div class="nav-container">
-            <div class="logo-area">
-                <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
-                <a href="https://www.pinterest.com/VOTRE_PROFIL" class="pinterest-badge" target="_blank" title="Inspiration Zen">p</a>
+            <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
+            <div class="header-right">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li class="dropdown">
+                            <a href="grimoire.html">Grimoire</a>
+                            <div class="dropdown-content">
+                                <a href="maison.html">Vol 1 : Fondation</a>
+                                <a href="jardin.html">Vol 2 : Enracinement</a>
+                                <a href="corps.html">Vol 3 : Éclosion</a>
+                                <a href="bienetre.html">Vol 4 : Harmonie</a>
+                                <a href="eso.html">Vol 5 : Élévation</a>
+                            </div>
+                        </li>
+                        <li><a href="blog.html">Journal</a></li>
+                        <li><a href="a-propos.html">À Propos</a></li>
+                        <li><a href="livre-or.html">Livre d'Or</a></li>
+                    </ul>
+                </nav>
+                <a href="https://www.pinterest.com/VOTRE_PROFIL" class="pinterest-badge" target="_blank" title="Suivez nos inspirations">p</a>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="grimoire.html">Grimoire</a></li>
-                    <li><a href="blog.html">Journal</a></li>
-                    <li><a href="encyclopedie.html">Encyclopédie</a></li>
-                    <li><a href="livre-or.html">Livre d'Or</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
 
+    <section class="hero">
+        <h1>L'Encyclopédie Nomade</h1>
+        <p class="tagline">« La connaissance est le seul trésor qui s'accroît lorsqu'on le partage. »</p>
+    </section>
+
     <main>
-        <section class="hero">
-            <h1>L'Encyclopédie des Solutions Nomades</h1>
-            <p>"La quintessence du savoir naturel, répartie en 5 tomes."</p>
+        
+        <section class="magie-intro">
+            <h2>La Grande Bibliothèque</h2>
+            <p>
+                Vous venez de franchir le seuil d'un lieu hors du temps. Ce que vous tenez virtuellement devant vous n'est pas une simple devanture. Il ne s'agit pas de produits, mais de <strong>Trésors de Savoir</strong>.<br><br>
+                Notre terre regorge de matières brutes et nobles qui, prises isolément, possèdent déjà de puissantes vertus. Mais c'est dans l'art de les associer que se révèle la véritable alchimie. Nos recueils nomades sont des manuscrits modernes. Déverrouillez ces grimoires, maîtrisez les éléments, et reprenez le pouvoir sur votre sanctuaire.
+            </p>
         </section>
 
-        <div style="max-width: 1400px; margin: 30px auto; text-align: center;">
-            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-YOUR_CLIENT_ID" data-ad-slot="YOUR_AD_SLOT" data-ad-format="auto" data-full-width-responsive="true"></ins>
-            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-        </div>
-
-        <div class="section-separator">
-            <img src="assets/logo.png" alt="Zen">
-            <h2 class="section-title">Parcourir l'Œuvre</h2>
-        </div>
-
-        <div class="container">
-            <div class="grid-5">
-                <a href="#vol1" class="card maison"><div class="card-img" style="background-image: url('assets/hero-maison.jpg');"></div><div class="card-content"><h3>Vol 1 : Fondations</h3></div></a>
-                <a href="#vol2" class="card jardin"><div class="card-img" style="background-image: url('assets/hero-jardin.jpg');"></div><div class="card-content"><h3>Vol 2 : Enracinement</h3></div></a>
-                <a href="#vol3" class="card corps"><div class="card-img" style="background-image: url('assets/hero-corps.jpg');"></div><div class="card-content"><h3>Vol 3 : Éclosion</h3></div></a>
-                <a href="#vol4" class="card bienetre"><div class="card-img" style="background-image: url('assets/hero-bienetre.jpg');"></div><div class="card-content"><h3>Vol 4 : Harmonie</h3></div></a>
-                <a href="#vol5" class="card eso"><div class="card-img" style="background-image: url('assets/hero-eso.jpg');"></div><div class="card-content"><h3>Vol 5 : Élévation</h3></div></a>
-            </div>
-
-            <div id="vol1" class="volume-card v-maison">
-                <div class="vol-img" style="background-image: url('assets/hero-maison.jpg');"></div>
-                <div class="vol-body">
-                    <div class="vol-header">
-                        <h2>Vol 1 : Les Fondations</h2>
-                        <p>Le Côté Maison</p>
-                        <div class="price">14.90 €</div>
-                        <a href="#" class="btn-buy">Acquérir ce Volume</a>
-                    </div>
-                    <div class="vol-content">
-                        <p>Dépolluez votre intérieur et maîtrisez l'art de l'entretien naturel. Les 10 essentiels pour une maison saine, sans produits toxiques.</p>
-                        <h4>Les 10 fiches maîtresses incluses :</h4>
-                        <ul class="product-list">
-                            <li><a href="bicarbonate-soude.html">Bicarbonate de Soude</a></li>
-                            <li><a href="vinaigre-blanc.html">Vinaigre Blanc</a></li>
-                            <li><a href="savon-noir.html">Savon Noir</a></li>
-                            <li><a href="percarbonate-soude.html">Percarbonate de Soude</a></li>
-                            <li><a href="cristaux-soude.html">Cristaux de Soude</a></li>
-                            <li><a href="acide-citrique.html">Acide Citrique</a></li>
-                            <li><a href="terre-sommieres.html">Terre de Sommières</a></li>
-                            <li><a href="blanc-de-meudon.html">Blanc de Meudon</a></li>
-                            <li><a href="cendres-bois.html">Lessive de Cendre</a></li>
-                            <li><a href="savon-marseille.html">Savon de Marseille</a></li>
-                        </ul>
-                    </div>
+        <section class="manuscrits-container">
+            
+            <div class="manuscrit-row row-maison" id="vol1">
+                <div class="manuscrit-visuel" style="background-image: url('assets/hero-maison.jpg');"></div>
+                <div class="manuscrit-texte">
+                    <h3>Vol 1 : Fondation</h3>
+                    <p>Le manuscrit de l'Âtre. Purifiez vos murs, domptez la matière et libérez votre foyer des ombres chimiques par la force des minéraux bruts. Retrouvez la science oubliée du nettoyage sain et authentique.</p>
+                    <a href="#offres" class="btn-magique">Consulter le Grimoire</a>
                 </div>
             </div>
 
-            <div id="vol2" class="volume-card v-jardin">
-                <div class="vol-img" style="background-image: url('assets/hero-jardin.jpg');"></div>
-                <div class="vol-body">
-                    <div class="vol-header">
-                        <h2>Vol 2 : L'Enracinement</h2>
-                        <p>Le Côté Jardin</p>
-                        <div class="price">14.90 €</div>
-                        <a href="#" class="btn-buy">Acquérir ce Volume</a>
-                    </div>
-                    <div class="vol-content">
-                        <p>Protégez vos plantes et nourrissez votre terre avec bienveillance. Les 10 remèdes ancestraux pour un jardin luxuriant.</p>
-                        <h4>Les 10 fiches maîtresses incluses :</h4>
-                        <ul class="product-list">
-                            <li><a href="huile-neem.html">Huile de Neem</a></li>
-                            <li><a href="huile-lin.html">Huile de Lin</a></li>
-                            <li><a href="terebenthine.html">Térébenthine</a></li>
-                            <li><a href="terre-diatomee.html">Terre de Diatomée</a></li>
-                            <li><a href="pierre-argile.html">Pierre d'Argile</a></li>
-                            <li><a href="argile-verte.html">Argile Verte</a></li>
-                            <li><a href="poudre-ortie.html">Poudre d'Ortie</a></li>
-                            <li><a href="cire-abeille.html">Cire d'Abeille</a></li>
-                            <li><a href="charbon-actif.html">Charbon Actif</a></li>
-                            <li><a href="ail.html">Ail</a></li>
-                        </ul>
-                    </div>
+            <div class="manuscrit-row row-jardin" id="vol2">
+                <div class="manuscrit-visuel" style="background-image: url('assets/hero-jardin.jpg');"></div>
+                <div class="manuscrit-texte">
+                    <h3>Vol 2 : Enracinement</h3>
+                    <p>Le recueil du vivant. Apprenez à murmurer aux racines, à repousser les nuisibles avec douceur et à cultiver un sanctuaire luxuriant sans jamais empoisonner le sol qui vous nourrit.</p>
+                    <a href="#offres" class="btn-magique">Consulter le Grimoire</a>
                 </div>
             </div>
 
-            <div id="vol3" class="volume-card v-corps">
-                <div class="vol-img" style="background-image: url('assets/hero-corps.jpg');"></div>
-                <div class="vol-body">
-                    <div class="vol-header">
-                        <h2>Vol 3 : L'Éclosion</h2>
-                        <p>Le Côté Corps</p>
-                        <div class="price">14.90 €</div>
-                        <a href="#" class="btn-buy">Acquérir ce Volume</a>
-                    </div>
-                    <div class="vol-content">
-                        <p>Révélez votre beauté brute. Les 10 trésors de la nature pour nourrir, purifier et réparer votre peau et vos cheveux.</p>
-                        <h4>Les 10 fiches maîtresses incluses :</h4>
-                        <ul class="product-list">
-                            <li><a href="aloe-vera.html">Aloe Vera</a></li>
-                            <li><a href="beurre-karite.html">Beurre de Karité</a></li>
-                            <li><a href="huile-coco.html">Huile de Coco</a></li>
-                            <li><a href="huile-amande-douce.html">Huile d'Amande Douce</a></li>
-                            <li><a href="huile-jojoba.html">Huile de Jojoba</a></li>
-                            <li><a href="huile-ricin.html">Huile de Ricin</a></li>
-                            <li><a href="pierre-alun.html">Pierre d'Alun</a></li>
-                            <li><a href="argile-blanche.html">Argile Blanche</a></li>
-                            <li><a href="glycerine-vegetale.html">Glycérine</a></li>
-                            <li><a href="savon-castille.html">Savon de Castille</a></li>
-                        </ul>
-                    </div>
+            <div class="manuscrit-row row-corps" id="vol3">
+                <div class="manuscrit-visuel" style="background-image: url('assets/hero-corps.jpg');"></div>
+                <div class="manuscrit-texte">
+                    <h3>Vol 3 : Éclosion</h3>
+                    <p>Le codex de l'enveloppe charnelle. Maîtrisez les onguents, les baumes et les argiles pour honorer et réparer le sanctuaire de votre âme. La vraie beauté naît de la pureté des éléments.</p>
+                    <a href="#offres" class="btn-magique">Consulter le Grimoire</a>
                 </div>
             </div>
 
-            <div id="vol4" class="volume-card v-bienetre">
-                <div class="vol-img" style="background-image: url('assets/hero-bienetre.jpg');"></div>
-                <div class="vol-body">
-                    <div class="vol-header">
-                        <h2>Vol 4 : L'Harmonie</h2>
-                        <p>Le Côté Bien-Être</p>
-                        <div class="price">14.90 €</div>
-                        <a href="#" class="btn-buy">Acquérir ce Volume</a>
-                    </div>
-                    <div class="vol-content">
-                        <p>Apaisez votre esprit et renforcez votre immunité. Les 10 alliés santé pour retrouver un équilibre intérieur profond.</p>
-                        <h4>Les 10 fiches maîtresses incluses :</h4>
-                        <ul class="product-list">
-                            <li><a href="tea-tree.html">Tea Tree</a></li>
-                            <li><a href="lavande-vraie.html">Lavande Vraie</a></li>
-                            <li><a href="menthe-poivree.html">Menthe Poivrée</a></li>
-                            <li><a href="eucalyptus-radiata.html">Eucalyptus</a></li>
-                            <li><a href="ravintsara.html">Ravintsara</a></li>
-                            <li><a href="gaultherie.html">Gaulthérie</a></li>
-                            <li><a href="helichryse.html">Hélichryse</a></li>
-                            <li><a href="essence-citron.html">Citron</a></li>
-                            <li><a href="ylang-ylang.html">Ylang-Ylang</a></li>
-                            <li><a href="miel.html">Miel</a></li>
-                        </ul>
-                    </div>
+            <div class="manuscrit-row row-bienetre" id="vol4">
+                <div class="manuscrit-visuel" style="background-image: url('assets/hero-bienetre.jpg');"></div>
+                <div class="manuscrit-texte">
+                    <h3>Vol 4 : Harmonie</h3>
+                    <p>Le livre des essences. Plongez dans la distillation des humeurs et apprenez à équilibrer vos fluides intérieurs par le souffle des plantes pour une sérénité profonde et durable.</p>
+                    <a href="#offres" class="btn-magique">Consulter le Grimoire</a>
                 </div>
             </div>
 
-            <div id="vol5" class="volume-card v-eso">
-                <div class="vol-img" style="background-image: url('assets/hero-eso.jpg');"></div>
-                <div class="vol-body">
-                    <div class="vol-header">
-                        <h2>Vol 5 : L'Élévation</h2>
-                        <p>Le Côté Ésotérisme</p>
-                        <div class="price">14.90 €</div>
-                        <a href="#" class="btn-buy">Acquérir ce Volume</a>
-                    </div>
-                    <div class="vol-content">
-                        <p>Connectez-vous à l'invisible et purifiez vos énergies. Les 10 supports mystiques de l'alchimiste moderne.</p>
-                        <h4>Les 10 fiches maîtresses incluses :</h4>
-                        <ul class="product-list">
-                            <li><a href="sauge-blanche.html">Sauge</a></li>
-                            <li><a href="palo-santo.html">Palo Santo</a></li>
-                            <li><a href="resine-oliban.html">Oliban</a></li>
-                            <li><a href="resine-myrrhe.html">Myrrhe</a></li>
-                            <li><a href="benjoin.html">Benjoin</a></li>
-                            <li><a href="sang-dragon.html">Sang de Dragon</a></li>
-                            <li><a href="sel-himalaya.html">Sel de l'Himalaya</a></li>
-                            <li><a href="rose.html">Rose</a></li>
-                            <li><a href="binchotan.html">Binchotan</a></li>
-                            <li><a href="cristal-roche.html">Élixir de Cristal</a></li>
-                        </ul>
-                    </div>
+            <div class="manuscrit-row row-eso" id="vol5">
+                <div class="manuscrit-visuel" style="background-image: url('assets/hero-eso.jpg');"></div>
+                <div class="manuscrit-texte">
+                    <h3>Vol 5 : Élévation</h3>
+                    <p>Le manuscrit de l'invisible. Maîtrisez les fumigations sacrées, la géométrie des ondes et la vibration des cristaux pour protéger votre aura et réenchanter la magie de votre quotidien.</p>
+                    <a href="#offres" class="btn-magique">Consulter le Grimoire</a>
                 </div>
             </div>
 
-            <section class="pricing-section">
-                <p style="font-style: italic; color: #666; margin-bottom: 15px;">Poursuivre la voie de l'Alchimiste</p>
-                <div class="pricing-grid">
-                    <div class="price-item"><h4>Le Pack Trio</h4><span class="amount">24.90 €</span></div>
-                    <div class="price-item"><h4>L'Intégrale</h4><span class="amount">39.90 €</span></div>
-                </div>
-            </section>
+        </section>
 
-        </div>
+        <section class="offres-epurees" id="offres">
+            <div class="offres-header">
+                <h2>Le Pacte de l'Alchimiste</h2>
+                <p>« Choisissez la clé qui ouvrira votre conscience. »</p>
+            </div>
+
+            <div class="offres-grid">
+                
+                <div class="offre-zen">
+                    <h3 class="offre-name">Un Manuscrit</h3>
+                    <span class="offre-price">14.90 €</span>
+                    <p class="offre-desc">Acquérez l'un de nos cinq Volumes nomades. Le savoir concentré d'un Monde, à étudier et à consulter où que vous soyez.</p>
+                    <a href="#" class="btn-gold-outline">Déverrouiller le Savoir</a>
+                </div>
+
+                <div class="offre-zen integrale">
+                    <span class="badge-sacre">Le Grand Œuvre</span>
+                    <h3 class="offre-name">L'Intégrale</h3>
+                    <span class="offre-price">39.90 €</span>
+                    <p class="offre-desc">La collection sacrée. Les cinq Mondes réunis en un seul grand recueil magistral. Devenez le gardien absolu de l'Harmonie au Naturel.</p>
+                    <a href="#" class="btn-gold-outline" style="background: var(--or-brillant); color: var(--bg-biblio);">Déverrouiller le Savoir</a>
+                </div>
+
+                <div class="offre-zen">
+                    <h3 class="offre-name">Le Pack Trio</h3>
+                    <span class="offre-price">24.90 €</span>
+                    <p class="offre-desc">Sélectionnez trois grimoires de votre choix. L'alliance parfaite pour initier une véritable transformation sur vos piliers de prédilection.</p>
+                    <a href="#" class="btn-gold-outline">Déverrouiller le Savoir</a>
+                </div>
+
+            </div>
+        </section>
+
     </main>
 
     <footer>
-        <img src="assets/logo.png" class="footer-logo-small" alt="Zen">
+        <a href="index.html" class="footer-logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
+        <p style="font-style: italic; font-size: 1.2em; color: #bcaaa4; max-width: 700px; margin: 0 auto 40px; line-height: 1.6;">
+            « Rien ne se perd, rien ne se crée, tout se transforme par la clarté de l'intention. »
+        </p>
         <ul class="footer-nav-compact">
-            <li><a href="mentions-legales.html">Mentions</a></li>
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
             <li><a href="confidentialite.html">Confidentialité</a></li>
             <li><a href="cookies.html">Cookies</a></li>
             <li><a href="livre-or.html">Livre d'Or</a></li>
         </ul>
-        <p style="font-size: 0.8em; opacity: 0.5;">&copy; 2026 Zen Chez Toi - L'Harmonie au Naturel</p>
+        <p style="font-size: 0.85em; opacity: 0.3;">&copy; 2026 Zen Chez Toi • L'Harmonie au Naturel.</p>
     </footer>
+
+    <div id="disclaimer-bar">🔗 Liens affiliés Amazon : Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.</div>
 
 </body>
 </html>

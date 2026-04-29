@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vitres éclatantes : nettoyer sans traces naturellement | Zen Chez Toi</title>
+    <title>Vitres Éclatantes : l'Alchimie de la Lumière Cristalline | Zen Chez Toi</title>
 
     <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
-    <meta name="p:domain_verify" content="549770272775"/>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRV5YNRL57"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -16,156 +15,250 @@
     </script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7501098246029504" crossorigin="anonymous"></script>
 
-    <meta name="description" content="Découvrez le bon geste et les recettes naturelles (eau et vinaigre) pour obtenir des vitres sans traces et illuminer votre maison.">
+    <meta name="description" content="Découvrez l'alchimie pour des vitres sans traces. Transmutez les sédiments avec des rituels naturels, du vinaigre blanc et des microfibres pour inonder votre maison de lumière.">
     <link rel="icon" type="image/png" href="assets/logo.png">
 
     <style>
         :root {
             --bg-sable: #f5f2ec; --blanc: #ffffff; --brun-sombre: #2b2622; --or-zen: #a67b51;
-            --maison: #6a7f8f; --maison-light: #e4e9ed;
+            --maison: #6a7f8f; --jardin: #7b9074; --corps: #cca8a0; --bienetre: #d4a259; --eso: #826a8f;
+            
+            /* THÈME MAISON ACTIVÉ */
+            --theme-article: var(--maison);
         }
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.8; overflow-x: hidden; }
 
-        header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 1000; }
+        /* --- HEADER & NAVIGATION --- */
+        header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; }
         .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
-        .logo img { max-height: 90px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); }
-        .pinterest-badge { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; font-family: 'Georgia', serif; font-style: italic; font-size: 1.1rem; transition: 0.4s ease; background: rgba(255,255,255,0.1); backdrop-filter: blur(2px); }
-        .pinterest-badge:hover { background: var(--or-zen); border-color: var(--or-zen); transform: rotate(15deg) scale(1.1); }
-        nav ul { list-style: none; display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
-        nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
-        nav a:hover { color: var(--maison); }
-
-        .hero-article {
-            height: 60vh;
-            background: linear-gradient(rgba(24,18,14,0.5), rgba(24,18,14,0.6)), url('assets/hero-maison.jpg') center/cover no-repeat;
-            display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px;
+        
+        /* AURA LOGO HEADER */
+        .logo { display: inline-block; text-decoration: none; transition: 0.4s ease; }
+        .logo img { max-height: 90px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2)); transition: 0.5s ease; }
+        .logo:hover img { 
+            filter: drop-shadow(0 0 25px var(--theme-article)) drop-shadow(0 0 10px var(--theme-article)); 
+            transform: scale(1.05); 
         }
-        .article-meta { font-variant: small-caps; letter-spacing: 2px; color: var(--maison); margin-bottom: 15px; font-weight: bold; text-shadow: 0 1px 3px rgba(0,0,0,0.8); }
-        .hero-article h1 { font-size: 3em; font-weight: normal; max-width: 900px; line-height: 1.2; text-shadow: 0 2px 5px rgba(0,0,0,0.6); }
 
-        .article-container { max-width: 800px; margin: -50px auto 60px; background: var(--blanc); padding: 60px; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.05); position: relative; z-index: 10; }
-        .article-container h2 { font-size: 1.8em; color: var(--maison); margin: 40px 0 20px; font-weight: normal; font-variant: small-caps; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-        .article-container p { font-size: 1.1em; color: #444; margin-bottom: 25px; text-align: justify; }
-        .article-container ul { margin: 0 0 25px 40px; font-size: 1.1em; color: #444; }
-        .article-container li { margin-bottom: 10px; }
-        .quote-block { border-left: 4px solid var(--maison); padding: 20px 30px; background: var(--maison-light); font-style: italic; font-size: 1.15em; color: #555; margin: 40px 0; border-radius: 0 12px 12px 0; }
+        .header-right { display: flex; align-items: center; gap: 40px; }
+        nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
+        nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
+        nav a:hover { color: var(--theme-article); text-shadow: 0 0 10px var(--theme-article); }
 
-        .product-highlight { display: flex; align-items: center; gap: 30px; padding: 30px; border: 1px dashed var(--maison); border-radius: 12px; background: #fdfdfc; margin: 40px 0; }
-        .product-highlight img { width: 120px; height: 120px; object-fit: cover; border-radius: 8px; }
-        .product-text h4 { font-size: 1.2em; color: var(--maison); margin-bottom: 10px; }
-        .product-text p { font-size: 0.95em; margin-bottom: 15px; }
-        .btn-amazon { display: inline-block; padding: 10px 25px; background: var(--maison); color: #fff; text-decoration: none; border-radius: 50px; font-weight: bold; font-variant: small-caps; transition: 0.3s; }
-        .btn-amazon:hover { background: var(--brun-sombre); }
+        .dropdown { position: relative; display: inline-block; padding: 15px 0; cursor: pointer; }
+        .dropdown-content { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background-color: var(--brun-sombre); min-width: 200px; box-shadow: 0px 10px 25px rgba(0,0,0,0.3); z-index: 2100; border-radius: 8px; border: 1px solid var(--theme-article); overflow: hidden; }
+        .dropdown-content a { color: rgba(255,255,255,0.8) !important; padding: 12px 20px; display: block; font-size: 0.95em; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1); font-variant: small-caps; }
+        .dropdown-content a:hover { background-color: var(--theme-article); color: #fff !important; }
+        .dropdown:hover .dropdown-content { display: block; }
 
-        .ad-container { margin: 40px 0; text-align: center; }
-        #disclaimer-bar { background: var(--brun-sombre); color: rgba(255,255,255,0.7); font-size: 0.8rem; text-align: center; padding: 12px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        /* AURA PINTEREST */
+        .pinterest-badge { display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; font-style: italic; background: rgba(255,255,255,0.1); transition: 0.4s; }
+        .pinterest-badge:hover { 
+            background: var(--theme-article); 
+            border-color: var(--theme-article); 
+            transform: rotate(15deg) scale(1.1);
+            box-shadow: 0 0 20px var(--theme-article);
+        }
 
-        footer { background: var(--brun-sombre); color: #fff; padding: 60px 20px; text-align: center; }
-        .footer-logo-small { height: 45px; margin-bottom: 25px; }
-        .footer-nav-compact { display: flex; gap: 25px; list-style: none; justify-content: center; margin-bottom: 25px; padding: 0; flex-wrap: wrap; }
-        .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.7; font-variant: small-caps; transition: 0.3s; }
-        .footer-nav-compact a:hover { opacity: 1; color: var(--or-zen); }
+        /* --- HERO ARTICLE --- */
+        .hero { height: 75vh; min-height: 500px; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('assets/hero-maison.jpg') center/cover no-repeat fixed; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; }
+        .vol-phrase { font-size: clamp(1.4em, 3vw, 2em); font-variant: small-caps; letter-spacing: 5px; font-weight: bold; margin-bottom: 15px; color: var(--theme-article); text-shadow: 0 4px 15px rgba(0,0,0,0.9), 0 2px 5px rgba(0,0,0,1); -webkit-text-stroke: 0.5px rgba(255,255,255,0.8); }
+        .hero h1 { font-size: clamp(2.5em, 6vw, 4.5em); font-weight: normal; margin-bottom: 20px; line-height: 1.2; font-variant: small-caps; text-shadow: 0 4px 15px rgba(0,0,0,0.8); max-width: 1000px; }
+        .tagline { font-size: clamp(1.1em, 2vw, 1.5em); font-style: italic; opacity: 0.9; max-width: 800px; line-height: 1.5; }
 
-        @media (max-width: 768px) { .article-container { padding: 30px; margin-top: -20px; } .hero-article h1 { font-size: 2.2em; } .product-highlight { flex-direction: column; text-align: center; } .nav-container { flex-direction: column; gap: 15px; } nav ul { justify-content: center; } }
+        /* --- CORPS DU TEXTE --- */
+        .blog-container { max-width: 800px; margin: 60px auto 60px; padding: 0 20px; font-size: 1.15rem; color: #333; }
+        .blog-container h2 { font-size: 2.2em; color: var(--theme-article); margin: 60px 0 25px; font-variant: small-caps; text-align: center; font-weight: normal; }
+        .blog-container h3 { font-size: 1.5em; color: var(--brun-sombre); margin: 50px 0 15px; font-variant: small-caps; border-bottom: 1px solid rgba(106, 127, 143, 0.4); padding-bottom: 8px; }
+        .blog-container p { margin-bottom: 25px; text-align: justify; }
+        .blog-container ul, .blog-container ol { margin-bottom: 25px; padding-left: 20px; }
+        .blog-container li { margin-bottom: 10px; }
+
+        /* --- NOTES & ENCADRÉS --- */
+        .alchimiste-note { background: var(--blanc); border-left: 4px solid var(--theme-article); padding: 30px; margin: 50px 0; border-radius: 0 20px 20px 0; box-shadow: 0 15px 40px rgba(0,0,0,0.05); }
+        .note-titre { display: block; font-variant: small-caps; color: var(--theme-article); font-weight: bold; font-size: 1.3em; margin-bottom: 15px; }
+
+        .encadre-hero { margin: 80px 0; border-radius: 30px; overflow: hidden; border: 5px solid var(--theme-article); box-shadow: 0 20px 50px rgba(0,0,0,0.2); }
+        .cadre-fond { padding: 60px 40px; text-align: center; background-size: cover; background-position: center; background-attachment: fixed; }
+        .encadre-titre { font-size: 2.5em; font-variant: small-caps; color: var(--brun-sombre); -webkit-text-stroke: 0.5px #ffffff; margin-bottom: 10px; text-shadow: 0 4px 15px rgba(0,0,0,0.6); letter-spacing: 1px; }
+        .encadre-sous-titre { font-style: italic; font-size: 1.1em; color: #fff; margin-bottom: 30px; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
+        
+        .liste-selectionnable { display: flex; flex-direction: column; gap: 15px; max-width: 650px; margin: 0 auto; }
+        
+        /* AURA LIENS PRODUITS */
+        .item-link { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; padding: 18px 35px; display: flex; align-items: center; justify-content: space-between; text-decoration: none; color: #fff; transition: 0.4s ease; }
+        .item-link:hover { 
+            transform: scale(1.03); 
+            border-color: #fff; 
+            background: var(--theme-article); 
+            box-shadow: 0 0 25px var(--theme-article);
+        }
+        .item-link span { font-weight: bold; font-variant: small-caps; font-size: 1.1em; text-align: left; }
+        .item-link span small { display: block; font-size: 0.75em; font-family: 'Georgia', serif; font-style: italic; opacity: 0.8; text-transform: none; font-weight: normal; }
+
+        /* --- ENCYCLOPÉDIE --- */
+        .encyclopedie-section { background-color: var(--blanc); padding: 80px 20px; text-align: center; border-top: 1px solid #eee; }
+        .pills-row { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 30px; }
+        .pill { padding: 10px 20px; border: 2px solid; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 0.9em; text-decoration: none; background: #fff; transition: 0.3s; }
+        .p1 { border-color: var(--maison); color: var(--maison); } .p1:hover { background: var(--maison); color: #fff; box-shadow: 0 0 15px var(--maison); }
+        .p2 { border-color: var(--jardin); color: var(--jardin); } .p2:hover { background: var(--jardin); color: #fff; box-shadow: 0 0 15px var(--jardin); }
+        .p3 { border-color: var(--corps); color: var(--corps); } .p3:hover { background: var(--corps); color: #fff; box-shadow: 0 0 15px var(--corps); }
+        .p4 { border-color: var(--bienetre); color: var(--bienetre); } .p4:hover { background: var(--bienetre); color: #fff; box-shadow: 0 0 15px var(--bienetre); }
+        .p5 { border-color: var(--eso); color: var(--eso); } .p5:hover { background: var(--eso); color: #fff; box-shadow: 0 0 15px var(--eso); }
+
+        /* --- FOOTER --- */
+        footer { background: var(--brun-sombre); color: #fff; padding: 80px 20px; text-align: center; }
+        
+        /* AURA LOGO FOOTER */
+        .footer-logo { display: inline-block; transition: 0.4s ease; margin-bottom: 30px; }
+        .footer-logo img { height: 60px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.4)); transition: 0.5s; }
+        .footer-logo:hover img { 
+            filter: drop-shadow(0 0 25px var(--theme-article)) drop-shadow(0 0 10px var(--theme-article)); 
+            transform: scale(1.05); 
+        }
+        
+        .footer-nav-compact { display: flex; gap: 30px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; flex-wrap: wrap; }
+        .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.6; font-variant: small-caps; transition: 0.3s; }
+        .footer-nav-compact a:hover { opacity: 1; color: var(--theme-article); text-shadow: 0 0 10px var(--theme-article); }
+
+        #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
+
+        @media (max-width: 768px) {
+            header { padding: 15px 0; }
+            .logo img { max-height: 70px; } 
+            .nav-container { flex-direction: column; gap: 15px; padding: 10px 20px; }
+            .header-right { flex-direction: column; gap: 15px; align-items: center; width: 100%; }
+            nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; }
+            .hero { padding-top: 350px !important; justify-content: flex-start !important; height: auto !important; padding-bottom: 60px; }
+            .hero h1 { font-size: 2.2em; }
+            .item-link { flex-direction: column; text-align: center; padding: 15px; }
+            .item-link span { text-align: center; }
+            .encadre-titre { font-size: 2em; }
+        }
     </style>
 </head>
 <body>
 
     <header>
         <div class="nav-container">
-            <div class="logo-area">
-                <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
-                <a href="https://www.pinterest.com/" class="pinterest-badge" target="_blank">p</a>
+            <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
+            <div class="header-right">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li class="dropdown">
+                            <a href="grimoire.html">Grimoire</a>
+                            <div class="dropdown-content">
+                                <a href="maison.html">Vol 1 : Fondation</a>
+                                <a href="jardin.html">Vol 2 : Enracinement</a>
+                                <a href="corps.html">Vol 3 : Éclosion</a>
+                                <a href="bienetre.html">Vol 4 : Harmonie</a>
+                                <a href="eso.html">Vol 5 : Élévation</a>
+                            </div>
+                        </li>
+                        <li><a href="blog.html">Journal</a></li>
+                        <li><a href="encyclopedie.html">Encyclopédie</a></li>
+                        <li><a href="livre-or.html">Livre d'Or</a></li>
+                    </ul>
+                </nav>
+                <a href="https://www.pinterest.fr/zencheztoi/" class="pinterest-badge" target="_blank" title="Inspirations pour la Maison">p</a>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="jardin.html">Jardin</a></li>
-                    <li><a href="maison.html">Maison</a></li>
-                    <li><a href="bienetre.html">Bien-être</a></li>
-                    <li><a href="corps.html">Corps</a></li>
-                    <li><a href="eso.html">Ésotérisme</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
 
-    <main>
-        <section class="hero-article">
-            <div class="article-meta">Maison • Entretien naturel</div>
-            <h1>Vitres éclatantes : retrouver la lumière sans traces</h1>
+    <section class="hero">
+        <p class="vol-phrase">Volume 1 : Fondation • Chronique</p>
+        <h1>Vitres Éclatantes : l'Alchimie de la Lumière Cristalline</h1>
+        <p class="tagline">« Les fenêtres sont les yeux de votre sanctuaire. Laissez pénétrer l'énergie solaire en purifiant vos vitres sans opacité ni produits chimiques. »</p>
+    </section>
+
+    <main class="blog-container">
+
+        <p>Dans l'alchimie de la demeure, la clarté des fenêtres dicte la vibration de tout l'espace. Des vitres propres changent immédiatement la fréquence d’une pièce : la lumière entre sans entrave, l’espace paraît plus vaste et l'air semble soudain plus léger. Pourtant, la quête de la transparence absolue se solde souvent par des traces frustrantes. La bonne nouvelle ? Il n'est nullement nécessaire d'inonder votre foyer de sprays synthétiques onéreux pour retrouver l'éclat cristallin.</p>
+
+        <div class="alchimiste-note">
+            <span class="note-titre">Le Secret de la Transmutation Céleste</span>
+            <p>Le plus grand ennemi de la vitre sans trace n'est pas la saleté, mais l'astre solaire lui-même. Évitez de nettoyer en plein soleil ou lors de fortes chaleurs : l'évaporation trop rapide de l'eau fige les minéraux sur le verre avant que vous n'ayez pu les essuyer. L'alchimiste opère toujours à la fraîcheur de l'aube ou dans la douceur d'une journée nuageuse.</p>
+        </div>
+
+        <h2>La Maîtrise du Geste Purificateur</h2>
+        <p>Les artisans de la clarté savent que le produit importe moins que la chorégraphie du geste. Dépoussiérer, dissoudre, racler puis sceller : c'est la danse de la transparence.</p>
+        <ul>
+            <li><strong>Le Dépoussiérage à Sec :</strong> Passez d'abord un chiffon sec sur le cadre et la vitre. Mouiller la poussière crée de la boue, première source de traces disgracieuses.</li>
+            <li><strong>L'Onction de l'Élixir :</strong> Vaporisez votre mélange simple (moitié eau, moitié vinaigre blanc). Cet acide doux dissout les graisses sans laisser de film résiduel.</li>
+            <li><strong>Le Flux Descendant :</strong> Passez la raclette de haut en bas ou en forme de "S". Le secret ? Essuyez la lame de caoutchouc avec un chiffon sec après <em>chaque</em> bande.</li>
+            <li><strong>Le Sceau de Finition :</strong> Utilisez une microfibre pure, réservée à cet usage, pour absorber l'humidité sur les bordures et parfaire les angles.</li>
+        </ul>
+
+        <section class="encadre-hero">
+            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/hero-maison.jpg');">
+                <h3 class="encadre-titre">L'Arsenal de Cristal</h3>
+                <p class="encadre-sous-titre">Les instruments essentiels pour capturer l'eau et révéler la lumière de votre temple.</p>
+                <div class="liste-selectionnable">
+                    <a href="https://www.amazon.fr/Vaporisateur-bouteille-coiffure-plantes-nettoyage/dp/B0CGDPG6R2?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3G31UT1ZLSEXP&dib=eyJ2IjoiMSJ9.1LpJX80apY4r0NvZvQKwE_m7IEb_vSfkprxbxOipM2cE210wu80i8cURtPjKEMb04U-bbL8Vlg9OEYemiZsL3bjz-T7DjlUhkRC6fou-Fzrg7oxQq7fnvTowSDv7f94bPB4lVwhT0jf6-X5qdtF7oSn4JjMGM1YLbIvKbi-4XqFiEx3BrxMkDrZtkcQ1jJyt8hDC7qymhUicIMuIv9jackw47pNIisNwS1kiRQaanI8cHeOw_wJkD7B0-CsTZotREiMBFy0JdwxKlpg0VdOUQ4TBfYz5AhF6KJ_aNHMYsrc.eBeNrgSDUjVLBriha_eEJ5OKzPjmvlB6xp-Bw-paZMU&dib_tag=se&keywords=vaporisateur+500ml&qid=1776785056&sprefix=vaporisateur+500ml%2Caps%2C237&sr=8-37&linkCode=ll2&tag=zencheztoi-21&linkId=24e8e75d49b9c50252c9cca8755f8002&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="item-link">
+                        <span>Le Réceptacle d'Élixir <small>Vaporisateur 500ml réutilisable pour votre préparation maison (Eau + Vinaigre)</small></span> <span>→</span>
+                    </a>
+                    <a href="https://www.amazon.fr/DSproducts%C2%AE-Chiffons-Microfibre-Nettoyage-Lingette/dp/B0CSZ5MXH8?crid=1WOGC45Y4JR7A&dib=eyJ2IjoiMSJ9.SeO-M3hoDFIvl6JfKR_be86505VkKC2mnQKbzPKnLgEtkqD5gp7cRZmGCJx_4AVwU5xjwITxv5rj58m-6PjifJTwOv9oOU_CGVsC4G_6ZZk7Ejt88NZXDCKusc1aK7PkYi3ysUqd_NNGQht555okU5c5wEUN08Ypuw3vtvF8R_q1aUCOOYH1eYtFVVfDH9jqmwsmRt0TlK3iz1V-h1qtAjKhezXaIj7RjhbAL7cRVuM88mDt8swlAzHMTi_J8E41b6XyqOFxwK4eaHqqFjUWBqmNOFGXnUukHkjYY49nRZg.tGQw2apQ1gbDofPAENXE9cry9fLXqBj9x0dYSNxNtes&dib_tag=se&keywords=microfibre+ecologique&qid=1776767700&sprefix=microfibre+ecologoque%2Caps%2C234&sr=8-5&linkCode=ll2&tag=zencheztoi-21&linkId=00cf46048070c22d2f824e7b39b0a89e&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="item-link">
+                        <span>Le Capteur de Sédiments <small>Chiffons microfibres carbone pour des finitions impeccables sans peluches</small></span> <span>→</span>
+                    </a>
+                    <a href="https://www.amazon.fr/CLEANmaxx-Nettoyant-Nettoyer-nettoyant-Microfibre/dp/B0BVWCTRL4?crid=3JMZFLYSJDBIX&dib=eyJ2IjoiMSJ9.pJds7UngOvYpknyk4724WcJ9_ARx417OBMxYBvfrDuiQuIl3xrt6XvZJZQ_9hWcAioWP_amedId29MNR8biWpa18QSZixLbF6krcS0gKH0qTVpB55Ga7K1YUkvtBXL2hKWecooLh4fLLBh7ROQ4KvNQjqeauI-ZzkxVeXBMsggiCk-mkMv95F7exTP9M_R9JiDUQ7-SKGjH7bAfpnKllWMs73QRPBSE7Lj6FkPQpIjg7_IVEYHk65WVqS0HNyKK9lUSaORZBwUnRtrR__FRLvBuvsWEND2yz5HNipGwqV0U.fQJ-_0aDlEnYOCM3MDG-QeZiJGaQZi43OPYYDVd-NTM&dib_tag=se&keywords=kit%2Bnettoyage%2Bvitre&qid=1776785120&sprefix=kit%2Bvitres%2Caps%2C249&sr=8-1-spons&aref=iZ6H5Ofskc&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&linkCode=ll2&tag=zencheztoi-21&linkId=21974fd15d1f87bd97b46f61b311c832&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="item-link">
+                        <span>L'Extracteur de Flux <small>Kit électrique CLEANmaxx pour aspirer instantanément l'eau des grandes baies</small></span> <span>→</span>
+                    </a>
+                </div>
+            </div>
         </section>
 
-        <article class="article-container">
-            <p><strong>Des vitres propres changent immédiatement l’ambiance d’une pièce.</strong> La lumière entre mieux, l’espace paraît plus net, et toute la maison semble plus fraîche. Bonne nouvelle : il existe des méthodes simples et naturelles pour éviter les fameuses traces sans acheter de sprays chimiques onéreux.</p>
+        <h2>Restaurer la Clarté du Foyer</h2>
+        <p>L'entretien des vitres ne devrait jamais être une lutte contre la matière. En combinant la simplicité du vinaigre, la précision d'une microfibre dédiée et le respect des cycles solaires, vous transformez une corvée en un rituel d'illumination. Ouvrez grand vos fenêtres, laissez l'air pur circuler, et profitez de la lumière non filtrée qui inonde désormais le cœur de votre maison.</p>
 
-            <div class="quote-block">
-                Évitez de nettoyer en plein soleil ou juste avant une pluie : la chaleur et l'évaporation trop rapide favorisent les traces, même avec un excellent produit.
-            </div>
-
-            <h2>Le bon geste pour éviter les traces</h2>
-            <p>Les professionnels insistent autant sur la technique que sur le produit lui-même. Dépoussiérer, mouiller, racler, puis essuyer les bords avec une microfibre fait souvent plus de différence que changer de nettoyant.</p>
-            <ul>
-                <li><strong>Dépoussiérez :</strong> Passez rapidement une microfibre sèche sur le cadre et la vitre.</li>
-                <li><strong>Vaporisez :</strong> Appliquez votre mélange maison (eau + vinaigre blanc).</li>
-                <li><strong>Raclez :</strong> Passez la raclette de haut en bas ou en "S", en essuyant la lame avec un chiffon sec après chaque bande.</li>
-                <li><strong>Finitions :</strong> Utilisez une microfibre propre pour les bords et le bas de la vitre.</li>
-            </ul>
-
-            <h2>Outils utiles pour des vitres nettes</h2>
-
-            <div class="product-highlight">
-                <img src="assets/logo.png" alt="Vaporisateur spray" style="background:#eee;">
-                <div class="product-text">
-                    <h4>Vaporisateur pour nettoyant maison</h4>
-                    <p>Une bouteille vaporisateur réutilisable pour préparer votre recette vinaigre + eau, à garder sous l’évier pour les vitres et miroirs.</p>
-                    <a href="https://www.amazon.fr/Vaporisateur-bouteille-coiffure-plantes-nettoyage/dp/B0CGDPG6R2?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3G31UT1ZLSEXP&dib=eyJ2IjoiMSJ9.1LpJX80apY4r0NvZvQKwE_m7IEb_vSfkprxbxOipM2cE210wu80i8cURtPjKEMb04U-bbL8Vlg9OEYemiZsL3bjz-T7DjlUhkRC6fou-Fzrg7oxQq7fnvTowSDv7f94bPB4lVwhT0jf6-X5qdtF7oSn4JjMGM1YLbIvKbi-4XqFiEx3BrxMkDrZtkcQ1jJyt8hDC7qymhUicIMuIv9jackw47pNIisNwS1kiRQaanI8cHeOw_wJkD7B0-CsTZotREiMBFy0JdwxKlpg0VdOUQ4TBfYz5AhF6KJ_aNHMYsrc.eBeNrgSDUjVLBriha_eEJ5OKzPjmvlB6xp-Bw-paZMU&dib_tag=se&keywords=vaporisateur+500ml&qid=1776785056&sprefix=vaporisateur+500ml%2Caps%2C237&sr=8-37&linkCode=ll2&tag=zencheztoi-21&linkId=24e8e75d49b9c50252c9cca8755f8002&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="btn-amazon">Voir sur Amazon</a>
+        <section class="encadre-hero">
+            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/hero-accueil.jpg');">
+                <h3 class="encadre-titre">Continuer la Fondation</h3>
+                <p class="encadre-sous-titre">Explorez d'autres rituels pour purifier et protéger votre temple domestique.</p>
+                <div class="liste-selectionnable">
+                    <a href="linge-frais.html" class="item-link">
+                        <span>L'Alchimie des Étoffes <small>Chronique : Retrouver un linge frais et purifié</small></span> <span>→</span>
+                    </a>
+                    <a href="degraissant-cuisine.html" class="item-link">
+                        <span>L'Âtre Purifié <small>Chronique : Dégraissant naturel pour la cuisine</small></span> <span>→</span>
+                    </a>
+                    <a href="maison.html" class="item-link">
+                        <span>Le Volume 1 Complet <small>La Table des Matières du Grimoire de la Maison</small></span> <span>→</span>
+                    </a>
                 </div>
             </div>
+        </section>
 
-            <div class="product-highlight">
-                <img src="assets/logo.png" alt="Microfibres" style="background:#eee;">
-                <div class="product-text">
-                    <h4>Chiffons microfibres</h4>
-                    <p>Un lot à dédier exclusivement aux vitres et miroirs, pour essuyer les bordures sans pelucher et limiter drastiquement les traces.</p>
-                    <a href="https://www.amazon.fr/DSproducts%C2%AE-Chiffons-Microfibre-Nettoyage-Lingette/dp/B0CSZ5MXH8?crid=1WOGC45Y4JR7A&dib=eyJ2IjoiMSJ9.SeO-M3hoDFIvl6JfKR_be86505VkKC2mnQKbzPKnLgEtkqD5gp7cRZmGCJx_4AVwU5xjwITxv5rj58m-6PjifJTwOv9oOU_CGVsC4G_6ZZk7Ejt88NZXDCKusc1aK7PkYi3ysUqd_NNGQht555okU5c5wEUN08Ypuw3vtvF8R_q1aUCOOYH1eYtFVVfDH9jqmwsmRt0TlK3iz1V-h1qtAjKhezXaIj7RjhbAL7cRVuM88mDt8swlAzHMTi_J8E41b6XyqOFxwK4eaHqqFjUWBqmNOFGXnUukHkjYY49nRZg.tGQw2apQ1gbDofPAENXE9cry9fLXqBj9x0dYSNxNtes&dib_tag=se&keywords=microfibre+ecologique&qid=1776767700&sprefix=microfibre+ecologoque%2Caps%2C234&sr=8-5&linkCode=ll2&tag=zencheztoi-21&linkId=00cf46048070c22d2f824e7b39b0a89e&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="btn-amazon">Voir sur Amazon</a>
-                </div>
-            </div>
-
-            <div class="product-highlight">
-                <img src="assets/logo.png" alt="Kit Vitres" style="background:#eee;">
-                <div class="product-text">
-                    <h4>Kit électrique de nettoyage</h4>
-                    <p>Une véritable aide au quotidien si vous avez beaucoup de surfaces vitrées ou de grandes baies. Il aspire l'eau sale instantanément.</p>
-                    <a href="https://www.amazon.fr/CLEANmaxx-Nettoyant-Nettoyer-nettoyant-Microfibre/dp/B0BVWCTRL4?crid=3JMZFLYSJDBIX&dib=eyJ2IjoiMSJ9.pJds7UngOvYpknyk4724WcJ9_ARx417OBMxYBvfrDuiQuIl3xrt6XvZJZQ_9hWcAioWP_amedId29MNR8biWpa18QSZixLbF6krcS0gKH0qTVpB55Ga7K1YUkvtBXL2hKWecooLh4fLLBh7ROQ4KvNQjqeauI-ZzkxVeXBMsggiCk-mkMv95F7exTP9M_R9JiDUQ7-SKGjH7bAfpnKllWMs73QRPBSE7Lj6FkPQpIjg7_IVEYHk65WVqS0HNyKK9lUSaORZBwUnRtrR__FRLvBuvsWEND2yz5HNipGwqV0U.fQJ-_0aDlEnYOCM3MDG-QeZiJGaQZi43OPYYDVd-NTM&dib_tag=se&keywords=kit%2Bnettoyage%2Bvitre&qid=1776785120&sprefix=kit%2Bvitres%2Caps%2C249&sr=8-1-spons&aref=iZ6H5Ofskc&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&linkCode=ll2&tag=zencheztoi-21&linkId=21974fd15d1f87bd97b46f61b311c832&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="btn-amazon">Voir sur Amazon</a>
-                </div>
-            </div>
-
-            <div class="ad-container">
-                <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-7501098246029504" data-ad-slot="YOUR_AD_SLOT"></ins>
-            </div>
-        </article>
     </main>
 
-    <div id="disclaimer-bar">
-        🔗 Liens affiliés Amazon : En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.
-    </div>
+    <section class="encyclopedie-section" style="background-color: var(--blanc); padding: 80px 20px; text-align: center; border-top: 1px solid #eee;">
+        <h2 style="font-variant: small-caps; font-size: 2.2em; color: var(--brun-sombre); margin-bottom: 20px;">Emportez nos savoirs avec vous</h2>
+        <div class="pills-row">
+            <a href="encyclopedie.html#vol1" class="pill p1">Vol 1 : Fondation</a>
+            <a href="encyclopedie.html#vol2" class="pill p2">Vol 2 : Enracinement</a>
+            <a href="encyclopedie.html#vol3" class="pill p3">Vol 3 : Éclosion</a>
+            <a href="encyclopedie.html#vol4" class="pill p4">Vol 4 : Harmonie</a>
+            <a href="encyclopedie.html#vol5" class="pill p5">Vol 5 : Élévation</a>
+        </div>
+        <div style="margin-top: 40px; font-size: 1.2em; font-style: italic; color: var(--brun-sombre);">
+            Le Volume : <span style="color:var(--or-zen); font-weight:bold;">14.90€</span> — Pack Trio : <span style="color:var(--or-zen); font-weight:bold;">24.90€</span> — L'Intégrale : <span style="color:var(--or-zen); font-weight:bold;">39.90€</span>
+        </div>
+    </section>
 
     <footer>
-        <img src="assets/logo.png" class="footer-logo-small" alt="Zen">
+        <a href="index.html" class="footer-logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
         <ul class="footer-nav-compact">
             <li><a href="mentions-legales.html">Mentions légales</a></li>
             <li><a href="confidentialite.html">Confidentialité</a></li>
             <li><a href="cookies.html">Cookies</a></li>
+            <li><a href="a-propos.html">À Propos</a></li>
             <li><a href="livre-or.html">Livre d'Or</a></li>
         </ul>
-        <p style="font-size: 0.8em; opacity: 0.5;">&copy; 2026 Zen Chez Toi • Maison, Confort & Harmonie</p>
+        <p style="font-size: 0.85em; opacity: 0.4;">&copy; 2026 Zen Chez Toi • L'Harmonie au Naturel.</p>
     </footer>
 
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
+    <div id="disclaimer-bar">🔗 Liens affiliés Amazon : Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises. Maison & Entretien : privilégiez toujours le test sur petite surface.</div>
+
 </body>
 </html>

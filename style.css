@@ -144,17 +144,54 @@ footer { background: var(--brun-sombre); color: #fff; padding: 60px 20px; text-a
 }
 
 @media (max-width: 768px) {
-    .nav-container { padding: 0 15px; flex-direction: column; gap: 15px; }
-    .logo img { max-height: 60px; }
-    nav ul { gap: 10px; flex-wrap: wrap; justify-content: center; }
+    ./* --- RESPONSIVE MOBILE ABSOLU --- */
+@media (max-width: 768px) {
+    /* On enlève les marges géantes et on centre tout */
+    .nav-container { 
+        flex-direction: column; 
+        gap: 15px; 
+        padding: 15px 20px; 
+    }
     
-    .hero { height: 60vh; min-height: 400px; }
+    /* Le menu passe à la ligne s'il n'y a plus de place */
+    nav ul { 
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 15px; 
+    }
+    
+    /* On empêche le bouton Pinterest de déborder */
+    .header-right { 
+        flex-direction: column; 
+        gap: 15px; 
+    }
+
+    /* On réduit la taille des titres pour éviter qu'ils cassent la largeur */
     .hero h1 { font-size: 2.2em; }
-    .tagline { font-size: 1.2em; }
+    .encadre-titre { font-size: 1.8em; line-height: 1.2; }
     
-    .histoire-section { padding: 40px 20px; margin-top: -40px; }
-    .histoire-section h2 { font-size: 2em; }
+    /* On gère les encadrés et on empile le texte et la flèche si besoin */
+    .histoire-section { margin-top: -40px; padding: 40px 20px; }
+    .encadre-hero { border-width: 3px; margin: 40px 0; }
+    .cadre-fond { padding: 40px 20px; }
     
-    .grid-5 { grid-template-columns: 1fr; }
-    .card.eso { grid-column: span 1; }
+    .item-link { 
+        flex-direction: column; 
+        text-align: center; 
+        gap: 10px; 
+        padding: 15px; 
+    }
+
+    /* On empêche le menu déroulant de déborder de l'écran */
+    .dropdown-content {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90vw; /* Prend 90% de l'écran mobile max */
+    }
+}
+
+/* Pour les écrans très petits (vieux smartphones) */
+@media (max-width: 400px) {
+    .hero h1 { font-size: 1.8em; }
+    .vol-phrase { font-size: 1.5em; }
 }

@@ -105,7 +105,6 @@
         .p4 { border-color: var(--bienetre); color: var(--bienetre); } .p4:hover { background: var(--bienetre); color: #fff; }
         .p5 { border-color: var(--eso); color: var(--eso); } .p5:hover { background: var(--eso); color: #fff; }
 
-        /* --- FOOTER --- */
         footer { background: var(--brun-sombre); color: #fff; padding: 80px 20px; text-align: center; }
         .footer-logo img { height: 60px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.4)); transition: 0.5s; margin-bottom: 30px; }
         .footer-logo:hover img { filter: drop-shadow(0 0 25px #ffffff); }
@@ -116,11 +115,17 @@
         #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
 
         @media (max-width: 768px) {
-            .nav-container { flex-direction: column; gap: 15px; padding: 15px 20px; }
+            /* On gagne de la place sur mobile */
+            header { padding: 15px 0; }
+            .logo img { max-height: 70px; } 
+            .nav-container { flex-direction: column; gap: 15px; padding: 10px 20px; }
             .header-right { flex-direction: column; gap: 15px; align-items: center; width: 100%; }
             nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; }
-            .hero { padding-top: 300px !important; justify-content: flex-start !important; height: auto !important; padding-bottom: 60px; }
+            
+            /* ZONE DE SÉCURITÉ AUGMENTÉE */
+            .hero { padding-top: 350px !important; justify-content: flex-start !important; height: auto !important; padding-bottom: 60px; }
             .hero h1 { font-size: 2.2em; }
+            
             .item-link { flex-direction: column; text-align: center; padding: 15px; }
             .item-link span { text-align: center; }
             .encadre-titre { font-size: 2em; }
@@ -149,6 +154,7 @@
                         <li><a href="blog.html">Journal</a></li>
                         <li><a href="encyclopedie.html">Encyclopédie</a></li>
                         <li><a href="a-propos.html">À Propos</a></li>
+                        <li><a href="livre-or.html">Livre d'Or</a></li>
                     </ul>
                 </nav>
                 <a href="https://www.pinterest.com/VOTRE_PROFIL" class="pinterest-badge" target="_blank">p</a>
@@ -260,9 +266,9 @@
                 <h3 class="encadre-titre">Pour aller plus loin en douceur</h3>
                 <p class="encadre-sous-titre">Continuer l'Initiation.</p>
                 <div class="liste-selectionnable">
-                    <a href="sommeil-profond-gestes-doux.html" class="item-link"><span>Le Sommeil Profond <small>Gestes doux pour vos nuits</small></span> <span>→</span></a>
-                    <a href="energie-vitalite-petits-gestes.html" class="item-link"><span>Relancer sa Vitalité <small>Petites habitudes pour retrouver l'élan</small></span> <span>→</span></a>
-                    <a href="corps-tensions-musculaires-huile-cbd.html" class="item-link"><span>Relâcher les Tensions <small>Libérer le corps physique</small></span> <span>→</span></a>
+                    <a href="sommeil-profond.html" class="item-link"><span>Le Sommeil Profond <small>Chronique : Retrouver ses nuits</small></span> <span>→</span></a>
+                    <a href="energie-vitalite.html" class="item-link"><span>Relancer sa Vitalité <small>Chronique : Le flux de la sève</small></span> <span>→</span></a>
+                    <a href="tensions-musculaires.html" class="item-link"><span>Relâcher les Tensions <small>Chronique : Libérer le temple</small></span> <span>→</span></a>
                 </div>
             </div>
         </section>
@@ -285,12 +291,12 @@
 
     <footer>
         <a href="index.html" class="footer-logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
-        <ul class="footer-nav-compact">
-            <li><a href="mentions-legales.html">Mentions légales</a></li>
-            <li><a href="confidentialite.html">Confidentialité</a></li>
-            <li><a href="cookies.html">Cookies</a></li>
-            <li><a href="a-propos.html">À Propos</a></li>
-            <li><a href="livre-or.html">Livre d'Or</a></li>
+        <ul style="display:flex; justify-content:center; gap:25px; list-style:none; margin-bottom: 20px; flex-wrap: wrap;">
+            <li><a href="mentions-legales.html" style="color:#fff; text-decoration:none; opacity:0.6; font-variant:small-caps;">Mentions légales</a></li>
+            <li><a href="confidentialite.html" style="color:#fff; text-decoration:none; opacity:0.6; font-variant:small-caps;">Confidentialité</a></li>
+            <li><a href="cookies.html" style="color:#fff; text-decoration:none; opacity:0.6; font-variant:small-caps;">Cookies</a></li>
+            <li><a href="a-propos.html" style="color:#fff; text-decoration:none; opacity:0.6; font-variant:small-caps;">À Propos</a></li>
+            <li><a href="livre-or.html" style="color:#fff; text-decoration:none; opacity:0.6; font-variant:small-caps;">Livre d'Or</a></li>
         </ul>
         <p style="font-size: 0.85em; opacity: 0.4;">&copy; 2026 Zen Chez Toi • L'Harmonie au Naturel.</p>
     </footer>

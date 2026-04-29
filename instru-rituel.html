@@ -1,478 +1,276 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instruments Chantants : l'Alchimie de la Résonance Sacrée | Zen Chez Toi</title>
 
-  <title>Instruments chantants &amp; rituels doux | Zen Chez Toi</title>
-  <meta name="description" content="Bols tibétains, tambours chamaniques, tongue drum et handpan : quatre instruments chantants pour accompagner tes rituels, méditations et moments de recentrage.">
+    <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRV5YNRL57"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-JRV5YNRL57');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7501098246029504" crossorigin="anonymous"></script>
 
-  <!-- Vérification & tracking -->
-  <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
+    <meta name="description" content="Découvrez l'alchimie du son sacré. Bols tibétains, tambours chamaniques et handpans pour purifier votre espace, élever vos vibrations et soutenir vos rituels.">
+    <link rel="icon" type="image/png" href="assets/logo.png">
 
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRV5YNRL57"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-JRV5YNRL57');
-  </script>
+    <style>
+        :root {
+            --bg-sable: #f5f2ec; --blanc: #ffffff; --brun-sombre: #2b2622; --or-zen: #a67b51;
+            --maison: #6a7f8f; --jardin: #7b9074; --corps: #cca8a0; --bienetre: #d4a259; --eso: #826a8f;
+            
+            /* THÈME ÉSOTÉRISME ACTIVÉ */
+            --theme-article: var(--eso);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.8; overflow-x: hidden; }
 
-  <!-- Google AdSense global -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js?client=ca-pub-7501098246029504"
-          crossorigin="anonymous"></script>
+        /* --- HEADER & NAVIGATION --- */
+        header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; }
+        .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
+        
+        /* AURA LOGO HEADER */
+        .logo { display: inline-block; text-decoration: none; transition: 0.4s ease; }
+        .logo img { max-height: 90px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2)); transition: 0.5s ease; }
+        .logo:hover img { 
+            filter: drop-shadow(0 0 25px var(--theme-article)) drop-shadow(0 0 10px var(--theme-article)); 
+            transform: scale(1.05); 
+        }
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+        .header-right { display: flex; align-items: center; gap: 40px; }
+        nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
+        nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
+        nav a:hover { color: var(--theme-article); }
 
-  <style>
-    :root {
-      --bg: #0f111a;
-      --text: #f5f3ff;
-      --muted: #b2b0c8;
-      --accent: #a98bff;
-      --dark: #060712;
-      --surface: rgba(18, 20, 35, 0.96);
-    }
+        .dropdown { position: relative; display: inline-block; padding: 15px 0; cursor: pointer; }
+        .dropdown-content { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background-color: var(--brun-sombre); min-width: 200px; box-shadow: 0px 10px 25px rgba(0,0,0,0.3); z-index: 2100; border-radius: 8px; border: 1px solid var(--theme-article); overflow: hidden; }
+        .dropdown-content a { color: rgba(255,255,255,0.8) !important; padding: 12px 20px; display: block; font-size: 0.95em; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1); font-variant: small-caps; }
+        .dropdown-content a:hover { background-color: var(--theme-article); color: #fff !important; }
+        .dropdown:hover .dropdown-content { display: block; }
 
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: Inter, sans-serif;
-      color: var(--text);
-      background: var(--bg);
-      line-height: 1.7;
-      padding-bottom: 60px;
-    }
-    a { text-decoration: none; color: inherit; transition: 0.3s; }
+        /* AURA PINTEREST */
+        .pinterest-badge { display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; font-style: italic; background: rgba(255,255,255,0.1); transition: 0.4s; }
+        .pinterest-badge:hover { 
+            background: var(--theme-article); 
+            border-color: var(--theme-article); 
+            transform: rotate(15deg) scale(1.1);
+            box-shadow: 0 0 20px var(--theme-article);
+        }
 
-    /* NAV */
-    .main-nav {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(15,17,26,0.96);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-    }
-    .nav-wrap {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 15px;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-    .nav-wrap a {
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      font-weight: 700;
-      color: var(--muted);
-      letter-spacing: 0.1em;
-      padding: 5px 8px;
-    }
-    .nav-wrap a:hover,
-    .nav-wrap a.active {
-      color: var(--accent);
-    }
-    .dot {
-      color: rgba(255,255,255,0.15);
-      font-size: 0.7rem;
-    }
+        /* --- HERO ARTICLE --- */
+        .hero { height: 75vh; min-height: 500px; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('assets/hero-eso.jpg') center/cover no-repeat fixed; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; }
+        .vol-phrase { font-size: clamp(1.4em, 3vw, 2em); font-variant: small-caps; letter-spacing: 5px; font-weight: bold; margin-bottom: 15px; color: var(--theme-article); text-shadow: 0 4px 15px rgba(0,0,0,0.9), 0 2px 5px rgba(0,0,0,1); -webkit-text-stroke: 0.5px rgba(255,255,255,0.8); }
+        .hero h1 { font-size: clamp(2.5em, 6vw, 4.5em); font-weight: normal; margin-bottom: 20px; line-height: 1.2; font-variant: small-caps; text-shadow: 0 4px 15px rgba(0,0,0,0.8); max-width: 1000px; }
+        .tagline { font-size: clamp(1.1em, 2vw, 1.5em); font-style: italic; opacity: 0.9; max-width: 800px; line-height: 1.5; }
 
-    /* HERO */
-    .hero {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 70px 20px 30px;
-      text-align: center;
-    }
-    .hero-kicker {
-      text-transform: uppercase;
-      letter-spacing: 0.18em;
-      font-size: 0.8rem;
-      color: var(--muted);
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-    h1 {
-      font-family: "Cormorant Garamond", serif;
-      font-size: clamp(2.5rem, 5vw, 3.3rem);
-      margin: 0 0 10px;
-    }
-    .hero-sub {
-      max-width: 640px;
-      margin: 0 auto;
-      color: var(--muted);
-      font-size: 1rem;
-    }
+        /* --- CORPS DU TEXTE --- */
+        .blog-container { max-width: 800px; margin: 60px auto 60px; padding: 0 20px; font-size: 1.15rem; color: #333; }
+        .blog-container h2 { font-size: 2.2em; color: var(--theme-article); margin: 60px 0 25px; font-variant: small-caps; text-align: center; font-weight: normal; }
+        .blog-container h3 { font-size: 1.5em; color: var(--brun-sombre); margin: 50px 0 15px; font-variant: small-caps; border-bottom: 1px solid rgba(130, 106, 143, 0.4); padding-bottom: 8px; }
+        .blog-container p { margin-bottom: 25px; text-align: justify; }
+        .blog-container ul, .blog-container ol { margin-bottom: 25px; padding-left: 20px; }
+        .blog-container li { margin-bottom: 10px; }
 
-    main {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 0 20px 80px;
-    }
-    h2 {
-      font-family: "Cormorant Garamond", serif;
-      font-size: 1.9rem;
-      margin: 40px 0 12px;
-    }
-    h3 {
-      font-family: "Cormorant Garamond", serif;
-      font-size: 1.3rem;
-      margin: 26px 0 8px;
-    }
-    p { margin: 0 0 12px; }
+        /* --- NOTES & ENCADRÉS --- */
+        .alchimiste-note { background: var(--blanc); border-left: 4px solid var(--theme-article); padding: 30px; margin: 50px 0; border-radius: 0 20px 20px 0; box-shadow: 0 15px 40px rgba(0,0,0,0.05); }
+        .note-titre { display: block; font-variant: small-caps; color: var(--theme-article); font-weight: bold; font-size: 1.3em; margin-bottom: 15px; }
 
-    .box {
-      background: var(--surface);
-      border-radius: 20px;
-      padding: 18px 18px 16px;
-      margin: 22px 0;
-      box-shadow: 0 14px 40px rgba(0,0,0,0.5);
-      border: 1px solid rgba(255,255,255,0.06);
-    }
-    .box-title {
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
-      color: var(--muted);
-      font-weight: 700;
-      margin-bottom: 6px;
-    }
-    ul {
-      padding-left: 18px;
-      margin: 0 0 12px;
-    }
-    li { margin-bottom: 6px; }
+        .encadre-hero { margin: 80px 0; border-radius: 30px; overflow: hidden; border: 5px solid var(--theme-article); box-shadow: 0 20px 50px rgba(0,0,0,0.2); }
+        .cadre-fond { padding: 60px 40px; text-align: center; background-size: cover; background-position: center; background-attachment: fixed; }
+        .encadre-titre { font-size: 2.5em; font-variant: small-caps; color: var(--brun-sombre); -webkit-text-stroke: 0.5px #ffffff; margin-bottom: 10px; text-shadow: 0 4px 15px rgba(0,0,0,0.6); letter-spacing: 1px; }
+        .encadre-sous-titre { font-style: italic; font-size: 1.1em; color: #fff; margin-bottom: 30px; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
+        
+        .liste-selectionnable { display: flex; flex-direction: column; gap: 15px; max-width: 650px; margin: 0 auto; }
+        
+        /* AURA LIENS PRODUITS */
+        .item-link { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; padding: 18px 35px; display: flex; align-items: center; justify-content: space-between; text-decoration: none; color: #fff; transition: 0.4s ease; }
+        .item-link:hover { 
+            transform: scale(1.03); 
+            border-color: #fff; 
+            background: var(--theme-article); 
+            box-shadow: 0 0 25px var(--theme-article);
+        }
+        .item-link span { font-weight: bold; font-variant: small-caps; font-size: 1.1em; text-align: left; }
+        .item-link span small { display: block; font-size: 0.75em; font-family: 'Georgia', serif; font-style: italic; opacity: 0.8; text-transform: none; font-weight: normal; }
 
-    /* PRODUITS */
-    .products-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
-      gap: 14px;
-      margin-top: 12px;
-    }
-    .product-card {
-      background: var(--surface);
-      border-radius: 18px;
-      padding: 16px;
-      box-shadow: 0 10px 32px rgba(0,0,0,0.45);
-      border: 1px solid rgba(255,255,255,0.06);
-    }
-    .product-card strong {
-      display: block;
-      margin-bottom: 6px;
-      font-family: "Cormorant Garamond", serif;
-      font-size: 1.2rem;
-    }
-    .product-card p {
-      font-size: 0.9rem;
-      color: var(--muted);
-    }
-    .product-card a {
-      display: inline-block;
-      margin-top: 8px;
-      color: var(--accent);
-      font-weight: 700;
-      font-size: 0.9rem;
-    }
+        /* --- ENCYCLOPÉDIE --- */
+        .encyclopedie-section { background-color: var(--blanc); padding: 80px 20px; text-align: center; border-top: 1px solid #eee; }
+        .pills-row { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 30px; }
+        .pill { padding: 10px 20px; border: 2px solid; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 0.9em; text-decoration: none; background: #fff; transition: 0.3s; }
+        .p1 { border-color: var(--maison); color: var(--maison); } .p1:hover { background: var(--maison); color: #fff; box-shadow: 0 0 15px var(--maison); }
+        .p2 { border-color: var(--jardin); color: var(--jardin); } .p2:hover { background: var(--jardin); color: #fff; box-shadow: 0 0 15px var(--jardin); }
+        .p3 { border-color: var(--corps); color: var(--corps); } .p3:hover { background: var(--corps); color: #fff; box-shadow: 0 0 15px var(--corps); }
+        .p4 { border-color: var(--bienetre); color: var(--bienetre); } .p4:hover { background: var(--bienetre); color: #fff; box-shadow: 0 0 15px var(--bienetre); }
+        .p5 { border-color: var(--eso); color: var(--eso); } .p5:hover { background: var(--eso); color: #fff; box-shadow: 0 0 15px var(--eso); }
 
-    .footer {
-      background: var(--dark);
-      color: #f5f3ff;
-      padding: 70px 20px 80px;
-      text-align: center;
-      margin-top: 20px;
-    }
-    .footer-title {
-      font-family: "Cormorant Garamond", serif;
-      font-size: 2.6rem;
-    }
-    .footer-title em {
-      color: var(--accent);
-      font-style: italic;
-    }
-    .footer-links {
-      margin-top: 18px;
-      opacity: 0.6;
-      display: flex;
-      justify-content: center;
-      gap: 18px;
-      flex-wrap: wrap;
-      font-size: 0.9rem;
-    }
+        /* --- FOOTER --- */
+        footer { background: var(--brun-sombre); color: #fff; padding: 80px 20px; text-align: center; }
+        
+        /* AURA LOGO FOOTER */
+        .footer-logo { display: inline-block; transition: 0.4s ease; margin-bottom: 30px; }
+        .footer-logo img { height: 60px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.4)); transition: 0.5s; }
+        .footer-logo:hover img { 
+            filter: drop-shadow(0 0 25px var(--theme-article)) drop-shadow(0 0 10px var(--theme-article)); 
+            transform: scale(1.05); 
+        }
+        
+        .footer-nav-compact { display: flex; gap: 30px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; flex-wrap: wrap; }
+        .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.6; font-variant: small-caps; transition: 0.3s; }
+        .footer-nav-compact a:hover { opacity: 1; color: var(--theme-article); text-shadow: 0 0 10px var(--theme-article); }
 
-    #disclaimer-bar {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background: rgba(0,0,0,0.95);
-      color: rgba(255,255,255,0.6);
-      font-size: 0.75rem;
-      text-align: center;
-      padding: 10px;
-      z-index: 1000;
-      border-top: 1px solid rgba(255,255,255,0.1);
-    }
+        #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
 
-    @media (max-width: 640px) {
-      .hero { padding-top: 50px; }
-      h2 { font-size: 1.7rem; }
-    }
-  </style>
+        @media (max-width: 768px) {
+            header { padding: 15px 0; }
+            .logo img { max-height: 70px; } 
+            .nav-container { flex-direction: column; gap: 15px; padding: 10px 20px; }
+            .header-right { flex-direction: column; gap: 15px; align-items: center; width: 100%; }
+            nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; }
+            .hero { padding-top: 350px !important; justify-content: flex-start !important; height: auto !important; padding-bottom: 60px; }
+            .hero h1 { font-size: 2.2em; }
+            .item-link { flex-direction: column; text-align: center; padding: 15px; }
+            .item-link span { text-align: center; }
+            .encadre-titre { font-size: 2em; }
+        }
+    </style>
 </head>
 <body>
 
-  <nav class="main-nav" aria-label="Navigation principale">
-    <div class="nav-wrap">
-      <a href="index.html">Accueil</a><span class="dot">•</span>
-      <a href="eso.html" class="active">Ésotérisme</a><span class="dot">•</span>
-      <a href="jardin.html">Jardin</a><span class="dot">•</span>
-      <a href="maison.html">Maison</a><span class="dot">•</span>
-      <a href="bienetre.html">Bien-être</a><span class="dot">•</span>
-      <a href="corps.html">Corps</a><span class="dot">•</span>
-      <a href="blog.html">Blog</a>
-    </div>
-  </nav>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
+            <div class="header-right">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li class="dropdown">
+                            <a href="grimoire.html">Grimoire</a>
+                            <div class="dropdown-content">
+                                <a href="maison.html">Vol 1 : Fondation</a>
+                                <a href="jardin.html">Vol 2 : Enracinement</a>
+                                <a href="corps.html">Vol 3 : Éclosion</a>
+                                <a href="bienetre.html">Vol 4 : Harmonie</a>
+                                <a href="eso.html">Vol 5 : Élévation</a>
+                            </div>
+                        </li>
+                        <li><a href="blog.html">Journal</a></li>
+                        <li><a href="encyclopedie.html">Encyclopédie</a></li>
+                        <li><a href="livre-or.html">Livre d'Or</a></li>
+                    </ul>
+                </nav>
+                <a href="https://www.pinterest.fr/zencheztoi/" class="pinterest-badge" target="_blank" title="Inspirations Ésotériques">p</a>
+            </div>
+        </div>
+    </header>
 
-  <header class="hero">
-    <div class="hero-kicker">Ésotérisme · Son</div>
-    <h1>Instruments chantants &amp; rituels doux</h1>
-    <p class="hero-sub">
-      Bols tibétains, tambours chamaniques, tongue drum, handpan… Quatre façons de travailler avec le son pour purifier l’espace, soutenir la méditation et marquer tes rituels.[web:1364][web:1367]
-    </p>
-  </header>
+    <section class="hero">
+        <p class="vol-phrase">Volume 5 : Élévation • Chronique</p>
+        <h1>Instruments Chantants : l'Alchimie de la Résonance Sacrée</h1>
+        <p class="tagline">« Le son est la matière invisible qui sculpte l'espace. Apprends à purifier ton sanctuaire et élever ta fréquence par le chant des métaux nobles et des peaux tendues. »</p>
+    </section>
 
-  <main>
-    <section>
-      <h2>Pourquoi utiliser des instruments chantants&nbsp;?</h2>
-      <p>
-        De nombreux praticiens et écoles de sonothérapie utilisent les instruments chantants pour favoriser la relaxation, la méditation et un recentrage en douceur.[web:1367][web:1372]
-      </p>
-      <p>
-        Les vibrations et les rythmes peuvent t’aider à ouvrir et clôturer un espace rituel, purifier symboliquement un lieu, accompagner un tirage de cartes ou simplement marquer un moment pour toi.[web:1364][web:1368][web:1370]
-      </p>
+    <main class="blog-container">
 
-      <div class="box">
-        <div class="box-title">Quelques intentions possibles</div>
-        <ul>
-          <li>Préparer une pièce avant un tirage, une méditation ou une séance d’écriture.[web:1364][web:1368]</li>
-          <li>Créer un repère sonore pour commencer ou finir un rituel ou une journée.[web:1364][web:1372]</li>
-          <li>Accompagner un travail sur la respiration, la relaxation ou l’ancrage corporel.[web:1367][web:1370]</li>
+        <p>Dans l'art de l'Élévation, le silence absolu n'existe pas. Tout est vibration. Les praticiens et les alchimistes de l'âme savent depuis des millénaires que l'utilisation d'<strong>instruments chantants</strong> permet de modifier instantanément la densité énergétique d'une pièce. Bols tibétains, tambours chamaniques, tongue drums et handpans ne sont pas de simples instruments de musique : ce sont des diapasons cosmiques conçus pour réaccorder vos propres fréquences intérieures.</p>
+
+        <div class="alchimiste-note">
+            <span class="note-titre">La Science Vibratoire</span>
+            <p>La physique quantique rejoint ici la sagesse ancestrale : une vibration soutenue modifie la matière qu'elle traverse. Utiliser un instrument chantant permet de briser les stases énergétiques (stress, peurs, fatigue) accumulées dans l'espace. Le son agit comme un vent invisible qui balaie les sédiments vibratoires, préparant le terrain pour la méditation ou le tirage de cartes.</p>
+        </div>
+
+        <h2>Le Bol Tibétain : Purifier par l'Onde</h2>
+        <p>Forgés traditionnellement avec sept métaux représentant les sept planètes alchimiques, les bols chantants sont les maîtres de la purification. Leur chant continu génère des ondes qui apaisent le système nerveux et facilitent l'entrée en ondes Alpha (l'état de méditation profonde).</p>
+        <p><em>Rituel de l'Air :</em> Ouvrez une fenêtre. Frappez doucement le bol puis faites glisser le maillet sur sa crête. Marchez lentement dans la pièce, particulièrement dans les angles où l'énergie stagne, avec l'intention de chasser l'ombre vers la lumière extérieure.</p>
+
+        <h2>Le Tambour Chamanique : L'Ancrage Tellurique</h2>
+        <p>Le tambour est la voix de la Terre. Son rythme sourd et régulier reproduit le battement du cœur originel. Il est l'instrument de l'enracinement par excellence. Battre le tambour permet d'ouvrir un espace sacré, de rappeler l'esprit dans le corps physique et d'ancrer les intentions les plus volatiles dans la matière dense.</p>
+
+        <h2>Tongue Drum & Handpan : Les Eaux Célestes</h2>
+        <p>Là où le tambour ancre, l'acier mélodique élève. Le tongue drum et le handpan créent des paysages sonores aquatiques, riches en harmoniques enveloppantes. Beaucoup sont accordés en <strong>432 Hz</strong>, une fréquence réputée pour sa résonance directe avec les structures de l'eau et de l'ADN, induisant un lâcher-prise immédiat et une ouverture douce du chakra du cœur.</p>
+
+        <section class="encadre-hero">
+            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/hero-eso.jpg');">
+                <h3 class="encadre-titre">L'Arsenal de la Résonance</h3>
+                <p class="encadre-sous-titre">Des instruments sacrés pour émettre la fréquence de votre propre élévation.</p>
+                <div class="liste-selectionnable">
+                    <a href="https://www.amazon.fr/Bol-chantant-fait-main-N%C3%A9pal/dp/B01LZ19MGT?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=IAWGI9Q6G0WP&dib=eyJ2IjoiMSJ9.Yp-zI-X1huNqg8k_NmpyAcQZ0XuDqeFJe4EouzjYtjllqNEjrLBunDDpkSEMXJiFohLgpTc3OMRIkfv3b-9mlSh4MIrq8sUnP-4I2QMj3kENbCAmNID-D_tC9A7UJ588LJBFcLAiLwEgjTfSogmkuOcx79qFx_FrA4bcd4dAz9LvW1AfdF_mp2BhFPQlMJcqFE434Y5XM2H4oxJWs5yFtg-71T11HEsdNBagxba9KhXxcLwZsT-eNJBohOGmP_HeLwrIH6ZQq3bGCgdkn7jAO5YFQ443Jxfq3Lf7Crd9G4c.8OgRFh9upH5gTUTKgAQG7e_brPuaJ9JyvZ3ruK7s8I&dib_tag=se&keywords=bol%2Btib%C3%A9tain&qid=1776239027&refinements=p_n_condition-type%3A15135266031&rnid=15135264031&sprefix=bol%2Btib%C3%A9tain%2Caps%2C239&sr=8-1&th=1&linkCode=ll2&tag=zencheztoi-21&linkId=efffa41eac47ce9bdb9cf5de72f612f8&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="item-link">
+                        <span>Le Calice des Himalayas <small>Bol chantant tibétain forgé main (Népal) pour la purification des énergies</small></span> <span>→</span>
+                    </a>
+                    <a href="https://www.amazon.fr/chamanique-percussion-m%C3%A9ditation-c%C3%A9l%C3%A9bration-d%C3%A9v%C3%A9nements/dp/B0F151F774?linkCode=ll2&tag=zencheztoi-21&linkId=e0f908a60df740082fd691a69b38e77b&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="item-link">
+                        <span>Le Cœur de la Terre <small>Tambour chamanique de cérémonie pour l'ancrage et la transe</small></span> <span>→</span>
+                    </a>
+                    <a href="https://www.amazon.fr/MOOZICA-Tambour-langue-acier-pouces/dp/B0CQLX1VBF?th=1&linkCode=ll2&tag=zencheztoi-21&linkId=d02abf0e3a5ea018dcc3ed026332f098&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="item-link">
+                        <span>La Voix de l'Acier <small>Tongue drum 13 notes intuitif pour créer des mélodies méditatives</small></span> <span>→</span>
+                    </a>
+                    <a href="https://www.amazon.fr/Handpan-Percussion-Instrument-Performance-Handmade/dp/B0CCNV6T5K?linkCode=ll2&tag=zencheztoi-21&linkId=506f9a394fce3ab0ef1b68b8ad6561e9&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="item-link">
+                        <span>La Matrice Céleste <small>Handpan accordé en 432 Hz pour des voyages sonores profonds</small></span> <span>→</span>
+                    </a>
+                    <a href="https://www.amazon.fr/POUVOIR-TAMBOUR-CHAMANIQUE-dapaisement-transformation/dp/B0GD7TB7LS?linkCode=ll2&tag=zencheztoi-21&linkId=2e121ee1f44ede137e5b5ba95fc36780&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="item-link">
+                        <span>Le Grimoire du Rythme <small>Livre : Le pouvoir du tambour chamanique et son symbolisme</small></span> <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <h2>3 Gestes Express pour Maîtriser le Son</h2>
+        <p>Nul besoin d'une longue cérémonie pour invoquer la magie des ondes. Intégrez le son par touches furtives :</p>
+        <ol>
+            <li><strong>La Clé de l'Aube et du Crépuscule :</strong> Frapper un unique coup de bol chantant au réveil pour ouvrir la journée, et un autre avant le coucher pour en fermer le cycle. C'est une frontière sonore qui rassure le cerveau.</li>
+            <li><strong>Le Rituel des 3 Minutes :</strong> Si le brouillard mental s'installe, battez un rythme lent au tambour pendant exactement 3 minutes en fixant un point. Cette hypnose douce désactive l'anxiété.</li>
+            <li><strong>La Purification d'Objets :</strong> Posez un cristal, un bijou ou un jeu de Tarot près de votre handpan ou bol. Faites-le chanter. Le son expulse les résidus énergétiques que l'objet a accumulés en absorbant vos doutes.</li>
+        </ol>
+
+        <section class="encadre-hero">
+            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/hero-accueil.jpg');">
+                <h3 class="encadre-titre">Continuer l'Élévation</h3>
+                <p class="encadre-sous-titre">Poursuis ton initiation à travers nos autres chroniques vibratoires.</p>
+                <div class="liste-selectionnable">
+                    <a href="cristaux-chakras.html" class="item-link">
+                        <span>La Sagesse des Pierres <small>Chronique : Harmoniser ses chakras avec les cristaux</small></span> <span>→</span>
+                    </a>
+                    <a href="benjoin-santal.html" class="item-link">
+                        <span>Les Résines Sacrées <small>Chronique : L'art de la fumigation purificatrice</small></span> <span>→</span>
+                    </a>
+                    <a href="eso.html" class="item-link">
+                        <span>Le Volume 5 Complet <small>La Table des Matières de ton Élévation</small></span> <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <section class="encyclopedie-section" style="background-color: var(--blanc); padding: 80px 20px; text-align: center; border-top: 1px solid #eee;">
+        <h2 style="font-variant: small-caps; font-size: 2.2em; color: var(--brun-sombre); margin-bottom: 20px;">Emporte nos savoirs avec toi</h2>
+        <div class="pills-row">
+            <a href="encyclopedie.html#vol1" class="pill p1">Vol 1 : Fondation</a>
+            <a href="encyclopedie.html#vol2" class="pill p2">Vol 2 : Enracinement</a>
+            <a href="encyclopedie.html#vol3" class="pill p3">Vol 3 : Éclosion</a>
+            <a href="encyclopedie.html#vol4" class="pill p4">Vol 4 : Harmonie</a>
+            <a href="encyclopedie.html#vol5" class="pill p5">Vol 5 : Élévation</a>
+        </div>
+        <div style="margin-top: 40px; font-size: 1.2em; font-style: italic; color: var(--brun-sombre);">
+            Le Volume : <span style="color:var(--or-zen); font-weight:bold;">14.90€</span> — Pack Trio : <span style="color:var(--or-zen); font-weight:bold;">24.90€</span> — L'Intégrale : <span style="color:var(--or-zen); font-weight:bold;">39.90€</span>
+        </div>
+    </section>
+
+    <footer>
+        <a href="index.html" class="footer-logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
+        <ul class="footer-nav-compact">
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+            <li><a href="confidentialite.html">Confidentialité</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+            <li><a href="a-propos.html">À Propos</a></li>
+            <li><a href="livre-or.html">Livre d'Or</a></li>
         </ul>
-      </div>
-    </section>
+        <p style="font-size: 0.85em; opacity: 0.4;">&copy; 2026 Zen Chez Toi • L'Harmonie au Naturel.</p>
+    </footer>
 
-    <section>
-      <h2>Bol chantant tibétain : purifier avec la vibration</h2>
-      <p>
-        Les bols chantants tibétains sont traditionnellement utilisés pour la méditation, la relaxation et des rituels de purification énergétique, notamment dans les monastères de l’Himalaya.[web:1368][web:1369][web:1371]
-      </p>
-      <p>
-        Le son continu et la vibration du bol peuvent aider à relâcher le mental, apaiser le système nerveux et créer une atmosphère plus claire pour tes pratiques.[web:1364][web:1367][web:1373]
-      </p>
-
-      <h3>Rituel simple pour purifier une pièce</h3>
-      <p>
-        Ouvre une fenêtre si possible, puis tiens le bol dans une main et le maillet dans l’autre.[web:1368][web:1371]
-      </p>
-      <p>
-        Frappe doucement le bol, puis fais‑le chanter en faisant glisser le maillet sur le bord, tout en avançant lentement dans la pièce ou en restant au centre, avec l’intention de libérer ce qui est trop lourd.[web:1364][web:1368][web:1371]
-      </p>
-    </section>
-
-    <section>
-      <h2>Tambour chamanique : rythmer le voyage intérieur</h2>
-      <p>
-        Dans de nombreuses traditions, le tambour chamanique est considéré comme un instrument sacré qui relie le monde visible et les mondes spirituels.[web:1367]
-      </p>
-      <p>
-        Son rythme régulier est utilisé pour préparer un espace, guider un voyage intérieur et soutenir des états de conscience modifiés, tout en gardant un ancrage corporel fort.[web:1365][web:1367]
-      </p>
-
-      <h3>Rituel de tambour pour ouvrir un espace</h3>
-      <p>
-        Assieds‑toi ou tiens‑toi debout, puis commence à battre le tambour à un rythme simple et régulier, comme un battement de cœur.[web:1365][web:1367]
-      </p>
-      <p>
-        Laisse ton attention se caler sur le son, en imaginant que chaque battement clarifie un peu plus l’espace et t’aide à déposer ce qui ne t’est plus utile.[web:1367][web:1372]
-      </p>
-    </section>
-
-    <section>
-      <h2>Tongue drum &amp; handpan : paysages sonores pour méditer</h2>
-      <p>
-        Le tongue drum et le handpan sont deux instruments mélodiques en métal, souvent utilisés pour la musique méditative, les voyages sonores et les massages sonores.[web:1370][web:1372]
-      </p>
-      <p>
-        Le tongue drum est généralement plus accessible, avec un jeu intuitif, tandis que le handpan offre des champs sonores riches et enveloppants qui invitent à un état méditatif profond.[web:1366][web:1370]
-      </p>
-
-      <h3>Rituel sonore pour se recentrer</h3>
-      <p>
-        Installe‑toi confortablement, choisis quelques notes qui te plaisent et laisse‑toi guider par le son, sans chercher à “bien jouer”.[web:1370][web:1372]
-      </p>
-      <p>
-        Tu peux accompagner quelques respirations profondes, visualiser que chaque note nettoie un peu le brouillard mental et t’aide à revenir dans ton corps.[web:1364][web:1372]
-      </p>
-
-      <div class="box">
-        <div class="box-title">À propos de la fréquence 432&nbsp;Hz</div>
-        <p>
-          Certains musiciens accordent leurs instruments en 432&nbsp;Hz, une fréquence souvent associée à une sensation de calme, de douceur et d’harmonie avec la nature.[web:1365][web:1370]
-        </p>
-        <p>
-          Des praticiens l’utilisent pour accompagner la méditation, la relaxation et les pratiques énergétiques, en disant qu’elle favorise la détente, la présence à soi et un sentiment d’équilibre intérieur.[web:1365][web:1372]
-        </p>
-        <p>
-          Les études restent limitées et tout le monde ne ressent pas la même chose, mais si cette fréquence te fait du bien, tu peux l’explorer comme un support parmi d’autres dans tes rituels et moments de recentrage.[web:1364][web:1373]
-        </p>
-      </div>
-
-      <div class="box">
-        <div class="box-title">Différences en bref</div>
-        <ul>
-          <li><strong>Bol</strong> : vibrations longues, souvent utilisé pour marquer un début ou une fin de rituel.[web:1368][web:1371]</li>
-          <li><strong>Tambour</strong> : rythme, ancrage et ouverture d’espace de cérémonie.[web:1367]</li>
-          <li><strong>Tongue drum &amp; handpan</strong> : mélodies intuitives pour méditation et relaxation profonde.[web:1370][web:1372]</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- NOUVELLE SECTION : gestes express -->
-    <section>
-      <h2>3 gestes express avec le son quand tu te sens dispersé·e</h2>
-      <p>
-        Si ton mental tourne à toute vitesse ou que l’ambiance est lourde, tu peux utiliser un instrument chantant quelques minutes seulement, sans “grand rituel”.[web:1364][web:1367]
-      </p>
-
-      <div class="box">
-        <div class="box-title">1. Un son pour ouvrir et fermer la journée</div>
-        <p>
-          Le matin ou le soir, fais sonner une fois ton bol, ton tambour ou ton carillon, en posant une simple intention : « j’ouvre ma journée », « je ferme ma journée ».[web:1368][web:1370]
-          Un seul son répété chaque jour suffit à marquer un passage et à rappeler à ton corps que tu changes de rythme.[web:1364][web:1372]
-        </p>
-      </div>
-
-      <div class="box">
-        <div class="box-title">2. Trois minutes de respiration avec un motif simple</div>
-        <p>
-          Choisis un petit rythme de tambour ou quelques notes sur le tongue drum et répète‑les pendant 3 minutes en suivant ta respiration.[web:1365][web:1370]
-          L’idée est de laisser le son porter ton attention, sans chercher à faire joli ni à entrer dans une transe longue.[web:1364][web:1367]
-        </p>
-      </div>
-
-      <div class="box">
-        <div class="box-title">3. Nettoyer symboliquement un objet ou une carte</div>
-        <p>
-          Pose une pierre, un jeu de cartes ou un objet symbolique devant toi et fais chanter ton bol ou ton handpan quelques instants au‑dessus ou à côté.[web:1368][web:1371]
-          Tu peux simplement dire en toi : « je libère ce qui est trop lourd, je garde ce qui me nourrit », puis ranger l’objet à sa place.[web:1364][web:1372]
-        </p>
-      </div>
-    </section>
-
-    <section>
-      <h2>Instruments chantants · Sélection Zen Chez Toi</h2>
-      <p>
-        Voici quelques instruments choisis pour accompagner tes rituels, tes méditations et tes moments de recentrage, à ton rythme.[web:1364][web:1372]
-      </p>
-
-      <div class="products-grid">
-        <div class="product-card">
-          <strong>Bol chantant tibétain fait main (Népal)</strong>
-          <p>
-            Un bol chantant fabriqué à la main, livré avec son coussin et son maillet, adapté à la purification de l’espace, à la méditation et au nettoyage symbolique des pierres.[web:1368][web:1371]
-          </p>
-          <a href="https://www.amazon.fr/Bol-chantant-fait-main-N%C3%A9pal/dp/B01LZ19MGT?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=IAWGI9Q6G0WP&dib=eyJ2IjoiMSJ9.Yp-zI-X1huNqg8k_NmpyAcQZ0XuDqeFJe4EouzjYtjllqNEjrLBunDDpkSEMXJiFohLgpTc3OMRIkfv3b-9mlSh4MIrq8sUnP-4I2QMj3kENbCAmNID-D_tC9A7UJ588LJBFcLAiLwEgjTfSogmkuOcx79qFx_FrA4bcd4dAz9LvW1AfdF_mp2BhFPQlMJcqFE434Y5XM2H4oxJWs5yFtg-71T11HEsdNBagxba9KhXxcLwZsT-eNJBohOGmP_HeLwrIH6ZQq3bGCgdkn7jAO5YFQ443Jxfq3Lf7Crd9G4c.8OgRFh9upH5gTUTKgAQG7e_brPuaJ9JyvZ3ruK7s8I&dib_tag=se&keywords=bol%2Btib%C3%A9tain&qid=1776239027&refinements=p_n_condition-type%3A15135266031&rnid=15135264031&sprefix=bol%2Btib%C3%A9tain%2Caps%2C239&sr=8-1&th=1&linkCode=ll2&tag=zencheztoi-21&linkId=efffa41eac47ce9bdb9cf5de72f612f8&ref_=as_li_ss_tl"
-             target="_blank" rel="noopener noreferrer">
-            Voir sur Amazon
-          </a>
-        </div>
-
-        <div class="product-card">
-          <strong>Le pouvoir du tambour chamanique</strong>
-          <p>
-            Un ouvrage consacré au tambour chamanique, à son symbolisme et à la façon dont son rythme peut accompagner des rituels d’apaisement et de transformation intérieure.[web:1367]
-          </p>
-          <a href="https://www.amazon.fr/POUVOIR-TAMBOUR-CHAMANIQUE-dapaisement-transformation/dp/B0GD7TB7LS?linkCode=ll2&tag=zencheztoi-21&linkId=2e121ee1f44ede137e5b5ba95fc36780&ref_=as_li_ss_tl"
-             target="_blank" rel="noopener noreferrer">
-            Voir sur Amazon
-          </a>
-        </div>
-
-        <div class="product-card">
-          <strong>Tambour chamanique de cérémonie</strong>
-          <p>
-            Un tambour chamanique pensé pour les rituels, les célébrations et la méditation, pour travailler avec le rythme et l’ancrage lors de tes pratiques.[web:1367]
-          </p>
-          <a href="https://www.amazon.fr/chamanique-percussion-m%C3%A9ditation-c%C3%A9l%C3%A9bration-d%C3%A9v%C3%A9nements/dp/B0F151F774?linkCode=ll2&tag=zencheztoi-21&linkId=e0f908a60df740082fd691a69b38e77b&ref_=as_li_ss_tl"
-             target="_blank" rel="noopener noreferrer">
-            Voir sur Amazon
-          </a>
-        </div>
-
-        <div class="product-card">
-          <strong>Tongue drum en acier 13 notes</strong>
-          <p>
-            Un tongue drum accordé pour la relaxation, facile à jouer même pour les débutants, idéal pour créer des mélodies intuitives pendant tes méditations ou rituels.[web:1370]
-          </p>
-          <a href="https://www.amazon.fr/MOOZICA-Tambour-langue-acier-pouces/dp/B0CQLX1VBF?th=1&linkCode=ll2&tag=zencheztoi-21&linkId=d02abf0e3a5ea018dcc3ed026332f098&ref_=as_li_ss_tl"
-             target="_blank" rel="noopener noreferrer">
-            Voir sur Amazon
-          </a>
-        </div>
-
-        <div class="product-card">
-          <strong>Handpan 432&nbsp;Hz</strong>
-          <p>
-            Un handpan artisanal aux sonorités enveloppantes, pour des voyages sonores plus profonds, la méditation et les séances de relaxation guidée.[web:1365][web:1370]
-          </p>
-          <a href="https://www.amazon.fr/Handpan-Percussion-Instrument-Performance-Handmade/dp/B0CCNV6T5K?linkCode=ll2&tag=zencheztoi-21&linkId=506f9a394fce3ab0ef1b68b8ad6561e9&ref_=as_li_ss_tl"
-             target="_blank" rel="noopener noreferrer">
-            Voir sur Amazon
-          </a>
-        </div>
-      </div>
-
-      <p style="font-size:0.85rem; color:var(--muted); margin-top:10px;">
-        Ces liens sont affiliés : ils ne changent rien pour vous, mais soutiennent la création de Zen Chez Toi si vous choisissez d’acheter via ces recommandations.
-      </p>
-    </section>
-
-    <section>
-      <h2>Rester libre dans ta pratique</h2>
-      <p>
-        Les instruments chantants peuvent devenir des alliés précieux dans tes rituels, mais ils ne sont ni obligatoires ni magiques : ce qui compte, c’est ton intention et la manière dont tu te sens en les utilisant.[web:1364][web:1372]
-      </p>
-      <p>
-        Tu peux commencer par de très courts moments, quelques minutes de son avant un tirage ou une méditation, et laisser ta pratique évoluer naturellement, sans pression.[web:1364][web:1370]
-      </p>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="footer-title">Zen <em>Chez</em> Toi</div>
-    <div class="footer-links">
-      <a href="mentions-legales.html">Mentions légales</a>
-      <a href="confidentialite.html">Politique de confidentialité</a>
-      <a href="cookies.html">Gestion des cookies</a>
-      <a href="eso.html">Retour à l’univers Ésotérisme</a>
-    </div>
-    <p style="margin-top:30px; opacity:0.35; font-size:0.8rem;">
-      © 2026 Zen Chez Toi — Tous droits réservés.
-    </p>
-  </footer>
-
-  <div id="disclaimer-bar">
-    Pratiques ésotériques : ces contenus ont une portée symbolique et ne remplacent pas un avis médical, psychologique ou juridique. Liens affiliés Amazon : je réalise un bénéfice sur les achats remplissant les conditions requises.
-  </div>
+    <div id="disclaimer-bar">🔗 Liens affiliés Amazon : Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises. Pratiques ésotériques : portée symbolique, ne remplace pas un avis médical.</div>
 
 </body>
 </html>

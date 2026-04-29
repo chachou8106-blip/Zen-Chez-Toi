@@ -156,17 +156,20 @@
 
         #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
 
-        /* --- MOBILE ADJUSTMENTS --- */
+        /* --- MOBILE ADJUSTMENTS (LE CORRECTIF RESPONSIVE) --- */
         @media (max-width: 900px) {
             .histoire-text { column-count: 1; }
         }
         @media (max-width: 768px) {
-            .nav-container { flex-direction: column; gap: 20px; }
-            .header-right { gap: 20px; }
-            .histoire-section { margin-top: -60px; }
-            .encadre-hero { border-width: 3px; }
+            .nav-container { flex-direction: column; gap: 20px; padding: 15px 20px; }
+            .header-right { flex-direction: column; gap: 20px; }
+            nav ul { flex-wrap: wrap; justify-content: center; gap: 15px; }
+            .dropdown-content { left: 50%; transform: translateX(-50%); width: 90vw; }
+            .hero h1 { font-size: 2.5em; }
+            .histoire-section { margin-top: -60px; padding: 40px 20px; }
+            .encadre-hero { border-width: 3px; margin: 40px 0; }
             .cadre-fond { padding: 40px 20px; }
-            .item-link { padding: 15px 20px; font-size: 0.9em; }
+            .item-link { flex-direction: column; text-align: center; gap: 10px; padding: 15px 20px; font-size: 0.9em; }
             .search-container button { position: relative; width: 100%; right: 0; top: 10px; }
         }
     </style>
@@ -230,7 +233,7 @@
                     <a href="jardin.html" class="item-link m2"><span>Vol 2 : Enracinement (Jardin)</span> <span>→</span></a>
                     <a href="corps.html" class="item-link m3"><span>Vol 3 : Éclosion (Corps)</span> <span>→</span></a>
                     <a href="bienetre.html" class="item-link m4"><span>Vol 4 : Harmonie (Bien-être)</span> <span>→</span></a>
-                    <a href="eso.html" class="item-link m5"><span>Vol 5 : Élévation (Éso)</span> <span>→</span></a>
+                    <a href="eso.html" class="item-link m5"><span>Vol 5 : Élévation (Ésotérisme)</span> <span>→</span></a>
                 </div>
             </div>
         </section>
@@ -246,7 +249,7 @@
                 <p class="encadre-sous-titre">Quelques remèdes purs pour initier votre art au quotidien.</p>
                 <div class="liste-selectionnable">
                     <a href="huile-neem.html" class="item-link m2">
-                        <span>Le Bouclier de Neem (Pucerons)</span> <span>→</span>
+                        <span>Le Bouclier de Neem (Huile)</span> <span>→</span>
                     </a>
                     <a href="argile-verte.html" class="item-link m3">
                         <span>L'Aimant à Toxines (Argile Verte)</span> <span>→</span>

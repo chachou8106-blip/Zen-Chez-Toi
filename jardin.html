@@ -3,9 +3,20 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vol 1 : Les Fondations – Zen Chez Toi</title>
+    <title>Vol 2 : Enracinement – Zen Chez Toi</title>
     
     <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
+    <meta name="p:domain_verify" content="549770272775"/>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRV5YNRL57"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-JRV5YNRL57');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7501098246029504" crossorigin="anonymous"></script>
+
+    <meta name="description" content="Découvrez le Volume 2 : Enracinement. L'art de cultiver la terre, de nourrir le vivant et de protéger son jardin naturellement.">
     <link rel="icon" type="image/png" href="assets/logo.png">
 
     <style>
@@ -21,7 +32,7 @@
         .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
         
         .logo { display: inline-block; text-decoration: none; }
-        /* CORRECTIF LOGO BLANC PUR ++ HEADER */
+        /* LOGO BLANC PUR ++ HEADER */
         .logo img { 
             max-height: 90px; 
             filter: drop-shadow(0 0 15px rgba(255,255,255,1)) drop-shadow(0 0 5px rgba(255,255,255,0.8));
@@ -35,20 +46,20 @@
         .header-right { display: flex; align-items: center; gap: 40px; }
         nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
         nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
-        nav a:hover { color: var(--maison); }
+        nav a:hover { color: var(--jardin); }
 
         /* MENU DÉROULANT (DROPDOWN) */
         .dropdown { position: relative; display: inline-block; cursor: pointer; padding: 15px 0; }
         .dropdown-content { 
             display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); 
             background-color: var(--brun-sombre); min-width: 220px; box-shadow: 0px 10px 25px rgba(0,0,0,0.4); 
-            z-index: 2100; border-radius: 8px; border: 1px solid var(--maison); overflow: hidden;
+            z-index: 2100; border-radius: 8px; border: 1px solid var(--jardin); overflow: hidden;
         }
         .dropdown-content a { 
             color: rgba(255,255,255,0.8) !important; padding: 12px 20px; text-decoration: none; 
             display: block; font-size: 0.95em; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1); font-variant: small-caps; text-shadow: none !important;
         }
-        .dropdown-content a:hover { background-color: var(--maison); color: #fff !important; }
+        .dropdown-content a:hover { background-color: var(--jardin); color: #fff !important; }
         .dropdown:hover .dropdown-content { display: block; }
 
         .pinterest-badge { 
@@ -57,35 +68,35 @@
             font-family: 'Georgia', serif; font-style: italic; font-size: 1.2rem; transition: all 0.4s ease; 
             background: rgba(255,255,255,0.1); backdrop-filter: blur(2px); padding-bottom: 3px;
         }
-        .pinterest-badge:hover { background: var(--maison); transform: rotate(15deg); }
+        .pinterest-badge:hover { background: var(--jardin); border-color: var(--jardin); transform: rotate(15deg); }
 
-        /* --- HERO --- */
+        /* --- HERO (TAILLES VALIDÉES VOL 3) --- */
         .hero { 
-            height: 100vh; background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('assets/hero-maison.jpg') center/cover no-repeat fixed; 
+            height: 100vh; background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('assets/hero-jardin.jpg') center/cover no-repeat fixed; 
             display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; 
         }
-        /* RESPECT HIÉRARCHIE VISUELLE DE LA PHOTO VALIDÉE */
-        .hero h1 { font-size: clamp(2.5em, 8vw, 5em); font-variant: small-caps; text-shadow: 0 4px 15px rgba(0,0,0,0.6); margin: 10px 0 20px; font-weight: normal; }
-        .vol-phrase { font-size: 1.5em; font-variant: small-caps; letter-spacing: 5px; font-weight: bold; }
-        .tagline { font-size: clamp(1.1em, 3vw, 1.8em); font-style: italic; opacity: 0.9; text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
+        .vol-phrase { font-size: 1.6em; font-variant: small-caps; letter-spacing: 6px; font-weight: bold; margin-bottom: 5px; }
+        .hero h1 { font-size: clamp(3em, 8vw, 5.5em); font-variant: small-caps; text-shadow: 0 4px 15px rgba(0,0,0,0.6); margin: 0 0 20px; font-weight: normal; }
+        .tagline { font-size: clamp(1.2em, 3vw, 1.8em); font-style: italic; opacity: 0.9; text-shadow: 0 2px 10px rgba(0,0,0,0.5); max-width: 900px; line-height: 1.4; }
 
         /* --- CONTENU --- */
         .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
         
         .histoire-section { 
             background: var(--blanc); padding: clamp(30px, 7vw, 80px); border-radius: 30px; margin-top: -120px; 
-            position: relative; z-index: 10; box-shadow: 0 25px 60px rgba(0,0,0,0.08); border-top: 4px solid var(--maison); 
+            position: relative; z-index: 10; box-shadow: 0 25px 60px rgba(0,0,0,0.08); border-top: 4px solid var(--jardin); 
         }
-        .histoire-section h2 { font-size: 2.5em; color: var(--maison); margin-bottom: 40px; text-align: center; font-variant: small-caps; }
-        .histoire-text { column-count: 2; column-gap: 60px; text-align: justify; font-size: 1.1rem; color: #444; }
+        .histoire-section h2 { font-size: 2.5em; color: var(--jardin); margin-bottom: 40px; text-align: center; font-variant: small-caps; }
+        .histoire-text { column-count: 2; column-gap: 60px; text-align: justify; font-size: 1.15rem; color: #444; line-height: 2; }
 
         /* --- ENCADRÉS HUB (SAGESSES & JOURNAL) --- */
-        .encadre-hero { margin: 80px 0; border-radius: 30px; overflow: hidden; border: 5px solid var(--maison); box-shadow: 0 20px 50px rgba(0,0,0,0.2); }
+        .encadre-hero { margin: 80px 0; border-radius: 30px; overflow: hidden; border: 5px solid var(--jardin); box-shadow: 0 20px 50px rgba(0,0,0,0.2); }
         .cadre-fond { 
-            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('assets/hero-maison.jpg') center/cover no-repeat fixed;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('assets/hero-jardin.jpg') center/cover no-repeat fixed;
             padding: 80px 40px; text-align: center;
         }
-        .encadre-titre { font-size: clamp(2em, 5vw, 2.8em); font-variant: small-caps; color: #fff; margin-bottom: 15px; text-shadow: 0 4px 10px rgba(0,0,0,0.5); }
+        .encadre-titre { font-size: clamp(2em, 5vw, 2.8em); font-variant: small-caps; color: #fff; margin-bottom: 10px; text-shadow: 0 4px 10px rgba(0,0,0,0.5); }
+        .encadre-sous-titre { font-style: italic; font-size: 1.1em; color: #fff; margin-bottom: 25px; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
         
         .liste-selectionnable { display: flex; flex-direction: column; gap: 15px; max-width: 700px; margin: 40px auto 0; }
         .item-link { 
@@ -94,24 +105,40 @@
             padding: 18px 35px; display: flex; align-items: center; justify-content: space-between;
             text-decoration: none; color: #fff; transition: 0.3s;
         }
-        .item-link:hover { transform: scale(1.03); border-color: #fff; background: var(--maison); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+        .item-link:hover { transform: scale(1.03); border-color: #fff; background: var(--jardin); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
         .item-link span { font-weight: bold; font-variant: small-caps; font-size: 1.15em; }
+
+        /* --- TRANSITION --- */
+        .msg-transition { text-align: center; margin: 100px 0; }
+        .btn-selection { display: inline-block; padding: 22px 60px; background: var(--brun-sombre); color: #fff; text-decoration: none; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 1.3em; border: 2px solid var(--jardin); transition: 0.3s; }
+        .btn-selection:hover { background: var(--jardin); transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
+
+        /* --- ENCYCLOPÉDIE --- */
+        .encyclopedie-section { background-color: var(--blanc); padding: 80px 20px; text-align: center; border-top: 1px solid #eee; }
+        .pills-row { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 30px; }
+        .pill { padding: 10px 20px; border: 2px solid; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 0.9em; text-decoration: none; background: #fff; transition: 0.3s; }
+        .p1 { border-color: var(--maison); color: var(--maison); } .p1:hover { background: var(--maison); color: #fff; }
+        .p2 { border-color: var(--jardin); color: #fff; background: var(--jardin); }
+        .p3 { border-color: var(--corps); color: var(--corps); } .p3:hover { background: var(--corps); color: #fff; }
+        .p4 { border-color: var(--bienetre); color: var(--bienetre); } .p4:hover { background: var(--bienetre); color: #fff; }
+        .p5 { border-color: var(--eso); color: var(--eso); } .p5:hover { background: var(--eso); color: #fff; }
 
         /* --- FOOTER --- */
         footer { background: var(--brun-sombre); color: #fff; padding: 80px 20px; text-align: center; }
-        /* CORRECTIF LOGO BLANC PUR ++ FOOTER */
+        /* LOGO BLANC PUR ++ FOOTER */
         .footer-logo img { 
             height: 60px; 
             filter: drop-shadow(0 0 15px rgba(255,255,255,1)) drop-shadow(0 0 5px rgba(255,255,255,0.7)); 
             transition: 0.5s; margin-bottom: 30px; 
         }
+        .footer-logo:hover img { filter: drop-shadow(0 0 25px #ffffff) drop-shadow(0 0 10px #ffffff); }
         .footer-nav-compact { display: flex; gap: 30px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; flex-wrap: wrap; }
         .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.6; font-variant: small-caps; transition: 0.3s; }
-        .footer-nav-compact a:hover { opacity: 1; color: var(--maison); }
+        .footer-nav-compact a:hover { opacity: 1; color: var(--jardin); }
 
         #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
 
-        /* --- MOBILE ADJUSTMENTS (LE CORRECTIF RESPONSIVE) --- */
+        /* --- MOBILE ADJUSTMENTS --- */
         @media (max-width: 900px) {
             .histoire-text { column-count: 1; }
         }
@@ -120,7 +147,7 @@
             .header-right { flex-direction: column; gap: 20px; }
             nav ul { flex-wrap: wrap; justify-content: center; gap: 15px; }
             .dropdown-content { left: 50%; transform: translateX(-50%); width: 90vw; }
-            .hero h1 { font-size: 2.2em; }
+            .hero h1 { font-size: 2.5em; }
             .histoire-section { margin-top: -60px; padding: 40px 20px; }
             .encadre-hero { border-width: 3px; margin: 40px 0; }
             .cadre-fond { padding: 40px 20px; }
@@ -157,63 +184,76 @@
     </header>
 
     <section class="hero">
-        <p class="vol-phrase">Vol 1 : Les Fondations</p>
-        <h1>Le monde de la Maison</h1>
-        <p class="tagline">« Bienvenue dans l'Âtre : bâtissez des fondations saines, libérez votre air intérieur et redécouvrez la simplicité d'un foyer pur. »</p>
+        <p class="vol-phrase">Vol 2 : Enracinement</p>
+        <h1>Monde du Jardin</h1>
+        <p class="tagline">« Plongez vos mains dans la terre fertile : cultivez le vivant, respectez les cycles et redécouvrez l'abondance d'un jardin sauvage et sain. »</p>
     </section>
 
     <main class="container">
         
         <section class="histoire-section">
-            <h2>L'Alchimie du Sanctuaire Physique</h2>
+            <h2>L'Alchimie de la Terre Nourricière</h2>
             <div class="histoire-text">
-                <p>Le <strong>Monde de la Maison</strong>, que nous aimons appeler <strong>l'Âtre</strong>, est bien plus qu'un simple espace de vie ; c'est le point de départ de toute transformation intérieure. C'est ici, au cœur de votre foyer, que s'ancre votre véritable souveraineté. Comment peut-on prétendre à la clarté d'esprit si l'air que nous respirons dans notre sanctuaire est corrompu par des molécules de synthèse invisibles mais oppressantes ? L'alchimie de l'Âtre propose un retour à la simplicité radicale des éléments bruts, une science ancienne et honnête délaissée au profit de solutions industrielles opaques.</p>
-                <p>Jadis, nos aînés maîtrisaient l'art de la purification sans l'aide de dizaines de flacons plastiques aux couleurs criardes. Ils connaissaient la force du cristal d'acide citrique pour dissoudre la pierre calcaire, la patience du vinaigre pour dégraisser les outils du quotidien, et la douceur onctueuse du savon pour protéger le bois et la pierre. Ce volume vous invite à redevenir l'alchimiste de votre propre domaine, capable de transformer chaque geste d'entretien en un véritable rituel de soin pour votre temple de matière.</p>
-                <p>En choisissant de manipuler des matériaux vivants, minéraux et biodégradables, vous faites un choix conscious pour votre santé et celle de votre famille. Vous apprenez à neutraliser les odeurs par la force d'absorption des poudres naturelles, à briser la pétrification des surfaces par l'action des acides végétaux, et à sceller la propreté sans jamais agresser vos sens. C'est l'essence même de la philosophie Zen Chez Toi : harmoniser l'environnement physique pour permettre à l'âme de s'épanouir dans un lieu pur, vibrant et sain à travers ce <strong>grimoire</strong>.</p>
+                <p>Le <strong>Monde du Jardin</strong>, que nous aimons appeler <strong>l'Enracinement</strong>, est le deuxième pilier de notre quête d'harmonie. Après avoir assaini l'âtre, il est temps de franchir le seuil et de renouer avec le sol qui nous porte. Le jardin n'est pas un décor à dompter par la force, mais un organisme vivant avec lequel il faut dialoguer. Comment peut-on espérer une nourriture saine ou un repos véritable si nous saturons notre environnement extérieur de poisons chimiques destinés à éradiquer la vie ? L'alchimie de l'enracinement propose un retour à l'observation patiente et aux remèdes issus de la terre elle-même.</p>
+                <p>Dans ce volume, nous explorons la science des purins, des paillages et des synergies végétales. Jadis, les jardiniers connaissaient la puissance de l'ortie pour fortifier la sève, le rôle du marc de café pour nourrir les racines, et l'efficacité de la terre de diatomée pour ériger des remparts minéraux. Ce grimoire vous guide pour transformer votre lopin de terre — qu'il soit un vaste domaine ou un simple balcon — en un sanctuaire vibrant de biodiversité, où chaque auxiliaire trouve sa place sans artifice.</p>
+                <p>En choisissant de cultiver avec conscience, vous redevenez le gardien d'un cycle sacré. Vous apprenez à protéger vos parures vertes par le souffle de l'huile de neem, et à discipliner les indésirables avec bienveillance. Bienvenue dans l'art de l'enracinement, là où la patience devient une vertu et chaque récolte une célébration du vivant à travers ce <strong>grimoire</strong>.</p>
             </div>
         </section>
 
         <section class="encadre-hero">
-            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('assets/hero-maison.jpg');">
-                <h3 class="encadre-titre">Les 10 Sagesses de l'Âtre</h3>
+            <div class="cadre-fond">
+                <h3 class="encadre-titre">Les Sagesses de la Terre</h3>
+                <p class="encadre-sous-titre">Maîtrisez les élixirs naturels pour faire prospérer votre éden.</p>
                 <div class="liste-selectionnable">
-                    <a href="percarbonate.html" class="item-link"><span>1. L'Éclat de la Neige Alchimique (Percarbonate)</span> <span>→</span></a>
-                    <a href="vinaigre-blanc.html" class="item-link"><span>2. L'Esprit de Clarté (Vinaigre)</span> <span>→</span></a>
-                    <a href="savon-noir.html" class="item-link"><span>3. L'Onguent d'Ébène (Savon Noir)</span> <span>→</span></a>
-                    <a href="bicarbonate.html" class="item-link"><span>4. L'Oxygène Solide (Bicarbonate)</span> <span>→</span></a>
-                    <a href="cristaux-soude.html" class="item-link"><span>5. La Force Brute Naturelle (Cristaux)</span> <span>→</span></a>
-                    <a href="acide-citrique.html" class="item-link"><span>6. Le Dissolvant Universel (Acide Citrique)</span> <span>→</span></a>
-                    <a href="terre-sommieres.html" class="item-link"><span>7. L'Aimant Minéral (Terre de Sommières)</span> <span>→</span></a>
-                    <a href="blanc-de-meudon.html" class="item-link"><span>8. L'Éclat du Roi (Blanc de Meudon)</span> <span>→</span></a>
-                    <a href="cendres-bois.html" class="item-link"><span>9. Le Sel de la Terre et du Feu (Cendres)</span> <span>→</span></a>
-                    <a href="savon-marseille.html" class="item-link"><span>10. Le Cube Purificateur (Marseille)</span> <span>→</span></a>
+                    <a href="savon-noir.html" class="item-link"><span>Le Bouclier Végétal (Savon Noir)</span> <span>→</span></a>
+                    <a href="terre-diatomee.html" class="item-link"><span>La Barrière Minérale (Terre Diatomée)</span> <span>→</span></a>
+                    <a href="huile-neem.html" class="item-link"><span>L'Onguent Protecteur (Huile de Neem)</span> <span>→</span></a>
+                    <a href="bicarbonate.html" class="item-link"><span>Le Sel de la Terre (Bicarbonate)</span> <span>→</span></a>
+                    <a href="ail.html" class="item-link"><span>L'Élixir Fongique (Ail)</span> <span>→</span></a>
+                    <a href="canelle.html" class="item-link"><span>Le Bouclier Fongique (Cannelle)</span> <span>→</span></a>
+                    <a href="menthe-poivree.html" class="item-link"><span>Le Frisson Répulsif (Menthe Poivrée)</span> <span>→</span></a>
                 </div>
             </div>
         </section>
 
-        <section style="text-align: center; margin: 80px 0;">
-            <a href="maison-selection.html" style="display: inline-block; padding: 22px 60px; background: var(--brun-sombre); color: #fff; text-decoration: none; border-radius: 50px; font-variant: small-caps; font-weight: bold; border: 2px solid var(--maison); transition: 0.3s;">Découvrir la Sélection</a>
+        <section class="msg-transition">
+            <p style="font-size: 1.4em; font-style: italic; margin-bottom: 30px; color: var(--brun-sombre);">« Un parasite envahissant ou une terre fatiguée ? Laissez l'alchimiste vous révéler le secret végétal adapté à votre sol. »</p>
+            <a href="jardin-selection.html" class="btn-selection">Découvrir la Sélection Jardin</a>
         </section>
 
         <section class="encadre-hero">
-            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('assets/hero-corps.jpg');">
-                <h3 class="encadre-titre">Le Journal de l'Âtre</h3>
+            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('assets/hero-bienetre.jpg');">
+                <h3 class="encadre-titre">Le Journal de l'Enracinement</h3>
+                <p class="encadre-sous-titre">Secrets de saison et chroniques du potager sauvage.</p>
                 <div class="liste-selectionnable">
-                    <a href="vitres-eclatantes.html" class="item-link"><span>La Transparence : Vitres Éclatantes</span> <span>→</span></a>
-                    <a href="taches-difficiles.html" class="item-link"><span>Le Combat des Ombres : Taches Difficiles</span> <span>→</span></a>
-                    <a href="soin-bois.html" class="item-link"><span>L'Âme du Mobilier : Soins du Bois</span> <span>→</span></a>
-                    <a href="mauvaises-odeurs.html" class="item-link"><span>Le Souffle Pur : Mauvaises Odeurs</span> <span>→</span></a>
-                    <a href="linge-frais.html" class="item-link"><span>L'Onction des Fibres : Linge Frais</span> <span>→</span></a>
-                    <a href="humidite.html" class="item-link"><span>L'Équilibre des Eaux : Humidité</span> <span>→</span></a>
-                    <a href="canalisations.html" class="item-link"><span>Le Flux Libre : Canalisations</span> <span>→</span></a>
-                    <a href="lave-vaisselle.html" class="item-link"><span>La Pureté du Verre : Lave-Vaisselle</span> <span>→</span></a>
-                    <a href="sols-naturels.html" class="item-link"><span>Ancrage au Sol : Entretien des Surfaces</span> <span>→</span></a>
-                    <a href="cuir-et-soins.html" class="item-link"><span>La Seconde Peau : Soins du Cuir</span> <span>→</span></a>
+                    <a href="pucerons.html" class="item-link"><span>La Garde Verte : Lutter contre les Pucerons</span> <span>→</span></a>
+                    <a href="oidium.html" class="item-link"><span>Le Voile Poudreux : Vaincre l'Oïdium</span> <span>→</span></a>
+                    <a href="mildiou.html" class="item-link"><span>L'Ombre de l'Humidité : Prévenir le Mildiou</span> <span>→</span></a>
+                    <a href="limaces.html" class="item-link"><span>Les Gourmands de la Nuit : Répulsif Limaces</span> <span>→</span></a>
+                    <a href="araignees.html" class="item-link"><span>Le Fléau Invisible : Araignées Rouges</span> <span>→</span></a>
+                    <a href="cochenilles-thrips.html" class="item-link"><span>La Neige Coriace : Cochenilles & Thrips</span> <span>→</span></a>
+                    <a href="feuilles-jaunes.html" class="item-link"><span>La Sève Épuisée : Soigner les Feuilles Jaunes</span> <span>→</span></a>
+                    <a href="insectes.html" class="item-link"><span>L'Équilibre Retrouvé : Les Insectes du Jardin</span> <span>→</span></a>
+                    <a href="sol-epuisé.html" class="item-link"><span>L'Or Noir du Jardinier : Nourrir un Sol Épuisé</span> <span>→</span></a>
                 </div>
             </div>
         </section>
 
     </main>
+
+    <section class="encyclopedie-section">
+        <h2 style="font-variant: small-caps; font-size: 2.2em; color: var(--brun-sombre); margin-bottom:10px;">L'Encyclopédie des Solutions Nomades</h2>
+        <div class="pills-row">
+            <a href="maison.html" class="pill p1">Vol 1 : Les Fondations</a>
+            <a href="jardin.html" class="pill p2">Vol 2 : Enracinement</a>
+            <a href="corps.html" class="pill p3">Vol 3 : Éclosion</a>
+            <a href="bienetre.html" class="pill p4">Vol 4 : Harmonie</a>
+            <a href="eso.html" class="pill p5">Vol 5 : Élévation</a>
+        </div>
+        <div style="margin-top: 40px; font-size: 1.2em; font-style: italic; color: var(--brun-sombre);">
+            Le Volume : <span style="color:var(--or-zen); font-weight:bold;">14.90€</span> — Pack Trio : <span style="color:var(--or-zen); font-weight:bold;">24.90€</span> — L'Intégrale : <span style="color:var(--or-zen); font-weight:bold;">39.90€</span>
+        </div>
+    </section>
 
     <footer>
         <a href="index.html" class="footer-logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
@@ -223,8 +263,10 @@
             <li><a href="cookies.html">Cookies</a></li>
             <li><a href="livre-or.html">Livre d'Or</a></li>
         </ul>
-        <p style="font-size: 0.85em; opacity: 0.4;">&copy; 2026 Zen Chez Toi • Les Fondations</p>
+        <p style="font-size: 0.85em; opacity: 0.4;">&copy; 2026 Zen Chez Toi • Enracinement</p>
     </footer>
+
     <div id="disclaimer-bar">🔗 Liens affiliés Amazon : Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.</div>
+
 </body>
 </html>

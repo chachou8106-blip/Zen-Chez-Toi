@@ -27,115 +27,62 @@
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.8; overflow-x: hidden; }
 
-        /* --- HEADER & NAVIGATION --- */
         header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; }
         .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
         
         .logo { display: inline-block; text-decoration: none; }
-        .logo img { 
-            max-height: 90px; 
-            filter: drop-shadow(0 0 15px rgba(255,255,255,1)) drop-shadow(0 0 5px rgba(255,255,255,0.8));
-            transition: all 0.5s ease; 
-        }
-        .logo:hover img { 
-            filter: drop-shadow(0 0 25px #ffffff) drop-shadow(0 0 10px #ffffff); 
-            transform: scale(1.03); 
-        }
+        .logo img { max-height: 90px; filter: drop-shadow(0 0 15px rgba(255,255,255,1)) drop-shadow(0 0 5px rgba(255,255,255,0.8)); transition: all 0.5s ease; }
+        .logo:hover img { filter: drop-shadow(0 0 25px #ffffff) drop-shadow(0 0 10px #ffffff); transform: scale(1.03); }
 
         .header-right { display: flex; align-items: center; gap: 40px; }
         nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
         nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
         nav a:hover { color: var(--jardin); }
 
-        /* MENU DÉROULANT */
-        .dropdown { position: relative; display: inline-block; cursor: pointer; padding: 10px 0; }
-        .dropdown-content { 
-            display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); 
-            background-color: var(--brun-sombre); min-width: 220px; box-shadow: 0px 10px 25px rgba(0,0,0,0.4); 
-            z-index: 2100; border-radius: 8px; border: 1px solid var(--jardin); overflow: hidden;
-        }
-        .dropdown-content a { 
-            color: rgba(255,255,255,0.8) !important; padding: 12px 20px; text-decoration: none; 
-            display: block; font-size: 0.95em; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1); font-variant: small-caps; text-shadow: none !important;
-        }
+        .dropdown { position: relative; display: inline-block; padding: 15px 0; cursor: pointer; }
+        .dropdown-content { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background-color: var(--brun-sombre); min-width: 200px; box-shadow: 0px 10px 25px rgba(0,0,0,0.3); z-index: 2100; border-radius: 8px; overflow: hidden; border: 1px solid var(--jardin); }
+        .dropdown-content a { color: rgba(255,255,255,0.8) !important; padding: 12px 20px; text-decoration: none; display: block; font-size: 0.95em; text-shadow: none; font-weight: bold; border-bottom: 1px solid rgba(255,255,255,0.1); text-align: center; font-variant: small-caps; }
         .dropdown-content a:hover { background-color: var(--jardin); color: #fff !important; }
         .dropdown:hover .dropdown-content { display: block; }
 
-        .pinterest-badge { 
-            display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; 
-            border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; 
-            font-family: 'Georgia', serif; font-style: italic; font-size: 1.2rem; transition: all 0.4s ease; 
-            background: rgba(255,255,255,0.1); backdrop-filter: blur(2px); padding-bottom: 3px;
-        }
-        .pinterest-badge:hover { background: var(--jardin); border-color: var(--jardin); transform: rotate(15deg); }
+        .pinterest-badge { display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; font-family: 'Georgia', serif; font-style: italic; font-size: 1.2rem; transition: all 0.4s ease; background: rgba(255,255,255,0.1); backdrop-filter: blur(2px); padding-bottom: 3px; }
+        .pinterest-badge:hover { background: var(--jardin); border-color: var(--jardin); transform: rotate(15deg) scale(1.1); color: #fff; }
 
-        /* --- HERO (TAILLES VALIDÉES VOL 3) --- */
-        .hero { 
-            height: 100vh; background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('assets/hero-jardin.jpg') center/cover no-repeat fixed; 
-            display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; 
-        }
-        .vol-phrase { font-size: 1.6em; font-variant: small-caps; letter-spacing: 6px; font-weight: bold; margin-bottom: 5px; text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
-        .hero h1 { font-size: clamp(3em, 8vw, 5.5em); font-variant: small-caps; text-shadow: 0 4px 15px rgba(0,0,0,0.6); margin: 0 0 20px; font-weight: normal; }
+        .hero { height: 100vh; background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('assets/hero-jardin.jpg') center/cover no-repeat fixed; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; }
+        .vol-phrase { font-size: 1.6em; font-variant: small-caps; letter-spacing: 6px; font-weight: bold; margin-bottom: 5px; }
+        .hero h1 { font-size: clamp(3em, 8vw, 5.5em); font-weight: normal; margin-bottom: 20px; line-height: 1.1; font-variant: small-caps; text-shadow: 0 4px 15px rgba(0,0,0,0.6); }
         .tagline { font-size: clamp(1.2em, 3vw, 1.8em); font-style: italic; opacity: 0.9; text-shadow: 0 2px 10px rgba(0,0,0,0.5); max-width: 900px; line-height: 1.4; }
 
-        /* --- CONTENU --- */
         .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
-        
-        .histoire-section { 
-            background: var(--blanc); padding: clamp(30px, 7vw, 80px); border-radius: 30px; margin-top: -120px; 
-            position: relative; z-index: 10; box-shadow: 0 25px 60px rgba(0,0,0,0.08); border-top: 4px solid var(--jardin); 
-        }
+        .histoire-section { background: var(--blanc); padding: clamp(30px, 7vw, 80px); border-radius: 30px; margin-top: -120px; position: relative; z-index: 10; box-shadow: 0 25px 60px rgba(0,0,0,0.08); border-top: 4px solid var(--jardin); }
         .histoire-section h2 { font-size: 2.5em; color: var(--jardin); margin-bottom: 40px; text-align: center; font-variant: small-caps; }
         .histoire-text { column-count: 2; column-gap: 60px; text-align: justify; font-size: 1.15rem; color: #444; line-height: 2; }
 
-        /* --- ENCADRÉS HUB --- */
         .encadre-hero { margin: 80px 0; border-radius: 30px; overflow: hidden; border: 5px solid var(--jardin); box-shadow: 0 20px 50px rgba(0,0,0,0.2); }
-        .cadre-fond { 
-            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('assets/hero-jardin.jpg') center/cover no-repeat fixed;
-            padding: 80px 40px; text-align: center;
-        }
+        .cadre-fond { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('assets/hero-jardin.jpg') center/cover no-repeat fixed; padding: 80px 40px; text-align: center; }
         .encadre-titre { font-size: clamp(2em, 5vw, 2.8em); font-variant: small-caps; color: #fff; margin-bottom: 10px; text-shadow: 0 4px 10px rgba(0,0,0,0.5); }
         .encadre-sous-titre { font-style: italic; font-size: 1.1em; color: #fff; margin-bottom: 25px; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
         
         .liste-selectionnable { display: flex; flex-direction: column; gap: 15px; max-width: 700px; margin: 40px auto 0; }
-        .item-link { 
-            background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); 
-            border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; 
-            padding: 18px 35px; display: flex; align-items: center; justify-content: space-between;
-            text-decoration: none; color: #fff; transition: 0.3s;
-        }
+        .item-link { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; padding: 18px 35px; display: flex; align-items: center; justify-content: space-between; text-decoration: none; color: #fff; transition: 0.3s; }
         .item-link:hover { transform: scale(1.03); border-color: #fff; background: var(--jardin); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
         .item-link span { font-weight: bold; font-variant: small-caps; font-size: 1.15em; }
 
-        /* --- TRANSITION 12 PRODUITS --- */
         .msg-transition { text-align: center; margin: 100px 0; }
         .btn-selection { display: inline-block; padding: 22px 60px; background: var(--brun-sombre); color: #fff; text-decoration: none; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 1.3em; border: 2px solid var(--jardin); transition: 0.3s; }
         .btn-selection:hover { background: var(--jardin); transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
 
-        /* --- LA SECTION PRICING SACRÉE (ENCYCLOPÉDIE EN BAS) --- */
-        .pricing-section { background-color: var(--blanc); padding: 80px 20px; text-align: center; border-top: 1px solid #ddd; margin-top: 60px; }
-        .pricing-section h2 { font-variant: small-caps; font-size: 2.2em; color: var(--brun-sombre); margin-bottom: 20px; }
-        .pricing-intro { max-width: 800px; margin: 0 auto 40px; font-size: 1.1rem; color: #444; line-height: 1.8; }
-        
-        .volume-buttons { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-bottom: 50px; }
-        .vol-btn { padding: 12px 20px; border: 2px solid; border-radius: 50px; text-decoration: none; font-variant: small-caps; font-size: 1em; font-weight: bold; transition: 0.3s; background: var(--blanc); }
-        .btn-v1 { border-color: var(--maison); color: var(--maison); } .btn-v1:hover { background: var(--maison); color: #fff; }
-        .btn-v2 { border-color: var(--jardin); color: #fff; background: var(--jardin); }
-        .btn-v3 { border-color: var(--corps); color: var(--corps); } .btn-v3:hover { background: var(--corps); color: #fff; }
-        .btn-v4 { border-color: var(--bienetre); color: var(--bienetre); } .btn-v4:hover { background: var(--bienetre); color: #fff; }
-        .btn-v5 { border-color: var(--eso); color: var(--eso); } .btn-v5:hover { background: var(--eso); color: #fff; }
+        .encyclopedie-section { background-color: var(--blanc); padding: 80px 20px; text-align: center; border-top: 1px solid #eee; }
+        .pills-row { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 30px; }
+        .pill { padding: 10px 20px; border: 2px solid; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 0.9em; text-decoration: none; background: #fff; transition: 0.3s; }
+        .p1 { border-color: var(--maison); color: var(--maison); } .p1:hover { background: var(--maison); color: #fff; }
+        .p2 { border-color: var(--jardin); color: #fff; background: var(--jardin); }
+        .p3 { border-color: var(--corps); color: var(--corps); } .p3:hover { background: var(--corps); color: #fff; }
+        .p4 { border-color: var(--bienetre); color: var(--bienetre); } .p4:hover { background: var(--bienetre); color: #fff; }
+        .p5 { border-color: var(--eso); color: var(--eso); } .p5:hover { background: var(--eso); color: #fff; }
 
-        .pricing-grid { display: flex; justify-content: center; gap: 40px; max-width: 1000px; margin: 0 auto; flex-wrap: wrap; }
-        .price-item h4 { font-weight: normal; font-size: 1.1em; color: #555; margin-bottom: 5px; font-variant: small-caps; }
-        .price-item .amount { font-size: 1.8em; color: var(--or-zen); font-weight: bold; }
-
-        /* --- FOOTER --- */
         footer { background: var(--brun-sombre); color: #fff; padding: 80px 20px; text-align: center; }
-        .footer-logo img { 
-            height: 60px; 
-            filter: drop-shadow(0 0 15px rgba(255,255,255,1)) drop-shadow(0 0 5px rgba(255,255,255,0.7)); 
-            transition: 0.5s; margin-bottom: 30px; 
-        }
+        .footer-logo img { height: 60px; filter: drop-shadow(0 0 15px rgba(255,255,255,1)) drop-shadow(0 0 5px rgba(255,255,255,0.7)); transition: 0.5s; margin-bottom: 30px; }
         .footer-logo:hover img { filter: drop-shadow(0 0 25px #ffffff) drop-shadow(0 0 10px #ffffff); }
         .footer-nav-compact { display: flex; gap: 30px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; flex-wrap: wrap; }
         .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.6; font-variant: small-caps; transition: 0.3s; }
@@ -143,19 +90,17 @@
 
         #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
 
-        /* --- MOBILE ADJUSTMENTS --- */
-        @media (max-width: 900px) {
-            .histoire-text { column-count: 1; }
-        }
+        /* --- RESPONSIVE MOBILE AVEC CORRECTIF CHEVAUCHEMENT PINTEREST --- */
+        @media (max-width: 900px) { .histoire-text { column-count: 1; } }
         @media (max-width: 768px) {
             .nav-container { flex-direction: column; gap: 15px; padding: 15px 20px; }
-            .header-right { flex-direction: column; gap: 15px; }
-            nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; }
+            .header-right { flex-direction: column; gap: 15px; align-items: center; width: 100%; }
+            nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; }
             .dropdown-content { left: 50%; transform: translateX(-50%); width: 90vw; }
             
-            /* CORRECTIF CHEVAUCHEMENT : On décale le Hero vers le bas pour le menu */
-            .hero { padding-top: 180px; justify-content: flex-start; }
-            .hero h1 { font-size: 2.2em; }
+            /* On décale bien vers le bas pour l'empilement du menu et du 'P' */
+            .hero { padding-top: 280px; justify-content: flex-start; height: auto; padding-bottom: 80px; }
+            .hero h1 { font-size: 2.2em; margin-bottom: 10px; }
             .vol-phrase { font-size: 1.2em; margin-bottom: 10px; }
             
             .histoire-section { margin-top: -40px; padding: 40px 20px; }
@@ -188,7 +133,7 @@
                         <li><a href="encyclopedie.html">Encyclopédie</a></li>
                     </ul>
                 </nav>
-                <a href="https://www.pinterest.com/VOTRE_PROFIL" class="pinterest-badge" target="_blank">p</a>
+                <a href="https://www.pinterest.com/VOTRE_PROFIL" class="pinterest-badge" target="_blank" title="Suivez nos inspirations">p</a>
             </div>
         </div>
     </header>
@@ -204,7 +149,7 @@
         <section class="histoire-section">
             <h2>L'Alchimie de la Terre Nourricière</h2>
             <div class="histoire-text">
-                <p>Le <strong>Monde du Jardin</strong>, que nous aimons appeler <strong>l'Enracinement</strong>, est le deuxième pilier de notre quête d'harmonie. Après avoir assaini l'âtre, il est temps de franchir le seuil et de renouer avec le sol qui nous porte. Le jardin n'est pas un décor à dompter par la force, mais un organisme vivant avec lequel il faut apprendre à dialoguer. Comment peut-on espérer une nourriture saine ou un repos véritable si nous saturons notre environnement extérieur de poisons chimiques destinés à éradiquer la vie ? L'alchimie de l'enracinement propose un retour à l'observation patiente et aux remèdes issus de la nature elle-même.</p>
+                <p>Le <strong>Monde du Jardin</strong>, que nous aimons appeler <strong>l'Enracinement</strong>, est le deuxième pilier de notre quête d'harmonie. Après avoir assaini l'âtre, il est temps de franchir le seuil et de renouer avec le sol qui nous porte. Le jardin n'est pas un décor à dompter par la force, mais un organisme vivant avec lequel il faut apprendre à dialoguer. Comment peut-on espérer une nourriture saine ou un repos véritable si nous saturons la terre de substances chimiques destinées à éradiquer la vie ? L'alchimie de l'enracinement propose un retour à l'observation patiente et aux remèdes issus de la nature elle-même.</p>
                 <p>Dans ce volume, nous explorons la science des purins, des paillages et des synergies végétales. Jadis, les jardiniers connaissaient la puissance de l'ortie pour fortifier la sève, le rôle du marc de café pour nourrir les racines, et l'efficacité des barrières minérales pour protéger les jeunes pousses. Nous vous guidons pour transformer votre lopin de terre — qu'il soit un vaste domaine ou un simple balcon — en un sanctuaire vibrant de biodiversité, où chaque auxiliaire trouve sa place.</p>
                 <p>En cultivant avec conscience, vous redevenez le gardien d'un cycle sacré. Vous apprenez à transformer vos déchets en or noir par le compostage, à protéger vos végétaux grâce à l'huile de neem, et à discipliner les indésirables avec bienveillance. C'est l'essence même de l'Enracinement : comprendre que nous ne sommes pas séparés de la nature, mais que nous en sommes les mains et les protecteurs de cette terre.</p>
                 <p>Redécouvrir l'Enracinement, c'est retrouver le goût de l'essentiel. Chaque graine qui germe et chaque fleur qui s'épanouit sans l'aide de l'industrie est une victoire pour votre santé et pour l'équilibre du monde. Bienvenue dans l'art de l'enracinement, là où la patience redevient une vertu et chaque récolte une véritable célébration du vivant.</p>
@@ -232,7 +177,7 @@
 
         <section class="msg-transition">
             <p style="font-size: 1.4em; font-style: italic; margin-bottom: 30px; color: var(--brun-sombre); max-width: 800px; margin-left: auto; margin-right: auto;">« Un parasite envahissant ou une terre fatiguée ? Laissez l'alchimiste vous révéler notre sélection des douze produits végétaux adaptés à votre sol. »</p>
-            <a href="jardin-selection.html" class="btn-selection">Découvrir la Sélection des 12 Produits</a>
+            <a href="jardin-selection.html" class="btn-selection">Découvrir la Sélection Jardin</a>
         </section>
 
         <section class="encadre-hero">
@@ -246,34 +191,31 @@
                     <a href="limaces.html" class="item-link"><span>Les Gourmands de la Nuit : Répulsif Limaces</span> <span>→</span></a>
                     <a href="araignees.html" class="item-link"><span>Le Fléau Invisible : Araignées Rouges</span> <span>→</span></a>
                     <a href="cochenilles-thrips.html" class="item-link"><span>La Neige Coriace : Cochenilles & Thrips</span> <span>→</span></a>
+                    <a href="rouille.html" class="item-link"><span>Les Taches Brunes : Vaincre la Rouille</span> <span>→</span></a>
                     <a href="feuilles-jaunes.html" class="item-link"><span>La Sève Épuisée : Soigner les Feuilles Jaunes</span> <span>→</span></a>
-                    <a href="insectes.html" class="item-link"><span>L'Équilibre Retrouvé : Les Insectes du Jardin</span> <span>→</span></a>
+                    <a href="fourmis.html" class="item-link"><span>L'Équilibre Retrouvé : Les Fourmis</span> <span>→</span></a>
                     <a href="sol-epuise.html" class="item-link"><span>L'Or Noir du Jardinier : Nourrir un Sol Épuisé</span> <span>→</span></a>
                     <a href="tavelure.html" class="item-link"><span>Le Verger Protégé : Contre la Tavelure</span> <span>→</span></a>
                     <a href="mousse.html" class="item-link"><span>Le Tapis Vert : Lutter contre la Mousse</span> <span>→</span></a>
-                    <a href="rouille.html" class="item-link"><span>Les Taches Brunes : Vaincre la Rouille</span> <span>→</span></a>
                 </div>
             </div>
         </section>
 
-        <section class="pricing-section">
-            <h2>L'Encyclopédie des Solutions Nomades</h2>
-            <p class="pricing-intro">Notre terre regorge de matières brutes et nobles. Prises isolément, elles possèdent déjà de puissantes vertus. Mais c'est dans l'art de les associer que se révèle la véritable alchimie.</p>
-            <div class="volume-buttons">
-                <a href="encyclopedie.html#vol1" class="vol-btn btn-v1">Vol 1 : Fondations</a>
-                <a href="encyclopedie.html#vol2" class="vol-btn btn-v2">Vol 2 : Enracinement</a>
-                <a href="encyclopedie.html#vol3" class="vol-btn btn-v3">Vol 3 : Éclosion</a>
-                <a href="encyclopedie.html#vol4" class="vol-btn btn-v4">Vol 4 : Harmonie</a>
-                <a href="encyclopedie.html#vol5" class="vol-btn btn-v5">Vol 5 : Élévation</a>
-            </div>
-            <div class="pricing-grid">
-                <div class="price-item"><h4>Le Volume</h4><span class="amount">14.90 €</span></div>
-                <div class="price-item"><h4>Le Pack Trio</h4><span class="amount">24.90 €</span></div>
-                <div class="price-item"><h4>L'Intégrale</h4><span class="amount">39.90 €</span></div>
-            </div>
-        </section>
-
     </main>
+
+    <section class="encyclopedie-section">
+        <h2 style="font-variant: small-caps; font-size: 2.2em; color: var(--brun-sombre); margin-bottom:10px;">L'Encyclopédie des Solutions Nomades</h2>
+        <div class="pills-row">
+            <a href="maison.html" class="pill p1">Vol 1 : Les Fondations</a>
+            <a href="jardin.html" class="pill p2">Vol 2 : Enracinement</a>
+            <a href="corps.html" class="pill p3">Vol 3 : Éclosion</a>
+            <a href="bienetre.html" class="pill p4">Vol 4 : Harmonie</a>
+            <a href="eso.html" class="pill p5">Vol 5 : Élévation</a>
+        </div>
+        <div style="margin-top: 40px; font-size: 1.2em; font-style: italic; color: var(--brun-sombre);">
+            Le Volume : <span style="color:var(--or-zen); font-weight:bold;">14.90€</span> — Pack Trio : <span style="color:var(--or-zen); font-weight:bold;">24.90€</span> — L'Intégrale : <span style="color:var(--or-zen); font-weight:bold;">39.90€</span>
+        </div>
+    </section>
 
     <footer>
         <a href="index.html" class="footer-logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>

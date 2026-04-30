@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Le Journal du Zen – Zen Chez Toi</title>
+    <title>Le Journal du Vivant – Zen Chez Toi</title>
 
     <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
     <meta name="p:domain_verify" content="549770272775"/>
@@ -16,7 +16,7 @@
     </script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7501098246029504" crossorigin="anonymous"></script>
     
-    <meta name="description" content="Découvrez le Journal du Zen : l'intégralité de nos chroniques alchimiques, remèdes naturels et rituels classés par univers.">
+    <meta name="description" content="Découvrez le Journal du Vivant : l'intégralité de nos chroniques alchimiques, remèdes naturels et rituels classés par univers.">
     <link rel="icon" type="image/png" href="assets/logo.png">
 
     <style>
@@ -64,21 +64,17 @@
         .encadre-titre { font-size: clamp(2.2em, 5vw, 3em); font-variant: small-caps; color: #fff; margin-bottom: 10px; text-shadow: 0 4px 10px rgba(0,0,0,0.5); }
         .encadre-sous-titre { font-style: italic; font-size: 1.1em; color: #fff; margin-bottom: 40px; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
         
-        .liste-selectionnable { display: flex; flex-direction: column; gap: 15px; max-width: 800px; margin: 0 auto; }
-        .item-link { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; padding: 18px 35px; display: flex; align-items: center; justify-content: space-between; text-decoration: none; color: #fff; transition: 0.4s ease; }
-        .item-link:hover { transform: scale(1.03); border-color: #fff; box-shadow: 0 10px 25px rgba(255,255,255,0.1); }
-        .item-link span { font-weight: bold; font-variant: small-caps; font-size: 1.15em; }
+        .liste-selectionnable { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; max-width: 900px; margin: 0 auto; }
+        .item-link { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; padding: 15px 30px; display: flex; align-items: center; justify-content: space-between; text-decoration: none; color: #fff; transition: 0.4s ease; font-size: 0.95em; }
+        .item-link:hover { transform: scale(1.03); border-color: #fff; }
+        .item-link span { font-weight: bold; font-variant: small-caps; }
 
-        /* VARIANTES COULEURS */
-        .journal-maison { border: 5px solid var(--maison); } .journal-maison .cadre-fond { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('assets/hero-maison.jpg'); } .journal-maison .item-link:hover { background: var(--maison); }
-        .journal-jardin { border: 5px solid var(--jardin); } .journal-jardin .cadre-fond { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('assets/hero-jardin.jpg'); } .journal-jardin .item-link:hover { background: var(--jardin); }
-        .journal-corps { border: 5px solid var(--corps); } .journal-corps .cadre-fond { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('assets/hero-corps.jpg'); } .journal-corps .item-link:hover { background: var(--corps); }
-        .journal-bienetre { border: 5px solid var(--bienetre); } .journal-bienetre .cadre-fond { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('assets/hero-bienetre.jpg'); } .journal-bienetre .item-link:hover { background: var(--bienetre); }
-        .journal-eso { border: 5px solid var(--eso); } .journal-eso .cadre-fond { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('assets/hero-eso.jpg'); } .journal-eso .item-link:hover { background: var(--eso); }
-
-        .pub-transversale { border: 5px solid var(--or-zen); }
-        .pub-transversale .cadre-fond { padding: 40px; background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('assets/hero-accueil.jpg'); }
-        .pub-transversale .item-link:hover { background: var(--or-zen); }
+        /* VARIANTES JOURNAL */
+        .journal-maison { border: 4px solid var(--maison); } .journal-maison .item-link:hover { background: var(--maison); }
+        .journal-jardin { border: 4px solid var(--jardin); } .journal-jardin .item-link:hover { background: var(--jardin); }
+        .journal-corps { border: 4px solid var(--corps); } .journal-corps .item-link:hover { background: var(--corps); }
+        .journal-bienetre { border: 4px solid var(--bienetre); } .journal-bienetre .item-link:hover { background: var(--bienetre); }
+        .journal-eso { border: 4px solid var(--eso); } .journal-eso .item-link:hover { background: var(--eso); }
 
         /* --- FOOTER --- */
         footer { background: var(--brun-sombre); color: #fff; padding: 80px 20px; text-align: center; }
@@ -93,9 +89,7 @@
         @media (max-width: 768px) {
             .nav-container { flex-direction: column; gap: 15px; }
             .hero { padding-top: 250px !important; justify-content: flex-start !important; height: auto !important; padding-bottom: 60px; }
-            .hero h1 { font-size: 2.5em; }
-            .search-section { margin-top: -30px; }
-            .item-link { flex-direction: column; text-align: center; gap: 10px; }
+            .liste-selectionnable { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -123,11 +117,11 @@
         <p class="tagline">« L'intégralité de nos chroniques alchimiques et rituels de saison, classés par univers. »</p>
     </section>
 
-    <!-- BARRE DE RECHERCHE INTEGRÉE -->
+    <!-- RECHERCHE -->
     <section class="search-section">
         <div class="search-container">
             <form action="recherche.html" method="GET">
-                <input type="text" name="q" placeholder="Interroger le Grimoire : Sommeil, Pucerons, Cristaux..." required>
+                <input type="text" name="q" placeholder="Interroger le Journal : Sommeil, Pucerons, Cristaux..." required>
                 <button type="submit">Chercher</button>
             </form>
         </div>
@@ -135,8 +129,9 @@
 
     <main class="container">
 
+        <!-- MAISON -->
         <section class="encadre-hero journal-maison" id="maison">
-            <div class="cadre-fond">
+            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/hero-maison.jpg');">
                 <h3 class="encadre-titre">Chroniques de l'Âtre</h3>
                 <p class="encadre-sous-titre">Secrets de purification et de clarté domestique.</p>
                 <div class="liste-selectionnable">
@@ -150,12 +145,14 @@
                     <a href="vaisselle.html" class="item-link"><span>La Pureté du Verre : Lave-Vaisselle</span> <span>→</span></a>
                     <a href="sols-naturels.html" class="item-link"><span>Ancrage au Sol : Entretien des Surfaces</span> <span>→</span></a>
                     <a href="soins-cuir.html" class="item-link"><span>La Seconde Peau : Soins du Cuir</span> <span>→</span></a>
+                    <a href="degraissant.html" class="item-link"><span>L'Alchimie du Gras : Dégraissant Naturel</span> <span>→</span></a>
                 </div>
             </div>
         </section>
 
+        <!-- JARDIN -->
         <section class="encadre-hero journal-jardin" id="jardin">
-            <div class="cadre-fond">
+            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/hero-jardin.jpg');">
                 <h3 class="encadre-titre">Secrets de la Terre</h3>
                 <p class="encadre-sous-titre">Chroniques du potager sauvage et de la protection du vivant.</p>
                 <div class="liste-selectionnable">
@@ -171,31 +168,37 @@
                     <a href="sol-epuise.html" class="item-link"><span>L'Or Noir du Jardinier : Nourrir un Sol Épuisé</span> <span>→</span></a>
                     <a href="tavelure.html" class="item-link"><span>Le Verger Protégé : Contre la Tavelure</span> <span>→</span></a>
                     <a href="mousse.html" class="item-link"><span>Le Tapis Vert : Lutter contre la Mousse</span> <span>→</span></a>
+                    <a href="insectes.html" class="item-link"><span>Le Bouclier Invisible : Répulsif Insectes</span> <span>→</span></a>
                 </div>
             </div>
         </section>
 
+        <!-- CORPS -->
         <section class="encadre-hero journal-corps" id="corps">
-            <div class="cadre-fond">
+            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/hero-corps.jpg');">
                 <h3 class="encadre-titre">Rituels du Temple</h3>
                 <p class="encadre-sous-titre">Chroniques de l'éclosion physique et rituels de soin intime.</p>
                 <div class="liste-selectionnable">
                     <a href="mal-de-dos.html" class="item-link"><span>Le Mal de Dos : Libérer les Tensions</span> <span>→</span></a>
                     <a href="cellulite.html" class="item-link"><span>Cellulite : Drainer et Lisser</span> <span>→</span></a>
                     <a href="peau-seche.html" class="item-link"><span>Peau Sèche : L'Onction Nourrissante</span> <span>→</span></a>
-                    <a href="fatigue-physique.html" class="item-link"><span>Fatigue : Relancer l'Énergie Vitale</span> <span>→</span></a>
+                    <a href="fatigue.html" class="item-link"><span>Fatigue : Relancer l'Énergie Vitale</span> <span>→</span></a>
                     <a href="jambes-lourdes.html" class="item-link"><span>Jambes Lourdes : Retrouver la Légèreté</span> <span>→</span></a>
                     <a href="chute-cheveux.html" class="item-link"><span>Chute de Cheveux : Fortifier la Parure</span> <span>→</span></a>
                     <a href="tensions-musculaires.html" class="item-link"><span>Muscles : Le Repos du Guerrier</span> <span>→</span></a>
                     <a href="articulations.html" class="item-link"><span>Articulations : Retrouver la Souplesse</span> <span>→</span></a>
                     <a href="odeurs-corps.html" class="item-link"><span>Transpiration : Purifier l'Aura</span> <span>→</span></a>
                     <a href="pieds-fatigues.html" class="item-link"><span>Pieds Fatigués : L'Ancrage au Sol</span> <span>→</span></a>
+                    <a href="eclat-peau.html" class="item-link"><span>La Lumière du Teint : Éclat de la Peau</span> <span>→</span></a>
+                    <a href="posture.html" class="item-link"><span>L'Axe de Vie : Améliorer sa Posture</span> <span>→</span></a>
+                    <a href="varices.html" class="item-link"><span>Le Flux Sanguin : Soin des Varices</span> <span>→</span></a>
                 </div>
             </div>
         </section>
 
+        <!-- BIEN-ETRE -->
         <section class="encadre-hero journal-bienetre" id="bienetre">
-            <div class="cadre-fond">
+            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/hero-bienetre.jpg');">
                 <h3 class="encadre-titre">Murmures de la Sève</h3>
                 <p class="encadre-sous-titre">Chroniques de l'harmonie intérieure et du sommeil profond.</p>
                 <div class="liste-selectionnable">
@@ -207,12 +210,15 @@
                     <a href="sommeil-profond.html" class="item-link"><span>Sommeil : Nuits Réparatrices</span> <span>→</span></a>
                     <a href="energie-vitalite.html" class="item-link"><span>Énergie : Relancer le Flux Vital</span> <span>→</span></a>
                     <a href="focus.html" class="item-link"><span>Focus : Mémoire et Concentration</span> <span>→</span></a>
+                    <a href="memoire.html" class="item-link"><span>L'Esprit Vif : Muscler sa Mémoire</span> <span>→</span></a>
+                    <a href="yoga-etirements.html" class="item-link"><span>Mouvement Doux : Yoga & Étirements</span> <span>→</span></a>
                 </div>
             </div>
         </section>
 
+        <!-- ESO -->
         <section class="encadre-hero journal-eso" id="eso">
-            <div class="cadre-fond">
+            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/hero-eso.jpg');">
                 <h3 class="encadre-titre">Le Journal du Secret</h3>
                 <p class="encadre-sous-titre">Chroniques de l'invisible et rituels de haute fréquence.</p>
                 <div class="liste-selectionnable">
@@ -226,6 +232,7 @@
                     <a href="geometrie-sacree.html" class="item-link"><span>Géométrie : Les Ondes de Forme</span> <span>→</span></a>
                     <a href="signes-univers.html" class="item-link"><span>Synchronicités : Lire les Signes</span> <span>→</span></a>
                     <a href="intuition.html" class="item-link"><span>Intuition : Éveiller ses Sens</span> <span>→</span></a>
+                    <a href="ancrage-spirituel.html" class="item-link"><span>Ancrage à la Terre : S'enraciner</span> <span>→</span></a>
                 </div>
             </div>
         </section>

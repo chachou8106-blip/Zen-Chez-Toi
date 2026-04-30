@@ -1,465 +1,276 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarot & Oracles : l'Alchimie du Tirage Intuitif | Zen Chez Toi</title>
 
-  <title>Tarot & oracles : faire des tirages en douceur | Zen Chez Toi</title>
-  <meta name="description" content="Comment débuter avec le tarot et les oracles : choisir ton jeu, faire des tirages simples à 1 ou 3 cartes, poser des questions claires et garder une trace dans ton grimoire.">
+    <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRV5YNRL57"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-JRV5YNRL57');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7501098246029504" crossorigin="anonymous"></script>
 
-  <!-- Vérification & tracking -->
-  <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
+    <meta name="description" content="Découvrez l'alchimie du tarot et des oracles. Apprenez à choisir votre jeu, formuler vos questions et réaliser des tirages simples pour guider votre intuition.">
+    <link rel="icon" type="image/png" href="assets/logo.png">
 
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRV5YNRL57"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-JRV5YNRL57');
-  </script>
+    <style>
+        :root {
+            --bg-sable: #f5f2ec; --blanc: #ffffff; --brun-sombre: #2b2622; --or-zen: #a67b51;
+            --maison: #6a7f8f; --jardin: #7b9074; --corps: #cca8a0; --bienetre: #d4a259; --eso: #826a8f;
+            
+            /* THÈME ÉSOTÉRISME ACTIVÉ */
+            --theme-article: var(--eso);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.8; overflow-x: hidden; }
 
-  <!-- Google AdSense global -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js?client=ca-pub-7501098246029504"
-          crossorigin="anonymous"></script>
+        /* --- HEADER & NAVIGATION --- */
+        header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; }
+        .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
+        
+        /* AURA LOGO HEADER BLANC ++++ (EXCLUSIVEMENT ICI) */
+        .logo { display: inline-block; text-decoration: none; transition: 0.4s ease; }
+        .logo img { max-height: 90px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2)); transition: 0.5s ease; }
+        .logo:hover img { 
+            filter: drop-shadow(0 0 30px #ffffff) drop-shadow(0 0 15px #ffffff) drop-shadow(0 0 5px #ffffff); 
+            transform: scale(1.05); 
+        }
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+        .header-right { display: flex; align-items: center; gap: 40px; }
+        nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
+        nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
+        nav a:hover { color: var(--theme-article); text-shadow: 0 0 15px var(--theme-article); }
 
-  <style>
-    :root {
-      --bg: #0f111a;
-      --text: #f5f3ff;
-      --muted: #b2b0c8;
-      --accent: #a98bff;
-      --dark: #060712;
-      --surface: rgba(18, 20, 35, 0.96);
-    }
+        .dropdown { position: relative; display: inline-block; padding: 15px 0; cursor: pointer; }
+        .dropdown-content { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background-color: var(--brun-sombre); min-width: 200px; box-shadow: 0px 10px 25px rgba(0,0,0,0.3); z-index: 2100; border-radius: 8px; border: 1px solid var(--theme-article); overflow: hidden; }
+        .dropdown-content a { color: rgba(255,255,255,0.8) !important; padding: 12px 20px; display: block; font-size: 0.95em; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1); font-variant: small-caps; }
+        .dropdown-content a:hover { background-color: var(--theme-article); color: #fff !important; }
+        .dropdown:hover .dropdown-content { display: block; }
 
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: Inter, sans-serif;
-      color: var(--text);
-      background: var(--bg);
-      line-height: 1.7;
-      padding-bottom: 60px;
-    }
-    a { text-decoration: none; color: inherit; transition: 0.3s; }
+        /* PINTEREST - SURVOL CLASSIQUE DANS LE THÈME */
+        .pinterest-badge { display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; font-style: italic; background: rgba(255,255,255,0.1); transition: 0.4s; }
+        .pinterest-badge:hover { 
+            background: var(--theme-article); 
+            border-color: var(--theme-article); 
+            transform: rotate(15deg) scale(1.1);
+            box-shadow: 0 0 15px var(--theme-article);
+        }
 
-    .main-nav {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(15,17,26,0.96);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-    }
-    .nav-wrap {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 15px;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-    .nav-wrap a {
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      font-weight: 700;
-      color: var(--muted);
-      letter-spacing: 0.1em;
-      padding: 5px 8px;
-    }
-    .nav-wrap a:hover,
-    .nav-wrap a.active {
-      color: var(--accent);
-    }
-    .dot {
-      color: rgba(255,255,255,0.15);
-      font-size: 0.7rem;
-    }
+        /* --- HERO ARTICLE --- */
+        .hero { height: 75vh; min-height: 500px; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('assets/hero-eso.jpg') center/cover no-repeat fixed; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; }
+        .vol-phrase { font-size: clamp(1.4em, 3vw, 2em); font-variant: small-caps; letter-spacing: 5px; font-weight: bold; margin-bottom: 15px; color: var(--theme-article); text-shadow: 0 4px 15px rgba(0,0,0,0.9), 0 2px 5px rgba(0,0,0,1); -webkit-text-stroke: 0.5px rgba(255,255,255,0.8); }
+        .hero h1 { font-size: clamp(2.5em, 6vw, 4.5em); font-weight: normal; margin-bottom: 20px; line-height: 1.2; font-variant: small-caps; text-shadow: 0 4px 15px rgba(0,0,0,0.8); max-width: 1000px; }
+        .tagline { font-size: clamp(1.1em, 2vw, 1.5em); font-style: italic; opacity: 0.9; max-width: 800px; line-height: 1.5; }
 
-    .hero {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 70px 20px 30px;
-      text-align: center;
-    }
-    .hero-kicker {
-      text-transform: uppercase;
-      letter-spacing: 0.18em;
-      font-size: 0.8rem;
-      color: var(--muted);
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-    h1 {
-      font-family: "Cormorant Garamond", serif;
-      font-size: clamp(2.5rem, 5vw, 3.3rem);
-      margin: 0 0 10px;
-    }
-    .hero-sub {
-      max-width: 640px;
-      margin: 0 auto;
-      color: var(--muted);
-      font-size: 1rem;
-    }
+        /* --- CORPS DU TEXTE --- */
+        .blog-container { max-width: 800px; margin: 60px auto 60px; padding: 0 20px; font-size: 1.15rem; color: #333; }
+        .blog-container h2 { font-size: 2.2em; color: var(--theme-article); margin: 60px 0 25px; font-variant: small-caps; text-align: center; font-weight: normal; }
+        .blog-container h3 { font-size: 1.5em; color: var(--brun-sombre); margin: 50px 0 15px; font-variant: small-caps; border-bottom: 1px solid rgba(130, 106, 143, 0.4); padding-bottom: 8px; }
+        .blog-container p { margin-bottom: 25px; text-align: justify; }
+        .blog-container ul, .blog-container ol { margin-bottom: 25px; padding-left: 20px; }
+        .blog-container li { margin-bottom: 10px; }
 
-    main {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 0 20px 80px;
-    }
-    h2 {
-      font-family: "Cormorant Garamond", serif;
-      font-size: 1.9rem;
-      margin: 40px 0 12px;
-    }
-    h3 {
-      font-family: "Cormorant Garamond", serif;
-      font-size: 1.3rem;
-      margin: 26px 0 8px;
-    }
-    p { margin: 0 0 12px; }
+        /* --- NOTES & ENCADRÉS --- */
+        .alchimiste-note { background: var(--blanc); border-left: 4px solid var(--theme-article); padding: 30px; margin: 50px 0; border-radius: 0 20px 20px 0; box-shadow: 0 15px 40px rgba(0,0,0,0.05); }
+        .note-titre { display: block; font-variant: small-caps; color: var(--theme-article); font-weight: bold; font-size: 1.3em; margin-bottom: 15px; }
 
-    .box {
-      background: var(--surface);
-      border-radius: 20px;
-      padding: 18px 18px 16px;
-      margin: 22px 0;
-      box-shadow: 0 14px 40px rgba(0,0,0,0.5);
-      border: 1px solid rgba(255,255,255,0.06);
-    }
-    .box-title {
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
-      color: var(--muted);
-      font-weight: 700;
-      margin-bottom: 6px;
-    }
-    ul {
-      padding-left: 18px;
-      margin: 0 0 12px;
-    }
-    li { margin-bottom: 6px; }
+        .encadre-hero { margin: 80px 0; border-radius: 30px; overflow: hidden; border: 5px solid var(--theme-article); box-shadow: 0 20px 50px rgba(0,0,0,0.2); }
+        .cadre-fond { padding: 60px 40px; text-align: center; background-size: cover; background-position: center; background-attachment: fixed; }
+        .encadre-titre { font-size: 2.5em; font-variant: small-caps; color: var(--brun-sombre); -webkit-text-stroke: 0.5px #ffffff; margin-bottom: 10px; text-shadow: 0 4px 15px rgba(0,0,0,0.6); letter-spacing: 1px; }
+        .encadre-sous-titre { font-style: italic; font-size: 1.1em; color: #fff; margin-bottom: 30px; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
+        
+        .liste-selectionnable { display: flex; flex-direction: column; gap: 15px; max-width: 650px; margin: 0 auto; }
+        
+        /* LIENS PRODUITS - SURVOL CLASSIQUE DANS LE THÈME */
+        .item-link { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; padding: 18px 35px; display: flex; align-items: center; justify-content: space-between; text-decoration: none; color: #fff; transition: 0.4s ease; }
+        .item-link:hover { 
+            transform: scale(1.03); 
+            border-color: #fff; 
+            background: var(--theme-article); 
+            box-shadow: 0 0 25px var(--theme-article);
+        }
+        .item-link span { font-weight: bold; font-variant: small-caps; font-size: 1.1em; text-align: left; }
+        .item-link span small { display: block; font-size: 0.75em; font-family: 'Georgia', serif; font-style: italic; opacity: 0.8; text-transform: none; font-weight: normal; }
 
-    .products-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
-      gap: 14px;
-      margin-top: 12px;
-    }
-    .product-card {
-      background: var(--surface);
-      border-radius: 18px;
-      padding: 16px;
-      box-shadow: 0 10px 32px rgba(0,0,0,0.45);
-      border: 1px solid rgba(255,255,255,0.06);
-    }
-    .product-card strong {
-      display: block;
-      margin-bottom: 6px;
-      font-family: "Cormorant Garamond", serif;
-      font-size: 1.2rem;
-    }
-    .product-card p {
-      font-size: 0.9rem;
-      color: var(--muted);
-    }
-    .product-card a {
-      display: inline-block;
-      margin-top: 8px;
-      color: var(--accent);
-      font-weight: 700;
-      font-size: 0.9rem;
-    }
+        /* --- ENCYCLOPÉDIE --- */
+        .encyclopedie-section { background-color: var(--blanc); padding: 80px 20px; text-align: center; border-top: 1px solid #eee; }
+        .pills-row { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 30px; }
+        .pill { padding: 10px 20px; border: 2px solid; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 0.9em; text-decoration: none; background: #fff; transition: 0.3s; }
+        .p1 { border-color: var(--maison); color: var(--maison); } .p1:hover { background: var(--maison); color: #fff; box-shadow: 0 0 15px var(--maison); }
+        .p2 { border-color: var(--jardin); color: var(--jardin); } .p2:hover { background: var(--jardin); color: #fff; box-shadow: 0 0 15px var(--jardin); }
+        .p3 { border-color: var(--corps); color: var(--corps); } .p3:hover { background: var(--corps); color: #fff; box-shadow: 0 0 15px var(--corps); }
+        .p4 { border-color: var(--bienetre); color: var(--bienetre); } .p4:hover { background: var(--bienetre); color: #fff; box-shadow: 0 0 15px var(--bienetre); }
+        .p5 { border-color: var(--eso); color: var(--eso); } .p5:hover { background: var(--eso); color: #fff; box-shadow: 0 0 15px var(--eso); }
 
-    .footer {
-      background: var(--dark);
-      color: #f5f3ff;
-      padding: 70px 20px 80px;
-      text-align: center;
-      margin-top: 20px;
-    }
-    .footer-title {
-      font-family: "Cormorant Garamond", serif;
-      font-size: 2.6rem;
-    }
-    .footer-title em {
-      color: var(--accent);
-      font-style: italic;
-    }
-    .footer-links {
-      margin-top: 18px;
-      opacity: 0.6;
-      display: flex;
-      justify-content: center;
-      gap: 18px;
-      flex-wrap: wrap;
-      font-size: 0.9rem;
-    }
+        /* --- FOOTER --- */
+        footer { background: var(--brun-sombre); color: #fff; padding: 80px 20px; text-align: center; }
+        
+        /* AURA LOGO FOOTER BLANC ++++ (EXCLUSIVEMENT ICI) */
+        .footer-logo { display: inline-block; transition: 0.4s ease; margin-bottom: 30px; }
+        .footer-logo img { height: 60px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.4)); transition: 0.5s; }
+        .footer-logo:hover img { 
+            filter: drop-shadow(0 0 30px #ffffff) drop-shadow(0 0 15px #ffffff) drop-shadow(0 0 5px #ffffff); 
+            transform: scale(1.05); 
+        }
+        
+        .footer-nav-compact { display: flex; gap: 30px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; flex-wrap: wrap; }
+        .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.6; font-variant: small-caps; transition: 0.3s; }
+        .footer-nav-compact a:hover { opacity: 1; color: var(--theme-article); text-shadow: 0 0 15px var(--theme-article); }
 
-    #disclaimer-bar {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background: rgba(0,0,0,0.95);
-      color: rgba(255,255,255,0.6);
-      font-size: 0.75rem;
-      text-align: center;
-      padding: 10px;
-      z-index: 1000;
-      border-top: 1px solid rgba(255,255,255,0.1);
-    }
+        #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
 
-    @media (max-width: 640px) {
-      .hero { padding-top: 50px; }
-      h2 { font-size: 1.7rem; }
-    }
-  </style>
+        @media (max-width: 768px) {
+            header { padding: 15px 0; }
+            .logo img { max-height: 70px; } 
+            .nav-container { flex-direction: column; gap: 15px; padding: 10px 20px; }
+            .header-right { flex-direction: column; gap: 15px; align-items: center; width: 100%; }
+            nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; }
+            .hero { padding-top: 350px !important; justify-content: flex-start !important; height: auto !important; padding-bottom: 60px; }
+            .hero h1 { font-size: 2.2em; }
+            .item-link { flex-direction: column; text-align: center; padding: 15px; }
+            .item-link span { text-align: center; }
+            .encadre-titre { font-size: 2em; }
+        }
+    </style>
 </head>
 <body>
 
-  <nav class="main-nav" aria-label="Navigation principale">
-    <div class="nav-wrap">
-      <a href="index.html">Accueil</a><span class="dot">•</span>
-      <a href="eso.html" class="active">Ésotérisme</a><span class="dot">•</span>
-      <a href="Jardin.html">Jardin</a><span class="dot">•</span>
-      <a href="maison.html">Maison</a><span class="dot">•</span>
-      <a href="bienetre.html">Bien-être</a><span class="dot">•</span>
-      <a href="Corps.html">Corps</a><span class="dot">•</span>
-      <a href="blog.html">Blog</a>
-    </div>
-  </nav>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
+            <div class="header-right">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li class="dropdown">
+                            <a href="grimoire.html">Grimoire</a>
+                            <div class="dropdown-content">
+                                <a href="maison.html">Vol 1 : Fondation</a>
+                                <a href="jardin.html">Vol 2 : Enracinement</a>
+                                <a href="corps.html">Vol 3 : Éclosion</a>
+                                <a href="bienetre.html">Vol 4 : Harmonie</a>
+                                <a href="eso.html">Vol 5 : Élévation</a>
+                            </div>
+                        </li>
+                        <li><a href="blog.html">Journal</a></li>
+                        <li><a href="encyclopedie.html">Encyclopédie</a></li>
+                        <li><a href="livre-or.html">Livre d'Or</a></li>
+                    </ul>
+                </nav>
+                <a href="https://www.pinterest.fr/zencheztoi/" class="pinterest-badge" target="_blank" title="Inspirations Ésotériques">p</a>
+            </div>
+        </div>
+    </header>
 
-  <header class="hero">
-    <div class="hero-kicker">Ésotérisme · Tarot & oracles</div>
-    <h1>Tarot & oracles : des tirages simples pour éclairer ton chemin</h1>
-    <p class="hero-sub">
-      Le tarot et les oracles sont des supports symboliques pour dialoguer avec ton intuition,
-      prendre du recul et explorer les différentes facettes d’une situation. [web:269][web:270][web:271][web:127][web:129]
-    </p>
-  </header>
-
-  <main>
-    <section>
-      <h2>Tarot ou oracle&nbsp;: que choisir&nbsp;?</h2>
-      <p>
-        Un jeu de tarot classique comporte 78 cartes avec une structure précise&nbsp;: 22 arcanes majeurs
-        (les grandes étapes de vie) et 56 arcanes mineurs (les expériences plus concrètes du quotidien). [web:269][web:270][web:127][web:129]
-      </p>
-      <p>
-        Les oracles, eux, sont plus libres&nbsp;: chaque jeu a son univers, son nombre de cartes et ses
-        propres mots‑clés, ce qui les rend très accessibles si tu veux des messages directs et intuitifs. [web:269][web:271][web:274]
-      </p>
-
-      <div class="box">
-        <div class="box-title">Pour débuter en douceur</div>
-        <ul>
-          <li>Si tu aimes les structures et les systèmes, un tarot (type Rider‑Waite ou Marseille) peut t’aider à progresser pas à pas. [web:269][web:270][web:129]</li>
-          <li>Si tu préfères un langage simple et des phrases claires, un oracle est souvent plus fluide au début. [web:269][web:271][web:274]</li>
-          <li>L’essentiel est de choisir un jeu dont les illustrations et l’ambiance te parlent vraiment. [web:269][web:270][web:271]</li>
-        </ul>
-      </div>
+    <section class="hero">
+        <p class="vol-phrase">Volume 5 : Élévation • Chronique</p>
+        <h1>Tarot & Oracles : l'Alchimie du Tirage Intuitif</h1>
+        <p class="tagline">« Les cartes ne dictent pas l'avenir, elles révèlent le présent. Apprenez à dialoguer avec votre intuition à travers des tirages simples pour éclairer votre chemin. »</p>
     </section>
 
-    <section>
-      <h2>Préparer ton tirage</h2>
-      <p>
-        Avant de tirer les cartes, prends quelques minutes pour te poser, mélanger ton jeu et formuler
-        une question claire, plutôt ouverte que fermée. [web:269][web:270][web:271]
-      </p>
-      <p>
-        Beaucoup de praticiens conseillent de battre les cartes plusieurs fois, de couper le jeu de la
-        main gauche (celle du cœur et de l’intuition) et de respirer calmement avant de tirer. [web:270][web:271]
-      </p>
+    <main class="blog-container">
 
-      <div class="box">
-        <div class="box-title">Exemples de bonnes questions</div>
-        <ul>
-          <li>«&nbsp;Comment puis‑je prendre soin de moi dans cette situation&nbsp;?&nbsp;» [web:271]</li>
-          <li>«&nbsp;De quoi ai‑je besoin de prendre conscience aujourd’hui&nbsp;?&nbsp;» [web:269][web:271]</li>
-          <li>«&nbsp;Quelle est la prochaine petite étape pour avancer sereinement&nbsp;?&nbsp;» [web:269][web:271]</li>
-        </ul>
-      </div>
-    </section>
+        <p>Dans la vibration de l'Élévation, le tarot et les oracles ne sont pas des outils de voyance pour deviner un futur figé. Ce sont des miroirs de l'âme, des supports symboliques puissants qui vous permettent de dialoguer avec votre propre intuition, de prendre du recul et d'explorer les différentes facettes d'une situation. Tirer les cartes, c'est s'offrir un moment de clarté dans le tumulte du quotidien.</p>
 
-    <section>
-      <h2>Deux tirages très simples</h2>
-      <p>
-        Tu n’as pas besoin de tirages compliqués pour commencer&nbsp;: un tirage à 1 carte ou à 3 cartes
-        permet déjà d’ouvrir une discussion avec toi‑même. [web:270][web:271]
-      </p>
-
-      <h3>Le tirage «&nbsp;Carte du jour&nbsp;»</h3>
-      <p>
-        Mélange ton jeu en pensant à ta journée, coupe, puis tire une carte que tu poses devant toi&nbsp;:
-        elle représente un message, une énergie ou un point d’attention pour les heures à venir. [web:269][web:270][web:271]
-      </p>
-      <p>
-        Tu peux la photographier ou la noter dans ton carnet, puis le soir, revenir voir comment son
-        message s’est manifesté (ou pas) dans ta journée. [web:269][web:271]
-      </p>
-
-      <h3>Le tirage à 3 cartes</h3>
-      <p>
-        Pour une question un peu plus précise, tu peux tirer trois cartes et les disposer de gauche à droite&nbsp;:
-        passé – présent – évolution possible, ou bien situation – conseil – tendance. [web:270][web:271]
-      </p>
-      <p>
-        Prends le temps de regarder les images, les couleurs, les symboles, puis d’associer ce que tu vois
-        à ta situation actuelle, plutôt que de chercher « la bonne réponse » toute faite. [web:269][web:270][web:274]
-      </p>
-    </section>
-
-    <section>
-      <h2>Lire les cartes en restant connectée à toi</h2>
-      <p>
-        Chaque carte possède des significations classiques, mais ton ressenti et ton contexte restent
-        au centre de la lecture&nbsp;: une même carte peut te parler différemment selon le moment. [web:127][web:129][web:130][web:274]
-      </p>
-      <p>
-        Les arcanes majeurs parlent souvent de grandes étapes de vie, tandis que les arcanes mineurs
-        reflètent des situations plus quotidiennes et des états d’esprit que tu peux faire évoluer. [web:127][web:129][web:130]
-      </p>
-
-      <div class="box">
-        <div class="box-title">Une petite façon d’interpréter</div>
-        <ul>
-          <li>Commence par observer l’image&nbsp;: ce qui t’attire, les couleurs, l’ambiance générale. [web:269][web:127][web:274]</li>
-          <li>Ajoute quelques mots‑clés classiques pour cette carte (amour, mouvement, choix, etc.). [web:127][web:129][web:130]</li>
-          <li>Relie le tout à ta question et à ce que tu vis en ce moment, sans te juger. [web:269][web:271]</li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <h2>Tarot & oracles · Sélection Zen Chez Toi</h2>
-      <p>
-        Voici quelques idées de jeux et de supports pour accompagner tes tirages, ainsi qu’un livre pour
-        t’aider à apprivoiser le tarot si tu débutes. [web:269][web:270][web:271][web:129][web:272][web:273]
-      </p>
-
-      <div class="products-grid">
-
-        <!-- 1. Tarot type Rider-Waite débutant -->
-        <div class="product-card">
-          <strong>Tarot illustré pour débuter</strong>
-          <p>
-            Un tarot au système classique (type Rider‑Waite ou inspiré), avec des illustrations détaillées
-            qui facilitent l’intuition et l’apprentissage des cartes. [web:269][web:270][web:129]
-          </p>
-          <p>
-            Parfait si tu as envie d’explorer la structure complète du tarot (arcanes majeurs et mineurs)
-            avec un support visuel parlant. [web:269][web:270][web:129]
-          </p>
-          <p>
-            Tu pourras l’utiliser pour les tirages à 1 ou 3 cartes décrits sur cette page, puis aller
-            vers des tirages plus avancés quand tu te sentiras prête. [web:269][web:270][web:271]
-          </p>
-          <a href="https://www.amazon.fr/dp/8865277352?linkCode=ll2&tag=zencheztoi-21&linkId=0000000000000000000000000000A001&ref_=as_li_ss_tl"
-             target="_blank"
-             rel="noopener noreferrer">
-            Voir un tarot illustré pour débuter sur Amazon
-          </a>
+        <div class="alchimiste-note">
+            <span class="note-titre">Tarot ou Oracle : Que Choisir ?</span>
+            <p>Le <strong>Tarot</strong> (comme le Rider-Waite ou le Tarot de Marseille) possède une structure immuable de 78 cartes : 22 arcanes majeurs (les grandes étapes de vie) et 56 arcanes mineurs (les expériences concrètes). Il offre une progression pas à pas. Les <strong>Oracles</strong>, à l'inverse, sont libres : chaque jeu possède son propre univers, son nombre de cartes et ses mots-clés, ce qui les rend souvent plus fluides et accessibles pour débuter.</p>
         </div>
 
-        <!-- 2. Oracle doux / guidance -->
-        <div class="product-card">
-          <strong>Oracle de guidance douce</strong>
-          <p>
-            Un oracle avec des messages simples et bienveillants, idéal pour tirer une carte par jour
-            ou recevoir un conseil symbolique dans une situation donnée. [web:269][web:271][web:274]
-          </p>
-          <p>
-            Chaque carte propose généralement un mot‑clé ou une phrase qui t’aide à mettre des mots
-            sur ce que tu ressens. [web:269][web:271]
-          </p>
-          <p>
-            Tu peux l’utiliser seul ou en complément du tarot pour ajouter une touche de douceur
-            à tes tirages. [web:269][web:271][web:274]
-          </p>
-          <a href="https://www.amazon.fr/dp/2361883084?linkCode=ll2&tag=zencheztoi-21&linkId=0000000000000000000000000000A002&ref_=as_li_ss_tl"
-             target="_blank"
-             rel="noopener noreferrer">
-            Voir un oracle de guidance sur Amazon
-          </a>
+        <h2>La Préparation du Tirage</h2>
+        <p>L'alchimie d'un tirage réside dans la préparation de l'espace, tant physique que mental. Avant de tirer :</p>
+        <ul>
+            <li>Prenez quelques minutes pour vous ancrer. Respirez calmement.</li>
+            <li>Mélangez votre jeu en conscience, puis coupez-le de la main gauche (la main reliée au cœur et à l'intuition).</li>
+            <li>Formulez une question claire et ouverte. Évitez les questions appelant un "oui" ou un "non". Demandez plutôt : <em>« De quoi ai-je besoin de prendre conscience aujourd’hui ? »</em> ou <em>« Comment puis-je prendre soin de moi dans cette situation ? »</em>.</li>
+        </ul>
+
+        <h2>Deux Rituels de Tirage Simples</h2>
+        <p>Il n'est pas nécessaire de maîtriser des tirages complexes pour recevoir une guidance profonde. La simplicité est souvent la clé de l'intuition.</p>
+
+        <h3>Le Tirage « Carte du Jour »</h3>
+        <p>Parfait pour s'initier. Le matin, mélangez votre jeu en pensant à votre journée. Coupez et tirez une seule carte. Elle représente une énergie, un conseil ou un point d'attention pour les heures à venir. Notez-la dans votre Grimoire, et observez le soir comment son message s'est manifesté (ou non).</p>
+
+        <h3>Le Tirage à 3 Cartes</h3>
+        <p>Idéal pour éclaircir une situation précise. Disposez trois cartes de gauche à droite. Vous pouvez choisir la structure qui vous parle le plus :</p>
+        <ul>
+            <li><strong>Le Chemin :</strong> Passé – Présent – Évolution possible.</li>
+            <li><strong>La Guidance :</strong> Situation actuelle – Conseil – Tendance à venir.</li>
+        </ul>
+
+        <section class="encadre-hero">
+            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/hero-eso.jpg');">
+                <h3 class="encadre-titre">L'Arsenal de Divination</h3>
+                <p class="encadre-sous-titre">Les jeux et guides piochés dans notre bibliothèque pour accompagner vos premiers tirages.</p>
+                <div class="liste-selectionnable">
+                    <a href="https://www.amazon.fr/Jeu-cartes-Divinatoires-Marseille-Jodorowsky/dp/B000LV5JU4?crid=1EVUDFYQHI1S8&dib=eyJ2IjoiMSJ9.K9w7_3aiPxBIWOnoFb4flyMoUKgM7eoEV24l8Dz7F2jU6tqwHeb__dCXkjSKGw8LZmVert5OOY_psIaA_lRcpBJxG_ZIFv9HVhz1ybPl6VqeKzENUL7R2M6qggkLNu7LTxAQut8ehp77j4MXrxwHFV9BxXpmTrqMiL5cAcSMe3tJCoqURCRJPY_6iG0Q9ZFGlW9Vk5tGAzo6QNawmX5vGksJk5YAFZYQu9k-iQAAFYAAwYFQvmZy25sIDc11NHHl1uDWwJOAxAxIPI4G5ZTE4zBi-3OmG0YGsFTatbdsltc.zKoaISAZzMDPHMGtjnXNs8&linkCode=ll2&tag=zencheztoi-21&linkId=7de8500dcac758aecd5e5831939c6677&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="item-link">
+                        <span>L'Archétype Universel <small>Tarot de Marseille (Jodorowsky) : l'incontournable pour explorer la structure des arcanes</small></span> <span>→</span>
+                    </a>
+                    <a href="https://www.amazon.fr/Grimaud-LOracle-Miroirs-divinatoire-Cartomancie/dp/B002Z0XXKW?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=32ME81HXC0S1T&dib=eyJ2IjoiMSJ9.dzbQdRUAhZyXPjSzldzidKcYYDDayDfSwx9KSDgDRo5NUyGFj5QPBRR3q_HxUGvmz7zCpm9QXRLAvBTdab5bPyzBraQEo7xW46ByP70bMIWKXz_IUYU8joHuLUTFQQW-t3YS8BO17atcHB1SChdKwIM3uT07QTMhMHfBEkgaqtLn1xHQvJUcyvhFIKcQ4eY1sSTDRh_GZBkkaZSTyDGVQymTXw7AkJkkIC5vJbM636js2r-x54TjqhSF2_j9j-IBDnkexE7TqcWCW4yMSegHoMV7LYov1CbwfaL5n7NlXfE.NWJ6YZNYMf9DM2KnWpw9n83NQUUJoa9l_X5U6c6_fZA&dib_tag=se&keywords=oracle+des+miroirs&qid=1776241981&sprefix=oracle+des+miroirs%2Caps%2C235&sr=8-1&linkCode=ll2&tag=zencheztoi-21&linkId=a1ec1da010a405a836e72380f0163846&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="item-link">
+                        <span>La Voix Intuitive <small>L'Oracle des Miroirs : un jeu franc et accessible pour des réponses claires</small></span> <span>→</span>
+                    </a>
+                    <a href="https://www.amazon.fr/LIRE-CARTES-Interpr%C3%A9ter-cartomancie-divinatoire/dp/B0GN84MKFT?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=TNIHFPYEF7EA&dib=eyJ2IjoiMSJ9.Yj-1TYLwh4shoSjx0eDhEgttmSc775Ci0IvLHL6QwluOsnQUuyshfE2OtbD1oLJiTk0ystsM1RL_qu6Q_UJV-kyKQ_v_Ar1Fj0WzLpg1F3wtKQ5UsORZpTrg_SHrb2U6jPK40S3CS7lsP5hdkWl7OE5lvzTeVbYEKwqIIujAk3S9N41WDuFNILn3UGG2I3uojMMm2tucSZHceDFmPjTpxIorZvULD3g3ezn6CBGydPGG_Ag6KBpEoupYvcsz2a4kVVi9i0ka5MmWHw--yCYUB_6tRn0mIfDDnTIROg2HYrY.AgeOIUfGw7YKGArgrcCECqJqavJI3ymjMvvQJHa-ueA&dib_tag=se&keywords=guide+tarot+oracle&qid=1777549762&sprefix=guide+tarot+oracle%2Caps%2C220&sr=8-1&linkCode=ll2&tag=zencheztoi-21&linkId=4104e48d586d6fb40a14738e0ec931d9&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="item-link">
+                        <span>Le Grimoire d'Étude <small>Livre "Lire les Cartes" : un guide pratique pour interpréter la cartomancie</small></span> <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <h2>Lire les Cartes avec le Cœur</h2>
+        <p>L'erreur la plus commune est de chercher la "bonne réponse" toute faite dans le livret. Chaque carte possède des significations classiques, mais l'interprétation finale doit venir de vous. Observez l'image, les couleurs, ce qui attire votre regard. Ajoutez-y un ou deux mots-clés traditionnels, puis reliez cette symbolique à ce que vous traversez actuellement, sans vous juger. Une même carte peut résonner de mille façons différentes selon le moment.</p>
+
+        <section class="encadre-hero">
+            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/hero-accueil.jpg');">
+                <h3 class="encadre-titre">Continuer l'Élévation</h3>
+                <p class="encadre-sous-titre">Poursuis ton initiation à travers nos autres chroniques vibratoires.</p>
+                <div class="liste-selectionnable">
+                    <a href="pendule.html" class="item-link">
+                        <span>L'Écoute Corporelle <small>Chronique : S'initier à la radiesthésie avec le pendule</small></span> <span>→</span>
+                    </a>
+                    <a href="cristaux-chakras.html" class="item-link">
+                        <span>La Sagesse des Pierres <small>Chronique : Harmoniser ses chakras avec les cristaux</small></span> <span>→</span>
+                    </a>
+                    <a href="eso.html" class="item-link">
+                        <span>Le Volume 5 Complet <small>La Table des Matières de ton Élévation</small></span> <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <section class="encyclopedie-section" style="background-color: var(--blanc); padding: 80px 20px; text-align: center; border-top: 1px solid #eee;">
+        <h2 style="font-variant: small-caps; font-size: 2.2em; color: var(--brun-sombre); margin-bottom: 20px;">Emporte nos savoirs avec toi</h2>
+        <div class="pills-row">
+            <a href="encyclopedie.html#vol1" class="pill p1">Vol 1 : Fondation</a>
+            <a href="encyclopedie.html#vol2" class="pill p2">Vol 2 : Enracinement</a>
+            <a href="encyclopedie.html#vol3" class="pill p3">Vol 3 : Éclosion</a>
+            <a href="encyclopedie.html#vol4" class="pill p4">Vol 4 : Harmonie</a>
+            <a href="encyclopedie.html#vol5" class="pill p5">Vol 5 : Élévation</a>
         </div>
-
-        <!-- 3. Livre « Tarot pour débutants » -->
-        <div class="product-card">
-          <strong>Livre « Tarot pour débutants »</strong>
-          <p>
-            Un guide qui reprend les bases du tarot&nbsp;: structure du jeu, signification des arcanes
-            majeurs et mineurs, exemples de tirages et conseils pour formuler tes questions. [web:269][web:270][web:272][web:273]
-          </p>
-          <p>
-            Il t’accompagne pas à pas pour créer un lien personnel avec tes cartes et interpréter
-            tes tirages avec plus de confiance. [web:269][web:272][web:273]
-          </p>
-          <p>
-            Tu peux le garder à portée de main au début, puis t’en détacher progressivement au fil
-            de ta pratique. [web:269][web:271][web:272]
-          </p>
-          <a href="https://www.amazon.fr/dp/2017159591?linkCode=ll2&tag=zencheztoi-21&linkId=0000000000000000000000000000A003&ref_=as_li_ss_tl"
-             target="_blank"
-             rel="noopener noreferrer">
-            Voir le livre Tarot pour débutants sur Amazon
-          </a>
+        <div style="margin-top: 40px; font-size: 1.2em; font-style: italic; color: var(--brun-sombre);">
+            Le Volume : <span style="color:var(--or-zen); font-weight:bold;">14.90€</span> — Pack Trio : <span style="color:var(--or-zen); font-weight:bold;">24.90€</span> — L'Intégrale : <span style="color:var(--or-zen); font-weight:bold;">39.90€</span>
         </div>
-
-      </div>
-
-      <p style="font-size:0.85rem; color:var(--muted); margin-top:10px;">
-        Certains liens sont affiliés : ils ne changent rien pour vous, mais soutiennent la création
-        de Zen Chez Toi si vous choisissez d’acheter via ces recommandations.
-      </p>
     </section>
 
-    <!-- Liens croisés vers Grimoire et Blog -->
-    <section>
-      <div class="box">
-        <div class="box-title">Pour continuer ta pratique des cartes</div>
-        <p>
-          Si tu as envie de garder une trace de tes tirages, des cartes qui reviennent souvent et de tes ressentis,
-          tu peux créer un journal dédié grâce à la page
-          <a href="grimoire.html" style="color:var(--accent); font-weight:700;">Grimoire & carnet de rituels</a>. [web:244][web:246][web:248][web:250]
-        </p>
-        <p>
-          Et pour nourrir tes réflexions sur l’intuition, les intentions ou les cycles, les articles du
-          <a href="blog.html" style="color:var(--accent); font-weight:700;">Blog</a>
-          pourront accompagner tes tirages comme de petites lectures de fond. [web:244][web:246][web:248][web:250]
-        </p>
-      </div>
-    </section>
+    <footer>
+        <a href="index.html" class="footer-logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
+        <ul class="footer-nav-compact">
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+            <li><a href="confidentialite.html">Confidentialité</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+            <li><a href="a-propos.html">À Propos</a></li>
+            <li><a href="livre-or.html">Livre d'Or</a></li>
+        </ul>
+        <p style="font-size: 0.85em; opacity: 0.4;">&copy; 2026 Zen Chez Toi • L'Harmonie au Naturel.</p>
+    </footer>
 
-  </main>
-
-  <footer class="footer">
-    <div class="footer-title">Zen <em>Chez</em> Toi</div>
-    <div class="footer-links">
-      <a href="mentions-legales.html">Mentions légales</a>
-      <a href="confidentialite.html">Politique de confidentialité</a>
-      <a href="cookies.html">Gestion des cookies</a>
-      <a href="eso.html">Retour à l’univers Ésotérisme</a>
-    </div>
-    <p style="margin-top:30px; opacity:0.35; font-size:0.8rem;">
-      © 2026 Zen Chez Toi — Tous droits réservés.
-    </p>
-  </footer>
-
-  <div id="disclaimer-bar">
-    Pratiques ésotériques : ces contenus ont une portée symbolique et ne remplacent pas un avis médical,
-    psychologique ou juridique. Liens affiliés Amazon : je réalise un bénéfice sur les achats remplissant
-    les conditions requises.
-  </div>
+    <div id="disclaimer-bar">🔗 Liens affiliés Amazon : Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises. Pratiques ésotériques : ces tirages ont une portée symbolique et ne remplacent pas un avis psychologique ou médical.</div>
 
 </body>
 </html>

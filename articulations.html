@@ -1,257 +1,260 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Articulations : retrouver plus de souplesse | Zen Chez Toi</title>
-  <meta name="description" content="Douleurs articulaires, raideurs, manque de souplesse : chaleur, mobilité douce et curcuma pour accompagner le confort articulaire au quotidien.">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Articulations : Retrouver la Souplesse au Naturel | Zen Chez Toi</title>
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRV5YNRL57"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-JRV5YNRL57');
-  </script>
+    <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRV5YNRL57"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-JRV5YNRL57');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7501098246029504" crossorigin="anonymous"></script>
 
-  <!-- Google Fonts corrigé -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <meta name="description" content="Douleurs articulaires, raideurs, manque de souplesse : découvrez nos rituels alchimiques à base de chaleur, de mobilité douce et d'élixirs naturels.">
+    <link rel="icon" type="image/png" href="assets/logo.png">
 
-  <style>
-    :root {
-      --bg:#fff7f4;
-      --text:#3b221d;
-      --muted:#8a5c52;
-      --accent:#e27b63;
-      --dark:#2a1410;
-      --surface:rgba(255,255,255,.94);
-    }
+    <style>
+        :root {
+            --bg-sable: #f5f2ec; --blanc: #ffffff; --brun-sombre: #2b2622; --or-zen: #a67b51;
+            --maison: #6a7f8f; --jardin: #7b9074; --corps: #cca8a0; --bienetre: #d4a259; --eso: #826a8f;
+            
+            /* THÈME CORPS ACTIVÉ */
+            --theme-article: var(--corps);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.8; overflow-x: hidden; }
 
-    * { box-sizing:border-box; }
-    html { scroll-behavior:smooth; }
-    body {
-      margin:0;
-      font-family:'Inter',sans-serif;
-      color:var(--text);
-      background:var(--bg);
-      line-height:1.7;
-    }
-    a { text-decoration:none; color:var(--accent); transition:.3s; }
-    img { max-width:100%; display:block; }
+        /* --- HEADER & NAVIGATION --- */
+        header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; }
+        .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
+        
+        /* AURA LOGO HEADER BLANC ++++ (EXCLUSIVEMENT ICI) */
+        .logo { display: inline-block; text-decoration: none; transition: 0.4s ease; }
+        .logo img { max-height: 90px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2)); transition: 0.5s ease; }
+        .logo:hover img { 
+            filter: drop-shadow(0 0 30px #ffffff) drop-shadow(0 0 15px #ffffff) drop-shadow(0 0 5px #ffffff); 
+            transform: scale(1.05); 
+        }
 
-    .main-nav {
-      position:sticky;
-      top:0;
-      z-index:20;
-      background:rgba(250,246,243,.96);
-      backdrop-filter:blur(12px);
-      border-bottom:1px solid rgba(0,0,0,.08);
-    }
-    .nav-wrap {
-      max-width:1200px;
-      margin:0 auto;
-      padding:12px 16px;
-      display:flex;
-      justify-content:center;
-      gap:14px;
-      flex-wrap:wrap;
-      align-items:center;
-    }
-    .nav-wrap a {
-      font-size:.8rem;
-      text-transform:uppercase;
-      font-weight:700;
-      color:var(--muted);
-      letter-spacing:.1em;
-      padding:4px 8px;
-    }
-    .nav-wrap a.active,
-    .nav-wrap a:hover { color:var(--accent); }
-    .dot { color:rgba(0,0,0,.1); font-size:.7rem; }
+        .header-right { display: flex; align-items: center; gap: 40px; }
+        nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
+        nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
+        nav a:hover { color: var(--theme-article); text-shadow: 0 0 15px var(--theme-article); }
 
-    .hero {
-      position:relative;
-      background:#000;
-      line-height:0;
-    }
-    .hero img {
-      width:100%;
-      max-height:460px;
-      min-height:300px;
-      object-fit:cover;
-    }
-    .hero-overlay {
-      position:absolute;
-      inset:0;
-      background:rgba(0,0,0,.28);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      text-align:center;
-      padding:24px;
-      line-height:1.6;
-    }
-    .hero-content { max-width:860px; color:white; }
-    .hero-kicker {
-      text-transform:uppercase;
-      letter-spacing:.16em;
-      font-size:.8rem;
-      font-weight:700;
-      margin-bottom:10px;
-      opacity:.9;
-    }
-    h1 {
-      font-family:'Cormorant Garamond',serif;
-      font-size:clamp(2.4rem,5vw,4rem);
-      margin:0 0 14px;
-      line-height:1.08;
-    }
-    .hero-sub {
-      font-size:1.04rem;
-      max-width:720px;
-      margin:0 auto;
-      color:rgba(255,255,255,.92);
-    }
+        .dropdown { position: relative; display: inline-block; padding: 15px 0; cursor: pointer; }
+        .dropdown-content { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background-color: var(--brun-sombre); min-width: 200px; box-shadow: 0px 10px 25px rgba(0,0,0,0.3); z-index: 2100; border-radius: 8px; border: 1px solid var(--theme-article); overflow: hidden; }
+        .dropdown-content a { color: rgba(255,255,255,0.8) !important; padding: 12px 20px; display: block; font-size: 0.95em; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1); font-variant: small-caps; }
+        .dropdown-content a:hover { background-color: var(--theme-article); color: #fff !important; }
+        .dropdown:hover .dropdown-content { display: block; }
 
-    main {
-      max-width:900px;
-      margin:0 auto;
-      padding:28px 20px 70px;
-    }
-    h2 {
-      font-family:'Cormorant Garamond',serif;
-      font-size:1.8rem;
-      margin-top:42px;
-      margin-bottom:10px;
-    }
-    p { margin:0 0 14px; }
-    ul { padding-left:20px; margin:0 0 14px; }
+        .pinterest-badge { display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; font-style: italic; background: rgba(255,255,255,0.1); transition: 0.4s; }
+        .pinterest-badge:hover { 
+            background: var(--theme-article); 
+            border-color: var(--theme-article); 
+            transform: rotate(15deg) scale(1.1);
+            box-shadow: 0 0 15px var(--theme-article);
+        }
 
-    .box {
-      background:var(--surface);
-      border-radius:18px;
-      padding:18px;
-      margin:26px 0;
-      box-shadow:0 12px 28px rgba(0,0,0,.05);
-      border:1px solid rgba(0,0,0,.03);
-    }
+        /* --- HERO ARTICLE --- */
+        .hero { height: 75vh; min-height: 500px; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('assets/hero-corps.jpg') center/cover no-repeat fixed; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; }
+        .vol-phrase { font-size: clamp(1.4em, 3vw, 2em); font-variant: small-caps; letter-spacing: 5px; font-weight: bold; margin-bottom: 15px; color: var(--theme-article); text-shadow: 0 4px 15px rgba(0,0,0,0.9), 0 2px 5px rgba(0,0,0,1); -webkit-text-stroke: 0.5px rgba(255,255,255,0.8); }
+        .hero h1 { font-size: clamp(2.5em, 6vw, 4.5em); font-weight: normal; margin-bottom: 20px; line-height: 1.2; font-variant: small-caps; text-shadow: 0 4px 15px rgba(0,0,0,0.8); max-width: 1000px; }
+        .tagline { font-size: clamp(1.1em, 2vw, 1.5em); font-style: italic; opacity: 0.9; max-width: 800px; line-height: 1.5; }
 
-    .cta-link {
-      display:inline-block;
-      margin-top:10px;
-      padding:10px 18px;
-      border:1px solid var(--accent);
-      border-radius:999px;
-      color:var(--accent);
-      font-weight:700;
-      font-size:.95rem;
-    }
-    .cta-link:hover {
-      background:var(--accent);
-      color:white;
-    }
+        /* --- CORPS DU TEXTE --- */
+        .blog-container { max-width: 800px; margin: 60px auto 60px; padding: 0 20px; font-size: 1.15rem; color: #333; }
+        .blog-container h2 { font-size: 2.2em; color: var(--theme-article); margin: 60px 0 25px; font-variant: small-caps; text-align: center; font-weight: normal; }
+        .blog-container h3 { font-size: 1.5em; color: var(--brun-sombre); margin: 50px 0 15px; font-variant: small-caps; border-bottom: 1px solid rgba(204, 168, 160, 0.4); padding-bottom: 8px; }
+        .blog-container p { margin-bottom: 25px; text-align: justify; }
+        .blog-container ul, .blog-container ol { margin-bottom: 25px; padding-left: 20px; }
+        .blog-container li { margin-bottom: 10px; }
 
-    /* Slot pub discret */
-    .ad-slot{
-      margin:32px auto 0;
-      max-width:900px;
-      padding:1rem 1.2rem;
-      border-radius:18px;
-      border:1px dashed rgba(0,0,0,.12);
-      font-size:.85rem;
-      color:var(--muted);
-      background:rgba(255,255,255,.7);
-    }
+        /* --- NOTES & ENCADRÉS --- */
+        .alchimiste-note { background: var(--blanc); border-left: 4px solid var(--theme-article); padding: 30px; margin: 50px 0; border-radius: 0 20px 20px 0; box-shadow: 0 15px 40px rgba(0,0,0,0.05); }
+        .note-titre { display: block; font-variant: small-caps; color: var(--theme-article); font-weight: bold; font-size: 1.3em; margin-bottom: 15px; }
 
-    .footer {
-      background:var(--dark);
-      color:#f3dfca;
-      padding:60px 20px 80px;
-      text-align:center;
-      margin-top:30px;
-    }
-  </style>
+        .encadre-hero { margin: 80px 0; border-radius: 30px; overflow: hidden; border: 5px solid var(--theme-article); box-shadow: 0 20px 50px rgba(0,0,0,0.2); }
+        .cadre-fond { padding: 60px 40px; text-align: center; background-size: cover; background-position: center; background-attachment: fixed; }
+        .encadre-titre { font-size: 2.5em; font-variant: small-caps; color: var(--brun-sombre); -webkit-text-stroke: 0.5px #ffffff; margin-bottom: 10px; text-shadow: 0 4px 15px rgba(0,0,0,0.6); letter-spacing: 1px; }
+        .encadre-sous-titre { font-style: italic; font-size: 1.1em; color: #fff; margin-bottom: 30px; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
+        
+        .liste-selectionnable { display: flex; flex-direction: column; gap: 15px; max-width: 650px; margin: 0 auto; }
+        
+        .item-link { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; padding: 18px 35px; display: flex; align-items: center; justify-content: space-between; text-decoration: none; color: #fff; transition: 0.4s ease; }
+        .item-link:hover { 
+            transform: scale(1.03); 
+            border-color: #ffffff; 
+            background: var(--theme-article); 
+            box-shadow: 0 0 25px var(--theme-article);
+        }
+        .item-link span { font-weight: bold; font-variant: small-caps; font-size: 1.1em; text-align: left; }
+        .item-link span small { display: block; font-size: 0.75em; font-family: 'Georgia', serif; font-style: italic; opacity: 0.8; text-transform: none; font-weight: normal; }
+
+        /* --- ENCYCLOPÉDIE --- */
+        .encyclopedie-section { background-color: var(--blanc); padding: 80px 20px; text-align: center; border-top: 1px solid #eee; }
+        .pills-row { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 30px; }
+        .pill { padding: 10px 20px; border: 2px solid; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 0.9em; text-decoration: none; background: #fff; transition: 0.3s; }
+        .p1 { border-color: var(--maison); color: var(--maison); } .p1:hover { background: var(--maison); color: #fff; box-shadow: 0 0 15px var(--maison); }
+        .p2 { border-color: var(--jardin); color: var(--jardin); } .p2:hover { background: var(--jardin); color: #fff; box-shadow: 0 0 15px var(--jardin); }
+        .p3 { border-color: var(--corps); color: var(--corps); } .p3:hover { background: var(--corps); color: #fff; box-shadow: 0 0 15px var(--corps); }
+        .p4 { border-color: var(--bienetre); color: var(--bienetre); } .p4:hover { background: var(--bienetre); color: #fff; box-shadow: 0 0 15px var(--bienetre); }
+        .p5 { border-color: var(--eso); color: var(--eso); } .p5:hover { background: var(--eso); color: #fff; box-shadow: 0 0 15px var(--eso); }
+
+        /* --- FOOTER --- */
+        footer { background: var(--brun-sombre); color: #fff; padding: 80px 20px; text-align: center; }
+        
+        .footer-logo { display: inline-block; transition: 0.4s ease; margin-bottom: 30px; }
+        .footer-logo img { height: 60px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.4)); transition: 0.5s; }
+        .footer-logo:hover img { 
+            filter: drop-shadow(0 0 30px #ffffff) drop-shadow(0 0 15px #ffffff) drop-shadow(0 0 5px #ffffff); 
+            transform: scale(1.05); 
+        }
+        
+        .footer-nav-compact { display: flex; gap: 30px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; flex-wrap: wrap; }
+        .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.6; font-variant: small-caps; transition: 0.3s; }
+        .footer-nav-compact a:hover { opacity: 1; color: var(--theme-article); text-shadow: 0 0 15px var(--theme-article); }
+
+        #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
+
+        @media (max-width: 768px) {
+            header { padding: 15px 0; }
+            .logo img { max-height: 70px; } 
+            .nav-container { flex-direction: column; gap: 15px; padding: 10px 20px; }
+            .header-right { flex-direction: column; gap: 15px; align-items: center; width: 100%; }
+            nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; }
+            .hero { padding-top: 350px !important; justify-content: flex-start !important; height: auto !important; padding-bottom: 60px; }
+            .hero h1 { font-size: 2.2em; }
+            .item-link { flex-direction: column; text-align: center; padding: 15px; }
+            .item-link span { text-align: center; }
+            .encadre-titre { font-size: 2em; }
+        }
+    </style>
 </head>
 <body>
 
-  <nav class="main-nav" aria-label="Navigation principale">
-    <div class="nav-wrap">
-      <a href="index.html">Accueil</a><span class="dot">&bull;</span>
-      <a href="bienetre.html">Bien-être</a><span class="dot">&bull;</span>
-      <a href="Corps.html" class="active">Corps</a><span class="dot">&bull;</span>
-      <a href="blog.html">Blog</a>
-    </div>
-  </nav>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
+            <div class="header-right">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li class="dropdown">
+                            <a href="grimoire.html">Grimoire</a>
+                            <div class="dropdown-content">
+                                <a href="maison.html">Vol 1 : Fondation</a>
+                                <a href="jardin.html">Vol 2 : Enracinement</a>
+                                <a href="corps.html">Vol 3 : Éclosion</a>
+                                <a href="bienetre.html">Vol 4 : Harmonie</a>
+                                <a href="eso.html">Vol 5 : Élévation</a>
+                            </div>
+                        </li>
+                        <li><a href="blog.html">Journal</a></li>
+                        <li><a href="encyclopedie.html">Encyclopédie</a></li>
+                        <li><a href="livre-or.html">Livre d'Or</a></li>
+                    </ul>
+                </nav>
+                <a href="https://www.pinterest.fr/zencheztoi/" class="pinterest-badge" target="_blank" title="Inspirations pour le Corps">p</a>
+            </div>
+        </div>
+    </header>
 
-  <header class="hero">
-    <img src="assets/douleurs-articulaires.jpg" alt="Apaiser les douleurs articulaires">
-    <div class="hero-overlay">
-      <div class="hero-content">
-        <div class="hero-kicker">Corps · Mobilité</div>
-        <h1>Articulations : soutenir la souplesse sans brusquer</h1>
-        <p class="hero-sub">
-          Quand les articulations deviennent raides ou sensibles, la mobilité douce, la chaleur locale et certains soutiens nutritionnels comme le curcuma sont souvent évoqués pour accompagner le confort et le mouvement.[web:1048][web:1056]
-        </p>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section>
-      <h2>Pourquoi la raideur s’installe-t-elle ?</h2>
-      <p>
-        Les articulations peuvent devenir plus sensibles avec l’âge, après des efforts répétés, en période inflammatoire ou simplement après des journées trop statiques, ce qui limite la mobilité.[web:1056]
-      </p>
-      <p>
-        Dans ce contexte, l’objectif est souvent moins la performance que le maintien du mouvement dans des conditions confortables.[web:1053]
-      </p>
+    <section class="hero">
+        <p class="vol-phrase">Volume 3 : Éclosion • Chronique</p>
+        <h1>Articulations : Soutenir la Souplesse sans Brusquer</h1>
+        <p class="tagline">« Le mouvement, c'est la vie. Quand les charnières du corps s'enrayent, l'alchimie de la chaleur et des plantes vient restaurer la fluidité. »</p>
     </section>
 
-    <section>
-      <h2>Les gestes qui aident au quotidien</h2>
-      <ul>
-        <li>Préserver une mobilité douce et régulière, plutôt que rester complètement immobile.[web:1056]</li>
-        <li>Utiliser la chaleur locale (bouillotte, douche tiède) pour assouplir les zones raides.[web:1056]</li>
-        <li>Adopter une routine simple et répétable, plutôt qu’un effort intense ponctuel.[web:1053]</li>
-      </ul>
-      <p>
-        Le mouvement progressif est souvent mieux toléré que l’immobilité complète, car rester totalement inactif peut majorer la sensation d’enraidissement.[web:1056]
-      </p>
+    <main class="blog-container">
+
+        <h2>Pourquoi la raideur s'installe-t-elle ?</h2>
+        <p>Les articulations peuvent devenir plus sensibles avec l'âge, après des efforts répétés, en période inflammatoire ou simplement après des journées trop statiques, ce qui limite la mobilité. L'immobilité prolongée fige les fluides articulaires. Dans ce contexte, l'objectif est souvent moins la performance que le maintien du mouvement dans des conditions confortables.</p>
+
+        <div class="alchimiste-note">
+            <span class="note-titre">La Loi du Mouvement</span>
+            <p>Le mouvement progressif est toujours mieux toléré que l'immobilité complète. Rester totalement inactif pour "protéger" une articulation a souvent l'effet inverse : cela majore la sensation d'enraidissement et atrophie les muscles stabilisateurs.</p>
+        </div>
+
+        <h2>Les gestes qui aident au quotidien</h2>
+        <ul>
+            <li>Préserver une mobilité douce et régulière (marche, étirements au sol), plutôt que rester complètement immobile.</li>
+            <li>Utiliser la chaleur locale (bouillotte, douche tiède, baume chauffant) pour assouplir les zones raides et stimuler la circulation.</li>
+            <li>Adopter une routine simple et répétable, plutôt qu'un effort intense et ponctuel qui risque de réveiller l'inflammation.</li>
+        </ul>
+
+        <section class="encadre-hero">
+            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/hero-corps.jpg');">
+                <h3 class="encadre-titre">L'Arsenal de la Souplesse</h3>
+                <p class="encadre-sous-titre">Les élixirs et soutiens de notre grimoire pour apaiser vos charnières corporelles.</p>
+                <div class="liste-selectionnable">
+                    <a href="https://www.amazon.fr/GAULTH%C3%89RIE-ODORANTE-BIO-Essentielle-Ch%C3%A9motyp%C3%A9e/dp/B098PFFH45?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3GMROYPF2JSC6&dib=eyJ2IjoiMSJ9.Pm5t5d5duo6fa1C2OdwBvzzvSpeL6S7HMj4vaus4hchqMuyFEaG4aJ8fD6LjeOVtSCG7Wx71kFr0YFz6KUH6ORfg6lHiIs_QvSxi1jMeTuyIXG5IEo_Rec-lFVf4wVEFz_dSPDhG0n9PtBeCfa3yScFA_ARcnMD0GBVrujtDMCdyZND9sJcherOJ0GdzdJU_sa08wxz0VvamyUscwQm_dVq-hQZUuCDl9nNGsankf72xhkaXvjplgDNQUJ9wbh_SOg2HUjYCiemQoP2be5jpFI-4NUCjebaDudX4lS3pdNs.2c7-4buTmnITQJBxtyjYlS9qvcseRqXp_M76SyrjPvI&dib_tag=se&keywords=huile%2Bessentielle%2Bgaulth%C3%A9rie%2Bbio%2B50ml&qid=1777138119&rdc=1&s=hpc&sprefix=huile%2Bessentielle%2Bgautherie%2Bbio%2B50ml%2Chpc%2C290&sr=1-22&th=1&linkCode=ll2&tag=zencheztoi-21&linkId=d390c87fd37db31697e5a20d7081114f&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="item-link">
+                        <span>Le Feu Apaisant <small>Huile Essentielle de Gaulthérie : un anti-inflammatoire naturel chauffant puissant</small></span> <span>→</span>
+                    </a>
+                    <a href="https://www.amazon.fr/Huile-massage-corporelle-chanvre-Anti-inflammatoire/dp/B07NVV9RNN?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1GRKLMIHN11Z7&dib=eyJ2IjoiMSJ9.bgEfg21I2DIl-T7PXGBCD2_cy6VtkUwPVkM58FYAUrrJGuloG3Ttdeie6owR81EVCIcBOAT4RhAF34Vqh0cc3HnQH6xpe3s5u8hX0NIU8kovGsnMUNF6t5akIiOqn6b4PCQIKUqWmOZG-O-sJ6fxUbYARW71Bh7k8B0oZd15OUTiOrKnleM7iSYAygae2BzqmwJY8bORnf54P6CIG1K0fevK14ZMhHFOdi1Zva2YYHWprSqWeZqYo9Lws6fSvQP-IQR6Txe3KgM2qiifI5jAQymfdQxqzijNSMEmA1aFQmw.HcEdwAQ9445ILtOUczz4UQ0INIUh1yX-9vZBJmXfSWw&dib_tag=se&keywords=huile+massage+cbd&qid=1776821092&s=hpc&sprefix=huile+massage+cbd%2Chpc%2C347&sr=1-1&linkCode=ll2&tag=zencheztoi-21&linkId=aec928e4967ee6cccf3abae3d9286c23&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="item-link">
+                        <span>L'Huile de Glisse <small>Huile de Massage au Chanvre (CBD) : idéale pour masser les zones articulaires sensibles</small></span> <span>→</span>
+                    </a>
+                    <a href="https://www.amazon.fr/Sel-dEpsom-SoluControl-Relaxation-Fertilisant/dp/B0DSW49VB9?crid=2PKPI990F1JXY&dib=eyJ2IjoiMSJ9.PhSjnfyJ4lAvspOxkDX-bSv-3D-Uo4F34TeDsHbOifupZHN3AypVSVptx4FinrdwWtPGPc6FXvjbFI2OHWlCyu9Q_6jhBI_O4VZZ2mPDGzrTtzlK5sLmBfoIromvTxW0xxpx4nYbmNGBhKD_50MxZiuWoZyAjnj1ksYnfs2WpYxfk0diS63bYQis3larDlr05BeSTIupAwDCgWjac0eop3Jia7ExhNo_aMWfrjydNqis4Eid0kCElw9ldcHEEXDLjym3-ArCF9O9pXBLsPs8uCBiQdmM_6yQrbxQxbozvRY.6geYlROpJbcUpXBlB-NIIsikaNTwEPOqiJd2Tm-na0w&dib_tag=se&keywords=sel+epsom+bio&qid=1777116605&sprefix=sel+epsom%2Caps%2C255&sr=8-27&linkCode=ll2&tag=zencheztoi-21&linkId=b961ed397d6071534033b35058eeead4&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="item-link">
+                        <span>Le Bain Décontractant <small>Sel d'Epsom : pour infuser le corps de chaleur et de magnésium relaxant</small></span> <span>→</span>
+                    </a>
+                    <a href="https://www.amazon.fr/Circulation-Bien-%C3%AAtre-Articulaire-Lentement-Terravita/dp/B0F63Q3H33?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3CR8AWE9PPP7Z&dib=eyJ2IjoiMSJ9.nn0Rzk6we0MZtlcjB8gDBKz0b8kxRWo1Zy19caWyAKIwKX9uk148DbBfC_3RLO_YeE3_jbmTnkG2DnF_UKe2-ob9wMxBekmtGUCKxIB4CWspo1u52yv6jaOe4aOn3gqZ2SuyUOurZZGMNuXjTLfuEfF-qSDPtt4Pbr_7RVUDyTxqTemuj1LwVP2GGXKk4j8Um7eCMxM19zLrP9XqwtFyYt56q60bvQiyhNPnbZsVjGdwtHJ5oVMUuL5ZDMveDscQ_8fRiwiKX3zh-LvmpRmWYY9zV0URqRHTSdteQztgldY.MOnJV0xfJsqsSk3jxWDZU22kmM8ie_BIMshr5t2zX6I&dib_tag=se&keywords=poudre+ortie+naturel+jardin&qid=1777110887&sprefix=poudre+ortie+naturel+jardin%2Caps%2C235&sr=8-6&linkCode=ll2&tag=zencheztoi-21&linkId=ceff091bcb79a0a4418e1c15f10611cb&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="item-link">
+                        <span>Le Soutien Interne <small>Complément Articulaire Terravita : l'alliance des plantes pour soutenir la mobilité de l'intérieur</small></span> <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="encadre-hero">
+            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/hero-accueil.jpg');">
+                <h3 class="encadre-titre">Continuer l'Éclosion</h3>
+                <p class="encadre-sous-titre">Poursuivez votre exploration pour retrouver un corps libre de ses mouvements.</p>
+                <div class="liste-selectionnable">
+                    <a href="tensions-musculaires.html" class="item-link">
+                        <span>Les Nœuds Musculaires <small>Chronique : Relâcher les tensions par les étirements</small></span> <span>→</span>
+                    </a>
+                    <a href="mal-de-dos.html" class="item-link">
+                        <span>Le Soutien Lombaire <small>Chronique : Soulager le mal de dos au quotidien</small></span> <span>→</span>
+                    </a>
+                    <a href="corps.html" class="item-link">
+                        <span>Le Volume 3 Complet <small>La Table des Matières de votre Éclosion</small></span> <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <section class="encyclopedie-section">
+        <h2 style="font-variant: small-caps; font-size: 2.2em; color: var(--brun-sombre); margin-bottom: 20px;">Emporte nos savoirs avec toi</h2>
+        <div class="pills-row">
+            <a href="encyclopedie.html#vol1" class="pill p1">Vol 1 : Fondation</a>
+            <a href="encyclopedie.html#vol2" class="pill p2">Vol 2 : Enracinement</a>
+            <a href="encyclopedie.html#vol3" class="pill p3">Vol 3 : Éclosion</a>
+            <a href="encyclopedie.html#vol4" class="pill p4">Vol 4 : Harmonie</a>
+            <a href="encyclopedie.html#vol5" class="pill p5">Vol 5 : Élévation</a>
+        </div>
+        <div style="margin-top: 40px; font-size: 1.2em; font-style: italic; color: var(--brun-sombre);">
+            Le Volume : <span style="color:var(--or-zen); font-weight:bold;">14.90€</span> — Pack Trio : <span style="color:var(--or-zen); font-weight:bold;">24.90€</span> — L'Intégrale : <span style="color:var(--or-zen); font-weight:bold;">39.90€</span>
+        </div>
     </section>
 
-    <section>
-      <h2>Produit choisi pour cette page</h2>
-      <div class="box">
-        <strong>Produit associé – Curcuma ou soutien articulaire</strong>
-        <p>
-          Le curcuma, et en particulier la curcumine, est souvent mis en avant pour aider à réduire l’inconfort articulaire et accompagner la mobilité, même si les effets varient selon les personnes.[web:1056][web:1048]
-        </p>
-        <a class="cta-link"
-           href="https://www.amazon.fr/s?k=curcuma+articulations&tag=zencheztoi-21"
-           target="_blank" rel="nofollow sponsored">
-          Voir le soutien articulations
-        </a>
-      </div>
-    </section>
+    <footer>
+        <a href="index.html" class="footer-logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
+        <ul class="footer-nav-compact">
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+            <li><a href="confidentialite.html">Confidentialité</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+            <li><a href="a-propos.html">À Propos</a></li>
+            <li><a href="livre-or.html">Livre d'Or</a></li>
+        </ul>
+        <p style="font-size: 0.85em; opacity: 0.4;">&copy; 2026 Zen Chez Toi • L'Éclosion au Naturel.</p>
+    </footer>
 
-    <!-- Emplacement publicitaire discret pour la page articulations -->
-    <div class="ad-slot" aria-label="contenu sponsorisé">
-      <!-- Code publicitaire / bloc affiliation à insérer ici -->
-      Tu pourras mettre ici un produit articulations (curcuma,
-      collagène, mélange plantes) ou une bannière liée au confort
-      articulaire, sans surcharger le haut de page.
-    </div>
-
-  </main>
-
-  <footer class="footer">
-    <div style="font-family:'Cormorant Garamond',serif;font-size:2.2rem;">
-      Zen <em style="color:var(--accent);font-style:italic;">Chez</em> Toi
-    </div>
-    <p style="opacity:.65;">© 2026 Zen Chez Toi — Tous droits réservés.</p>
-  </footer>
+    <div id="disclaimer-bar">🔗 Liens affiliés Amazon : Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises. Ces conseils ne se substituent pas à un suivi rhumatologique en cas de douleur articulaire sévère.</div>
 
 </body>
 </html>

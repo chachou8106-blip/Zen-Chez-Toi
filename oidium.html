@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Focus & Concentration : l'Alchimie de la Clarté Mentale | Zen Chez Toi</title>
+    <title>Oïdium : l'Alchimie pour soigner ses plantes au naturel | Zen Chez Toi</title>
 
     <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRV5YNRL57"></script>
@@ -15,7 +15,7 @@
     </script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7501098246029504" crossorigin="anonymous"></script>
 
-    <meta name="description" content="Découvrez l'alchimie pour retrouver votre concentration. Des rituels doux, le souffle ancré et le silence pour protéger votre sanctuaire mental des distractions.">
+    <meta name="description" content="Découvrez l'alchimie pour éliminer l'oïdium de vos plantes. Transmutez ce champignon blanc avec notre recette au bicarbonate de soude et au savon noir naturel.">
     <link rel="icon" type="image/png" href="assets/logo.png">
 
     <style>
@@ -23,8 +23,8 @@
             --bg-sable: #f5f2ec; --blanc: #ffffff; --brun-sombre: #2b2622; --or-zen: #a67b51;
             --maison: #6a7f8f; --jardin: #7b9074; --corps: #cca8a0; --bienetre: #d4a259; --eso: #826a8f;
             
-            /* THÈME BIEN-ÊTRE ACTIVÉ */
-            --theme-article: var(--bienetre);
+            /* THÈME JARDIN ACTIVÉ */
+            --theme-article: var(--jardin);
         }
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.8; overflow-x: hidden; }
@@ -33,7 +33,7 @@
         header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; }
         .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
         
-        /* AURA LOGO HEADER BLANC ++++ */
+        /* AURA LOGO HEADER BLANC ++++ (EXCLUSIVEMENT ICI) */
         .logo { display: inline-block; text-decoration: none; transition: 0.4s ease; }
         .logo img { max-height: 90px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2)); transition: 0.5s ease; }
         .logo:hover img { 
@@ -44,7 +44,7 @@
         .header-right { display: flex; align-items: center; gap: 40px; }
         nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
         nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
-        nav a:hover { color: var(--theme-article); text-shadow: 0 0 15px #ffffff; }
+        nav a:hover { color: var(--theme-article); text-shadow: 0 0 15px var(--theme-article); }
 
         .dropdown { position: relative; display: inline-block; padding: 15px 0; cursor: pointer; }
         .dropdown-content { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background-color: var(--brun-sombre); min-width: 200px; box-shadow: 0px 10px 25px rgba(0,0,0,0.3); z-index: 2100; border-radius: 8px; border: 1px solid var(--theme-article); overflow: hidden; }
@@ -52,17 +52,17 @@
         .dropdown-content a:hover { background-color: var(--theme-article); color: #fff !important; }
         .dropdown:hover .dropdown-content { display: block; }
 
-        /* AURA PINTEREST BLANC ++++ */
+        /* PINTEREST - SURVOL CLASSIQUE DANS LE THÈME */
         .pinterest-badge { display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; font-style: italic; background: rgba(255,255,255,0.1); transition: 0.4s; }
         .pinterest-badge:hover { 
             background: var(--theme-article); 
-            border-color: #ffffff; 
+            border-color: var(--theme-article); 
             transform: rotate(15deg) scale(1.1);
-            box-shadow: 0 0 25px #ffffff, 0 0 10px #ffffff;
+            box-shadow: 0 0 15px var(--theme-article);
         }
 
         /* --- HERO ARTICLE --- */
-        .hero { height: 75vh; min-height: 500px; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('assets/hero-bienetre.jpg') center/cover no-repeat fixed; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; }
+        .hero { height: 75vh; min-height: 500px; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('assets/hero-jardin.jpg') center/cover no-repeat fixed; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; }
         .vol-phrase { font-size: clamp(1.4em, 3vw, 2em); font-variant: small-caps; letter-spacing: 5px; font-weight: bold; margin-bottom: 15px; color: var(--theme-article); text-shadow: 0 4px 15px rgba(0,0,0,0.9), 0 2px 5px rgba(0,0,0,1); -webkit-text-stroke: 0.5px rgba(255,255,255,0.8); }
         .hero h1 { font-size: clamp(2.5em, 6vw, 4.5em); font-weight: normal; margin-bottom: 20px; line-height: 1.2; font-variant: small-caps; text-shadow: 0 4px 15px rgba(0,0,0,0.8); max-width: 1000px; }
         .tagline { font-size: clamp(1.1em, 2vw, 1.5em); font-style: italic; opacity: 0.9; max-width: 800px; line-height: 1.5; }
@@ -70,7 +70,7 @@
         /* --- CORPS DU TEXTE --- */
         .blog-container { max-width: 800px; margin: 60px auto 60px; padding: 0 20px; font-size: 1.15rem; color: #333; }
         .blog-container h2 { font-size: 2.2em; color: var(--theme-article); margin: 60px 0 25px; font-variant: small-caps; text-align: center; font-weight: normal; }
-        .blog-container h3 { font-size: 1.5em; color: var(--brun-sombre); margin: 50px 0 15px; font-variant: small-caps; border-bottom: 1px solid rgba(212, 162, 89, 0.4); padding-bottom: 8px; }
+        .blog-container h3 { font-size: 1.5em; color: var(--brun-sombre); margin: 50px 0 15px; font-variant: small-caps; border-bottom: 1px solid rgba(123, 144, 116, 0.4); padding-bottom: 8px; }
         .blog-container p { margin-bottom: 25px; text-align: justify; }
         .blog-container ul, .blog-container ol { margin-bottom: 25px; padding-left: 20px; }
         .blog-container li { margin-bottom: 10px; }
@@ -86,13 +86,13 @@
         
         .liste-selectionnable { display: flex; flex-direction: column; gap: 15px; max-width: 650px; margin: 0 auto; }
         
-        /* AURA LIENS PRODUITS BLANC ++++ */
+        /* LIENS PRODUITS - SURVOL CLASSIQUE DANS LE THÈME */
         .item-link { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; padding: 18px 35px; display: flex; align-items: center; justify-content: space-between; text-decoration: none; color: #fff; transition: 0.4s ease; }
         .item-link:hover { 
             transform: scale(1.03); 
-            border-color: #ffffff; 
+            border-color: #fff; 
             background: var(--theme-article); 
-            box-shadow: 0 0 30px #ffffff, 0 0 15px #ffffff;
+            box-shadow: 0 0 25px var(--theme-article);
         }
         .item-link span { font-weight: bold; font-variant: small-caps; font-size: 1.1em; text-align: left; }
         .item-link span small { display: block; font-size: 0.75em; font-family: 'Georgia', serif; font-style: italic; opacity: 0.8; text-transform: none; font-weight: normal; }
@@ -101,16 +101,16 @@
         .encyclopedie-section { background-color: var(--blanc); padding: 80px 20px; text-align: center; border-top: 1px solid #eee; }
         .pills-row { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 30px; }
         .pill { padding: 10px 20px; border: 2px solid; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 0.9em; text-decoration: none; background: #fff; transition: 0.3s; }
-        .p1 { border-color: var(--maison); color: var(--maison); } .p1:hover { background: var(--maison); color: #fff; box-shadow: 0 0 15px #ffffff; }
-        .p2 { border-color: var(--jardin); color: var(--jardin); } .p2:hover { background: var(--jardin); color: #fff; box-shadow: 0 0 15px #ffffff; }
-        .p3 { border-color: var(--corps); color: var(--corps); } .p3:hover { background: var(--corps); color: #fff; box-shadow: 0 0 15px #ffffff; }
-        .p4 { border-color: var(--bienetre); color: var(--bienetre); } .p4:hover { background: var(--bienetre); color: #fff; box-shadow: 0 0 15px #ffffff; }
-        .p5 { border-color: var(--eso); color: var(--eso); } .p5:hover { background: var(--eso); color: #fff; box-shadow: 0 0 15px #ffffff; }
+        .p1 { border-color: var(--maison); color: var(--maison); } .p1:hover { background: var(--maison); color: #fff; }
+        .p2 { border-color: var(--jardin); color: var(--jardin); } .p2:hover { background: var(--jardin); color: #fff; }
+        .p3 { border-color: var(--corps); color: var(--corps); } .p3:hover { background: var(--corps); color: #fff; }
+        .p4 { border-color: var(--bienetre); color: var(--bienetre); } .p4:hover { background: var(--bienetre); color: #fff; }
+        .p5 { border-color: var(--eso); color: var(--eso); } .p5:hover { background: var(--eso); color: #fff; }
 
         /* --- FOOTER --- */
         footer { background: var(--brun-sombre); color: #fff; padding: 80px 20px; text-align: center; }
         
-        /* AURA LOGO FOOTER BLANC ++++ */
+        /* AURA LOGO FOOTER BLANC ++++ (EXCLUSIVEMENT ICI) */
         .footer-logo { display: inline-block; transition: 0.4s ease; margin-bottom: 30px; }
         .footer-logo img { height: 60px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.4)); transition: 0.5s; }
         .footer-logo:hover img { 
@@ -120,7 +120,7 @@
         
         .footer-nav-compact { display: flex; gap: 30px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; flex-wrap: wrap; }
         .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.6; font-variant: small-caps; transition: 0.3s; }
-        .footer-nav-compact a:hover { opacity: 1; color: var(--theme-article); text-shadow: 0 0 15px #ffffff; }
+        .footer-nav-compact a:hover { opacity: 1; color: var(--theme-article); }
 
         #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
 
@@ -162,73 +162,83 @@
                         <li><a href="livre-or.html">Livre d'Or</a></li>
                     </ul>
                 </nav>
-                <a href="https://www.pinterest.fr/zencheztoi/" class="pinterest-badge" target="_blank" title="Inspirations pour l'Harmonie">p</a>
+                <a href="https://www.pinterest.fr/zencheztoi/" class="pinterest-badge" target="_blank" title="Inspirations pour le Jardin">p</a>
             </div>
         </div>
     </header>
 
     <section class="hero">
-        <p class="vol-phrase">Volume 4 : Harmonie • Chronique</p>
-        <h1>Focus & Concentration : l'Alchimie de la Clarté Mentale</h1>
-        <p class="tagline">« Quand l'esprit s'éparpille dans le bruit du monde, il faut recréer le sanctuaire. Apprenez à rassembler votre énergie et retrouver le fil par des rituels doux et ancrés. »</p>
+        <p class="vol-phrase">Volume 2 : Enracinement • Chronique</p>
+        <h1>Oïdium : l'Alchimie pour sauver vos plantes</h1>
+        <p class="tagline">« Quand un voile blanc étouffe vos feuilles, la nature offre ses propres remèdes. Transmutez ce champignon par la force minérale et la protection végétale. »</p>
     </section>
 
     <main class="blog-container">
 
-        <p>Dans l'alchimie du bien-être, la concentration n'est pas une question de force brute ou de productivité acharnée ; c'est la <strong>polarisation de l'esprit</strong>. Notifications incessantes, pensées vagabondes et stress accumulé agissent comme des vents contraires qui dispersent votre sève mentale. Retrouver le fil de votre attention, c'est apprendre à construire des îlots de silence intérieurs, des moments où vous reprenez la souveraineté sur votre propre temps.</p>
+        <p>Dans le sanctuaire végétal, l'apparition d'un fin duvet blanc sur les feuilles de vos courgettes, tomates ou rosiers n'est pas une fatalité. C'est le signe de l'oïdium (souvent appelé "maladie du blanc"), un champignon opportuniste qui profite des déséquilibres subtils entre l'humidité stagnante et les chocs thermiques (journées chaudes suivies de nuits fraîches). </p>
+        
+        <p>Face à ce fléau, l'industrie phytosanitaire propose des fongicides chimiques radicaux qui brûlent la terre, détruisent la microfaune et corrompent l'aura de vos plantes. Pourtant, l'alchimiste jardinier sait qu'il ne s'agit pas de faire la guerre au vivant, mais de rééquilibrer le milieu. Il suffit de modifier légèrement le pH de la surface de la feuille pour empêcher le champignon de s'y installer et de s'y nourrir.</p>
 
         <div class="alchimiste-note">
-            <span class="note-titre">Le Mythe du Multitâche</span>
-            <p>L'illusion moderne voudrait que l'esprit puisse traiter plusieurs flux à la fois. C'est une erreur vibratoire. À chaque changement de tâche, votre cerveau brûle une précieuse énergie d'adaptation. Cultiver le focus, c'est s'autoriser à n'être présent qu'à une seule chose, pleinement et consciemment.</p>
+            <span class="note-titre">Le Secret du Milieu Alcalin</span>
+            <p>Le champignon responsable de l'oïdium ne peut survivre et proliférer que dans un environnement légèrement acide. La magie de notre recette ancestrale réside dans l'utilisation du bicarbonate de soude : en vaporisant cette poudre minérale pure dissoute dans l'eau, vous rendez la surface de la feuille alcaline. Le champignon est neutralisé instantanément et naturellement, sans empoisonner la sève de la plante.</p>
         </div>
 
-        <h2>Comprendre la Dispersion sans Culpabilité</h2>
-        <p>La fatigue mentale après une longue exposition aux écrans ou l'envie irrépressible de vérifier vos messages sont les symptômes d'un système nerveux saturé. Plutôt que de juger votre manque d'attention, observez le terrain. Quel est le niveau de bruit de votre environnement ? Avez-vous nourri votre esprit de pauses véritables ? La concentration émerge naturellement d'un terreau apaisé.</p>
+        <h2>Comprendre l'Asphyxie Végétale</h2>
+        <p>L'oïdium ne se contente pas d'être inesthétique ; il agit comme un voile étouffant. En recouvrant l'épiderme végétal, il bloque la photosynthèse. La plante ne parvient plus à capter la lumière solaire pour la transmuter en énergie. Les feuilles se recroquevillent, se dessèchent, et la croissance s'arrête net. Agir dès l'apparition des premières taches poudreuses est essentiel pour ne pas laisser le mycélium pénétrer les tissus profonds de la plante.</p>
 
-        <h2>5 Rituels pour Reconstruire le Sanctuaire Mental</h2>
-        <p>Ces gestes ne sont pas des lois rigides, mais des clés pour inviter la présence à soi :</p>
+        <h2>La Recette Ancestrale contre le Voile Blanc</h2>
+        <p>Inutile de courir en jardinerie pour chercher un remède complexe, les ingrédients de cette transmutation se trouvent déjà dans les placards de votre Fondation (votre Maison). L'association du minéral et du végétal va créer un bouclier parfait. Voici comment préparer l'élixir protecteur :</p>
         <ul>
-            <li><strong>L'Intention Unique :</strong> Avant toute action, prenez une minute pour clarifier votre objectif. Ne fixez qu'un seul cap pour éviter la dispersion du regard.</li>
-            <li><strong>La Bulle de Temps (Pomodoro Doux) :</strong> Mettez le monde en sourdine. Accordez-vous 25 minutes de focus pur, protégées de toute interruption, suivies de 5 minutes de respiration libératrice.</li>
-            <li><strong>L'Ancrage du Souffle :</strong> Avant de plonger dans votre tâche, inspirez par le nez sur 4 temps, retenez sur 2, expirez sur 6. Ce rythme calme l'agitation interne et centre la matière grise.</li>
-            <li><strong>L'Épuration Spatiale :</strong> Fermez les onglets inutiles, dégagez votre table. Un environnement clarifié renvoie une fréquence de calme à votre esprit.</li>
-            <li><strong>L'Écriture de Décharge :</strong> Si des pensées parasites tournent en boucle, jetez-les sur un carnet. L'acte d'écrire vide le sanctuaire mental de ce qui l'encombre.</li>
+            <li><strong>Le Principe Actif (La modification du pH) :</strong> Prenez 1 cuillère à café bombée de Bicarbonate de Soude. C'est l'agent alcalinisant qui va foudroyer le champignon.</li>
+            <li><strong>Le Liant Alchimique (L'adhérence) :</strong> Ajoutez 1 cuillère à café de Savon Noir liquide à l'huile d'olive. L'eau seule perlerait et glisserait sur la feuille. Le savon noir agit comme un "mouillant" ou tensioactif naturel, permettant à l'eau bicarbonatée d'envelopper parfaitement la feuille et de s'y fixer durablement.</li>
+            <li><strong>L'Élément Fluide (La matrice) :</strong> Mélangez le tout dans 1 litre d'eau. Utilisez idéalement de l'eau de pluie ou de l'eau de source (ou de l'eau du robinet laissée reposer 24h) pour éviter que le chlore ne perturbe l'équilibre naturel de la plante.</li>
         </ul>
 
         <section class="encadre-hero">
-            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/hero-bienetre.jpg');">
-                <h3 class="encadre-titre">L'Arsenal de la Présence</h3>
-                <p class="encadre-sous-titre">Des outils nobles et apaisants pour structurer votre temps et protéger votre silence.</p>
+            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/hero-jardin.jpg');">
+                <h3 class="encadre-titre">L'Arsenal du Jardinier</h3>
+                <p class="encadre-sous-titre">Les ingrédients purs de votre Grimoire pour préparer la recette anti-oïdium.</p>
                 <div class="liste-selectionnable">
-                    <a href="https://www.amazon.fr/Cuteefun-Num%C3%A9rique-Affichage-Silencieux-Productivit%C3%A9/dp/B0G521L3S3?tag=zencheztoi-21" target="_blank" rel="nofollow sponsored" class="item-link">
-                        <span>Le Gardien du Temps <small>Minuteur Pomodoro Cuteefun silencieux pour structurer vos bulles de focus</small></span> <span>→</span>
+                    <!-- VAPORISATEUR -->
+                    <a href="https://www.amazon.fr/Vaporisateur-bouteille-coiffure-plantes-nettoyage/dp/B0CGDPG6R2?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3G31UT1ZLSEXP&dib=eyJ2IjoiMSJ9.1LpJX80apY4r0NvZvQKwE_m7IEb_vSfkprxbxOipM2cE210wu80i8cURtPjKEMb04U-bbL8Vlg9OEYemiZsL3bjz-T7DjlUhkRC6fou-Fzrg7oxQq7fnvTowSDv7f94bPB4lVwhT0jf6-X5qdtF7oSn4JjMGM1YLbIvKbi-4XqFiEx3BrxMkDrZtkcQ1jJyt8hDC7qymhUicIMuIv9jackw47pNIisNwS1kiRQaanI8cHeOw_wJkD7B0-CsTZotREiMBFy0JdwxKlpg0VdOUQ4TBfYz5AhF6KJ_aNHMYsrc.eBeNrgSDUjVLBriha_eEJ5OKzPjmvlB6xp-Bw-paZMU&dib_tag=se&keywords=vaporisateur+500ml&qid=1776785056&sprefix=vaporisateur+500ml%2Caps%2C237&sr=8-37&linkCode=ll2&tag=zencheztoi-21&linkId=24e8e75d49b9c50252c9cca8755f8002&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="item-link">
+                        <span>L'Émetteur de Brume <small>Vaporisateur 500ml réutilisable pour diffuser votre élixir protecteur</small></span> <span>→</span>
                     </a>
-                    <a href="https://www.amazon.fr/certifi%C3%A9-%C3%89criture-Couverture-%C3%A9co-responsable-%C3%A9crivant/dp/B0DT14P82T?tag=zencheztoi-21" target="_blank" rel="nofollow sponsored" class="item-link">
-                        <span>Le Réceptacle des Pensées <small>Carnet éco-responsable pour décharger votre charge mentale</small></span> <span>→</span>
+                    <!-- BICARBONATE -->
+                    <a href="https://www.amazon.fr/dp/B0BQLQW79Z?psc=1&linkCode=ll2&tag=zencheztoi-21&linkId=4e8cd8bbec7fda5a2f7eb82cd3a57142&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="item-link">
+                        <span>Le Minéral Alcalin <small>Bicarbonate de Soude pur pour neutraliser le développement fongique</small></span> <span>→</span>
                     </a>
-                    <a href="https://www.amazon.fr/Boules-Protection-Auditive-Naturelle-Quies%C3%82/dp/B01M8KPCPO?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3ORY5U6X9XIVJ&dib=eyJ2IjoiMSJ9.jJN1f0Zr_hdp8SZahklhot-2nDlnTYkMMJJZISAqykYr8rw5bvbK5wJVG9609yHAEeR3odXvvMYqQRt2Ga38umda91BHG5andsIKzzWwqxeP1m78U8g7AlxXrMeyxjpqgqPqsfk8vWq_DyNfQnWUQnVWFZoYFUpR492clWcB4qFjR0wbf1YC7q4BnrhUcRk2IIyNNq5up8A3pbDzojR87edFjEla7NF-9G4ladA8N6lJPEBLcjXUbc2Tr7VTAIyoDYXLXlgrQfYe5vewmYCwRMk7QGeibk1eHAyNUyuELl0.bHYzJ1VaHWWVQfNqfOfEq81Eyl5-NT7G-3V335hs34o&dib_tag=se&keywords=bouchon+anti+bruit+naturel&qid=1776754057&sprefix=bouchon+anti+bruit+naturel%2Caps%2C239&sr=8-9&linkCode=ll2&tag=zencheztoi-21&linkId=2e9eb3773cdae23b633699b8b42b1361&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="item-link">
-                        <span>Le Sceau du Silence <small>Bouchons de cire naturelle Quies pour isoler votre espace vibratoire</small></span> <span>→</span>
+                    <!-- SAVON NOIR LIQUIDE -->
+                    <a href="https://www.amazon.fr/MARIUS-FABRE-liquide-lhuile-multi-usage/dp/B00938QOXM" target="_blank" rel="nofollow sponsored" class="item-link">
+                        <span>Le Liant Végétal <small>Savon Noir liquide Marius Fabre pour fixer le traitement sur la feuille</small></span> <span>→</span>
                     </a>
                 </div>
             </div>
         </section>
 
-        <h2>Installer le Focus comme un Rendez-vous avec Soi</h2>
-        <p>Ne guettez pas l'arrivée hypothétique de la "motivation". La concentration se cultive. Décidez d'un moment de la journée où vous vous offrez ce bloc de temps protégé. Enfilez vos bouchons de cire, déclenchez votre minuteur et respirez. Le fait de revenir, encore et encore, à votre intention, même lorsque l'esprit tente de s'échapper, est le véritable travail de l'alchimiste : rééduquer doucement son attention pour redevenir maître de son royaume intérieur.</p>
+        <h2>Le Rituel d'Application</h2>
+        <p>Le timing de l'application est tout aussi crucial que la recette elle-même. Ne vaporisez **jamais** votre élixir en plein soleil de midi. Les gouttelettes d'eau agiraient comme de minuscules loupes sous les rayons solaires, causant des brûlures irréversibles au feuillage. </p>
+        
+        <p>Procédez à ce rituel de guérison en fin de journée, lorsque le soleil décline, ou tôt le matin. Assurez-vous de vaporiser une brume fine sur le **dessus** mais aussi le **dessous** des feuilles, car c'est souvent là que les spores fongiques se réfugient. Répétez l'opération tous les 7 à 10 jours jusqu'à la disparition totale du voile, et systématiquement après une forte pluie qui aurait lessivé votre bouclier alcalin.</p>
+
+        <h2>Restaurer la Respiration Végétale : La Prévention</h2>
+        <p>Traiter l'oïdium est une étape de guérison, mais l'alchimie véritable consiste à prévenir son retour en modifiant le terrain. L'oïdium déteste les courants d'air. Si le champignon s'est installé, c'est souvent parce que vos plantes étouffent. </p>
+        
+        <p>La saison prochaine, veillez à respecter les distances de plantation recommandées. N'hésitez pas à tailler le cœur de vos rosiers ou à supprimer les feuilles trop basses de vos courgettes pour laisser le vent circuler librement et assécher la rosée matinale. Enfin, prenez la sainte habitude d'arroser toujours **au pied** des plantes, au niveau de la terre, sans jamais mouiller le feuillage. En redonnant de l'air à votre sanctuaire végétal, vous permettez à la sève de s'écouler librement et à vos plantes de s'enraciner dans la force.</p>
 
         <section class="encadre-hero">
             <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/hero-accueil.jpg');">
-                <h3 class="encadre-titre">Continuer l'Harmonie</h3>
-                <p class="encadre-sous-titre">Explorez d'autres rituels pour magnifier votre clarté intérieure.</p>
+                <h3 class="encadre-titre">Continuer l'Enracinement</h3>
+                <p class="encadre-sous-titre">Explorez d'autres rituels pour protéger et magnifier votre jardin intérieur et extérieur.</p>
                 <div class="liste-selectionnable">
-                    <a href="sommeil-profond.html" class="item-link">
-                        <span>L'Alchimie du Repos <small>Chronique : Rituels du soir pour un sommeil régénérateur</small></span> <span>→</span>
+                    <a href="pucerons.html" class="item-link">
+                        <span>Le Répulsif Doux <small>Chronique : Éloigner les pucerons sans utiliser de chimie</small></span> <span>→</span>
                     </a>
-                    <a href="immunite.html" class="item-link">
-                        <span>Le Bouclier Vital <small>Chronique : Soutenir ses défenses naturelles en douceur</small></span> <span>→</span>
+                    <a href="compost.html" class="item-link">
+                        <span>L'Or Noir de la Terre <small>Chronique : Démarrer un compost vivant pour nourrir son sol</small></span> <span>→</span>
                     </a>
-                    <a href="bienetre.html" class="item-link">
-                        <span>Le Volume 4 Complet <small>Découvrir tous les secrets de l'Harmonie</small></span> <span>→</span>
+                    <a href="jardin.html" class="item-link">
+                        <span>Le Volume 2 Complet <small>Découvrir tous les secrets de l'Enracinement et du Jardin</small></span> <span>→</span>
                     </a>
                 </div>
             </div>
@@ -236,7 +246,7 @@
 
     </main>
 
-    <section class="encyclopedie-section" style="background-color: var(--blanc); padding: 80px 20px; text-align: center; border-top: 1px solid #eee;">
+    <section class="encyclopedie-section">
         <h2 style="font-variant: small-caps; font-size: 2.2em; color: var(--brun-sombre); margin-bottom: 20px;">Emporte nos savoirs avec toi</h2>
         <div class="pills-row">
             <a href="encyclopedie.html#vol1" class="pill p1">Vol 1 : Fondation</a>
@@ -259,10 +269,10 @@
             <li><a href="a-propos.html">À Propos</a></li>
             <li><a href="livre-or.html">Livre d'Or</a></li>
         </ul>
-        <p style="font-size: 0.85em; opacity: 0.4;">&copy; 2026 Zen Chez Toi • L'Harmonie au Naturel.</p>
+        <p style="font-size: 0.85em; opacity: 0.4;">&copy; 2026 Zen Chez Toi • L'Enracinement au Naturel.</p>
     </footer>
 
-    <div id="disclaimer-bar">🔗 Liens affiliés Amazon : Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises. Bien-être : si les difficultés de concentration persistent, un bilan professionnel peut être utile.</div>
+    <div id="disclaimer-bar">🔗 Liens affiliés Amazon : Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises. Jardin & Nature : testez toujours la préparation sur une petite feuille avant de traiter la plante entière.</div>
 
 </body>
 </html>

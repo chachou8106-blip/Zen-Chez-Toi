@@ -27,37 +27,49 @@
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.8; overflow-x: hidden; }
 
+        /* --- HEADER --- */
         header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; }
         .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
         
-        .logo { display: inline-block; text-decoration: none; }
-        .logo img { max-height: 90px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.4)); transition: all 0.5s ease; }
-        .logo:hover img { filter: drop-shadow(0 0 25px #ffffff) drop-shadow(0 0 10px #ffffff); transform: scale(1.03); }
+        /* AURA LOGO BLANCHE EXCLUSIVE */
+        .logo { display: inline-block; text-decoration: none; transition: 0.4s ease; }
+        .logo img { max-height: 90px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2)); transition: 0.5s ease; }
+        .logo:hover img { filter: drop-shadow(0 0 30px #ffffff) drop-shadow(0 0 15px #ffffff); transform: scale(1.05); }
 
         .header-right { display: flex; align-items: center; gap: 40px; }
         nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
         nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
-        nav a:hover { color: var(--or-zen); }
+        nav a:hover { color: var(--or-zen); text-shadow: 0 0 15px var(--or-zen); }
 
         .pinterest-badge { display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; font-style: italic; background: rgba(255,255,255,0.1); transition: 0.4s; }
-        .pinterest-badge:hover { background: var(--or-zen); transform: rotate(15deg); }
+        .pinterest-badge:hover { background: var(--or-zen); border-color: var(--or-zen); transform: rotate(15deg) scale(1.1); }
 
-        .hero { min-height: 60vh; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('assets/hero-bienetre.jpg') center/cover no-repeat fixed; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; }
+        /* --- HERO --- */
+        .hero { min-height: 55vh; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('assets/hero-bienetre.jpg') center/cover no-repeat fixed; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; }
         .hero h1 { font-size: clamp(3em, 8vw, 5.5em); font-weight: normal; margin-bottom: 20px; line-height: 1.1; font-variant: small-caps; text-shadow: 0 4px 15px rgba(0,0,0,0.6); }
-        .tagline { font-size: clamp(1.2em, 3vw, 1.8em); font-style: italic; opacity: 0.9; text-shadow: 0 2px 10px rgba(0,0,0,0.5); max-width: 900px; line-height: 1.4; }
+        .tagline { font-size: clamp(1.2em, 3vw, 1.8em); font-style: italic; opacity: 0.9; max-width: 900px; line-height: 1.4; }
 
-        .container { max-width: 1100px; margin: 80px auto; padding: 0 20px; }
+        /* --- RECHERCHE (L'ORACLE) --- */
+        .search-section { margin-top: -50px; position: relative; z-index: 10; padding: 0 20px; }
+        .search-container { max-width: 700px; margin: 0 auto; position: relative; box-shadow: 0 15px 45px rgba(0,0,0,0.15); border-radius: 50px; overflow: hidden; }
+        .search-container input { width: 100%; padding: 25px 40px; border: none; font-size: 1.1em; outline: none; background: var(--blanc); font-family: 'Georgia', serif; }
+        .search-container button { position: absolute; right: 10px; top: 10px; bottom: 10px; padding: 0 30px; border-radius: 40px; border: none; background: var(--brun-sombre); color: white; cursor: pointer; font-variant: small-caps; font-weight: bold; transition: 0.3s; }
+        .search-container button:hover { background: var(--or-zen); }
 
-        .encadre-hero { margin: 80px 0; border-radius: 30px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.2); }
+        /* --- CONTENU --- */
+        .container { max-width: 1100px; margin: 60px auto; padding: 0 20px; }
+
+        .encadre-hero { margin: 80px 0; border-radius: 30px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.2); transition: 0.4s; }
         .cadre-fond { padding: 80px 40px; text-align: center; background-size: cover; background-position: center; background-attachment: fixed; }
         .encadre-titre { font-size: clamp(2.2em, 5vw, 3em); font-variant: small-caps; color: #fff; margin-bottom: 10px; text-shadow: 0 4px 10px rgba(0,0,0,0.5); }
         .encadre-sous-titre { font-style: italic; font-size: 1.1em; color: #fff; margin-bottom: 40px; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
         
         .liste-selectionnable { display: flex; flex-direction: column; gap: 15px; max-width: 800px; margin: 0 auto; }
-        .item-link { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; padding: 18px 35px; display: flex; align-items: center; justify-content: space-between; text-decoration: none; color: #fff; transition: 0.3s; }
-        .item-link:hover { transform: scale(1.03); border-color: #fff; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+        .item-link { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; padding: 18px 35px; display: flex; align-items: center; justify-content: space-between; text-decoration: none; color: #fff; transition: 0.4s ease; }
+        .item-link:hover { transform: scale(1.03); border-color: #fff; box-shadow: 0 10px 25px rgba(255,255,255,0.1); }
         .item-link span { font-weight: bold; font-variant: small-caps; font-size: 1.15em; }
 
+        /* VARIANTES COULEURS */
         .journal-maison { border: 5px solid var(--maison); } .journal-maison .cadre-fond { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('assets/hero-maison.jpg'); } .journal-maison .item-link:hover { background: var(--maison); }
         .journal-jardin { border: 5px solid var(--jardin); } .journal-jardin .cadre-fond { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('assets/hero-jardin.jpg'); } .journal-jardin .item-link:hover { background: var(--jardin); }
         .journal-corps { border: 5px solid var(--corps); } .journal-corps .cadre-fond { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('assets/hero-corps.jpg'); } .journal-corps .item-link:hover { background: var(--corps); }
@@ -66,38 +78,24 @@
 
         .pub-transversale { border: 5px solid var(--or-zen); }
         .pub-transversale .cadre-fond { padding: 40px; background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('assets/hero-accueil.jpg'); }
-        .pub-transversale .item-link:hover { background: var(--or-zen); border-color: #fff; }
+        .pub-transversale .item-link:hover { background: var(--or-zen); }
 
-        .encyclopedie-section { background-color: var(--blanc); padding: 100px 20px; text-align: center; border-top: 1px solid #eee; margin-top: 60px; }
-        .pills-row { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 30px; }
-        .pill { padding: 10px 20px; border: 2px solid; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 0.9em; text-decoration: none; background: #fff; transition: 0.3s; }
-        .p1 { border-color: var(--maison); color: var(--maison); } .p1:hover { background: var(--maison); color: #fff; }
-        .p2 { border-color: var(--jardin); color: var(--jardin); } .p2:hover { background: var(--jardin); color: #fff; }
-        .p3 { border-color: var(--corps); color: var(--corps); } .p3:hover { background: var(--corps); color: #fff; }
-        .p4 { border-color: var(--bienetre); color: var(--bienetre); } .p4:hover { background: var(--bienetre); color: #fff; }
-        .p5 { border-color: var(--eso); color: var(--eso); } .p5:hover { background: var(--eso); color: #fff; }
-
+        /* --- FOOTER --- */
         footer { background: var(--brun-sombre); color: #fff; padding: 80px 20px; text-align: center; }
         .footer-logo img { height: 60px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.4)); transition: 0.5s; margin-bottom: 30px; }
-        .footer-logo:hover img { filter: drop-shadow(0 0 25px #ffffff); }
+        .footer-logo:hover img { filter: drop-shadow(0 0 30px #ffffff); }
         .footer-nav-compact { display: flex; gap: 30px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; flex-wrap: wrap; }
         .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.6; font-variant: small-caps; transition: 0.3s; }
         .footer-nav-compact a:hover { opacity: 1; color: var(--or-zen); }
 
         #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
 
-        /* RESPONSIVE MOBILE SÉCURISÉ */
         @media (max-width: 768px) {
-            .nav-container { flex-direction: column; gap: 15px; padding: 15px 20px; }
-            .header-right { flex-direction: column; gap: 15px; align-items: center; width: 100%; }
-            nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; }
-            
-            .hero { padding-top: 300px !important; justify-content: flex-start !important; height: auto !important; padding-bottom: 60px; }
-            .hero h1 { font-size: 2.5em; margin-bottom: 10px; }
-            
-            .encadre-hero { border-width: 3px; margin: 40px 0; }
-            .cadre-fond { padding: 40px 20px; }
-            .item-link { flex-direction: column; text-align: center; gap: 10px; padding: 15px 20px; font-size: 0.9em; }
+            .nav-container { flex-direction: column; gap: 15px; }
+            .hero { padding-top: 250px !important; justify-content: flex-start !important; height: auto !important; padding-bottom: 60px; }
+            .hero h1 { font-size: 2.5em; }
+            .search-section { margin-top: -30px; }
+            .item-link { flex-direction: column; text-align: center; gap: 10px; }
         }
     </style>
 </head>
@@ -115,7 +113,7 @@
                         <li><a href="a-propos.html">À Propos</a></li>
                     </ul>
                 </nav>
-                <a href="https://www.pinterest.com/VOTRE_PROFIL" class="pinterest-badge" target="_blank">p</a>
+                <a href="https://www.pinterest.fr/zencheztoi/" class="pinterest-badge" target="_blank">p</a>
             </div>
         </div>
     </header>
@@ -123,6 +121,16 @@
     <section class="hero">
         <h1>Le Journal du Vivant</h1>
         <p class="tagline">« L'intégralité de nos chroniques alchimiques et rituels de saison, classés par univers. »</p>
+    </section>
+
+    <!-- BARRE DE RECHERCHE INTEGRÉE -->
+    <section class="search-section">
+        <div class="search-container">
+            <form action="recherche.html" method="GET">
+                <input type="text" name="q" placeholder="Interroger le Grimoire : Sommeil, Pucerons, Cristaux..." required>
+                <button type="submit">Chercher</button>
+            </form>
+        </div>
     </section>
 
     <main class="container">
@@ -146,16 +154,6 @@
             </div>
         </section>
 
-        <section class="encadre-hero pub-transversale">
-            <div class="cadre-fond">
-                <h3 class="encadre-titre" style="font-size: 1.8em;">L'Essentiel de l'Alchimiste</h3>
-                <div class="liste-selectionnable" style="max-width: 800px; display: grid; grid-template-columns: 1fr;">
-                    <a href="https://www.amazon.fr/B-T-cosmetic-wellness-Apr%C3%A8s-Soleil/dp/B07FS3VJR1?linkCode=ll2&tag=zencheztoi-21" target="_blank" class="item-link"><span>L'Élixir de Régénération (Gel d'Aloe Vera Bio) Volume 3</span> <span>→</span></a>
-                    <a href="https://www.amazon.fr/Essentielle-angustifolia-producteur-Proven%C3%A7ale-Aromath%C3%A9rapie/dp/B0C59H1VL7?linkCode=ll2&tag=zencheztoi-21" target="_blank" class="item-link"><span>La Panacée Violette (Lavande Vraie Bio) Volume 4</span> <span>→</span></a>
-                </div>
-            </div>
-        </section>
-
         <section class="encadre-hero journal-jardin" id="jardin">
             <div class="cadre-fond">
                 <h3 class="encadre-titre">Secrets de la Terre</h3>
@@ -168,21 +166,11 @@
                     <a href="araignees.html" class="item-link"><span>Le Fléau Invisible : Araignées Rouges</span> <span>→</span></a>
                     <a href="cochenilles-thrips.html" class="item-link"><span>La Neige Coriace : Cochenilles & Thrips</span> <span>→</span></a>
                     <a href="rouille.html" class="item-link"><span>Les Taches Brunes : Vaincre la Rouille</span> <span>→</span></a>
-                    <a href="feuilles-jaunes.html" class="item-link"><span>La Sève Épuisée : Soigner les Feuilles Jaunes</span> <span>→</span></a>
+                    <a href="feuilles-jaunes.html" class="item-link"><span>La Sève Épuisée : Chlorose & Feuilles Jaunes</span> <span>→</span></a>
                     <a href="fourmis.html" class="item-link"><span>L'Équilibre Retrouvé : Les Fourmis</span> <span>→</span></a>
                     <a href="sol-epuise.html" class="item-link"><span>L'Or Noir du Jardinier : Nourrir un Sol Épuisé</span> <span>→</span></a>
                     <a href="tavelure.html" class="item-link"><span>Le Verger Protégé : Contre la Tavelure</span> <span>→</span></a>
                     <a href="mousse.html" class="item-link"><span>Le Tapis Vert : Lutter contre la Mousse</span> <span>→</span></a>
-                </div>
-            </div>
-        </section>
-
-        <section class="encadre-hero pub-transversale">
-            <div class="cadre-fond">
-                <h3 class="encadre-titre" style="font-size: 1.8em;">L'Essentiel de l'Alchimiste</h3>
-                <div class="liste-selectionnable" style="max-width: 800px; display: grid; grid-template-columns: 1fr;">
-                    <a href="https://www.amazon.fr/SPADO-Origines-concentr%C3%A9e-alimentaire-Fabrication/dp/B08M946GXG?linkCode=ll2&tag=zencheztoi-21" target="_blank" class="item-link"><span>L'Esprit de Clarté (Vinaigre Blanc 5L) Volume 1</span> <span>→</span></a>
-                    <a href="https://www.amazon.fr/MUT22-Sauge-Blanche-Sacr%C3%A9s-Br%C3%BBler/dp/B0B5VQGDYV?linkCode=ll2&tag=zencheztoi-21" target="_blank" class="item-link"><span>La Grande Purificatrice (Sauge Blanche) Volume 5</span> <span>→</span></a>
                 </div>
             </div>
         </section>
@@ -195,23 +183,13 @@
                     <a href="mal-de-dos.html" class="item-link"><span>Le Mal de Dos : Libérer les Tensions</span> <span>→</span></a>
                     <a href="cellulite.html" class="item-link"><span>Cellulite : Drainer et Lisser</span> <span>→</span></a>
                     <a href="peau-seche.html" class="item-link"><span>Peau Sèche : L'Onction Nourrissante</span> <span>→</span></a>
-                    <a href="fatigue.html" class="item-link"><span>Fatigue : Relancer l'Énergie Vitale</span> <span>→</span></a>
+                    <a href="fatigue-physique.html" class="item-link"><span>Fatigue : Relancer l'Énergie Vitale</span> <span>→</span></a>
                     <a href="jambes-lourdes.html" class="item-link"><span>Jambes Lourdes : Retrouver la Légèreté</span> <span>→</span></a>
                     <a href="chute-cheveux.html" class="item-link"><span>Chute de Cheveux : Fortifier la Parure</span> <span>→</span></a>
                     <a href="tensions-musculaires.html" class="item-link"><span>Muscles : Le Repos du Guerrier</span> <span>→</span></a>
                     <a href="articulations.html" class="item-link"><span>Articulations : Retrouver la Souplesse</span> <span>→</span></a>
                     <a href="odeurs-corps.html" class="item-link"><span>Transpiration : Purifier l'Aura</span> <span>→</span></a>
                     <a href="pieds-fatigues.html" class="item-link"><span>Pieds Fatigués : L'Ancrage au Sol</span> <span>→</span></a>
-                </div>
-            </div>
-        </section>
-
-        <section class="encadre-hero pub-transversale">
-            <div class="cadre-fond">
-                <h3 class="encadre-titre" style="font-size: 1.8em;">L'Essentiel de l'Alchimiste</h3>
-                <div class="liste-selectionnable" style="max-width: 800px; display: grid; grid-template-columns: 1fr;">
-                    <a href="https://www.amazon.fr/Garten-Gl%C3%BCck-Huile-Neem-Concentr%C3%A9e/dp/B097TTRW8T?linkCode=ll2&tag=zencheztoi-21" target="_blank" class="item-link"><span>La Sentinelle Amère (Huile de Neem) Volume 2</span> <span>→</span></a>
-                    <a href="https://www.amazon.fr/Bicarbonate-Soude-DOYPACK-50kg-zipp%C3%A9/dp/B08T7DLBX9?linkCode=ll2&tag=zencheztoi-21" target="_blank" class="item-link"><span>Le Sel Purificateur (Bicarbonate de Soude) Volume 1</span> <span>→</span></a>
                 </div>
             </div>
         </section>
@@ -228,17 +206,7 @@
                     <a href="digestion.html" class="item-link"><span>Digestion : La Fluidité Intérieure</span> <span>→</span></a>
                     <a href="sommeil-profond.html" class="item-link"><span>Sommeil : Nuits Réparatrices</span> <span>→</span></a>
                     <a href="energie-vitalite.html" class="item-link"><span>Énergie : Relancer le Flux Vital</span> <span>→</span></a>
-                    <a href="concentration.html" class="item-link"><span>Focus : Mémoire et Concentration</span> <span>→</span></a>
-                </div>
-            </div>
-        </section>
-
-        <section class="encadre-hero pub-transversale">
-            <div class="cadre-fond">
-                <h3 class="encadre-titre" style="font-size: 1.8em;">L'Essentiel de l'Alchimiste</h3>
-                <div class="liste-selectionnable" style="max-width: 800px; display: grid; grid-template-columns: 1fr;">
-                    <a href="https://www.amazon.fr/Beurre-Karit%C3%A9-400-Biologique-additifs/dp/B09QT25SCC?linkCode=ll2&tag=zencheztoi-21" target="_blank" class="item-link"><span>L'Or des Femmes (Beurre de Karité Brut) Volume 3</span> <span>→</span></a>
-                    <a href="https://www.amazon.fr/Diatom%C3%A9e-Alimentaire-Utilisable-Agriculture-Biologique/dp/B09LHYQ2XR?linkCode=ll2&tag=zencheztoi-21" target="_blank" class="item-link"><span>Le Bouclier Minéral (Terre de Diatomée) Volume 2</span> <span>→</span></a>
+                    <a href="focus.html" class="item-link"><span>Focus : Mémoire et Concentration</span> <span>→</span></a>
                 </div>
             </div>
         </section>
@@ -248,33 +216,21 @@
                 <h3 class="encadre-titre">Le Journal du Secret</h3>
                 <p class="encadre-sous-titre">Chroniques de l'invisible et rituels de haute fréquence.</p>
                 <div class="liste-selectionnable">
-                    <a href="purification-lieux.html" class="item-link"><span>Purification : Nettoyer les Énergies</span> <span>→</span></a>
-                    <a href="chakras.html" class="item-link"><span>Chakras : Équilibrer les Centres</span> <span>→</span></a>
-                    <a href="magie-cristaux.html" class="item-link"><span>Lithothérapie : Magie des Pierres</span> <span>→</span></a>
+                    <a href="purification.html" class="item-link"><span>Purification : Nettoyer les Énergies</span> <span>→</span></a>
+                    <a href="cristaux-chakras.html" class="item-link"><span>Chakras : Équilibrer les Centres</span> <span>→</span></a>
+                    <a href="lithotherapie.html" class="item-link"><span>Lithothérapie : Magie des Pierres</span> <span>→</span></a>
+                    <a href="pendule.html" class="item-link"><span>Pendule : L'Art de la Radiesthésie</span> <span>→</span></a>
+                    <a href="tarot.html" class="item-link"><span>Tarot & Oracles : La Guidance Intérieure</span> <span>→</span></a>
+                    <a href="instru-rituel.html" class="item-link"><span>Médecine Vibratoire : Sons & Rituels</span> <span>→</span></a>
                     <a href="rituels-lune.html" class="item-link"><span>Lune : S'aligner sur les Cycles</span> <span>→</span></a>
                     <a href="geometrie-sacree.html" class="item-link"><span>Géométrie : Les Ondes de Forme</span> <span>→</span></a>
                     <a href="signes-univers.html" class="item-link"><span>Synchronicités : Lire les Signes</span> <span>→</span></a>
                     <a href="intuition.html" class="item-link"><span>Intuition : Éveiller ses Sens</span> <span>→</span></a>
-                    <a href="ancrage-spirituel.html" class="item-link"><span>Ancrage : Se relier au Sacré</span> <span>→</span></a>
                 </div>
             </div>
         </section>
 
     </main>
-
-    <section class="encyclopedie-section">
-        <h2 style="font-variant: small-caps; font-size: 2.2em; color: var(--brun-sombre); margin-bottom:10px;">L'Encyclopédie des Solutions Nomades</h2>
-        <div class="pills-row">
-            <a href="maison.html" class="pill p1">Vol 1 : Fondation</a>
-            <a href="jardin.html" class="pill p2">Vol 2 : Enracinement</a>
-            <a href="corps.html" class="pill p3">Vol 3 : Éclosion</a>
-            <a href="bienetre.html" class="pill p4">Vol 4 : Harmonie</a>
-            <a href="eso.html" class="pill p5">Vol 5 : Élévation</a>
-        </div>
-        <div style="margin-top: 40px; font-size: 1.2em; font-style: italic; color: var(--brun-sombre);">
-            Le Volume : <span style="color:var(--or-zen); font-weight:bold;">14.90€</span> — Pack Trio : <span style="color:var(--or-zen); font-weight:bold;">24.90€</span> — L'Intégrale : <span style="color:var(--or-zen); font-weight:bold;">39.90€</span>
-        </div>
-    </section>
 
     <footer>
         <a href="index.html" class="footer-logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
@@ -282,7 +238,6 @@
             <li><a href="mentions-legales.html">Mentions légales</a></li>
             <li><a href="confidentialite.html">Confidentialité</a></li>
             <li><a href="cookies.html">Cookies</a></li>
-            <li><a href="a-propos.html">À Propos</a></li>
             <li><a href="livre-or.html">Livre d'Or</a></li>
         </ul>
         <p style="font-size: 0.85em; opacity: 0.4;">&copy; 2026 Zen Chez Toi • L'Harmonie au Naturel.</p>

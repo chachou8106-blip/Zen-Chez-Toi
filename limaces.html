@@ -1,424 +1,276 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Limaces au potager : prévenir les dégâts, utiliser des barrières et pièges naturels, et favoriser les prédateurs pour un jardin plus équilibré.">
-  <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Limaces & Escargots : l'Alchimie pour Protéger le Potager | Zen Chez Toi</title>
 
-  <title>Limaces & escargots : protéger le potager naturellement | Zen Chez Toi</title>
+    <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRV5YNRL57"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-JRV5YNRL57');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7501098246029504" crossorigin="anonymous"></script>
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRV5YNRL57"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-JRV5YNRL57');
-  </script>
+    <meta name="description" content="Découvrez l'alchimie pour éloigner limaces et escargots de votre potager. Barrières minérales, pièges naturels et paillage pour un jardin vivant et équilibré.">
+    <link rel="icon" type="image/png" href="assets/logo.png">
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-sable: #f5f2ec; --blanc: #ffffff; --brun-sombre: #2b2622; --or-zen: #a67b51;
+            --maison: #6a7f8f; --jardin: #7b9074; --corps: #cca8a0; --bienetre: #d4a259; --eso: #826a8f;
+            
+            /* THÈME JARDIN ACTIVÉ */
+            --theme-article: var(--jardin);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.8; overflow-x: hidden; }
 
-  <style>
-    :root {
-      --bg: #fdfaf5;
-      --text: #332a22;
-      --muted: #685e55;
-      --accent: #5da679;
-      --dark: #1f140e;
-      --surface: rgba(255,255,255,.92);
-    }
+        /* --- HEADER & NAVIGATION --- */
+        header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; }
+        .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
+        
+        /* AURA LOGO HEADER BLANC ++++ (EXCLUSIVEMENT ICI) */
+        .logo { display: inline-block; text-decoration: none; transition: 0.4s ease; }
+        .logo img { max-height: 90px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2)); transition: 0.5s ease; }
+        .logo:hover img { 
+            filter: drop-shadow(0 0 30px #ffffff) drop-shadow(0 0 15px #ffffff) drop-shadow(0 0 5px #ffffff); 
+            transform: scale(1.05); 
+        }
 
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      color: var(--text);
-      background: var(--bg);
-      line-height: 1.7;
-    }
+        .header-right { display: flex; align-items: center; gap: 40px; }
+        nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
+        nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
+        nav a:hover { color: var(--theme-article); text-shadow: 0 0 15px var(--theme-article); }
 
-    a { text-decoration: none; color: inherit; transition: 0.3s; }
+        .dropdown { position: relative; display: inline-block; padding: 15px 0; cursor: pointer; }
+        .dropdown-content { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background-color: var(--brun-sombre); min-width: 200px; box-shadow: 0px 10px 25px rgba(0,0,0,0.3); z-index: 2100; border-radius: 8px; border: 1px solid var(--theme-article); overflow: hidden; }
+        .dropdown-content a { color: rgba(255,255,255,0.8) !important; padding: 12px 20px; display: block; font-size: 0.95em; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1); font-variant: small-caps; }
+        .dropdown-content a:hover { background-color: var(--theme-article); color: #fff !important; }
+        .dropdown:hover .dropdown-content { display: block; }
 
-    .main-nav {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: rgba(253, 250, 245, 0.96);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(0,0,0,0.08);
-    }
+        /* PINTEREST - SURVOL CLASSIQUE DANS LE THÈME */
+        .pinterest-badge { display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; font-style: italic; background: rgba(255,255,255,0.1); transition: 0.4s; }
+        .pinterest-badge:hover { 
+            background: var(--theme-article); 
+            border-color: var(--theme-article); 
+            transform: rotate(15deg) scale(1.1);
+            box-shadow: 0 0 15px var(--theme-article);
+        }
 
-    .nav-wrap {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 14px 16px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
+        /* --- HERO ARTICLE --- */
+        .hero { height: 75vh; min-height: 500px; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('assets/hero-jardin.jpg') center/cover no-repeat fixed; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; }
+        .vol-phrase { font-size: clamp(1.4em, 3vw, 2em); font-variant: small-caps; letter-spacing: 5px; font-weight: bold; margin-bottom: 15px; color: var(--theme-article); text-shadow: 0 4px 15px rgba(0,0,0,0.9), 0 2px 5px rgba(0,0,0,1); -webkit-text-stroke: 0.5px rgba(255,255,255,0.8); }
+        .hero h1 { font-size: clamp(2.5em, 6vw, 4.5em); font-weight: normal; margin-bottom: 20px; line-height: 1.2; font-variant: small-caps; text-shadow: 0 4px 15px rgba(0,0,0,0.8); max-width: 1000px; }
+        .tagline { font-size: clamp(1.1em, 2vw, 1.5em); font-style: italic; opacity: 0.9; max-width: 800px; line-height: 1.5; }
 
-    .nav-wrap a {
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      font-weight: 700;
-      color: var(--muted);
-      letter-spacing: 0.1em;
-      padding: 5px 8px;
-    }
+        /* --- CORPS DU TEXTE --- */
+        .blog-container { max-width: 800px; margin: 60px auto 60px; padding: 0 20px; font-size: 1.15rem; color: #333; }
+        .blog-container h2 { font-size: 2.2em; color: var(--theme-article); margin: 60px 0 25px; font-variant: small-caps; text-align: center; font-weight: normal; }
+        .blog-container h3 { font-size: 1.5em; color: var(--brun-sombre); margin: 50px 0 15px; font-variant: small-caps; border-bottom: 1px solid rgba(123, 144, 116, 0.4); padding-bottom: 8px; }
+        .blog-container p { margin-bottom: 25px; text-align: justify; }
+        .blog-container ul, .blog-container ol { margin-bottom: 25px; padding-left: 20px; }
+        .blog-container li { margin-bottom: 10px; }
 
-    .nav-wrap a:hover,
-    .nav-wrap a.active {
-      color: var(--accent);
-    }
+        /* --- NOTES & ENCADRÉS --- */
+        .alchimiste-note { background: var(--blanc); border-left: 4px solid var(--theme-article); padding: 30px; margin: 50px 0; border-radius: 0 20px 20px 0; box-shadow: 0 15px 40px rgba(0,0,0,0.05); }
+        .note-titre { display: block; font-variant: small-caps; color: var(--theme-article); font-weight: bold; font-size: 1.3em; margin-bottom: 15px; }
 
-    .dot {
-      color: rgba(0,0,0,0.12);
-      font-size: 0.7rem;
-    }
+        .encadre-hero { margin: 80px 0; border-radius: 30px; overflow: hidden; border: 5px solid var(--theme-article); box-shadow: 0 20px 50px rgba(0,0,0,0.2); }
+        .cadre-fond { padding: 60px 40px; text-align: center; background-size: cover; background-position: center; background-attachment: fixed; }
+        .encadre-titre { font-size: 2.5em; font-variant: small-caps; color: var(--brun-sombre); -webkit-text-stroke: 0.5px #ffffff; margin-bottom: 10px; text-shadow: 0 4px 15px rgba(0,0,0,0.6); letter-spacing: 1px; }
+        .encadre-sous-titre { font-style: italic; font-size: 1.1em; color: #fff; margin-bottom: 30px; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
+        
+        .liste-selectionnable { display: flex; flex-direction: column; gap: 15px; max-width: 650px; margin: 0 auto; }
+        
+        /* LIENS PRODUITS - SURVOL CLASSIQUE DANS LE THÈME */
+        .item-link { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; padding: 18px 35px; display: flex; align-items: center; justify-content: space-between; text-decoration: none; color: #fff; transition: 0.4s ease; }
+        .item-link:hover { 
+            transform: scale(1.03); 
+            border-color: #fff; 
+            background: var(--theme-article); 
+            box-shadow: 0 0 25px var(--theme-article);
+        }
+        .item-link span { font-weight: bold; font-variant: small-caps; font-size: 1.1em; text-align: left; }
+        .item-link span small { display: block; font-size: 0.75em; font-family: 'Georgia', serif; font-style: italic; opacity: 0.8; text-transform: none; font-weight: normal; }
 
-    .hero {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 72px 20px 24px;
-      text-align: center;
-    }
+        /* --- ENCYCLOPÉDIE --- */
+        .encyclopedie-section { background-color: var(--blanc); padding: 80px 20px; text-align: center; border-top: 1px solid #eee; }
+        .pills-row { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 30px; }
+        .pill { padding: 10px 20px; border: 2px solid; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 0.9em; text-decoration: none; background: #fff; transition: 0.3s; }
+        .p1 { border-color: var(--maison); color: var(--maison); } .p1:hover { background: var(--maison); color: #fff; box-shadow: 0 0 15px var(--maison); }
+        .p2 { border-color: var(--jardin); color: var(--jardin); } .p2:hover { background: var(--jardin); color: #fff; box-shadow: 0 0 15px var(--jardin); }
+        .p3 { border-color: var(--corps); color: var(--corps); } .p3:hover { background: var(--corps); color: #fff; box-shadow: 0 0 15px var(--corps); }
+        .p4 { border-color: var(--bienetre); color: var(--bienetre); } .p4:hover { background: var(--bienetre); color: #fff; box-shadow: 0 0 15px var(--bienetre); }
+        .p5 { border-color: var(--eso); color: var(--eso); } .p5:hover { background: var(--eso); color: #fff; box-shadow: 0 0 15px var(--eso); }
 
-    .hero-kicker {
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      font-size: 0.78rem;
-      color: var(--muted);
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
+        /* --- FOOTER --- */
+        footer { background: var(--brun-sombre); color: #fff; padding: 80px 20px; text-align: center; }
+        
+        /* AURA LOGO FOOTER BLANC ++++ (EXCLUSIVEMENT ICI) */
+        .footer-logo { display: inline-block; transition: 0.4s ease; margin-bottom: 30px; }
+        .footer-logo img { height: 60px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.4)); transition: 0.5s; }
+        .footer-logo:hover img { 
+            filter: drop-shadow(0 0 30px #ffffff) drop-shadow(0 0 15px #ffffff) drop-shadow(0 0 5px #ffffff); 
+            transform: scale(1.05); 
+        }
+        
+        .footer-nav-compact { display: flex; gap: 30px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; flex-wrap: wrap; }
+        .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.6; font-variant: small-caps; transition: 0.3s; }
+        .footer-nav-compact a:hover { opacity: 1; color: var(--theme-article); text-shadow: 0 0 15px var(--theme-article); }
 
-    h1 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(2.4rem, 5vw, 3.4rem);
-      margin: 0 0 10px;
-      line-height: 1.1;
-    }
+        #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
 
-    .hero-sub {
-      max-width: 700px;
-      margin: 0 auto;
-      color: var(--muted);
-      font-size: 1.02rem;
-    }
-
-    main {
-      max-width: 920px;
-      margin: 0 auto;
-      padding: 20px 20px 80px;
-    }
-
-    h2 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.9rem;
-      margin: 40px 0 14px;
-      line-height: 1.2;
-    }
-
-    h3 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.35rem;
-      margin: 26px 0 8px;
-    }
-
-    p {
-      margin: 0 0 14px;
-    }
-
-    ul {
-      padding-left: 18px;
-      margin: 0 0 14px;
-    }
-
-    li {
-      margin-bottom: 8px;
-    }
-
-    .box {
-      background: var(--surface);
-      border-radius: 18px;
-      padding: 20px;
-      margin: 22px 0;
-      box-shadow: 0 12px 28px rgba(0,0,0,0.05);
-      border: 1px solid rgba(0,0,0,0.03);
-    }
-
-    .box-title {
-      font-size: 0.82rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      font-weight: 700;
-      color: var(--muted);
-      margin-bottom: 8px;
-    }
-
-    .products-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 14px;
-      margin-top: 12px;
-    }
-
-    .product-card {
-      background: white;
-      border-radius: 14px;
-      padding: 14px;
-      border: 1px solid rgba(0,0,0,0.05);
-    }
-
-    .product-card strong {
-      display: block;
-      margin-bottom: 6px;
-    }
-
-    .product-card a {
-      display: inline-block;
-      margin-top: 8px;
-      color: var(--accent);
-      font-weight: 700;
-    }
-
-    .footer {
-      background: var(--dark);
-      color: #f3dfca;
-      padding: 60px 20px 80px;
-      text-align: center;
-      margin-top: 10px;
-    }
-
-    .footer-logo {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 2.6rem;
-      margin-bottom: 12px;
-    }
-
-    .footer-logo em {
-      color: #d97757;
-      font-style: italic;
-    }
-
-    .footer-links {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      flex-wrap: wrap;
-      opacity: 0.72;
-      font-size: 0.88rem;
-      margin: 16px 0;
-    }
-
-    #disclaimer-bar {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background: rgba(0,0,0,0.95);
-      color: rgba(255,255,255,0.6);
-      font-size: 0.75rem;
-      text-align: center;
-      padding: 10px;
-      z-index: 1000;
-      border-top: 1px solid rgba(255,255,255,0.1);
-    }
-
-    @media (max-width: 640px) {
-      .hero { padding-top: 52px; }
-      h2 { font-size: 1.65rem; }
-    }
-  </style>
+        @media (max-width: 768px) {
+            header { padding: 15px 0; }
+            .logo img { max-height: 70px; } 
+            .nav-container { flex-direction: column; gap: 15px; padding: 10px 20px; }
+            .header-right { flex-direction: column; gap: 15px; align-items: center; width: 100%; }
+            nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; }
+            .hero { padding-top: 350px !important; justify-content: flex-start !important; height: auto !important; padding-bottom: 60px; }
+            .hero h1 { font-size: 2.2em; }
+            .item-link { flex-direction: column; text-align: center; padding: 15px; }
+            .item-link span { text-align: center; }
+            .encadre-titre { font-size: 2em; }
+        }
+    </style>
 </head>
 <body>
 
-  <nav class="main-nav" aria-label="Navigation principale">
-    <div class="nav-wrap">
-      <a href="index.html">Accueil</a><span class="dot">&bull;</span>
-      <a href="blog.html">Blog</a><span class="dot">&bull;</span>
-      <a href="eso.html">Ésotérisme</a><span class="dot">&bull;</span>
-      <a href="Jardin.html" class="active">Jardin</a><span class="dot">&bull;</span>
-      <a href="maison.html">Maison</a><span class="dot">&bull;</span>
-      <a href="bienetre.html">Bien-être</a><span class="dot">&bull;</span>
-      <a href="Corps.html">Corps</a>
-    </div>
-  </nav>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
+            <div class="header-right">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li class="dropdown">
+                            <a href="grimoire.html">Grimoire</a>
+                            <div class="dropdown-content">
+                                <a href="maison.html">Vol 1 : Fondation</a>
+                                <a href="jardin.html">Vol 2 : Enracinement</a>
+                                <a href="corps.html">Vol 3 : Éclosion</a>
+                                <a href="bienetre.html">Vol 4 : Harmonie</a>
+                                <a href="eso.html">Vol 5 : Élévation</a>
+                            </div>
+                        </li>
+                        <li><a href="blog.html">Journal</a></li>
+                        <li><a href="encyclopedie.html">Encyclopédie</a></li>
+                        <li><a href="livre-or.html">Livre d'Or</a></li>
+                    </ul>
+                </nav>
+                <a href="https://www.pinterest.fr/zencheztoi/" class="pinterest-badge" target="_blank" title="Inspirations pour le Jardin">p</a>
+            </div>
+        </div>
+    </header>
 
-  <header class="hero">
-    <div class="hero-kicker">Jardin · Ravageurs</div>
-    <h1>Limaces & escargots : protéger sans s’énerver</h1>
-    <p class="hero-sub">
-      Semis rasés au petit matin, jeunes salades trouées… Les limaces peuvent vite nous décourager. Entre barrières naturelles, pièges doux et équilibre du jardin, tu peux reprendre la main sans transformer ton potager en champ de bataille.
-    </p>
-  </header>
+    <section class="hero">
+        <p class="vol-phrase">Volume 2 : Enracinement • Chronique</p>
+        <h1>Limaces & Escargots : l'Alchimie du Partage au Jardin</h1>
+        <p class="tagline">« Ne déclarez pas la guerre à la terre. Apprenez à protéger vos jeunes pousses en restaurant l'équilibre naturel de votre sanctuaire végétal. »</p>
+    </section>
 
-  <main>
-    <section>
-      <h2>Comprendre le rôle des limaces</h2>
-      <p>
-        Les limaces sont souvent décrites comme des “dévoreuses”, mais plusieurs ressources rappellent qu’elles jouent aussi un rôle de décomposeurs dans les écosystèmes.[web:94][web:95]
-      </p>
-      <p>
-        L’idée, dans une approche de jardin naturel ou de permaculture, est donc plutôt de limiter leurs dégâts sur les cultures que de chercher à les éliminer complètement.[web:95][web:99]
-      </p>
+    <main class="blog-container">
 
-      <div class="box">
-        <div class="box-title">Quand s’inquiéter ?</div>
+        <p>Semis rasés au petit matin, jeunes salades trouées, bave brillante sur les tiges... Au printemps, le réveil des limaces et des escargots peut rapidement décourager le jardinier. L'industrie nous pousse alors à semer des granulés toxiques bleus ou verts qui empoisonnent le sol, les hérissons et les oiseaux. Pourtant, dans l'alchimie du jardin naturel, transformer son potager en champ de bataille est une erreur vibratoire. Reprendre la main nécessite de la ruse, des barrières minérales et un profond respect du vivant.</p>
+
+        <div class="alchimiste-note">
+            <span class="note-titre">Le Rôle des Décomposeurs</span>
+            <p>Les limaces sont souvent perçues comme de simples dévoreuses, alors qu'elles jouent un rôle fondamental d'alchimistes de l'ombre : elles décomposent la matière morte pour fertiliser l'humus. Si elles s'attaquent massivement à vos jeunes pousses, c'est le signe d'un déséquilibre temporaire ou d'un sol manquant de matière organique en décomposition. L'objectif n'est donc pas le "zéro limace", mais la régulation.</p>
+        </div>
+
+        <h2>La Prévention Douce : L'Équilibre du Milieu</h2>
+        <p>Avant d'intervenir directement, observez votre environnement. En ajustant l'architecture de votre potager, vous pouvez le rendre beaucoup moins attrayant pour ces gastéropodes nocturnes.</p>
         <ul>
-          <li>Quand les jeunes plants disparaissent en une nuit.[web:94][web:95]</li>
-          <li>Quand les dégâts se répètent malgré quelques mesures préventives.[web:95][web:102]</li>
-          <li>Quand tu sens que la pression te décourage de planter quoi que ce soit.[web:95]</li>
+            <li><strong>Déplacer les "buffets" :</strong> Les limaces adorent l'humidité et l'obscurité. Éloignez les tas de végétaux en décomposition, les vieilles planches et les gros paillis de vos jeunes pousses fragiles.</li>
+            <li><strong>Créer des refuges pour les prédateurs :</strong> La nature possède sa propre armée de régulation. En laissant des tas de branches et des haies sauvages, vous attirez hérissons, carabes, oiseaux et orvets qui se feront un festin de vos limaces.</li>
+            <li><strong>Semer la robustesse :</strong> Si la pression est trop forte, privilégiez temporairement des variétés moins appétentes ou mélangez vos cultures fragiles avec des plantes aux odeurs repoussantes pour les gastéropodes (bourrache, capucine, ail).</li>
         </ul>
-      </div>
-    </section>
 
-    <section>
-      <h2>Prévention douce : rendre le potager moins tentant</h2>
-      <p>
-        De nombreux conseils préconisent d’abord d’ajuster l’environnement : moins d’abris juste à côté des cultures sensibles, et des plantes un peu plus robustes au menu.[web:94][web:95][web:101]
-      </p>
+        <h2>Ériger les Barrières Minérales et Végétales</h2>
+        <p>Lorsqu'il faut absolument protéger un jeune semis, la création d'une frontière physique est la méthode la plus respectueuse. Les limaces détestent ramper sur des surfaces sèches, rugueuses ou coupantes.</p>
 
-      <h3>Éloigner les “buffets à limaces”</h3>
-      <p>
-        Les sources suggèrent notamment d’éloigner les tas de végétaux en décomposition, les abris humides (planches, pierres, gros paillis) des planches de jeunes légumes, ou de les utiliser comme zones de pièges à distance.[web:94][web:95][web:101]
-      </p>
+        <section class="encadre-hero">
+            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/hero-jardin.jpg');">
+                <h3 class="encadre-titre">L'Arsenal du Gardien</h3>
+                <p class="encadre-sous-titre">Des remparts bruts et naturels pour protéger vos jeunes plants sans chimie.</p>
+                <div class="liste-selectionnable">
+                    <a href="https://www.amazon.fr/POUZZOLANE-Barri%C3%A8re-Escargots-gasteropodes-%C3%89COLOGIQUE/dp/B0DPSGHSTL?&linkCode=ll2&tag=zencheztoi-21&linkId=657506a197cab9a1207e08c2dabe8625&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="item-link">
+                        <span>Le Rempart Minéral <small>Pouzzolane naturelle : roche volcanique rugueuse infranchissable pour les limaces</small></span> <span>→</span>
+                    </a>
+                    <a href="https://www.amazon.fr/dp/B09C6FKM3V?psc=1&aref=RK0OhPGWqC&sp_csd=d2lkZ2V0TmFtZT1zcF9ocXBfc2hhcmVk&linkCode=ll2&tag=zencheztoi-21&linkId=4d016f0188afd63497b080419661d739&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="item-link">
+                        <span>Le Leurre d'Attraction <small>Pièges réutilisables à enterrer (à remplir d'un fond de bière pour concentrer les limaces)</small></span> <span>→</span>
+                    </a>
+                    <a href="https://www.amazon.fr/Paillage-Naturel-Miscanthus-Fran%C3%A7ais-Biod%C3%A9gradable/dp/B0C1CQN83Q?dib=eyJ2IjoiMSJ9.EX3t9AUzF624bs2ZRs2FnkrFmrtPq-hHvNVGYgASXA2mC6MDTWBGE3FleEjSPMB9-sWH__1VCWP3ZTK0rQi-LNbVryi3OjWx5tjqB_pPF2Dn0BS2gniIeAcNQUDdOhazdWbrV-V_CaObUe4wppJ-A7Jux3wrggrOVMHV4iBvAVEPZ3uREj18hRp6im6thiWpCMQ2OxO-OSutXQuUPIUEpASkjpLFE8Qf-L8S80jlcUo4n01TAM4pEM93h9D6saRPvOSX7ZHuTEe6vZF6_4lSHvsNRM-cJ4UWw2MnDMiYQPc.GbVpWdYjKWOyunzrdzFllBfMWYvWf2FTFaTjTZafe9I&dib_tag=se&keywords=paillis+limaces&qid=1776774159&sr=8-7&linkCode=ll2&tag=zencheztoi-21&linkId=60ede452c00915b6e0094fcb8a2f1e7b&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="item-link">
+                        <span>L'Écorce Protectrice <small>Paillage de Miscanthus : sec et coupant, il protège le sol sans attirer l'humidité</small></span> <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-      <h3>Choisir des plantes plus résistantes</h3>
-      <p>
-        Certains jardiniers recommandent aussi de tester des variétés ou espèces moins appétentes pour les limaces, ou de mélanger des plantes sensibles avec d’autres plus robustes.[web:95][web:102]
-      </p>
+        <h2>Les Pièges Doux de Régulation</h2>
+        <p>Si la barrière ne suffit pas (par temps très humide par exemple, où même la cendre de bois perd son efficacité), l'utilisation de pièges d'attraction permet de réguler la population sans empoisonner le reste du jardin. Vous pouvez enterrer de petits réceptacles remplis d'un fond de bière qui les attirera irrésistiblement. Plus simplement encore, posez une planche de bois humide, un vieux carton ou un demi-pamplemousse évidé près de vos cultures : les limaces viendront s'y réfugier à l'aube. Il vous suffira de les ramasser manuellement au petit matin pour les déplacer dans une zone sauvage loin du potager.</p>
 
-      <h3>Créer un jardin accueillant pour les prédateurs</h3>
-      <p>
-        Les articles sur la permaculture invitent à multiplier les refuges pour hérissons, carabes, oiseaux, orvets et autres prédateurs de limaces : tas de branches, haies variées, zones un peu sauvages.[web:95][web:99]
-      </p>
-    </section>
+        <h2>Retrouver la Paix du Cultivateur</h2>
+        <p>La première année de culture au naturel est souvent la plus difficile, le temps que le jardin trouve son rythme et que les prédateurs s'installent. En avançant par petits ajustements – barrières de pouzzolane, pièges dispersés et acceptation d'un partage de vos cultures – vous protégez vos plantes tout en conservant la joie profonde d'un jardin grouillant de vie.</p>
 
-    <section>
-      <h2>Barrières naturelles autour des plantes</h2>
-      <p>
-        Parfois, il suffit de rendre l’accès aux jeunes plants un peu plus compliqué grâce à des barrières physiques ou des matières que les limaces n’aiment pas traverser.[web:93][web:94][web:96][web:101]
-      </p>
+        <section class="encadre-hero">
+            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/hero-accueil.jpg');">
+                <h3 class="encadre-titre">Continuer l'Enracinement</h3>
+                <p class="encadre-sous-titre">Explorez d'autres rituels pour protéger et nourrir votre temple extérieur.</p>
+                <div class="liste-selectionnable">
+                    <a href="pucerons.html" class="item-link">
+                        <span>Le Répulsif Doux <small>Chronique : Réguler l'invasion des pucerons par la botanique</small></span> <span>→</span>
+                    </a>
+                    <a href="compost.html" class="item-link">
+                        <span>L'Or Noir de la Terre <small>Chronique : Démarrer l'alchimie d'un compost vivant</small></span> <span>→</span>
+                    </a>
+                    <a href="jardin.html" class="item-link">
+                        <span>Le Volume 2 Complet <small>Découvrir la Table des Matières du Jardin</small></span> <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-      <h3>Coquilles d’œufs, paillis rugueux, sable…</h3>
-      <p>
-        Plusieurs conseils mentionnent l’usage de coquilles d’œufs écrasées, de sable, de paillis rugueux (copeaux, aiguilles de pin) ou de matériaux similaires autour des plants sensibles.[web:94][web:101]
-      </p>
-
-      <h3>Cendre de bois (avec prudence)</h3>
-      <p>
-        La cendre de bois sèche est souvent citée comme barrière temporaire, à disposer en cordon autour des plantes, tout en sachant qu’elle perd son effet dès qu’elle est mouillée.[web:94][web:101]
-      </p>
-
-      <h3>Barrières en cuivre</h3>
-      <p>
-        Des sources évoquent aussi les bandes, filets ou collerettes en cuivre, qui peuvent repousser les limaces lorsqu’elles essaient de les franchir.[web:93][web:96][web:97]
-      </p>
-    </section>
-
-    <section>
-      <h2>Pièges doux et ramassage</h2>
-      <p>
-        Pour limiter la pression sans tout “nettoyer”, beaucoup de jardiniers combinent pièges attractifs et ramassage régulier.[web:94][web:95][web:99][web:102]
-      </p>
-
-      <h3>Planches, cartons, pamplemousses, bière…</h3>
-      <p>
-        Plusieurs méthodes consistent à attirer les limaces sous des planches, cartons ou demi-pamplemousses, voire vers des coupelles de bière, pour les ramasser ensuite.[web:95][web:98][web:102]
-      </p>
-
-      <h3>Ramassage manuel</h3>
-      <p>
-        Le ramassage à la main, souvent conseillé tôt le matin ou le soir, reste un classique dans les approches naturelles, même si ce n’est pas l’étape la plus glamour.[web:95][web:98][web:101]
-      </p>
-
-      <div class="box">
-        <div class="box-title">Ne pas viser le zéro limace</div>
-        <p>
-          Des retours d’expérience en permaculture rappellent que, avec le temps, la pression se calme quand le jardin trouve son équilibre, si on accepte de partager un peu au lieu de viser le zéro limace.[web:95][web:99]
-        </p>
-      </div>
-    </section>
-
-    <section>
-      <h2>Outils utiles pour gérer les limaces</h2>
-      <p>
-        Sans multiplier les produits, quelques accessoires peuvent t’aider à protéger tes plantations les plus sensibles.[web:93][web:94][web:97][web:101]
-      </p>
-
-      <div class="products-grid">
-        <div class="product-card">
-          <strong>Barrière anti‑limaces en pouzzolane</strong>
-          <p>
-            Une barrière naturelle à base de pouzzolane, à disposer en cordon autour des cultures pour rendre le passage des limaces plus difficile. Pratique pour protéger les jeunes plants les plus fragiles.
-          </p>
-          <a href="https://www.amazon.fr/POUZZOLANE-Barri%C3%A8re-Escargots-gasteropodes-%C3%89COLOGIQUE/dp/B0DPSGHSTL?&linkCode=ll2&tag=zencheztoi-21&linkId=657506a197cab9a1207e08c2dabe8625&ref_=as_li_ss_tl" target="_blank" rel="noopener noreferrer">Voir sur Amazon</a>
+        <div class="ad-container" style="margin: 40px 0; text-align: center;">
+            <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-7501098246029504" data-ad-slot="YOUR_AD_SLOT"></ins>
         </div>
 
-        <div class="product-card">
-          <strong>Pièges à limaces réutilisables</strong>
-          <p>
-            De petits pièges à enterrer et à remplir d’un appât (bière, etc.) pour concentrer les limaces en un point précis du potager. Une solution simple pour limiter la pression sans traiter toute la parcelle.
-          </p>
-          <a href="https://www.amazon.fr/dp/B09C6FKM3V?psc=1&aref=RK0OhPGWqC&sp_csd=d2lkZ2V0TmFtZT1zcF9ocXBfc2hhcmVk&linkCode=ll2&tag=zencheztoi-21&linkId=4d016f0188afd63497b080419661d739&ref_=as_li_ss_tl" target="_blank" rel="noopener noreferrer">Voir sur Amazon</a>
-        </div>
+    </main>
 
-        <div class="product-card">
-          <strong>Paillage naturel de miscanthus</strong>
-          <p>
-            Un paillis végétal français et biodégradable, utile pour protéger le sol, garder l’humidité, tout en évitant de créer des abris trop favorables aux limaces lorsqu’il est utilisé avec parcimonie autour des cultures.
-          </p>
-          <a href="https://www.amazon.fr/Paillage-Naturel-Miscanthus-Fran%C3%A7ais-Biod%C3%A9gradable/dp/B0C1CQN83Q?dib=eyJ2IjoiMSJ9.EX3t9AUzF624bs2ZRs2FnkrFmrtPq-hHvNVGYgASXA2mC6MDTWBGE3FleEjSPMB9-sWH__1VCWP3ZTK0rQi-LNbVryi3OjWx5tjqB_pPF2Dn0BS2gniIeAcNQUDdOhazdWbrV-V_CaObUe4wppJ-A7Jux3wrggrOVMHV4iBvAVEPZ3uREj18hRp6im6thiWpCMQ2OxO-OSutXQuUPIUEpASkjpLFE8Qf-L8S80jlcUo4n01TAM4pEM93h9D6saRPvOSX7ZHuTEe6vZF6_4lSHvsNRM-cJ4UWw2MnDMiYQPc.GbVpWdYjKWOyunzrdzFllBfMWYvWf2FTFaTjTZafe9I&dib_tag=se&keywords=paillis+limaces&qid=1776774159&sr=8-7&linkCode=ll2&tag=zencheztoi-21&linkId=60ede452c00915b6e0094fcb8a2f1e7b&ref_=as_li_ss_tl" target="_blank" rel="noopener noreferrer">Voir sur Amazon</a>
+    <section class="encyclopedie-section">
+        <h2 style="font-variant: small-caps; font-size: 2.2em; color: var(--brun-sombre); margin-bottom: 20px;">Emportez nos savoirs avec vous</h2>
+        <div class="pills-row">
+            <a href="encyclopedie.html#vol1" class="pill p1">Vol 1 : Fondation</a>
+            <a href="encyclopedie.html#vol2" class="pill p2">Vol 2 : Enracinement</a>
+            <a href="encyclopedie.html#vol3" class="pill p3">Vol 3 : Éclosion</a>
+            <a href="encyclopedie.html#vol4" class="pill p4">Vol 4 : Harmonie</a>
+            <a href="encyclopedie.html#vol5" class="pill p5">Vol 5 : Élévation</a>
         </div>
-      </div>
-
-      <p style="font-size:0.85rem; color:var(--muted); margin-top:10px;">
-        Ces liens sont affiliés : ils ne changent rien pour vous, mais soutiennent la création de Zen Chez Toi si vous choisissez d’acheter via ces recommandations.
-      </p>
+        <div style="margin-top: 40px; font-size: 1.2em; font-style: italic; color: var(--brun-sombre);">
+            Le Volume : <span style="color:var(--or-zen); font-weight:bold;">14.90€</span> — Pack Trio : <span style="color:var(--or-zen); font-weight:bold;">24.90€</span> — L'Intégrale : <span style="color:var(--or-zen); font-weight:bold;">39.90€</span>
+        </div>
     </section>
 
-    <section>
-      <h2>Retrouver un potager plus paisible</h2>
-      <p>
-        Les témoignages de jardiniers montrent que les premières années avec paillage sont souvent les plus difficiles côté limaces, puis que la situation s’équilibre avec les prédateurs.[web:95][web:99]
-      </p>
-      <p>
-        En avançant par petits ajustements (barrières, pièges, refuges pour auxiliaires), tu peux protéger tes plantes sans perdre la joie de jardiner.
-      </p>
+    <footer>
+        <a href="index.html" class="footer-logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
+        <ul class="footer-nav-compact">
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+            <li><a href="confidentialite.html">Confidentialité</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+            <li><a href="a-propos.html">À Propos</a></li>
+            <li><a href="livre-or.html">Livre d'Or</a></li>
+        </ul>
+        <p style="font-size: 0.85em; opacity: 0.4;">&copy; 2026 Zen Chez Toi • L'Enracinement au Naturel.</p>
+    </footer>
 
-      <div class="box">
-        <div class="box-title">À tester dès la prochaine pluie</div>
-        <p>
-          Sur une seule planche de légumes, installe une combinaison : un ou deux pièges, un cordon de barrière autour des plants les plus fragiles et un endroit “refuge” un peu à l’écart. Observe ce que ça change sur quelques semaines.[web:95][web:99]
-        </p>
-      </div>
-    </section>
-  </main>
+    <div id="disclaimer-bar">🔗 Liens affiliés Amazon : Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.</div>
 
-  <footer class="footer">
-    <div class="footer-logo">Zen <em>Chez</em> Toi</div>
-    <div class="footer-links">
-      <a href="mentions-legales.html">Mentions légales</a>
-      <a href="confidentialite.html">Politique de confidentialité</a>
-      <a href="cookies.html">Gestion des cookies</a>
-      <a href="index.html">Accueil</a>
-      <a href="blog.html">Blog</a>
-    </div>
-    <p style="margin-top:20px; opacity:0.3; font-size:0.8rem;">
-      © 2026 Zen Chez Toi — Tous droits réservés.
-    </p>
-  </footer>
-
-  <div id="disclaimer-bar">
-    🔗 Liens affiliés Amazon : En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.
-  </div>
-
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
 </body>
 </html>

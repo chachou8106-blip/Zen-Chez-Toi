@@ -50,7 +50,6 @@
         header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; border-bottom: 1px solid rgba(166, 123, 81, 0.2); background: linear-gradient(rgba(22,18,17,0.8), transparent); }
         .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
         
-        /* LOGO AURA INTERACTIVE */
         .logo { display: inline-block; text-decoration: none; transition: 0.4s ease; }
         .logo img { max-height: 90px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2)); transition: 0.5s ease; }
         .logo:hover img { filter: drop-shadow(0 0 25px #ffffff) drop-shadow(0 0 10px #ffffff); transform: scale(1.03); }
@@ -84,12 +83,14 @@
 
         /* --- HERO BIBLIOTHÈQUE --- */
         .hero { 
-            height: 75vh; min-height: 550px;
-            /* La propriété fixed est gardée pour le bureau, annulée plus bas pour mobile */
-            background: linear-gradient(rgba(22, 18, 17, 0.8), rgba(22, 18, 17, 0.6)), url('assets/hero-eso.jpg') center/cover no-repeat fixed; 
+            height: 75vh; min-height: 550px; position: relative;
             display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0 20px; 
-            border-bottom: 1px solid var(--or-zen); box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+            border-bottom: 1px solid var(--or-zen); box-shadow: 0 10px 30px rgba(0,0,0,0.8); overflow: hidden;
         }
+        .hero-img-fond { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
+        .hero-voile { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(22, 18, 17, 0.8), rgba(22, 18, 17, 0.6)); z-index: 2; }
+        .hero-contenu { position: relative; z-index: 3; }
+        
         .hero h1 { 
             font-size: clamp(2.5em, 6vw, 4.5em); font-weight: normal; margin-bottom: 20px; line-height: 1.1; font-variant: small-caps; max-width: 1000px; 
             color: var(--or-brillant); text-shadow: 0 0 30px rgba(212, 175, 55, 0.4), 0 2px 5px rgba(0,0,0,1); 
@@ -106,7 +107,7 @@
         .magie-intro h2 { font-size: 2.5em; font-variant: small-caps; color: var(--or-brillant); margin-bottom: 25px; text-shadow: 0 0 10px rgba(212, 175, 55, 0.2); }
         .magie-intro p { font-size: 1.15em; line-height: 1.8; color: #d0c8b6; }
 
-        /* --- LES GRIMOIRES --- */
+        /* --- LES GRIMOIRES (SOLUTION ANTI-BUG MOBILE) --- */
         .manuscrits-container { max-width: 1200px; margin: 0 auto 120px; padding: 0 20px; }
         
         .manuscrit-row { 
@@ -116,15 +117,18 @@
         .manuscrit-row:nth-child(even) { flex-direction: row-reverse; }
         .manuscrit-row:last-child { border-bottom: none; margin-bottom: 60px; }
         
+        /* Conteneur de la photo modifié pour utiliser la balise <img> */
         .manuscrit-visuel { 
-            flex: 1; height: 450px; background-size: cover; 
-            background-position: center; position: relative; overflow: hidden;
+            flex: 1; height: 450px; position: relative; overflow: hidden;
             border: 1px solid rgba(255,255,255,0.2); outline: 1px solid transparent; outline-offset: 8px;
             transition: 0.6s ease;
         }
+        .manuscrit-visuel img.img-grimoire {
+            width: 100%; height: 100%; object-fit: cover; display: block; position: relative; z-index: 1;
+        }
         .manuscrit-visuel::after {
             content: ''; position: absolute; inset: 0; 
-            background: radial-gradient(circle, transparent 40%, rgba(22,18,17,0.8) 100%);
+            background: radial-gradient(circle, transparent 30%, rgba(22,18,17,0.85) 100%); z-index: 2;
         }
 
         .manuscrit-texte { flex: 1; padding: 20px 0; }
@@ -163,6 +167,17 @@
         .row-eso .btn-magique { color: var(--eso); border-color: var(--eso); }
         .row-eso .btn-magique:hover { background: var(--eso); color: #fff; box-shadow: 0 0 20px rgba(130, 106, 143, 0.6); }
         .row-eso:hover .manuscrit-visuel { border-color: var(--eso); outline-color: var(--eso); box-shadow: 0 0 35px rgba(130, 106, 143, 0.5); transform: scale(1.02); }
+
+        /* --- PARTENAIRES (SOLUTION ANTI-BUG MOBILE) --- */
+        .partenaires-section { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; max-width: 1100px; margin: 80px auto; padding: 0 20px; }
+        
+        .encadre-discret { border: 2px solid var(--eso); border-radius: 30px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.4); position: relative; display: flex; flex-direction: column; min-height: 280px; }
+        .encadre-discret img.img-part { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
+        .encadre-discret .voile-part { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)); z-index: 2; }
+        .encadre-discret .cadre-contenu { padding: 40px 30px; position: relative; z-index: 3; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; flex-grow: 1; }
+        
+        .btn-partenaire { display: inline-block; padding: 12px 30px; border: 1px solid #fff; border-radius: 50px; color: #fff; font-variant: small-caps; text-decoration: none; font-weight: bold; transition: 0.3s; margin-top: 20px; background: rgba(0,0,0,0.4); backdrop-filter: blur(5px); }
+        .btn-partenaire:hover { background: var(--eso); transform: scale(1.05); box-shadow: 0 0 15px var(--eso); }
 
         /* --- L'ÉCHANGE ALCHIMIQUE --- */
         .offres-epurees { max-width: 1200px; margin: 0 auto 120px; padding: 0 20px; text-align: center; }
@@ -214,30 +229,24 @@
 
         #disclaimer-bar { background: #000000; color: rgba(255,255,255,0.3); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
 
-        /* RESPONSIVE OPTIMISÉ POUR L'AFFICHAGE DES IMAGES SUR MOBILE */
+        /* RESPONSIVE CORRIGÉ */
         @media (max-width: 900px) {
             .manuscrit-row, .manuscrit-row:nth-child(even) { flex-direction: column; gap: 40px; text-align: center; }
-            /* On donne une hauteur explicite et on enlève le fixed potentiellement hérité */
-            .manuscrit-visuel { width: 100%; height: 350px; outline-offset: 4px; background-attachment: scroll !important; }
+            .manuscrit-visuel { width: 100%; height: 350px; outline-offset: 4px; }
             .magie-intro { padding: 40px 20px; margin-top: -30px; outline-offset: 4px; }
         }
         @media (max-width: 768px) {
-            /* Forcer le défilement normal des fonds sur mobile pour contourner le bug iOS/Android */
-            .hero, .manuscrit-visuel { background-attachment: scroll !important; }
-
             .nav-container { flex-direction: column; gap: 15px; padding: 15px 20px; }
             .header-right { flex-direction: column; gap: 15px; align-items: center; width: 100%; }
             nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; }
             
-            /* LA CORRECTION MAGIQUE DU MENU DÉROULANT */
             .dropdown { position: static; }
             .dropdown-content { 
                 left: 0; right: 0; margin: 10px auto 0; 
                 transform: none; width: 280px; max-width: 90vw; top: auto; 
             }
             
-            /* Protection du Hero Mobile */
-            .hero { padding-top: 280px !important; justify-content: flex-start !important; min-height: 400px !important; padding-bottom: 70px !important; }
+            .hero { padding-top: 280px !important; justify-content: flex-start !important; min-height: auto !important; padding-bottom: 70px !important; }
             .hero h1 { font-size: 2.2em; margin-bottom: 10px; }
             .tagline { font-size: 1.2em; }
         }
@@ -272,8 +281,12 @@
     </header>
 
     <section class="hero">
-        <h1>L'Encyclopédie des Solutions Nomades</h1>
-        <p class="tagline">« La connaissance est le seul trésor qui s'accroît lorsqu'on le partage. »</p>
+        <img src="assets/hero-eso.jpg" class="hero-img-fond" alt="Bibliothèque Ésotérique">
+        <div class="hero-voile"></div>
+        <div class="hero-contenu">
+            <h1>L'Encyclopédie des Solutions Nomades</h1>
+            <p class="tagline">« La connaissance est le seul trésor qui s'accroît lorsqu'on le partage. »</p>
+        </div>
     </section>
 
     <main>
@@ -288,8 +301,11 @@
 
         <section class="manuscrits-container">
             
+            <!-- MAISON -->
             <div class="manuscrit-row row-maison" id="vol1">
-                <div class="manuscrit-visuel" style="background-image: url('assets/hero-maison.jpg');"></div>
+                <div class="manuscrit-visuel">
+                    <img src="assets/hero-maison.jpg" class="img-grimoire" alt="Grimoire Maison">
+                </div>
                 <div class="manuscrit-texte">
                     <h3>Vol 1 : Fondation</h3>
                     <p>Le manuscrit de l'Âtre. Purifiez vos murs, domptez la matière et libérez votre foyer des ombres chimiques par la force des minéraux bruts. Retrouvez la science oubliée du nettoyage sain et authentique.</p>
@@ -297,8 +313,11 @@
                 </div>
             </div>
 
+            <!-- JARDIN -->
             <div class="manuscrit-row row-jardin" id="vol2">
-                <div class="manuscrit-visuel" style="background-image: url('assets/hero-jardin.jpg');"></div>
+                <div class="manuscrit-visuel">
+                    <img src="assets/hero-jardin.jpg" class="img-grimoire" alt="Grimoire Jardin">
+                </div>
                 <div class="manuscrit-texte">
                     <h3>Vol 2 : Enracinement</h3>
                     <p>Le recueil du vivant. Apprenez à murmurer aux racines, à repousser les nuisibles avec douceur et à cultiver un sanctuaire luxuriant sans jamais empoisonner le sol qui vous nourrit.</p>
@@ -306,8 +325,11 @@
                 </div>
             </div>
 
+            <!-- CORPS -->
             <div class="manuscrit-row row-corps" id="vol3">
-                <div class="manuscrit-visuel" style="background-image: url('assets/hero-corps.jpg');"></div>
+                <div class="manuscrit-visuel">
+                    <img src="assets/hero-corps.jpg" class="img-grimoire" alt="Grimoire Corps">
+                </div>
                 <div class="manuscrit-texte">
                     <h3>Vol 3 : Éclosion</h3>
                     <p>Le codex de l'enveloppe charnelle. Maîtrisez les onguents, les baumes et les argiles pour honorer et réparer le sanctuaire de votre âme. La vraie beauté naît de la pureté des éléments.</p>
@@ -315,8 +337,11 @@
                 </div>
             </div>
 
+            <!-- BIEN ETRE -->
             <div class="manuscrit-row row-bienetre" id="vol4">
-                <div class="manuscrit-visuel" style="background-image: url('assets/hero-bienetre.jpg');"></div>
+                <div class="manuscrit-visuel">
+                    <img src="assets/hero-bienetre.jpg" class="img-grimoire" alt="Grimoire Bien-Être">
+                </div>
                 <div class="manuscrit-texte">
                     <h3>Vol 4 : Harmonie</h3>
                     <p>Le livre des essences. Plongez dans la distillation des humeurs et apprenez à équilibrer vos fluides intérieurs par le souffle des plantes pour une sérénité profonde et durable.</p>
@@ -324,8 +349,11 @@
                 </div>
             </div>
 
+            <!-- ESO -->
             <div class="manuscrit-row row-eso" id="vol5">
-                <div class="manuscrit-visuel" style="background-image: url('assets/hero-eso.jpg');"></div>
+                <div class="manuscrit-visuel">
+                    <img src="assets/hero-eso.jpg" class="img-grimoire" alt="Grimoire Ésotérisme">
+                </div>
                 <div class="manuscrit-texte">
                     <h3>Vol 5 : Élévation</h3>
                     <p>Le manuscrit de l'invisible. Maîtrisez les fumigations sacrées, la géométrie des ondes et la vibration des cristaux pour protéger votre aura et réenchanter la magie de votre quotidien.</p>
@@ -333,6 +361,28 @@
                 </div>
             </div>
 
+        </section>
+
+        <!-- PARTENAIRES -->
+        <section class="partenaires-section">
+            <div class="encadre-discret">
+                <img src="assets/bg-citrine.jpg" class="img-part" alt="Boutique Citrine">
+                <div class="voile-part"></div>
+                <div class="cadre-contenu">
+                    <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.8em; color: #fff; font-variant: small-caps; margin-bottom: 10px;">L'Atelier des Cristaux</h3>
+                    <p style="color: rgba(255,255,255,0.9); font-style: italic; font-size: 1rem; max-width: 400px; margin: 0 auto;">Pour enrichir votre pratique énergétique, découvrez des pierres et artefacts sourcés avec soin chez notre partenaire Citrine.</p>
+                    <a href="https://citrine.fr/?ref=byfrxpja" target="_blank" rel="nofollow sponsored" class="btn-partenaire">Boutique Citrine →</a>
+                </div>
+            </div>
+            <div class="encadre-discret">
+                <img src="assets/bg-chakras.jpg" class="img-part" alt="Boutique Sept Chakras">
+                <div class="voile-part"></div>
+                <div class="cadre-contenu">
+                    <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.8em; color: #fff; font-variant: small-caps; margin-bottom: 10px;">L'Équilibre Énergétique</h3>
+                    <p style="color: rgba(255,255,255,0.9); font-style: italic; font-size: 1rem; max-width: 400px; margin: 0 auto;">Outils vibratoires, encens et malas pour harmoniser vos centres chez Sept Chakras.</p>
+                    <a href="https://www.sept-chakras.com/?ref=wzecpfvw" target="_blank" rel="nofollow sponsored" class="btn-partenaire">Boutique 7 Chakras →</a>
+                </div>
+            </div>
         </section>
 
         <section class="offres-epurees" id="offres">

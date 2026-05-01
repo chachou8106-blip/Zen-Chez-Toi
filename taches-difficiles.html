@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Taches difficiles : détacher le linge sans l'abîmer | Zen Chez Toi</title>
+    <title>Taches difficiles : l'Alchimie du Détachage au Naturel | Zen Chez Toi</title>
 
     <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
-    <meta name="p:domain_verify" content="549770272775"/>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRV5YNRL57"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -16,142 +15,250 @@
     </script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7501098246029504" crossorigin="anonymous"></script>
 
-    <meta name="description" content="Découvrez les poudres et savons ancestraux pour venir à bout des taches de gras, de vin ou d'herbe sans détruire vos textiles.">
+    <meta name="description" content="Découvrez l'alchimie du détachage naturel. Transmutez les taches d'herbe, de vin ou de gras avec la terre de Sommières, le fiel de bœuf et le percarbonate.">
     <link rel="icon" type="image/png" href="assets/logo.png">
 
     <style>
         :root {
             --bg-sable: #f5f2ec; --blanc: #ffffff; --brun-sombre: #2b2622; --or-zen: #a67b51;
-            --maison: #6a7f8f; --maison-light: #e4e9ed;
+            --maison: #6a7f8f; --jardin: #7b9074; --corps: #cca8a0; --bienetre: #d4a259; --eso: #826a8f;
+            
+            /* THÈME MAISON ACTIVÉ */
+            --theme-article: var(--maison);
         }
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.8; overflow-x: hidden; }
 
-        header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 1000; }
+        /* --- HEADER & NAVIGATION --- */
+        header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; }
         .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
-        .logo img { max-height: 90px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); }
-        nav ul { list-style: none; display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
-        nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
-        nav a:hover { color: var(--maison); }
-
-        .hero-article {
-            height: 60vh;
-            background: linear-gradient(rgba(24,18,14,0.5), rgba(24,18,14,0.6)), url('assets/hero-maison.jpg') center/cover no-repeat;
-            display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px;
+        
+        /* AURA LOGO HEADER BLANC ++++ */
+        .logo { display: inline-block; text-decoration: none; transition: 0.4s ease; }
+        .logo img { max-height: 90px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2)); transition: 0.5s ease; }
+        .logo:hover img { 
+            filter: drop-shadow(0 0 30px #ffffff) drop-shadow(0 0 15px #ffffff) drop-shadow(0 0 5px #ffffff); 
+            transform: scale(1.05); 
         }
-        .article-meta { font-variant: small-caps; letter-spacing: 2px; color: var(--maison); margin-bottom: 15px; font-weight: bold; text-shadow: 0 1px 3px rgba(0,0,0,0.8); }
-        .hero-article h1 { font-size: 3em; font-weight: normal; max-width: 900px; line-height: 1.2; text-shadow: 0 2px 5px rgba(0,0,0,0.6); }
 
-        .article-container { max-width: 800px; margin: -50px auto 60px; background: var(--blanc); padding: 60px; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.05); position: relative; z-index: 10; }
-        .article-container h2 { font-size: 1.8em; color: var(--maison); margin: 40px 0 20px; font-weight: normal; font-variant: small-caps; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-        .article-container p { font-size: 1.1em; color: #444; margin-bottom: 25px; text-align: justify; }
-        .article-container ul { margin: 0 0 25px 40px; font-size: 1.1em; color: #444; }
-        .article-container li { margin-bottom: 10px; }
-        .quote-block { border-left: 4px solid var(--maison); padding: 20px 30px; background: var(--maison-light); font-style: italic; font-size: 1.15em; color: #555; margin: 40px 0; border-radius: 0 12px 12px 0; }
+        .header-right { display: flex; align-items: center; gap: 40px; }
+        nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
+        nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
+        nav a:hover { color: var(--theme-article); text-shadow: 0 0 15px #ffffff, 0 0 25px #ffffff; }
 
-        .product-highlight { display: flex; align-items: center; gap: 30px; padding: 30px; border: 1px dashed var(--maison); border-radius: 12px; background: #fdfdfc; margin: 40px 0; }
-        .product-highlight img { width: 120px; height: 120px; object-fit: cover; border-radius: 8px; background: #eee; }
-        .product-text h4 { font-size: 1.2em; color: var(--maison); margin-bottom: 10px; }
-        .product-text p { font-size: 0.95em; margin-bottom: 15px; }
-        .btn-amazon { display: inline-block; padding: 10px 25px; background: var(--maison); color: #fff; text-decoration: none; border-radius: 50px; font-weight: bold; font-variant: small-caps; transition: 0.3s; }
-        .btn-amazon:hover { background: var(--brun-sombre); }
+        .dropdown { position: relative; display: inline-block; padding: 15px 0; cursor: pointer; }
+        .dropdown-content { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background-color: var(--brun-sombre); min-width: 200px; box-shadow: 0px 10px 25px rgba(0,0,0,0.3); z-index: 2100; border-radius: 8px; border: 1px solid var(--theme-article); overflow: hidden; }
+        .dropdown-content a { color: rgba(255,255,255,0.8) !important; padding: 12px 20px; display: block; font-size: 0.95em; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1); font-variant: small-caps; }
+        .dropdown-content a:hover { background-color: var(--theme-article); color: #fff !important; text-shadow: 0 0 10px #ffffff; }
+        .dropdown:hover .dropdown-content { display: block; }
 
-        .ad-container { margin: 40px 0; text-align: center; }
-        #disclaimer-bar { background: var(--brun-sombre); color: rgba(255,255,255,0.7); font-size: 0.8rem; text-align: center; padding: 12px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        /* AURA PINTEREST BLANC ++++ */
+        .pinterest-badge { display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; font-style: italic; background: rgba(255,255,255,0.1); transition: 0.4s; }
+        .pinterest-badge:hover { 
+            background: var(--theme-article); 
+            border-color: #ffffff; 
+            transform: rotate(15deg) scale(1.1);
+            box-shadow: 0 0 15px #ffffff, 0 0 30px #ffffff, 0 0 45px #ffffff;
+        }
 
-        footer { background: var(--brun-sombre); color: #fff; padding: 60px 20px; text-align: center; }
-        .footer-logo-small { height: 45px; margin-bottom: 25px; }
+        /* --- HERO ARTICLE --- */
+        .hero { height: 75vh; min-height: 500px; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('assets/hero-maison.jpg') center/cover no-repeat fixed; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; }
+        .vol-phrase { font-size: clamp(1.4em, 3vw, 2em); font-variant: small-caps; letter-spacing: 5px; font-weight: bold; margin-bottom: 15px; color: var(--theme-article); text-shadow: 0 4px 15px rgba(0,0,0,0.9), 0 2px 5px rgba(0,0,0,1); -webkit-text-stroke: 0.5px rgba(255,255,255,0.8); }
+        .hero h1 { font-size: clamp(2.5em, 6vw, 4.5em); font-weight: normal; margin-bottom: 20px; line-height: 1.2; font-variant: small-caps; text-shadow: 0 4px 15px rgba(0,0,0,0.8); max-width: 1000px; }
+        .tagline { font-size: clamp(1.1em, 2vw, 1.5em); font-style: italic; opacity: 0.9; max-width: 800px; line-height: 1.5; }
 
-        @media (max-width: 768px) { .article-container { padding: 30px; margin-top: -20px; } .hero-article h1 { font-size: 2.2em; } .product-highlight { flex-direction: column; text-align: center; } }
+        /* --- CORPS DU TEXTE --- */
+        .blog-container { max-width: 800px; margin: 60px auto 60px; padding: 0 20px; font-size: 1.15rem; color: #333; }
+        .blog-container h2 { font-size: 2.2em; color: var(--theme-article); margin: 60px 0 25px; font-variant: small-caps; text-align: center; font-weight: normal; }
+        .blog-container h3 { font-size: 1.5em; color: var(--brun-sombre); margin: 50px 0 15px; font-variant: small-caps; border-bottom: 1px solid rgba(106, 127, 143, 0.4); padding-bottom: 8px; }
+        .blog-container p { margin-bottom: 25px; text-align: justify; }
+        .blog-container ul, .blog-container ol { margin-bottom: 25px; padding-left: 20px; }
+        .blog-container li { margin-bottom: 10px; }
+
+        /* --- NOTES & ENCADRÉS --- */
+        .alchimiste-note { background: var(--blanc); border-left: 4px solid var(--theme-article); padding: 30px; margin: 50px 0; border-radius: 0 20px 20px 0; box-shadow: 0 15px 40px rgba(0,0,0,0.05); }
+        .note-titre { display: block; font-variant: small-caps; color: var(--theme-article); font-weight: bold; font-size: 1.3em; margin-bottom: 15px; }
+
+        .encadre-hero { margin: 80px 0; border-radius: 30px; overflow: hidden; border: 5px solid var(--theme-article); box-shadow: 0 20px 50px rgba(0,0,0,0.2); }
+        .cadre-fond { padding: 60px 40px; text-align: center; background-size: cover; background-position: center; background-attachment: fixed; }
+        .encadre-titre { font-size: 2.5em; font-variant: small-caps; color: var(--brun-sombre); -webkit-text-stroke: 0.5px #ffffff; margin-bottom: 10px; text-shadow: 0 4px 15px rgba(0,0,0,0.6); letter-spacing: 1px; }
+        .encadre-sous-titre { font-style: italic; font-size: 1.1em; color: #fff; margin-bottom: 30px; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
+        
+        .liste-selectionnable { display: flex; flex-direction: column; gap: 15px; max-width: 650px; margin: 0 auto; }
+        
+        /* AURA LIENS PRODUITS BLANC ++++ */
+        .item-link { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; padding: 18px 35px; display: flex; align-items: center; justify-content: space-between; text-decoration: none; color: #fff; transition: 0.4s ease; }
+        .item-link:hover { 
+            transform: scale(1.03); 
+            border-color: #ffffff; 
+            background: var(--theme-article); 
+            box-shadow: 0 0 15px #ffffff, 0 0 30px #ffffff, 0 0 50px #ffffff;
+        }
+        .item-link span { font-weight: bold; font-variant: small-caps; font-size: 1.1em; text-align: left; }
+        .item-link span small { display: block; font-size: 0.75em; font-family: 'Georgia', serif; font-style: italic; opacity: 0.8; text-transform: none; font-weight: normal; }
+
+        /* --- ENCYCLOPÉDIE --- */
+        .encyclopedie-section { background-color: var(--bg-sable); padding: 80px 20px; text-align: center; border-top: 1px solid #e0dcd3; }
+        .pills-row { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 30px; }
+        .pill { padding: 10px 20px; border: 2px solid; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 0.9em; text-decoration: none; background: #fff; transition: 0.3s; }
+        /* AURA PILULES BLANC ++++ */
+        .p1 { border-color: var(--maison); color: var(--maison); } .p1:hover { background: var(--maison); color: #fff; border-color: #fff; box-shadow: 0 0 15px #ffffff, 0 0 25px #ffffff; }
+        .p2 { border-color: var(--jardin); color: var(--jardin); } .p2:hover { background: var(--jardin); color: #fff; border-color: #fff; box-shadow: 0 0 15px #ffffff, 0 0 25px #ffffff; }
+        .p3 { border-color: var(--corps); color: var(--corps); } .p3:hover { background: var(--corps); color: #fff; border-color: #fff; box-shadow: 0 0 15px #ffffff, 0 0 25px #ffffff; }
+        .p4 { border-color: var(--bienetre); color: var(--bienetre); } .p4:hover { background: var(--bienetre); color: #fff; border-color: #fff; box-shadow: 0 0 15px #ffffff, 0 0 25px #ffffff; }
+        .p5 { border-color: var(--eso); color: var(--eso); } .p5:hover { background: var(--eso); color: #fff; border-color: #fff; box-shadow: 0 0 15px #ffffff, 0 0 25px #ffffff; }
+
+        /* --- FOOTER --- */
+        footer { background: var(--brun-sombre); color: #fff; padding: 80px 20px; text-align: center; }
+        
+        /* AURA LOGO FOOTER BLANC ++++ */
+        .footer-logo { display: inline-block; transition: 0.4s ease; margin-bottom: 30px; }
+        .footer-logo img { height: 60px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.4)); transition: 0.5s; }
+        .footer-logo:hover img { 
+            filter: drop-shadow(0 0 30px #ffffff) drop-shadow(0 0 15px #ffffff) drop-shadow(0 0 5px #ffffff); 
+            transform: scale(1.05); 
+        }
+        
+        .footer-nav-compact { display: flex; gap: 30px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; flex-wrap: wrap; }
+        .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.6; font-variant: small-caps; transition: 0.3s; }
+        .footer-nav-compact a:hover { opacity: 1; color: var(--theme-article); text-shadow: 0 0 15px #ffffff, 0 0 25px #ffffff; }
+
+        #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
+
+        @media (max-width: 768px) {
+            header { padding: 15px 0; }
+            .logo img { max-height: 70px; } 
+            .nav-container { flex-direction: column; gap: 15px; padding: 10px 20px; }
+            .header-right { flex-direction: column; gap: 15px; align-items: center; width: 100%; }
+            nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; }
+            .hero { padding-top: 350px !important; justify-content: flex-start !important; height: auto !important; padding-bottom: 60px; }
+            .hero h1 { font-size: 2.2em; }
+            .item-link { flex-direction: column; text-align: center; padding: 15px; }
+            .item-link span { text-align: center; }
+            .encadre-titre { font-size: 2em; }
+        }
     </style>
 </head>
 <body>
 
     <header>
         <div class="nav-container">
-            <div class="logo-area">
-                <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
+            <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
+            <div class="header-right">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li class="dropdown">
+                            <a href="grimoire.html">Grimoire</a>
+                            <div class="dropdown-content">
+                                <a href="maison.html">Vol 1 : Fondation</a>
+                                <a href="jardin.html">Vol 2 : Enracinement</a>
+                                <a href="corps.html">Vol 3 : Éclosion</a>
+                                <a href="bienetre.html">Vol 4 : Harmonie</a>
+                                <a href="eso.html">Vol 5 : Élévation</a>
+                            </div>
+                        </li>
+                        <li><a href="blog.html">Journal</a></li>
+                        <li><a href="encyclopedie.html">Encyclopédie</a></li>
+                        <li><a href="livre-or.html">Livre d'Or</a></li>
+                    </ul>
+                </nav>
+                <a href="https://www.pinterest.fr/zencheztoi/" class="pinterest-badge" target="_blank" title="Inspirations pour la Maison">p</a>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="jardin.html">Jardin</a></li>
-                    <li><a href="maison.html">Maison</a></li>
-                    <li><a href="bienetre.html">Bien-être</a></li>
-                    <li><a href="corps.html">Corps</a></li>
-                    <li><a href="eso.html">Ésotérisme</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
 
-    <main>
-        <section class="hero-article">
-            <div class="article-meta">Maison • Entretien naturel</div>
-            <h1>Taches difficiles : détacher sans abîmer</h1>
+    <section class="hero">
+        <p class="vol-phrase">Volume 1 : Fondation • Chronique</p>
+        <h1>Taches difficiles : l'Alchimie du Détachage au Naturel</h1>
+        <p class="tagline">« La tache n'est pas une fatalité, c'est une équation. Apprenez à transmuter l'herbe, le vin et l'huile par la sagesse des argiles et le souffle de l'oxygène. »</p>
+    </section>
+
+    <main class="blog-container">
+
+        <p>Dans l'alchimie du foyer, chaque tache est le récit d'une vie qui s'exprime : l'herbe d'une course folle, le vin d'une célébration, l'huile d'un repas partagé. Pourtant, notre premier réflexe est souvent la panique, suivie de l'application désespérée de détergents synthétiques qui brûlent la fibre textile. La véritable maîtrise de la Fondation consiste à comprendre la nature de l'intrus pour le dissoudre en douceur. Il n'y a pas de tache indélébile, seulement de mauvaises réactions chimiques.</p>
+
+        <div class="alchimiste-note">
+            <span class="note-titre">Le Grand Interdit : L'Eau Chaude</span>
+            <p>La règle d'or de l'alchimiste textile : ne jamais laver à chaud une tache organique (sang, œuf, boue) non traitée. La chaleur agit comme un fixateur ; elle "cuit" les protéines et les scelle définitivement au cœur de la mémoire du fil. Le premier traitement doit toujours se faire à froid ou à l'aide de poudres sèches.</p>
+        </div>
+
+        <h2>À Chaque Tache Son Apothicaire</h2>
+        <p>La nature nous offre des poudres minérales et des savons bruts infiniment plus respectueux (et efficaces) que les produits industriels :</p>
+        <ul>
+            <li><strong>Le Gras (Huile, beurre, maquillage) :</strong> La stratégie est l'absorption. Ne mouillez jamais une tache de gras. Saupoudrez généreusement d'une argile ultra-fine (comme la Terre de Sommières). Laissez la poudre boire le sébum pendant quelques heures, puis brossez.</li>
+            <li><strong>L'Organique (Sang, vin, herbe) :</strong> La stratégie est la dispersion. Frottez doucement la tache à froid avec un savon riche en enzymes animales ou végétales. Les enzymes vont "dévorer" les protéines avant le passage en machine.</li>
+            <li><strong>Le Temps (Linge blanc grisaillant) :</strong> La stratégie est l'oxygénation. Les textiles blancs jaunissent avec le temps et la sueur. Plutôt que la javel (qui détruit la fibre), utilisez une poudre qui libère de l'oxygène actif au contact de l'eau chaude.</li>
+        </ul>
+
+        <section class="encadre-hero">
+            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/hero-maison.jpg');">
+                <h3 class="encadre-titre">L'Arsenal du Détachage</h3>
+                <p class="encadre-sous-titre">Poudres ancestrales et savons purs pour libérer vos étoffes sans les corrompre.</p>
+                <div class="liste-selectionnable">
+                    <a href="https://www.amazon.fr/dp/B08VND53XX?linkCode=ll2&tag=zencheztoi-21" target="_blank" rel="nofollow sponsored" class="item-link">
+                        <span>Le Souffle d'Oxygène <small>Percarbonate de Soude pour désincruster et raviver l'éclat du blanc dès 40°C</small></span> <span>→</span>
+                    </a>
+                    <a href="https://www.amazon.fr/dp/B00J6S68EQ?linkCode=ll2&tag=zencheztoi-21" target="_blank" rel="nofollow sponsored" class="item-link">
+                        <span>L'Éponge Minérale <small>Terre de Sommières ultra-absorbante pour extraire le gras à sec</small></span> <span>→</span>
+                    </a>
+                    <a href="https://www.amazon.fr/dp/B000O3BCI8?linkCode=ll2&tag=zencheztoi-21" target="_blank" rel="nofollow sponsored" class="item-link">
+                        <span>L'Élixir Enzymatique <small>Savon au Fiel de Bœuf, le détachant ancestral pour le sang et l'herbe</small></span> <span>→</span>
+                    </a>
+                </div>
+            </div>
         </section>
 
-        <article class="article-container">
-            <p><strong>Herbe, vin, sang ou gras...</strong> Certaines taches semblent indélébiles. Pourtant, il n'y a pas de tache fatale, seulement des réactions chimiques qu'il faut comprendre. Le bon produit, appliqué au bon moment, peut sauver un vêtement ou un tapis.</p>
+        <h2>La Sagesse de la Patience</h2>
+        <p>Le détachage naturel exige du temps. Une Terre de Sommières a besoin d'une nuit entière pour extraire une tache d'huile d'un canapé en tissu. Un percarbonate de soude demande un bain chaud prolongé pour réveiller la lumière d'un drap ancien. En offrant ce temps à vos étoffes, vous ne vous contentez pas de nettoyer : vous honorez la matière, vous prolongez la durée de vie de vos objets et vous installez une véritable économie de la paix dans votre sanctuaire.</p>
 
-            <div class="quote-block">
-                La règle d'or du détachage : ne jamais laver à chaud une tache non traitée. L'eau chaude "cuit" la tache et la fixe définitivement dans les fibres.
-            </div>
-
-            <h2>À chaque tache son apothicaire</h2>
-            <p>La nature nous offre des poudres et des savons bruts bien plus efficaces que les détachants industriels de supermarché :</p>
-            <ul>
-                <li><strong>Le gras (Huile, beurre, maquillage) :</strong> On absorbe ! Saupoudrez généreusement la tache fraîche avec une poudre ultra-absorbante, laissez agir, puis brossez.</li>
-                <li><strong>L'organique (Sang, vin, herbe) :</strong> On frotte doucement avec un savon riche en enzymes, à froid.</li>
-                <li><strong>Le grisaillement (Linge blanc jauni) :</strong> On oxygène avec une poudre qui libère de l'oxygène actif dans l'eau chaude.</li>
-            </ul>
-
-            <h2>L'arsenal du détachage au naturel</h2>
-
-            <div class="product-highlight">
-                <img src="assets/logo.png" alt="Percarbonate de soude">
-                <div class="product-text">
-                    <h4>Percarbonate de soude</h4>
-                    <p>Le blanchissant par excellence. Dès 40°C, il libère de l'oxygène actif qui désincruste les taches de thé, café, vin, et ravive l'éclat du linge blanc grisaillant.</p>
-                    <a href="https://www.amazon.fr/dp/B08VND53XX?linkCode=ll2&tag=zencheztoi-21" target="_blank" rel="nofollow sponsored" class="btn-amazon">Voir sur Amazon</a>
+        <section class="encadre-hero">
+            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/hero-accueil.jpg');">
+                <h3 class="encadre-titre">Continuer la Fondation</h3>
+                <p class="encadre-sous-titre">Explorez d'autres rituels pour purifier et protéger votre temple domestique.</p>
+                <div class="liste-selectionnable">
+                    <a href="linge-frais.html" class="item-link">
+                        <span>L'Alchimie des Étoffes <small>Chronique : Retrouver un linge frais et purifié</small></span> <span>→</span>
+                    </a>
+                    <a href="degraissant-cuisine.html" class="item-link">
+                        <span>L'Âtre Purifié <small>Chronique : Dégraissant naturel pour la cuisine</small></span> <span>→</span>
+                    </a>
+                    <a href="maison.html" class="item-link">
+                        <span>Le Volume 1 Complet <small>La Table des Matières du Grimoire de la Maison</small></span> <span>→</span>
+                    </a>
                 </div>
             </div>
+        </section>
 
-            <div class="product-highlight">
-                <img src="assets/logo.png" alt="Terre de Sommières">
-                <div class="product-text">
-                    <h4>Terre de Sommières</h4>
-                    <p>Une argile naturelle ultra-absorbante. C'est l'ennemi numéro un des taches de gras sur les textiles délicats (soie, canapé, tapis) sans utiliser la moindre goutte d'eau.</p>
-                    <a href="https://www.amazon.fr/dp/B00J6S68EQ?linkCode=ll2&tag=zencheztoi-21" target="_blank" rel="nofollow sponsored" class="btn-amazon">Voir sur Amazon</a>
-                </div>
-            </div>
-
-            <div class="product-highlight">
-                <img src="assets/logo.png" alt="Savon au fiel">
-                <div class="product-text">
-                    <h4>Savon au Fiel de Bœuf</h4>
-                    <p>Le détachant ancestral par excellence. Les enzymes du fiel dispersent les graisses et les protéines (sang, herbe) avant le passage en machine.</p>
-                    <a href="https://www.amazon.fr/dp/B000O3BCI8?linkCode=ll2&tag=zencheztoi-21" target="_blank" rel="nofollow sponsored" class="btn-amazon">Voir sur Amazon</a>
-                </div>
-            </div>
-
-            <div class="ad-container">
-                <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-7501098246029504" data-ad-slot="YOUR_AD_SLOT"></ins>
-            </div>
-        </article>
     </main>
 
-    <div id="disclaimer-bar">
-        🔗 Liens affiliés Amazon : En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.
-    </div>
+    <section class="encyclopedie-section">
+        <h2 style="font-variant: small-caps; font-size: 2.2em; color: var(--brun-sombre); margin-bottom: 20px;">Emportez nos savoirs avec vous</h2>
+        <div class="pills-row">
+            <a href="encyclopedie.html#vol1" class="pill p1">Vol 1 : Fondation</a>
+            <a href="encyclopedie.html#vol2" class="pill p2">Vol 2 : Enracinement</a>
+            <a href="encyclopedie.html#vol3" class="pill p3">Vol 3 : Éclosion</a>
+            <a href="encyclopedie.html#vol4" class="pill p4">Vol 4 : Harmonie</a>
+            <a href="encyclopedie.html#vol5" class="pill p5">Vol 5 : Élévation</a>
+        </div>
+        <div style="margin-top: 40px; font-size: 1.2em; font-style: italic; color: var(--brun-sombre);">
+            Le Volume : <span style="color:var(--or-zen); font-weight:bold;">14.90€</span> — Pack Trio : <span style="color:var(--or-zen); font-weight:bold;">24.90€</span> — L'Intégrale : <span style="color:var(--or-zen); font-weight:bold;">39.90€</span>
+        </div>
+    </section>
 
     <footer>
-        <img src="assets/logo.png" class="footer-logo-small" alt="Zen">
-        <p style="font-size: 0.8em; opacity: 0.5;">&copy; 2026 Zen Chez Toi • Maison, Confort & Harmonie</p>
+        <a href="index.html" class="footer-logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
+        <ul class="footer-nav-compact">
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+            <li><a href="confidentialite.html">Confidentialité</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+            <li><a href="a-propos.html">À Propos</a></li>
+            <li><a href="livre-or.html">Livre d'Or</a></li>
+        </ul>
+        <p style="font-size: 0.85em; opacity: 0.4;">&copy; 2026 Zen Chez Toi • L'Harmonie au Naturel.</p>
     </footer>
 
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
+    <div id="disclaimer-bar">🔗 Liens affiliés Amazon : Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises. Maison & Entretien : testez toujours les poudres sur une zone invisible au préalable.</div>
+
 </body>
 </html>

@@ -30,7 +30,7 @@
         header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; }
         .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
         
-        /* LOGO AURA INTERACTIVE (Off par défaut) */
+        /* LOGO AURA INTERACTIVE */
         .logo { display: inline-block; text-decoration: none; }
         .logo img { max-height: 90px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2)); transition: 0.5s ease; }
         .logo:hover img { filter: drop-shadow(0 0 25px #ffffff) drop-shadow(0 0 10px #ffffff); transform: scale(1.03); }
@@ -110,15 +110,24 @@
 
         #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
 
-        /* RESPONSIVE MOBILE SÉCURISÉ */
+        /* --- RESPONSIVE MOBILE SÉCURISÉ --- */
         @media (max-width: 900px) { .histoire-text { column-count: 1; } }
         @media (max-width: 768px) {
             .nav-container { flex-direction: column; gap: 15px; padding: 15px 20px; }
             .header-right { flex-direction: column; gap: 15px; align-items: center; width: 100%; }
             nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; }
             
-            /* --- CORRECTION MENU DÉROULANT MOBILE --- */
-            .dropdown-content { left: 50%; transform: translateX(-50%); width: 260px; max-width: 90vw; }
+            /* LA CORRECTION MAGIQUE DU MENU DÉROULANT */
+            .dropdown { position: static; } /* Libère le sous-menu de son parent */
+            .dropdown-content { 
+                left: 0; 
+                right: 0; 
+                margin: 10px auto 0; /* Centre parfaitement sur l'écran */
+                transform: none; 
+                width: 280px; 
+                max-width: 90vw; 
+                top: auto; 
+            }
             
             .hero { padding-top: 300px !important; justify-content: flex-start !important; height: auto !important; padding-bottom: 60px; }
             .hero h1 { font-size: 2.2em; margin-bottom: 10px; }

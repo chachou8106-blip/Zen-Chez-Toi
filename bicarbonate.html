@@ -159,7 +159,7 @@
         @media (max-width: 1000px) { 
             .histoire-text { column-count: 1; } 
             .expertise-list { grid-template-columns: 1fr; } 
-            /* LA CORRECTION DU SPIDER : Flexbox oblige les boîtes à s'empiler proprement sans déborder */
+            /* LA CORRECTION DU SPIDER : Flexbox empêche les boîtes de déborder */
             .mondes-spider { display: flex; flex-direction: column; gap: 20px; width: 100%; box-sizing: border-box; overflow: hidden; } 
             .monde-card, .monde-card.secret { width: 100% !important; max-width: 100%; margin: 0 !important; box-sizing: border-box; } 
             .mondes-spider-logo { order: -1; width: 80px; margin: 0 auto 20px auto; } 
@@ -175,8 +175,15 @@
                 transform: none; width: 280px; max-width: 90vw; top: auto; 
             }
             
-            /* LA CORRECTION DU HERO : min-height 100vh garantit que le texte ne sera JAMAIS coupé */
-            .hero { padding-top: 280px !important; padding-bottom: 100px !important; min-height: 100vh !important; height: auto !important; justify-content: center !important; box-sizing: border-box; }
+            /* LA CORRECTION DU HERO MOBILE : Hauteur automatique avec des gros coussins (paddings) */
+            .hero { 
+                padding-top: 360px !important; 
+                padding-bottom: 150px !important; 
+                height: auto !important; 
+                min-height: auto !important; 
+                justify-content: flex-start !important; 
+                box-sizing: border-box;
+            }
             .hero h1 { font-size: 2.2em; } 
             
             .histoire-section, .allies-box, .expert-container { padding: 30px 20px; }
@@ -313,7 +320,7 @@
             <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
                 <div>
                     <p style="font-style: italic; margin-bottom: 10px; color: #777; font-size: 0.9em;">Apprentissage Alchimique (Extra-Fin)</p>
-                    <a href="https://www.amazon.fr/Bicarbonate-Soude-DOYPACK-50kg-zipp%C3%A9/dp/B08T7DLBX9?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1PAW07X3TMKRD&dib=eyJ2IjoiMSJ9.NCF3Z6UWQwBNN5GcWRPcXMB4hnbQa9HjugMrgda85_PQNKh1x54WFHQzwrMjgpqVIXxzsMXc8F4Wd-S-4CQ1SRaEp5isnt-EYTOWjmoCUSHuYeRy8GrM5ML13f78U_Ha38WLtcOBEVHUeBgLEnE9UxYi9JFri074qco1lioQlmXKdqIZ0mHeq4l3Vr8Uo9lWCLZF9KClRAnuT0I51J7tHD1jluIvGKaFSGRgSusEOBnsMLEgZU0oawcr-IQltOAn0qsNKMLPhgtfBeQX6fTb84j-SSjovPkNlLdgMGe2b_A.dTSCO5UGKTR1pxuTdHFo-UaXTqVyEqY4BYZ2DAkl8UE&dib_tag=se&keywords=bicarbonate+de+soude+alimentaire+bio+1+kg&qid=1777067223&sprefix=bicarbonate+de+soude+alimentaire+bio+1+kg%2Caps%2C237&sr=8-29&linkCode=ll2&tag=zencheztoi-21&linkId=f311c888e531d02cdc496f0a579266f5&ref_=as_li_ss_tl" class="amazon-btn" target="_blank" rel="nofollow sponsored">Goutte d'Argent (1kg)</a>
+                    <a href="https://www.amazon.fr/Bicarbonate-Soude-3kg-alimentaire-lint%C3%A9rieur/dp/B005WXXUZW?tag=zencheztoi-21" class="amazon-btn" target="_blank" rel="nofollow sponsored">Goutte d'Argent (1kg)</a>
                 </div>
                 <div>
                     <p style="font-style: italic; margin-bottom: 10px; color: #777; font-size: 0.9em;">Souveraineté du Domaine (Technique)</p>

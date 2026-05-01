@@ -79,8 +79,8 @@
 
         .maitre-phrase { font-size: clamp(1em, 2vw, 1.4em); font-variant: small-caps; letter-spacing: 5px; font-weight: bold; margin-bottom: 20px; text-shadow: -1px -1px 0 var(--maison), 1px -1px 0 var(--maison), -1px 1px 0 var(--maison), 1px 1px 0 var(--maison); }
         .sagesse-num { font-size: clamp(0.9em, 1.5vw, 1.2em); text-transform: uppercase; letter-spacing: 4px; margin-bottom: 30px; font-weight: bold; text-shadow: -1px -1px 0 var(--maison), 1px -1px 0 var(--maison), -1px 1px 0 var(--maison), 1px 1px 0 var(--maison); }
-        .hero h1 { font-size: clamp(3em, 8vw, 5.5em); font-weight: normal; margin-bottom: 30px; line-height: 1.1; text-shadow: -2px -2px 0 var(--maison), 2px -2px 0 var(--maison), -2px 2px 0 var(--maison), 2px 2px 0 var(--maison); }
-        .tagline { font-size: clamp(1.2em, 3vw, 1.8em); font-style: italic; max-width: 900px; line-height: 1.4; text-shadow: -1px -1px 0 var(--maison), 1px -1px 0 var(--maison), -1px 1px 0 var(--maison), 1px 1px 0 var(--maison); margin: 0 auto; }
+        .hero h1 { font-size: clamp(2.5em, 8vw, 5.5em); font-weight: normal; margin-bottom: 30px; line-height: 1.1; text-shadow: -2px -2px 0 var(--maison), 2px -2px 0 var(--maison), -2px 2px 0 var(--maison), 2px 2px 0 var(--maison); }
+        .tagline { font-size: clamp(1.1em, 3vw, 1.8em); font-style: italic; max-width: 900px; line-height: 1.4; text-shadow: -1px -1px 0 var(--maison), 1px -1px 0 var(--maison), -1px 1px 0 var(--maison), 1px 1px 0 var(--maison); margin: 0 auto; }
 
         /* --- CONTENU --- */
         .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
@@ -97,7 +97,7 @@
         .mondes-spider-logo { grid-area: 2 / 2 / 3 / 3; position: relative; z-index: 2; margin: 0; }
         .mondes-spider-logo img { width: 120px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1)); }
 
-        .monde-card { background: var(--bg-sable); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; border-top: 4px solid; position: relative; z-index: 1; width: 100%; }
+        .monde-card { background: var(--bg-sable); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; border-top: 4px solid; position: relative; z-index: 1; width: 100%; box-sizing: border-box; }
         .monde-card h4 { font-variant: small-caps; font-size: 1.2em; margin-bottom: 10px; font-weight: bold; }
         .monde-card p { font-size: 0.95em; color: #444; line-height: 1.6; }
 
@@ -109,7 +109,8 @@
 
         .picto-container { display: flex; justify-content: center; flex-wrap: wrap; gap: 40px; margin: 40px 0; padding: 20px; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
         .picto-item { text-align: center; font-size: 0.75em; text-transform: uppercase; letter-spacing: 1px; color: var(--or-zen); font-weight: bold; }
-        .picto-item img { height: 45px; display: block; margin: 0 auto 10px; opacity: 0.8; }
+        /* Remplacement des images cassées par de beaux émojis incassables */
+        .picto-icon { font-size: 3em; display: block; margin-bottom: 10px; opacity: 0.9; }
 
         /* --- ALLIANCES & EXPERTISE --- */
         .allies-box { background: var(--bg-sable); padding: 50px; border-radius: 20px; margin: 80px 0; border-left: 8px solid var(--or-zen); }
@@ -159,8 +160,8 @@
         @media (max-width: 1000px) { 
             .histoire-text { column-count: 1; } 
             .expertise-list { grid-template-columns: 1fr; } 
-            .mondes-spider { grid-template-columns: 1fr; grid-template-rows: auto; gap: 20px; } 
-            .monde-card, .monde-card.secret { width: 100%; grid-area: auto; margin-top: 0; } 
+            .mondes-spider { grid-template-columns: 1fr; grid-template-rows: auto; gap: 20px; width: 100%; } 
+            .monde-card, .monde-card.secret { width: 100%; grid-area: auto; margin-top: 0; box-sizing: border-box; } 
             .mondes-spider-logo { order: -1; width: 80px; margin: 0 0 20px 0; } 
         }
         @media (max-width: 768px) {
@@ -175,10 +176,14 @@
                 transform: none; width: 280px; max-width: 90vw; top: auto; 
             }
             
-            /* Protection du Hero Mobile */
-            .hero { padding-top: 280px !important; justify-content: flex-start !important; min-height: auto !important; padding-bottom: 70px !important; height: auto !important; }
+            /* Protection du Hero Mobile : Plus d'espace pour que le P respire */
+            .hero { padding-top: 340px !important; justify-content: flex-start !important; min-height: auto !important; padding-bottom: 70px !important; height: auto !important; }
+            .hero h1 { font-size: 2.2em; } /* Titre réduit pour le mobile */
             
-            .histoire-section, .mondes-encadre, .allies-box, .expert-container { padding: 30px 20px; }
+            .histoire-section, .allies-box, .expert-container { padding: 30px 20px; }
+            /* Empêcher le Spider de déborder à droite */
+            .mondes-encadre { padding: 25px 15px; border-width: 2px; }
+            .picto-container { gap: 15px; flex-direction: column; }
             .scroll-nav { display: none; } /* Cacher la flèche sur mobile pour éviter la gêne */
         }
     </style>
@@ -208,7 +213,6 @@
                         </li>
                         <li><a href="blog.html">Journal</a></li>
                         <li><a href="encyclopedie.html">Encyclopédie</a></li>
-                        <li><a href="a-propos.html">À Propos</a></li>
                     </ul>
                 </nav>
                 <a href="https://www.pinterest.fr/zencheztoi/" class="pinterest-badge" target="_blank" title="Suivez nos inspirations">p</a>
@@ -223,7 +227,7 @@
             <p class="maitre-phrase">Maître des Fondations</p>
             <p class="sagesse-num">Sagesse n°1 : L'Éclat de la Neige Alchimique</p>
             <h1>Bicarbonate de Soude</h1>
-            <p class="tagline">"Le savoir n'est pas une arme, c'est une lumière. Apprenez à voir la pureté là où le sel s'est fait cristal."</p>
+            <p class="tagline">« Le savoir n'est pas une arme, c'est une lumière. Apprenez à voir la pureté là où le sel s'est fait cristal. »</p>
         </div>
     </section>
 
@@ -269,10 +273,10 @@
             </div>
 
             <div class="picto-container">
-                <div class="picto-item"><img src="assets/picto-food.png" alt="">Grade Alimentaire</div>
-                <div class="picto-item"><img src="assets/picto-bio.png" alt="">100% Naturel</div>
-                <div class="picto-item"><img src="assets/picto-france.png" alt="">Origine France</div>
-                <div class="picto-item"><img src="assets/picto-recycle.png" alt="">Éco-conçu</div>
+                <div class="picto-item"><span class="picto-icon">🍽️</span>Grade Alimentaire</div>
+                <div class="picto-item"><span class="picto-icon">🌿</span>100% Naturel</div>
+                <div class="picto-item"><span class="picto-icon">🇫🇷</span>Origine France</div>
+                <div class="picto-item"><span class="picto-icon">♻️</span>Éco-conçu</div>
             </div>
         </section>
 

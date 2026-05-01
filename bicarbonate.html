@@ -68,14 +68,14 @@
         .arrow-nav { pointer-events: auto; background: var(--blanc); width: 55px; height: 55px; display: flex; align-items: center; justify-content: center; border-radius: 50%; text-decoration: none; color: var(--maison); font-size: 1.5em; box-shadow: 0 5px 15px rgba(0,0,0,0.15); opacity: 0.6; transition: 0.3s; }
         .arrow-nav:hover { opacity: 1; transform: scale(1.1); background: var(--maison); color: #fff; }
 
-        /* --- HERO (Blindé pour mobile) --- */
+        /* --- HERO --- */
         .hero { 
             height: 100vh; min-height: 600px; position: relative; 
             display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; overflow: hidden; 
         }
         .hero-img-fond { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
         .hero-voile { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)); z-index: 2; }
-        .hero-contenu { position: relative; z-index: 3; }
+        .hero-contenu { position: relative; z-index: 3; width: 100%; max-width: 1000px; box-sizing: border-box; }
 
         .maitre-phrase { font-size: clamp(1em, 2vw, 1.4em); font-variant: small-caps; letter-spacing: 5px; font-weight: bold; margin-bottom: 20px; text-shadow: -1px -1px 0 var(--maison), 1px -1px 0 var(--maison), -1px 1px 0 var(--maison), 1px 1px 0 var(--maison); }
         .sagesse-num { font-size: clamp(0.9em, 1.5vw, 1.2em); text-transform: uppercase; letter-spacing: 4px; margin-bottom: 30px; font-weight: bold; text-shadow: -1px -1px 0 var(--maison), 1px -1px 0 var(--maison), -1px 1px 0 var(--maison), 1px 1px 0 var(--maison); }
@@ -109,7 +109,6 @@
 
         .picto-container { display: flex; justify-content: center; flex-wrap: wrap; gap: 40px; margin: 40px 0; padding: 20px; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
         .picto-item { text-align: center; font-size: 0.75em; text-transform: uppercase; letter-spacing: 1px; color: var(--or-zen); font-weight: bold; }
-        /* Remplacement des images cassées par de beaux émojis incassables */
         .picto-icon { font-size: 3em; display: block; margin-bottom: 10px; opacity: 0.9; }
 
         /* --- ALLIANCES & EXPERTISE --- */
@@ -160,31 +159,30 @@
         @media (max-width: 1000px) { 
             .histoire-text { column-count: 1; } 
             .expertise-list { grid-template-columns: 1fr; } 
-            .mondes-spider { grid-template-columns: 1fr; grid-template-rows: auto; gap: 20px; width: 100%; } 
-            .monde-card, .monde-card.secret { width: 100%; grid-area: auto; margin-top: 0; box-sizing: border-box; } 
-            .mondes-spider-logo { order: -1; width: 80px; margin: 0 0 20px 0; } 
+            /* LA CORRECTION DU SPIDER : Flexbox oblige les boîtes à s'empiler proprement sans déborder */
+            .mondes-spider { display: flex; flex-direction: column; gap: 20px; width: 100%; box-sizing: border-box; overflow: hidden; } 
+            .monde-card, .monde-card.secret { width: 100% !important; max-width: 100%; margin: 0 !important; box-sizing: border-box; } 
+            .mondes-spider-logo { order: -1; width: 80px; margin: 0 auto 20px auto; } 
         }
         @media (max-width: 768px) {
             .nav-container { flex-direction: column; gap: 15px; padding: 15px 20px; }
             .header-right { flex-direction: column; gap: 15px; align-items: center; width: 100%; }
             nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; }
             
-            /* LA CORRECTION MAGIQUE DU MENU DÉROULANT */
             .dropdown { position: static; }
             .dropdown-content { 
                 left: 0; right: 0; margin: 10px auto 0; 
                 transform: none; width: 280px; max-width: 90vw; top: auto; 
             }
             
-            /* Protection du Hero Mobile : Plus d'espace pour que le P respire */
-            .hero { padding-top: 340px !important; justify-content: flex-start !important; min-height: auto !important; padding-bottom: 70px !important; height: auto !important; }
-            .hero h1 { font-size: 2.2em; } /* Titre réduit pour le mobile */
+            /* LA CORRECTION DU HERO : min-height 100vh garantit que le texte ne sera JAMAIS coupé */
+            .hero { padding-top: 280px !important; padding-bottom: 100px !important; min-height: 100vh !important; height: auto !important; justify-content: center !important; box-sizing: border-box; }
+            .hero h1 { font-size: 2.2em; } 
             
             .histoire-section, .allies-box, .expert-container { padding: 30px 20px; }
-            /* Empêcher le Spider de déborder à droite */
-            .mondes-encadre { padding: 25px 15px; border-width: 2px; }
+            .mondes-encadre { padding: 25px 15px; border-width: 2px; width: 100%; box-sizing: border-box; overflow: hidden; }
             .picto-container { gap: 15px; flex-direction: column; }
-            .scroll-nav { display: none; } /* Cacher la flèche sur mobile pour éviter la gêne */
+            .scroll-nav { display: none; } 
         }
     </style>
 </head>

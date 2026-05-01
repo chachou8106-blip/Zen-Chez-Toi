@@ -122,18 +122,29 @@
         #disclaimer-bar { background: var(--brun-sombre); color: rgba(255,255,255,0.7); font-size: 0.8rem; text-align: center; padding: 12px; border-bottom: 1px solid rgba(255,255,255,0.1); }
 
         @media (max-width: 1000px) {
-    .histoire-section { padding: 40px; margin-top: -60px; }
+    /* 1. Correction de la barre de navigation */
+    .logo img { max-height: 60px; }
+    .nav-container { flex-direction: column; gap: 15px; padding: 0 15px; }
+    nav ul { justify-content: center; gap: 10px; }
+    nav a { font-size: 0.95em; }
+    
+    /* 2. Correction du chevauchement du texte Hero */
+    .hero { justify-content: flex-start; padding-top: 180px; padding-bottom: 60px; height: auto; min-height: 100vh; }
+    .hero h1 { font-size: 3em; margin-bottom: 15px; }
+    .maitre-phrase { font-size: 1em; margin-bottom: 10px; letter-spacing: 2px; }
+    .sagesse-num { font-size: 0.9em; margin-bottom: 20px; letter-spacing: 2px; }
+    .tagline { font-size: 1.1em; }
+
+    /* 3. Correction du contenu de la carte (histoire, pictos, boutons) */
+    .histoire-section { padding: 40px 20px; margin-top: -40px; }
     .histoire-section h2 { font-size: 2em; }
-    .histoire-text { column-count: 1; column-gap: 0; font-size: 1rem;}
-    .hero h1 { font-size: 3em; }
-    .tagline { font-size: 1.3em; }
+    .histoire-text { column-count: 1; column-gap: 0; font-size: 1rem; }
     .expertise-list { grid-template-columns: 1fr; }
     .mondes-encadre { padding: 25px; }
     .mondes-spider { grid-template-columns: 1fr; grid-template-rows: auto; gap: 20px; }
     .monde-card, .monde-card.secret { width: 100%; grid-area: auto; margin-top: 0; }
     .mondes-spider-logo { order: -1; width: 80px; margin: 0 0 20px 0; }
-    .nav-container { flex-direction: column; gap: 15px; }
-    .picto-container { flex-wrap: wrap; gap: 20px; justify-content: center;}
+    .picto-container { flex-wrap: wrap; gap: 20px; justify-content: center; }
     .picto-item { width: 45%; }
     .allies-box { padding: 30px; margin: 40px 0; }
     .amazon-btn { min-width: 100%; width: 100%; box-sizing: border-box; }

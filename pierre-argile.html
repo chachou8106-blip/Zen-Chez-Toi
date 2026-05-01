@@ -23,35 +23,32 @@
         :root {
             --bg-sable: #f5f2ec; --blanc: #ffffff; --brun-sombre: #2b2622; --or-zen: #a67b51;
             --maison: #6a7f8f; --jardin: #7b9074; --corps: #cca8a0; --bienetre: #d4a259; --eso: #826a8f;
-            --theme-article: var(--jardin); /* Thème Enracinement pour cette carte */
         }
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.8; overflow-x: hidden; }
 
-        /* --- HEADER HARMONISÉ --- */
+        /* --- HEADER (Importé du Blog) --- */
         header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; }
         .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
-        
         .logo { display: inline-block; text-decoration: none; }
         .logo img { max-height: 90px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2)); transition: 0.5s ease; }
         .logo:hover img { filter: drop-shadow(0 0 25px #ffffff) drop-shadow(0 0 10px #ffffff); transform: scale(1.03); }
 
         .header-right { display: flex; align-items: center; gap: 40px; }
-        nav ul { list-style: none; display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
+        nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
         nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
-        nav a:hover { color: var(--theme-article); }
+        nav a:hover { color: var(--or-zen); }
 
         .dropdown { position: relative; display: inline-block; padding: 15px 0; cursor: pointer; }
-        .dropdown-content { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background-color: var(--brun-sombre); min-width: 180px; box-shadow: 0px 10px 25px rgba(0,0,0,0.3); z-index: 2100; border-radius: 8px; border: 1px solid var(--theme-article); overflow: hidden; }
-        .dropdown-content a { color: rgba(255,255,255,0.8) !important; padding: 12px 20px; text-decoration: none; display: block; font-size: 0.95em; text-shadow: none; font-weight: bold; border-bottom: 1px solid rgba(255,255,255,0.1); text-align: center; font-variant: small-caps; }
-        .dropdown-content a:last-child { border-bottom: none; }
-        .dropdown-content a:hover { background-color: var(--theme-article); color: #fff !important; }
+        .dropdown-content { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background-color: var(--brun-sombre); min-width: 200px; box-shadow: 0px 10px 25px rgba(0,0,0,0.3); z-index: 2100; border-radius: 8px; border: 1px solid var(--or-zen); overflow: hidden; }
+        .dropdown-content a { color: rgba(255,255,255,0.8) !important; padding: 12px 20px; display: block; font-size: 0.95em; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1); font-variant: small-caps; }
+        .dropdown-content a:hover { background-color: var(--or-zen); color: #fff !important; }
         .dropdown:hover .dropdown-content { display: block; }
 
-        .pinterest-badge { display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; font-style: italic; background: rgba(255,255,255,0.1); transition: 0.4s; font-family: 'Georgia', serif; font-size: 1.1rem;}
-        .pinterest-badge:hover { background: var(--theme-article); border-color: var(--theme-article); transform: rotate(15deg); }
+        .pinterest-badge { display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; font-style: italic; background: rgba(255,255,255,0.1); transition: 0.4s; font-family: 'Georgia', serif;}
+        .pinterest-badge:hover { background: var(--or-zen); border-color: var(--or-zen); transform: rotate(15deg); }
 
-        /* --- STYLES SPÉCIFIQUES GRIMOIRE --- */
+        /* --- STYLES ORIGINAUX DU GRIMOIRE --- */
         .scroll-nav { position: fixed; top: 50%; width: 100%; display: flex; justify-content: space-between; transform: translateY(-50%); pointer-events: none; z-index: 1500; padding: 0 30px; }
         .arrow-nav { pointer-events: auto; background: var(--blanc); width: 55px; height: 55px; display: flex; align-items: center; justify-content: center; border-radius: 50%; text-decoration: none; color: var(--jardin); font-size: 1.5em; box-shadow: 0 5px 15px rgba(0,0,0,0.15); opacity: 0.6; transition: 0.3s; }
         .arrow-nav:hover { opacity: 1; transform: scale(1.1); background: var(--jardin); color: #fff; }
@@ -122,42 +119,31 @@
         .price-box h4 { font-weight: normal; color: #777; margin-bottom: 10px; font-size: 1.1em; }
         .price-box .amount { font-size: 2.8em; color: var(--or-zen); font-weight: bold; }
 
-        /* --- FOOTER HARMONISÉ --- */
+        /* --- FOOTER (Importé du Blog) --- */
         footer { background: var(--brun-sombre); color: #fff; padding: 80px 20px; text-align: center; }
         .footer-logo img { height: 60px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.4)); transition: 0.5s; margin-bottom: 30px; }
         .footer-logo:hover img { filter: drop-shadow(0 0 25px #ffffff); }
         .footer-nav-compact { display: flex; gap: 30px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; flex-wrap: wrap; }
         .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.6; font-variant: small-caps; transition: 0.3s; }
-        .footer-nav-compact a:hover { opacity: 1; color: var(--theme-article); }
+        .footer-nav-compact a:hover { opacity: 1; color: var(--or-zen); }
 
         #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
 
-        /* --- RESPONSIVE MOBILE HARMONISÉ --- */
-        @media (max-width: 768px) {
+        /* --- MEDIA QUERY FUSIONNÉE (Blog + Grimoire original) --- */
+        @media (max-width: 1000px) { 
             /* Header */
             .nav-container { flex-direction: column; gap: 15px; padding: 15px 20px; }
             .header-right { flex-direction: column; gap: 15px; align-items: center; width: 100%; }
             nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; }
+            .hero { padding-top: 300px; } /* Sécurité pour ne pas chevaucher le texte */
             
-            /* Hero */
-            .hero { padding-top: 350px !important; justify-content: flex-start !important; height: auto !important; padding-bottom: 60px; }
-            .hero h1 { font-size: 2.2em; }
-            
-            /* Contenu Grimoire */
-            .histoire-section { padding: 40px 20px; margin-top: -40px; }
-            .histoire-section h2 { font-size: 2em; }
-            .histoire-text { column-count: 1; column-gap: 0; font-size: 1rem; }
-            .expertise-list { grid-template-columns: 1fr; }
-            .mondes-encadre { padding: 25px; }
-            .mondes-spider { grid-template-columns: 1fr; grid-template-rows: auto; gap: 20px; }
-            .monde-card, .monde-card.secret { width: 100%; grid-area: auto; margin-top: 0; }
-            .mondes-spider-logo { order: -1; width: 80px; margin: 0 0 20px 0; }
-            .picto-container { flex-wrap: wrap; gap: 20px; justify-content: center; }
-            .picto-item { width: 45%; }
-            .allies-box { padding: 30px; margin: 40px 0; }
-            .amazon-btn { min-width: 100%; width: 100%; box-sizing: border-box; }
-            .pricing-grid { gap: 40px; }
-            .price-box .amount { font-size: 2.2em; }
+            /* Grimoire (Ton code intact) */
+            .histoire-text { column-count: 1; } 
+            .hero h1 { font-size: 3.5em; } 
+            .expertise-list { grid-template-columns: 1fr; } 
+            .mondes-spider { grid-template-columns: 1fr; grid-template-rows: auto; gap: 20px; } 
+            .monde-card, .monde-card.secret { width: 100%; grid-area: auto; margin-top: 0; } 
+            .mondes-spider-logo { order: -1; width: 80px; margin: 0 0 20px 0; } 
         }
     </style>
 </head>
@@ -168,7 +154,6 @@
         <a href="argile-verte.html" class="arrow-nav">❯</a>
     </div>
 
-    <!-- HEADER CALQUÉ SUR LE BLOG -->
     <header>
         <div class="nav-container">
             <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
@@ -203,7 +188,6 @@
         <p class="tagline">"Le savoir n'est pas une arme, c'est une lumière. Apprenez à voir l'éclat là où la terre s'est faite miroir."</p>
     </section>
 
-    <!-- TON CONTENU INTACT -->
     <main class="container">
         
         <section class="histoire-section">
@@ -319,7 +303,6 @@
         </div>
     </section>
 
-    <!-- FOOTER CALQUÉ SUR LE BLOG -->
     <footer>
         <a href="index.html" class="footer-logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
         <ul class="footer-nav-compact">
@@ -331,7 +314,6 @@
         <p style="font-size: 0.8em; opacity: 0.5;">&copy; 2026 Zen Chez Toi • La terre se souvient de ce qui est pur et polit ce qu'elle a créé.</p>
     </footer>
 
-    <!-- BANDEAU DÉPLACÉ APRÈS LE FOOTER COMME SUR LE BLOG -->
     <div id="disclaimer-bar">
         🔗 Liens affiliés Amazon : En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.
     </div>

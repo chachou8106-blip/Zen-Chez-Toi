@@ -14,7 +14,7 @@
       gtag('js', new Date());
       gtag('config', 'G-JRV5YNRL57');
     </script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_CLIENT_ID" crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7501098246029504" crossorigin="anonymous"></script>
     
     <meta name="description" content="Découvrez l'histoire et la philosophie de Zen Chez Toi. Un retour à l'alchimie du quotidien pour reprendre le pouvoir sur sa maison, son jardin et son corps.">
     <link rel="icon" type="image/png" href="assets/logo.png">
@@ -27,46 +27,59 @@
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.8; overflow-x: hidden; }
 
-        /* HEADER */
-        header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 1000; }
+        /* --- HEADER (Structure unifiée) --- */
+        header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; }
         .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
-        .logo-area { display: flex; align-items: center; gap: 25px; }
         
-        /* LOGO AURA INTERACTIVE (Off par défaut) */
-        .logo { display: inline-block; text-decoration: none; }
+        .logo { display: inline-block; text-decoration: none; transition: 0.4s ease; }
         .logo img { max-height: 90px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2)); transition: 0.5s ease; }
-        .logo:hover img { filter: drop-shadow(0 0 25px #ffffff) drop-shadow(0 0 10px #ffffff); transform: scale(1.03); }
-        
-        .pinterest-badge { 
-            display: inline-flex; align-items: center; justify-content: center; 
-            width: 32px; height: 32px; border: 1px solid rgba(255,255,255,0.4); 
-            border-radius: 50%; color: #ffffff; text-decoration: none; 
-            font-family: 'Georgia', serif; font-style: italic; font-size: 1.1rem;
-            transition: all 0.4s ease; background: rgba(255,255,255,0.1); backdrop-filter: blur(2px);
-        }
-        .pinterest-badge:hover { 
-            background: var(--or-zen); border-color: var(--or-zen);
-            transform: rotate(15deg) scale(1.1); box-shadow: 0 4px 15px rgba(166, 123, 81, 0.3);
-        }
+        .logo:hover img { filter: drop-shadow(0 0 30px #ffffff) drop-shadow(0 0 15px #ffffff); transform: scale(1.05); }
 
-        nav ul { list-style: none; display: flex; gap: 30px; align-items: center; }
+        .header-right { display: flex; align-items: center; gap: 40px; }
+        nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
         nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
-        nav a:hover { color: var(--or-zen); }
+        nav a:hover { color: var(--or-zen); text-shadow: 0 0 15px var(--or-zen); }
 
-        /* HERO */
+        /* MENU DÉROULANT */
+        .dropdown { position: relative; display: inline-block; padding: 15px 0; cursor: pointer; }
+        .dropdown-content { 
+            display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); 
+            background-color: var(--brun-sombre); min-width: 200px; box-shadow: 0px 10px 25px rgba(0,0,0,0.3); 
+            z-index: 2100; border-radius: 8px; border: 1px solid var(--or-zen); overflow: hidden;
+        }
+        .dropdown-content a { 
+            color: rgba(255,255,255,0.8) !important; padding: 12px 20px; text-decoration: none; 
+            display: block; font-size: 0.95em; text-shadow: none; font-weight: bold; 
+            border-bottom: 1px solid rgba(255,255,255,0.1); text-align: center; font-variant: small-caps; 
+        }
+        .dropdown-content a:hover { background-color: var(--or-zen); color: #fff !important; }
+        .dropdown:hover .dropdown-content { display: block; }
+
+        .pinterest-badge { 
+            display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; 
+            border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; 
+            font-family: 'Georgia', serif; font-style: italic; font-size: 1.2rem; transition: all 0.4s ease; 
+            background: rgba(255,255,255,0.1); backdrop-filter: blur(2px); padding-bottom: 3px;
+        }
+        .pinterest-badge:hover { background: var(--or-zen); border-color: var(--or-zen); transform: rotate(15deg) scale(1.1); color: #fff; box-shadow: 0 0 15px var(--or-zen); }
+
+        /* --- HERO (Blindé pour mobile) --- */
         .hero {
-            height: 70vh; min-height: 500px;
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/hero-eso.jpg') center/cover no-repeat;
-            display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px;
+            height: 70vh; min-height: 500px; position: relative;
+            display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; overflow: hidden;
         }
+        .hero-img-fond { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
+        .hero-voile { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)); z-index: 2; }
+        .hero-contenu { position: relative; z-index: 3; }
+        
         .hero h1 { 
-            font-size: 3.5em; font-weight: normal; letter-spacing: 4px; 
+            font-size: clamp(2.5em, 6vw, 3.5em); font-weight: normal; letter-spacing: 4px; 
             text-shadow: 0 2px 10px rgba(0,0,0,0.5); font-variant: small-caps; 
-            line-height: 1.2; max-width: 900px; margin-bottom: 20px;
+            line-height: 1.2; max-width: 900px; margin-bottom: 20px; margin-left: auto; margin-right: auto;
         }
-        .tagline { font-size: 1.5em; font-style: italic; max-width: 800px; text-shadow: 0 2px 5px rgba(0,0,0,0.5); }
+        .tagline { font-size: clamp(1.2em, 3vw, 1.5em); font-style: italic; max-width: 800px; text-shadow: 0 2px 5px rgba(0,0,0,0.5); margin-left: auto; margin-right: auto; }
 
-        /* MAIN CONTENT */
+        /* --- MAIN CONTENT --- */
         .container { max-width: 1400px; margin: 0 auto; padding: 0 20px; }
         
         .histoire-section { 
@@ -80,11 +93,12 @@
         .histoire-text p { margin-bottom: 20px; }
         .histoire-text blockquote { font-style: italic; color: var(--or-zen); font-size: 1.3em; margin: 30px 0; text-align: center; border-top: 1px solid #eee; border-bottom: 1px solid #eee; padding: 20px 0; column-span: all; }
 
-        /* STYLE DES CARTES (Repris de index.html) */
+        /* --- STYLE DES CARTES --- */
         .section-separator { text-align: center; margin: 60px 0 40px; }
         .section-separator img { height: 40px; opacity: 0.6; margin-bottom: 20px; }
+        
         .grid-5 { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; margin-bottom: 60px; }
-        .card { background: var(--blanc); border-radius: 12px; text-decoration: none; color: inherit; transition: 0.4s; box-shadow: 0 4px 15px rgba(0,0,0,0.05); overflow: hidden; display: flex; flex-direction: column; border-bottom: 5px solid transparent; height: 100%; text-align: left; }
+        .card { background: var(--blanc); border-radius: 12px; text-decoration: none; color: inherit; transition: 0.4s; box-shadow: 0 4px 15px rgba(0,0,0,0.05); overflow: hidden; display: flex; flex-direction: column; border-bottom: 5px solid transparent; height: 100%; text-align: left; cursor: pointer; }
         .card:hover { transform: translateY(-10px); box-shadow: 0 12px 30px rgba(0,0,0,0.1); }
         .card-img { height: 160px; background-size: cover; background-position: center; }
         .card-content { padding: 20px 15px; flex-grow: 1; }
@@ -97,22 +111,26 @@
         .card.bienetre { border-bottom-color: var(--bienetre); }
         .card.eso { border-bottom-color: var(--eso); }
 
-        /* CALL TO ACTION */
+        /* --- CALL TO ACTION --- */
         .cta-section { text-align: center; padding: 60px 0; border-top: 1px solid #ddd; margin-top: 40px; }
-        .cta-title { font-size: 2em; color: var(--brun-sombre); margin-bottom: 20px; font-weight: normal; }
+        .cta-title { font-size: 2em; color: var(--brun-sombre); margin-bottom: 20px; font-weight: normal; font-variant: small-caps; }
         .cta-buttons { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 30px; }
-        .btn-primary { padding: 15px 35px; background: var(--brun-sombre); color: #fff; text-decoration: none; border-radius: 50px; font-variant: small-caps; font-weight: bold; transition: 0.3s; font-size: 1.1em; }
-        .btn-primary:hover { background: var(--or-zen); transform: translateY(-3px); box-shadow: 0 10px 20px rgba(166, 123, 81, 0.3); }
-        .btn-secondary { padding: 15px 35px; background: transparent; color: var(--brun-sombre); border: 2px solid var(--brun-sombre); text-decoration: none; border-radius: 50px; font-variant: small-caps; font-weight: bold; transition: 0.3s; font-size: 1.1em; }
-        .btn-secondary:hover { background: var(--bg-sable); transform: translateY(-3px); }
+        .btn-primary { display: inline-block; padding: 15px 35px; background: var(--brun-sombre); color: #fff; text-decoration: none; border-radius: 50px; font-variant: small-caps; font-weight: bold; transition: 0.3s; font-size: 1.1em; border: 1px solid var(--brun-sombre); }
+        .btn-primary:hover { background: var(--or-zen); border-color: var(--or-zen); transform: translateY(-3px); box-shadow: 0 10px 20px rgba(166, 123, 81, 0.3); }
+        .btn-secondary { display: inline-block; padding: 15px 35px; background: transparent; color: var(--brun-sombre); border: 2px solid var(--brun-sombre); text-decoration: none; border-radius: 50px; font-variant: small-caps; font-weight: bold; transition: 0.3s; font-size: 1.1em; }
+        .btn-secondary:hover { background: var(--brun-sombre); color: #fff; transform: translateY(-3px); box-shadow: 0 10px 20px rgba(43, 38, 34, 0.2); }
 
-        /* FOOTER */
-        footer { background: var(--brun-sombre); color: #fff; padding: 60px 20px; text-align: center; }
-        .footer-logo-small { height: 45px; margin-bottom: 25px; }
-        .footer-nav-compact { display: flex; gap: 25px; list-style: none; justify-content: center; margin-bottom: 25px; padding: 0; flex-wrap: wrap; }
-        .footer-nav-compact a { color: #fff; text-decoration: none; font-size: 0.9em; opacity: 0.7; font-variant: small-caps; }
+        /* --- FOOTER --- */
+        footer { background: var(--brun-sombre); color: #fff; padding: 80px 20px 40px; text-align: center; }
+        .footer-logo img { height: 60px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.4)); transition: 0.5s; margin-bottom: 30px; }
+        .footer-logo:hover img { filter: drop-shadow(0 0 30px #ffffff); transform: scale(1.05); }
+        .footer-nav-compact { display: flex; gap: 30px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; flex-wrap: wrap; }
+        .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.6; font-variant: small-caps; transition: 0.3s; }
+        .footer-nav-compact a:hover { opacity: 1; color: var(--or-zen); }
 
-        /* RESPONSIVE CORRIGÉ (MOULE VALIDÉ) */
+        #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
+
+        /* --- RESPONSIVE MOBILE SÉCURISÉ --- */
         @media (max-width: 1024px) {
             .grid-5 { grid-template-columns: repeat(2, 1fr); }
             .card.eso { grid-column: span 2; }
@@ -121,43 +139,66 @@
             .histoire-text { column-count: 1; }
         }
         @media (max-width: 768px) {
-            .nav-container { padding: 0 15px; flex-direction: column; gap: 15px; }
-            .logo img { max-height: 60px; }
-            nav ul { gap: 10px; flex-wrap: wrap; justify-content: center; }
-            nav a { font-size: 0.85em; }
+            .nav-container { flex-direction: column; gap: 15px; padding: 15px 20px; }
+            .header-right { flex-direction: column; gap: 15px; align-items: center; width: 100%; }
+            nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; }
+            
+            /* LA CORRECTION MAGIQUE DU MENU DÉROULANT */
+            .dropdown { position: static; }
+            .dropdown-content { 
+                left: 0; right: 0; margin: 10px auto 0; 
+                transform: none; width: 280px; max-width: 90vw; top: auto; 
+            }
             
             /* Protection du Hero Mobile */
-            .hero { padding-top: 300px !important; justify-content: flex-start !important; height: auto !important; padding-bottom: 60px; }
-            .hero h1 { font-size: 2.2em; }
+            .hero { padding-top: 280px !important; justify-content: flex-start !important; min-height: auto !important; padding-bottom: 70px !important; }
+            .hero h1 { font-size: 2.2em; margin-bottom: 15px; letter-spacing: 2px; }
             
             .histoire-section { padding: 40px 20px; margin-top: -40px; }
             .grid-5 { grid-template-columns: 1fr; }
             .card.eso { grid-column: span 1; }
+            
+            .cta-buttons { flex-direction: column; align-items: center; }
+            .cta-buttons a { width: 100%; max-width: 300px; text-align: center; }
         }
     </style>
 </head>
 <body>
+
     <header>
         <div class="nav-container">
-            <div class="logo-area">
-                <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
-                <a href="https://www.pinterest.com/VOTRE_PROFIL" class="pinterest-badge" target="_blank" title="Inspiration Zen">p</a>
+            <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
+            <div class="header-right">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li class="dropdown">
+                            <a href="grimoire.html">Grimoire</a>
+                            <div class="dropdown-content">
+                                <a href="maison.html">Vol 1 : Fondation</a>
+                                <a href="jardin.html">Vol 2 : Enracinement</a>
+                                <a href="corps.html">Vol 3 : Éclosion</a>
+                                <a href="bienetre.html">Vol 4 : Harmonie</a>
+                                <a href="eso.html">Vol 5 : Élévation</a>
+                            </div>
+                        </li>
+                        <li><a href="blog.html">Journal</a></li>
+                        <li><a href="encyclopedie.html">Encyclopédie</a></li>
+                        <li><a href="a-propos.html">À Propos</a></li>
+                    </ul>
+                </nav>
+                <a href="https://www.pinterest.fr/zencheztoi/" class="pinterest-badge" target="_blank" title="Suivez nos inspirations">p</a>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="grimoire.html">Grimoire</a></li>
-                    <li><a href="blog.html">Journal</a></li>
-                    <li><a href="encyclopedie.html">Encyclopédie</a></li>
-                    <li><a href="livre-or.html">Livre d'Or</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
 
     <section class="hero">
-        <h1>L'Origine du Grimoire</h1>
-        <p class="tagline">"Parce que la véritable autonomie commence par la connaissance de ce qui nous entoure."</p>
+        <img src="assets/hero-eso.jpg" class="hero-img-fond" alt="Origine du Grimoire">
+        <div class="hero-voile"></div>
+        <div class="hero-contenu">
+            <h1>L'Origine du Grimoire</h1>
+            <p class="tagline">« Parce que la véritable autonomie commence par la connaissance de ce qui nous entoure. »</p>
+        </div>
     </section>
 
     <main class="container">
@@ -169,7 +210,7 @@
                 
                 <p>L'idée était simple, mais ambitieuse : retrouver la sagesse des apothicaires et des anciens alchimistes, et la traduire pour notre époque. Je voulais recréer un "Grimoire", un espace hors du temps où la chimie complexe laisse place à la pureté des éléments.</p>
                 
-                <blockquote>"Le savoir n'est pas une arme, c'est une lumière. Apprenez à dissoudre l'impureté pour révéler l'éclat."</blockquote>
+                <blockquote>« Le savoir n'est pas une arme, c'est une lumière. Apprenez à dissoudre l'impureté pour révéler l'éclat. »</blockquote>
 
                 <p>Ce site est le fruit de centaines d'heures de recherche et de tests, d'échecs et des réussites. Il s'agit d'une encyclopédie vivante, pensée pour vous redonner la souveraineté sur votre domaine. Que ce soit pour soigner la terre de votre jardin, purifier votre foyer, ou apaiser votre corps, ou votre esprit la nature a déjà tout prévu.</p>
             </div>
@@ -177,45 +218,45 @@
 
         <div class="section-separator">
             <img src="assets/logo.png" alt="Zen" loading="lazy">
-            <h2 class="histoire-section h2" style="margin-top:0; box-shadow:none; background:none;">Notre Philosophie en 5 Mondes</h2>
+            <h2 style="font-size: 2em; color: var(--brun-sombre); font-variant: small-caps; margin-top: 10px;">Notre Philosophie en 5 Mondes</h2>
         </div>
 
         <div class="grid-5">
-            <div class="card maison">
+            <a href="maison.html" class="card maison">
                 <div class="card-img" style="background-image: url('assets/hero-maison.jpg');"></div>
                 <div class="card-content">
                     <h4>Monde de l'Âtre</h4>
                     <p>Faire de sa maison un temple pur. Revenir aux cristaux bruts et aux poudres ancestrales qui nettoient sans polluer.</p>
                 </div>
-            </div>
-            <div class="card jardin">
+            </a>
+            <a href="jardin.html" class="card jardin">
                 <div class="card-img" style="background-image: url('assets/hero-jardin.jpg');"></div>
                 <div class="card-content">
                     <h4>Monde de la Terre</h4>
                     <p>Protéger et soigner les végétaux avec l'intelligence de la nature plutôt qu'avec la force brute de la chimie.</p>
                 </div>
-            </div>
-            <div class="card corps">
+            </a>
+            <a href="corps.html" class="card corps">
                 <div class="card-img" style="background-image: url('assets/hero-corps.jpg');"></div>
                 <div class="card-content">
                     <h4>Monde du Temple</h4>
                     <p>Utiliser les sèves et les beurres pour restructurer la peau et les cheveux avec révérence.</p>
                 </div>
-            </div>
-            <div class="card bienetre">
+            </a>
+            <a href="bienetre.html" class="card bienetre">
                 <div class="card-img" style="background-image: url('assets/hero-bienetre.jpg');"></div>
                 <div class="card-content">
                     <h4>Monde de la Sève</h4>
                     <p>Retrouver l'énergie perdue grâce aux adaptogènes, aux minéraux marins et au repos véritable.</p>
                 </div>
-            </div>
-            <div class="card eso">
+            </a>
+            <a href="eso.html" class="card eso">
                 <div class="card-img" style="background-image: url('assets/hero-eso.jpg');"></div>
                 <div class="card-content">
                     <h4>Monde du Secret</h4>
                     <p>Purifier les énergies et utiliser la résonance des pierres pour maintenir l'harmonie vibratoire.</p>
                 </div>
-            </div>
+            </a>
         </div>
 
         <section class="cta-section">
@@ -229,14 +270,18 @@
     </main>
 
     <footer>
-        <img src="assets/logo.png" class="footer-logo-small" alt="Zen" loading="lazy">
+        <a href="index.html" class="footer-logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
         <ul class="footer-nav-compact">
             <li><a href="mentions-legales.html">Mentions Légales</a></li>
             <li><a href="confidentialite.html">Confidentialité</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+            <li><a href="a-propos.html">À Propos</a></li>
             <li><a href="livre-or.html">Livre d'Or</a></li>
         </ul>
-        <p style="font-size: 0.8em; opacity: 0.5;">&copy; 2026 Zen Chez Toi - L'Harmonie au Naturel</p>
+        <p style="font-size: 0.85em; opacity: 0.4;">&copy; 2026 Zen Chez Toi • L'Harmonie au Naturel.</p>
     </footer>
+
+    <div id="disclaimer-bar">🔗 Liens affiliés : Partenaire Amazon, Citrine.fr et Sept-Chakras.com, je réalise un bénéfice sur les achats remplissant les conditions requises.</div>
+
 </body>
 </html>

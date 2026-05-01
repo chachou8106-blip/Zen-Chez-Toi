@@ -50,7 +50,6 @@
         .pinterest-badge { display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; font-style: italic; background: rgba(255,255,255,0.1); transition: 0.4s; font-family: 'Georgia', serif;}
         .pinterest-badge:hover { background: var(--or-zen); border-color: var(--or-zen); transform: rotate(15deg); }
 
-
         /* =========================================
            2. CSS DU CONTENU (PRÉSENTATION CARTE INTACTE)
            ========================================= */
@@ -124,7 +123,6 @@
         .price-box h4 { font-weight: normal; color: #777; margin-bottom: 10px; font-size: 1.1em; }
         .price-box .amount { font-size: 2.8em; color: var(--or-zen); font-weight: bold; }
 
-
         /* =========================================
            3. CSS DU FOOTER (PRÉSENTATION BLOG)
            ========================================= */
@@ -138,7 +136,6 @@
 
         #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
 
-
         /* =========================================
            4. RESPONSIVE MOBILE COMBINÉ
            ========================================= */
@@ -149,15 +146,27 @@
             nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; }
             
             /* Responsive de la Carte INTACT */
-            .histoire-text { column-count: 1; } 
-            .hero h1 { font-size: 3.5em; } 
-            .expertise-list { grid-template-columns: 1fr; } 
-            .mondes-spider { grid-template-columns: 1fr; grid-template-rows: auto; gap: 20px; } 
-            .monde-card, .monde-card.secret { width: 100%; grid-area: auto; margin-top: 0; } 
-            .mondes-spider-logo { order: -1; width: 80px; margin: 0 0 20px 0; } 
+            .histoire-section { padding: 40px 20px; margin-top: -40px; }
+            .histoire-section h2 { font-size: 2em; }
+            .histoire-text { column-count: 1; column-gap: 0; font-size: 1rem; }
+            .expertise-list { grid-template-columns: 1fr; }
+            .mondes-encadre { padding: 25px; }
+            .mondes-spider { grid-template-columns: 1fr; grid-template-rows: auto; gap: 20px; }
+            .monde-card, .monde-card.secret { width: 100%; grid-area: auto; margin-top: 0; }
+            .mondes-spider-logo { order: -1; width: 80px; margin: 0 0 20px 0; }
+            .picto-container { flex-wrap: wrap; gap: 20px; justify-content: center; }
+            .picto-item { width: 45%; }
+            .allies-box { padding: 30px; margin: 40px 0; }
+            .amazon-btn { min-width: 100%; width: 100%; box-sizing: border-box; }
+            .pricing-grid { gap: 40px; }
+            .price-box .amount { font-size: 2.2em; }
 
             /* Ajustement pour que le menu ne cache pas le titre */
             .hero { padding-top: 350px !important; justify-content: flex-start !important; height: auto !important; padding-bottom: 60px; }
+            .hero h1 { font-size: 3em; margin-bottom: 15px; }
+            .maitre-phrase { font-size: 1em; margin-bottom: 10px; letter-spacing: 2px; }
+            .sagesse-num { font-size: 0.9em; margin-bottom: 20px; letter-spacing: 2px; }
+            .tagline { font-size: 1.1em; }
         }
     </style>
 </head>

@@ -1,480 +1,241 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dégraissant cuisine : l'Alchimie de la Pureté Naturelle | Zen Chez Toi</title>
 
-  <title>Dégraissant naturel pour la cuisine | Zen Chez Toi</title>
-  <meta name="description" content="Comprendre les graisses tenaces en cuisine et découvrir des gestes simples, recettes maison et produits doux pour dégraisser sans étouffer votre intérieur.">
+    <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRV5YNRL57"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-JRV5YNRL57');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7501098246029504" crossorigin="anonymous"></script>
 
-  <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
+    <meta name="description" content="Découvrez l'alchimie du dégraissage naturel. Transmutez les graisses de votre cuisine avec le savon noir et le bicarbonate pour un intérieur sain et respirant.">
+    <link rel="icon" type="image/png" href="assets/logo.png">
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRV5YNRL57"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-JRV5YNRL57');
-  </script>
+    <style>
+        :root {
+            --bg-sable: #f5f2ec; --blanc: #ffffff; --brun-sombre: #2b2622; --or-zen: #a67b51;
+            --maison: #6a7f8f; --jardin: #7b9074; --corps: #cca8a0; --bienetre: #d4a259; --eso: #826a8f;
+            
+            /* THÈME MAISON ACTIVÉ */
+            --theme-article: var(--maison);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.8; overflow-x: hidden; }
 
-  <!-- Google Fonts corrigé -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+        /* --- HEADER & NAVIGATION --- */
+        header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; }
+        .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
+        .logo { display: inline-block; text-decoration: none; }
+        .logo img { max-height: 90px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2)); transition: 0.5s ease; }
+        .logo:hover img { filter: drop-shadow(0 0 25px #ffffff) drop-shadow(0 0 10px #ffffff); transform: scale(1.03); }
 
-  <style>
-    :root {
-      /* Maison : vert d'eau frais, cohérent avec un univers entretien/air sain */
-      --bg: #f4faf9;
-      --text: #243235;
-      --muted: #5f7b80;
-      --accent: #4aa6a0;
-      --dark: #142022;
-      --surface: rgba(255,255,255,.95);
-    }
+        .header-right { display: flex; align-items: center; gap: 40px; }
+        nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
+        nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
+        nav a:hover { color: var(--theme-article); }
 
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      color: var(--text);
-      background: var(--bg);
-      line-height: 1.7;
-    }
+        .dropdown { position: relative; display: inline-block; padding: 15px 0; cursor: pointer; }
+        .dropdown-content { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background-color: var(--brun-sombre); min-width: 200px; box-shadow: 0px 10px 25px rgba(0,0,0,0.3); z-index: 2100; border-radius: 8px; border: 1px solid var(--theme-article); overflow: hidden; }
+        .dropdown-content a { color: rgba(255,255,255,0.8) !important; padding: 12px 20px; display: block; font-size: 0.95em; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1); font-variant: small-caps; }
+        .dropdown-content a:hover { background-color: var(--theme-article); color: #fff !important; }
+        .dropdown:hover .dropdown-content { display: block; }
 
-    a { text-decoration: none; color: inherit; transition: 0.3s; }
+        .pinterest-badge { display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; font-style: italic; background: rgba(255,255,255,0.1); transition: 0.4s; }
+        .pinterest-badge:hover { background: var(--theme-article); border-color: var(--theme-article); transform: rotate(15deg); }
 
-    .main-nav {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: rgba(244, 250, 249, 0.96);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(0,0,0,0.08);
-    }
-    .nav-wrap {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 14px 16px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
-    .nav-wrap a {
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      font-weight: 700;
-      color: var(--muted);
-      letter-spacing: 0.1em;
-      padding: 5px 8px;
-    }
-    .nav-wrap a:hover,
-    .nav-wrap a.active {
-      color: var(--accent);
-    }
-    .dot {
-      color: rgba(0,0,0,0.12);
-      font-size: 0.7rem;
-    }
+        /* --- HERO ARTICLE --- */
+        .hero { height: 75vh; min-height: 500px; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('assets/hero-maison.jpg') center/cover no-repeat fixed; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; }
+        .vol-phrase { font-size: clamp(1.4em, 3vw, 2em); font-variant: small-caps; letter-spacing: 5px; font-weight: bold; margin-bottom: 15px; color: var(--theme-article); text-shadow: 0 4px 15px rgba(0,0,0,0.9), 0 2px 5px rgba(0,0,0,1); -webkit-text-stroke: 0.5px rgba(255,255,255,0.8); }
+        .hero h1 { font-size: clamp(2.5em, 6vw, 4.5em); font-weight: normal; margin-bottom: 20px; line-height: 1.2; font-variant: small-caps; text-shadow: 0 4px 15px rgba(0,0,0,0.8); max-width: 1000px; }
+        .tagline { font-size: clamp(1.1em, 2vw, 1.5em); font-style: italic; opacity: 0.9; max-width: 800px; line-height: 1.5; }
 
-    .hero {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 72px 20px 24px;
-      text-align: center;
-    }
-    .hero-kicker {
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      font-size: 0.78rem;
-      color: var(--muted);
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-    h1 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(2.4rem, 5vw, 3.2rem);
-      margin: 0 0 10px;
-      line-height: 1.1;
-    }
-    .hero-sub {
-      max-width: 700px;
-      margin: 0 auto;
-      color: var(--muted);
-      font-size: 1.02rem;
-    }
+        /* --- CORPS DU TEXTE --- */
+        .blog-container { max-width: 800px; margin: 60px auto 60px; padding: 0 20px; font-size: 1.15rem; color: #333; }
+        .blog-container h2 { font-size: 2.2em; color: var(--theme-article); margin: 60px 0 25px; font-variant: small-caps; text-align: center; font-weight: normal; }
+        .blog-container h3 { font-size: 1.5em; color: var(--brun-sombre); margin: 50px 0 15px; font-variant: small-caps; border-bottom: 1px solid rgba(106, 127, 143, 0.4); padding-bottom: 8px; }
+        .blog-container p { margin-bottom: 25px; text-align: justify; }
+        .blog-container ul { margin-bottom: 25px; padding-left: 20px; }
+        .blog-container li { margin-bottom: 10px; }
 
-    main {
-      max-width: 920px;
-      margin: 0 auto;
-      padding: 20px 20px 80px;
-    }
+        /* --- NOTES & ENCADRÉS --- */
+        .alchimiste-note { background: var(--blanc); border-left: 4px solid var(--theme-article); padding: 30px; margin: 50px 0; border-radius: 0 20px 20px 0; box-shadow: 0 15px 40px rgba(0,0,0,0.05); }
+        .note-titre { display: block; font-variant: small-caps; color: var(--theme-article); font-weight: bold; font-size: 1.3em; margin-bottom: 15px; }
 
-    h2 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.9rem;
-      margin: 40px 0 14px;
-      line-height: 1.2;
-    }
-    h3 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.35rem;
-      margin: 26px 0 8px;
-    }
-    p { margin: 0 0 14px; }
-    ul {
-      padding-left: 18px;
-      margin: 0 0 14px;
-    }
-    li { margin-bottom: 8px; }
+        .encadre-hero { margin: 80px 0; border-radius: 30px; overflow: hidden; border: 5px solid var(--theme-article); box-shadow: 0 20px 50px rgba(0,0,0,0.2); }
+        .cadre-fond { padding: 60px 40px; text-align: center; background-size: cover; background-position: center; background-attachment: fixed; }
+        .encadre-titre { font-size: 2.5em; font-variant: small-caps; color: var(--brun-sombre); -webkit-text-stroke: 0.5px #ffffff; margin-bottom: 10px; text-shadow: 0 4px 15px rgba(0,0,0,0.6); letter-spacing: 1px; }
+        .encadre-sous-titre { font-style: italic; font-size: 1.1em; color: #fff; margin-bottom: 30px; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
+        
+        .liste-selectionnable { display: flex; flex-direction: column; gap: 15px; max-width: 650px; margin: 0 auto; }
+        .item-link { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; padding: 18px 35px; display: flex; align-items: center; justify-content: space-between; text-decoration: none; color: #fff; transition: 0.3s; }
+        .item-link:hover { transform: scale(1.03); border-color: #fff; background: var(--theme-article); }
+        .item-link span { font-weight: bold; font-variant: small-caps; font-size: 1.1em; text-align: left; }
+        .item-link span small { display: block; font-size: 0.75em; font-family: 'Georgia', serif; font-style: italic; opacity: 0.8; text-transform: none; font-weight: normal; }
 
-    .box {
-      background: var(--surface);
-      border-radius: 18px;
-      padding: 20px;
-      margin: 22px 0;
-      box-shadow: 0 12px 28px rgba(0,0,0,0.05);
-      border: 1px solid rgba(0,0,0,0.03);
-    }
-    .box-title {
-      font-size: 0.82rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      font-weight: 700;
-      color: var(--muted);
-      margin-bottom: 8px;
-    }
+        /* --- FOOTER --- */
+        footer { background: var(--brun-sombre); color: #fff; padding: 80px 20px; text-align: center; }
+        .footer-logo img { height: 60px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.4)); transition: 0.5s; margin-bottom: 30px; }
+        .footer-logo:hover img { filter: drop-shadow(0 0 25px #ffffff); }
+        .footer-nav-compact { display: flex; gap: 30px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; flex-wrap: wrap; }
+        .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.6; font-variant: small-caps; transition: 0.3s; }
+        .footer-nav-compact a:hover { opacity: 1; color: var(--theme-article); }
 
-    .products-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 14px;
-      margin-top: 12px;
-    }
-    .product-card {
-      background: white;
-      border-radius: 14px;
-      padding: 14px;
-      border: 1px solid rgba(0,0,0,0.05);
-    }
-    .product-card strong {
-      display: block;
-      margin-bottom: 6px;
-    }
-    .product-card a {
-      display: inline-block;
-      margin-top: 8px;
-      color: var(--accent);
-      font-weight: 700;
-    }
-    .product-note {
-      font-size: 0.85rem;
-      color: var(--muted);
-      margin-top: 4px;
-    }
+        #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
 
-    .footer {
-      background: var(--dark);
-      color: #f3dfca;
-      padding: 60px 20px 80px;
-      text-align: center;
-      margin-top: 10px;
-    }
-    .footer-logo {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 2.6rem;
-      margin-bottom: 12px;
-    }
-    .footer-logo em {
-      color: #4aa6a0;
-      font-style: italic;
-    }
-    .footer-links {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      flex-wrap: wrap;
-      opacity: 0.72;
-      font-size: 0.88rem;
-      margin: 16px 0;
-    }
-
-    #disclaimer-bar {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background: rgba(0,0,0,0.95);
-      color: rgba(255,255,255,0.6);
-      font-size: 0.75rem;
-      text-align: center;
-      padding: 10px;
-      z-index: 1000;
-      border-top: 1px solid rgba(255,255,255,0.1);
-    }
-
-    @media (max-width: 640px) {
-      .hero { padding-top: 52px; }
-      h2 { font-size: 1.65rem; }
-    }
-  </style>
+        @media (max-width: 768px) {
+            header { padding: 15px 0; }
+            .logo img { max-height: 70px; } 
+            .nav-container { flex-direction: column; gap: 15px; padding: 10px 20px; }
+            .header-right { flex-direction: column; gap: 15px; align-items: center; width: 100%; }
+            nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; }
+            .hero { padding-top: 350px !important; justify-content: flex-start !important; height: auto !important; padding-bottom: 60px; }
+            .hero h1 { font-size: 2.2em; }
+            .item-link { flex-direction: column; text-align: center; padding: 15px; }
+            .item-link span { text-align: center; }
+            .encadre-titre { font-size: 2em; }
+        }
+    </style>
 </head>
 <body>
 
-  <nav class="main-nav" aria-label="Navigation principale">
-    <div class="nav-wrap">
-      <a href="index.html">Accueil</a><span class="dot">&bull;</span>
-      <a href="eso.html">Ésotérisme</a><span class="dot">&bull;</span>
-      <a href="jardin.html">Jardin</a><span class="dot">&bull;</span>
-      <a href="maison.html" class="active">Maison</a><span class="dot">&bull;</span>
-      <a href="bienetre.html">Bien-être</a><span class="dot">&bull;</span>
-      <a href="corps.html">Corps</a>
-    </div>
-  </nav>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
+            <div class="header-right">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li class="dropdown">
+                            <a href="grimoire.html">Grimoire</a>
+                            <div class="dropdown-content">
+                                <a href="maison.html">Vol 1 : Fondation</a>
+                                <a href="jardin.html">Vol 2 : Enracinement</a>
+                                <a href="corps.html">Vol 3 : Éclosion</a>
+                                <a href="bienetre.html">Vol 4 : Harmonie</a>
+                                <a href="eso.html">Vol 5 : Élévation</a>
+                            </div>
+                        </li>
+                        <li><a href="blog.html">Journal</a></li>
+                        <li><a href="encyclopedie.html">Encyclopédie</a></li>
+                        <li><a href="a-propos.html">À Propos</a></li>
+                        <li><a href="livre-or.html">Livre d'Or</a></li>
+                    </ul>
+                </nav>
+                <a href="https://www.pinterest.fr/zencheztoi/" class="pinterest-badge" target="_blank" title="Inspirations pour la maison">p</a>
+            </div>
+        </div>
+    </header>
 
-  <header class="hero">
-    <div class="hero-kicker">Maison · Entretien</div>
-    <h1>Dégraissant doux pour une cuisine qui respire</h1>
-    <p class="hero-sub">
-      Plaque grasse, hotte collante, traces sur les portes de placard… La cuisine vit avec toi au quotidien. 
-      L’idée ici : retrouver des surfaces propres, sans étouffer ton intérieur ni tes mains.[web:1181][web:1194]
-    </p>
-  </header>
-
-  <main>
-    <section>
-      <h2>Reconnaître quand la graisse s’installe</h2>
-      <p>
-        Graisses de cuisson, vapeurs, projections d’huile : avec le temps, elles forment un film collant sur les surfaces, surtout autour des plaques, de la hotte et du four.[web:1181][web:1183]
-      </p>
-      <p>
-        Même en nettoyant régulièrement, il reste parfois une sensation de “gras qui ne part jamais” ou des zones qui ternissent malgré les coups d’éponge.[web:1187][web:1188]
-      </p>
-
-      <div class="box">
-        <div class="box-title">Signes typiques</div>
-        <ul>
-          <li>Surfaces mates ou collantes, même juste après un nettoyage rapide.[web:1182][web:1189]</li>
-          <li>Traces jaunâtres autour des poignées, interrupteurs, crédence.[web:1187][web:1189]</li>
-          <li>Hotte, filtre ou rebords de four qui accrochent sous les doigts.[web:1188][web:1189]</li>
-        </ul>
-      </div>
+    <section class="hero">
+        <p class="vol-phrase">Volume 1 : Fondation • Chronique</p>
+        <h1>Dégraissant doux : l'Alchimie de la Cuisine Purifiée</h1>
+        <p class="tagline">« Quand la clarté de l'âtre est voilée par les sédiments du passé. Apprenez à libérer vos surfaces par la puissance tranquille des onctions naturelles. »</p>
     </section>
 
-    <section>
-      <h2>Ce qui se cache souvent derrière</h2>
-      <p>
-        La graisse s’accumule surtout quand on cuisine souvent au même endroit, avec peu de ventilation ou une hotte peu utilisée, et un nettoyage limité à de l’eau savonneuse.[web:1181][web:1187]
-      </p>
+    <main class="blog-container">
 
-      <h3>La superposition de couches fines</h3>
-      <p>
-        Une fine pellicule grasse laissée après chaque cuisson finit par se transformer en dépôt plus dur, surtout sur les zones chaudes ou rarement essuyées.[web:1183][web:1189]
-      </p>
+        <p>Dans l'alchimie du foyer, la cuisine est l'athanor moderne, le lieu de toutes les transformations. Mais au fil des cuissons et des vapeurs, un voile de <strong>graisse tenace</strong> s'installe, étouffant la vibration de vos meubles et de vos parois. Plaques collantes, hotte encrassée et traces de sédiments lipidiques finissent par alourdir l'air de votre sanctuaire. Retrouver des surfaces immaculées sans corrompre votre intérieur par des émanations chimiques est un art que nous cultivons dans ce Volume 1.</p>
 
-      <h3>Les produits trop agressifs</h3>
-      <p>
-        Les dégraissants très forts peuvent abîmer certaines surfaces et irriter les voies respiratoires, ce qui donne parfois envie de les utiliser le moins possible et de laisser traîner la graisse.[web:1185][web:1186]
-      </p>
-
-      <h3>Manque de régularité</h3>
-      <p>
-        Quand on repousse souvent le “vrai” nettoyage parce qu’il demande trop d’énergie, on finit par se retrouver avec un chantier plus lourd qui décourage encore plus.[web:1187]
-      </p>
-    </section>
-
-    <section>
-      <h2>Des gestes simples pour dégraisser sans s’épuiser</h2>
-      <p>
-        L’objectif : réduire la graisse incrustée avec quelques gestes ciblés, puis garder une routine légère qui ne demande pas un dimanche entier.[web:1187][web:1183]
-      </p>
-
-      <h3>Geste n°1 : laisser le produit agir</h3>
-      <p>
-        Au lieu de frotter très fort, applique ton dégraissant (maison ou prêt à l’emploi), laisse-le agir quelques minutes sur les zones les plus grasses, puis essuie : le temps de pose fait une grande partie du travail.[web:1183][web:1189]
-      </p>
-
-      <h3>Geste n°2 : distinguer le “gros” du “courant”</h3>
-      <p>
-        Réserve un nettoyage plus profond (plaques, hotte, crédence) une fois toutes les 1 à 2 semaines, et contente-toi d’un coup d’éponge rapide au quotidien sur les zones de projection.[web:1187][web:1188]
-      </p>
-
-      <h3>Geste n°3 : protéger ce qui peut l’être</h3>
-      <p>
-        Pour les zones très exposées, un essuyage systématique après cuisson et, si besoin, une protection légère limitent l’accumulation de graisses.[web:1182][web:1187]
-      </p>
-
-      <div class="box">
-        <div class="box-title">Petit rappel rassurant</div>
-        <p>
-          Tu n’as pas besoin de tout dégraisser parfaitement à chaque fois : quelques zones ciblées, traitées un peu mieux mais pas forcément plus longtemps, changent déjà beaucoup la sensation de propre.
-        </p>
-      </div>
-    </section>
-
-    <!-- NOUVELLE SECTION : Recettes maison -->
-    <section>
-      <h2>3 recettes maison, de la plus douce à la plus costaud</h2>
-      <p>
-        Si tu préfères commencer avec ce que tu as déjà dans le placard, ces trois recettes vont du spray très doux au mélange plus costaud aux cristaux de soude, en restant sur des ingrédients simples.[web:1187][web:1196]
-      </p>
-
-      <div class="box">
-        <div class="box-title">1. Spray très doux au savon noir (quotidien)</div>
-        <p>
-          Idéal pour l’entretien courant des plaques peu grasses, façades de meubles et plans de travail.[web:1181][web:1193]
-        </p>
-        <ul>
-          <li>500 ml d’eau tiède.</li>
-          <li>1 à 2 cuillères à soupe de savon noir liquide (ou d’un dégraissant doux prêt à l’emploi dilué).[web:1181][web:1193]</li>
-          <li>Optionnel : 5–10 gouttes d’huile essentielle de citron ou d’orange douce si tu en utilises.</li>
-        </ul>
-        <p>
-          Verse l’eau tiède dans un flacon spray, ajoute le savon noir, puis les éventuelles huiles essentielles, et agite doucement.[web:1181]
-          Vaporise sur la surface, laisse agir 2–3 minutes, puis essuie avec une lingette microfibre.[web:1194]
-        </p>
-        <p class="product-note">
-          Tu peux par exemple utiliser ici le spray écologique prêt à l’emploi, légèrement dilué, en complément de quelques gouttes de savon noir si besoin.
-        </p>
-      </div>
-
-      <div class="box">
-        <div class="box-title">2. Spray équilibré savon noir + vinaigre + bicarbonate</div>
-        <p>
-          Plus costaud, mais toujours raisonnable, pour la graisse installée sur crédence, hotte et portes de placards.[web:1187][web:1191]
-        </p>
-        <ul>
-          <li>750 ml d’eau chaude (non bouillante).</li>
-          <li>2 cuillères à soupe de savon noir liquide.</li>
-          <li>2 cuillères à soupe de vinaigre blanc.[web:1183][web:1196]</li>
-          <li>1 cuillère à soupe de bicarbonate de soude.</li>
-        </ul>
-        <p>
-          Mélange l’eau chaude et le savon noir, ajoute le bicarbonate, puis le vinaigre petit à petit (ça mousse, c’est normal), laisse retomber et verse dans un spray.[web:1187]
-        </p>
-        <p>
-          Vaporise sur les zones grasses, laisse agir 5–10 minutes, puis frotte avec tes éponges réutilisables ou lingettes microfibres avant de rincer ou d’essuyer à l’eau claire.[web:1187][web:1194]
-        </p>
-      </div>
-
-      <div class="box">
-        <div class="box-title">3. Dégraissant fort aux cristaux de soude (usage ponctuel)</div>
-        <p>
-          Pour les cas costauds : hotte très encrassée, porte de four, grilles, casseroles très grasses.[web:1195][web:1201]
-        </p>
-        <ul>
-          <li>500 ml d’eau chaude (50–60 °C).</li>
-          <li>1 grosse cuillère à soupe de cristaux de soude (≈ 20 g).[web:1195][web:1205]</li>
-          <li>1 cuillère à soupe de savon noir liquide.</li>
-          <li>1 cuillère à soupe de vinaigre blanc.</li>
-        </ul>
-        <p>
-          Dissous les cristaux de soude dans l’eau chaude, ajoute le savon noir, puis le vinaigre blanc, et mets le tout dans un flacon résistant à la chaleur.[web:1195][web:1201]
-        </p>
-        <p>
-          Vaporise sur les zones très grasses, laisse agir 5–15 minutes, puis frotte avec une éponge ou une lingette microfibre et rince soigneusement, surtout sur les surfaces en contact alimentaire.[web:1203][web:1207]
-        </p>
-        <p class="product-note">
-          Porte des gants et aère bien la pièce : les cristaux de soude restent irritants, même s’ils sont d’origine minérale.[web:1196][web:1205]
-        </p>
-      </div>
-    </section>
-
-    <section>
-      <h2>Outils utiles pour dégraisser en douceur</h2>
-      <p>
-        Ces produits ne sont pas des baguettes magiques, mais des alliés pratiques pour t’éviter de frotter pendant des heures ou d’utiliser des sprays trop agressifs.[web:1185][web:1190]
-      </p>
-
-      <div class="products-grid">
-        <div class="product-card">
-          <strong>Dégraissant cuisine écologique prêt à l’emploi</strong>
-          <p>
-            Un spray dégraissant multi‑surfaces pour la cuisine, formulé avec des agents nettoyants plus doux pour le quotidien : plans de travail, portes de placard et plaques légèrement grasses.[web:1190]
-          </p>
-          <a href="https://www.amazon.fr/D%C3%A9graissant-Cuisine-%C3%89cologique-Multi-Surfaces-INDUSTRIES/dp/B0GSRRH9LV?th=1&linkCode=ll2&tag=zencheztoi-21&linkId=90cdb140d907f52f11b222a54006b6d9&ref_=as_li_ss_tl"
-             target="_blank" rel="noopener noreferrer">
-            Voir sur Amazon
-          </a>
+        <div class="alchimiste-note">
+            <span class="note-titre">Le Secret du Temps de Pose</span>
+            <p>Le réflexe moderne est de frotter avec violence en utilisant des substances corrosives. L'alchimiste sait pourtant que la véritable transmutation demande de la patience. Au lieu de lutter contre la matière, appliquez votre remède naturel et laissez-le agir. C'est durant ce silence que les agents doux déstructurent les amas graisseux les plus rebelles.</p>
         </div>
 
-        <div class="product-card">
-          <strong>Dégraissant concentré pour graisses incrustées</strong>
-          <p>
-            Un dégraissant concentré à utiliser ponctuellement sur les zones très encrassées comme la hotte, l’intérieur du four ou certaines crédences, avec gants et bonne aération.[web:1186][web:1189]
-          </p>
-          <a href="https://www.amazon.fr/VRAI-PROFESSIONNEL-D%C3%A9graissant-Multi-Usages-Fabrication/dp/B00EZN1PCA?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3C5MG6UNSXSCM&dib=eyJ2IjoiMSJ9.OAAlWjGFguBKkI3Le-7zk2R1DH_C7MvHUOF0hfiZmwvxGmVztDZd8pnZ8Jt9jw6C4XN31HPYdQy4YF55vLSk18UJ2KlmHGjrXsrsTYYcTjJ52TVwCIX8N33z7_5CzukgBNRmjTcE2iDAtay5l9QF-OqF_vseq1RlWDJvbwu2Bp-e9E71HETRzRFf4Xf2vabMj5AhXr24rsggoifOt5Ff-CShyouOEQiTG3ZA8aKdcUFsWWwhMdIgfkguCSn1iArHwC-xTElTejNFQBKX94KxCyUjpT4dorXrxGbn5ZMoVuU.rUSH--Mlww45_aYT343qEJpeoUBpiW_5GHN25BuN0NM&dib_tag=se&keywords=d%C3%A9graissant%2Bconcentr%C3%A9%2Bhotte%2Bfour%2Bbio&qid=1776767240&sprefix=d%C3%A9graissant%2Bconcentr%C3%A9%2Bhotte%2Bfour%2Bbio%2Caps%2C222&sr=8-7&th=1&linkCode=ll2&tag=zencheztoi-21&linkId=a0fe9c43fefcbfe4181ca05b572014b5&ref_=as_li_ss_tl"
-             target="_blank" rel="noopener noreferrer">
-            Voir sur Amazon
-          </a>
-        </div>
+        <h2>Reconnaître l'Emprise des Sédiments</h2>
+        <p>Les graisses de cuisson et les projections d’huile forment avec le temps un film collant, véritable aimant à poussière, surtout autour des foyers de chaleur comme le four ou la crédence. Même un nettoyage régulier laisse parfois cette sensation désagréable de gras qui persiste. Des surfaces ternes ou des traces jaunâtres autour des poignées sont les signes qu'un dégraissage profond, mais respectueux de la matière, est nécessaire.</p>
 
-        <div class="product-card">
-          <strong>Éponges réutilisables en microfibre de carbone</strong>
-          <p>
-            Éponges lavables qui nettoient sans rayer sur de nombreuses surfaces (cuisine, salle de bain, plaque induction, vaisselle, voiture), très absorbantes et réutilisables plus de 100 lavages pour réduire les déchets.[web:1188]
-          </p>
-          <a href="https://www.amazon.fr/DSproducts%C2%AE-Eponges-R%C3%A9utilisables-Lavables-Micro-Rayures/dp/B0D2P279CX?&linkCode=ll2&tag=zencheztoi-21&linkId=f3c548302564598bb17de69377cc1e83&ref_=as_li_ss_tlfait"
-             target="_blank" rel="noopener noreferrer">
-            Voir sur Amazon
-          </a>
-        </div>
+        <h2>L'Art du Dégraissage en Trois Gestes</h2>
+        <p>Pour purifier votre cuisine sans vous épuiser, adoptez une routine rythmée par la sagesse :</p>
+        <ul>
+            <li><strong>L'Action Différée :</strong> Appliquez votre onction (savon noir ou bicarbonate) et accordez-lui quelques minutes de repos. Le produit fait le travail à votre place.</li>
+            <li><strong>La Distinction des Flux :</strong> Séparez l'entretien quotidien rapide des rituels profonds sur la hotte et les filtres, à pratiquer toutes les deux lunes.</li>
+            <li><strong>Le Bouclier de Prévention :</strong> Un essuyage systématique après chaque transformation culinaire empêche la stratification des couches de graisse.</li>
+        </ul>
 
-        <div class="product-card">
-          <strong>Lingettes microfibres DSproducts</strong>
-          <p>
-            Chiffons en microfibre de carbone pour vitres et surfaces lisses, qui retirent traces, poussières et peluches en un seul passage, lavables et réutilisables, tout en soutenant une petite startup française engagée dans le zéro déchet.[web:1188][web:1190]
-          </p>
-          <a href="https://www.amazon.fr/DSproducts%C2%AE-Chiffons-Microfibre-Nettoyage-Lingette/dp/B0CSZ5MXH8?crid=1WOGC45Y4JR7A&dib=eyJ2IjoiMSJ9.SeO-M3hoDFIvl6JfKR_be86505VkKC2mnQKbzPKnLgEtkqD5gp7cRZmGCJx_4AVwU5xjwITxv5rj58m-6PjifJTwOv9oOU_CGVsC4G_6ZZk7Ejt88NZXDCKusc1aK7PkYi3ysUqd_NNGQht555okU5c5wEUN08Ypuw3vtvF8R_q1aUCOOYH1eYtFVVfDH9jqmwsmRt0TlK3iz1V-h1qtAjKhezXaIj7RjhbAL7cRVuM88mDt8swlAzHMTi_J8E41b6XyqOFxwK4eaHqqFjUWBqmNOFGXnUukHkjYY49nRZg.tGQw2apQ1gbDofPAENXE9cry9fLXqBj9x0dYSNxNtes&dib_tag=se&keywords=microfibre+ecologique&qid=1776767700&sprefix=microfibre+ecologoque%2Caps%2C234&sr=8-5&linkCode=ll2&tag=zencheztoi-21&linkId=264db99a92f4f3ed3b620019e12cd1d9&ref_=as_li_ss_tl"
-             target="_blank" rel="noopener noreferrer">
-            Voir sur Amazon
-          </a>
-        </div>
-      </div>
+        <h2>3 Remèdes Alchimiques à Confectionner</h2>
+        <p>Selon l'intensité de l'encrassement, choisissez l'infusion adaptée à vos besoins, du spray de clarté quotidien au puissant dissolvant de sédiments.</p>
 
-      <p style="font-size:0.85rem; color:var(--muted); margin-top:10px;">
-        Ces liens sont affiliés : ils ne changent rien pour vous, mais soutiennent la création de Zen Chez Toi si vous choisissez d’acheter via ces recommandations.
-      </p>
+        <h3>1. Le Souffle Douceur (Entretien Courant)</h3>
+        <p>Idéal pour les façades et les plans de travail peu sollicités. Mélangez 500 ml d’eau tiède avec une cuillère de <strong>savon noir à l'huile d'olive</strong>. Ce mélange respecte l'aura de vos matériaux tout en capturant les graisses légères. Essuyez avec une lingette microfibre pour une clarté instantanée.</p>
+
+        <h3>2. L'Équilibre du Foyer (Crédences et Placards)</h3>
+        <p>Un remède plus présent pour la graisse installée. Mariez 750 ml d’eau chaude, deux cuillères de savon noir, du bicarbonate et une onction de vinaigre. La réaction effervescente qui s'élève est le signe de l'éveil des agents actifs. Laissez agir 10 minutes avant de rincer.</p>
+
+        <h3>3. Le Feu de Pureté (Cas Critiques)</h3>
+        <p>Pour les grilles de four et les hottes oubliées. Dissolvez des <strong>cristaux de soude</strong> dans de l’eau à 60°C avec un peu de savon noir. Ce mélange puissant transmute les graisses les plus dures en un fluide facile à évacuer. <em>Conseil de l'Apothicaire : Portez des gants pour protéger vos mains de cette force minérale.</em></p>
+
+        <section class="encadre-hero">
+            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/hero-maison.jpg');">
+                <h3 class="encadre-titre">L'Arsenal de la Clarté</h3>
+                <p class="encadre-sous-titre">Des substances pures et des instruments nobles piochés dans notre grimoire.</p>
+                <div class="liste-selectionnable">
+                    <a href="https://www.amazon.fr/MARIUS-FABRE-lhuile-dolive-multi-usage/dp/B0013EO24C?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3T3D5Q0OBMKE1&dib=eyJ2IjoiMSJ9.Zn-d6WHiMp9w-VF9EfuVFELk8DeCrsKILdRh8mLNSO7vv1djLIpzYYQQ_YMVDoEhUIfevXBou9QyARzcMkobf7nIr5tcKnWMD7a6s6FKYtfpoGMocjxBM4s2j70OCTY2QUSJUC1PYQVR8Flk_pWplyTllg_4jle4wMz9g1_nzapCALCESCnwrQgeuEHCk06yldAD3OI0iIq___cztknJWCVx9ryNjAYf_PT2rGBAorwPOYvKwIXcwkkFR_JE6CutdJV7F3XdgaK2STwiddCPyaeyY7Xrs4QRI5xT2SPfyUE.xrs_PlZ_JhaZY21XBWa9sZLrTHevgV7PGMR90Uyh_qA&dib_tag=se&keywords=le+Savon+Noir+%C3%A0+l%27Huile+d%27Olive+%28Marius+Fabre%29.&qid=1777015941&sprefix=le+savon+noir+%C3%A0+l%27huile+d%27olive+marius+fabre+.%2Caps%2C227&sr=8-2&linkCode=ll2&tag=zencheztoi-21&linkId=e38e798c1848a2e1a67d13ca992b747d&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="item-link">
+                        <span>L'Onction d'Olive Sacrée <small>Savon Noir liquide pur Marius Fabre pour déloger les sédiments</small></span> <span>→</span>
+                    </a>
+                    <a href="https://www.amazon.fr/DSproducts%C2%AE-Chiffons-Microfibre-Nettoyage-Lingette/dp/B0CSZ5MXH8?crid=1WOGC45Y4JR7A&dib=eyJ2IjoiMSJ9.SeO-M3hoDFIvl6JfKR_be86505VkKC2mnQKbzPKnLgEtkqD5gp7cRZmGCJx_4AVwU5xjwITxv5rj58m-6PjifJTwOv9oOU_CGVsC4G_6ZZk7Ejt88NZXDCKusc1aK7PkYi3ysUqd_NNGQht555okU5c5wEUN08Ypuw3vtvF8R_q1aUCOOYH1eYtFVVfDH9jqmwsmRt0TlK3iz1V-h1qtAjKhezXaIj7RjhbAL7cRVuM88mDt8swlAzHMTi_J8E41b6XyqOFxwK4eaHqqFjUWBqmNOFGXnUukHkjYY49nRZg.tGQw2apQ1gbDofPAENXE9cry9fLXqBj9x0dYSNxNtes&dib_tag=se&keywords=microfibre+ecologique&qid=1776767700&sprefix=microfibre+ecologoque%2Caps%2C234&sr=8-5&linkCode=ll2&tag=zencheztoi-21&linkId=264db99a92f4f3ed3b620019e12cd1d9&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="item-link">
+                        <span>Le Capteur de Traces <small>Lingettes microfibres carbone pour une finition sans voile gras</small></span> <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <h2>Restaurer l'Équilibre de l'Âtre</h2>
+        <p>Ne visez pas une perfection stérile, mais une clarté vivante. En adoptant ce plan simple sur deux semaines, vous transformez votre cuisine en un lieu où l'énergie circule librement. Un nettoyage ciblé, une onction de savon noir et le respect des temps de pose suffisent à magnifier votre demeure sans jamais agresser votre santé ou celle de la Terre. L'alchimie de l'entretien naturel est une marche vers la souveraineté de votre foyer.</p>
+
+        <section class="encadre-hero">
+            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/hero-accueil.jpg');">
+                <h3 class="encadre-titre">Continuer la Fondation</h3>
+                <p class="encadre-sous-titre">Explorez d'autres rituels pour purifier et protéger votre temple domestique.</p>
+                <div class="liste-selectionnable">
+                    <a href="canalisations.html" class="item-link">
+                        <span>Le Flux Libéré <small>Chronique : Entretien naturel des canalisations</small></span> <span>→</span>
+                    </a>
+                    <a href="mauvaises-odeurs.html" class="item-link">
+                        <span>Le Vent de Clarté <small>Chronique : Éliminer les odeurs du foyer au naturel</small></span> <span>→</span>
+                    </a>
+                    <a href="maison.html" class="item-link">
+                        <span>Le Volume 1 Complet <small>La Table des Matières du Grimoire de la Maison</small></span> <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <section class="encyclopedie-section" style="background-color: var(--blanc); padding: 80px 20px; text-align: center; border-top: 1px solid #eee;">
+        <h2 style="font-variant: small-caps; font-size: 2.2em; color: var(--brun-sombre); margin-bottom: 20px;">Emportez nos savoirs avec vous</h2>
+        <div class="pills-row">
+            <a href="encyclopedie.html#vol1" class="pill p1">Vol 1 : Fondation</a>
+            <a href="encyclopedie.html#vol2" class="pill p2">Vol 2 : Enracinement</a>
+            <a href="encyclopedie.html#vol3" class="pill p3">Vol 3 : Éclosion</a>
+            <a href="encyclopedie.html#vol4" class="pill p4">Vol 4 : Harmonie</a>
+            <a href="encyclopedie.html#vol5" class="pill p5">Vol 5 : Élévation</a>
+        </div>
+        <div style="margin-top: 40px; font-size: 1.2em; font-style: italic; color: var(--brun-sombre);">
+            Le Volume : <span style="color:var(--or-zen); font-weight:bold;">14.90€</span> — Pack Trio : <span style="color:var(--or-zen); font-weight:bold;">24.90€</span> — L'Intégrale : <span style="color:var(--or-zen); font-weight:bold;">39.90€</span>
+        </div>
     </section>
 
-    <section>
-      <h2>Un petit plan simple pour la cuisine</h2>
-      <p>
-        Plutôt que de viser une cuisine “parfaite”, tu peux poser un rythme réaliste : un peu chaque jour, un peu mieux de temps en temps, sans tout refaire à zéro.[web:1187][web:1183]
-      </p>
+    <footer>
+        <a href="index.html" class="footer-logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
+        <ul class="footer-nav-compact">
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+            <li><a href="confidentialite.html">Confidentialité</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+            <li><a href="a-propos.html">À Propos</a></li>
+            <li><a href="livre-or.html">Livre d'Or</a></li>
+        </ul>
+        <p style="font-size: 0.85em; opacity: 0.4;">&copy; 2026 Zen Chez Toi • L'Harmonie au Naturel.</p>
+    </footer>
 
-      <div class="box">
-        <div class="box-title">En pratique sur 2 semaines</div>
-        <p>
-          Jour 1 : choisir une zone “prioritaire” (plaques + crédence) et laisser agir le dégraissant avant d’essuyer.<br>
-          Semaine 1 : faire un passage plus appuyé sur la hotte et les poignées, une fois dans la semaine.<br>
-          Semaine 2 : recommencer sur une autre zone (portes de placard, plan de travail) et ajuster le rythme selon ton énergie.[web:1187][web:1189]
-        </p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="footer-logo">Zen <em>Chez</em> Toi</div>
-    <div class="footer-links">
-      <a href="mentions-legales.html">Mentions légales</a>
-      <a href="confidentialite.html">Politique de confidentialité</a>
-      <a href="cookies.html">Gestion des cookies</a>
-      <a href="index.html">Accueil</a>
-      <a href="blog.html">Blog</a>
-    </div>
-    <p style="margin-top:20px; opacity:0.3; font-size:0.8rem;">
-      © 2026 Zen Chez Toi — Tous droits réservés.
-    </p>
-  </footer>
-
-  <div id="disclaimer-bar">
-    🔗 Liens affiliés Amazon : En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.
-  </div>
+    <div id="disclaimer-bar">🔗 Liens affiliés Amazon : Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises. Maison & Fondation : privilégiez toujours le test sur petite surface.</div>
 
 </body>
 </html>

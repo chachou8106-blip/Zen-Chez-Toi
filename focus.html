@@ -1,398 +1,268 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus & Concentration : l'Alchimie de la Clarté Mentale | Zen Chez Toi</title>
 
-  <title>Focus &amp; concentration : gestes doux pour retrouver le fil | Zen Chez Toi</title>
-  <meta name="description" content="Des gestes simples pour soutenir votre concentration : respirations, organisation douce, pauses, environnement apaisé et petites routines pour votre cerveau.">
+    <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRV5YNRL57"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-JRV5YNRL57');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7501098246029504" crossorigin="anonymous"></script>
 
-  <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
+    <meta name="description" content="Découvrez l'alchimie pour retrouver votre concentration. Des rituels doux, le souffle ancré et le silence pour protéger votre sanctuaire mental des distractions.">
+    <link rel="icon" type="image/png" href="assets/logo.png">
 
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRV5YNRL57"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-JRV5YNRL57');
-  </script>
+    <style>
+        :root {
+            --bg-sable: #f5f2ec; --blanc: #ffffff; --brun-sombre: #2b2622; --or-zen: #a67b51;
+            --maison: #6a7f8f; --jardin: #7b9074; --corps: #cca8a0; --bienetre: #d4a259; --eso: #826a8f;
+            
+            /* THÈME BIEN-ÊTRE ACTIVÉ */
+            --theme-article: var(--bienetre);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.8; overflow-x: hidden; }
 
-  <!-- Google AdSense global -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js?client=ca-pub-7501098246029504"
-          crossorigin="anonymous"></script>
+        /* --- HEADER & NAVIGATION --- */
+        header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; }
+        .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
+        
+        /* AURA LOGO HEADER */
+        .logo { display: inline-block; text-decoration: none; transition: 0.4s ease; }
+        .logo img { max-height: 90px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2)); transition: 0.5s ease; }
+        .logo:hover img { 
+            filter: drop-shadow(0 0 25px var(--theme-article)) drop-shadow(0 0 10px var(--theme-article)); 
+            transform: scale(1.05); 
+        }
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+        .header-right { display: flex; align-items: center; gap: 40px; }
+        nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
+        nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
+        nav a:hover { color: var(--theme-article); }
 
-  <style>
-    :root {
-      --bg: #f8f5f9;
-      --text: #2d2633;
-      --muted: #62566d;
-      --accent: #9b72c2; 
-      --dark: #1a1421;
-      --surface: rgba(255,255,255,.9);
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      color: var(--text);
-      background: var(--bg);
-      line-height: 1.7;
-    }
-    a { text-decoration: none; color: inherit; transition: 0.3s; }
+        .dropdown { position: relative; display: inline-block; padding: 15px 0; cursor: pointer; }
+        .dropdown-content { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background-color: var(--brun-sombre); min-width: 200px; box-shadow: 0px 10px 25px rgba(0,0,0,0.3); z-index: 2100; border-radius: 8px; border: 1px solid var(--theme-article); overflow: hidden; }
+        .dropdown-content a { color: rgba(255,255,255,0.8) !important; padding: 12px 20px; display: block; font-size: 0.95em; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1); font-variant: small-caps; }
+        .dropdown-content a:hover { background-color: var(--theme-article); color: #fff !important; }
+        .dropdown:hover .dropdown-content { display: block; }
 
-    /* HERO */
-    .hero-inner {
-      padding: 80px 20px 40px;
-      max-width: 900px;
-      margin: 0 auto;
-      text-align: center;
-    }
-    h1 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(2.3rem, 5vw, 3.2rem);
-      margin-bottom: 10px;
-    }
-    .hero-kicker {
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      font-size: 0.8rem;
-      color: var(--muted);
-      font-weight: 700;
-      margin-bottom: 6px;
-    }
-    .hero-sub {
-      font-size: 1.02rem;
-      color: var(--muted);
-      max-width: 640px;
-      margin: 0 auto 20px;
-    }
-    .hero-note {
-      font-family: 'Cormorant Garamond', serif;
-      font-style: italic;
-      font-size: 1.05rem;
-      color: var(--muted);
-    }
+        /* AURA PINTEREST */
+        .pinterest-badge { display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; font-style: italic; background: rgba(255,255,255,0.1); transition: 0.4s; }
+        .pinterest-badge:hover { 
+            background: var(--theme-article); 
+            border-color: var(--theme-article); 
+            transform: rotate(15deg) scale(1.1);
+            box-shadow: 0 0 20px var(--theme-article);
+        }
 
-    /* NAVIGATION */
-    .main-nav {
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      background: rgba(248, 245, 249, 0.96);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(0,0,0,0.08);
-    }
-    .nav-wrap {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 12px 16px;
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      flex-wrap: wrap;
-      align-items: center;
-    }
-    .nav-wrap a {
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      font-weight: 700;
-      color: var(--muted);
-      letter-spacing: 0.1em;
-      padding: 4px 8px;
-    }
-    .nav-wrap a:hover,
-    .nav-wrap a.active { color: var(--accent); }
-    .dot { color: rgba(0,0,0,0.1); font-size: 0.7rem; }
+        /* --- HERO ARTICLE --- */
+        .hero { height: 75vh; min-height: 500px; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('assets/hero-bienetre.jpg') center/cover no-repeat fixed; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; }
+        .vol-phrase { font-size: clamp(1.4em, 3vw, 2em); font-variant: small-caps; letter-spacing: 5px; font-weight: bold; margin-bottom: 15px; color: var(--theme-article); text-shadow: 0 4px 15px rgba(0,0,0,0.9), 0 2px 5px rgba(0,0,0,1); -webkit-text-stroke: 0.5px rgba(255,255,255,0.8); }
+        .hero h1 { font-size: clamp(2.5em, 6vw, 4.5em); font-weight: normal; margin-bottom: 20px; line-height: 1.2; font-variant: small-caps; text-shadow: 0 4px 15px rgba(0,0,0,0.8); max-width: 1000px; }
+        .tagline { font-size: clamp(1.1em, 2vw, 1.5em); font-style: italic; opacity: 0.9; max-width: 800px; line-height: 1.5; }
 
-    /* CONTENU */
-    main {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 30px 20px 70px;
-    }
-    h2 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.8rem;
-      margin-top: 40px;
-      margin-bottom: 12px;
-    }
-    h3 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.3rem;
-      margin-top: 28px;
-      margin-bottom: 8px;
-    }
-    p { margin: 0 0 12px; }
+        /* --- CORPS DU TEXTE --- */
+        .blog-container { max-width: 800px; margin: 60px auto 60px; padding: 0 20px; font-size: 1.15rem; color: #333; }
+        .blog-container h2 { font-size: 2.2em; color: var(--theme-article); margin: 60px 0 25px; font-variant: small-caps; text-align: center; font-weight: normal; }
+        .blog-container h3 { font-size: 1.5em; color: var(--brun-sombre); margin: 50px 0 15px; font-variant: small-caps; border-bottom: 1px solid rgba(212, 162, 89, 0.4); padding-bottom: 8px; }
+        .blog-container p { margin-bottom: 25px; text-align: justify; }
+        .blog-container ul, .blog-container ol { margin-bottom: 25px; padding-left: 20px; }
+        .blog-container li { margin-bottom: 10px; }
 
-    .box {
-      background: var(--surface);
-      border-radius: 18px;
-      padding: 18px 18px 16px;
-      margin: 22px 0;
-      box-shadow: 0 12px 28px rgba(0,0,0,0.05);
-      border: 1px solid rgba(0,0,0,0.02);
-    }
-    .box-title {
-      font-weight: 700;
-      font-size: 0.9rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--muted);
-      margin-bottom: 6px;
-    }
-    ul, ol {
-      padding-left: 18px;
-      margin: 0 0 12px;
-    }
+        /* --- NOTES & ENCADRÉS --- */
+        .alchimiste-note { background: var(--blanc); border-left: 4px solid var(--theme-article); padding: 30px; margin: 50px 0; border-radius: 0 20px 20px 0; box-shadow: 0 15px 40px rgba(0,0,0,0.05); }
+        .note-titre { display: block; font-variant: small-caps; color: var(--theme-article); font-weight: bold; font-size: 1.3em; margin-bottom: 15px; }
 
-    .products-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 14px;
-      margin-top: 10px;
-    }
-    .product-card {
-      background: white;
-      border-radius: 14px;
-      padding: 12px 14px;
-      border: 1px solid rgba(0,0,0,0.04);
-    }
-    .product-card strong { display: block; margin-bottom: 4px; }
+        .encadre-hero { margin: 80px 0; border-radius: 30px; overflow: hidden; border: 5px solid var(--theme-article); box-shadow: 0 20px 50px rgba(0,0,0,0.2); }
+        .cadre-fond { padding: 60px 40px; text-align: center; background-size: cover; background-position: center; background-attachment: fixed; }
+        .encadre-titre { font-size: 2.5em; font-variant: small-caps; color: var(--brun-sombre); -webkit-text-stroke: 0.5px #ffffff; margin-bottom: 10px; text-shadow: 0 4px 15px rgba(0,0,0,0.6); letter-spacing: 1px; }
+        .encadre-sous-titre { font-style: italic; font-size: 1.1em; color: #fff; margin-bottom: 30px; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
+        
+        .liste-selectionnable { display: flex; flex-direction: column; gap: 15px; max-width: 650px; margin: 0 auto; }
+        
+        /* AURA LIENS PRODUITS */
+        .item-link { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; padding: 18px 35px; display: flex; align-items: center; justify-content: space-between; text-decoration: none; color: #fff; transition: 0.4s ease; }
+        .item-link:hover { 
+            transform: scale(1.03); 
+            border-color: #fff; 
+            background: var(--theme-article); 
+            box-shadow: 0 0 25px var(--theme-article);
+        }
+        .item-link span { font-weight: bold; font-variant: small-caps; font-size: 1.1em; text-align: left; }
+        .item-link span small { display: block; font-size: 0.75em; font-family: 'Georgia', serif; font-style: italic; opacity: 0.8; text-transform: none; font-weight: normal; }
 
-    /* FOOTER */
-    .footer {
-      background: var(--dark);
-      color: #f3dfca;
-      padding: 50px 20px 80px;
-      text-align: center;
-      margin-top: 20px;
-    }
-    .footer-logo {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 2.4rem;
-      margin-bottom: 10px;
-    }
-    .footer-logo em { color: var(--accent); font-style: italic; }
-    .footer-links {
-      display: flex; justify-content: center; gap: 16px;
-      opacity: 0.6; font-size: 0.85rem; flex-wrap: wrap;
-      margin: 16px 0;
-    }
-    #disclaimer-bar {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background: rgba(0,0,0,0.95);
-      color: rgba(255,255,255,0.6);
-      font-size: 0.75rem;
-      text-align: center;
-      padding: 10px;
-      z-index: 1000;
-      border-top: 1px solid rgba(255,255,255,0.1);
-    }
-  </style>
+        /* --- ENCYCLOPÉDIE --- */
+        .encyclopedie-section { background-color: var(--blanc); padding: 80px 20px; text-align: center; border-top: 1px solid #eee; }
+        .pills-row { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 30px; }
+        .pill { padding: 10px 20px; border: 2px solid; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 0.9em; text-decoration: none; background: #fff; transition: 0.3s; }
+        .p1 { border-color: var(--maison); color: var(--maison); } .p1:hover { background: var(--maison); color: #fff; box-shadow: 0 0 15px var(--maison); }
+        .p2 { border-color: var(--jardin); color: var(--jardin); } .p2:hover { background: var(--jardin); color: #fff; box-shadow: 0 0 15px var(--jardin); }
+        .p3 { border-color: var(--corps); color: var(--corps); } .p3:hover { background: var(--corps); color: #fff; box-shadow: 0 0 15px var(--corps); }
+        .p4 { border-color: var(--bienetre); color: var(--bienetre); } .p4:hover { background: var(--bienetre); color: #fff; box-shadow: 0 0 15px var(--bienetre); }
+        .p5 { border-color: var(--eso); color: var(--eso); } .p5:hover { background: var(--eso); color: #fff; box-shadow: 0 0 15px var(--eso); }
+
+        /* --- FOOTER --- */
+        footer { background: var(--brun-sombre); color: #fff; padding: 80px 20px; text-align: center; }
+        
+        /* AURA LOGO FOOTER */
+        .footer-logo { display: inline-block; transition: 0.4s ease; margin-bottom: 30px; }
+        .footer-logo img { height: 60px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.4)); transition: 0.5s; }
+        .footer-logo:hover img { 
+            filter: drop-shadow(0 0 25px var(--theme-article)) drop-shadow(0 0 10px var(--theme-article)); 
+            transform: scale(1.05); 
+        }
+        
+        .footer-nav-compact { display: flex; gap: 30px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; flex-wrap: wrap; }
+        .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.6; font-variant: small-caps; transition: 0.3s; }
+        .footer-nav-compact a:hover { opacity: 1; color: var(--theme-article); text-shadow: 0 0 10px var(--theme-article); }
+
+        #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
+
+        @media (max-width: 768px) {
+            header { padding: 15px 0; }
+            .logo img { max-height: 70px; } 
+            .nav-container { flex-direction: column; gap: 15px; padding: 10px 20px; }
+            .header-right { flex-direction: column; gap: 15px; align-items: center; width: 100%; }
+            nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; }
+            .hero { padding-top: 350px !important; justify-content: flex-start !important; height: auto !important; padding-bottom: 60px; }
+            .hero h1 { font-size: 2.2em; }
+            .item-link { flex-direction: column; text-align: center; padding: 15px; }
+            .item-link span { text-align: center; }
+            .encadre-titre { font-size: 2em; }
+        }
+    </style>
 </head>
 <body>
 
-  <nav class="main-nav" aria-label="Navigation principale">
-    <div class="nav-wrap">
-      <a href="index.html">Accueil</a><span class="dot">&bull;</span>
-      <a href="eso.html">Ésotérisme</a><span class="dot">&bull;</span>
-      <a href="jardin.html">Jardin</a><span class="dot">&bull;</span>
-      <a href="maison.html">Maison</a><span class="dot">&bull;</span>
-      <a href="bienetre.html" class="active">Bien-être</a><span class="dot">&bull;</span>
-      <a href="corps.html">Corps</a>
-    </div>
-  </nav>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
+            <div class="header-right">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li class="dropdown">
+                            <a href="grimoire.html">Grimoire</a>
+                            <div class="dropdown-content">
+                                <a href="maison.html">Vol 1 : Fondation</a>
+                                <a href="jardin.html">Vol 2 : Enracinement</a>
+                                <a href="corps.html">Vol 3 : Éclosion</a>
+                                <a href="bienetre.html">Vol 4 : Harmonie</a>
+                                <a href="eso.html">Vol 5 : Élévation</a>
+                            </div>
+                        </li>
+                        <li><a href="blog.html">Journal</a></li>
+                        <li><a href="encyclopedie.html">Encyclopédie</a></li>
+                        <li><a href="livre-or.html">Livre d'Or</a></li>
+                    </ul>
+                </nav>
+                <a href="https://www.pinterest.fr/zencheztoi/" class="pinterest-badge" target="_blank" title="Inspirations pour l'Harmonie">p</a>
+            </div>
+        </div>
+    </header>
 
-  <header class="hero-inner">
-    <div class="hero-kicker">Bien-être · Focus</div>
-    <h1>Focus &amp; concentration : gestes doux pour retrouver le fil</h1>
-    <p class="hero-sub">
-      Notifs, pensées qui partent dans tous les sens, multitâche… Il devient difficile de rester vraiment présent·e à ce que l’on fait. Vous pouvez recréer des îlots de concentration, à votre manière.[web:274][web:280]
-    </p>
-    <p class="hero-note">
-      Ici, pas de culte de la productivité : seulement des pistes pour vous aider à vous rassembler, sans vous crisper.[web:277][web:283]
-    </p>
-  </header>
+    <section class="hero">
+        <p class="vol-phrase">Volume 4 : Harmonie • Chronique</p>
+        <h1>Focus & Concentration : l'Alchimie de la Clarté Mentale</h1>
+        <p class="tagline">« Quand l'esprit s'éparpille dans le bruit du monde, il faut recréer le sanctuaire. Apprenez à rassembler votre énergie et retrouver le fil par des rituels doux et ancrés. »</p>
+    </section>
 
-  <main>
-    <section id="comprendre">
-      <h2>Comprendre votre concentration sans culpabilité</h2>
-      <p>
-        La concentration est mise à rude épreuve dans un quotidien rempli de sollicitations : écrans, notifications, charge mentale, stress, fatigue.[web:274][web:277][web:280]
-        Le cerveau a du mal à rester longtemps sur une même chose sans pause.[web:276][web:279][web:282]
-      </p>
-      <p>
-        Plutôt que de vous juger, vous pouvez observer ce qui vous aide à être un peu plus présent·e : le contexte, le moment de la journée, le type de tâche, le niveau de bruit, l’état de votre corps.[web:274][web:280]
-      </p>
-      <div class="box">
-        <div class="box-title">Ce que vous pouvez remarquer</div>
+    <main class="blog-container">
+
+        <p>Dans l'alchimie du bien-être, la concentration n'est pas une question de force brute ou de productivité acharnée ; c'est la <strong>polarisation de l'esprit</strong>. Notifications incessantes, pensées vagabondes et stress accumulé agissent comme des vents contraires qui dispersent votre sève mentale. Retrouver le fil de votre attention, c'est apprendre à construire des îlots de silence intérieurs, des moments où vous reprenez la souveraineté sur votre propre temps.</p>
+
+        <div class="alchimiste-note">
+            <span class="note-titre">Le Mythe du Multitâche</span>
+            <p>L'illusion moderne voudrait que l'esprit puisse traiter plusieurs flux à la fois. C'est une erreur vibratoire. À chaque changement de tâche, votre cerveau brûle une précieuse énergie d'adaptation. Cultiver le focus, c'est s'autoriser à n'être présent qu'à une seule chose, pleinement et consciemment.</p>
+        </div>
+
+        <h2>Comprendre la Dispersion sans Culpabilité</h2>
+        <p>La fatigue mentale après une longue exposition aux écrans ou l'envie irrépressible de vérifier vos messages sont les symptômes d'un système nerveux saturé. Plutôt que de juger votre manque d'attention, observez le terrain. Quel est le niveau de bruit de votre environnement ? Avez-vous nourri votre esprit de pauses véritables ? La concentration émerge naturellement d'un terreau apaisé.</p>
+
+        <h2>5 Rituels pour Reconstruire le Sanctuaire Mental</h2>
+        <p>Ces gestes ne sont pas des lois rigides, mais des clés pour inviter la présence à soi :</p>
         <ul>
-          <li>Difficulté à rester sur une tâche plus de quelques minutes sans être distrait·e.[web:274][web:277][web:280][web:283]</li>
-          <li>Envie fréquente de vérifier votre téléphone, vos mails, vos réseaux.[web:274][web:280]</li>
-          <li>Fatigue mentale ou agitation intérieure après de longues périodes devant les écrans.[web:274][web:279][web:280]</li>
+            <li><strong>L'Intention Unique :</strong> Avant toute action, prenez une minute pour clarifier votre objectif. Ne fixez qu'un seul cap pour éviter la dispersion du regard.</li>
+            <li><strong>La Bulle de Temps (Pomodoro Doux) :</strong> Mettez le monde en sourdine. Accordez-vous 25 minutes de focus pur, protégées de toute interruption, suivies de 5 minutes de respiration libératrice.</li>
+            <li><strong>L'Ancrage du Souffle :</strong> Avant de plonger dans votre tâche, inspirez par le nez sur 4 temps, retenez sur 2, expirez sur 6. Ce rythme calme l'agitation interne et centre la matière grise.</li>
+            <li><strong>L'Épuration Spatiale :</strong> Fermez les onglets inutiles, dégagez votre table. Un environnement clarifié renvoie une fréquence de calme à votre esprit.</li>
+            <li><strong>L'Écriture de Décharge :</strong> Si des pensées parasites tournent en boucle, jetez-les sur un carnet. L'acte d'écrire vide le sanctuaire mental de ce qui l'encombre.</li>
         </ul>
-      </div>
-    </section>
 
-    <section id="gestes">
-      <h2>Rituels pour soutenir votre focus au quotidien</h2>
-      <p>
-        Vous pouvez tester un ou deux rituels à la fois, et voir ce qui vous aide vraiment. Le but n’est pas de rester concentré toute la journée, mais de créer des plages de vraie présence à ce que vous faites.[web:274][web:277][web:280][web:283]
-      </p>
+        <section class="encadre-hero">
+            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/hero-bienetre.jpg');">
+                <h3 class="encadre-titre">L'Arsenal de la Présence</h3>
+                <p class="encadre-sous-titre">Des outils nobles et apaisants pour structurer votre temps et protéger votre silence.</p>
+                <div class="liste-selectionnable">
+                    <a href="https://www.amazon.fr/Cuteefun-Num%C3%A9rique-Affichage-Silencieux-Productivit%C3%A9/dp/B0G521L3S3?tag=zencheztoi-21" target="_blank" rel="nofollow sponsored" class="item-link">
+                        <span>Le Gardien du Temps <small>Minuteur Pomodoro Cuteefun silencieux pour structurer vos bulles de focus</small></span> <span>→</span>
+                    </a>
+                    <a href="https://www.amazon.fr/certifi%C3%A9-%C3%89criture-Couverture-%C3%A9co-responsable-%C3%A9crivant/dp/B0DT14P82T?tag=zencheztoi-21" target="_blank" rel="nofollow sponsored" class="item-link">
+                        <span>Le Réceptacle des Pensées <small>Carnet éco-responsable pour décharger votre charge mentale</small></span> <span>→</span>
+                    </a>
+                    <a href="https://www.amazon.fr/Boules-Protection-Auditive-Naturelle-Quies%C3%82/dp/B01M8KPCPO?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3ORY5U6X9XIVJ&dib=eyJ2IjoiMSJ9.jJN1f0Zr_hdp8SZahklhot-2nDlnTYkMMJJZISAqykYr8rw5bvbK5wJVG9609yHAEeR3odXvvMYqQRt2Ga38umda91BHG5andsIKzzWwqxeP1m78U8g7AlxXrMeyxjpqgqPqsfk8vWq_DyNfQnWUQnVWFZoYFUpR492clWcB4qFjR0wbf1YC7q4BnrhUcRk2IIyNNq5up8A3pbDzojR87edFjEla7NF-9G4ladA8N6lJPEBLcjXUbc2Tr7VTAIyoDYXLXlgrQfYe5vewmYCwRMk7QGeibk1eHAyNUyuELl0.bHYzJ1VaHWWVQfNqfOfEq81Eyl5-NT7G-3V335hs34o&dib_tag=se&keywords=bouchon+anti+bruit+naturel&qid=1776754057&sprefix=bouchon+anti+bruit+naturel%2Caps%2C239&sr=8-9&linkCode=ll2&tag=zencheztoi-21&linkId=2e9eb3773cdae23b633699b8b42b1361&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="item-link">
+                        <span>Le Sceau du Silence <small>Bouchons de cire naturelle Quies pour isoler votre espace vibratoire</small></span> <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-      <h3>Rituel 1 · Commencer par clarifier une seule intention</h3>
-      <p>
-        Avant une période de travail ou de concentration, prenez une minute pour noter ce qui est vraiment important pendant ce temps : une tâche principale, éventuellement une deuxième.[web:274][web:280][web:283]
-        Cela évite de passer d’une activité à l’autre sans fil conducteur.
-      </p>
+        <h2>Installer le Focus comme un Rendez-vous avec Soi</h2>
+        <p>Ne guettez pas l'arrivée hypothétique de la "motivation". La concentration se cultive. Décidez d'un moment de la journée où vous vous offrez ce bloc de temps protégé. Enfilez vos bouchons de cire, déclenchez votre minuteur et respirez. Le fait de revenir, encore et encore, à votre intention, même lorsque l'esprit tente de s'échapper, est le véritable travail de l'alchimiste : rééduquer doucement son attention pour redevenir maître de son royaume intérieur.</p>
 
-      <h3>Rituel 2 · Créer une bulle de temps (25 + 5)</h3>
-      <p>
-        Vous pouvez utiliser une version douce de la méthode Pomodoro : 25 minutes pour vous concentrer sur une tâche, puis 5 minutes de pause.[web:275][web:277][web:281][web:1330]
-        Pendant les 25 minutes, vous mettez votre téléphone en mode silencieux/loin, et vous vous autorisez à ignorer le reste.[web:274][web:277][web:281]
-      </p>
+        <section class="encadre-hero">
+            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/hero-accueil.jpg');">
+                <h3 class="encadre-titre">Continuer l'Harmonie</h3>
+                <p class="encadre-sous-titre">Explorez d'autres rituels pour magnifier votre clarté intérieure.</p>
+                <div class="liste-selectionnable">
+                    <a href="sommeil-profond.html" class="item-link">
+                        <span>L'Alchimie du Repos <small>Chronique : Rituels du soir pour un sommeil régénérateur</small></span> <span>→</span>
+                    </a>
+                    <a href="immunite.html" class="item-link">
+                        <span>Le Bouclier Vital <small>Chronique : Soutenir ses défenses naturelles en douceur</small></span> <span>→</span>
+                    </a>
+                    <a href="bienetre.html" class="item-link">
+                        <span>Le Volume 4 Complet <small>Découvrir tous les secrets de l'Harmonie</small></span> <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-      <h3>Rituel 3 · Une respiration pour rassembler l’attention</h3>
-      <p>
-        Avant ou pendant votre temps de focus, prenez quelques respirations lentes : inspirez par le nez sur 4 temps, retenez l’air 2 ou 3 temps, puis expirez doucement sur 6 ou 8 temps.[web:274][web:277][web:279][web:282][web:283][web:1330]
-        Répétez 3 à 5 fois. Cela aide le système nerveux à se poser, et rend la concentration plus accessible.[web:1324][web:1327]
-      </p>
+    </main>
 
-      <h3>Rituel 4 · Simplifier l’environnement immédiat</h3>
-      <p>
-        Avant de commencer, prenez 2 minutes pour ranger un peu la zone autour de vous : enlever ce qui n’est pas utile, fermer les onglets non nécessaires, poser votre carnet à portée de main.[web:274][web:280][web:283][web:1333]
-        Un environnement moins saturé soutient souvent un esprit moins dispersé.[web:1327][web:1333]
-      </p>
-
-      <h3>Rituel 5 · Donner de la place aux pauses</h3>
-      <p>
-        Entre deux blocs de concentration, accordez‑vous de vraies pauses : marcher, boire un verre d’eau, regarder par la fenêtre, respirer.[web:276][web:279][web:282]
-        Le cerveau a besoin de moments sans sollicitation pour consolider ce que vous venez de faire.[web:276][web:279][web:282][web:1324]
-      </p>
-
-      <div class="box">
-        <div class="box-title">À garder en tête</div>
-        <p>
-          Si vous avez des difficultés de concentration très anciennes ou importantes, un bilan avec un professionnel (médecin, neuropsychologue, etc.) peut être utile.[web:277][web:280]
-          Les rituels proposés ici sont des soutiens du quotidien, pas un diagnostic ni un traitement.
-        </p>
-      </div>
-    </section>
-
-    <!-- NOUVELLE SECTION : gestes express -->
-    <section id="gestes-express">
-      <h2>3 gestes express quand l’esprit se met à papillonner</h2>
-      <p>
-        Quand vous sentez que votre attention part dans tous les sens, vous pouvez tester ce petit trio de gestes pour vous recentrer sans vous brusquer.[web:1324][web:1327]
-      </p>
-
-      <div class="box">
-        <div class="box-title">1. Une minute de respiration ancrée</div>
-        <p>
-          Posez les pieds au sol, détendez les épaules et fermez les yeux si c’est possible, puis pratiquez 4 cycles de respiration 4‑7‑8 : inspirez 4 temps, retenez 7 temps, expirez 8 temps.[web:1330]
-          Cet exercice simple aide à calmer l’agitation interne et à ramener l’attention dans le corps, ce qui prépare mieux au focus qu’un effort de volonté seule.[web:1324][web:1327]
-        </p>
-      </div>
-
-      <div class="box">
-        <div class="box-title">2. Écrire ce qui encombre la tête</div>
-        <p>
-          Prenez votre carnet et notez tout ce qui tourne en boucle : idées, tâches à ne pas oublier, préoccupations.[web:1327][web:1333]
-          Le fait de poser ces pensées à l’extérieur les rend souvent moins envahissantes et libère un peu d’espace pour la tâche du moment.[web:1324][web:1327]
-        </p>
-      </div>
-
-      <div class="box">
-        <div class="box-title">3. Créer une micro-bulle de silence</div>
-        <p>
-          Si le bruit vous disperse, mettez des bouchons d’oreilles ou un casque qui atténue le son, puis lancez un simple bloc de 15 à 25 minutes avec un minuteur dédié plutôt que votre téléphone.[web:1326][web:1329][web:1330]
-          Réduire le volume sonore de quelques décibels et externaliser la gestion du temps suffisent souvent à rendre la concentration plus accessible.[web:1326][web:1333]
-        </p>
-      </div>
-    </section>
-
-    <section id="produits">
-      <h2>Outils doux pour soutenir votre concentration</h2>
-      <p>
-        Quelques outils simples peuvent vous aider à ritualiser vos temps de focus et à rendre l’expérience plus agréable, sans obligation.[web:274][web:277][web:280]
-      </p>
-      <div class="products-grid">
-        <div class="product-card">
-          <strong>Timer Pomodoro Cuteefun</strong>
-          <p>
-            Un minuteur numérique silencieux pour structurer vos blocs de travail (25 minutes + 5 minutes de pause) sans dépendre de votre téléphone.[web:1330]
-          </p>
-          <a href="https://www.amazon.fr/Cuteefun-Num%C3%A9rique-Affichage-Silencieux-Productivit%C3%A9/dp/B0G521L3S3?tag=zencheztoi-21" target="_blank" rel="noopener noreferrer">
-            Voir sur Amazon
-          </a>
+    <section class="encyclopedie-section" style="background-color: var(--blanc); padding: 80px 20px; text-align: center; border-top: 1px solid #eee;">
+        <h2 style="font-variant: small-caps; font-size: 2.2em; color: var(--brun-sombre); margin-bottom: 20px;">Emporte nos savoirs avec toi</h2>
+        <div class="pills-row">
+            <a href="encyclopedie.html#vol1" class="pill p1">Vol 1 : Fondation</a>
+            <a href="encyclopedie.html#vol2" class="pill p2">Vol 2 : Enracinement</a>
+            <a href="encyclopedie.html#vol3" class="pill p3">Vol 3 : Éclosion</a>
+            <a href="encyclopedie.html#vol4" class="pill p4">Vol 4 : Harmonie</a>
+            <a href="encyclopedie.html#vol5" class="pill p5">Vol 5 : Élévation</a>
         </div>
-        <div class="product-card">
-          <strong>Carnet recyclé éco-responsable</strong>
-          <p>
-            Un carnet à couverture éco-responsable pour noter vos priorités, intentions et idées à remettre à plus tard, et alléger un peu la charge mentale.[web:1327][web:1333]
-          </p>
-          <a href="https://www.amazon.fr/certifi%C3%A9-%C3%89criture-Couverture-%C3%A9co-responsable-%C3%A9crivant/dp/B0DT14P82T?tag=zencheztoi-21" target="_blank" rel="noopener noreferrer">
-            Voir sur Amazon
-          </a>
+        <div style="margin-top: 40px; font-size: 1.2em; font-style: italic; color: var(--brun-sombre);">
+            Le Volume : <span style="color:var(--or-zen); font-weight:bold;">14.90€</span> — Pack Trio : <span style="color:var(--or-zen); font-weight:bold;">24.90€</span> — L'Intégrale : <span style="color:var(--or-zen); font-weight:bold;">39.90€</span>
         </div>
-        <div class="product-card">
-          <strong>Bouchons d’oreilles Alpine</strong>
-          <p>
-            Des bouchons d’oreilles pensés pour réduire le bruit ambiant et vous aider à créer une bulle sonore plus calme, à la maison ou au travail.[web:1326][web:1329]
-          </p>
-          <a href="https://www.amazon.fr/Boules-Protection-Auditive-Naturelle-Quies%C3%82/dp/B01M8KPCPO?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3ORY5U6X9XIVJ&dib=eyJ2IjoiMSJ9.jJN1f0Zr_hdp8SZahklhot-2nDlnTYkMMJJZISAqykYr8rw5bvbK5wJVG9609yHAEeR3odXvvMYqQRt2Ga38umda91BHG5andsIKzzWwqxeP1m78U8g7AlxXrMeyxjpqgqPqsfk8vWq_DyNfQnWUQnVWFZoYFUpR492clWcB4qFjR0wbf1YC7q4BnrhUcRk2IIyNNq5up8A3pbDzojR87edFjEla7NF-9G4ladA8N6lJPEBLcjXUbc2Tr7VTAIyoDYXLXlgrQfYe5vewmYCwRMk7QGeibk1eHAyNUyuELl0.bHYzJ1VaHWWVQfNqfOfEq81Eyl5-NT7G-3V335hs34o&dib_tag=se&keywords=bouchon+anti+bruit+naturel&qid=1776754057&sprefix=bouchon+anti+bruit+naturel%2Caps%2C239&sr=8-9&linkCode=ll2&tag=zencheztoi-21&linkId=2e9eb3773cdae23b633699b8b42b1361&ref_=as_li_ss_tl" target="_blank" rel="noopener noreferrer">
-            Voir sur Amazon
-          </a>
-        </div>
-      </div>
-      <p style="font-size:0.85rem; color:var(--muted); margin-top:10px;">
-        Ces liens sont affiliés : ils ne changent rien pour vous, mais soutiennent la création de Zen Chez Toi si vous choisissez d’acheter via ces recommandations.
-      </p>
     </section>
 
-    <section id="ancrage">
-      <h2>Installer le focus comme un rendez-vous avec vous</h2>
-      <p>
-        Plutôt que d’attendre de “vous sentir concentré·e” pour commencer, vous pouvez décider d’un moment de la journée où vous vous offrez un petit bloc de focus, comme un rendez‑vous avec vous‑même.[web:274][web:277][web:283]
-      </p>
-      <p>
-        Même si vous n’êtes pas dans un état de concentration parfaite, le fait de revenir, encore et encore, à ce que vous faites, est déjà une manière de rééduquer doucement votre attention.[web:277][web:283]
-      </p>
-      <div class="box">
-        <div class="box-title">Une invitation</div>
-        <p>
-          Demain, choisissez une tâche qui compte pour vous et accordez‑lui un bloc de 25 minutes : clarifiez votre intention, simplifiez votre environnement, coupez les notifications et offrez‑vous ce temps pour avancer, sans vous juger.[web:275][web:277][web:281][web:1330]
-        </p>
-      </div>
-    </section>
-  </main>
+    <footer>
+        <a href="index.html" class="footer-logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
+        <ul class="footer-nav-compact">
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+            <li><a href="confidentialite.html">Confidentialité</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+            <li><a href="a-propos.html">À Propos</a></li>
+            <li><a href="livre-or.html">Livre d'Or</a></li>
+        </ul>
+        <p style="font-size: 0.85em; opacity: 0.4;">&copy; 2026 Zen Chez Toi • L'Harmonie au Naturel.</p>
+    </footer>
 
-  <footer class="footer">
-    <div class="footer-logo">Zen <em>Chez</em> Toi</div>
-    <div class="footer-links">
-      <a href="mentions-legales.html">Mentions légales</a>
-      <a href="confidentialite.html">Confidentialité</a>
-      <a href="cookies.html">Cookies</a>
-      <a href="index.html">Accueil</a>
-    </div>
-    <p style="margin-top:20px; opacity:0.3; font-size:0.8rem;">
-      © 2026 Zen Chez Toi — Tous droits réservés.
-    </p>
-  </footer>
-
-  <div id="disclaimer-bar">
-    Liens affiliés Amazon : En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.
-  </div>
+    <div id="disclaimer-bar">🔗 Liens affiliés Amazon : Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises. Bien-être : si les difficultés de concentration persistent, un bilan professionnel peut être utile.</div>
 
 </body>
 </html>

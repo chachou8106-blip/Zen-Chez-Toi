@@ -1,433 +1,307 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anti-stress : 5 gestes simples pour apaiser la pression | Zen Chez Toi</title>
 
-  <title>Anti-stress : 5 gestes simples pour apaiser la pression du quotidien | Zen Chez Toi</title>
-  <meta name="description" content="Des gestes du quotidien pour apaiser le stress sans tout révolutionner : respiration, pauses, limites douces, ancrage au corps et petits rituels de retour à soi.">
+    <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
+    <meta name="p:domain_verify" content="549770272775"/>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRV5YNRL57"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-JRV5YNRL57');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7501098246029504" crossorigin="anonymous"></script>
 
-  <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
+    <meta name="description" content="Des gestes du quotidien pour apaiser le stress sans tout révolutionner : respiration, pauses, limites douces, ancrage au corps et petits rituels de retour à soi.">
+    <link rel="icon" type="image/png" href="assets/logo.png">
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRV5YNRL57"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-JRV5YNRL57');
-  </script>
+    <style>
+        :root {
+            --bg-sable: #f5f2ec; --blanc: #ffffff; --brun-sombre: #2b2622; --or-zen: #a67b51;
+            --maison: #6a7f8f; --jardin: #7b9074; --corps: #cca8a0; --bienetre: #d4a259; --eso: #826a8f;
+            
+            /* Variable dynamique pour changer l'ambiance de l'article facilement */
+            --theme-article: var(--bienetre);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.8; overflow-x: hidden; }
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+        /* --- HEADER & NAVIGATION --- */
+        header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; }
+        .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
+        .logo { display: inline-block; text-decoration: none; }
+        .logo img { max-height: 90px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2)); transition: 0.5s ease; }
+        .logo:hover img { filter: drop-shadow(0 0 25px #ffffff) drop-shadow(0 0 10px #ffffff); transform: scale(1.03); }
 
-  <style>
-    :root {
-      --bg: #f8f5f9;
-      --text: #2d2633;
-      --muted: #62566d;
-      --accent: #9b72c2;
-      --dark: #1a1421;
-      --surface: rgba(255,255,255,.9);
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      color: var(--text);
-      background: var(--bg);
-      line-height: 1.7;
-    }
-    a { text-decoration: none; color: inherit; transition: 0.3s; }
-    img { max-width: 100%; display: block; }
+        .header-right { display: flex; align-items: center; gap: 40px; }
+        nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
+        nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
+        nav a:hover { color: var(--theme-article); }
 
-    .hero-inner {
-      padding: 80px 20px 40px;
-      max-width: 900px;
-      margin: 0 auto;
-      text-align: center;
-    }
-    h1 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(2.3rem, 5vw, 3.2rem);
-      margin-bottom: 10px;
-    }
-    .hero-kicker {
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      font-size: 0.8rem;
-      color: var(--muted);
-      font-weight: 700;
-      margin-bottom: 6px;
-    }
-    .hero-sub {
-      font-size: 1.02rem;
-      color: var(--muted);
-      max-width: 640px;
-      margin: 0 auto 20px;
-    }
-    .hero-note {
-      font-family: 'Cormorant Garamond', serif;
-      font-style: italic;
-      font-size: 1.05rem;
-      color: var(--muted);
-    }
+        .dropdown { position: relative; display: inline-block; padding: 15px 0; cursor: pointer; }
+        .dropdown-content { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background-color: var(--brun-sombre); min-width: 200px; box-shadow: 0px 10px 25px rgba(0,0,0,0.3); z-index: 2100; border-radius: 8px; border: 1px solid var(--theme-article); overflow: hidden; }
+        .dropdown-content a { color: rgba(255,255,255,0.8) !important; padding: 12px 20px; display: block; font-size: 0.95em; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1); font-variant: small-caps; }
+        .dropdown-content a:hover { background-color: var(--theme-article); color: #fff !important; }
+        .dropdown:hover .dropdown-content { display: block; }
 
-    .main-nav {
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      background: rgba(248, 245, 249, 0.96);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(0,0,0,0.08);
-    }
-    .nav-wrap {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 12px 16px;
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      flex-wrap: wrap;
-      align-items: center;
-    }
-    .nav-wrap a {
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      font-weight: 700;
-      color: var(--muted);
-      letter-spacing: 0.1em;
-      padding: 4px 8px;
-    }
-    .nav-wrap a:hover,
-    .nav-wrap a.active { color: var(--accent); }
-    .dot { color: rgba(0,0,0,0.1); font-size: 0.7rem; }
+        .pinterest-badge { display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; font-style: italic; background: rgba(255,255,255,0.1); transition: 0.4s; }
+        .pinterest-badge:hover { background: var(--theme-article); border-color: var(--theme-article); transform: rotate(15deg); }
 
-    main {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 30px 20px 70px;
-    }
-    h2 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.8rem;
-      margin-top: 40px;
-      margin-bottom: 12px;
-    }
-    h3 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.3rem;
-      margin-top: 28px;
-      margin-bottom: 8px;
-    }
-    p { margin: 0 0 12px; }
+        /* --- HERO ARTICLE --- */
+        .hero { height: 75vh; min-height: 500px; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('assets/hero-bienetre.jpg') center/cover no-repeat fixed; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; }
+        .vol-phrase { font-size: 1.2em; font-variant: small-caps; letter-spacing: 4px; font-weight: bold; margin-bottom: 15px; color: var(--theme-article); text-shadow: 0 2px 10px rgba(0,0,0,0.8); }
+        .hero h1 { font-size: clamp(2.5em, 6vw, 4.5em); font-weight: normal; margin-bottom: 20px; line-height: 1.2; font-variant: small-caps; text-shadow: 0 4px 15px rgba(0,0,0,0.8); max-width: 1000px; }
+        .tagline { font-size: clamp(1.1em, 2vw, 1.5em); font-style: italic; opacity: 0.9; max-width: 800px; line-height: 1.5; text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
 
-    .box {
-      background: var(--surface);
-      border-radius: 18px;
-      padding: 18px 18px 16px;
-      margin: 22px 0;
-      box-shadow: 0 12px 28px rgba(0,0,0,0.05);
-      border: 1px solid rgba(0,0,0,0.02);
-    }
-    .box-title {
-      font-weight: 700;
-      font-size: 0.9rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--muted);
-      margin-bottom: 6px;
-    }
-    ul, ol {
-      padding-left: 18px;
-      margin: 0 0 12px;
-    }
+        /* --- CORPS DU TEXTE --- */
+        .blog-container { max-width: 800px; margin: 60px auto 60px; padding: 0 20px; font-size: 1.15rem; color: #333; }
+        .blog-container h2 { font-size: 2.2em; color: var(--theme-article); margin: 60px 0 25px; font-variant: small-caps; text-align: center; font-weight: normal; }
+        .blog-container h3 { font-size: 1.5em; color: var(--brun-sombre); margin: 50px 0 15px; font-variant: small-caps; border-bottom: 1px solid rgba(212, 162, 89, 0.3); padding-bottom: 8px; }
+        .blog-container p { margin-bottom: 25px; }
+        .blog-container ul { margin-bottom: 25px; padding-left: 20px; }
+        .blog-container li { margin-bottom: 10px; }
 
-    .products-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 14px;
-      margin-top: 10px;
-    }
-    .product-card {
-      background: white;
-      border-radius: 14px;
-      padding: 12px 14px;
-      border: 1px solid rgba(0,0,0,0.04);
-    }
-    .product-card strong { display: block; margin-bottom: 4px; }
+        /* Les images dans l'article */
+        .blog-img { width: 100%; max-width: 500px; display: block; margin: 40px auto; border-radius: 20px; box-shadow: 0 15px 40px rgba(0,0,0,0.1); }
 
-    /* Slot pub discret */
-    .ad-slot{
-      margin:32px auto 0;
-      max-width:900px;
-      padding:1rem 1.2rem;
-      border-radius:18px;
-      border:1px dashed rgba(0,0,0,.12);
-      font-size:.85rem;
-      color:var(--muted);
-      background:rgba(255,255,255,.7);
-    }
+        /* --- NOTES & ENCADRÉS --- */
+        .alchimiste-note { background: var(--blanc); border-left: 4px solid var(--theme-article); padding: 30px; margin: 50px 0; border-radius: 0 20px 20px 0; box-shadow: 0 15px 40px rgba(0,0,0,0.05); }
+        .note-titre { display: block; font-variant: small-caps; color: var(--theme-article); font-weight: bold; font-size: 1.3em; margin-bottom: 15px; }
 
-    .footer {
-      background: var(--dark);
-      color: #f3dfca;
-      padding: 50px 20px 80px;
-      text-align: center;
-      margin-top: 20px;
-    }
-    .footer-logo {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 2.4rem;
-      margin-bottom: 10px;
-    }
-    .footer-logo em { color: var(--accent); font-style: italic; }
-    .footer-links {
-      display: flex; justify-content: center; gap: 16px;
-      opacity: 0.6; font-size: 0.85rem; flex-wrap: wrap;
-      margin: 16px 0;
-    }
-    #disclaimer-bar {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background: rgba(0,0,0,0.95);
-      color: rgba(255,255,255,0.6);
-      font-size: 0.75rem;
-      text-align: center;
-      padding: 10px;
-      z-index: 1000;
-      border-top: 1px solid rgba(255,255,255,0.1);
-    }
-  </style>
+        /* --- ENCADRÉS HUB (PRODUITS & MAILLAGE) --- */
+        .encadre-hero { margin: 80px 0; border-radius: 30px; overflow: hidden; border: 5px solid var(--theme-article); box-shadow: 0 20px 50px rgba(0,0,0,0.2); }
+        .cadre-fond { padding: 60px 40px; text-align: center; background-size: cover; background-position: center; background-attachment: fixed; }
+        
+        /* CONTOUR BLANC FIN SUR LES TITRES DES CADRES */
+        .encadre-titre { 
+            font-size: 2.5em; 
+            font-variant: small-caps; 
+            color: var(--brun-sombre); 
+            -webkit-text-stroke: 0.5px #ffffff; 
+            margin-bottom: 10px; 
+            text-shadow: 0 4px 15px rgba(0,0,0,0.6); 
+            letter-spacing: 1px;
+        }
+        
+        .encadre-sous-titre { font-style: italic; font-size: 1.1em; color: #fff; margin-bottom: 30px; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
+        
+        .liste-selectionnable { display: flex; flex-direction: column; gap: 15px; max-width: 650px; margin: 0 auto; }
+        .item-link { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; padding: 18px 35px; display: flex; align-items: center; justify-content: space-between; text-decoration: none; color: #fff; transition: 0.3s; }
+        .item-link:hover { transform: scale(1.03); border-color: #fff; background: var(--theme-article); }
+        .item-link span { font-weight: bold; font-variant: small-caps; font-size: 1.1em; text-align: left; }
+        .item-link span small { display: block; font-size: 0.75em; font-family: 'Georgia', serif; font-style: italic; opacity: 0.8; text-transform: none; font-weight: normal; margin-top: 3px; }
+
+        /* --- ENCYCLOPÉDIE --- */
+        .encyclopedie-section { background-color: var(--blanc); padding: 80px 20px; text-align: center; border-top: 1px solid #eee; }
+        .pills-row { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 30px; }
+        .pill { padding: 10px 20px; border: 2px solid; border-radius: 50px; font-variant: small-caps; font-weight: bold; text-decoration: none; transition: 0.3s; }
+        .p1 { border-color: var(--maison); color: var(--maison); } .p1:hover { background: var(--maison); color: #fff; }
+        .p2 { border-color: var(--jardin); color: var(--jardin); } .p2:hover { background: var(--jardin); color: #fff; }
+        .p3 { border-color: var(--corps); color: var(--corps); } .p3:hover { background: var(--corps); color: #fff; }
+        .p4 { border-color: var(--bienetre); color: var(--bienetre); } .p4:hover { background: var(--bienetre); color: #fff; }
+        .p5 { border-color: var(--eso); color: var(--eso); } .p5:hover { background: var(--eso); color: #fff; }
+
+        footer { background: var(--brun-sombre); color: #fff; padding: 80px 20px; text-align: center; }
+        .footer-logo img { height: 60px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.4)); transition: 0.5s; margin-bottom: 30px; }
+        .footer-logo:hover img { filter: drop-shadow(0 0 25px #ffffff); }
+        .footer-nav-compact { display: flex; gap: 30px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; flex-wrap: wrap; }
+        .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.6; font-variant: small-caps; transition: 0.3s; }
+        .footer-nav-compact a:hover { opacity: 1; color: var(--theme-article); }
+
+        #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
+
+        @media (max-width: 768px) {
+            /* On gagne de la place sur mobile */
+            header { padding: 15px 0; }
+            .logo img { max-height: 70px; } 
+            .nav-container { flex-direction: column; gap: 15px; padding: 10px 20px; }
+            .header-right { flex-direction: column; gap: 15px; align-items: center; width: 100%; }
+            nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; }
+            
+            /* ZONE DE SÉCURITÉ AUGMENTÉE */
+            .hero { padding-top: 350px !important; justify-content: flex-start !important; height: auto !important; padding-bottom: 60px; }
+            .hero h1 { font-size: 2.2em; }
+            
+            .item-link { flex-direction: column; text-align: center; padding: 15px; }
+            .item-link span { text-align: center; }
+            .encadre-titre { font-size: 2em; }
+        }
+    </style>
 </head>
 <body>
 
-  <nav class="main-nav" aria-label="Navigation principale">
-    <div class="nav-wrap">
-      <a href="index.html">Accueil</a><span class="dot">&bull;</span>
-      <a href="eso.html">Ésotérisme</a><span class="dot">&bull;</span>
-      <a href="Jardin.html">Jardin</a><span class="dot">&bull;</span>
-      <a href="maison.html">Maison</a><span class="dot">&bull;</span>
-      <a href="bienetre.html" class="active">Bien-être</a><span class="dot">&bull;</span>
-      <a href="Corps.html">Corps</a>
-    </div>
-  </nav>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
+            <div class="header-right">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li class="dropdown">
+                            <a href="grimoire.html">Grimoire</a>
+                            <div class="dropdown-content">
+                                <a href="maison.html">Vol 1 : Fondation</a>
+                                <a href="jardin.html">Vol 2 : Enracinement</a>
+                                <a href="corps.html">Vol 3 : Éclosion</a>
+                                <a href="bienetre.html">Vol 4 : Harmonie</a>
+                                <a href="eso.html">Vol 5 : Élévation</a>
+                            </div>
+                        </li>
+                        <li><a href="blog.html">Journal</a></li>
+                        <li><a href="encyclopedie.html">Encyclopédie</a></li>
+                        <li><a href="a-propos.html">À Propos</a></li>
+                        <li><a href="livre-or.html">Livre d'Or</a></li>
+                    </ul>
+                </nav>
+                <a href="https://www.pinterest.com/VOTRE_PROFIL" class="pinterest-badge" target="_blank">p</a>
+            </div>
+        </div>
+    </header>
 
-  <header class="hero-inner">
-    <div class="hero-kicker">Bien-être · Stress</div>
-    <h1>Anti-stress : 5 gestes simples pour apaiser la pression du quotidien</h1>
-    <p class="hero-sub">
-      Quand tout s’enchaîne, que le corps se crispe et que le mental s’accélère, il peut être difficile de trouver de l’air. Vous méritez de retrouver des espaces de respiration, même petits.
-    </p>
-    <p class="hero-note">
-      Ici, pas de « zen parfait » à atteindre : seulement des pistes concrètes pour desserrer un peu l’étau, à votre façon.
-    </p>
-
-    <div style="max-width:420px;margin:24px auto 0;">
-      <img src="assets/lampe-sel.jpg"
-           alt="Lampe de sel allumée dans une ambiance douce et apaisante"
-           style="width:100%;border-radius:18px;box-shadow:0 12px 28px rgba(0,0,0,0.15);">
-    </div>
-  </header>
-
-  <main>
-    <section id="comprendre">
-      <h2>Comprendre le stress sans se juger</h2>
-      <p>
-        Le stress n’est pas un ennemi en soi : c’est la façon dont notre corps réagit à ce qu’il perçoit comme une pression. Le problème, c’est quand cette réaction reste allumée trop longtemps, sans phase de repos.[web:742]
-      </p>
-      <p>
-        Plutôt que de vous en vouloir de « stresser trop », vous pouvez commencer par le reconnaître comme un signal : quelque chose demande de l’attention, de l’espace ou du soutien.
-      </p>
-      <div class="box">
-        <div class="box-title">Ce que vous pouvez ressentir</div>
-        <ul>
-          <li>Le cœur qui bat plus vite, les épaules tendues, la respiration courte.</li>
-          <li>Une irritabilité inhabituelle, une fatigue nerveuse, des difficultés à se poser.</li>
-          <li>La sensation d’être « toujours en alerte », même sur des petites choses.</li>
-        </ul>
-      </div>
+    <section class="hero">
+        <p class="vol-phrase">Volume 4 : Harmonie • Chronique</p>
+        <h1>Anti-stress : 5 gestes simples pour apaiser la pression du quotidien</h1>
+        <p class="tagline">« Quand tout s’enchaîne, que le corps se crispe et que le mental s’accélère, il peut être difficile de trouver de l’air. Vous méritez de retrouver des espaces de respiration, même petits. »</p>
     </section>
 
-    <section id="gestes">
-      <h2>5 gestes du quotidien pour apaiser la pression</h2>
-      <p>
-        Vous n’avez pas besoin d’un grand changement de vie pour commencer à alléger un peu la pression. Quelques gestes simples, répétés régulièrement, peuvent déjà faire une différence.
-      </p>
+    <main class="blog-container">
 
-      <h3>Geste 1 · Une minute pour sentir votre corps</h3>
-      <p>
-        Où que vous soyez, prenez une minute pour remarquer vos appuis : vos pieds sur le sol, vos fessiers sur la chaise, votre dos contre un dossier. Laissez votre attention descendre du mental vers le corps, sans rien changer d’autre.
-      </p>
-
-      <h3>Geste 2 · Trois respirations plus lentes</h3>
-      <p>
-        Inspirez doucement par le nez, puis expirez un peu plus longtemps que l’inspiration. Par exemple, 4 temps pour inspirer, 6 ou 8 temps pour expirer. Trois fois de suite, en laissant les épaules se relâcher un peu à chaque souffle.
-      </p>
-
-      <h3>Geste 3 · Une micro-pause entre deux tâches</h3>
-      <p>
-        Avant de passer d’une tâche à l’autre, marquez une micro-pause : fermez les yeux quelques secondes, buvez une gorgée d’eau, regardez au loin par la fenêtre. C’est une façon de dire à votre système nerveux : « on peut relâcher un peu ».
-      </p>
-
-      <h3>Geste 4 · Dire un petit “non” doux</h3>
-      <p>
-        Quand c’est possible pour vous, repérez une situation où vous dites « oui » par automatisme alors que tout en vous dit « non ». Essayez une version douce : « je ne peux pas cette fois-ci », « j’ai besoin de temps pour répondre ».
-      </p>
-
-      <h3>Geste 5 · Un rituel de fin de journée</h3>
-      <p>
-        Créez un petit rituel pour symboliser la fin de la journée : changer de tenue, se laver les mains en conscience, ranger rapidement un coin, allumer une lampe douce. Ce geste marque une frontière entre “faire” et “se déposer”.
-      </p>
-
-      <div class="box">
-        <div class="box-title">À garder en tête</div>
-        <p>
-          Le stress ne disparaîtra pas du jour au lendemain, et ce n’est pas forcément le but. L’idée est plutôt de multiplier les occasions où votre corps peut souffler un peu, pour qu’il ne reste pas bloqué en mode « alerte » en continu.[web:742]
+        <p style="font-style: italic; color: var(--theme-article); font-size: 1.25rem; text-align: center; margin-bottom: 50px;">
+            Ici, pas de « zen parfait » à atteindre : seulement des pistes concrètes pour desserrer un peu l’étau, à votre façon.
         </p>
-      </div>
+        
+        <h2>Comprendre le stress sans se juger</h2>
+        
+        <p>Le stress n’est pas un ennemi en soi : c’est la façon dont notre corps réagit à ce qu’il perçoit comme une pression. Le problème, c’est quand cette réaction reste allumée trop longtemps, sans phase de repos.</p>
+        
+        <p>Plutôt que de vous en vouloir de « stresser trop », vous pouvez commencer par le reconnaître comme un signal : quelque chose demande de l’attention, de l’espace ou du soutien.</p>
+        
+        <div class="alchimiste-note">
+            <span class="note-titre">Ce que vous pouvez ressentir</span>
+            <ul>
+                <li>Le cœur qui bat plus vite, les épaules tendues, la respiration courte.</li>
+                <li>Une irritabilité inhabituelle, une fatigue nerveuse, des difficultés à se poser.</li>
+                <li>La sensation d’être « toujours en alerte », même sur des petites choses.</li>
+            </ul>
+        </div>
+
+        <h2>5 gestes du quotidien pour apaiser la pression</h2>
+        
+        <p>Vous n’avez pas besoin d’un grand changement de vie pour commencer à alléger un peu la pression. Quelques gestes simples, répétés régulièrement, peuvent déjà faire une différence.</p>
+
+        <h3>Geste 1 · Une minute pour sentir votre corps</h3>
+        <p>Où que vous soyez, prenez une minute pour remarquer vos appuis : vos pieds sur le sol, vos fessiers sur la chaise, votre dos contre un dossier. Laissez votre attention descendre du mental vers le corps, sans rien changer d’autre.</p>
+
+        <h3>Geste 2 · Trois respirations plus lentes</h3>
+        <p>Inspirez doucement par le nez, puis expirez un peu plus longtemps que l’inspiration. Par exemple, 4 temps pour inspirer, 6 ou 8 temps pour expirer. Trois fois de suite, en laissant les épaules se relâcher un peu à chaque souffle.</p>
+
+        <h3>Geste 3 · Une micro-pause entre deux tâches</h3>
+        <p>Avant de passer d’une tâche à l’autre, marquez une micro-pause : fermez les yeux quelques secondes, buvez une gorgée d’eau, regardez au loin par la fenêtre. C’est une façon de dire à votre système nerveux : « on peut relâcher un peu ».</p>
+
+        <h3>Geste 4 · Dire un petit “non” doux</h3>
+        <p>Quand c’est possible pour vous, repérez une situation où vous dites « oui » par automatisme alors que tout en vous dit « non ». Essayez une version douce : « je ne peux pas cette fois-ci », « j’ai besoin de temps pour répondre ».</p>
+
+        <h3>Geste 5 · Un rituel de fin de journée</h3>
+        <p>Créez un petit rituel pour symboliser la fin de la journée : changer de tenue, se laver les mains en conscience, ranger rapidement un coin, allumer une lampe douce. Ce geste marque une frontière entre “faire” et “se déposer”.</p>
+
+        <img src="assets/lampe-sel.jpg" alt="Ambiance douce et apaisante" class="blog-img">
+
+        <div class="alchimiste-note">
+            <span class="note-titre">À garder en tête</span>
+            <p>Le stress ne disparaîtra pas du jour au lendemain, et ce n’est pas forcément le but. L’idée est plutôt de multiplier les occasions où votre corps peut souffler un peu, pour qu’il ne reste pas bloqué en mode « alerte » en continu.</p>
+        </div>
+
+        <section class="encadre-hero">
+            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/hero-bienetre.jpg');">
+                <h3 class="encadre-titre">Solutions naturelles</h3>
+                <p class="encadre-sous-titre">Ces compléments ne remplacent pas un suivi médical, mais ils peuvent soutenir votre système nerveux quand la pression devient répétitive.</p>
+                <div class="liste-selectionnable">
+                    <a href="https://www.amazon.fr/dp/B0C66R1DB9?tag=zencheztoi-21" target="_blank" rel="nofollow sponsored" class="item-link">
+                        <span>L'Élixir Adaptogène <small>Ashwagandha Bio pour le stress de fond</small></span> <span>→</span>
+                    </a>
+                    <a href="https://www.amazon.fr/dp/B07DFTD7BW?tag=zencheztoi-21" target="_blank" rel="nofollow sponsored" class="item-link">
+                        <span>Le Calme Minéral <small>Magnésium Bisglycinate pour l'anxiété et les tensions</small></span> <span>→</span>
+                    </a>
+                </div>
+                <p style="font-size: 0.85rem; color: rgba(255,255,255,0.5); margin-top: 20px; font-style: italic;">Demandez toujours l’avis de votre médecin ou pharmacien avant de commencer un complément, surtout en cas de traitement en cours, grossesse ou pathologie connue.</p>
+            </div>
+        </section>
+
+        <h2>Outils doux pour soutenir vos pauses</h2>
+        <p>Certains objets peuvent vous aider à ancrer ces gestes dans votre quotidien, comme des repères visuels ou sensoriels. Prenez ce qui vous parle, laissez le reste.</p>
+
+        <section class="encadre-hero" style="margin-top: 40px; border-color: var(--brun-sombre);">
+            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('assets/hero-accueil.jpg');">
+                <h3 class="encadre-titre">Outils d'Ancrage</h3>
+                <div class="liste-selectionnable">
+                    <a href="https://www.amazon.fr/dp/B0F2FHJ28S?tag=zencheztoi-21" target="_blank" rel="nofollow sponsored" class="item-link" style="border-color: rgba(255,255,255,0.1);">
+                        <span>Le Réconfort Chaleureux <small>Mug pour s'hydrater et faire une pause</small></span> <span>→</span>
+                    </a>
+                    <a href="https://www.amazon.fr/Accessories-Masseur-Massage-Appareil-Rouleau/dp/B09KH6WD35?tag=zencheztoi-21" target="_blank" rel="nofollow sponsored" class="item-link" style="border-color: rgba(255,255,255,0.1);">
+                        <span>L'Ancrage Profond <small>Masseur rouleau en bois pour les pieds</small></span> <span>→</span>
+                    </a>
+                    <a href="https://www.amazon.fr/dp/B0BWFC6ZVQ?tag=zencheztoi-21" target="_blank" rel="nofollow sponsored" class="item-link" style="border-color: rgba(255,255,255,0.1);">
+                        <span>La Lueur Apaisante <small>Lampe douce pour le soir</small></span> <span>→</span>
+                    </a>
+                </div>
+                <p style="font-size: 0.85rem; color: rgba(255,255,255,0.5); margin-top: 20px; font-style: italic;">Ces liens sont affiliés : ils ne changent rien pour vous, mais soutiennent la création de Zen Chez Toi si vous choisissez d’acheter via ces recommandations.</p>
+            </div>
+        </section>
+
+        <h2>Faire de la douceur une habitude</h2>
+        <p>Vous pouvez choisir un seul geste parmi ceux-ci et le glisser dans votre journée : au réveil, entre deux mails, avant un appel difficile, en rentrant chez vous. Quand il sera devenu plus naturel, vous pourrez en ajouter un autre.</p>
+        <p>Le stress fait partie de la vie, mais vous pouvez peu à peu vous réapprendre à ne pas le porter seul·e, tout le temps, sans répit.</p>
+
+        <div class="alchimiste-note">
+            <span class="note-titre">Une invitation</span>
+            <p>Aujourd’hui, repérez un moment où vous sentez la tension monter. Voyez si vous pouvez y glisser, juste une fois, une respiration un peu plus longue ou une mini pause de quelques secondes. C’est déjà un pas important.</p>
+        </div>
+
+        <section class="encadre-hero">
+            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/hero-eso.jpg');">
+                <h3 class="encadre-titre">Pour aller plus loin en douceur</h3>
+                <p class="encadre-sous-titre">Continuer l'Initiation.</p>
+                <div class="liste-selectionnable">
+                    <a href="sommeil-profond.html" class="item-link"><span>Le Sommeil Profond <small>Chronique : Retrouver ses nuits</small></span> <span>→</span></a>
+                    <a href="energie-vitalite.html" class="item-link"><span>Relancer sa Vitalité <small>Chronique : Le flux de la sève</small></span> <span>→</span></a>
+                    <a href="tensions-musculaires.html" class="item-link"><span>Relâcher les Tensions <small>Chronique : Libérer le temple</small></span> <span>→</span></a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <section class="encyclopedie-section">
+        <h2 style="font-variant: small-caps; font-size: 2.2em; color: var(--brun-sombre); margin-bottom: 20px;">Emportez nos savoirs avec vous</h2>
+        <div class="pills-row">
+            <a href="encyclopedie.html#vol1" class="pill p1">Vol 1 : Fondation</a>
+            <a href="encyclopedie.html#vol2" class="pill p2">Vol 2 : Enracinement</a>
+            <a href="encyclopedie.html#vol3" class="pill p3">Vol 3 : Éclosion</a>
+            <a href="encyclopedie.html#vol4" class="pill p4">Vol 4 : Harmonie</a>
+            <a href="encyclopedie.html#vol5" class="pill p5">Vol 5 : Élévation</a>
+        </div>
+        <div style="margin-top: 40px; font-size: 1.2em; font-style: italic; color: var(--brun-sombre);">
+            Le Volume : <span style="color:var(--or-zen); font-weight:bold;">14.90€</span> — Pack Trio : <span style="color:var(--or-zen); font-weight:bold;">24.90€</span> — L'Intégrale : <span style="color:var(--or-zen); font-weight:bold;">39.90€</span>
+        </div>
     </section>
 
-    <section id="solutions-naturelles">
-      <h2>Solutions naturelles pour accompagner ces gestes</h2>
-      <p>
-        Ces compléments ne remplacent pas un suivi médical, mais ils peuvent soutenir votre système nerveux quand le stress devient répétitif.[web:739][web:742]
-      </p>
-
-      <div class="products-grid">
-        <div class="product-card">
-          <strong>Ashwagandha bio pour le stress de fond</strong>
-          <p>
-            Plante adaptogène qui aide le corps à mieux s’adapter aux contraintes mentales et physiques, utile quand la pression dure depuis longtemps.[web:739][web:736][web:742]
-          </p>
-          <a href="https://www.amazon.fr/dp/B0C66R1DB9?linkCode=ll2&tag=zencheztoi-21&linkId=1c3b4f280e51924137c00a86c44820b5&ref_=as_li_ss_tl"
-             target="_blank" rel="nofollow sponsored">
-            Découvrir l'ashwagandha
-          </a>
-        </div>
-
-        <div class="product-card">
-          <strong>Magnésium bisglycinate pour l’anxiété et les tensions</strong>
-          <p>
-            Forme de magnésium bien assimilée, connue pour ses effets relaxants sur le système nerveux et musculaire, idéale en cas de ruminations et crispations.[web:739][web:740][web:742]
-          </p>
-          <a href="https://www.amazon.fr/dp/B07DFTD7BW?linkCode=ll2&tag=zencheztoi-21&linkId=4c166f2e4eec4cb3a05be1deb253a4df&ref_=as_li_ss_tl"
-             target="_blank" rel="nofollow sponsored">
-            Découvrir le magnésium
-          </a>
-        </div>
-      </div>
-
-      <p style="font-size:0.85rem; color:var(--muted); margin-top:10px;">
-        Demandez toujours l’avis de votre médecin ou pharmacien avant de commencer un complément, surtout en cas de traitement en cours, grossesse ou pathologie connue.[web:743]
-      </p>
-    </section>
-
-    <section id="produits">
-      <h2>Outils doux pour soutenir vos pauses</h2>
-      <p>
-        Certains objets peuvent vous aider à ancrer ces gestes dans votre quotidien, comme des repères visuels ou sensoriels. Prenez ce qui vous parle, laissez le reste.
-      </p>
-
-      <div style="max-width:420px;margin:10px auto 20px;">
-        <img src="assets/bougie.jpg"
-             alt="Bougie allumée pour créer une atmosphère anti-stress"
-             style="width:100%;border-radius:16px;box-shadow:0 10px 24px rgba(0,0,0,0.12);">
-      </div>
-
-      <div class="products-grid">
-        <div class="product-card">
-          <strong>Bouteille ou carafe dédiée sur le bureau</strong>
-          <p>
-            Avoir une gourde ou une carafe en vue peut vous rappeler de faire des micro-pauses pour boire et respirer quelques secondes.
-          </p>
-          <a href="https://www.amazon.fr/dp/B0F2FHJ28S?tag=zencheztoi-21"
-             target="_blank" rel="noopener noreferrer">
-            Voir sur Amazon
-          </a>
-        </div>
-        <div class="product-card">
-          <strong>Balle ou objet à manipuler</strong>
-          <p>
-            Une petite balle anti-stress ou un objet à manipuler peut aider à décharger la tension dans les mains lors de moments intenses.
-          </p>
-          <a href="https://www.amazon.fr/Accessories-Masseur-Massage-Appareil-Rouleau/dp/B09KH6WD35?tag=zencheztoi-21"
-             target="_blank" rel="noopener noreferrer">
-            Voir sur Amazon
-          </a>
-        </div>
-        <div class="product-card">
-          <strong>Lampe douce pour le soir</strong>
-          <p>
-            Une lumière plus apaisante pour les fins de journée, afin d’éviter le contraste entre hyper-stimulation et heure du coucher.
-          </p>
-          <a href="https://www.amazon.fr/dp/B0BWFC6ZVQ?tag=zencheztoi-21"
-             target="_blank" rel="noopener noreferrer">
-            Voir sur Amazon
-          </a>
-        </div>
-      </div>
-      <p style="font-size:0.85rem; color:var(--muted); margin-top:10px;">
-        Ces liens sont affiliés : ils ne changent rien pour vous, mais soutiennent la création de Zen Chez Toi si vous choisissez d’acheter via ces recommandations.
-      </p>
-    </section>
-
-    <section id="liens-croises">
-      <h2>Pour aller plus loin en douceur</h2>
-      <div class="box">
-        <ul>
-          <li><a href="sommeil-profond-gestes-doux.html">Gestes doux pour un sommeil plus profond</a> — parce que stress et sommeil sont souvent liés.</li>
-          <li><a href="energie-vitalite-petits-gestes.html">Énergie &amp; Vitalité : petites habitudes pour retrouver plus d’élan</a>.</li>
-          <li><a href="corps-tensions-musculaires-huile-cbd.html">Relâcher les tensions musculaires dans le corps</a>.</li>
+    <footer>
+        <a href="index.html" class="footer-logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
+        <ul style="display:flex; justify-content:center; gap:25px; list-style:none; margin-bottom: 20px; flex-wrap: wrap;">
+            <li><a href="mentions-legales.html" style="color:#fff; text-decoration:none; opacity:0.6; font-variant:small-caps;">Mentions légales</a></li>
+            <li><a href="confidentialite.html" style="color:#fff; text-decoration:none; opacity:0.6; font-variant:small-caps;">Confidentialité</a></li>
+            <li><a href="cookies.html" style="color:#fff; text-decoration:none; opacity:0.6; font-variant:small-caps;">Cookies</a></li>
+            <li><a href="a-propos.html" style="color:#fff; text-decoration:none; opacity:0.6; font-variant:small-caps;">À Propos</a></li>
+            <li><a href="livre-or.html" style="color:#fff; text-decoration:none; opacity:0.6; font-variant:small-caps;">Livre d'Or</a></li>
         </ul>
-      </div>
-    </section>
+        <p style="font-size: 0.85em; opacity: 0.4;">&copy; 2026 Zen Chez Toi • L'Harmonie au Naturel.</p>
+    </footer>
 
-    <section id="ancrage">
-      <h2>Faire de la douceur une habitude</h2>
-      <p>
-        Vous pouvez choisir un seul geste parmi ceux-ci et le glisser dans votre journée : au réveil, entre deux mails, avant un appel difficile, en rentrant chez vous. Quand il sera devenu plus naturel, vous pourrez en ajouter un autre.
-      </p>
-      <p>
-        Le stress fait partie de la vie, mais vous pouvez peu à peu vous réapprendre à ne pas le porter seul·e, tout le temps, sans répit.
-      </p>
-      <div class="box">
-        <div class="box-title">Une invitation</div>
-        <p>
-          Aujourd’hui, repérez un moment où vous sentez la tension monter. Voyez si vous pouvez y glisser, juste une fois, une respiration un peu plus longue ou une mini pause de quelques secondes. C’est déjà un pas important.
-        </p>
-      </div>
-    </section>
-
-    <!-- Emplacement publicitaire discret pour la page stress -->
-    <div class="ad-slot" aria-label="contenu sponsorisé">
-      <!-- Code publicitaire / bloc affiliation à insérer ici -->
-      Cet emplacement discret peut accueillir une bannière, un programme en ligne
-      (relaxation, méditation, yoga) ou un produit bien-être que tu veux mettre
-      en avant autour du stress.
-    </div>
-
-  </main>
-
-  <footer class="footer">
-    <div class="footer-logo">Zen <em>Chez</em> Toi</div>
-    <div class="footer-links">
-      <a href="mentions-legales.html">Mentions légales</a>
-      <a href="confidentialite.html">Confidentialité</a>
-      <a href="cookies.html">Cookies</a>
-      <a href="index.html">Accueil</a>
-    </div>
-    <p style="margin-top:20px; opacity:0.3; font-size:0.8rem;">
-      © 2026 Zen Chez Toi — Tous droits réservés.
-    </p>
-  </footer>
-
-  <div id="disclaimer-bar">
-    Liens affiliés Amazon : En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.
-  </div>
+    <div id="disclaimer-bar">🔗 Liens affiliés Amazon : Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.</div>
 
 </body>
 </html>

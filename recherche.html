@@ -19,47 +19,72 @@
     <style>
         :root {
             --bg-sable: #f5f2ec; --blanc: #ffffff; --brun-sombre: #2b2622; --or-zen: #a67b51;
+            --maison: #6a7f8f; --jardin: #7b9074; --corps: #cca8a0; --bienetre: #d4a259; --eso: #826a8f;
         }
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.6; overflow-x: hidden; display: flex; flex-direction: column; min-height: 100vh; }
 
-        /* HEADER & BADGE PINTEREST ZEN */
-        header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 1000; }
+        /* --- HEADER --- */
+        header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; }
         .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
-        .logo-area { display: flex; align-items: center; gap: 25px; }
-        .logo img { max-height: 90px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); }
         
-        .pinterest-badge { 
-            display: inline-flex; align-items: center; justify-content: center; 
-            width: 32px; height: 32px; border: 1px solid rgba(255,255,255,0.4); 
-            border-radius: 50%; color: #ffffff; text-decoration: none; 
-            font-family: 'Georgia', serif; font-style: italic; font-size: 1.1rem;
-            transition: all 0.4s ease; background: rgba(255,255,255,0.1); backdrop-filter: blur(2px);
-        }
-        .pinterest-badge:hover { background: var(--or-zen); border-color: var(--or-zen); transform: rotate(15deg) scale(1.1); box-shadow: 0 4px 15px rgba(166, 123, 81, 0.3); }
+        .logo { display: inline-block; text-decoration: none; transition: 0.4s ease; }
+        .logo img { max-height: 90px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2)); transition: 0.5s ease; }
+        .logo:hover img { filter: drop-shadow(0 0 30px #ffffff) drop-shadow(0 0 15px #ffffff); transform: scale(1.05); }
 
-        nav ul { list-style: none; display: flex; gap: 30px; align-items: center; }
+        .header-right { display: flex; align-items: center; gap: 40px; }
+        nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
         nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
-        nav a:hover { color: var(--or-zen); }
+        nav a:hover { color: var(--or-zen); text-shadow: 0 0 15px var(--or-zen); }
 
-        /* HERO ZEN Raccourci pour la recherche */
+        /* MENU DÉROULANT */
+        .dropdown { position: relative; display: inline-block; padding: 15px 0; cursor: pointer; }
+        .dropdown-content { 
+            display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); 
+            background-color: var(--brun-sombre); min-width: 200px; box-shadow: 0px 10px 25px rgba(0,0,0,0.3); 
+            z-index: 2100; border-radius: 8px; border: 1px solid var(--or-zen); overflow: hidden;
+        }
+        .dropdown-content a { 
+            color: rgba(255,255,255,0.8) !important; padding: 12px 20px; text-decoration: none; 
+            display: block; font-size: 0.95em; text-shadow: none; font-weight: bold; 
+            border-bottom: 1px solid rgba(255,255,255,0.1); text-align: center; font-variant: small-caps; 
+        }
+        .dropdown-content a:hover { background-color: var(--or-zen); color: #fff !important; }
+        .dropdown:hover .dropdown-content { display: block; }
+
+        .pinterest-badge { 
+            display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; 
+            border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; 
+            font-family: 'Georgia', serif; font-style: italic; font-size: 1.2rem; transition: all 0.4s ease; 
+            background: rgba(255,255,255,0.1); backdrop-filter: blur(2px); padding-bottom: 3px;
+        }
+        .pinterest-badge:hover { background: var(--or-zen); border-color: var(--or-zen); transform: rotate(15deg) scale(1.1); color: #fff; box-shadow: 0 0 15px var(--or-zen); }
+
+        /* --- HERO (Blindé pour mobile) --- */
         .hero {
-            height: 45vh;
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/hero-accueil.jpg') center/cover no-repeat;
-            display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff;
+            height: 45vh; min-height: 350px; position: relative;
+            display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; overflow: hidden;
             margin-bottom: -40px;
         }
-        .hero h1 { font-size: 3em; font-weight: normal; letter-spacing: 4px; text-shadow: 0 2px 10px rgba(0,0,0,0.5); font-variant: small-caps; line-height: 1.2; }
+        .hero-img-fond { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
+        .hero-voile { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)); z-index: 2; }
+        .hero-contenu { position: relative; z-index: 3; }
+        
+        .hero h1 { 
+            font-size: clamp(2.5em, 6vw, 3.5em); font-weight: normal; letter-spacing: 4px; 
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5); font-variant: small-caps; 
+            line-height: 1.2; max-width: 900px; margin-bottom: 15px; margin-left: auto; margin-right: auto;
+        }
 
-        /* BARRE DE RECHERCHE */
+        /* --- BARRE DE RECHERCHE --- */
         .search-area { background: transparent; padding: 0 20px; text-align: center; position: relative; z-index: 10; }
         .search-container { max-width: 700px; margin: 0 auto; position: relative; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-radius: 50px; }
-        .search-container input { width: 100%; padding: 22px 35px; border: 2px solid var(--blanc); border-radius: 50px; font-size: 1.1em; outline: none; background: var(--blanc); }
+        .search-container input { width: 100%; padding: 22px 35px; border: 2px solid var(--blanc); border-radius: 50px; font-size: 1.1em; outline: none; background: var(--blanc); font-family: 'Georgia', serif;}
         .search-container input:focus { border-color: var(--or-zen); }
         .search-container button { position: absolute; right: 8px; top: 8px; bottom: 8px; padding: 0 30px; border-radius: 40px; border: none; background: var(--brun-sombre); color: white; cursor: pointer; font-variant: small-caps; font-weight: bold; font-size: 1.1em; transition: 0.3s; }
         .search-container button:hover { background: var(--or-zen); }
 
-        /* ZONE DES RÉSULTATS (Style Grimoire) */
+        /* --- ZONE DES RÉSULTATS --- */
         main { flex: 1; }
         .results-wrapper { max-width: 1400px; margin: 60px auto; padding: 0 20px; min-height: 35vh; }
         .result-count { font-style: italic; color: #666; margin-bottom: 30px; text-align: center; font-size: 1.2em; }
@@ -74,41 +99,83 @@
 
         .no-results { text-align: center; padding: 40px; background: var(--blanc); border-radius: 12px; font-style: italic; color: var(--brun-sombre); }
 
-        /* FOOTER */
-        footer { background: var(--brun-sombre); color: #fff; padding: 60px 20px 80px; text-align: center; position: relative; width: 100%; }
-        .footer-logo-small { height: 45px; margin-bottom: 25px; }
-        .footer-nav-compact { display: flex; gap: 25px; list-style: none; justify-content: center; margin-bottom: 25px; padding: 0; }
-        .footer-nav-compact a { color: #fff; text-decoration: none; font-size: 0.9em; opacity: 0.7; font-variant: small-caps; }
-        #disclaimer-bar { position: absolute; bottom: 0; left: 0; width: 100%; background: rgba(0,0,0,0.95); color: rgba(255,255,255,0.6); font-size: 0.75rem; text-align: center; padding: 10px; border-top: 1px solid rgba(255,255,255,0.1); }
+        /* --- FOOTER --- */
+        footer { background: var(--brun-sombre); color: #fff; padding: 80px 20px 40px; text-align: center; position: relative; width: 100%; }
+        .footer-logo img { height: 60px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.4)); transition: 0.5s; margin-bottom: 30px; }
+        .footer-logo:hover img { filter: drop-shadow(0 0 30px #ffffff); transform: scale(1.05); }
+        .footer-nav-compact { display: flex; gap: 30px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; flex-wrap: wrap; }
+        .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.6; font-variant: small-caps; transition: 0.3s; }
+        .footer-nav-compact a:hover { opacity: 1; color: var(--or-zen); }
 
+        #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
+
+        /* --- RESPONSIVE MOBILE SÉCURISÉ --- */
         @media (max-width: 992px) { .index-grid { column-count: 2; } }
-        @media (max-width: 600px) { .index-grid { column-count: 1; } .hero h1 { font-size: 2.2em; } }
+        @media (max-width: 768px) {
+            .nav-container { flex-direction: column; gap: 15px; padding: 15px 20px; }
+            .header-right { flex-direction: column; gap: 15px; align-items: center; width: 100%; }
+            nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; }
+            
+            /* LA CORRECTION MAGIQUE DU MENU DÉROULANT */
+            .dropdown { position: static; }
+            .dropdown-content { 
+                left: 0; right: 0; margin: 10px auto 0; 
+                transform: none; width: 280px; max-width: 90vw; top: auto; 
+            }
+            
+            /* Protection du Hero Mobile */
+            .hero { 
+                padding-top: 280px !important; justify-content: flex-start !important; 
+                height: auto !important; min-height: auto !important; padding-bottom: 80px !important; 
+            }
+            .hero h1 { font-size: 2em; margin-bottom: 10px; letter-spacing: 1px; }
+
+            .search-container input { padding: 18px 20px; font-size: 1rem; }
+            .search-container button { padding: 0 20px; }
+            
+            .index-grid { column-count: 1; }
+            .chapitre { padding: 30px 20px; }
+        }
     </style>
 </head>
 <body>
 
     <header>
         <div class="nav-container">
-            <div class="logo-area">
-                <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
-                <a href="https://www.pinterest.com/VOTRE_PROFIL" class="pinterest-badge" target="_blank" title="Inspiration Zen">p</a>
+            <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
+            <div class="header-right">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li class="dropdown">
+                            <a href="grimoire.html">Grimoire</a>
+                            <div class="dropdown-content">
+                                <a href="maison.html">Vol 1 : Fondation</a>
+                                <a href="jardin.html">Vol 2 : Enracinement</a>
+                                <a href="corps.html">Vol 3 : Éclosion</a>
+                                <a href="bienetre.html">Vol 4 : Harmonie</a>
+                                <a href="eso.html">Vol 5 : Élévation</a>
+                            </div>
+                        </li>
+                        <li><a href="blog.html">Journal</a></li>
+                        <li><a href="encyclopedie.html">Encyclopédie</a></li>
+                        <li><a href="a-propos.html">À Propos</a></li>
+                    </ul>
+                </nav>
+                <a href="https://www.pinterest.fr/zencheztoi/" class="pinterest-badge" target="_blank" title="Suivez nos inspirations">p</a>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="grimoire.html">Grimoire</a></li>
-                    <li><a href="blog.html">Journal</a></li>
-                    <li><a href="encyclopedie.html">Encyclopédie</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
 
-    <main>
-        <section class="hero">
+    <section class="hero">
+        <img src="assets/hero-accueil.jpg" class="hero-img-fond" alt="Recherche Zen Chez Toi">
+        <div class="hero-voile"></div>
+        <div class="hero-contenu">
             <h1>L'Oracle du Grimoire</h1>
-        </section>
+        </div>
+    </section>
 
+    <main>
         <section class="search-area">
             <div class="search-container">
                 <form action="recherche.html" method="GET">
@@ -129,16 +196,18 @@
     </main>
 
     <footer>
-        <img src="assets/logo.png" class="footer-logo-small" alt="Zen">
+        <a href="index.html" class="footer-logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
         <ul class="footer-nav-compact">
-            <li><a href="mentions-legales.html">Mentions légales</a></li>
+            <li><a href="mentions-legales.html">Mentions Légales</a></li>
             <li><a href="confidentialite.html">Confidentialité</a></li>
             <li><a href="cookies.html">Cookies</a></li>
+            <li><a href="a-propos.html">À Propos</a></li>
             <li><a href="livre-or.html">Livre d'Or</a></li>
         </ul>
-        <p style="font-size: 0.8em; opacity: 0.5;">&copy; 2026 Zen Chez Toi - L'Harmonie au Naturel</p>
-        <div id="disclaimer-bar">🔗 Liens affiliés Amazon : En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.</div>
+        <p style="font-size: 0.85em; opacity: 0.4;">&copy; 2026 Zen Chez Toi • L'Harmonie au Naturel.</p>
     </footer>
+
+    <div id="disclaimer-bar">🔗 Liens affiliés : Partenaire Amazon, Citrine.fr et Sept-Chakras.com, je réalise un bénéfice sur les achats remplissant les conditions requises.</div>
 
     <script>
         const database = [

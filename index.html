@@ -27,87 +27,54 @@
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.8; overflow-x: hidden; }
 
-        /* --- HEADER & NAVIGATION --- */
         header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; }
         .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
         
+        /* LOGO AURA INTERACTIVE (Off par défaut) */
         .logo { display: inline-block; text-decoration: none; }
-        .logo img { 
-            max-height: 90px; 
-            filter: drop-shadow(0 0 5px rgba(255,255,255,0.4));
-            transition: 0.5s ease; 
-        }
-        .logo:hover img { 
-            filter: drop-shadow(0 0 25px #ffffff) drop-shadow(0 0 10px #ffffff); 
-            transform: scale(1.03); 
-        }
+        .logo img { max-height: 90px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2)); transition: 0.5s ease; }
+        .logo:hover img { filter: drop-shadow(0 0 25px #ffffff) drop-shadow(0 0 10px #ffffff); transform: scale(1.03); }
 
         .header-right { display: flex; align-items: center; gap: 40px; }
         nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
         nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
         nav a:hover { color: var(--or-zen); }
 
-        /* Dropdown Grimoire */
         .dropdown { position: relative; display: inline-block; padding: 15px 0; cursor: pointer; }
-        .dropdown-content { 
-            display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); 
-            background-color: var(--brun-sombre); min-width: 200px; box-shadow: 0px 10px 25px rgba(0,0,0,0.3); 
-            z-index: 2100; border-radius: 8px; overflow: hidden; border: 1px solid var(--or-zen);
-        }
-        .dropdown-content a { 
-            color: rgba(255,255,255,0.8) !important; padding: 12px 20px; text-decoration: none; 
-            display: block; font-size: 0.95em; text-shadow: none; font-weight: bold; 
-            border-bottom: 1px solid rgba(255,255,255,0.1); text-align: center; font-variant: small-caps; 
-        }
+        .dropdown-content { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background-color: var(--brun-sombre); min-width: 200px; box-shadow: 0px 10px 25px rgba(0,0,0,0.3); z-index: 2100; border-radius: 8px; border: 1px solid var(--or-zen); overflow: hidden; }
+        .dropdown-content a { color: rgba(255,255,255,0.8) !important; padding: 12px 20px; display: block; font-size: 0.95em; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1); font-variant: small-caps; }
         .dropdown-content a:hover { background-color: var(--or-zen); color: #fff !important; }
         .dropdown:hover .dropdown-content { display: block; }
 
-        .pinterest-badge { 
-            display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; 
-            border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; 
-            font-family: 'Georgia', serif; font-style: italic; font-size: 1.2rem; transition: all 0.4s ease; 
-            background: rgba(255,255,255,0.1); backdrop-filter: blur(2px); padding-bottom: 3px;
-        }
-        .pinterest-badge:hover { background: var(--or-zen); border-color: var(--or-zen); transform: rotate(15deg) scale(1.1); color: #fff; }
+        .pinterest-badge { display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; font-style: italic; background: rgba(255,255,255,0.1); transition: 0.4s; }
+        .pinterest-badge:hover { background: var(--or-zen); transform: rotate(15deg); }
 
-        /* --- HERO --- */
-        .hero { 
-            height: 100vh; background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('assets/hero-accueil.jpg') center/cover no-repeat fixed; 
-            display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; 
-        }
-        .hero h1 { 
-            font-size: clamp(2.5em, 8vw, 5em); font-weight: normal; margin-bottom: 20px; line-height: 1.1; font-variant: small-caps; max-width: 1100px;
-            text-shadow: 0 4px 15px rgba(0,0,0,0.6); 
-        }
-        .tagline { font-size: clamp(1.1em, 3vw, 1.8em); font-style: italic; opacity: 0.9; text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
+        /* HERO INDEX */
+        .hero { min-height: 100vh; background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('assets/hero-accueil.jpg') center/cover no-repeat fixed; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 100px 20px; }
+        .hero h1 { font-size: clamp(2.5em, 6vw, 4.5em); font-weight: normal; margin-bottom: 20px; line-height: 1.1; font-variant: small-caps; text-shadow: 0 4px 15px rgba(0,0,0,0.6); max-width: 1100px; }
+        .tagline { font-size: clamp(1.1em, 3vw, 1.6em); font-style: italic; margin-bottom: 35px; text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
+        .btn-apropos { display: inline-block; padding: 15px 40px; background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); color: #fff; text-decoration: none; border-radius: 50px; font-variant: small-caps; font-weight: bold; border: 1px solid rgba(255,255,255,0.4); transition: 0.3s; font-size: 1.1em; }
+        .btn-apropos:hover { background: #fff; color: var(--brun-sombre); transform: translateY(-3px); }
 
-        /* --- CONTENU --- */
         .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
-        
-        .histoire-section { 
-            background: var(--blanc); padding: clamp(30px, 7vw, 80px); border-radius: 30px; margin-top: -120px; 
-            position: relative; z-index: 10; box-shadow: 0 25px 60px rgba(0,0,0,0.08); border-top: 4px solid var(--or-zen); 
-        }
+        .histoire-section { background: var(--blanc); padding: 80px clamp(20px, 5vw, 80px); border-radius: 30px; margin-top: 40px; position: relative; z-index: 10; box-shadow: 0 25px 60px rgba(0,0,0,0.05); border-top: 4px solid var(--or-zen); }
         .histoire-section h2 { font-size: 2.5em; color: var(--or-zen); margin-bottom: 40px; text-align: center; font-variant: small-caps; }
-        .histoire-text { column-count: 2; column-gap: 60px; text-align: justify; font-size: 1.1rem; color: #444; }
+        .histoire-text { column-count: 2; column-gap: 60px; text-align: justify; font-size: 1.15rem; color: #444; line-height: 2; }
 
-        /* --- ENCADRÉS HUB (STYLE UNIVERS) --- */
+        .search-container { max-width: 700px; margin: 60px auto 0; position: relative; }
+        .search-container input { width: 100%; padding: 22px 35px; border: 2px solid var(--bg-sable); border-radius: 50px; font-size: 1.1em; outline: none; transition: 0.3s; font-family: 'Georgia', serif; }
+        .search-container input:focus { border-color: var(--or-zen); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .search-container button { position: absolute; right: 10px; top: 10px; padding: 12px 30px; border-radius: 40px; border: none; background: var(--brun-sombre); color: white; cursor: pointer; font-variant: small-caps; font-weight: bold; transition: 0.3s; }
+        .search-container button:hover { background: var(--or-zen); }
+
         .encadre-hero { margin: 80px 0; border-radius: 30px; overflow: hidden; border: 5px solid var(--or-zen); box-shadow: 0 20px 50px rgba(0,0,0,0.2); }
-        .cadre-fond { 
-            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('assets/hero-accueil.jpg') center/cover no-repeat fixed;
-            padding: 80px 40px; text-align: center;
-        }
+        .cadre-fond { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('assets/hero-accueil.jpg') center/cover no-repeat fixed; padding: 80px 40px; text-align: center; }
         .encadre-titre { font-size: clamp(2em, 5vw, 2.8em); font-variant: small-caps; color: #fff; margin-bottom: 10px; text-shadow: 0 4px 10px rgba(0,0,0,0.5); }
         .encadre-sous-titre { font-style: italic; font-size: 1.1em; color: #fff; margin-bottom: 25px; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
         
-        .liste-selectionnable { display: flex; flex-direction: column; gap: 15px; max-width: 650px; margin: 20px auto 0; }
-        .item-link { 
-            background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); 
-            border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; 
-            padding: 18px 35px; display: flex; align-items: center; justify-content: space-between;
-            text-decoration: none; color: #fff; transition: 0.3s;
-        }
-        .item-link:hover { transform: scale(1.03); border-color: #fff; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+        .liste-selectionnable { display: flex; flex-direction: column; gap: 15px; max-width: 650px; margin: 40px auto 0; }
+        .item-link { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; padding: 18px 35px; display: flex; align-items: center; justify-content: space-between; text-decoration: none; color: #fff; transition: 0.3s; }
+        .item-link:hover { transform: scale(1.03); border-color: #fff; background: var(--or-zen); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
         .item-link.m1:hover { background: var(--maison); }
         .item-link.m2:hover { background: var(--jardin); }
         .item-link.m3:hover { background: var(--corps); }
@@ -115,62 +82,50 @@
         .item-link.m5:hover { background: var(--eso); }
         .item-link span { font-weight: bold; font-variant: small-caps; font-size: 1.15em; text-shadow: 0 2px 5px rgba(0,0,0,0.3); }
 
-        /* --- TRANSITION & RECHERCHE --- */
         .msg-transition { text-align: center; margin: 100px 0; }
-        .search-container { max-width: 700px; margin: 40px auto 0; position: relative; }
-        .search-container input { 
-            width: 100%; padding: 22px 35px; border: 2px solid var(--bg-sable); border-radius: 50px; 
-            font-size: 1.1em; outline: none; transition: 0.3s; font-family: 'Georgia', serif;
-        }
-        .search-container input:focus { border-color: var(--or-zen); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
-        .search-container button { 
-            position: absolute; right: 10px; top: 10px; padding: 12px 30px; border-radius: 40px; 
-            border: none; background: var(--brun-sombre); color: white; cursor: pointer; font-variant: small-caps; font-weight: bold;
-        }
-        .search-container button:hover { background: var(--or-zen); }
-        .btn-selection {
-            display: inline-block; padding: 22px 60px; background: var(--brun-sombre); color: #fff; 
-            text-decoration: none; border-radius: 50px; font-variant: small-caps; font-weight: bold;
-            font-size: 1.3em; border: 2px solid var(--or-zen); transition: 0.3s;
-        }
+        .btn-selection { display: inline-block; padding: 22px 60px; background: var(--brun-sombre); color: #fff; text-decoration: none; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 1.3em; border: 2px solid var(--or-zen); transition: 0.3s; }
         .btn-selection:hover { background: var(--or-zen); transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
 
-        /* --- ENCYCLOPÉDIE SECTION --- */
-        .encyclopedie-section { background-color: var(--blanc); padding: 100px 20px; text-align: center; border-top: 1px solid #eee; }
-        .encyclopedie-intro { max-width: 800px; margin: 0 auto 30px; font-size: 1.15rem; color: #444; }
-        .pills-row { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 30px; }
-        .pill { padding: 10px 20px; border: 2px solid; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 0.9em; text-decoration: none; background: #fff; transition: 0.3s; }
+        .encyclopedie-section { background-color: var(--blanc); padding: 80px 20px; text-align: center; border-top: 1px solid #eee; margin-top: 60px; }
+        .encyclopedie-section h2 { font-variant: small-caps; font-size: 2.2em; color: var(--brun-sombre); margin-bottom: 20px; }
+        .pricing-intro { max-width: 800px; margin: 0 auto 40px; font-size: 1.1rem; color: #444; line-height: 1.8; }
+        
+        .pills-row { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 40px; }
+        .pill { padding: 12px 20px; border: 2px solid; border-radius: 50px; text-decoration: none; font-variant: small-caps; font-size: 1em; font-weight: bold; transition: 0.3s; background: var(--blanc); }
         .p1 { border-color: var(--maison); color: var(--maison); } .p1:hover { background: var(--maison); color: #fff; }
         .p2 { border-color: var(--jardin); color: var(--jardin); } .p2:hover { background: var(--jardin); color: #fff; }
         .p3 { border-color: var(--corps); color: var(--corps); } .p3:hover { background: var(--corps); color: #fff; }
         .p4 { border-color: var(--bienetre); color: var(--bienetre); } .p4:hover { background: var(--bienetre); color: #fff; }
         .p5 { border-color: var(--eso); color: var(--eso); } .p5:hover { background: var(--eso); color: #fff; }
 
-        /* --- FOOTER --- */
+        .ad-slot-container { max-width: 900px; margin: 60px auto; padding: 0 20px; }
+        .ad-slot { padding: 1.5rem; border-radius: 18px; border: 1px dashed rgba(0,0,0,.15); font-size: 0.9rem; color: #777; background: rgba(255,255,255,.6); text-align: center; }
+
         footer { background: var(--brun-sombre); color: #fff; padding: 80px 20px; text-align: center; }
-        .footer-logo img { height: 60px; filter: invert(1) grayscale(1) brightness(1.5) opacity(0.6); transition: 0.5s; margin-bottom: 30px; }
-        .footer-logo:hover img { filter: invert(1) grayscale(1) brightness(2.5) opacity(1) drop-shadow(0 0 15px #fff); }
+        .footer-logo img { height: 60px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.4)); transition: 0.5s; margin-bottom: 30px; }
+        .footer-logo:hover img { filter: drop-shadow(0 0 25px #ffffff) drop-shadow(0 0 10px #ffffff); }
         .footer-nav-compact { display: flex; gap: 30px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; flex-wrap: wrap; }
         .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.6; font-variant: small-caps; transition: 0.3s; }
         .footer-nav-compact a:hover { opacity: 1; color: var(--or-zen); }
 
         #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
 
-        /* --- MOBILE ADJUSTMENTS (LE CORRECTIF RESPONSIVE) --- */
-        @media (max-width: 900px) {
-            .histoire-text { column-count: 1; }
-        }
+        /* RESPONSIVE MOBILE SÉCURISÉ */
+        @media (max-width: 900px) { .histoire-text { column-count: 1; } }
         @media (max-width: 768px) {
-            .nav-container { flex-direction: column; gap: 20px; padding: 15px 20px; }
-            .header-right { flex-direction: column; gap: 20px; }
-            nav ul { flex-wrap: wrap; justify-content: center; gap: 15px; }
+            .nav-container { flex-direction: column; gap: 15px; padding: 15px 20px; }
+            .header-right { flex-direction: column; gap: 15px; align-items: center; width: 100%; }
+            nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; }
             .dropdown-content { left: 50%; transform: translateX(-50%); width: 90vw; }
-            .hero h1 { font-size: 2.5em; }
-            .histoire-section { margin-top: -60px; padding: 40px 20px; }
+            
+            .hero { padding-top: 300px !important; justify-content: flex-start !important; height: auto !important; padding-bottom: 60px; }
+            .hero h1 { font-size: 2.2em; margin-bottom: 10px; }
+            
+            .histoire-section { padding: 40px 20px; }
             .encadre-hero { border-width: 3px; margin: 40px 0; }
             .cadre-fond { padding: 40px 20px; }
             .item-link { flex-direction: column; text-align: center; gap: 10px; padding: 15px 20px; font-size: 0.9em; }
-            .search-container button { position: relative; width: 100%; right: 0; top: 10px; }
+            .search-container button { position: relative; width: 100%; right: 0; top: 10px; border-radius: 50px; }
         }
     </style>
 </head>
@@ -185,7 +140,7 @@
                         <li class="dropdown">
                             <a href="grimoire.html">Grimoire</a>
                             <div class="dropdown-content">
-                                <a href="maison.html">Vol 1 : Fondation</a>
+                                <a href="maison.html">Vol 1 : Les Fondations</a>
                                 <a href="jardin.html">Vol 2 : Enracinement</a>
                                 <a href="corps.html">Vol 3 : Éclosion</a>
                                 <a href="bienetre.html">Vol 4 : Harmonie</a>
@@ -205,6 +160,7 @@
     <section class="hero">
         <h1>Le calme est la plus grande des forces</h1>
         <p class="tagline">« Bienvenue dans votre sanctuaire de solutions naturelles et alchimiques. »</p>
+        <a href="a-propos.html" class="btn-apropos">À Propos de Zen Chez Toi</a>
     </section>
 
     <main class="container">
@@ -239,21 +195,17 @@
         </section>
         
         <section class="msg-transition">
-            <p>« Un besoin spécifique ? Laissez l'alchimiste vous guider vers la solution la plus pure. »</p>
+            <p style="font-size: 1.4em; font-style: italic; margin-bottom: 30px; color: var(--brun-sombre); max-width: 800px; margin-left: auto; margin-right: auto;">« Un besoin spécifique ? Laissez l'alchimiste vous guider vers la solution la plus pure. »</p>
             <a href="grimoire.html" class="btn-selection">Explorer le Grimoire</a>
         </section>
 
         <section class="encadre-hero">
-            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('assets/hero-corps.jpg');">
+            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('assets/hero-corps.jpg');">
                 <h3 class="encadre-titre">Les Essentiels de l'Alchimiste</h3>
                 <p class="encadre-sous-titre">Quelques remèdes purs pour initier votre art au quotidien.</p>
                 <div class="liste-selectionnable">
-                    <a href="huile-neem.html" class="item-link m2">
-                        <span>Le Bouclier de Neem (Huile)</span> <span>→</span>
-                    </a>
-                    <a href="argile-verte.html" class="item-link m3">
-                        <span>L'Aimant à Toxines (Argile Verte)</span> <span>→</span>
-                    </a>
+                    <a href="https://www.amazon.fr/Garten-Gl%C3%BCck-Huile-Neem-Concentr%C3%A9e/dp/B097TTRW8T?linkCode=ll2&tag=zencheztoi-21" target="_blank" class="item-link m2"><span>La Sentinelle Amère (Huile de Neem) Vol 2</span> <span>→</span></a>
+                    <a href="https://www.amazon.fr/Cattier-Vrac-Argile-Blanche-Surfine/dp/B07YQG22XL?linkCode=ll2&tag=zencheztoi-21" target="_blank" class="item-link m3"><span>Le Sédiment de Douceur (Argile Blanche) Vol 3</span> <span>→</span></a>
                 </div>
             </div>
         </section>
@@ -272,21 +224,19 @@
             </div>
         </section>
 
+        
+
     </main>
 
     <section class="encyclopedie-section">
-        <h2 style="font-variant: small-caps; font-size: 2.2em; color: var(--brun-sombre); margin-bottom:10px;">L'Encyclopédie des Solutions Nomades</h2>
-        
-        <p class="encyclopedie-intro">
-            Notre terre regorge de matières brutes et nobles. Prises isolément, elles possèdent déjà de puissantes vertus. Mais c'est dans l'art de les associer que se révèle la véritable alchimie. Nos recueils nomades regroupent ces savoirs ancestraux pour vous permettre d'emporter ces secrets partout avec vous.
-        </p>
-
+        <h2>L'Encyclopédie des Solutions Nomades</h2>
+        <p class="pricing-intro">Notre terre regorge de matières brutes et nobles. Prises isolément, elles possèdent déjà de puissantes vertus. Mais c'est dans l'art de les associer que se révèle la véritable alchimie. Nos recueils nomades regroupent ces savoirs ancestraux pour vous permettre d'emporter ces secrets partout avec vous.</p>
         <div class="pills-row">
-            <a href="encyclopedie.html#vol1" class="pill p1">Vol 1 : Fondation</a>
-            <a href="encyclopedie.html#vol2" class="pill p2">Vol 2 : Enracinement</a>
-            <a href="encyclopedie.html#vol3" class="pill p3">Vol 3 : Éclosion</a>
-            <a href="encyclopedie.html#vol4" class="pill p4">Vol 4 : Harmonie</a>
-            <a href="encyclopedie.html#vol5" class="pill p5">Vol 5 : Élévation</a>
+            <a href="maison.html" class="pill p1">Vol 1 : Fondation</a>
+            <a href="jardin.html" class="pill p2">Vol 2 : Enracinement</a>
+            <a href="corps.html" class="pill p3">Vol 3 : Éclosion</a>
+            <a href="bienetre.html" class="pill p4">Vol 4 : Harmonie</a>
+            <a href="eso.html" class="pill p5">Vol 5 : Élévation</a>
         </div>
         <div style="margin-top: 40px; font-size: 1.2em; font-style: italic; color: var(--brun-sombre);">
             Le Volume : <span style="color:var(--or-zen); font-weight:bold;">14.90€</span> — Pack Trio : <span style="color:var(--or-zen); font-weight:bold;">24.90€</span> — L'Intégrale : <span style="color:var(--or-zen); font-weight:bold;">39.90€</span>
@@ -302,6 +252,7 @@
             <li><a href="mentions-legales.html">Mentions légales</a></li>
             <li><a href="confidentialite.html">Confidentialité</a></li>
             <li><a href="cookies.html">Cookies</a></li>
+            <li><a href="a-propos.html">À Propos</a></li>
             <li><a href="livre-or.html">Livre d'Or</a></li>
         </ul>
         <p style="font-size: 0.85em; opacity: 0.4;">&copy; 2026 Zen Chez Toi • L'Harmonie au Naturel.</p>

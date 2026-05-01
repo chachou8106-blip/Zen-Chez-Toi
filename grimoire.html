@@ -43,7 +43,7 @@
         .pinterest-badge:hover { background: var(--or-zen); border-color: var(--or-zen); transform: rotate(15deg) scale(1.1); }
 
         /* --- HERO PRINCIPAL --- */
-        .hero { min-height: 60vh; background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('assets/hero-accueil.jpg') center/cover no-repeat fixed; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; }
+        .hero { min-height: 60vh; background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('assets/hero-eso.jpg') center/cover no-repeat fixed; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; }
         .hero h1 { font-size: clamp(2.5em, 8vw, 6em); font-weight: normal; margin-bottom: 10px; line-height: 1.1; font-variant: small-caps; text-shadow: 0 4px 20px rgba(0,0,0,0.7); letter-spacing: 2px; }
         .tagline { font-size: clamp(1.1em, 3vw, 1.8em); font-style: italic; opacity: 0.95; max-width: 900px; line-height: 1.4; text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
 
@@ -85,7 +85,7 @@
         /* --- PARTENAIRES --- */
         .partenaires-section { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; max-width: 1100px; margin: 60px auto 80px; padding: 0 20px; }
         .encadre-discret { border: 2px solid var(--eso); border-radius: 30px; overflow: hidden; box-shadow: 0 15px 35px rgba(0,0,0,0.15); }
-        .encadre-discret .cadre-fond { padding: 40px 25px; background-size: cover; background-position: center; background-attachment: scroll; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; height: 100%; }
+        .encadre-discret .cadre-fond { padding: 50px 30px; background-size: cover; background-position: center; background-attachment: scroll; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; height: 100%; }
         .btn-partenaire { display: inline-block; padding: 12px 30px; border: 1px solid #fff; border-radius: 50px; color: #fff; font-variant: small-caps; text-decoration: none; font-weight: bold; transition: 0.3s; margin-top: 20px; background: rgba(0,0,0,0.4); backdrop-filter: blur(5px); }
         .btn-partenaire:hover { background: var(--eso); transform: scale(1.05); }
 
@@ -117,11 +117,12 @@
 
         @media (max-width: 768px) {
             .nav-container { flex-direction: column; gap: 15px; padding: 15px 20px; }
-            /* header-right passe en colonne pour centrer le P sous les liens */
             .header-right { width: 100%; flex-direction: column; align-items: center; gap: 15px; }
             nav ul { flex-wrap: wrap; justify-content: center; gap: 15px; }
             
-            .hero { padding-top: 200px; min-height: auto; padding-bottom: 70px; }
+            /* L'espacement vital pour que le P n'écrase plus le Hero */
+            .hero { padding-top: 280px; min-height: auto; padding-bottom: 70px; }
+            
             .search-section { margin-top: -30px; }
             .search-container input { padding: 18px 20px; font-size: 1rem; }
             .search-container button { padding: 0 20px; }
@@ -171,8 +172,8 @@
     </header>
 
     <section class="hero">
-        <h1>Les 50 Sagesses</h1>
-        <p class="tagline">« Le Grimoire des 50 ingrédients fondamentaux de notre alchimie, classés dans leur ordre sacré. »</p>
+        <h1>Le Grimoire des 50 Sagesses</h1>
+        <p class="tagline">« L'intégralité de nos ingrédients alchimiques, classés dans leur ordre sacré. »</p>
     </section>
 
     <section class="search-section">
@@ -193,16 +194,16 @@
                 <h2 class="encadre-titre">LES FONDATIONS</h2>
                 <p class="encadre-sous-titre">L'alchimie de l'âtre et la purification domestique.</p>
                 <div class="liste-selectionnable">
-                    <a href="percarbonate.html" class="item-link"><div class="item-text"><span class="nom-alchimique">1. L'Éclat de la Neige</span><span class="nom-reel">(Percarbonate)</span></div><span class="arrow">→</span></a>
+                    <a href="bicarbonate.html" class="item-link"><div class="item-text"><span class="nom-alchimique">1. L'Oxygène Solide</span><span class="nom-reel">(Bicarbonate)</span></div><span class="arrow">→</span></a>
                     <a href="vinaigre-blanc.html" class="item-link"><div class="item-text"><span class="nom-alchimique">2. L'Esprit de Clarté</span><span class="nom-reel">(Vinaigre Blanc)</span></div><span class="arrow">→</span></a>
                     <a href="savon-noir.html" class="item-link"><div class="item-text"><span class="nom-alchimique">3. L'Onguent d'Ébène</span><span class="nom-reel">(Savon Noir)</span></div><span class="arrow">→</span></a>
-                    <a href="bicarbonate.html" class="item-link"><div class="item-text"><span class="nom-alchimique">4. L'Oxygène Solide</span><span class="nom-reel">(Bicarbonate)</span></div><span class="arrow">→</span></a>
-                    <a href="cristaux-soude.html" class="item-link"><div class="item-text"><span class="nom-alchimique">5. La Force Brute</span><span class="nom-reel">(Cristaux)</span></div><span class="arrow">→</span></a>
+                    <a href="percarbonate.html" class="item-link"><div class="item-text"><span class="nom-alchimique">4. L'Éclat de la Neige</span><span class="nom-reel">(Percarbonate)</span></div><span class="arrow">→</span></a>
+                    <a href="cristaux-soude.html" class="item-link"><div class="item-text"><span class="nom-alchimique">5. La Force Brute</span><span class="nom-reel">(Cristaux de Soude)</span></div><span class="arrow">→</span></a>
                     <a href="acide-citrique.html" class="item-link"><div class="item-text"><span class="nom-alchimique">6. Le Dissolvant Universel</span><span class="nom-reel">(Acide Citrique)</span></div><span class="arrow">→</span></a>
-                    <a href="terre-sommieres.html" class="item-link"><div class="item-text"><span class="nom-alchimique">7. L'Aimant Minéral</span><span class="nom-reel">(Terre Sommières)</span></div><span class="arrow">→</span></a>
+                    <a href="terre-sommieres.html" class="item-link"><div class="item-text"><span class="nom-alchimique">7. L'Aimant Minéral</span><span class="nom-reel">(Terre de Sommières)</span></div><span class="arrow">→</span></a>
                     <a href="blanc-meudon.html" class="item-link"><div class="item-text"><span class="nom-alchimique">8. L'Éclat du Roi</span><span class="nom-reel">(Blanc de Meudon)</span></div><span class="arrow">→</span></a>
-                    <a href="cendre-bois.html" class="item-link"><div class="item-text"><span class="nom-alchimique">9. Le Sel de Terre et de Feu</span><span class="nom-reel">(Cendres)</span></div><span class="arrow">→</span></a>
-                    <a href="savon-marseille.html" class="item-link"><div class="item-text"><span class="nom-alchimique">10. Le Cube Purificateur</span><span class="nom-reel">(Marseille)</span></div><span class="arrow">→</span></a>
+                    <a href="cendre-bois.html" class="item-link"><div class="item-text"><span class="nom-alchimique">9. Le Sel de Terre et de Feu</span><span class="nom-reel">(Cendre de Bois)</span></div><span class="arrow">→</span></a>
+                    <a href="savon-marseille.html" class="item-link"><div class="item-text"><span class="nom-alchimique">10. Le Cube Purificateur</span><span class="nom-reel">(Savon de Marseille)</span></div><span class="arrow">→</span></a>
                 </div>
             </div>
         </section>
@@ -217,7 +218,7 @@
                     <a href="huile-neem.html" class="item-link"><div class="item-text"><span class="nom-alchimique">11. La Sentinelle Amère</span><span class="nom-reel">(Huile de Neem)</span></div><span class="arrow">→</span></a>
                     <a href="huile-lin.html" class="item-link"><div class="item-text"><span class="nom-alchimique">12. La Sève de Protection</span><span class="nom-reel">(Huile de Lin)</span></div><span class="arrow">→</span></a>
                     <a href="terebenthine.html" class="item-link"><div class="item-text"><span class="nom-alchimique">13. Le Solvant de la Forêt</span><span class="nom-reel">(Térébenthine)</span></div><span class="arrow">→</span></a>
-                    <a href="terre-diatomee.html" class="item-link"><div class="item-text"><span class="nom-alchimique">14. Le Bouclier Minéral</span><span class="nom-reel">(Diatomée)</span></div><span class="arrow">→</span></a>
+                    <a href="terre-diatomee.html" class="item-link"><div class="item-text"><span class="nom-alchimique">14. Le Bouclier Minéral</span><span class="nom-reel">(Terre de Diatomée)</span></div><span class="arrow">→</span></a>
                     <a href="pierre-argile.html" class="item-link"><div class="item-text"><span class="nom-alchimique">15. Le Polisseur Universel</span><span class="nom-reel">(Pierre d'Argile)</span></div><span class="arrow">→</span></a>
                     <a href="argile-verte.html" class="item-link"><div class="item-text"><span class="nom-alchimique">16. La Terre de Régénération</span><span class="nom-reel">(Argile Verte)</span></div><span class="arrow">→</span></a>
                     <a href="ortie.html" class="item-link"><div class="item-text"><span class="nom-alchimique">17. La Reine Sauvage</span><span class="nom-reel">(Poudre d'Ortie)</span></div><span class="arrow">→</span></a>
@@ -235,16 +236,16 @@
                 <h2 class="encadre-titre">L'ÉCLOSION</h2>
                 <p class="encadre-sous-titre">L'alchimie du temple physique et des sens.</p>
                 <div class="liste-selectionnable">
-                    <a href="aloe-vera.html" class="item-link"><div class="item-text"><span class="nom-alchimique">21. L'Élixir de Régénération</span><span class="nom-reel">(Aloe)</span></div><span class="arrow">→</span></a>
-                    <a href="beurre-karite.html" class="item-link"><div class="item-text"><span class="nom-alchimique">22. L'Or des Femmes</span><span class="nom-reel">(Karité)</span></div><span class="arrow">→</span></a>
-                    <a href="huile-coco.html" class="item-link"><div class="item-text"><span class="nom-alchimique">23. L'Élixir des Îles</span><span class="nom-reel">(Coco)</span></div><span class="arrow">→</span></a>
-                    <a href="amande-douce.html" class="item-link"><div class="item-text"><span class="nom-alchimique">24. Le Murmure de Tendresse</span><span class="nom-reel">(Amande)</span></div><span class="arrow">→</span></a>
-                    <a href="huile-jojoba.html" class="item-link"><div class="item-text"><span class="nom-alchimique">25. L'Élixir d'Équilibre</span><span class="nom-reel">(Jojoba)</span></div><span class="arrow">→</span></a>
-                    <a href="huile-ricin.html" class="item-link"><div class="item-text"><span class="nom-alchimique">26. L'Élixir de Densité</span><span class="nom-reel">(Ricin)</span></div><span class="arrow">→</span></a>
-                    <a href="pierre-alun.html" class="item-link"><div class="item-text"><span class="nom-alchimique">27. Le Cristal Régulateur</span><span class="nom-reel">(Alun)</span></div><span class="arrow">→</span></a>
+                    <a href="aloe-vera.html" class="item-link"><div class="item-text"><span class="nom-alchimique">21. L'Élixir de Régénération</span><span class="nom-reel">(Aloe Vera)</span></div><span class="arrow">→</span></a>
+                    <a href="beurre-karite.html" class="item-link"><div class="item-text"><span class="nom-alchimique">22. L'Or des Femmes</span><span class="nom-reel">(Beurre de Karité)</span></div><span class="arrow">→</span></a>
+                    <a href="huile-coco.html" class="item-link"><div class="item-text"><span class="nom-alchimique">23. L'Élixir des Îles</span><span class="nom-reel">(Huile de Coco)</span></div><span class="arrow">→</span></a>
+                    <a href="amande-douce.html" class="item-link"><div class="item-text"><span class="nom-alchimique">24. Le Murmure de Tendresse</span><span class="nom-reel">(Amande Douce)</span></div><span class="arrow">→</span></a>
+                    <a href="huile-jojoba.html" class="item-link"><div class="item-text"><span class="nom-alchimique">25. L'Élixir d'Équilibre</span><span class="nom-reel">(Huile de Jojoba)</span></div><span class="arrow">→</span></a>
+                    <a href="huile-ricin.html" class="item-link"><div class="item-text"><span class="nom-alchimique">26. L'Élixir de Densité</span><span class="nom-reel">(Huile de Ricin)</span></div><span class="arrow">→</span></a>
+                    <a href="pierre-alun.html" class="item-link"><div class="item-text"><span class="nom-alchimique">27. Le Cristal Régulateur</span><span class="nom-reel">(Pierre d'Alun)</span></div><span class="arrow">→</span></a>
                     <a href="argile-blanche.html" class="item-link"><div class="item-text"><span class="nom-alchimique">28. Le Sédiment de Douceur</span><span class="nom-reel">(Argile Blanche)</span></div><span class="arrow">→</span></a>
                     <a href="glycerine.html" class="item-link"><div class="item-text"><span class="nom-alchimique">29. L'Agent Liant</span><span class="nom-reel">(Glycérine)</span></div><span class="arrow">→</span></a>
-                    <a href="savon-castille.html" class="item-link"><div class="item-text"><span class="nom-alchimique">30. La Base Originelle</span><span class="nom-reel">(Castille)</span></div><span class="arrow">→</span></a>
+                    <a href="savon-castille.html" class="item-link"><div class="item-text"><span class="nom-alchimique">30. La Base Originelle</span><span class="nom-reel">(Savon de Castille)</span></div><span class="arrow">→</span></a>
                 </div>
             </div>
         </section>
@@ -257,15 +258,15 @@
                 <p class="encadre-sous-titre">L'alchimie de la sève intérieure et des fluides.</p>
                 <div class="liste-selectionnable">
                     <a href="tea-tree.html" class="item-link"><div class="item-text"><span class="nom-alchimique">31. Le Bouclier Vert</span><span class="nom-reel">(Tea-Tree)</span></div><span class="arrow">→</span></a>
-                    <a href="lavande-vraie.html" class="item-link"><div class="item-text"><span class="nom-alchimique">32. La Panacée Violette</span><span class="nom-reel">(Lavande)</span></div><span class="arrow">→</span></a>
-                    <a href="menthe-poivree.html" class="item-link"><div class="item-text"><span class="nom-alchimique">33. Le Givre Alchimique</span><span class="nom-reel">(Menthe)</span></div><span class="arrow">→</span></a>
+                    <a href="lavande-vraie.html" class="item-link"><div class="item-text"><span class="nom-alchimique">32. La Panacée Violette</span><span class="nom-reel">(Lavande Vraie)</span></div><span class="arrow">→</span></a>
+                    <a href="menthe-poivree.html" class="item-link"><div class="item-text"><span class="nom-alchimique">33. Le Givre Alchimique</span><span class="nom-reel">(Menthe Poivrée)</span></div><span class="arrow">→</span></a>
                     <a href="eucalyptus.html" class="item-link"><div class="item-text"><span class="nom-alchimique">34. L'Arbre de la Fièvre</span><span class="nom-reel">(Eucalyptus)</span></div><span class="arrow">→</span></a>
                     <a href="ravintsara.html" class="item-link"><div class="item-text"><span class="nom-alchimique">35. La Feuille Bonne à Tout</span><span class="nom-reel">(Ravintsara)</span></div><span class="arrow">→</span></a>
                     <a href="gaultherie.html" class="item-link"><div class="item-text"><span class="nom-alchimique">36. Le Baume de Feu</span><span class="nom-reel">(Gaulthérie)</span></div><span class="arrow">→</span></a>
                     <a href="helichryse.html" class="item-link"><div class="item-text"><span class="nom-alchimique">37. Le Sang Résorbé</span><span class="nom-reel">(Hélichryse)</span></div><span class="arrow">→</span></a>
-                    <a href="essence-citron.html" class="item-link"><div class="item-text"><span class="nom-alchimique">38. La Quintessence Solaire</span><span class="nom-reel">(Citron)</span></div><span class="arrow">→</span></a>
-                    <a href="ylang-ylang.html" class="item-link"><div class="item-text"><span class="nom-alchimique">39. La Fleur des Fleurs</span><span class="nom-reel">(Ylang)</span></div><span class="arrow">→</span></a>
-                    <a href="miel.html" class="item-link"><div class="item-text"><span class="nom-alchimique">40. Le Baume des Dieux</span><span class="nom-reel">(Miel)</span></div><span class="arrow">→</span></a>
+                    <a href="essence-citron.html" class="item-link"><div class="item-text"><span class="nom-alchimique">38. La Quintessence Solaire</span><span class="nom-reel">(Essence de Citron)</span></div><span class="arrow">→</span></a>
+                    <a href="ylang-ylang.html" class="item-link"><div class="item-text"><span class="nom-alchimique">39. La Fleur des Fleurs</span><span class="nom-reel">(Ylang-Ylang)</span></div><span class="arrow">→</span></a>
+                    <a href="miel.html" class="item-link"><div class="item-text"><span class="nom-alchimique">40. Le Baume des Dieux</span><span class="nom-reel">(Miel Pur)</span></div><span class="arrow">→</span></a>
                 </div>
             </div>
         </section>
@@ -284,8 +285,8 @@
                     <a href="benjoin.html" class="item-link"><div class="item-text"><span class="nom-alchimique">45. Le Fixateur Sacré</span><span class="nom-reel">(Benjoin)</span></div><span class="arrow">→</span></a>
                     <a href="sang-dragon.html" class="item-link"><div class="item-text"><span class="nom-alchimique">46. Le Sceau de Puissance</span><span class="nom-reel">(Sang de Dragon)</span></div><span class="arrow">→</span></a>
                     <a href="sel-himalaya.html" class="item-link"><div class="item-text"><span class="nom-alchimique">47. Les Cristaux de Lumière</span><span class="nom-reel">(Sel de l'Himalaya)</span></div><span class="arrow">→</span></a>
-                    <a href="rose.html" class="item-link"><div class="item-text"><span class="nom-alchimique">48. La Rosée Sublimée</span><span class="nom-reel">(Boutons de Rose)</span></div><span class="arrow">→</span></a>
-                    <a href="binchotan.html" class="item-link"><div class="item-text"><span class="nom-alchimique">49. L'Éponge de Lumière</span><span class="nom-reel">(Charbon Binchotan)</span></div><span class="arrow">→</span></a>
+                    <a href="rose.html" class="item-link"><div class="item-text"><span class="nom-alchimique">48. La Rosée Sublimée</span><span class="nom-reel">(Rose)</span></div><span class="arrow">→</span></a>
+                    <a href="binchotan.html" class="item-link"><div class="item-text"><span class="nom-alchimique">49. L'Éponge de Lumière</span><span class="nom-reel">(Binchotan)</span></div><span class="arrow">→</span></a>
                     <a href="cristal-roche.html" class="item-link"><div class="item-text"><span class="nom-alchimique">50. Le Maître Guérisseur</span><span class="nom-reel">(Cristal de Roche)</span></div><span class="arrow">→</span></a>
                 </div>
             </div>
@@ -298,15 +299,15 @@
         <div class="encadre-discret">
             <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('assets/bg-citrine.jpg');">
                 <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.8em; color: #fff; font-variant: small-caps; margin-bottom: 10px;">L'Atelier des Cristaux</h3>
-                <p style="color: rgba(255,255,255,0.9); font-style: italic; font-size: 1rem; max-width: 400px; margin: 0 auto;">Pierres sourcées avec soin par Citrine.</p>
-                <a href="https://citrine.fr/?ref=byfrxpja" target="_blank" rel="nofollow" class="btn-partenaire">Boutique Citrine →</a>
+                <p style="color: rgba(255,255,255,0.9); font-style: italic; font-size: 1rem; max-width: 400px; margin: 0 auto;">Pour enrichir votre pratique énergétique, découvrez des pierres et artefacts sourcés avec soin chez notre partenaire Citrine.</p>
+                <a href="https://citrine.fr/?ref=byfrxpja" target="_blank" rel="nofollow sponsored" class="btn-partenaire">Boutique Citrine →</a>
             </div>
         </div>
         <div class="encadre-discret">
             <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('assets/bg-chakras.jpg');">
                 <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.8em; color: #fff; font-variant: small-caps; margin-bottom: 10px;">L'Équilibre Énergétique</h3>
-                <p style="color: rgba(255,255,255,0.9); font-style: italic; font-size: 1rem; max-width: 400px; margin: 0 auto;">Harmonisez vos centres chez Sept Chakras.</p>
-                <a href="https://www.sept-chakras.com/?ref=wzecpfvw" target="_blank" rel="nofollow" class="btn-partenaire">Boutique 7 Chakras →</a>
+                <p style="color: rgba(255,255,255,0.9); font-style: italic; font-size: 1rem; max-width: 400px; margin: 0 auto;">Outils vibratoires, encens et malas pour harmoniser vos centres chez Sept Chakras.</p>
+                <a href="https://www.sept-chakras.com/?ref=wzecpfvw" target="_blank" rel="nofollow sponsored" class="btn-partenaire">Boutique 7 Chakras →</a>
             </div>
         </div>
     </section>

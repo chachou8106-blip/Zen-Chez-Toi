@@ -27,30 +27,29 @@
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.8; overflow-x: hidden; }
 
-        /* --- HEADER (PRÉSENTATION DU BLOG) --- */
         header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; }
         .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
         
+        /* AURA SUR LE LOGO DU HEADER */
         .logo { display: inline-block; text-decoration: none; }
-        .logo img { max-height: 90px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2)); transition: 0.5s ease; }
+        .logo img { max-height: 90px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); transition: 0.5s ease; }
         .logo:hover img { filter: drop-shadow(0 0 25px #ffffff) drop-shadow(0 0 10px #ffffff); transform: scale(1.03); }
 
         .header-right { display: flex; align-items: center; gap: 40px; }
+        .pinterest-badge { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; font-family: 'Georgia', serif; font-style: italic; font-size: 1.1rem; transition: 0.4s ease; background: rgba(255,255,255,0.1); backdrop-filter: blur(2px); }
+        .pinterest-badge:hover { background: var(--or-zen); border-color: var(--or-zen); transform: rotate(15deg) scale(1.1); }
         
-        .pinterest-badge { display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; font-style: italic; font-family: 'Georgia', serif; background: rgba(255,255,255,0.1); transition: 0.4s; }
-        .pinterest-badge:hover { background: var(--or-zen); border-color: var(--or-zen); transform: rotate(15deg); }
-
-        nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
+        nav ul { list-style: none; display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
         nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
         nav a:hover { color: var(--or-zen); }
 
         .dropdown { position: relative; display: inline-block; padding: 15px 0; cursor: pointer; }
-        .dropdown-content { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background-color: var(--brun-sombre); min-width: 200px; box-shadow: 0px 10px 25px rgba(0,0,0,0.3); z-index: 2100; border-radius: 8px; border: 1px solid var(--or-zen); overflow: hidden; }
-        .dropdown-content a { color: rgba(255,255,255,0.8) !important; padding: 12px 20px; display: block; font-size: 0.95em; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1); font-variant: small-caps; }
+        .dropdown-content { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background-color: var(--brun-sombre); min-width: 180px; box-shadow: 0px 8px 16px rgba(0,0,0,0.3); z-index: 2100; border-radius: 8px; overflow: hidden; }
+        .dropdown-content a { color: rgba(255,255,255,0.8) !important; padding: 12px 20px; text-decoration: none; display: block; font-size: 0.95em; text-shadow: none; font-weight: bold; border-bottom: 1px solid rgba(255,255,255,0.1); text-align: center; font-variant: small-caps; }
+        .dropdown-content a:last-child { border-bottom: none; }
         .dropdown-content a:hover { background-color: var(--or-zen); color: #fff !important; }
         .dropdown:hover .dropdown-content { display: block; }
 
-        /* --- CONTENU DE LA CARTE (INTACT) --- */
         .scroll-nav { position: fixed; top: 50%; width: 100%; display: flex; justify-content: space-between; transform: translateY(-50%); pointer-events: none; z-index: 1500; padding: 0 30px; }
         .arrow-nav { pointer-events: auto; background: var(--blanc); width: 55px; height: 55px; display: flex; align-items: center; justify-content: center; border-radius: 50%; text-decoration: none; color: var(--jardin); font-size: 1.5em; box-shadow: 0 5px 15px rgba(0,0,0,0.15); opacity: 0.6; transition: 0.3s; }
         .arrow-nav:hover { opacity: 1; transform: scale(1.1); background: var(--jardin); color: #fff; }
@@ -121,34 +120,31 @@
         .price-box h4 { font-weight: normal; color: #777; margin-bottom: 10px; font-size: 1.1em; }
         .price-box .amount { font-size: 2.8em; color: var(--or-zen); font-weight: bold; }
 
-        /* --- FOOTER (PRÉSENTATION DU BLOG) --- */
-        footer { background: var(--brun-sombre); color: #fff; padding: 80px 20px; text-align: center; }
-        .footer-logo { display: inline-block; text-decoration: none; }
-        .footer-logo img { height: 60px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.4)); transition: 0.5s; margin-bottom: 30px; }
-        .footer-logo:hover img { filter: drop-shadow(0 0 25px #ffffff); }
-        .footer-nav-compact { display: flex; gap: 30px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; flex-wrap: wrap; }
-        .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.6; font-variant: small-caps; transition: 0.3s; }
+        footer { background: var(--brun-sombre); color: #fff; padding: 60px 20px; text-align: center; }
+        
+        /* AURA SUR LE LOGO DU FOOTER */
+        .footer-logo-small { height: 45px; margin-bottom: 25px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); transition: 0.5s ease; cursor: pointer;}
+        .footer-logo-small:hover { filter: drop-shadow(0 0 25px #ffffff) drop-shadow(0 0 10px #ffffff); transform: scale(1.05); }
+        
+        .footer-nav-compact { display: flex; gap: 25px; list-style: none; justify-content: center; margin-bottom: 25px; padding: 0; flex-wrap: wrap; }
+        .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.7; font-variant: small-caps; transition: 0.3s; }
         .footer-nav-compact a:hover { opacity: 1; color: var(--or-zen); }
+        #disclaimer-bar { background: var(--brun-sombre); color: rgba(255,255,255,0.7); font-size: 0.8rem; text-align: center; padding: 12px; border-bottom: 1px solid rgba(255,255,255,0.1); }
 
-        #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
-
-        /* --- MEDIA QUERY FUSIONNÉ (Header du blog + Contenu intact du Grimoire) --- */
+        /* --- RESPONSIVE CORRIGÉ SANS CASSER LE SPIDER --- */
         @media (max-width: 1000px) { 
-            /* Fix Header Mobile */
-            .nav-container { flex-direction: column; gap: 15px; padding: 15px 20px; }
-            .header-right { flex-direction: column; gap: 15px; align-items: center; width: 100%; }
-            nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; }
-            
-            /* Fix Chevauchement Titre */
-            .hero { padding-top: 300px !important; justify-content: flex-start !important; height: auto !important; padding-bottom: 60px; }
-            
-            /* TON CODE SPIDER ET CARTE TOTALEMENT INTACT */
             .histoire-text { column-count: 1; } 
             .hero h1 { font-size: 3.5em; } 
             .expertise-list { grid-template-columns: 1fr; } 
             .mondes-spider { grid-template-columns: 1fr; grid-template-rows: auto; gap: 20px; } 
             .monde-card, .monde-card.secret { width: 100%; grid-area: auto; margin-top: 0; } 
             .mondes-spider-logo { order: -1; width: 80px; margin: 0 0 20px 0; } 
+            
+            /* Ajustement pour que le header s'empile bien et ne casse pas le titre */
+            .nav-container { flex-direction: column; gap: 15px; } 
+            .header-right { flex-direction: column; gap: 15px; align-items: center; width: 100%; }
+            nav ul { justify-content: center; }
+            .hero { padding-top: 260px; height: auto; min-height: 100vh; padding-bottom: 50px; }
         }
     </style>
 </head>
@@ -159,7 +155,6 @@
         <a href="argile-verte.html" class="arrow-nav">❯</a>
     </div>
 
-    <!-- HEADER PRÉSENTATION BLOG -->
     <header>
         <div class="nav-container">
             <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
@@ -179,10 +174,11 @@
                         </li>
                         <li><a href="encyclopedie.html">Encyclopédie</a></li>
                         <li><a href="blog.html">Journal</a></li>
+                        <li><a href="a-propos.html">À Propos</a></li>
                         <li class="menu-livre-or"><a href="livre-or.html">Livre d'Or</a></li>
                     </ul>
                 </nav>
-                <a href="https://www.pinterest.com/" class="pinterest-badge" target="_blank">p</a>
+                <a href="https://www.pinterest.fr/zencheztoi/" class="pinterest-badge" target="_blank" title="Suivez nos inspirations sur Pinterest">p</a>
             </div>
         </div>
     </header>
@@ -194,7 +190,6 @@
         <p class="tagline">"Le savoir n'est pas une arme, c'est une lumière. Apprenez à voir l'éclat là où la terre s'est faite miroir."</p>
     </section>
 
-    <!-- TON CONTENU PIERRE D'ARGILE INTACT -->
     <main class="container">
         
         <section class="histoire-section">
@@ -310,9 +305,12 @@
         </div>
     </section>
 
-    <!-- FOOTER PRÉSENTATION BLOG -->
+    <div id="disclaimer-bar">
+        🔗 Liens affiliés Amazon : En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.
+    </div>
+
     <footer>
-        <a href="index.html" class="footer-logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
+        <a href="index.html"><img src="assets/logo.png" class="footer-logo-small" alt="Zen Chez Toi"></a>
         <ul class="footer-nav-compact">
             <li><a href="mentions-legales.html">Mentions légales</a></li>
             <li><a href="confidentialite.html">Confidentialité</a></li>
@@ -320,12 +318,8 @@
             <li><a href="a-propos.html">À Propos</a></li>
             <li><a href="livre-or.html">Livre d'Or</a></li>
         </ul>
-        <p style="font-size: 0.85em; opacity: 0.4;">&copy; 2026 Zen Chez Toi • La terre se souvient de ce qui est pur et polit ce qu'elle a créé.</p>
+        <p style="font-size: 0.8em; opacity: 0.5;">&copy; 2026 Zen Chez Toi • La terre se souvient de ce qui est pur et polit ce qu'elle a créé.</p>
     </footer>
-
-    <div id="disclaimer-bar">
-        🔗 Liens affiliés Amazon : En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.
-    </div>
 
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({});

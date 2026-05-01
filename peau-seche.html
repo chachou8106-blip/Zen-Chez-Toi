@@ -1,258 +1,156 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Peau Sèche : L'Alchimie de la Nutrition et de l'Hydratation | Zen Chez Toi</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peau sèche : nourrir, apaiser et protéger | Zen Chez Toi</title>
+  <meta name="description" content="Comprendre pourquoi la peau se dessèche, comment soutenir la barrière cutanée et installer un rituel simple avec crème riche et huile apaisante.">
 
-    <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRV5YNRL57"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-JRV5YNRL57');
-    </script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7501098246029504" crossorigin="anonymous"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRV5YNRL57"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JRV5YNRL57');
+  </script>
 
-    <meta name="description" content="Comprenez pourquoi la peau se dessèche et apprenez à restaurer votre barrière cutanée avec notre rituel naturel : karité, aloe vera et huiles végétales.">
-    <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
 
-    <style>
-        :root {
-            --bg-sable: #f5f2ec; --blanc: #ffffff; --brun-sombre: #2b2622; --or-zen: #a67b51;
-            --maison: #6a7f8f; --jardin: #7b9074; --corps: #cca8a0; --bienetre: #d4a259; --eso: #826a8f;
-            
-            /* THÈME CORPS ACTIVÉ */
-            --theme-article: var(--corps);
-        }
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.8; overflow-x: hidden; }
+  <style>
+    :root {
+      --bg: #fff7f4;
+      --text: #3b221d;
+      --muted: #8a5c52;
+      --accent: #e27b63;
+      --dark: #2a1410;
+      --surface: rgba(255,255,255,.94);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: 'Inter', sans-serif; color: var(--text); background: var(--bg); line-height: 1.7; }
+    a { text-decoration: none; color: var(--accent); transition: 0.3s; }
+    img { max-width: 100%; display: block; }
 
-        /* --- HEADER & NAVIGATION --- */
-        header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; }
-        .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
-        
-        /* AURA LOGO HEADER BLANC ++++ (EXCLUSIVEMENT ICI) */
-        .logo { display: inline-block; text-decoration: none; transition: 0.4s ease; }
-        .logo img { max-height: 90px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2)); transition: 0.5s ease; }
-        .logo:hover img { 
-            filter: drop-shadow(0 0 30px #ffffff) drop-shadow(0 0 15px #ffffff) drop-shadow(0 0 5px #ffffff); 
-            transform: scale(1.05); 
-        }
+    .main-nav { position: sticky; top: 0; z-index: 20; background: rgba(250,246,243,.96); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0,0,0,.08); }
+    .nav-wrap { max-width: 1200px; margin: 0 auto; padding: 12px 16px; display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; align-items: center; }
+    .nav-wrap a { font-size: .8rem; text-transform: uppercase; font-weight: 700; color: var(--muted); letter-spacing: .1em; padding: 4px 8px; }
+    .nav-wrap a.active, .nav-wrap a:hover { color: var(--accent); }
+    .dot { color: rgba(0,0,0,.1); font-size: .7rem; }
 
-        .header-right { display: flex; align-items: center; gap: 40px; }
-        nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
-        nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
-        nav a:hover { color: var(--theme-article); text-shadow: 0 0 15px var(--theme-article); }
+    .hero { position: relative; background: #000; line-height: 0; }
+    .hero img { width: 100%; max-height: 460px; min-height: 300px; object-fit: cover; }
+    .hero-overlay { position: absolute; inset: 0; background: rgba(0,0,0,.28); display: flex; align-items: center; justify-content: center; text-align: center; padding: 24px; line-height: 1.6; }
+    .hero-content { max-width: 860px; color: white; }
+    .hero-kicker { text-transform: uppercase; letter-spacing: .16em; font-size: .8rem; font-weight: 700; margin-bottom: 10px; opacity: .9; }
+    h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.4rem, 5vw, 4rem); margin: 0 0 14px; line-height: 1.08; }
+    .hero-sub { font-size: 1.04rem; max-width: 720px; margin: 0 auto; color: rgba(255,255,255,.92); }
 
-        .dropdown { position: relative; display: inline-block; padding: 15px 0; cursor: pointer; }
-        .dropdown-content { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background-color: var(--brun-sombre); min-width: 200px; box-shadow: 0px 10px 25px rgba(0,0,0,0.3); z-index: 2100; border-radius: 8px; border: 1px solid var(--theme-article); overflow: hidden; }
-        .dropdown-content a { color: rgba(255,255,255,0.8) !important; padding: 12px 20px; display: block; font-size: 0.95em; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1); font-variant: small-caps; }
-        .dropdown-content a:hover { background-color: var(--theme-article); color: #fff !important; }
-        .dropdown:hover .dropdown-content { display: block; }
+    main { max-width: 900px; margin: 0 auto; padding: 28px 20px 70px; }
+    h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; margin-top: 42px; margin-bottom: 10px; }
+    p { margin: 0 0 14px; }
+    ul { padding-left: 20px; margin: 0 0 14px; }
 
-        .pinterest-badge { display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; font-style: italic; background: rgba(255,255,255,0.1); transition: 0.4s; }
-        .pinterest-badge:hover { 
-            background: var(--theme-article); 
-            border-color: var(--theme-article); 
-            transform: rotate(15deg) scale(1.1);
-            box-shadow: 0 0 15px var(--theme-article);
-        }
+    .box { background: var(--surface); border-radius: 18px; padding: 18px; margin: 26px 0; box-shadow: 0 12px 28px rgba(0,0,0,.05); border: 1px solid rgba(0,0,0,.03); }
 
-        /* --- HERO ARTICLE --- */
-        .hero { height: 75vh; min-height: 500px; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('assets/hero-corps.jpg') center/cover no-repeat fixed; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; }
-        .vol-phrase { font-size: clamp(1.4em, 3vw, 2em); font-variant: small-caps; letter-spacing: 5px; font-weight: bold; margin-bottom: 15px; color: var(--theme-article); text-shadow: 0 4px 15px rgba(0,0,0,0.9), 0 2px 5px rgba(0,0,0,1); -webkit-text-stroke: 0.5px rgba(255,255,255,0.8); }
-        .hero h1 { font-size: clamp(2.5em, 6vw, 4.5em); font-weight: normal; margin-bottom: 20px; line-height: 1.2; font-variant: small-caps; text-shadow: 0 4px 15px rgba(0,0,0,0.8); max-width: 1000px; }
-        .tagline { font-size: clamp(1.1em, 2vw, 1.5em); font-style: italic; opacity: 0.9; max-width: 800px; line-height: 1.5; }
+    .cta-link { display: inline-block; margin-top: 10px; padding: 10px 18px; border: 1px solid var(--accent); border-radius: 999px; color: var(--accent); font-weight: 700; font-size: .95rem; }
+    .cta-link:hover { background: var(--accent); color: white; }
 
-        /* --- CORPS DU TEXTE --- */
-        .blog-container { max-width: 800px; margin: 60px auto 60px; padding: 0 20px; font-size: 1.15rem; color: #333; }
-        .blog-container h2 { font-size: 2.2em; color: var(--theme-article); margin: 60px 0 25px; font-variant: small-caps; text-align: center; font-weight: normal; }
-        .blog-container h3 { font-size: 1.5em; color: var(--brun-sombre); margin: 50px 0 15px; font-variant: small-caps; border-bottom: 1px solid rgba(204, 168, 160, 0.4); padding-bottom: 8px; }
-        .blog-container p { margin-bottom: 25px; text-align: justify; }
-        .blog-container ul, .blog-container ol { margin-bottom: 25px; padding-left: 20px; }
-        .blog-container li { margin-bottom: 10px; }
-
-        /* --- NOTES & ENCADRÉS --- */
-        .alchimiste-note { background: var(--blanc); border-left: 4px solid var(--theme-article); padding: 30px; margin: 50px 0; border-radius: 0 20px 20px 0; box-shadow: 0 15px 40px rgba(0,0,0,0.05); }
-        .note-titre { display: block; font-variant: small-caps; color: var(--theme-article); font-weight: bold; font-size: 1.3em; margin-bottom: 15px; }
-
-        .encadre-hero { margin: 80px 0; border-radius: 30px; overflow: hidden; border: 5px solid var(--theme-article); box-shadow: 0 20px 50px rgba(0,0,0,0.2); }
-        .cadre-fond { padding: 60px 40px; text-align: center; background-size: cover; background-position: center; background-attachment: fixed; }
-        .encadre-titre { font-size: 2.5em; font-variant: small-caps; color: var(--brun-sombre); -webkit-text-stroke: 0.5px #ffffff; margin-bottom: 10px; text-shadow: 0 4px 15px rgba(0,0,0,0.6); letter-spacing: 1px; }
-        .encadre-sous-titre { font-style: italic; font-size: 1.1em; color: #fff; margin-bottom: 30px; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
-        
-        .liste-selectionnable { display: flex; flex-direction: column; gap: 15px; max-width: 650px; margin: 0 auto; }
-        
-        .item-link { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; padding: 18px 35px; display: flex; align-items: center; justify-content: space-between; text-decoration: none; color: #fff; transition: 0.4s ease; }
-        .item-link:hover { 
-            transform: scale(1.03); 
-            border-color: #ffffff; 
-            background: var(--theme-article); 
-            box-shadow: 0 0 25px var(--theme-article);
-        }
-        .item-link span { font-weight: bold; font-variant: small-caps; font-size: 1.1em; text-align: left; }
-        .item-link span small { display: block; font-size: 0.75em; font-family: 'Georgia', serif; font-style: italic; opacity: 0.8; text-transform: none; font-weight: normal; }
-
-        /* --- ENCYCLOPÉDIE --- */
-        .encyclopedie-section { background-color: var(--blanc); padding: 80px 20px; text-align: center; border-top: 1px solid #eee; }
-        .pills-row { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 30px; }
-        .pill { padding: 10px 20px; border: 2px solid; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 0.9em; text-decoration: none; background: #fff; transition: 0.3s; }
-        .p1 { border-color: var(--maison); color: var(--maison); } .p1:hover { background: var(--maison); color: #fff; box-shadow: 0 0 15px var(--maison); }
-        .p2 { border-color: var(--jardin); color: var(--jardin); } .p2:hover { background: var(--jardin); color: #fff; box-shadow: 0 0 15px var(--jardin); }
-        .p3 { border-color: var(--corps); color: var(--corps); } .p3:hover { background: var(--corps); color: #fff; box-shadow: 0 0 15px var(--corps); }
-        .p4 { border-color: var(--bienetre); color: var(--bienetre); } .p4:hover { background: var(--bienetre); color: #fff; box-shadow: 0 0 15px var(--bienetre); }
-        .p5 { border-color: var(--eso); color: var(--eso); } .p5:hover { background: var(--eso); color: #fff; box-shadow: 0 0 15px var(--eso); }
-
-        /* --- FOOTER --- */
-        footer { background: var(--brun-sombre); color: #fff; padding: 80px 20px; text-align: center; }
-        
-        .footer-logo { display: inline-block; transition: 0.4s ease; margin-bottom: 30px; }
-        .footer-logo img { height: 60px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.4)); transition: 0.5s; }
-        .footer-logo:hover img { 
-            filter: drop-shadow(0 0 30px #ffffff) drop-shadow(0 0 15px #ffffff) drop-shadow(0 0 5px #ffffff); 
-            transform: scale(1.05); 
-        }
-        
-        .footer-nav-compact { display: flex; gap: 30px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; flex-wrap: wrap; }
-        .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.6; font-variant: small-caps; transition: 0.3s; }
-        .footer-nav-compact a:hover { opacity: 1; color: var(--theme-article); text-shadow: 0 0 15px var(--theme-article); }
-
-        #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
-
-        @media (max-width: 768px) {
-            header { padding: 15px 0; }
-            .logo img { max-height: 70px; } 
-            .nav-container { flex-direction: column; gap: 15px; padding: 10px 20px; }
-            .header-right { flex-direction: column; gap: 15px; align-items: center; width: 100%; }
-            nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; }
-            .hero { padding-top: 350px !important; justify-content: flex-start !important; height: auto !important; padding-bottom: 60px; }
-            .hero h1 { font-size: 2.2em; }
-            .item-link { flex-direction: column; text-align: center; padding: 15px; }
-            .item-link span { text-align: center; }
-            .encadre-titre { font-size: 2em; }
-        }
-    </style>
+    .footer { background: var(--dark); color: #f3dfca; padding: 60px 20px 80px; text-align: center; margin-top: 30px; }
+  </style>
 </head>
 <body>
 
-    <header>
-        <div class="nav-container">
-            <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
-            <div class="header-right">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li class="dropdown">
-                            <a href="grimoire.html">Grimoire</a>
-                            <div class="dropdown-content">
-                                <a href="maison.html">Vol 1 : Fondation</a>
-                                <a href="jardin.html">Vol 2 : Enracinement</a>
-                                <a href="corps.html">Vol 3 : Éclosion</a>
-                                <a href="bienetre.html">Vol 4 : Harmonie</a>
-                                <a href="eso.html">Vol 5 : Élévation</a>
-                            </div>
-                        </li>
-                        <li><a href="blog.html">Journal</a></li>
-                        <li><a href="encyclopedie.html">Encyclopédie</a></li>
-                        <li><a href="livre-or.html">Livre d'Or</a></li>
-                    </ul>
-                </nav>
-                <a href="https://www.pinterest.fr/zencheztoi/" class="pinterest-badge" target="_blank" title="Inspirations pour le Corps">p</a>
-            </div>
-        </div>
-    </header>
+  <nav class="main-nav" aria-label="Navigation principale">
+    <div class="nav-wrap">
+      <a href="index.html">Accueil</a><span class="dot">&bull;</span>
+      <a href="bienetre.html">Bien-être</a><span class="dot">&bull;</span>
+      <a href="corps.html" class="active">Corps</a><span class="dot">&bull;</span>
+      <a href="blog.html">Blog</a>
+    </div>
+  </nav>
 
-    <section class="hero">
-        <p class="vol-phrase">Volume 3 : Éclosion • Chronique</p>
-        <h1>Peau Sèche : Restaurer le Bouclier Naturel</h1>
-        <p class="tagline">« Quand la peau tiraille ou devient rugueuse, c'est que la barrière cède. Apprenez la différence alchimique entre nourrir et hydrater pour retrouver le confort absolu. »</p>
+  <header class="hero">
+    <img src="assets/peau-seche.jpg" alt="Hydrater la peau sèche">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <div class="hero-kicker">Corps · Peau</div>
+        <h1>Peau sèche : restaurer la barrière et retrouver du confort</h1>
+        <p class="hero-sub">
+          Quand la peau tiraille, gratte ou devient rugueuse, cela peut traduire une barrière cutanée fragilisée et une perte d’eau plus rapide que la normale.[web:130][web:137]
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Pourquoi la peau devient-elle inconfortable ?</h2>
+      <p>
+        La peau sèche manque souvent de lipides et retient moins bien l’eau. Résultat : elle devient plus sensible, plus rêche et parfois plus réactive aux agressions extérieures.[web:130][web:137]
+      </p>
+      <p>
+        Les douches trop chaudes, les nettoyants agressifs ou une routine trop décapante peuvent accentuer cet état et rendre la sensation de tiraillement plus persistante.[web:137][web:139][web:140]
+      </p>
     </section>
 
-    <main class="blog-container">
-
-        <p>Notre peau est la frontière magique entre notre monde intérieur et l'univers extérieur. Lorsqu'elle devient inconfortable, qu'elle tiraille ou pèle, c'est le signe d'une barrière cutanée fragilisée. La peau perd ses lipides naturels (son "ciment") et laisse l'eau s'évaporer beaucoup trop vite. Les douches trop chaudes, le calcaire et les gels douches industriels agressifs accentuent violemment cet état de sécheresse.</p>
-
-        <div class="alchimiste-note">
-            <span class="note-titre">Le Secret : Hydrater vs Nourrir</span>
-            <p>C'est l'erreur la plus courante ! <strong>Hydrater</strong>, c'est apporter de l'eau (avec du gel d'Aloe Vera, par exemple). <strong>Nourrir</strong>, c'est apporter du gras (avec du Karité ou des huiles végétales). Si vous mettez de l'huile sur une peau déshydratée, cela ne fera que graisser la surface. Le secret est de superposer les deux : apportez l'eau en premier, puis scellez-la avec le gras !</p>
-        </div>
-
-        <h2>Étape 1 : Le Nettoyage Doux</h2>
-        <p>Le rituel de réparation commence sous l'eau. Baissez légèrement la température de votre douche (l'eau brûlante fait fondre le sébum protecteur de la peau). Remplacez les gels douche chimiques par un nettoyant pur et ancestral comme le <strong>Savon de Castille</strong>. Riche en huiles végétales douces, il nettoie sans jamais décaper la barrière lipidique. En sortant de l'eau, séchez votre peau en la tapotant doucement avec la serviette, sans frotter.</p>
-
-        <h2>Étape 2 : Le Rituel du Scellement</h2>
-        <p>C'est ici que la magie opère. Sur votre peau encore très légèrement humide, appliquez d'abord une fine couche de Gel d'Aloe Vera pour gorger les cellules d'eau. Immédiatement après (dans les 3 minutes qui suivent la douche), massez votre corps avec une matière riche : du <strong>Beurre de Karité</strong> brut ou de l'<strong>Huile d'Amande Douce</strong>. Ces corps gras vont créer un film protecteur imperméable qui emprisonnera l'eau de l'Aloe Vera et l'humidité de la douche à l'intérieur de votre peau. Fini les tiraillements !</p>
-
-        <section class="encadre-hero">
-            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/hero-corps.jpg');">
-                <h3 class="encadre-titre">L'Arsenal de Réparation</h3>
-                <p class="encadre-sous-titre">Les élixirs purs de notre grimoire pour restaurer votre barrière cutanée.</p>
-                <div class="liste-selectionnable">
-                    <a href="https://www.amazon.fr/B-T-cosmetic-wellness-Apr%C3%A8s-Soleil/dp/B07FS3VJR1?crid=2B3L9CEMXT167&dib=eyJ2IjoiMSJ9.Qpqle5rVpGuzS0bxG3EkcTdBjgHqOgUUDNH96D6cCl1zjATGy2YaRZtnhXNbcma7nQOg95bs65LSiL6ECQWQrazABahOWa_1KAmv-MIFfKAVfpBe_8cz_1fq5mBHVad38qvFKXa1FGhu1_FvI0Z8yRLdhpOkisuTEQRy7Oyx-BZ8dyloSna13oHtXdFTqzsJiySaupqTGtv1vL215TQ-f6QFNKT1Ctdi7YAsbObtXNrkJO-s0yCR-6cixMoXYUpcMCZ3a9Yll_lfTzvfoxkVC4upSr-ScccPabdxbSC96VI.92T9sBjchZ8q-5GTZFmk2nmiHkgDWKNDtRV_Agm82-M&dib_tag=se&keywords=gel%2Baloe%2Bvera%2Bbio&qid=1777124457&rdc=1&sprefix=gel%2Baloe%2Bvera%2B%2Caps%2C341&sr=8-7&th=1&linkCode=ll2&tag=zencheztoi-21&linkId=d7d801349cb5ecd77df808379916cb07&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="item-link">
-                        <span>L'Eau Végétale <small>Gel d'Aloe Vera Bio : la première étape pour apporter une hydratation profonde</small></span> <span>→</span>
-                    </a>
-                    <a href="https://www.amazon.fr/Beurre-Karit%C3%A9-400-Biologique-additifs/dp/B09QT25SCC?crid=2YYOWFNLDXL47&dib=eyJ2IjoiMSJ9.JX5_d-bL8SO135ZO6gTyuNZMYdXR4WMZ8xrZnozRFjgV96sbvvmC0oM5tbluR4FkEfKJrz8AcBPYtIHu4pYpSrmubaBijj0-tdmJOFLKX1zRafg2WFdwTpKkZ_zCUzcGT7Guvkrk3GBaDt2riaSF-4I8KXGeGxN5fkkqLxyPPIoDzrBysEC5v2ZmVzuTSCmZ1ZIn00r9MbDhAsQpopuaiccbcU9_Pf5g5IZpicF-IzGjGSZpWmT2shhwofeG30B_7SEQH1OFrKYtq95BQW8Wx7r4vbwKR7RnOtxbaqYANI4.OQdOUJtrPEEfagMviYPkqQr7ESdZkU1WLijzK5LZbRI&dib_tag=se&keywords=beurre%2Bde%2Bkarite%2Bbio%2Bnon%2Braffin%C3%A9&qid=1777119727&sprefix=karite%2Bbio%2B%2Caps%2C246&sr=8-6&th=1&linkCode=ll2&tag=zencheztoi-21&linkId=980115ed333a7d2bc6a9a9369c3739c6&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="item-link">
-                        <span>Le Pansement Nourrissant <small>Beurre de Karité Bio Brut : pour sceller l'hydratation et réparer les zones très rugueuses</small></span> <span>→</span>
-                    </a>
-                    <a href="https://www.amazon.fr/Adoucissante-Pr%C3%A9vention-vergetures-bleumarine-Bretania/dp/B01HVLA61S?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=35QFRGOTUHG83&dib=eyJ2IjoiMSJ9.ZCUcK4uHEFq8sBMY-a2EuGO0Ez1FSR1HvpmXioaV9rNhXMFVxgf01-BnLdUctAvMFamoOl7f4H2hI7dz4yctIeGh1e6qwJdWHVv1paYuxiYgAmjfmnlURqHN3LXiv87yhLRsnitNu1uHelqSzS7XI6nYkAvZ5wmyM_URq7WkHsvejI4K8XOz6YbWLBsd-HAVrwxoMT6k-YfFArz6dC7PW-XsYK_zSbvkNqGXU0ESzqV-h-sakLez3QCrmZJHtl2O.CTX47Wn53gjsBclUikflmCobdZs1-SDj1kU1BIwfrG0&dib_tag=se&keywords=huile%2Bamande%2Bdouce%2Bbio%2Bvierge%2B250ml%2Bfrance&qid=1777125648&rdc=1&s=hpc&sprefix=huile%2Bamande%2Bdouce%2Bbio%2Bvierge%2B250ml%2Bfranc%2Chpc%2C288&sr=1-30&xpid=TwvJ_O2GY2g-e&th=1&linkCode=ll2&tag=zencheztoi-21&linkId=669db4ce094cb9df599e17145a2e627a&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="item-link">
-                        <span>L'Onction Apaisante <small>Huile d'Amande Douce Vierge : alternative fluide au Karité pour assouplir la peau</small></span> <span>→</span>
-                    </a>
-                    <a href="https://www.amazon.fr/Castille-liquide-litre-Sulfate-parab%C3%A8ne/dp/B07D8X6GTK?crid=3VPSRO2L2PIYM&dib=eyJ2IjoiMSJ9.ibVLk79mgyk25re6UnhBHciuqxNENW-KevYlUNUJoS64183LxHQ4rdHQin33zXnUg63dPp1H9aZPrgZfv0VR8FSgy6-ei-eNCW3eBd7UPeLXTg1-tgG5u4oRQEIER9M2H1M8DQQ6mZUl4pfnWa2ENhg4URirXqbWB27i571p0yoxBaSfWhJR63DGi4B4AjpkwykL0NhbNBBpTgE5ppm3Bb1B6Zk1vz_gsZecrifk6LbeEe6TYLm3w12oFrpuT0NpWe-3mlKsyGQzDDF4r96r5PQp5IU8Jl1ZBVWCNfhtOls.A5bPQYHW-jY9-Zd3cfAJB99dm1Mt1tAAYai03j4AYcs&dib_tag=se&keywords=savon%2Bde%2Bcastille%2Bliquide%2Bbio&qid=1777228958&sprefix=savon%2Bcastille%2Bbio%2Caps%2C241&sr=8-5&th=1&linkCode=ll2&tag=zencheztoi-21&linkId=44d8c1163d56772815bdc00020138b40&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="item-link">
-                        <span>La Douche Originelle <small>Savon de Castille Liquide : un nettoyant ultra-doux qui respecte votre sébum naturel</small></span> <span>→</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section class="encadre-hero">
-            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/hero-accueil.jpg');">
-                <h3 class="encadre-titre">Continuer l'Éclosion</h3>
-                <p class="encadre-sous-titre">Explorez d'autres rituels pour prendre soin de votre corps physique.</p>
-                <div class="liste-selectionnable">
-                    <a href="cellulite.html" class="item-link">
-                        <span>Le Lissage Naturel <small>Chronique : Stimuler la circulation et réduire la cellulite</small></span> <span>→</span>
-                    </a>
-                    <a href="jambes-lourdes.html" class="item-link">
-                        <span>La Légèreté <small>Chronique : Soulager les jambes lourdes au naturel</small></span> <span>→</span>
-                    </a>
-                    <a href="corps.html" class="item-link">
-                        <span>Le Volume 3 Complet <small>La Table des Matières de votre Éclosion</small></span> <span>→</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <section class="encyclopedie-section">
-        <h2 style="font-variant: small-caps; font-size: 2.2em; color: var(--brun-sombre); margin-bottom: 20px;">Emporte nos savoirs avec toi</h2>
-        <div class="pills-row">
-            <a href="encyclopedie.html#vol1" class="pill p1">Vol 1 : Fondation</a>
-            <a href="encyclopedie.html#vol2" class="pill p2">Vol 2 : Enracinement</a>
-            <a href="encyclopedie.html#vol3" class="pill p3">Vol 3 : Éclosion</a>
-            <a href="encyclopedie.html#vol4" class="pill p4">Vol 4 : Harmonie</a>
-            <a href="encyclopedie.html#vol5" class="pill p5">Vol 5 : Élévation</a>
-        </div>
-        <div style="margin-top: 40px; font-size: 1.2em; font-style: italic; color: var(--brun-sombre);">
-            Le Volume : <span style="color:var(--or-zen); font-weight:bold;">14.90€</span> — Pack Trio : <span style="color:var(--or-zen); font-weight:bold;">24.90€</span> — L'Intégrale : <span style="color:var(--or-zen); font-weight:bold;">39.90€</span>
-        </div>
+    <section>
+      <h2>Les bons gestes pour réparer doucement</h2>
+      <ul>
+        <li>Nettoyer avec des formules douces, sans trop décaper la peau.[web:137][web:139][web:140]</li>
+        <li>Appliquer une crème riche matin et soir sur peau légèrement humide.[web:128][web:130][web:132][web:137]</li>
+        <li>Ajouter une huile végétale pour aider à sceller l’hydratation et renforcer le confort.[web:125][web:127][web:129][web:133][web:139]</li>
+      </ul>
     </section>
 
-    <footer>
-        <a href="index.html" class="footer-logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
-        <ul class="footer-nav-compact">
-            <li><a href="mentions-legales.html">Mentions légales</a></li>
-            <li><a href="confidentialite.html">Confidentialité</a></li>
-            <li><a href="cookies.html">Cookies</a></li>
-            <li><a href="a-propos.html">À Propos</a></li>
-            <li><a href="livre-or.html">Livre d'Or</a></li>
+    <section>
+      <div class="box">
+        <div style="text-transform:uppercase;letter-spacing:.12em;font-size:.8rem;font-weight:700;color:var(--muted);margin-bottom:8px;">
+          3 gestes express quand la peau tire
+        </div>
+        <ul>
+          <li>Passer à l’eau tiède sous la douche, puis sécher la peau en tapotant doucement plutôt qu’en frottant.[web:137][web:140][web:142]</li>
+          <li>Appliquer dans les 5 minutes une couche généreuse de crème riche, surtout sur les zones qui grattent le plus.[web:128][web:130][web:137]</li>
+          <li>Ajouter quelques gouttes d’huile végétale (comme le chanvre) par-dessus la crème le soir, pour mieux “sceller” l’hydratation.[web:125][web:127][web:133][web:139]</li>
         </ul>
-        <p style="font-size: 0.85em; opacity: 0.4;">&copy; 2026 Zen Chez Toi • L'Éclosion au Naturel.</p>
-    </footer>
+      </div>
+    </section>
 
-    <div id="disclaimer-bar">🔗 Liens affiliés Amazon : Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises. Ces conseils cosmétiques ne remplacent pas l'avis d'un dermatologue en cas de pathologie cutanée sévère.</div>
+    <section>
+      <h2>Produits choisis pour cette page</h2>
+      <div class="box">
+        <strong>Produit associé – Crème riche pour peau sèche</strong>
+        <p>
+          Une crème relipidante riche en céramides, karité ou autres corps gras est souvent recommandée pour soutenir la barrière cutanée et réduire la perte en eau.[web:128][web:130][web:132][web:134]
+        </p>
+        <a class="cta-link"
+           href="https://www.amazon.fr/s?k=crème+riche+peau+sèche+corps&tag=zencheztoi-21"
+           target="_blank" rel="nofollow sponsored">
+          Voir la crème peau sèche
+        </a>
+      </div>
+
+      <div class="box">
+        <strong>Produit associé – Huile végétale apaisante</strong>
+        <p>
+          Une huile végétale comme l’huile de chanvre peut compléter la crème pour aider la peau à rester plus souple et plus confortable, surtout sur les zones très sèches.[web:125][web:127][web:129][web:133]
+        </p>
+        <a class="cta-link"
+           href="https://www.amazon.fr/s?k=huile+chanvre+peau+sèche&tag=zencheztoi-21"
+           target="_blank" rel="nofollow sponsored">
+          Voir l’huile apaisante
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div style="font-family:'Cormorant Garamond',serif;font-size:2.2rem;">
+      Zen <em style="color:var(--accent);font-style:italic;">Chez</em> Toi
+    </div>
+    <p style="opacity:.65;">© 2026 Zen Chez Toi — Tous droits réservés.</p>
+  </footer>
 
 </body>
 </html>

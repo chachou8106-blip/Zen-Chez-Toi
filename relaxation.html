@@ -1,259 +1,357 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Relaxation : Créer des Bulles de Calme au Quotidien | Zen Chez Toi</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRV5YNRL57"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-JRV5YNRL57');
-    </script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7501098246029504" crossorigin="anonymous"></script>
+  <title>Relaxation au quotidien : créer des bulles de calme dans vos journées | Zen Chez Toi</title>
+  <meta name="description" content="Des rituels de relaxation simples pour souffler : coin cocon, scanner corporel, respiration douce, pause sensorielle et moments de rien, à votre rythme.">
 
-    <meta name="description" content="Découvrez nos rituels de relaxation simples : scanner corporel, coin cocon et pause sensorielle pour apaiser le mental et relâcher les tensions physiques.">
-    <link rel="icon" type="image/png" href="assets/logo.png">
+  <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
 
-    <style>
-        :root {
-            --bg-sable: #f5f2ec; --blanc: #ffffff; --brun-sombre: #2b2622; --or-zen: #a67b51;
-            --maison: #6a7f8f; --jardin: #7b9074; --corps: #cca8a0; --bienetre: #d4a259; --eso: #826a8f;
-            
-            /* THÈME BIEN-ÊTRE ACTIVÉ */
-            --theme-article: var(--bienetre);
-        }
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.8; overflow-x: hidden; }
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRV5YNRL57"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JRV5YNRL57');
+  </script>
 
-        /* --- HEADER & NAVIGATION --- */
-        header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; }
-        .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
-        
-        /* AURA LOGO (HEADER) */
-        .logo { display: inline-block; text-decoration: none; transition: 0.4s ease; }
-        .logo img { max-height: 90px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2)); transition: 0.5s ease; }
-        .logo:hover img { 
-            filter: drop-shadow(0 0 30px #ffffff) drop-shadow(0 0 15px #ffffff) drop-shadow(0 0 5px #ffffff); 
-            transform: scale(1.05); 
-        }
+  <!-- Fonts -->
+  //fonts.googleapis.com">
+  //fonts.gstatic.com" crossorigin>
+  //fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
 
-        .header-right { display: flex; align-items: center; gap: 40px; }
-        nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
-        nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
-        nav a:hover { color: var(--theme-article); }
+  <style>
+    :root {
+      --bg: #f8f5f9;
+      --text: #2d2633;
+      --muted: #62566d;
+      --accent: #9b72c2;
+      --dark: #1a1421;
+      --surface: rgba(255,255,255,.9);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.7;
+    }
+    a { text-decoration: none; color: inherit; transition: 0.3s; }
 
-        .dropdown { position: relative; display: inline-block; padding: 15px 0; cursor: pointer; }
-        .dropdown-content { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background-color: var(--brun-sombre); min-width: 200px; box-shadow: 0px 10px 25px rgba(0,0,0,0.3); z-index: 2100; border-radius: 8px; border: 1px solid var(--theme-article); overflow: hidden; }
-        .dropdown-content a { color: rgba(255,255,255,0.8) !important; padding: 12px 20px; display: block; font-size: 0.95em; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1); font-variant: small-caps; text-shadow: none; }
-        .dropdown-content a:hover { background-color: var(--theme-article); color: #fff !important; }
-        .dropdown:hover .dropdown-content { display: block; }
+    .hero-inner {
+      padding: 80px 20px 40px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.3rem, 5vw, 3.2rem);
+      margin-bottom: 10px;
+    }
+    .hero-kicker {
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .hero-sub {
+      font-size: 1.02rem;
+      color: var(--muted);
+      max-width: 640px;
+      margin: 0 auto 20px;
+    }
+    .hero-note {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.05rem;
+      color: var(--muted);
+    }
 
-        .pinterest-badge { display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; font-style: italic; background: rgba(255,255,255,0.1); transition: 0.4s; }
-        .pinterest-badge:hover { 
-            background: var(--theme-article); 
-            border-color: var(--theme-article); 
-            transform: rotate(15deg) scale(1.1);
-        }
+    .main-nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(248, 245, 249, 0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+    }
+    .nav-wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 12px 16px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .nav-wrap a {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--muted);
+      letter-spacing: 0.1em;
+      padding: 4px 8px;
+    }
+    .nav-wrap a:hover,
+    .nav-wrap a.active { color: var(--accent); }
+    .dot { color: rgba(0,0,0,0.1); font-size: 0.7rem; }
 
-        /* --- HERO ARTICLE --- */
-        .hero { height: 75vh; min-height: 500px; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('assets/hero-bienetre.jpg') center/cover no-repeat fixed; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; }
-        .vol-phrase { font-size: clamp(1.4em, 3vw, 2em); font-variant: small-caps; letter-spacing: 5px; font-weight: bold; margin-bottom: 15px; color: var(--theme-article); text-shadow: 0 4px 15px rgba(0,0,0,0.9), 0 2px 5px rgba(0,0,0,1); -webkit-text-stroke: 0.5px rgba(255,255,255,0.8); }
-        .hero h1 { font-size: clamp(2.5em, 6vw, 4.5em); font-weight: normal; margin-bottom: 20px; line-height: 1.2; font-variant: small-caps; text-shadow: 0 4px 15px rgba(0,0,0,0.8); max-width: 1000px; }
-        .tagline { font-size: clamp(1.1em, 2vw, 1.5em); font-style: italic; opacity: 0.9; max-width: 800px; line-height: 1.5; }
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 30px 20px 70px;
+    }
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem;
+      margin-top: 40px;
+      margin-bottom: 12px;
+    }
+    h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      margin-top: 28px;
+      margin-bottom: 8px;
+    }
+    p { margin: 0 0 12px; }
 
-        /* --- CORPS DU TEXTE --- */
-        .blog-container { max-width: 800px; margin: 60px auto 60px; padding: 0 20px; font-size: 1.15rem; color: #333; }
-        .blog-container h2 { font-size: 2.2em; color: var(--theme-article); margin: 60px 0 25px; font-variant: small-caps; text-align: center; font-weight: normal; }
-        .blog-container h3 { font-size: 1.5em; color: var(--brun-sombre); margin: 50px 0 15px; font-variant: small-caps; border-bottom: 1px solid rgba(212, 162, 89, 0.4); padding-bottom: 8px; }
-        .blog-container p { margin-bottom: 25px; text-align: justify; }
-        .blog-container ul, .blog-container ol { margin-bottom: 25px; padding-left: 20px; }
-        .blog-container li { margin-bottom: 10px; }
+    .box {
+      background: var(--surface);
+      border-radius: 18px;
+      padding: 18px 18px 16px;
+      margin: 22px 0;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.05);
+      border: 1px solid rgba(0,0,0,0.02);
+    }
+    .box-title {
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    ul, ol {
+      padding-left: 18px;
+      margin: 0 0 12px;
+    }
 
-        /* --- NOTES & ENCADRÉS --- */
-        .alchimiste-note { background: var(--blanc); border-left: 4px solid var(--theme-article); padding: 30px; margin: 50px 0; border-radius: 0 20px 20px 0; box-shadow: 0 15px 40px rgba(0,0,0,0.05); }
-        .note-titre { display: block; font-variant: small-caps; color: var(--theme-article); font-weight: bold; font-size: 1.3em; margin-bottom: 15px; }
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin-top: 10px;
+    }
+    .product-card {
+      background: white;
+      border-radius: 14px;
+      padding: 12px 14px;
+      border: 1px solid rgba(0,0,0,0.04);
+    }
+    .product-card strong { display: block; margin-bottom: 4px; }
 
-        .encadre-hero { margin: 80px 0; border-radius: 30px; overflow: hidden; border: 5px solid var(--theme-article); box-shadow: 0 20px 50px rgba(0,0,0,0.2); }
-        .cadre-fond { padding: 60px 40px; text-align: center; background-size: cover; background-position: center; background-attachment: fixed; }
-        .encadre-titre { font-size: 2.5em; font-variant: small-caps; color: var(--brun-sombre); -webkit-text-stroke: 0.5px #ffffff; margin-bottom: 10px; text-shadow: 0 4px 15px rgba(0,0,0,0.6); letter-spacing: 1px; }
-        .encadre-sous-titre { font-style: italic; font-size: 1.1em; color: #fff; margin-bottom: 30px; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
-        
-        .liste-selectionnable { display: flex; flex-direction: column; gap: 15px; max-width: 650px; margin: 0 auto; }
-        
-        .item-link { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; padding: 18px 35px; display: flex; align-items: center; justify-content: space-between; text-decoration: none; color: #fff; transition: 0.4s ease; }
-        .item-link:hover { 
-            transform: scale(1.03); 
-            border-color: #ffffff; 
-            background: var(--theme-article); 
-        }
-        .item-link span { font-weight: bold; font-variant: small-caps; font-size: 1.1em; text-align: left; }
-        .item-link span small { display: block; font-size: 0.75em; font-family: 'Georgia', serif; font-style: italic; opacity: 0.8; text-transform: none; font-weight: normal; }
-
-        /* --- ENCYCLOPÉDIE --- */
-        .encyclopedie-section { background-color: var(--blanc); padding: 80px 20px; text-align: center; border-top: 1px solid #eee; }
-        .pills-row { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 30px; }
-        .pill { padding: 10px 20px; border: 2px solid; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 0.9em; text-decoration: none; background: #fff; transition: 0.3s; }
-        .p1 { border-color: var(--maison); color: var(--maison); } .p1:hover { background: var(--maison); color: #fff; }
-        .p2 { border-color: var(--jardin); color: var(--jardin); } .p2:hover { background: var(--jardin); color: #fff; }
-        .p3 { border-color: var(--corps); color: var(--corps); } .p3:hover { background: var(--corps); color: #fff; }
-        .p4 { border-color: var(--bienetre); color: var(--bienetre); } .p4:hover { background: var(--bienetre); color: #fff; }
-        .p5 { border-color: var(--eso); color: var(--eso); } .p5:hover { background: var(--eso); color: #fff; }
-
-        /* --- FOOTER --- */
-        footer { background: var(--brun-sombre); color: #fff; padding: 80px 20px; text-align: center; }
-        
-        .footer-logo { display: inline-block; transition: 0.4s ease; margin-bottom: 30px; }
-        .footer-logo img { height: 60px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.4)); transition: 0.5s; }
-        .footer-logo:hover img { 
-            filter: drop-shadow(0 0 30px #ffffff) drop-shadow(0 0 15px #ffffff) drop-shadow(0 0 5px #ffffff); 
-            transform: scale(1.05); 
-        }
-        
-        .footer-nav-compact { display: flex; gap: 30px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; flex-wrap: wrap; }
-        .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.6; font-variant: small-caps; transition: 0.3s; }
-        .footer-nav-compact a:hover { opacity: 1; color: var(--theme-article); }
-
-        #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
-
-        @media (max-width: 768px) {
-            header { padding: 15px 0; }
-            .logo img { max-height: 70px; } 
-            .nav-container { flex-direction: column; gap: 15px; padding: 10px 20px; }
-            .header-right { flex-direction: column; gap: 15px; align-items: center; width: 100%; }
-            nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; }
-            .hero { padding-top: 350px !important; justify-content: flex-start !important; height: auto !important; padding-bottom: 60px; }
-            .hero h1 { font-size: 2.2em; }
-            .item-link { flex-direction: column; text-align: center; padding: 15px; }
-            .item-link span { text-align: center; }
-            .encadre-titre { font-size: 2em; }
-        }
-    </style>
+    .footer {
+      background: var(--dark);
+      color: #f3dfca;
+      padding: 50px 20px 80px;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+    }
+    .footer-logo em { color: var(--accent); font-style: italic; }
+    .footer-links {
+      display: flex; justify-content: center; gap: 16px;
+      opacity: 0.6; font-size: 0.85rem; flex-wrap: wrap;
+      margin: 16px 0;
+    }
+    #disclaimer-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.95);
+      color: rgba(255,255,255,0.6);
+      font-size: 0.75rem;
+      text-align: center;
+      padding: 10px;
+      z-index: 1000;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <div class="nav-container">
-            <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
-            <div class="header-right">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li class="dropdown">
-                            <a href="grimoire.html">Grimoire</a>
-                            <div class="dropdown-content">
-                                <a href="maison.html">Vol 1 : Fondation</a>
-                                <a href="jardin.html">Vol 2 : Enracinement</a>
-                                <a href="corps.html">Vol 3 : Éclosion</a>
-                                <a href="bienetre.html">Vol 4 : Harmonie</a>
-                                <a href="eso.html">Vol 5 : Élévation</a>
-                            </div>
-                        </li>
-                        <li><a href="blog.html">Journal</a></li>
-                        <li><a href="encyclopedie.html">Encyclopédie</a></li>
-                        <li><a href="livre-or.html">Livre d'Or</a></li>
-                    </ul>
-                </nav>
-                <a href="https://www.pinterest.fr/zencheztoi/" class="pinterest-badge" target="_blank" title="Inspirations Bien-Être">p</a>
-            </div>
-        </div>
-    </header>
+  <nav class="main-nav" aria-label="Navigation principale">
+    <div class="nav-wrap">
+      <a href="index.html">Accueil</a><span class="dot">&bull;</span>
+      <a href="eso.html">Ésotérisme</a><span class="dot">&bull;</span>
+      <a href="jardin.html">Jardin</a><span class="dot">&bull;</span>
+      <a href="maison.html">Maison</a><span class="dot">&bull;</span>
+      <a href="bienetre.html" class="active">Bien-être</a><span class="dot">&bull;</span>
+      <a href="corps.html">Corps</a>
+    </div>
+  </nav>
 
-    <section class="hero">
-        <p class="vol-phrase">Volume 4 : Harmonie • Chronique</p>
-        <h1>Relaxation : Créer des Bulles de Calme</h1>
-        <p class="tagline">« La relaxation n'est pas une destination, c'est un art de vivre. Apprenez à saupoudrer votre journée de petits instants de relâche pour réguler votre système nerveux. »</p>
-    </section>
+  <header class="hero-inner">
+    <div class="hero-kicker">Bien-être · Relaxation</div>
+    <h1>Relaxation au quotidien : créer des bulles de calme dans vos journées</h1>
+    <p class="hero-sub">
+      Dans un quotidien rempli de sollicitations, il peut devenir difficile de « débrancher ». Pourtant, quelques minutes de vraie détente peuvent déjà faire beaucoup pour le corps et l’esprit.[web:187][web:190][web:196]
+    </p>
+    <p class="hero-note">
+      Ici, pas de posture parfaite ni de silence absolu : seulement des façons réalistes de vous offrir un peu plus de douceur, là où vous êtes.
+    </p>
+  </header>
 
-    <main class="blog-container">
-
-        <h2>Repenser la relaxation dans la vraie vie</h2>
-        <p>On associe souvent la relaxation à de longues séances ou à des conditions idéales, alors que des temps courts, bien placés, peuvent déjà réduire le stress et aider le système nerveux à se réguler. Plutôt que de viser un idéal, vous pouvez chercher à saupoudrer votre journée de petits instants de relâche, même s’ils ne durent que quelques minutes.</p>
-
-        <div class="alchimiste-note">
-            <span class="note-titre">Rituel Alchimique : Le Scanner Corporel Express</span>
-            <p>Fermez les yeux et faites glisser votre attention de la tête aux pieds : front, yeux, mâchoire, nuque, épaules, thorax, ventre, bassin, jambes, pieds. À chaque zone, demandez‑vous : « Est‑ce que je peux relâcher un peu de tension ici ? »</p>
-        </div>
-
-        <h2>Installer des Rituels Accessibles</h2>
+  <main>
+    <section id="comprendre">
+      <h2>Repenser la relaxation dans la vraie vie</h2>
+      <p>
+        On associe souvent la relaxation à de longues séances ou à des conditions idéales, alors que des temps courts, bien placés, peuvent déjà réduire le stress et aider le système nerveux à se réguler.[web:187][web:196]
+      </p>
+      <p>
+        Plutôt que de viser un idéal, vous pouvez chercher à saupoudrer votre journée de petits instants de relâche, même s’ils ne durent que quelques minutes.[web:187][web:193][web:196]
+      </p>
+      <div class="box">
+        <div class="box-title">Ce que vous pouvez ressentir</div>
+        <u
         <ul>
-            <li><strong>Créer un coin « cocon » :</strong> Choisissez un endroit dans votre maison, même minuscule. Ajoutez un coussin, un plaid, une lumière douce : cet espace devient votre sanctuaire pour souffler 5 minutes.</li>
-            <li><strong>Moment de respiration douce :</strong> Inspirez par le nez sur 4 temps, puis expirez doucement sur 6 ou 8 temps. La respiration profonde est une clé pour calmer une montée de stress.</li>
-            <li><strong>La pause sensorielle :</strong> Choisissez un sens à chouchouter. Regardez la flamme d’une bougie, respirez l'odeur d'une huile essentielle, ou écoutez une musique douce
-.</li>
+          >Sensation d’être toujours « en tension », même pendant les temps libres.[web:187][web:196]</li>
+          >Difficulté à se concentrer sur un moment agréable sans penser à la suite.[web:187][web:193]</li>
+          >Corps tendu (mâchoire, épaules, ventre) sans s’en rendre compte.[web:191][web:194][web:196]</li>
         </ul>
-
-        <section class="encadre-hero">
-            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/hero-bienetre.jpg');">
-                <h3 class="encadre-titre">L'Arsenal du Lâcher-Prise</h3>
-                <p class="encadre-sous-titre">Les éléments de notre grimoire pour construire votre bulle de sérénité.</p>
-                <div class="liste-selectionnable">
-                    <a href="https://www.amazon.fr/AUBRY-GASPARD-Hypoallerg%C3%A9nique-%C3%89co-Responsable-Apaisante/dp/B0GKPVBKF6?tag=zencheztoi-21" target="_blank" rel="nofollow sponsored" class="item-link">
-                        <span>Le Plaid Cocon <small>Hypoallergénique et éco-responsable : pour s'envelopper de douceur</small></span> <span>→</span>
-                    </a>
-                    <a href="https://www.amazon.fr/Diffuseur-dar%C3%B4mes-Huiles-essentielles-naturelles/dp/B0BRSWJZ8Q?tag=zencheztoi-21" target="_blank" rel="nofollow sponsored" class="item-link">
-                        <span>L'Onde Olfactive <small>Diffuseur d'huiles essentielles : pour créer une ambiance sensorielle apaisante</small></span> <span>→</span>
-                    </a>
-                    <a href="https://www.amazon.fr/Accessories-Masseur-Massage-Appareil-Rouleau/dp/B09KH6WD35?tag=zencheztoi-21" target="_blank" rel="nofollow sponsored" class="item-link">
-                        <span>Le Calme Terrestre <small>Rouleau de massage en bois : pour décharger les tensions des pieds en fin de journée</small></span> <span>→</span>
-                    </a>
-                    <a href="https://www.amazon.fr/Yoga-Studio-coussin-m%C3%A9ditation-Zabuton/dp/B0CHZ2PRRV?tag=zencheztoi-21" target="_blank" rel="nofollow sponsored" class="item-link">
-                        <span>Le Trône du Silence <small>Coussin de méditation Zabuton : pour une assise stable dans votre coin cocon</small></span> <span>→</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <h2>Installer la relaxation dans vos journées</h2>
-        <p>Il n’est pas nécessaire de bloquer de longues plages horaires pour commencer : vous pouvez choisir un moment où vous êtes déjà assis·e ou arrêté·e (transports, pause, avant de dormir) et y glisser un petit rituel. Au fil du temps, ces micro‑moments de relâche peuvent devenir comme des cailloux doux jalonnant votre journée, qui rappellent à votre corps qu’il a le droit de se détendre un peu.</p>
-
-        <section class="encadre-hero">
-            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/hero-accueil.jpg');">
-                <h3 class="encadre-titre">Continuer l'Harmonie</h3>
-                <p class="encadre-sous-titre">Poursuivez votre quête d'équilibre avec nos rituels complémentaires.</p>
-                <div class="liste-selectionnable">
-                    <a href="anti-stress.html" class="item-link">
-                        <span>Vaincre l'Anxiété <small>Chronique : Rituels naturels pour apaiser le stress</small></span> <span>→</span>
-                    </a>
-                    <a href="meditation.html" class="item-link">
-                        <span>L'Esprit Clair <small>Chronique : S'initier à la méditation en douceur</small></span> <span>→</span>
-                    </a>
-                    <a href="bienetre.html" class="item-link">
-                        <span>Le Volume 4 Complet <small>La Table des Matières de votre Harmonie</small></span> <span>→</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <section class="encyclopedie-section">
-        <h2 style="font-variant: small-caps; font-size: 2.2em; color: var(--brun-sombre); margin-bottom: 20px;">Emporte nos savoirs avec toi</h2>
-        <div class="pills-row">
-            <a href="encyclopedie.html#vol1" class="pill p1">Vol 1 : Fondation</a>
-            <a href="encyclopedie.html#vol2" class="pill p2">Vol 2 : Enracinement</a>
-            <a href="encyclopedie.html#vol3" class="pill p3">Vol 3 : Éclosion</a>
-            <a href="encyclopedie.html#vol4" class="pill p4">Vol 4 : Harmonie</a>
-            <a href="encyclopedie.html#vol5" class="pill p5">Vol 5 : Élévation</a>
-        </div>
+      </div>
     </section>
 
-    <footer>
-        <a href="index.html" class="footer-logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
-        <ul class="footer-nav-compact">
-            <li><a href="mentions-legales.html">Mentions légales</a></li>
-            <li><a href="confidentialite.html">Confidentialité</a></li>
-            <li><a href="cookies.html">Cookies</a></li>
-            <li><a href="a-propos.html">À Propos</a></li>
-            <li><a href="livre-or.html">Livre d'Or</a></li>
-        </ul>
-        <p style="font-size: 0.85em; opacity: 0.4;">&copy; 2026 Zen Chez Toi • L'Harmonie au Naturel.</p>
-    </footer>
+    <section id="gestes">
+      <h2>Rituels de relaxation accessibles au quotidien</h2>
+      <p>
+        Vous pouvez piocher ce qui vous parle dans ces propositions, et les adapter à votre réalité. Un seul rituel pratiqué régulièrement vaut mieux qu’un « programme parfait » impossible à tenir.[web:187][web:193][web:196]
+      </p>
 
-    <div id="disclaimer-bar">🔗 Liens affiliés Amazon : Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises. Ces rituels ne remplacent pas un avis médical en cas d'anxiété sévère.</div>
+      <h3>Rituel 1 · Un scanner corporel express</h3>
+      <p>
+        Asseyez‑vous ou allongez‑vous dans un endroit où vous ne serez pas dérangé·e pendant quelques minutes. Fermez les yeux et faites glisser votre attention de la tête aux pieds : front, yeux, mâchoire, nuque, épaules, thorax, ventre, bassin, jambes, pieds ; à chaque zone, demandez‑vous : « Est‑ce que je peux relâcher un peu de tension ici ? ».[web:187][web:191][web:194]
+      </p>
+
+      <h3>Rituel 2 · Créer un coin « cocon »</h3>
+      <p>
+        Choisissez un endroit dans votre maison, même minuscule : une chaise, un coin de canapé, un bout de tapis. Ajoutez un coussin, un plaid, une lumière douce : ce coin devient votre espace de mini‑pause, même pour 5 minutes, où vous venez simplement pour souffler.[web:190][web:193]
+      </p>
+
+      <h3>Rituel 3 · Un moment de respiration douce</h3>
+      <p>
+        Vous pouvez pratiquer une respiration simple : inspirez par le nez sur 4 temps, puis expirez doucement sur 6 ou 8 temps. Quelques minutes de respiration profonde ou de cohérence cardiaque sont souvent citées comme efficaces pour calmer une montée de stress.[web:187][web:196]
+      </p>
+
+      <h3>Rituel 4 · Une pause sensorielle</h3>
+      <p>
+        Choisissez un sens à chouchouter : la vue (regarder la flamme d’une bougie, un paysage, une plante), l’odorat (odeur de tisane, d’huile, de linge propre), l’ouïe (musique douce, sons de la nature).[web:187][web:190][web:193]
+        Pendant quelques minutes, laissez‑vous simplement nourrir par cette sensation, sans rien faire d’autre.
+      </p>
+
+      <h3>Rituel 5 · Un mini auto‑massage</h3>
+      <p>
+        Avec vos mains, massez doucement une zone souvent tendue chez vous : nuque, épaules, mains, pieds. L’auto‑massage est régulièrement présenté comme une manière simple de soulager les tensions et de favoriser la détente, surtout en fin de journée.[web:188][web:191][web:194][web:196]
+      </p>
+
+      <div class="box">
+        <div class="box-title">À garder en tête</div>
+        <p>
+          Si l’anxiété, les tensions ou les difficultés de détente sont très intenses ou durables, en parler avec un professionnel de santé ou un thérapeute peut être précieux.[web:192]
+          Ces rituels sont là pour vous accompagner au quotidien, sans se substituer à un avis médical si vous en avez besoin.[web:192]
+        </p>
+      </div>
+    </section>
+
+    <section id="produits">
+      <h2>Outils doux pour vos moments de détente</h2>
+      <p>
+        Quelques objets peuvent rendre vos rituels plus concrets et plus agréables, comme des repères qui disent à votre corps : « c’est le moment de se déposer un peu ».[web:187][web:190][web:193]
+      </p>
+      <div class="products-grid">
+        <div class="product-card">
+          <strong>Plaid cocon éco‑responsable</strong>
+          <p>
+            Un plaid doux, fabriqué par une petite entreprise, que vous réservez à vos moments de pause pour renforcer l’impression de cocon dès que vous le retrouvez.[web:190][web:193]
+          </p>
+          <a href="https://www.amazon.fr/AUBRY-GASPARD-Hypoallerg%C3%A9nique-%C3%89co-Responsable-Apaisante/dp/B0GKPVBKF6?tag=zencheztoi-21"
+             target="_blank" rel="noopener noreferrer">
+            Voir sur Amazon
+          </a>
+        </div>
+        <div class="product-card">
+          <strong>Diffuseur doux pour l’ambiance</strong>
+          <p>
+            Un diffuseur d’odeurs peut accompagner vos pauses sensorielles ; les sources recommandent cependant de l’utiliser sur des durées limitées et en aérant bien la pièce entre les diffusions.[web:189][web:192][web:195]
+          </p>
+          <a href="https://www.amazon.fr/Diffuseur-dar%C3%B4mes-Huiles-essentielles-naturelles/dp/B0BRSWJZ8Q?tag=zencheztoi-21"
+             target="_blank" rel="noopener noreferrer">
+            Voir sur Amazon
+          </a>
+        </div>
+        <div class="product-card">
+          <strong>Masseur de pieds en bois</strong>
+          <p>
+            Un rouleau de massage en bois pour détendre les pieds en fin de journée, relâcher les tensions et inviter le corps à se poser en douceur, dans la continuité des auto‑massages proposés plus haut.[web:188][web:191][web:194]
+          </p>
+          <a href="https://www.amazon.fr/Accessories-Masseur-Massage-Appareil-Rouleau/dp/B09KH6WD35?tag=zencheztoi-21"
+             target="_blank" rel="noopener noreferrer">
+            Voir sur Amazon
+          </a>
+        </div>
+      </div>
+      <p style="font-size:0.85rem; color:var(--muted); margin-top:10px;">
+        Ces liens sont affiliés : ils ne changent rien pour vous, mais soutiennent la création de Zen Chez Toi si vous choisissez d’acheter via ces recommandations.
+      </p>
+    </section>
+
+    <section id="ancrage">
+      <h2>Installer la relaxation dans vos journées</h2>
+      <p>
+        Il n’est pas nécessaire de bloquer de longues plages horaires pour commencer : vous pouvez choisir un moment où vous êtes déjà assis·e ou arrêté·e (transports, pause, avant de dormir) et y glisser un petit rituel.[web:187][web:193][web:196]
+      </p>
+      <p>
+        Au fil du temps, ces micro‑moments de relâche peuvent devenir comme des cailloux doux jalonnant votre journée, qui rappellent à votre corps qu’il a le droit de se détendre un peu.[web:187][web:193]
+      </p>
+      <div class="box">
+        <div class="box-title">Une invitation</div>
+        <p>
+          Aujourd’hui ou demain, choisissez un moment précis (après le repas, en rentrant chez vous, avant de vous coucher) et offrez‑vous 3 minutes de relaxation : respiration douce, coin cocon, pause sensorielle… ce qui vous parle le plus.[web:187][web:196]
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-logo">Zen <em>Chez</em> Toi</div>
+    <div class="footer-links">
+      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="confidentialite.html">Confidentialité</a>
+      <a href="cookies.html">Cookies</a>
+      <a href="index.html">Accueil</a>
+    </div>
+    <p style="margin-top:20px; opacity:0.3; font-size:0.8rem;">
+      © 2026 Zen Chez Toi — Tous droits réservés.
+    </p>
+  </footer>
+
+  <div id="disclaimer-bar">
+    Liens affiliés Amazon : En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.
+  </div>
 
 </body>
 </html>

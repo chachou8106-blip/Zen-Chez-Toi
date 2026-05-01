@@ -1,268 +1,293 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Varices : Accompagner la Circulation avec Douceur | Zen Chez Toi</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Varices : soutenir la circulation avec douceur | Zen Chez Toi</title>
+  <meta name="description" content="Varices, circulation, jambes lourdes : gestes simples, activité douce, fraîcheur et soutien veineux pour accompagner le confort au quotidien.">
 
-    <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRV5YNRL57"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-JRV5YNRL57');
-    </script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7501098246029504" crossorigin="anonymous"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRV5YNRL57"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JRV5YNRL57');
+  </script>
 
-    <meta name="description" content="Varices, circulation et jambes lourdes : découvrez des gestes simples, des activités douces et des remèdes rafraîchissants pour votre confort au quotidien.">
-    <link rel="icon" type="image/png" href="assets/logo.png">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
 
-    <style>
-        :root {
-            --bg-sable: #f5f2ec; --blanc: #ffffff; --brun-sombre: #2b2622; --or-zen: #a67b51;
-            --maison: #6a7f8f; --jardin: #7b9074; --corps: #cca8a0; --bienetre: #d4a259; --eso: #826a8f;
-            
-            /* THÈME CORPS ACTIVÉ */
-            --theme-article: var(--corps);
-        }
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.8; overflow-x: hidden; }
+  <style>
+    :root {
+      --bg:#fff7f4;
+      --text:#3b221d;
+      --muted:#8a5c52;
+      --accent:#e27b63;
+      --dark:#2a1410;
+      --surface:rgba(255,255,255,.94);
+    }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body {
+      margin:0;
+      font-family:'Inter',sans-serif;
+      color:var(--text);
+      background:var(--bg);
+      line-height:1.7;
+    }
+    a { text-decoration:none; color:var(--accent); transition:.3s; }
+    img { max-width:100%; display:block; }
 
-        /* --- HEADER & NAVIGATION --- */
-        header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; }
-        .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
-        
-        /* AURA LOGO (RÉSERVÉE AUX LOGOS HEADER ET FOOTER) */
-        .logo { display: inline-block; text-decoration: none; transition: 0.4s ease; }
-        .logo img { max-height: 90px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2)); transition: 0.5s ease; }
-        .logo:hover img { 
-            filter: drop-shadow(0 0 30px #ffffff) drop-shadow(0 0 15px #ffffff) drop-shadow(0 0 5px #ffffff); 
-            transform: scale(1.05); 
-        }
+    .main-nav {
+      position:sticky;
+      top:0;
+      z-index:20;
+      background:rgba(250,246,243,.96);
+      backdrop-filter:blur(12px);
+      border-bottom:1px solid rgba(0,0,0,.08);
+    }
+    .nav-wrap {
+      max-width:1200px;
+      margin:0 auto;
+      padding:12px 16px;
+      display:flex;
+      justify-content:center;
+      gap:14px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+    .nav-wrap a {
+      font-size:.8rem;
+      text-transform:uppercase;
+      font-weight:700;
+      color:var(--muted);
+      letter-spacing:.1em;
+      padding:4px 8px;
+    }
+    .nav-wrap a.active,
+    .nav-wrap a:hover { color:var(--accent); }
+    .dot { color:rgba(0,0,0,.1); font-size:.7rem; }
 
-        .header-right { display: flex; align-items: center; gap: 40px; }
-        nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
-        nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
-        nav a:hover { color: var(--theme-article); text-shadow: 0 0 15px var(--theme-article); }
+    .hero {
+      position:relative;
+      background:#000;
+      line-height:0;
+    }
+    .hero img {
+      width:100%;
+      max-height:460px;
+      min-height:300px;
+      object-fit:cover;
+    }
+    .hero-overlay {
+      position:absolute;
+      inset:0;
+      background:rgba(0,0,0,.28);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:24px;
+      line-height:1.6;
+    }
+    .hero-content {
+      max-width:860px;
+      color:white;
+    }
+    .hero-kicker {
+      text-transform:uppercase;
+      letter-spacing:.16em;
+      font-size:.8rem;
+      font-weight:700;
+      margin-bottom:10px;
+      opacity:.9;
+    }
+    h1 {
+      font-family:'Cormorant Garamond',serif;
+      font-size:clamp(2.4rem,5vw,4rem);
+      margin:0 0 14px;
+      line-height:1.08;
+    }
+    .hero-sub {
+      font-size:1.04rem;
+      max-width:720px;
+      margin:0 auto;
+      color:rgba(255,255,255,.92);
+    }
 
-        .dropdown { position: relative; display: inline-block; padding: 15px 0; cursor: pointer; }
-        .dropdown-content { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background-color: var(--brun-sombre); min-width: 200px; box-shadow: 0px 10px 25px rgba(0,0,0,0.3); z-index: 2100; border-radius: 8px; border: 1px solid var(--theme-article); overflow: hidden; }
-        .dropdown-content a { color: rgba(255,255,255,0.8) !important; padding: 12px 20px; display: block; font-size: 0.95em; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1); font-variant: small-caps; text-shadow: none; }
-        .dropdown-content a:hover { background-color: var(--theme-article); color: #fff !important; }
-        .dropdown:hover .dropdown-content { display: block; }
+    main {
+      max-width:900px;
+      margin:0 auto;
+      padding:28px 20px 70px;
+    }
+    h2 {
+      font-family:'Cormorant Garamond',serif;
+      font-size:1.8rem;
+      margin-top:42px;
+      margin-bottom:10px;
+    }
+    p { margin:0 0 14px; }
+    ul {
+      padding-left:20px;
+      margin:0 0 14px;
+    }
+    li { margin-bottom:6px; }
 
-        .pinterest-badge { display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; font-style: italic; background: rgba(255,255,255,0.1); transition: 0.4s; }
-        .pinterest-badge:hover { 
-            background: var(--theme-article); 
-            border-color: var(--theme-article); 
-            transform: rotate(15deg) scale(1.1);
-            box-shadow: 0 0 15px var(--theme-article);
-        }
+    .box {
+      background:var(--surface);
+      border-radius:18px;
+      padding:18px;
+      margin:26px 0;
+      box-shadow:0 12px 28px rgba(0,0,0,.05);
+      border:1px solid rgba(0,0,0,.03);
+    }
 
-        /* --- HERO ARTICLE --- */
-        .hero { height: 75vh; min-height: 500px; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('assets/varices.jpg') center/cover no-repeat fixed; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; }
-        .vol-phrase { font-size: clamp(1.4em, 3vw, 2em); font-variant: small-caps; letter-spacing: 5px; font-weight: bold; margin-bottom: 15px; color: var(--theme-article); text-shadow: 0 4px 15px rgba(0,0,0,0.9), 0 2px 5px rgba(0,0,0,1); -webkit-text-stroke: 0.5px rgba(255,255,255,0.8); }
-        .hero h1 { font-size: clamp(2.5em, 6vw, 4.5em); font-weight: normal; margin-bottom: 20px; line-height: 1.2; font-variant: small-caps; text-shadow: 0 4px 15px rgba(0,0,0,0.8); max-width: 1000px; }
-        .tagline { font-size: clamp(1.1em, 2vw, 1.5em); font-style: italic; opacity: 0.9; max-width: 800px; line-height: 1.5; }
+    .cta-link {
+      display:inline-block;
+      margin-top:10px;
+      padding:10px 18px;
+      border:1px solid var(--accent);
+      border-radius:999px;
+      color:var(--accent);
+      font-weight:700;
+      font-size:.95rem;
+    }
+    .cta-link:hover {
+      background:var(--accent);
+      color:white;
+    }
 
-        /* --- CORPS DU TEXTE --- */
-        .blog-container { max-width: 800px; margin: 60px auto 60px; padding: 0 20px; font-size: 1.15rem; color: #333; }
-        .blog-container h2 { font-size: 2.2em; color: var(--theme-article); margin: 60px 0 25px; font-variant: small-caps; text-align: center; font-weight: normal; }
-        .blog-container h3 { font-size: 1.5em; color: var(--brun-sombre); margin: 50px 0 15px; font-variant: small-caps; border-bottom: 1px solid rgba(204, 168, 160, 0.4); padding-bottom: 8px; }
-        .blog-container p { margin-bottom: 25px; text-align: justify; }
-        .blog-container ul, .blog-container ol { margin-bottom: 25px; padding-left: 20px; }
-        .blog-container li { margin-bottom: 10px; }
-
-        /* --- NOTES & ENCADRÉS --- */
-        .alchimiste-note { background: var(--blanc); border-left: 4px solid var(--theme-article); padding: 30px; margin: 50px 0; border-radius: 0 20px 20px 0; box-shadow: 0 15px 40px rgba(0,0,0,0.05); }
-        .note-titre { display: block; font-variant: small-caps; color: var(--theme-article); font-weight: bold; font-size: 1.3em; margin-bottom: 15px; }
-
-        .encadre-hero { margin: 80px 0; border-radius: 30px; overflow: hidden; border: 5px solid var(--theme-article); box-shadow: 0 20px 50px rgba(0,0,0,0.2); }
-        .cadre-fond { padding: 60px 40px; text-align: center; background-size: cover; background-position: center; background-attachment: fixed; }
-        .encadre-titre { font-size: 2.5em; font-variant: small-caps; color: var(--brun-sombre); -webkit-text-stroke: 0.5px #ffffff; margin-bottom: 10px; text-shadow: 0 4px 15px rgba(0,0,0,0.6); letter-spacing: 1px; }
-        .encadre-sous-titre { font-style: italic; font-size: 1.1em; color: #fff; margin-bottom: 30px; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
-        
-        .liste-selectionnable { display: flex; flex-direction: column; gap: 15px; max-width: 650px; margin: 0 auto; }
-        
-        .item-link { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; padding: 18px 35px; display: flex; align-items: center; justify-content: space-between; text-decoration: none; color: #fff; transition: 0.4s ease; }
-        .item-link:hover { 
-            transform: scale(1.03); 
-            border-color: #ffffff; 
-            background: var(--theme-article); 
-        }
-        .item-link span { font-weight: bold; font-variant: small-caps; font-size: 1.1em; text-align: left; }
-        .item-link span small { display: block; font-size: 0.75em; font-family: 'Georgia', serif; font-style: italic; opacity: 0.8; text-transform: none; font-weight: normal; }
-
-        /* --- ENCYCLOPÉDIE --- */
-        .encyclopedie-section { background-color: var(--blanc); padding: 80px 20px; text-align: center; border-top: 1px solid #eee; }
-        .pills-row { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 30px; }
-        .pill { padding: 10px 20px; border: 2px solid; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 0.9em; text-decoration: none; background: #fff; transition: 0.3s; }
-        .p1 { border-color: var(--maison); color: var(--maison); } .p1:hover { background: var(--maison); color: #fff; box-shadow: 0 0 15px var(--maison); }
-        .p2 { border-color: var(--jardin); color: var(--jardin); } .p2:hover { background: var(--jardin); color: #fff; box-shadow: 0 0 15px var(--jardin); }
-        .p3 { border-color: var(--corps); color: var(--corps); } .p3:hover { background: var(--corps); color: #fff; box-shadow: 0 0 15px var(--corps); }
-        .p4 { border-color: var(--bienetre); color: var(--bienetre); } .p4:hover { background: var(--bienetre); color: #fff; box-shadow: 0 0 15px var(--bienetre); }
-        .p5 { border-color: var(--eso); color: var(--eso); } .p5:hover { background: var(--eso); color: #fff; box-shadow: 0 0 15px var(--eso); }
-
-        /* --- FOOTER --- */
-        footer { background: var(--brun-sombre); color: #fff; padding: 80px 20px; text-align: center; }
-        
-        .footer-logo { display: inline-block; transition: 0.4s ease; margin-bottom: 30px; }
-        .footer-logo img { height: 60px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.4)); transition: 0.5s; }
-        .footer-logo:hover img { 
-            filter: drop-shadow(0 0 30px #ffffff) drop-shadow(0 0 15px #ffffff) drop-shadow(0 0 5px #ffffff); 
-            transform: scale(1.05); 
-        }
-        
-        .footer-nav-compact { display: flex; gap: 30px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; flex-wrap: wrap; }
-        .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.6; font-variant: small-caps; transition: 0.3s; }
-        .footer-nav-compact a:hover { opacity: 1; color: var(--theme-article); text-shadow: 0 0 15px var(--theme-article); }
-
-        #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
-
-        @media (max-width: 768px) {
-            header { padding: 15px 0; }
-            .logo img { max-height: 70px; } 
-            .nav-container { flex-direction: column; gap: 15px; padding: 10px 20px; }
-            .header-right { flex-direction: column; gap: 15px; align-items: center; width: 100%; }
-            nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; }
-            .hero { padding-top: 350px !important; justify-content: flex-start !important; height: auto !important; padding-bottom: 60px; }
-            .hero h1 { font-size: 2.2em; }
-            .item-link { flex-direction: column; text-align: center; padding: 15px; }
-            .item-link span { text-align: center; }
-            .encadre-titre { font-size: 2em; }
-        }
-    </style>
+    .footer {
+      background:var(--dark);
+      color:#f3dfca;
+      padding:60px 20px 80px;
+      text-align:center;
+      margin-top:30px;
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <div class="nav-container">
-            <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
-            <div class="header-right">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li class="dropdown">
-                            <a href="grimoire.html">Grimoire</a>
-                            <div class="dropdown-content">
-                                <a href="maison.html">Vol 1 : Fondation</a>
-                                <a href="jardin.html">Vol 2 : Enracinement</a>
-                                <a href="corps.html">Vol 3 : Éclosion</a>
-                                <a href="bienetre.html">Vol 4 : Harmonie</a>
-                                <a href="eso.html">Vol 5 : Élévation</a>
-                            </div>
-                        </li>
-                        <li><a href="blog.html">Journal</a></li>
-                        <li><a href="encyclopedie.html">Encyclopédie</a></li>
-                        <li><a href="livre-or.html">Livre d'Or</a></li>
-                    </ul>
-                </nav>
-                <a href="https://www.pinterest.fr/zencheztoi/" class="pinterest-badge" target="_blank" title="Inspirations pour le Corps">p</a>
-            </div>
-        </div>
-    </header>
+  <nav class="main-nav" aria-label="Navigation principale">
+    <div class="nav-wrap">
+      <a href="index.html">Accueil</a><span class="dot">&bull;</span>
+      <a href="bienetre.html">Bien-être</a><span class="dot">&bull;</span>
+      <a href="Corps.html" class="active">Corps</a><span class="dot">&bull;</span>
+      <a href="blog.html">Blog</a>
+    </div>
+  </nav>
 
-    <section class="hero">
-        <p class="vol-phrase">Volume 3 : Éclosion • Chronique</p>
-        <h1>Varices : Accompagner le Flux Vital</h1>
-        <p class="tagline">« Les veines sont les rivières de notre corps. Lorsqu'elles s'engorgent, apprenons à relancer leur flux par le mouvement doux et la fraîcheur. »</p>
+  <header class="hero">
+    <img src="assets/varices.jpg" alt="Varices et circulation">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <div class="hero-kicker">Corps · Circulation</div>
+        <h1>Varices : accompagner la circulation avec régularité</h1>
+        <p class="hero-sub">
+          Les varices apparaissent quand les veines des jambes perdent en efficacité et que le retour veineux se fait moins bien, ce qui peut favoriser lourdeur, gonflement et inconfort au quotidien.[web:314][web:318][web:320]
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Pourquoi les varices s’installent-elles&nbsp;?</h2>
+      <p>
+        La station debout prolongée, l’hérédité, la grossesse, le manque de mouvement, la chaleur ou certaines fragilités veineuses peuvent favoriser leur apparition.[web:314][web:318][web:320]
+      </p>
+      <p>
+        Elles s’accompagnent souvent d’une sensation de jambes lourdes, de chevilles gonflées ou de fatigue dans les mollets, surtout en fin de journée ou par temps chaud.[web:314][web:318]
+      </p>
+      <div class="box">
+        <div style="font-size:0.82rem;text-transform:uppercase;letter-spacing:.12em;font-weight:700;color:var(--muted);margin-bottom:6px;">
+          Un mot important
+        </div>
+        <p style="margin:0;">
+          En cas de douleur importante, de modification rapide de la peau, de plaie ou de gonflement asymétrique, il est recommandé de demander un avis médical pour écarter une complication et adapter les prises en charge.[web:318][web:320]
+        </p>
+      </div>
     </section>
 
-    <main class="blog-container">
-
-        <h2>Pourquoi les varices s’installent-elles ?</h2>
-        <p>Les varices apparaissent quand les veines des jambes perdent en efficacité et que le retour veineux vers le cœur se fait moins bien. Ce phénomène favorise la stagnation du sang, entraînant lourdeur, gonflement et inconfort au quotidien.</p>
-
-        <p>La station debout ou assise prolongée, l’hérédité, les variations hormonales, le manque de mouvement et la chaleur sont les principaux facteurs qui accentuent cette fragilité veineuse. Elles s’accompagnent souvent d’une sensation de chevilles gonflées ou de fatigue dans les mollets, particulièrement marquée en fin de journée.</p>
-
-        <div class="alchimiste-note">
-            <span class="note-titre">Les Limites de l'Alchimie</span>
-            <p>En cas de douleur importante, de modification rapide de la couleur de la peau, d'apparition d'une plaie ou d'un gonflement très asymétrique (une seule jambe), il est impératif de demander un avis médical. Ces signes nécessitent d'écarter une complication sérieuse (comme une phlébite) et d'adapter votre prise en charge.</p>
-        </div>
-
-        <h2>Les habitudes douces pour le retour veineux</h2>
-        <ul>
-            <li><strong>Marcher chaque jour :</strong> La marche active la voûte plantaire et la pompe musculaire des mollets, propulsant le sang vers le haut.</li>
-            <li><strong>Briser l'immobilité :</strong> Évitez les longues périodes figées. Si vous travaillez assis, levez-vous et faites quelques pas toutes les heures.</li>
-            <li><strong>Surélever vos racines :</strong> Placez vos jambes en hauteur quelques minutes dans la journée ou le soir (avec un coussin sous le matelas par exemple) pour aider la gravité à faire son travail.</li>
-            <li><strong>La fraîcheur salvatrice :</strong> Terminez votre douche par un jet d'eau fraîche, en remontant des chevilles vers les hanches pour tonifier les parois veineuses.</li>
-        </ul>
-
-        <h2>Petits exercices doux pour les jambes</h2>
-        <p>Ces trois mouvements simples, à faire chez soi ou au bureau, stimulent la circulation sans forcer :</p>
-
-        <h3>1. La bascule pointes‑talons (debout)</h3>
-        <p>Debout, les pieds parallèles (tenez‑vous près d’un mur pour l’équilibre). Montez sur la pointe des pieds, puis redescendez pour basculer doucement sur les talons, en soulevant légèrement les orteils. Répétez ce va-et-vient 15 fois.</p>
-
-        <h3>2. Rotation des chevilles (assis)</h3>
-        <p>Assis sur une chaise, le dos droit, allongez une jambe devant vous. Dessinez de larges cercles avec votre cheville, dans un sens puis dans l’autre. Faites une dizaine de cercles pour chaque jambe.</p>
-
-        <h3>3. L'inversion apaisante (Jambes au mur)</h3>
-        <p>Allongez‑vous sur le dos et placez vos jambes à la verticale contre un mur, les fessiers le plus près possible de la plinthe (sans forcer). Restez dans cette position de repos 5 à 10 minutes en respirant calmement.</p>
-
-        <section class="encadre-hero">
-            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/hero-corps.jpg');">
-                <h3 class="encadre-titre">L'Arsenal Circulatoire</h3>
-                <p class="encadre-sous-titre">Les outils de notre grimoire pour apaiser la chaleur et relancer le flux.</p>
-                <div class="liste-selectionnable">
-                    <a href="https://www.amazon.fr/Puressentiel-Circulation-Gel-Ultra-Frais/dp/B008BDOJ2I?tag=zencheztoi-21" target="_blank" rel="nofollow sponsored" class="item-link">
-                        <span>Le Frisson Tonique <small>Gel Circulation Puressentiel : aux huiles essentielles pour un effet frais immédiat</small></span> <span>→</span>
-                    </a>
-                    <a href="https://www.amazon.fr/BDEUS-sur%C3%A9l%C3%A9vation-Traversin-ergonomique-circulation/dp/B09VGP48G7?tag=zencheztoi-21" target="_blank" rel="nofollow sponsored" class="item-link">
-                        <span>Le Soutien Nocturne <small>Coussin de Surélévation : l'allié parfait pour drainer vos jambes pendant le repos</small></span> <span>→</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section class="encadre-hero">
-            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/hero-accueil.jpg');">
-                <h3 class="encadre-titre">Continuer l'Éclosion</h3>
-                <p class="encadre-sous-titre">Poursuivez votre exploration pour retrouver des fondations légères.</p>
-                <div class="liste-selectionnable">
-                    <a href="jambes-lourdes.html" class="item-link">
-                        <span>L'Envol <small>Chronique : Soulager les jambes lourdes au naturel</small></span> <span>→</span>
-                    </a>
-                    <a href="pieds-fatigues.html" class="item-link">
-                        <span>L'Ancrage <small>Chronique : Relâcher les tensions des pieds fatigués</small></span> <span>→</span>
-                    </a>
-                    <a href="corps.html" class="item-link">
-                        <span>Le Volume 3 Complet <small>La Table des Matières de votre Éclosion</small></span> <span>→</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <section class="encyclopedie-section">
-        <h2 style="font-variant: small-caps; font-size: 2.2em; color: var(--brun-sombre); margin-bottom: 20px;">Emporte nos savoirs avec toi</h2>
-        <div class="pills-row">
-            <a href="encyclopedie.html#vol1" class="pill p1">Vol 1 : Fondation</a>
-            <a href="encyclopedie.html#vol2" class="pill p2">Vol 2 : Enracinement</a>
-            <a href="encyclopedie.html#vol3" class="pill p3">Vol 3 : Éclosion</a>
-            <a href="encyclopedie.html#vol4" class="pill p4">Vol 4 : Harmonie</a>
-            <a href="encyclopedie.html#vol5" class="pill p5">Vol 5 : Élévation</a>
-        </div>
-        <div style="margin-top: 40px; font-size: 1.2em; font-style: italic; color: var(--brun-sombre);">
-            Le Volume : <span style="color:var(--or-zen); font-weight:bold;">14.90€</span> — Pack Trio : <span style="color:var(--or-zen); font-weight:bold;">24.90€</span> — L'Intégrale : <span style="color:var(--or-zen); font-weight:bold;">39.90€</span>
-        </div>
+    <section>
+      <h2>Les habitudes les plus utiles</h2>
+      <ul>
+        <li>Marcher chaque jour pour activer la pompe musculaire des mollets.[web:311][web:314][web:315][web:319]</li>
+        <li>Éviter les longues périodes immobiles (debout ou assis·e), en bougeant régulièrement les chevilles et en se levant dès que possible.[web:315][web:319]</li>
+        <li>Surélever les jambes quelques minutes dans la journée ou le soir, afin de faciliter le retour veineux.[web:313][web:314][web:315]</li>
+        <li>Utiliser la contention ou des bas de compression si cela a été recommandé par un professionnel de santé.[web:315][web:320]</li>
+      </ul>
+      <p>
+        Une activité physique régulière et douce (marche, vélo tranquille, natation, yoga) est souvent mieux tolérée qu’un mode de vie très sédentaire, qui tend à accentuer la stase veineuse.[web:311][web:314][web:317][web:319]
+      </p>
     </section>
 
-    <footer>
-        <a href="index.html" class="footer-logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
-        <ul class="footer-nav-compact">
-            <li><a href="mentions-legales.html">Mentions légales</a></li>
-            <li><a href="confidentialite.html">Confidentialité</a></li>
-            <li><a href="cookies.html">Cookies</a></li>
-            <li><a href="a-propos.html">À Propos</a></li>
-            <li><a href="livre-or.html">Livre d'Or</a></li>
-        </ul>
-        <p style="font-size: 0.85em; opacity: 0.4;">&copy; 2026 Zen Chez Toi • L'Éclosion au Naturel.</p>
-    </footer>
+    <section>
+      <h2>Petits exercices doux pour les jambes</h2>
+      <p>
+        Quelques mouvements simples, à faire chez soi ou au bureau, peuvent aider à stimuler la circulation sans forcer, en complément des conseils de ton médecin.[web:311][web:313][web:315][web:317]
+      </p>
 
-    <div id="disclaimer-bar">🔗 Liens affiliés Amazon : Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises. Ces conseils d'hygiène de vie ne remplacent pas une consultation médicale.</div>
+      <h3>1. Bascule pointes‑talons (debout)</h3>
+      <p>
+        Debout, les pieds parallèles, tiens‑toi éventuellement près d’un mur ou d’un dossier de chaise pour l’équilibre. Monte sur la pointe des pieds en poussant doucement le sol, puis redescends pour revenir sur les talons, en soulevant légèrement les pointes.[web:315][web:317][web:319]
+      </p>
+      <p>
+        Répète ce mouvement de va‑et‑vient 10 à 15&nbsp;fois, fais une petite pause, puis recommence 2 à 3&nbsp;séries selon ta tolérance.[web:315][web:319]
+      </p>
+
+      <h3>2. Rotation des chevilles (assis·e)</h3>
+      <p>
+        Assis·e sur une chaise, le dos droit, allonge une jambe devant toi et dessine des cercles avec la cheville, dans un sens puis dans l’autre, en gardant le mouvement confortable.[web:315]
+      </p>
+      <p>
+        Fais une dizaine de cercles dans chaque sens, puis change de jambe. Ce mouvement peut se faire facilement au travail ou dans les transports assis.[web:315]
+      </p>
+
+      <h3>3. Jambes au mur (position de repos)</h3>
+      <p>
+        Si ta mobilité le permet, allonge‑toi sur le dos près d’un mur et place les jambes à la verticale, contre le mur, fessiers le plus près possible sans inconfort.[web:313]
+      </p>
+      <p>
+        Reste dans cette position 5 à 10&nbsp;minutes en respirant calmement, puis redescends doucement les jambes. Cette posture douce est souvent conseillée pour faciliter le retour veineux en fin de journée.[web:313][web:314]
+      </p>
+
+      <div class="box">
+        <div style="font-size:0.82rem;text-transform:uppercase;letter-spacing:.12em;font-weight:700;color:var(--muted);margin-bottom:6px;">
+          Quelques repères de sécurité
+        </div>
+        <ul style="margin:0;">
+          <li>Arrêter un exercice s’il augmente clairement la douleur ou provoque un malaise.[web:311][web:315]</li>
+          <li>Préférer des mouvements lents et réguliers à des efforts brusques ou très intenses.[web:311][web:317][web:319]</li>
+          <li>Demander l’avis de ton médecin en cas de varices importantes, d’antécédents veineux ou de doute.[web:318][web:320]</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Produit choisi pour cette page</h2>
+      <div class="box">
+        <strong>Produit associé – Gel circulation effet frais</strong>
+        <p>
+          Un gel frais peut apporter un soulagement de confort ponctuel en fin de journée, en particulier quand les jambes semblent lourdes, chaudes ou gonflées, même si cela ne remplace pas les mesures de fond sur la circulation (activité, alimentation, contention si prescrite).[web:314][web:316][web:318][web:320]
+        </p>
+        <a class="cta-link"
+           href="https://www.amazon.fr/s?k=gel+jambes+lourdes+effet+frais&tag=zencheztoi-21"
+           target="_blank" rel="nofollow sponsored">
+          Voir le gel circulation
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div style="font-family:'Cormorant Garamond',serif;font-size:2.2rem;">
+      Zen <em style="color:var(--accent);font-style:italic;">Chez</em> Toi
+    </div>
+    <p style="opacity:.65;">© 2026 Zen Chez Toi — Tous droits réservés.</p>
+  </footer>
 
 </body>
 </html>

@@ -1,278 +1,431 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Oïdium : l'Alchimie pour soigner ses plantes au naturel | Zen Chez Toi</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Oïdium au jardin : reconnaître le voile blanc sur les feuilles, prévenir naturellement et utiliser des traitements doux (bicarbonate, savon noir, purins...).">
+  <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
 
-    <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRV5YNRL57"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-JRV5YNRL57');
-    </script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7501098246029504" crossorigin="anonymous"></script>
+  <title>Oïdium : prévenir & traiter en douceur | Zen Chez Toi</title>
 
-    <meta name="description" content="Découvrez l'alchimie pour éliminer l'oïdium de vos plantes. Transmutez ce champignon blanc avec notre recette au bicarbonate de soude et au savon noir naturel.">
-    <link rel="icon" type="image/png" href="assets/logo.png">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRV5YNRL57"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JRV5YNRL57');
+  </script>
 
-    <style>
-        :root {
-            --bg-sable: #f5f2ec; --blanc: #ffffff; --brun-sombre: #2b2622; --or-zen: #a67b51;
-            --maison: #6a7f8f; --jardin: #7b9074; --corps: #cca8a0; --bienetre: #d4a259; --eso: #826a8f;
-            
-            /* THÈME JARDIN ACTIVÉ */
-            --theme-article: var(--jardin);
-        }
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.8; overflow-x: hidden; }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
 
-        /* --- HEADER & NAVIGATION --- */
-        header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; }
-        .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
-        
-        /* AURA LOGO HEADER BLANC ++++ (EXCLUSIVEMENT ICI) */
-        .logo { display: inline-block; text-decoration: none; transition: 0.4s ease; }
-        .logo img { max-height: 90px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2)); transition: 0.5s ease; }
-        .logo:hover img { 
-            filter: drop-shadow(0 0 30px #ffffff) drop-shadow(0 0 15px #ffffff) drop-shadow(0 0 5px #ffffff); 
-            transform: scale(1.05); 
-        }
+  <style>
+    :root {
+      --bg: #fdfaf5;
+      --text: #332a22;
+      --muted: #685e55;
+      --accent: #5da679;
+      --dark: #1f140e;
+      --surface: rgba(255,255,255,.92);
+    }
 
-        .header-right { display: flex; align-items: center; gap: 40px; }
-        nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
-        nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
-        nav a:hover { color: var(--theme-article); text-shadow: 0 0 15px var(--theme-article); }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.7;
+    }
 
-        .dropdown { position: relative; display: inline-block; padding: 15px 0; cursor: pointer; }
-        .dropdown-content { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background-color: var(--brun-sombre); min-width: 200px; box-shadow: 0px 10px 25px rgba(0,0,0,0.3); z-index: 2100; border-radius: 8px; border: 1px solid var(--theme-article); overflow: hidden; }
-        .dropdown-content a { color: rgba(255,255,255,0.8) !important; padding: 12px 20px; display: block; font-size: 0.95em; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1); font-variant: small-caps; }
-        .dropdown-content a:hover { background-color: var(--theme-article); color: #fff !important; }
-        .dropdown:hover .dropdown-content { display: block; }
+    a { text-decoration: none; color: inherit; transition: 0.3s; }
 
-        /* PINTEREST - SURVOL CLASSIQUE DANS LE THÈME */
-        .pinterest-badge { display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; font-style: italic; background: rgba(255,255,255,0.1); transition: 0.4s; }
-        .pinterest-badge:hover { 
-            background: var(--theme-article); 
-            border-color: var(--theme-article); 
-            transform: rotate(15deg) scale(1.1);
-            box-shadow: 0 0 15px var(--theme-article);
-        }
+    .main-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(253, 250, 245, 0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+    }
 
-        /* --- HERO ARTICLE --- */
-        .hero { height: 75vh; min-height: 500px; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('assets/hero-jardin.jpg') center/cover no-repeat fixed; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; }
-        .vol-phrase { font-size: clamp(1.4em, 3vw, 2em); font-variant: small-caps; letter-spacing: 5px; font-weight: bold; margin-bottom: 15px; color: var(--theme-article); text-shadow: 0 4px 15px rgba(0,0,0,0.9), 0 2px 5px rgba(0,0,0,1); -webkit-text-stroke: 0.5px rgba(255,255,255,0.8); }
-        .hero h1 { font-size: clamp(2.5em, 6vw, 4.5em); font-weight: normal; margin-bottom: 20px; line-height: 1.2; font-variant: small-caps; text-shadow: 0 4px 15px rgba(0,0,0,0.8); max-width: 1000px; }
-        .tagline { font-size: clamp(1.1em, 2vw, 1.5em); font-style: italic; opacity: 0.9; max-width: 800px; line-height: 1.5; }
+    .nav-wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 14px 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
 
-        /* --- CORPS DU TEXTE --- */
-        .blog-container { max-width: 800px; margin: 60px auto 60px; padding: 0 20px; font-size: 1.15rem; color: #333; }
-        .blog-container h2 { font-size: 2.2em; color: var(--theme-article); margin: 60px 0 25px; font-variant: small-caps; text-align: center; font-weight: normal; }
-        .blog-container h3 { font-size: 1.5em; color: var(--brun-sombre); margin: 50px 0 15px; font-variant: small-caps; border-bottom: 1px solid rgba(123, 144, 116, 0.4); padding-bottom: 8px; }
-        .blog-container p { margin-bottom: 25px; text-align: justify; }
-        .blog-container ul, .blog-container ol { margin-bottom: 25px; padding-left: 20px; }
-        .blog-container li { margin-bottom: 10px; }
+    .nav-wrap a {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--muted);
+      letter-spacing: 0.1em;
+      padding: 5px 8px;
+    }
 
-        /* --- NOTES & ENCADRÉS --- */
-        .alchimiste-note { background: var(--blanc); border-left: 4px solid var(--theme-article); padding: 30px; margin: 50px 0; border-radius: 0 20px 20px 0; box-shadow: 0 15px 40px rgba(0,0,0,0.05); }
-        .note-titre { display: block; font-variant: small-caps; color: var(--theme-article); font-weight: bold; font-size: 1.3em; margin-bottom: 15px; }
+    .nav-wrap a:hover,
+    .nav-wrap a.active {
+      color: var(--accent);
+    }
 
-        .encadre-hero { margin: 80px 0; border-radius: 30px; overflow: hidden; border: 5px solid var(--theme-article); box-shadow: 0 20px 50px rgba(0,0,0,0.2); }
-        .cadre-fond { padding: 60px 40px; text-align: center; background-size: cover; background-position: center; background-attachment: fixed; }
-        .encadre-titre { font-size: 2.5em; font-variant: small-caps; color: var(--brun-sombre); -webkit-text-stroke: 0.5px #ffffff; margin-bottom: 10px; text-shadow: 0 4px 15px rgba(0,0,0,0.6); letter-spacing: 1px; }
-        .encadre-sous-titre { font-style: italic; font-size: 1.1em; color: #fff; margin-bottom: 30px; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
-        
-        .liste-selectionnable { display: flex; flex-direction: column; gap: 15px; max-width: 650px; margin: 0 auto; }
-        
-        /* LIENS PRODUITS - SURVOL CLASSIQUE DANS LE THÈME */
-        .item-link { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; padding: 18px 35px; display: flex; align-items: center; justify-content: space-between; text-decoration: none; color: #fff; transition: 0.4s ease; }
-        .item-link:hover { 
-            transform: scale(1.03); 
-            border-color: #fff; 
-            background: var(--theme-article); 
-            box-shadow: 0 0 25px var(--theme-article);
-        }
-        .item-link span { font-weight: bold; font-variant: small-caps; font-size: 1.1em; text-align: left; }
-        .item-link span small { display: block; font-size: 0.75em; font-family: 'Georgia', serif; font-style: italic; opacity: 0.8; text-transform: none; font-weight: normal; }
+    .dot {
+      color: rgba(0,0,0,0.12);
+      font-size: 0.7rem;
+    }
 
-        /* --- ENCYCLOPÉDIE --- */
-        .encyclopedie-section { background-color: var(--blanc); padding: 80px 20px; text-align: center; border-top: 1px solid #eee; }
-        .pills-row { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 30px; }
-        .pill { padding: 10px 20px; border: 2px solid; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 0.9em; text-decoration: none; background: #fff; transition: 0.3s; }
-        .p1 { border-color: var(--maison); color: var(--maison); } .p1:hover { background: var(--maison); color: #fff; }
-        .p2 { border-color: var(--jardin); color: var(--jardin); } .p2:hover { background: var(--jardin); color: #fff; }
-        .p3 { border-color: var(--corps); color: var(--corps); } .p3:hover { background: var(--corps); color: #fff; }
-        .p4 { border-color: var(--bienetre); color: var(--bienetre); } .p4:hover { background: var(--bienetre); color: #fff; }
-        .p5 { border-color: var(--eso); color: var(--eso); } .p5:hover { background: var(--eso); color: #fff; }
+    .hero {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 72px 20px 24px;
+      text-align: center;
+    }
 
-        /* --- FOOTER --- */
-        footer { background: var(--brun-sombre); color: #fff; padding: 80px 20px; text-align: center; }
-        
-        /* AURA LOGO FOOTER BLANC ++++ (EXCLUSIVEMENT ICI) */
-        .footer-logo { display: inline-block; transition: 0.4s ease; margin-bottom: 30px; }
-        .footer-logo img { height: 60px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.4)); transition: 0.5s; }
-        .footer-logo:hover img { 
-            filter: drop-shadow(0 0 30px #ffffff) drop-shadow(0 0 15px #ffffff) drop-shadow(0 0 5px #ffffff); 
-            transform: scale(1.05); 
-        }
-        
-        .footer-nav-compact { display: flex; gap: 30px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; flex-wrap: wrap; }
-        .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.6; font-variant: small-caps; transition: 0.3s; }
-        .footer-nav-compact a:hover { opacity: 1; color: var(--theme-article); }
+    .hero-kicker {
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.78rem;
+      color: var(--muted);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
 
-        #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.4rem, 5vw, 3.4rem);
+      margin: 0 0 10px;
+      line-height: 1.1;
+    }
 
-        @media (max-width: 768px) {
-            header { padding: 15px 0; }
-            .logo img { max-height: 70px; } 
-            .nav-container { flex-direction: column; gap: 15px; padding: 10px 20px; }
-            .header-right { flex-direction: column; gap: 15px; align-items: center; width: 100%; }
-            nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; }
-            .hero { padding-top: 350px !important; justify-content: flex-start !important; height: auto !important; padding-bottom: 60px; }
-            .hero h1 { font-size: 2.2em; }
-            .item-link { flex-direction: column; text-align: center; padding: 15px; }
-            .item-link span { text-align: center; }
-            .encadre-titre { font-size: 2em; }
-        }
-    </style>
+    .hero-sub {
+      max-width: 700px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: 1.02rem;
+    }
+
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 20px 20px 80px;
+    }
+
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.9rem;
+      margin: 40px 0 14px;
+      line-height: 1.2;
+    }
+
+    h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.35rem;
+      margin: 26px 0 8px;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      padding-left: 18px;
+      margin: 0 0 14px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .box {
+      background: var(--surface);
+      border-radius: 18px;
+      padding: 20px;
+      margin: 22px 0;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.05);
+      border: 1px solid rgba(0,0,0,0.03);
+    }
+
+    .box-title {
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 700;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin-top: 12px;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 14px;
+      padding: 14px;
+      border: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .product-card strong {
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .product-card a {
+      display: inline-block;
+      margin-top: 8px;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .footer {
+      background: var(--dark);
+      color: #f3dfca;
+      padding: 60px 20px 80px;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.6rem;
+      margin-bottom: 12px;
+    }
+
+    .footer-logo em {
+      color: #d97757;
+      font-style: italic;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      opacity: 0.72;
+      font-size: 0.88rem;
+      margin: 16px 0;
+    }
+
+    #disclaimer-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.95);
+      color: rgba(255,255,255,0.6);
+      font-size: 0.75rem;
+      text-align: center;
+      padding: 10px;
+      z-index: 1000;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    @media (max-width: 640px) {
+      .hero { padding-top: 52px; }
+      h2 { font-size: 1.65rem; }
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <div class="nav-container">
-            <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
-            <div class="header-right">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li class="dropdown">
-                            <a href="grimoire.html">Grimoire</a>
-                            <div class="dropdown-content">
-                                <a href="maison.html">Vol 1 : Fondation</a>
-                                <a href="jardin.html">Vol 2 : Enracinement</a>
-                                <a href="corps.html">Vol 3 : Éclosion</a>
-                                <a href="bienetre.html">Vol 4 : Harmonie</a>
-                                <a href="eso.html">Vol 5 : Élévation</a>
-                            </div>
-                        </li>
-                        <li><a href="blog.html">Journal</a></li>
-                        <li><a href="encyclopedie.html">Encyclopédie</a></li>
-                        <li><a href="livre-or.html">Livre d'Or</a></li>
-                    </ul>
-                </nav>
-                <a href="https://www.pinterest.fr/zencheztoi/" class="pinterest-badge" target="_blank" title="Inspirations pour le Jardin">p</a>
-            </div>
-        </div>
-    </header>
+  <nav class="main-nav" aria-label="Navigation principale">
+    <div class="nav-wrap">
+      <a href="index.html">Accueil</a><span class="dot">&bull;</span>
+      <a href="blog.html">Blog</a><span class="dot">&bull;</span>
+      <a href="eso.html">Ésotérisme</a><span class="dot">&bull;</span>
+      <a href="jardin.html" class="active">Jardin</a><span class="dot">&bull;</span>
+      <a href="maison.html">Maison</a><span class="dot">&bull;</span>
+      <a href="bienetre.html">Bien-être</a><span class="dot">&bull;</span>
+      <a href="corps.html">Corps</a>
+    </div>
+  </nav>
 
-    <section class="hero">
-        <p class="vol-phrase">Volume 2 : Enracinement • Chronique</p>
-        <h1>Oïdium : l'Alchimie pour sauver vos plantes</h1>
-        <p class="tagline">« Quand un voile blanc étouffe vos feuilles, la nature offre ses propres remèdes. Transmutez ce champignon par la force minérale et la protection végétale. »</p>
-    </section>
+  <header class="hero">
+    <div class="hero-kicker">Jardin · Maladies</div>
+    <h1>Oïdium : apprivoiser la “maladie du blanc”</h1>
+    <p class="hero-sub">
+      Un voile blanc poudreux sur les feuilles, les tiges ou les boutons de fleurs… L’oïdium arrive souvent quand il fait chaud et que l’air est un peu humide. Plutôt que paniquer, on peut apprendre à le repérer tôt et à le limiter naturellement.
+    </p>
+  </header>
 
-    <main class="blog-container">
+  <main>
+    <section>
+      <h2>Reconnaître l’oïdium</h2>
+      <p>
+        Les ressources de jardinage décrivent l’oïdium comme un champignon donnant un aspect farineux ou poudreux blanc à gris sur les feuilles et tiges.[web:107][web:108][web:110][web:113]
+      </p>
+      <p>
+        Il touche de nombreuses plantes (courgettes, rosiers, tomates, cucurbitacées, plantes ornementales) et apparaît souvent par temps chaud avec une certaine humidité, surtout si l’air circule mal autour des plantes.[web:107][web:108][web:109][web:111][web:112][web:113][web:116]
+      </p>
 
-        <p>Dans le sanctuaire végétal, l'apparition d'un fin duvet blanc sur les feuilles de vos courgettes, tomates ou rosiers n'est pas une fatalité. C'est le signe de l'oïdium (souvent appelé "maladie du blanc"), un champignon opportuniste qui profite des déséquilibres subtils entre l'humidité stagnante et les chocs thermiques (journées chaudes suivies de nuits fraîches). </p>
-        
-        <p>Face à ce fléau, l'industrie phytosanitaire propose des fongicides chimiques radicaux qui brûlent la terre, détruisent la microfaune et corrompent l'aura de vos plantes. Pourtant, l'alchimiste jardinier sait qu'il ne s'agit pas de faire la guerre au vivant, mais de rééquilibrer le milieu. Il suffit de modifier légèrement le pH de la surface de la feuille pour empêcher le champignon de s'y installer et de s'y nourrir.</p>
-
-        <div class="alchimiste-note">
-            <span class="note-titre">Le Secret du Milieu Alcalin</span>
-            <p>Le champignon responsable de l'oïdium ne peut survivre et proliférer que dans un environnement légèrement acide. La magie de notre recette ancestrale réside dans l'utilisation du bicarbonate de soude : en vaporisant cette poudre minérale pure dissoute dans l'eau, vous rendez la surface de la feuille alcaline. Le champignon est neutralisé instantanément et naturellement, sans empoisonner la sève de la plante.</p>
-        </div>
-
-        <h2>Comprendre l'Asphyxie Végétale</h2>
-        <p>L'oïdium ne se contente pas d'être inesthétique ; il agit comme un voile étouffant. En recouvrant l'épiderme végétal, il bloque la photosynthèse. La plante ne parvient plus à capter la lumière solaire pour la transmuter en énergie. Les feuilles se recroquevillent, se dessèchent, et la croissance s'arrête net. Agir dès l'apparition des premières taches poudreuses est essentiel pour ne pas laisser le mycélium pénétrer les tissus profonds de la plante.</p>
-
-        <h2>La Recette Ancestrale contre le Voile Blanc</h2>
-        <p>Inutile de courir en jardinerie pour chercher un remède complexe, les ingrédients de cette transmutation se trouvent déjà dans les placards de votre Fondation (votre Maison). L'association du minéral et du végétal va créer un bouclier parfait. Voici comment préparer l'élixir protecteur :</p>
+      <div class="box">
+        <div class="box-title">Signes fréquents</div>
         <ul>
-            <li><strong>Le Principe Actif (La modification du pH) :</strong> Prenez 1 cuillère à café bombée de Bicarbonate de Soude. C'est l'agent alcalinisant qui va foudroyer le champignon.</li>
-            <li><strong>Le Liant Alchimique (L'adhérence) :</strong> Ajoutez 1 cuillère à café de Savon Noir liquide à l'huile d'olive. L'eau seule perlerait et glisserait sur la feuille. Le savon noir agit comme un "mouillant" ou tensioactif naturel, permettant à l'eau bicarbonatée d'envelopper parfaitement la feuille et de s'y fixer durablement.</li>
-            <li><strong>L'Élément Fluide (La matrice) :</strong> Mélangez le tout dans 1 litre d'eau. Utilisez idéalement de l'eau de pluie ou de l'eau de source (ou de l'eau du robinet laissée reposer 24h) pour éviter que le chlore ne perturbe l'équilibre naturel de la plante.</li>
+          <li>Feuilles couvertes de taches blanches poudreuses, comme saupoudrées de farine.[web:107][web:108][web:111][web:113]</li>
+          <li>Feuilles qui se déforment, jaunissent, puis sèchent si l’attaque progresse.[web:107][web:110][web:111][web:113]</li>
+          <li>Plantes qui semblent moins vigoureuses, avec une floraison ou une production réduite.[web:107][web:108][web:111][web:113]</li>
         </ul>
-
-        <section class="encadre-hero">
-            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/hero-jardin.jpg');">
-                <h3 class="encadre-titre">L'Arsenal du Jardinier</h3>
-                <p class="encadre-sous-titre">Les ingrédients purs de votre Grimoire pour préparer la recette anti-oïdium.</p>
-                <div class="liste-selectionnable">
-                    <!-- VAPORISATEUR -->
-                    <a href="https://www.amazon.fr/Vaporisateur-bouteille-coiffure-plantes-nettoyage/dp/B0CGDPG6R2?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3G31UT1ZLSEXP&dib=eyJ2IjoiMSJ9.1LpJX80apY4r0NvZvQKwE_m7IEb_vSfkprxbxOipM2cE210wu80i8cURtPjKEMb04U-bbL8Vlg9OEYemiZsL3bjz-T7DjlUhkRC6fou-Fzrg7oxQq7fnvTowSDv7f94bPB4lVwhT0jf6-X5qdtF7oSn4JjMGM1YLbIvKbi-4XqFiEx3BrxMkDrZtkcQ1jJyt8hDC7qymhUicIMuIv9jackw47pNIisNwS1kiRQaanI8cHeOw_wJkD7B0-CsTZotREiMBFy0JdwxKlpg0VdOUQ4TBfYz5AhF6KJ_aNHMYsrc.eBeNrgSDUjVLBriha_eEJ5OKzPjmvlB6xp-Bw-paZMU&dib_tag=se&keywords=vaporisateur+500ml&qid=1776785056&sprefix=vaporisateur+500ml%2Caps%2C237&sr=8-37&linkCode=ll2&tag=zencheztoi-21&linkId=24e8e75d49b9c50252c9cca8755f8002&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="item-link">
-                        <span>L'Émetteur de Brume <small>Vaporisateur 500ml réutilisable pour diffuser votre élixir protecteur</small></span> <span>→</span>
-                    </a>
-                    <!-- BICARBONATE -->
-                    <a href="https://www.amazon.fr/dp/B0BQLQW79Z?psc=1&linkCode=ll2&tag=zencheztoi-21&linkId=4e8cd8bbec7fda5a2f7eb82cd3a57142&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="item-link">
-                        <span>Le Minéral Alcalin <small>Bicarbonate de Soude pur pour neutraliser le développement fongique</small></span> <span>→</span>
-                    </a>
-                    <!-- SAVON NOIR LIQUIDE -->
-                    <a href="https://www.amazon.fr/MARIUS-FABRE-liquide-lhuile-multi-usage/dp/B00938QOXM" target="_blank" rel="nofollow sponsored" class="item-link">
-                        <span>Le Liant Végétal <small>Savon Noir liquide Marius Fabre pour fixer le traitement sur la feuille</small></span> <span>→</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <h2>Le Rituel d'Application</h2>
-        <p>Le timing de l'application est tout aussi crucial que la recette elle-même. Ne vaporisez **jamais** votre élixir en plein soleil de midi. Les gouttelettes d'eau agiraient comme de minuscules loupes sous les rayons solaires, causant des brûlures irréversibles au feuillage. </p>
-        
-        <p>Procédez à ce rituel de guérison en fin de journée, lorsque le soleil décline, ou tôt le matin. Assurez-vous de vaporiser une brume fine sur le **dessus** mais aussi le **dessous** des feuilles, car c'est souvent là que les spores fongiques se réfugient. Répétez l'opération tous les 7 à 10 jours jusqu'à la disparition totale du voile, et systématiquement après une forte pluie qui aurait lessivé votre bouclier alcalin.</p>
-
-        <h2>Restaurer la Respiration Végétale : La Prévention</h2>
-        <p>Traiter l'oïdium est une étape de guérison, mais l'alchimie véritable consiste à prévenir son retour en modifiant le terrain. L'oïdium déteste les courants d'air. Si le champignon s'est installé, c'est souvent parce que vos plantes étouffent. </p>
-        
-        <p>La saison prochaine, veillez à respecter les distances de plantation recommandées. N'hésitez pas à tailler le cœur de vos rosiers ou à supprimer les feuilles trop basses de vos courgettes pour laisser le vent circuler librement et assécher la rosée matinale. Enfin, prenez la sainte habitude d'arroser toujours **au pied** des plantes, au niveau de la terre, sans jamais mouiller le feuillage. En redonnant de l'air à votre sanctuaire végétal, vous permettez à la sève de s'écouler librement et à vos plantes de s'enraciner dans la force.</p>
-
-        <section class="encadre-hero">
-            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/hero-accueil.jpg');">
-                <h3 class="encadre-titre">Continuer l'Enracinement</h3>
-                <p class="encadre-sous-titre">Explorez d'autres rituels pour protéger et magnifier votre jardin intérieur et extérieur.</p>
-                <div class="liste-selectionnable">
-                    <a href="pucerons.html" class="item-link">
-                        <span>Le Répulsif Doux <small>Chronique : Éloigner les pucerons sans utiliser de chimie</small></span> <span>→</span>
-                    </a>
-                    <a href="compost.html" class="item-link">
-                        <span>L'Or Noir de la Terre <small>Chronique : Démarrer un compost vivant pour nourrir son sol</small></span> <span>→</span>
-                    </a>
-                    <a href="jardin.html" class="item-link">
-                        <span>Le Volume 2 Complet <small>Découvrir tous les secrets de l'Enracinement et du Jardin</small></span> <span>→</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <section class="encyclopedie-section">
-        <h2 style="font-variant: small-caps; font-size: 2.2em; color: var(--brun-sombre); margin-bottom: 20px;">Emporte nos savoirs avec toi</h2>
-        <div class="pills-row">
-            <a href="encyclopedie.html#vol1" class="pill p1">Vol 1 : Fondation</a>
-            <a href="encyclopedie.html#vol2" class="pill p2">Vol 2 : Enracinement</a>
-            <a href="encyclopedie.html#vol3" class="pill p3">Vol 3 : Éclosion</a>
-            <a href="encyclopedie.html#vol4" class="pill p4">Vol 4 : Harmonie</a>
-            <a href="encyclopedie.html#vol5" class="pill p5">Vol 5 : Élévation</a>
-        </div>
-        <div style="margin-top: 40px; font-size: 1.2em; font-style: italic; color: var(--brun-sombre);">
-            Le Volume : <span style="color:var(--or-zen); font-weight:bold;">14.90€</span> — Pack Trio : <span style="color:var(--or-zen); font-weight:bold;">24.90€</span> — L'Intégrale : <span style="color:var(--or-zen); font-weight:bold;">39.90€</span>
-        </div>
+      </div>
     </section>
 
-    <footer>
-        <a href="index.html" class="footer-logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
-        <ul class="footer-nav-compact">
-            <li><a href="mentions-legales.html">Mentions légales</a></li>
-            <li><a href="confidentialite.html">Confidentialité</a></li>
-            <li><a href="cookies.html">Cookies</a></li>
-            <li><a href="a-propos.html">À Propos</a></li>
-            <li><a href="livre-or.html">Livre d'Or</a></li>
-        </ul>
-        <p style="font-size: 0.85em; opacity: 0.4;">&copy; 2026 Zen Chez Toi • L'Enracinement au Naturel.</p>
-    </footer>
+    <section>
+      <h2>Prévenir l’oïdium en amont</h2>
+      <p>
+        De nombreux guides insistent sur la prévention : aération, arrosage au bon endroit, vigueur des plantes et rotations de culture.[web:107][web:111][web:112][web:113][web:114][web:115]
+      </p>
 
-    <div id="disclaimer-bar">🔗 Liens affiliés Amazon : Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises. Jardin & Nature : testez toujours la préparation sur une petite feuille avant de traiter la plante entière.</div>
+      <h3>1. Aérer et espacer les plantations</h3>
+      <p>
+        Plusieurs sources recommandent de ne pas trop serrer les plantes, de tailler légèrement pour favoriser la circulation de l’air et de limiter les excès d’humidité stagnante sur le feuillage.[web:107][web:108][web:111][web:113][web:116]
+      </p>
+
+      <h3>2. Arroser au pied, pas sur les feuilles</h3>
+      <p>
+        Arroser le sol plutôt que le feuillage permet de limiter les conditions favorables aux champignons, surtout en soirée.[web:108][web:111][web:112][web:114][web:116]
+      </p>
+
+      <h3>3. Renforcer naturellement les plantes</h3>
+      <p>
+        Des articles mettent en avant les purins (prêle, ortie, consoude) appliqués en prévention pour renforcer les défenses naturelles des plantes et les rendre moins accueillantes pour l’oïdium.[web:107][web:111][web:113][web:114]
+      </p>
+    </section>
+
+    <section>
+      <h2>Bicarbonate & savon noir : une recette très utilisée</h2>
+      <p>
+        Le bicarbonate de soude est souvent cité comme traitement naturel accessible contre l’oïdium, surtout en combinant une petite quantité de bicarbonate avec de l’eau et un peu de savon noir comme agent mouillant.[web:107][web:110][web:111][web:113][web:115]
+      </p>
+
+      <h3>Solution simple au bicarbonate</h3>
+      <p>
+        Plusieurs sources proposent une base proche : environ 1 cuillère à café de bicarbonate de soude dans 1 litre d’eau, avec quelques gouttes de savon noir ou de savon de Marseille liquide.[web:110][web:111][web:113][web:114][web:115]
+      </p>
+
+      <div class="box">
+        <div class="box-title">Exemple de dosage mentionné</div>
+        <ul>
+          <li>1 cuillère à café de bicarbonate de soude pour 1 litre d’eau.[web:110][web:111][web:113][web:115]</li>
+          <li>Quelques gouttes ou une cuillère à soupe de savon noir liquide pour aider la solution à adhérer aux feuilles.[web:110][web:111][web:113]</li>
+          <li>Pulvériser sur les deux faces des feuilles, de préférence le matin ou le soir, en répétant tous les quelques jours si besoin.[web:110][web:111][web:113][web:114][web:115]</li>
+        </ul>
+      </div>
+
+      <h3>Autres préparations naturelles</h3>
+      <p>
+        D’autres traitements naturels cités incluent des pulvérisations de lait dilué, de purin de prêle ou de mélanges de purins d’ortie, consoude et prêle, souvent utilisés en complément ou en prévention.[web:107][web:111][web:113][web:114]
+      </p>
+    </section>
+
+    <section>
+      <h2>Quand l’oïdium est déjà bien installé</h2>
+      <p>
+        Si le blanc est très présent, les ressources recommandent souvent de supprimer les feuilles les plus atteintes, de les retirer du jardin (sans les composter si elles sont trop contaminées), puis d’appliquer les traitements naturels.[web:107][web:108][web:111][web:113][web:116]
+      </p>
+      <p>
+        Les traitements sont en général à répéter régulièrement et associés à une amélioration des conditions de culture (aération, arrosage adapté, sol vivant).[web:107][web:111][web:112][web:113][web:114]
+      </p>
+
+      <div class="box">
+        <div class="box-title">Rester réaliste</div>
+        <p>
+          Plusieurs jardiniers rappellent que l’objectif est souvent de limiter l’impact de l’oïdium et de préserver la saison, plutôt que d’effacer toute trace à tout prix.[web:107][web:111][web:113]
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="box">
+        <div class="box-title">3 gestes express au premier voile blanc</div>
+        <ul>
+          <li>Retirer quelques feuilles très atteintes et les sortir du jardin, surtout si elles sont bien poudrées.[web:107][web:111][web:113][web:116]</li>
+          <li>Préparer une pulvérisation douce (1 c. à café de bicarbonate + un peu de savon noir dans 1 L d’eau) et traiter les deux faces des feuilles par temps sec.[web:110][web:111][web:113][web:114][web:115]</li>
+          <li>Éclaircir légèrement les plantes trop serrées et vérifier que l’air circule bien pour que les feuilles sèchent plus vite après la rosée ou la pluie.[web:108][web:111][web:112][web:116]</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Outils utiles contre l’oïdium</h2>
+      <p>
+        Quelques produits simples suffisent pour mettre en œuvre ces traitements naturels.[web:107][web:110][web:111][web:113][web:115]
+      </p>
+
+      <div class="products-grid">
+        <div class="product-card">
+          <strong>Bicarbonate de soude</strong>
+          <p>
+            Souvent présenté comme l’un des remèdes naturels les plus utilisés contre l’oïdium, en pulvérisation douce sur le feuillage.[web:107][web:110][web:111][web:113][web:115]
+          </p>
+          <a href="https://www.amazon.fr/dp/B0BQLQW79Z?psc=1&linkCode=ll2&tag=zencheztoi-21&linkId=4e8cd8bbec7fda5a2f7eb82cd3a57142&ref_=as_li_ss_tl" target="_blank" rel="noopener noreferrer">Voir sur Amazon</a>
+        </div>
+
+        <div class="product-card">
+          <strong>Savon noir liquide</strong>
+          <p>
+            Utilisé comme agent mouillant dans les solutions au bicarbonate et dans d’autres recettes naturelles pour mieux fixer les traitements sur les feuilles.[web:110][web:111][web:113][web:115]
+          </p>
+          <a href="https://www.amazon.fr/Naturel-Concentr%C3%A9-SoluControl-Nettoyant-Feuilles/dp/B0DFXVQXLM?crid=1BT67RR0PSCIX&dib=eyJ2IjoiMSJ9.cvQooRl36W4qJXd30hJ6a0gdyfALAhmT91_5xfw6tLftnKYpcQzZHpsldY_QpHR4XA1onbggb74RMONWJ0oO2Dgjvd5gY8n3U3UT80vJeWtSaOWe2lS2k1G4FIe5TaUyRBKMqh1CwwkVKspNdCCs2Y7Btwas5pSJP0qjY00CF_pGbr6u0vvYGzaSoF4q5UmsULUSCA4J0kbbLYyg4b7FtTc7bEOJjUiKGU3e9FBVHvMUeDKN8U_5tF1GxAoewx2a-rP84XrlAPJhNL1AnrtUC2uH0BUe9TEg-dU4nVCDoX0.qgiVhP7sr75DSN089DC4hX3boSoUkhqnktxrUkyN_B0&dib_tag=se&keywords=savon+noir+liquide+pur+pour+le+jardin&qid=1776781012&sprefix=savon+noir+pour+le+jardin%2Caps%2C263&sr=8-12&linkCode=ll2&tag=zencheztoi-21&linkId=ed688f2604700b9bb0bd6fc47648ad6a&ref_=as_li_ss_tl" target="_blank" rel="noopener noreferrer">Voir sur Amazon</a>
+        </div>
+
+        <div class="product-card">
+          <strong>Purin de prêle / ortie prêt à l’emploi</strong>
+          <p>
+            Proposé en prévention pour renforcer les plantes et les aider à mieux résister aux maladies comme l’oïdium, en pulvérisation ou en arrosage dilué.[web:107][web:111][web:113][web:114]
+          </p>
+          <a href="https://www.amazon.fr/MGI-DEVELOPPEMENT-fran%C3%A7ais-Cocktail-consoude/dp/B08TRH3HDS?th=1&linkCode=ll2&tag=zencheztoi-21&linkId=1939b50d3996ba0e92df5d87d3c50788&ref_=as_li_ss_tl" target="_blank" rel="noopener noreferrer">Voir sur Amazon</a>
+        </div>
+      </div>
+
+      <p style="font-size:0.85rem; color:var(--muted); margin-top:10px;">
+        Ces liens sont affiliés : ils ne changent rien pour vous, mais soutiennent la création de Zen Chez Toi si vous choisissez d’acheter via ces recommandations.
+      </p>
+    </section>
+
+    <section>
+      <h2>Garder un regard serein sur les maladies du jardin</h2>
+      <p>
+        Les approches de jardinage naturel rappellent que les maladies comme l’oïdium sont aussi des signes : d’une plante fatiguée, d’un sol qui a besoin d’attention, ou d’un manque d’aération.[web:107][web:111][web:113][web:116]
+      </p>
+      <p>
+        En prenant l’habitude d’observer, de renforcer progressivement le sol et les plantes, puis d’agir avec des traitements doux, ton jardin peut rester un espace vivant, même si tout n’est pas parfait.[web:107][web:111][web:113]
+      </p>
+
+      <div class="box">
+        <div class="box-title">À tester au prochain “voile blanc”</div>
+        <p>
+          Sur les premières feuilles touchées, retire quelques feuilles très atteintes, puis essaie une solution bicarbonate + savon noir. Note ce qui change au fil de la saison, plutôt que d’attendre que tout le massif soit blanc.[web:107][web:110][web:111][web:113][web:115]
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-logo">Zen <em>Chez</em> Toi</div>
+    <div class="footer-links">
+      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="confidentialite.html">Politique de confidentialité</a>
+      <a href="cookies.html">Gestion des cookies</a>
+      <a href="index.html">Accueil</a>
+      <a href="blog.html">Blog</a>
+    </div>
+    <p style="margin-top:20px; opacity:0.3; font-size:0.8rem;">
+      © 2026 Zen Chez Toi — Tous droits réservés.
+    </p>
+  </footer>
+
+  <div id="disclaimer-bar">
+    🔗 Liens affiliés Amazon : En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.
+  </div>
 
 </body>
 </html>

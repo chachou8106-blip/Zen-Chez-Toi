@@ -1,0 +1,14 @@
+<header>
+    <div class="nav-container">
+        <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="grimoire.html">Le Grimoire</a></li>
+                <li><a href="encyclopedie.html">L'Intégrale</a></li>
+                <li><a href="blog.html">Journal</a></li>
+                <li class="menu-livre-or"><a href="livre-or.html">Livre d'Or</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>

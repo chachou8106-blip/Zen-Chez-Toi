@@ -50,9 +50,8 @@
         header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; border-bottom: 1px solid rgba(166, 123, 81, 0.2); background: linear-gradient(rgba(22,18,17,0.8), transparent); }
         .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
         
-        /* LOGO AURA INTERACTIVE (Off par défaut) */
         .logo { display: inline-block; text-decoration: none; }
-        .logo img { max-height: 90px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2)); transition: 0.5s ease; }
+        .logo img { max-height: 90px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.4)); transition: 0.5s ease; }
         .logo:hover img { filter: drop-shadow(0 0 25px #ffffff) drop-shadow(0 0 10px #ffffff); transform: scale(1.03); }
 
         .header-right { display: flex; align-items: center; gap: 40px; }
@@ -207,28 +206,20 @@
         footer { background: #0c0908; color: #fff; padding: 80px 20px; text-align: center; border-top: 1px solid rgba(166, 123, 81, 0.3); }
         .footer-logo img { height: 60px; filter: invert(1) grayscale(1) brightness(1.5) opacity(0.6); transition: 0.5s; margin-bottom: 30px; }
         .footer-logo:hover img { filter: invert(1) grayscale(1) brightness(2.5) opacity(1) drop-shadow(0 0 15px #fff); }
-        .footer-nav-compact { display: flex; gap: 30px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; flex-wrap: wrap; }
+        .footer-nav-compact { display: flex; gap: 30px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; }
         .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.6; font-variant: small-caps; transition: 0.3s; }
         .footer-nav-compact a:hover { opacity: 1; color: var(--or-brillant); text-shadow: 0 0 8px var(--or-brillant); }
 
         #disclaimer-bar { background: #000000; color: rgba(255,255,255,0.3); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
 
-        /* RESPONSIVE CORRIGÉ (MOULE VALIDÉ) */
         @media (max-width: 900px) {
             .manuscrit-row, .manuscrit-row:nth-child(even) { flex-direction: column; gap: 40px; text-align: center; }
             .manuscrit-visuel { width: 100%; height: 300px; outline-offset: 4px; }
+            .hero h1 { font-size: 3em; }
             .magie-intro { padding: 40px 20px; margin-top: -30px; outline-offset: 4px; }
         }
         @media (max-width: 768px) {
-            .nav-container { flex-direction: column; gap: 15px; padding: 15px 20px; }
-            .header-right { flex-direction: column; gap: 15px; align-items: center; width: 100%; }
-            nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; }
-            .dropdown-content { left: 50%; transform: translateX(-50%); width: 90vw; }
-            
-            /* Protection du Hero Mobile */
-            .hero { padding-top: 300px !important; justify-content: flex-start !important; height: auto !important; padding-bottom: 60px; }
-            .hero h1 { font-size: 2.2em; margin-bottom: 10px; }
-            .tagline { font-size: 1.2em; }
+            .nav-container { flex-direction: column; gap: 20px; }
         }
     </style>
 </head>
@@ -240,7 +231,6 @@
             <div class="header-right">
                 <nav>
                     <ul>
-                        <li><a href="index.html">Accueil</a></li>
                         <li class="dropdown">
                             <a href="grimoire.html">Grimoire</a>
                             <div class="dropdown-content">
@@ -252,6 +242,7 @@
                             </div>
                         </li>
                         <li><a href="blog.html">Journal</a></li>
+                        <li><a href="encyclopedie.html" style="color: var(--or-brillant); text-shadow: 0 0 8px var(--or-zen);">Encyclopédie</a></li>
                         <li><a href="livre-or.html">Livre d'Or</a></li>
                     </ul>
                 </nav>

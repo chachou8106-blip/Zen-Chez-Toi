@@ -1,286 +1,676 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sélection Enracinement – Zen Chez Toi</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sélection Jardin – Produits & conseils | Zen Chez Toi</title>
+  <meta name="description" content="Une sélection naturelle pour protéger, nourrir et embellir votre jardin au quotidien, avec des produits choisis et des conseils Jardin.">
+  <style>
+    :root {
+      --bg: #fdfaf5;
+      --text: #332a22;
+      --muted: #685e55;
+      --accent: #5da679;
+      --accent2:#d97757;
+      --card-border: rgba(0,0,0,0.08);
+      --surface: rgba(255,255,255,.95);
+    }
 
-    <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
-    <meta name="p:domain_verify" content="549770272775"/>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRV5YNRL57"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-JRV5YNRL57');
-    </script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7501098246029504" crossorigin="anonymous"></script>
-    
-    <link rel="icon" type="image/png" href="assets/logo.png">
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body {
+      margin:0;
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color:var(--text);
+      background:var(--bg);
+      line-height:1.7;
+    }
 
-    <style>
-        :root {
-            --bg-sable: #f5f2ec; --blanc: #ffffff; --brun-sombre: #2b2622; --or-zen: #a67b51;
-            --maison: #6a7f8f; --jardin: #7b9074; --corps: #cca8a0; --bienetre: #d4a259; --eso: #826a8f;
-        }
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.8; overflow-x: hidden; }
+    a { text-decoration:none; color:inherit; transition:.25s; }
 
-        /* --- HEADER & NAVIGATION --- */
-        header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; }
-        .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
-        
-        .logo { display: inline-block; text-decoration: none; }
-        .logo img { 
-            max-height: 90px; 
-            filter: drop-shadow(0 0 15px rgba(255,255,255,1)) drop-shadow(0 0 5px rgba(255,255,255,0.8));
-            transition: all 0.5s ease; 
-        }
-        .logo:hover img { filter: drop-shadow(0 0 25px #ffffff) drop-shadow(0 0 10px #ffffff); transform: scale(1.03); }
+    .wrap {
+      max-width:1100px;
+      margin:0 auto;
+      padding:0 18px;
+    }
 
-        .header-right { display: flex; align-items: center; gap: 40px; }
-        nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
-        nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
-        nav a:hover { color: var(--jardin); }
+    /* NAV HAUT */
+    .main-nav {
+      position:sticky;
+      top:0;
+      z-index:100;
+      background:rgba(253,250,245,0.96);
+      backdrop-filter:blur(12px);
+      border-bottom:1px solid rgba(0,0,0,0.06);
+    }
+    .nav-inner {
+      max-width:1100px;
+      margin:0 auto;
+      padding:12px 18px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      gap:12px;
+      flex-wrap:wrap;
+      font-size:.8rem;
+      text-transform:uppercase;
+      letter-spacing:.12em;
+      color:var(--muted);
+    }
+    .nav-inner a {
+      font-weight:700;
+      padding:4px 6px;
+    }
+    .nav-inner a.active {
+      color:var(--accent);
+    }
+    .nav-inner .dot {
+      color:rgba(0,0,0,0.16);
+      font-size:.7rem;
+    }
 
-        /* MENU DÉROULANT */
-        .dropdown { position: relative; display: inline-block; padding: 15px 0; cursor: pointer; }
-        .dropdown-content { 
-            display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); 
-            background-color: var(--brun-sombre); min-width: 200px; box-shadow: 0px 10px 25px rgba(0,0,0,0.3); 
-            z-index: 2100; border-radius: 8px; overflow: hidden; border: 1px solid var(--jardin);
-        }
-        .dropdown-content a { 
-            color: rgba(255,255,255,0.8) !important; padding: 12px 20px; text-decoration: none; 
-            display: block; font-size: 0.95em; text-shadow: none; font-weight: bold; 
-            border-bottom: 1px solid rgba(255,255,255,0.1); text-align: center; font-variant: small-caps; 
-        }
-        .dropdown-content a:hover { background-color: var(--jardin); color: #fff !important; }
-        .dropdown:hover .dropdown-content { display: block; }
+    /* INTRO SAVON NOIR */
+    section {
+      padding:40px 18px 0;
+    }
+    .sol {
+      font-size:.95rem;
+      color:var(--muted);
+      margin-bottom:10px;
+    }
+    h1.title {
+      font-family:'Cormorant Garamond', Georgia, "Times New Roman", serif;
+      font-size:2rem;
+      margin:0 0 12px;
+      line-height:1.2;
+      color:var(--text);
+    }
+    h2 {
+      font-family:'Cormorant Garamond', Georgia, "Times New Roman", serif;
+      font-size:1.7rem;
+      margin:32px 0 10px;
+      line-height:1.2;
+      color:var(--text);
+    }
+    .sub {
+      font-size:.98rem;
+      color:var(--muted);
+      margin:0 0 10px;
+    }
+    .title {
+      font-family:'Cormorant Garamond', Georgia, "Times New Roman", serif;
+    }
 
-        .pinterest-badge { 
-            display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; 
-            border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; 
-            font-family: 'Georgia', serif; font-style: italic; font-size: 1.2rem; transition: all 0.4s ease; 
-            background: rgba(255,255,255,0.1); backdrop-filter: blur(2px); padding-bottom: 3px;
-        }
-        .pinterest-badge:hover { background: var(--jardin); border-color: var(--jardin); transform: rotate(15deg) scale(1.1); color: #fff; }
+    /* GRILLE PRODUITS */
+    #selection {
+      padding-top:52px;
+      padding-bottom:40px;
+    }
+    #selection .grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:22px;
+      margin-top:24px;
+    }
+    .card {
+      display:block;
+      background:#fff;
+      border-radius:20px;
+      border:1px solid var(--card-border);
+      box-shadow:0 8px 24px rgba(0,0,0,.06);
+      overflow:hidden;
+      color:var(--text);
+    }
+    .photo-slot {
+      width:100%;
+      height:180px;
+      overflow:hidden;
+      background:#f4eee7;
+    }
+    .photo-slot img {
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+    .body {
+      padding:16px 16px 14px;
+    }
+    .body h2 {
+      font-size:1.1rem;
+      margin:0 0 8px;
+      font-family:'Cormorant Garamond', serif;
+    }
+    .con {
+      font-size:.9rem;
+      color:var(--muted);
+      margin-bottom:10px;
+    }
+    .meta {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:10px;
+      font-size:.8rem;
+      color:var(--muted);
+      margin-top:4px;
+    }
+    .badge {
+      display:inline-flex;
+      padding:6px 10px;
+      border-radius:999px;
+      background:var(--accent);
+      color:#fff;
+      font-size:.78rem;
+      font-weight:700;
+      white-space:nowrap;
+    }
 
-        /* --- HERO --- */
-        .hero { 
-            height: 70vh; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('assets/hero-jardin.jpg') center/cover no-repeat fixed; 
-            display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; 
-        }
-        .vol-phrase { font-size: 1.6em; font-variant: small-caps; letter-spacing: 6px; font-weight: bold; margin-bottom: 5px; }
-        .hero h1 { 
-            font-size: clamp(3em, 8vw, 5.5em); font-weight: normal; margin-bottom: 20px; line-height: 1.1; font-variant: small-caps;
-            text-shadow: 0 4px 15px rgba(0,0,0,0.6); 
-        }
-        .tagline { font-size: clamp(1.2em, 3vw, 1.8em); font-style: italic; opacity: 0.9; text-shadow: 0 2px 10px rgba(0,0,0,0.5); max-width: 900px; }
+    /* BLOG JARDIN */
+    #blog {
+      padding-top:40px;
+      padding-bottom:40px;
+      background:rgba(255,255,255,0.5);
+    }
+    #blog .title {
+      font-size:1.7rem;
+      margin:0 0 8px;
+    }
+    #blog .sub {
+      margin-bottom:20px;
+    }
 
-        /* --- CONTENU --- */
-        .container { max-width: 1100px; margin: 80px auto; padding: 0 20px; }
-        
-        .intro-text { text-align: center; max-width: 900px; margin: 0 auto 60px; font-size: 1.2rem; color: #444; line-height: 1.8; }
-        
-        /* --- ENCADRÉS HUB LIGNES ÉPURÉES --- */
-        .encadre-hero { margin: 80px 0; border-radius: 30px; overflow: hidden; border: 5px solid var(--jardin); box-shadow: 0 20px 50px rgba(0,0,0,0.2); }
-        .cadre-fond { 
-            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('assets/hero-jardin.jpg') center/cover no-repeat fixed;
-            padding: 80px 40px; text-align: center;
-        }
-        .encadre-titre { font-size: clamp(2em, 5vw, 2.8em); font-variant: small-caps; color: #fff; margin-bottom: 10px; text-shadow: 0 4px 10px rgba(0,0,0,0.5); }
-        .encadre-sous-titre { font-style: italic; font-size: 1.1em; color: #fff; margin-bottom: 25px; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
-        
-        .liste-selectionnable { display: flex; flex-direction: column; gap: 15px; max-width: 750px; margin: 40px auto 0; }
-        .item-link { 
-            background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); 
-            border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; 
-            padding: 18px 35px; display: flex; align-items: center; justify-content: space-between;
-            text-decoration: none; color: #fff; transition: 0.3s;
-        }
-        .item-link:hover { transform: scale(1.03); border-color: #fff; background: var(--jardin); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
-        .item-link span { font-weight: bold; font-variant: small-caps; font-size: 1.1em; }
-        
-        /* Modificateur pour la pub transversale */
-        .pub-transversale .cadre-fond { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/hero-maison.jpg') center/cover no-repeat fixed; }
-        .pub-transversale { border-color: var(--maison); }
-        .pub-transversale .item-link:hover { background: var(--maison); }
+    .blog-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+      gap:28px;
+      margin-top:8px;
+    }
+    .blog-card {
+      background:#fff;
+      border:1px solid var(--card-border);
+      border-radius:20px;
+      padding:28px 26px;
+      box-shadow:0 6px 20px rgba(0,0,0,.08);
+    }
+    .blog-kicker {
+      font-size:.75rem;
+      font-weight:800;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+      color:var(--accent2);
+      margin-bottom:8px;
+    }
+    .blog-card h3 {
+      font-family:'Cormorant Garamond', serif;
+      font-size:1.5rem;
+      color:#332a22;
+      margin:0 0 12px;
+    }
+    .blog-card p {
+      font-size:.93rem;
+      line-height:1.8;
+      color:#685e55;
+      margin:0;
+    }
 
-        /* --- L'ENCYCLOPÉDIE DE L'INDEX --- */
-        .encyclopedie-section { background-color: var(--blanc); padding: 100px 20px; text-align: center; border-top: 1px solid #eee; margin-top: 80px; }
-        .encyclopedie-intro { max-width: 800px; margin: 0 auto 30px; font-size: 1.15rem; color: #444; line-height: 1.8; }
-        .pills-row { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 30px; }
-        .pill { padding: 10px 20px; border: 2px solid; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 0.9em; text-decoration: none; background: #fff; transition: 0.3s; }
-        .p1 { border-color: var(--maison); color: var(--maison); } .p1:hover { background: var(--maison); color: #fff; }
-        .p2 { border-color: var(--jardin); color: var(--jardin); } .p2:hover { background: var(--jardin); color: #fff; }
-        .p3 { border-color: var(--corps); color: var(--corps); } .p3:hover { background: var(--corps); color: #fff; }
-        .p4 { border-color: var(--bienetre); color: var(--bienetre); } .p4:hover { background: var(--bienetre); color: #fff; }
-        .p5 { border-color: var(--eso); color: var(--eso); } .p5:hover { background: var(--eso); color: #fff; }
+    /* SLOT PUB DISCRET */
+    .ad-slot{
+      margin:32px auto 48px;
+      max-width:900px;
+      padding:1rem 1.2rem;
+      border-radius:18px;
+      border:1px dashed rgba(0,0,0,.12);
+      font-size:.85rem;
+      color:var(--muted);
+      background:rgba(255,255,255,.7);
+      text-align:left;
+    }
 
-        /* --- FOOTER --- */
-        footer { background: var(--brun-sombre); color: #fff; padding: 80px 20px; text-align: center; }
-        .footer-logo img { height: 60px; filter: drop-shadow(0 0 15px rgba(255,255,255,1)) drop-shadow(0 0 5px rgba(255,255,255,0.8)); transition: 0.5s; margin-bottom: 30px; }
-        .footer-logo:hover img { filter: drop-shadow(0 0 25px #ffffff) drop-shadow(0 0 10px #ffffff); }
-        .footer-nav-compact { display: flex; gap: 30px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; flex-wrap: wrap; }
-        .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.6; font-variant: small-caps; transition: 0.3s; }
-        .footer-nav-compact a:hover { opacity: 1; color: var(--jardin); }
+    /* FOOTER SIMPLE */
+    footer{
+      background:#1f140e;
+      color:#f3dfca;
+      padding:28px 18px 40px;
+      text-align:center;
+      font-size:.88rem;
+    }
 
-        #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
-
-        /* --- RESPONSIVE MOBILE ABSOLU --- */
-        @media (max-width: 768px) {
-            .nav-container { flex-direction: column; gap: 15px; padding: 15px 20px; }
-            .header-right { flex-direction: column; gap: 15px; align-items: center; }
-            nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; }
-            .dropdown-content { left: 50%; transform: translateX(-50%); width: 90vw; }
-            
-            /* LE CORRECTIF DE CHEVAUCHEMENT : Pousse le titre SOUS le menu */
-            .hero { padding-top: 280px; justify-content: flex-start; height: auto; padding-bottom: 60px; }
-            .hero h1 { font-size: 2.2em; margin-bottom: 10px; }
-            .vol-phrase { font-size: 1.2em; margin-bottom: 10px; }
-            
-            .encadre-hero { border-width: 3px; margin: 40px 0; }
-            .cadre-fond { padding: 40px 20px; }
-            .item-link { flex-direction: column; text-align: center; gap: 10px; padding: 15px 20px; font-size: 0.9em; }
-        }
-    </style>
+    @media(max-width:640px){
+      #selection { padding-top:40px; }
+      h1.title{font-size:1.7rem;}
+      h2{font-size:1.45rem;}
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <div class="nav-container">
-            <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
-            <div class="header-right">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li class="dropdown">
-                            <a href="grimoire.html">Grimoire</a>
-                            <div class="dropdown-content">
-                                <a href="maison.html">Vol 1 : Fondations</a>
-                                <a href="jardin.html">Vol 2 : Enracinement</a>
-                                <a href="corps.html">Vol 3 : Éclosion</a>
-                                <a href="bienetre.html">Vol 4 : Harmonie</a>
-                                <a href="eso.html">Vol 5 : Élévation</a>
-                            </div>
-                        </li>
-                        <li><a href="blog.html">Journal</a></li>
-                        <li><a href="encyclopedie.html">Encyclopédie</a></li>
-                    </ul>
-                </nav>
-                <a href="https://www.pinterest.com/VOTRE_PROFIL" class="pinterest-badge" target="_blank" title="Suivez nos inspirations">p</a>
+  <nav class="main-nav" aria-label="Navigation principale">
+    <div class="nav-inner">
+      <a href="index.html">Accueil</a><span class="dot">&bull;</span>
+      <a href="jardin.html" class="active">Jardin</a><span class="dot">&bull;</span>
+      <a href="maison.html">Maison</a><span class="dot">&bull;</span>
+      <a href="bienetre.html">Bien-être</a><span class="dot">&bull;</span>
+      <a href="corps.html">Corps</a><span class="dot">&bull;</span>
+      <a href="eso.html">Ésotérisme</a><span class="dot">&bull;</span>
+      <a href="blog.html">Blog</a>
+    </div>
+  </nav>
+
+  <section>
+    <div class="wrap">
+      <h2>Le savon noir, un allié simple pour un jardin plus sain</h2>
+      <div class="sol">
+        Le savon noir est l'un des indispensables du jardin naturel : utile contre certains parasites,
+        simple à diluer et facile à intégrer dans une routine d'entretien douce, il aide à garder des plantes
+        plus saines sans alourdir vos gestes du quotidien.
+      </div>
+      <a href="https://www.amazon.fr/Biovie-Savon-Noir-Liquide-lHuile/dp/B082VVG6G7?linkCode=ll2&tag=zencheztoi-21&linkId=2083fc74bd393462d726ed9fdf8505ae&ref_=as_li_ss_tl"
+         target="_blank" rel="nofollow sponsored"
+         style="display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:999px;background:var(--accent);color:#332a22;text-decoration:none;font-weight:800;white-space:nowrap;margin-top:16px;">
+        Découvrir
+      </a>
+    </div>
+  </section>
+
+  <section id="selection">
+    <div class="wrap">
+      <h1 class="title">Une sélection naturelle pour protéger, nourrir et embellir votre jardin au quotidien.</h1>
+      <p class="sub">
+        Tout l'essentiel pour un jardin plus sain : soins naturels, protections douces, solutions bio
+        et gestes simples pour répondre aux problèmes les plus fréquents.
+      </p>
+      <p class="sub" style="margin-top:-28px;color:var(--accent);font-weight:700">
+        Chaque sélection répond à un vrai besoin du jardin avec un produit choisi pour sa simplicité d'usage,
+        sa cohérence naturelle et son utilité concrète.
+      </p>
+
+      <div class="grid">
+        <a class="card" href="https://www.amazon.fr/SOLABIOL-Protecteur-Utilisable-Agriculture-Biologique/dp/B0BXSVK4TP?linkCode=ll2&tag=zencheztoi-21&linkId=2a7f4f6a299156f322b9c6a2f3140d07&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored">
+          <div class="photo-slot">
+            <img src="assets/pucerons.jpg" alt="Pucerons, insectes et parasites" loading="lazy">
+          </div>
+          <div class="body">
+            <h2>Pucerons, insectes et parasites</h2>
+            <div class="con">
+              Feuilles collantes, tiges envahies, plantes qui s'affaiblissent — les pucerons et parasites
+              s'installent vite et se multiplient en quelques jours.
             </div>
-        </div>
-    </header>
-
-    <section class="hero">
-        <p class="vol-phrase">Vol 2 : Enracinement</p>
-        <h1>Sélection du Jardin</h1>
-        <p class="tagline">« Découvrez les douze reliques de la terre et les chroniques de l'alchimiste pour un écosystème florissant. »</p>
-    </section>
-
-    <main class="container">
-        
-        <p class="intro-text">
-            Chaque sélection ci-dessous répond à un vrai besoin du jardin. Les produits ont été choisis pour leur simplicité d'usage, leur cohérence naturelle et leur respect absolu du vivant. Oubliez la chimie, la nature a déjà tout prévu.
-        </p>
-
-        <section class="encadre-hero">
-            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('assets/hero-jardin.jpg');">
-                <h3 class="encadre-titre">Les Remèdes de la Terre</h3>
-                <p class="encadre-sous-titre">Solutions naturelles contre les maux du jardin.</p>
-                <div class="liste-selectionnable">
-                    <a href="https://www.amazon.fr/SOLABIOL-Protecteur-Utilisable-Agriculture-Biologique/dp/B0BXSVK4TP?linkCode=ll2&tag=zencheztoi-21&linkId=2a7f4f6a299156f322b9c6a2f3140d07&ref_=as_li_ss_tl" target="_blank" class="item-link"><span>Pucerons & Parasites (Protecteur Bio)</span> <span>→</span></a>
-                    
-                    <a href="https://www.amazon.fr/D%C3%A9coction-pr%C3%AAle-1-5-Litre/dp/B0CJM84518?linkCode=ll2&tag=zencheztoi-21&linkId=cba6f7601c4547d61fd6b2b7d73ff348&ref_=as_li_ss_tl" target="_blank" class="item-link"><span>Oïdium (Décoction de Prêle Pure)</span> <span>→</span></a>
-                    
-                    <a href="https://www.amazon.fr/MGI-DEVELOPPEMENT-fran%C3%A7ais-Cocktail-consoude/dp/B08TRH3HDS?linkCode=ll2&tag=zencheztoi-21&linkId=2eed5cd61354eb318444046b0766c1a2&ref_=as_li_ss_tl" target="_blank" class="item-link"><span>Mildiou au Potager (Cocktail Consoude)</span> <span>→</span></a>
-                    
-                    <a href="https://www.amazon.fr/POUZZOLANE-Barri%C3%A8re-Escargots-gasteropodes-%C3%89COLOGIQUE/dp/B0DPSGHSTL?linkCode=ll2&tag=zencheztoi-21&linkId=b737c0509e6f9cda98893c08c9050b9b&ref_=as_li_ss_tl" target="_blank" class="item-link"><span>Limaces & Escargots (Barrière Pouzzolane)</span> <span>→</span></a>
-                    
-                    <a href="https://www.amazon.fr/Biovie-Savon-Noir-Liquide-lHuile/dp/B082VVG6G7?linkCode=ll2&tag=zencheztoi-21&linkId=2083fc74bd393462d726ed9fdf8505ae&ref_=as_li_ss_tl" target="_blank" class="item-link"><span>Araignées Rouges en Pot (Savon Noir Pur)</span> <span>→</span></a>
-                    
-                    <a href="https://www.amazon.fr/Garten-Gl%C3%BCck-Huile-Neem-Concentr%C3%A9e/dp/B097TTRW8T?linkCode=ll2&tag=zencheztoi-21&linkId=3a401911aafb74b399a08c975a2d7513&ref_=as_li_ss_tl" target="_blank" class="item-link"><span>Cochenilles & Thrips (Huile de Neem)</span> <span>→</span></a>
-                    
-                    <a href="https://www.amazon.fr/Purin-Pr%C3%AAle-100-Naturel-Pr%C3%A9vention/dp/B0FC6C7RZ8?linkCode=ll2&tag=zencheztoi-21&linkId=6644623ea9ec9bbbcc1715184a18bc7d&ref_=as_li_ss_tl" target="_blank" class="item-link"><span>Rouille des Feuilles (Purin Fortifiant)</span> <span>→</span></a>
-                    
-                    <a href="https://www.amazon.fr/SoluControl-Ch%C3%A9late-Anti-chlorose-Fertilisant-Reverdissant/dp/B0DQJ6T9P6?linkCode=ll2&tag=zencheztoi-21&linkId=9c7cf271d7a94f0ac4624518901ef2c1&ref_=as_li_ss_tl" target="_blank" class="item-link"><span>Feuilles Jaunes / Chlorose (Fer Chélaté)</span> <span>→</span></a>
-                    
-                    <a href="https://www.amazon.fr/DIAT%C3%89M%C3%89E-MENTHE-FOURMIS-EFFICACIT%C3%89-FOUDROYANTE/dp/B0GS2NZ8JH?linkCode=ll2&tag=zencheztoi-21&linkId=734e82f1387b3043e1bd105e51a88f20&ref_=as_li_ss_tl" target="_blank" class="item-link"><span>Fourmis au Jardin (Terre de Diatomée)</span> <span>→</span></a>
-                    
-                    <a href="https://www.amazon.fr/Fertilisant-Fabrication-Fran%C3%A7aise-Organique-Utilisation/dp/B0881X93GF?linkCode=ll2&tag=zencheztoi-21&linkId=1bf139dbefd96eff1c40e7bafda30cdc&ref_=as_li_ss_tl" target="_blank" class="item-link"><span>Sol Épuisé (Fertilisant Organique)</span> <span>→</span></a>
-                    
-                    <a href="https://www.amazon.fr/Solabiol-SOBOU11-Bouillie-Bordelaise-8-3000000000000007/dp/B007TYY90C?linkCode=ll2&tag=zencheztoi-21&linkId=474a4871c2a59373e2a7623871befa5c&ref_=as_li_ss_tl" target="_blank" class="item-link"><span>Tavelure du Verger (Bouillie Bordelaise)</span> <span>→</span></a>
-                    
-                    <a href="https://www.amazon.fr/gp/product/B079SM3BBW?smid=A1YDHW5VPOQXJ0&th=1&linkCode=ll2&tag=zencheztoi-21&linkId=4d5b8caad6972478e3a9e3aeaa5e5de1&ref_=as_li_ss_tl" target="_blank" class="item-link"><span>Mousse Envahissante (Sulfate de Fer)</span> <span>→</span></a>
-                </div>
+            <div class="meta">
+              <span>Pucerons, insectes, bio</span>
+              <span class="badge">Découvrir la solution</span>
             </div>
-        </section>
+          </div>
+        </a>
 
-        <section class="encadre-hero pub-transversale">
-            <div class="cadre-fond">
-                <h3 class="encadre-titre">Les Essentiels Transversaux</h3>
-                <p class="encadre-sous-titre">Deux élixirs piochés dans le Monde de l'Âtre, tout aussi indispensables au jardin.</p>
-                <div class="liste-selectionnable">
-                    <a href="vinaigre-blanc.html" class="item-link"><span>L'Acide de Discipline (Vinaigre Blanc)</span> <span>→</span></a>
-                    <a href="bicarbonate.html" class="item-link"><span>Le Sel de Protection (Bicarbonate)</span> <span>→</span></a>
-                </div>
+        <a class="card" href="https://www.amazon.fr/D%C3%A9coction-pr%C3%AAle-1-5-Litre/dp/B0CJM84518?linkCode=ll2&tag=zencheztoi-21&linkId=cba6f7601c4547d61fd6b2b7d73ff348&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored">
+          <div class="photo-slot">
+            <img src="assets/oidium.jpg" alt="Oïdium : taches blanches poudreuses" loading="lazy">
+          </div>
+          <div class="body">
+            <h2>Oïdium : taches blanches poudreuses</h2>
+            <div class="con">
+              Un voile blanc recouvre progressivement le feuillage — surtout par temps chaud et humide,
+              la maladie peut se propager sur toutes les plantes.
             </div>
-        </section>
-
-        <section class="encadre-hero">
-            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('assets/hero-bienetre.jpg');">
-                <h3 class="encadre-titre">Le Journal du Zen : Jardin</h3>
-                <p class="encadre-sous-titre">Chroniques de saison, conseils et remèdes sauvages.</p>
-                <div class="liste-selectionnable">
-                    <a href="pucerons.html" class="item-link"><span>La Garde Verte : Lutter contre les Pucerons</span> <span>→</span></a>
-                    <a href="oidium.html" class="item-link"><span>Le Voile Poudreux : Vaincre l'Oïdium</span> <span>→</span></a>
-                    <a href="mildiou.html" class="item-link"><span>L'Ombre de l'Humidité : Prévenir le Mildiou</span> <span>→</span></a>
-                    <a href="limaces.html" class="item-link"><span>Les Gourmands de la Nuit : Éloigner les Limaces</span> <span>→</span></a>
-                    <a href="araignees.html" class="item-link"><span>Le Fléau Invisible : Araignées Rouges</span> <span>→</span></a>
-                    <a href="cochenilles-thrips.html" class="item-link"><span>La Neige Coriace : Cochenilles & Thrips</span> <span>→</span></a>
-                    <a href="rouille.html" class="item-link"><span>Les Taches de Feu : Vaincre la Rouille</span> <span>→</span></a>
-                    <a href="feuilles-jaunes.html" class="item-link"><span>La Sève Épuisée : Soigner les Feuilles Jaunes</span> <span>→</span></a>
-                    <a href="fourmis.html" class="item-link"><span>L'Équilibre Retrouvé : Les Fourmis</span> <span>→</span></a>
-                    <a href="sol-epuisé.html" class="item-link"><span>L'Or Noir du Jardinier : Nourrir un Sol Épuisé</span> <span>→</span></a>
-                    <a href="tavelure.html" class="item-link"><span>Le Verger Protégé : Contre la Tavelure</span> <span>→</span></a>
-                    <a href="mousse.html" class="item-link"><span>Le Tapis Étouffant : Lutter contre la Mousse</span> <span>→</span></a>
-                </div>
+            <div class="meta">
+              <span>Oïdium, champignon, blanc</span>
+              <span class="badge">Découvrir la solution</span>
             </div>
-        </section>
+          </div>
+        </a>
 
-    </main>
+        <a class="card" href="https://www.amazon.fr/MGI-DEVELOPPEMENT-fran%C3%A7ais-Cocktail-consoude/dp/B08TRH3HDS?linkCode=ll2&tag=zencheztoi-21&linkId=2eed5cd61354eb318444046b0766c1a2&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored">
+          <div class="photo-slot">
+            <img src="assets/mildiou.jpg" alt="Mildiou sur tomates et potager" loading="lazy">
+          </div>
+          <div class="body">
+            <h2>Mildiou sur tomates et potager</h2>
+            <div class="con">
+              Des taches brunâtres s'étendent sous la pluie sur les tomates, courgettes et autres légumes —
+              le mildiou peut détruire une récolte entière.
+            </div>
+            <div class="meta">
+              <span>Mildiou, tomates, potager</span>
+              <span class="badge">Découvrir la solution</span>
+            </div>
+          </div>
+        </a>
 
-    <section class="encyclopedie-section">
-        <h2 style="font-variant: small-caps; font-size: 2.2em; color: var(--brun-sombre); margin-bottom:10px;">L'Encyclopédie des Solutions Nomades</h2>
-        <p class="encyclopedie-intro">
-            Notre terre regorge de matières brutes et nobles. Prises isolément, elles possèdent déjà de puissantes vertus. Mais c'est dans l'art de les associer que se révèle la véritable alchimie. Nos recueils nomades regroupent ces savoirs ancestraux pour vous permettre d'emporter ces secrets partout avec vous.
-        </p>
-        <div class="pills-row">
-            <a href="encyclopedie.html#vol1" class="pill p1">Vol 1 : Fondations</a>
-            <a href="encyclopedie.html#vol2" class="pill p2">Vol 2 : Enracinement</a>
-            <a href="encyclopedie.html#vol3" class="pill p3">Vol 3 : Éclosion</a>
-            <a href="encyclopedie.html#vol4" class="pill p4">Vol 4 : Harmonie</a>
-            <a href="encyclopedie.html#vol5" class="pill p5">Vol 5 : Élévation</a>
-        </div>
-        <div style="margin-top: 40px; font-size: 1.2em; font-style: italic; color: var(--brun-sombre);">
-            Le Volume : <span style="color:var(--or-zen); font-weight:bold;">14.90€</span> — Pack Trio : <span style="color:var(--or-zen); font-weight:bold;">24.90€</span> — L'Intégrale : <span style="color:var(--or-zen); font-weight:bold;">39.90€</span>
-        </div>
-    </section>
+        <a class="card" href="https://www.amazon.fr/POUZZOLANE-Barri%C3%A8re-Escargots-gasteropodes-%C3%89COLOGIQUE/dp/B0DPSGHSTL?linkCode=ll2&tag=zencheztoi-21&linkId=b737c0509e6f9cda98893c08c9050b9b&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored">
+          <div class="photo-slot">
+            <img src="assets/limaces.jpg" alt="Limaces et escargots" loading="lazy">
+          </div>
+          <div class="body">
+            <h2>Limaces et escargots</h2>
+            <div class="con">
+              Les jeunes plants, salades et semis disparaissent chaque nuit — les gastéropodes s'attaquent
+              surtout aux plantations les plus tendres.
+            </div>
+            <div class="meta">
+              <span>Limaces, escargots, potager</span>
+              <span class="badge">Découvrir la solution</span>
+            </div>
+          </div>
+        </a>
 
-    <footer>
-        <a href="index.html" class="footer-logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
-        <ul class="footer-nav-compact">
-            <li><a href="mentions-legales.html">Mentions légales</a></li>
-            <li><a href="confidentialite.html">Confidentialité</a></li>
-            <li><a href="cookies.html">Cookies</a></li>
-            <li><a href="livre-or.html">Livre d'Or</a></li>
-        </ul>
-        <p style="font-size: 0.85em; opacity: 0.4;">&copy; 2026 Zen Chez Toi • Enracinement</p>
-    </footer>
+        <a class="card" href="https://www.amazon.fr/Biovie-Savon-Noir-Liquide-lHuile/dp/B082VVG6G7?linkCode=ll2&tag=zencheztoi-21&linkId=2083fc74bd393462d726ed9fdf8505ae&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored">
+          <div class="photo-slot">
+            <img src="assets/araignees.jpg" alt="Araignées rouges, mouches blanches et pucerons en pot" loading="lazy">
+          </div>
+          <div class="body">
+            <h2>Araignées rouges, mouches blanches et pucerons en pot</h2>
+            <div class="con">
+              Feuilles qui jaunissent avec de fines toiles, ou nuage blanc qui s'envole au moindre contact —
+              en pleine terre comme en balcon ou serre.
+            </div>
+            <div class="meta">
+              <span>Araignées rouges, aleurodes, balcon</span>
+              <span class="badge">Découvrir la solution</span>
+            </div>
+          </div>
+        </a>
 
-    <div id="disclaimer-bar">🔗 Liens affiliés Amazon : Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.</div>
+        <a class="card" href="https://www.amazon.fr/Garten-Gl%C3%BCck-Huile-Neem-Concentr%C3%A9e/dp/B097TTRW8T?linkCode=ll2&tag=zencheztoi-21&linkId=3a401911aafb74b399a08c975a2d7513&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored">
+          <div class="photo-slot">
+            <img src="assets/cochenilles.jpg" alt="Cochenilles et thrips" loading="lazy">
+          </div>
+          <div class="body">
+            <h2>Cochenilles et thrips</h2>
+            <div class="con">
+              Amas blancs sur les tiges, fleurs qui se déforment, feuilles argentées — ces petits ravageurs
+              s'installent discrètement mais affaiblissent rapidement la plante.
+            </div>
+            <div class="meta">
+              <span>Cochenilles, thrips, ravageurs</span>
+              <span class="badge">Découvrir la solution</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="card" href="https://www.amazon.fr/Purin-Pr%C3%AAle-100-Naturel-Pr%C3%A9vention/dp/B0FC6C7RZ8?linkCode=ll2&tag=zencheztoi-21&linkId=6644623ea9ec9bbbcc1715184a18bc7d&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored">
+          <div class="photo-slot">
+            <img src="assets/rouille.jpg" alt="Taches foliaires, rouille et maladies du feuillage" loading="lazy">
+          </div>
+          <div class="body">
+            <h2>Taches foliaires, rouille et maladies du feuillage</h2>
+            <div class="con">
+              Taches brunes, noires ou oranges sur les feuilles, rouille sur les rosiers, feuillage qui s'épuise —
+              souvent lié à l'humidité et au manque d'air.
+            </div>
+            <div class="meta">
+              <span>Taches, rouille, feuillage</span>
+              <span class="badge">Découvrir la solution</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="card" href="https://www.amazon.fr/SoluControl-Ch%C3%A9late-Anti-chlorose-Fertilisant-Reverdissant/dp/B0DQJ6T9P6?linkCode=ll2&tag=zencheztoi-21&linkId=9c7cf271d7a94f0ac4624518901ef2c1&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored">
+          <div class="photo-slot">
+            <img src="assets/feuilles-jaunes.jpg" alt="Feuilles jaunes malgré l'arrosage" loading="lazy">
+          </div>
+          <div class="body">
+            <h2>Feuilles jaunes malgré l'arrosage</h2>
+            <div class="con">
+              Les feuilles jaunissent entre les nervures qui restent vertes — signe d'une carence qui bloque la
+              croissance même avec un arrosage régulier.
+            </div>
+            <div class="meta">
+              <span>Chlorose, feuilles jaunes, carence</span>
+              <span class="badge">Découvrir la solution</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="card" href="https://www.amazon.fr/DIAT%C3%89M%C3%89E-MENTHE-FOURMIS-EFFICACIT%C3%89-FOUDROYANTE/dp/B0GS2NZ8JH?linkCode=ll2&tag=zencheztoi-21&linkId=734e82f1387b3043e1bd105e51a88f20&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored">
+          <div class="photo-slot">
+            <img src="assets/fourmis.jpg" alt="Fourmis dans les massifs et les pots" loading="lazy">
+          </div>
+          <div class="body">
+            <h2>Fourmis dans les massifs et les pots</h2>
+            <div class="con">
+              Les fourmis creusent autour des racines, élèvent des pucerons et colonisent les bacs —
+              difficile à enrayer sans une barrière efficace.
+            </div>
+            <div class="meta">
+              <span>Fourmis, massifs, pots</span>
+              <span class="badge">Découvrir la solution</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="card" href="https://www.amazon.fr/Fertilisant-Fabrication-Fran%C3%A7aise-Organique-Utilisation/dp/B0881X93GF?linkCode=ll2&tag=zencheztoi-21&linkId=1bf139dbefd96eff1c40e7bafda30cdc&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored">
+          <div class="photo-slot">
+            <img src="assets/sol-epuise.jpg" alt="Sol épuisé, plantes sans vigueur" loading="lazy">
+          </div>
+          <div class="body">
+            <h2>Sol épuisé, plantes sans vigueur</h2>
+            <div class="con">
+              La terre semble morte, les cultures stagnent, les fruits sont petits — après plusieurs saisons,
+              le sol a besoin d'être nourri en profondeur.
+            </div>
+            <div class="meta">
+              <span>Sol fatigue, engrais, potager</span>
+              <span class="badge">Découvrir la solution</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="card" href="https://www.amazon.fr/Solabiol-SOBOU11-Bouillie-Bordelaise-8-3000000000000007/dp/B007TYY90C?linkCode=ll2&tag=zencheztoi-21&linkId=474a4871c2a59373e2a7623871befa5c&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored">
+          <div class="photo-slot">
+            <img src="assets/tavelure.jpg" alt="Tavelure : taches noires sur fruits et feuillage" loading="lazy">
+          </div>
+          <div class="body">
+            <h2>Tavelure : taches noires sur fruits et feuillage</h2>
+            <div class="con">
+              Des taches brunes et noires apparaissent sur pommes, poires et tomates —
+              le champignon se propage rapidement par temps humide et frais.
+            </div>
+            <div class="meta">
+              <span>Tavelure, champignon, fruits</span>
+              <span class="badge">Découvrir la solution</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="card" href="https://www.amazon.fr/gp/product/B079SM3BBW?smid=A1YDHW5VPOQXJ0&th=1&linkCode=ll2&tag=zencheztoi-21&linkId=4d5b8caad6972478e3a9e3aeaa5e5de1&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored">
+          <div class="photo-slot">
+            <img src="assets/mousse.jpg" alt="Mousse envahissante sur pelouse et gazon" loading="lazy">
+          </div>
+          <div class="body">
+            <h2>Mousse envahissante sur pelouse et gazon</h2>
+            <div class="con">
+              La mousse colonise les zones humides et ombragées de la pelouse — elle étoffe et étouffe
+              progressivement le gazon, surtout en automne et au printemps.
+            </div>
+            <div class="meta">
+              <span>Mousse, pelouse, gazon</span>
+              <span class="badge">Découvrir la solution</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="blog">
+    <div class="wrap">
+      <h2 class="title">Le Blog Jardin</h2>
+      <p class="sub">
+        Conseils naturels, astuces de saison et pratiques pour un jardin sain tout au long de l'année.
+      </p>
+      <div class="blog-grid">
+
+        <article class="blog-card">
+          <div class="blog-kicker">JARDIN · NATUREL</div>
+          <h3>Les pucerons au jardin : comment les repousser naturellement</h3>
+          <p>
+            Les pucerons font leur apparition dès le printemps, attirés par les jeunes pousses tendres
+            et les bourgeons en pleine éclosion. Pour les éloigner sans chimie, le purin d'orties dilué
+            et le savon noir restent les remèdes les plus efficaces et les plus accessibles. Les coccinelles
+            sont vos meilleures alliées naturelles : encouragez leur présence en évitant les traitements
+            agressifs. Un traitement préventif dès les premiers signes d'infestation évite la propagation
+            rapide à l'ensemble du jardin.
+          </p>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-kicker">JARDIN · NATUREL</div>
+          <h3>Oïdium : comprendre et prévenir ce champignon blanc</h3>
+          <p>
+            L'oïdium se développe principalement sur les feuilles en été, favorisé par les journées chaudes
+            et sèches suivies de nuits fraîches et humides. Pour limiter son apparition, veillez à améliorer
+            la circulation d'air entre vos plants en les espaçant davantage et en taillant régulièrement.
+            L'arrosage au pied le matin — plutôt que le soir sur le feuillage — réduit l'humidité propice au champignon.
+            La décoction de prêle et le bicarbonate de soude dilué constituent d'excellentes solutions préventives
+            et curatives.
+          </p>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-kicker">JARDIN · NATUREL</div>
+          <h3>Mildiou au potager : les bons gestes pour protéger les tomates</h3>
+          <p>
+            Le mildiou est le fléau des étés pluvieux : il s'attaque aux tomates et aux pommes de terre
+            avec une redoutable rapidité, détruisant feuilles et fruits en quelques jours. Pour limiter les risques,
+            espacez bien vos plants afin de favoriser la circulation de l'air autour du feuillage.
+            Un paillage au pied des plants évite les éclaboussures de terre porteuses de spores.
+            La bouillie bordelaise appliquée de façon préventive avant les épisodes pluvieux reste le traitement
+            naturel le plus fiable pour protéger vos cultures.
+          </p>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-kicker">JARDIN · NATUREL</div>
+          <h3>Limaces et escargots : comment protéger vos semis</h3>
+          <p>
+            Les limaces sortent principalement la nuit et après les épisodes de pluie, s'attaquant en priorité
+            aux semis fragiles et aux jeunes plantules. Pour créer des barrières efficaces sans produit chimique,
+            la pouzzolane, la cendre de bois ou le cuivre autour des bacs et massifs donnent de bons résultats.
+            Les rondes nocturnes au printemps permettent de les ramasser à la main dans les zones sensibles.
+            Ces gestes simples suffisent souvent à protéger l'essentiel de vos plantations sans recourir
+            à des granulés toxiques.
+          </p>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-kicker">JARDIN · NATUREL</div>
+          <h3>Araignées rouges et mouches blanches : les ravageurs invisibles</h3>
+          <p>
+            Les araignées rouges et les mouches blanches prolifèrent particulièrement en période de sécheresse
+            ou dans les environnements confinés comme les serres et les vérandas. Le savon noir dilué en pulvérisation
+            sur le dessous des feuilles est un remède simple et efficace contre ces deux ravageurs.
+            Un rinçage au jet d'eau fort décolle les colonies déjà installées. Une bonne ventilation et une surveillance
+            régulière du feuillage, surtout en période estivale, restent les meilleurs remparts contre leur installation.
+          </p>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-kicker">JARDIN · NATUREL</div>
+          <h3>Cochenilles et thrips : comment agir sans chimie</h3>
+          <p>
+            Les cochenilles forment des amas cotonneux ou cireux protecteurs sur les tiges et le revers des feuilles,
+            rendant les traitements classiques peu efficaces. L'huile de neem, en pulvérisation régulière, perturbe
+            leur cycle de reproduction sans nuire aux insectes utiles. Pour les petites infestations, un coton imbibé
+            d'alcool à 70° suffit à nettoyer les tiges une à une avec patience. Les traitements sont plus efficaces
+            en soirée, hors des pics de chaleur, et doivent être renouvelés toutes les semaines jusqu'à disparition complète.
+          </p>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-kicker">JARDIN · NATUREL</div>
+          <h3>Rouille et taches foliaires : les maladies fongiques du jardin</h3>
+          <p>
+            La rouille et les taches foliaires sont des maladies fongiques qui s'installent sur les rosiers,
+            les capucines, l'ail et les phlox, surtout lors des printemps humides. La prêle en décoction ou en purin
+            est un traitement naturel reconnu pour renforcer les défenses des plantes face aux champignons.
+            Supprimez immédiatement les feuilles atteintes et ne les mettez pas au compost pour éviter toute contamination.
+            Arroser uniquement au pied des plantes, jamais sur le feuillage, est la mesure préventive la plus simple
+            et la plus efficace.
+          </p>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-kicker">JARDIN · NATUREL</div>
+          <h3>Feuilles jaunes : chlorose et carences, comment y remédier</h3>
+          <p>
+            La chlorose se manifeste par un jaunissement progressif du limbe foliaire entre les nervures qui,
+            elles, restent vertes, signe d'une carence en fer ou d'un blocage de son absorption par le sol.
+            Un correcteur de chlorose à base de fer chélaté, facilement assimilable, redonne de la vigueur aux plantes
+            en quelques semaines. Il est aussi important de vérifier le pH du sol : un sol trop calcaire bloque
+            l'absorption du fer, même quand il est présent. Un rééquilibrage progressif du pH avec des amendements
+            organiques acides aide à résoudre durablement le problème.
+          </p>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-kicker">JARDIN · NATUREL</div>
+          <h3>Fourmis au jardin : utiles ou nuisibles ?</h3>
+          <p>
+            Les fourmis jouent un rôle ambivalent au jardin : si elles aèrent la terre et participent à la décomposition,
+            elles "élèvent" aussi des pucerons pour récolter leur miellat sucré, favorisant ainsi les infestations.
+            La terre de diatomée saupoudrée au pied des plantes ou autour des bacs forme une barrière physique efficace
+            et sans danger. La cannelle en poudre sur les zones de passage perturbe leurs pistes olfactives.
+            Dans les zones non critiques du jardin, il vaut mieux ne pas les éliminer totalement :
+            elles contribuent à l'équilibre de l'écosystème.
+          </p>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-kicker">JARDIN · NATUREL</div>
+          <h3>Sol épuisé : comment redonner vie à la terre du jardin</h3>
+          <p>
+            La monoculture répétée sur un même emplacement épuise rapidement les minéraux du sol, appauvrissant
+            la vie microbienne indispensable à la croissance des plantes. La rotation des cultures d'une année sur l'autre
+            est la première mesure à adopter pour ne pas solliciter toujours les mêmes nutriments.
+            L'apport régulier de compost maison et la plantation d'engrais verts en hiver (moutarde, phacélie, trèfle)
+            régénèrent la structure et la richesse du sol. Les engrais organiques à libération lente complètent ces gestes
+            en nourrissant durablement la microfaune du sol.
+          </p>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-kicker">JARDIN · NATUREL</div>
+          <h3>Tavelure : protéger les fruitiers de façon naturelle</h3>
+          <p>
+            La tavelure est une maladie fongique qui touche principalement les pommiers, poiriers et cerisiers lors
+            des printemps froids et pluvieux, laissant des taches brunes et liégeuses sur les fruits et les feuilles.
+            La bouillie bordelaise appliquée de façon préventive, juste avant les épisodes de pluie au débourrement,
+            est le traitement naturel le plus efficace pour limiter la propagation. En automne, ramassez et éliminez toutes
+            les feuilles infectées tombées au sol pour supprimer le réservoir de spores. La suppression des rameaux atteints
+            en hiver lors de la taille contribue aussi à assainir durablement l'arbre.
+          </p>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-kicker">JARDIN · NATUREL</div>
+          <h3>Mousse sur la pelouse : causes et solutions douces</h3>
+          <p>
+            La mousse envahit les zones de pelouse compactées, ombragées et mal drainées, profitant d'un sol acide
+            et d'un gazon affaibli. L'aération au croc ou à la fourche scarificatrice est la première étape indispensable
+            pour briser la couche compactée et laisser l'air pénétrer jusqu'aux racines. Le sulfate de fer en application
+            liquide élimine la mousse rapidement tout en acidifiant légèrement le sol ; une deuxième application en automne
+            peut s'avérer nécessaire. Pour un résultat durable, améliorez le drainage, rééquilibrez le pH avec un
+            amendement calcique et semez des espèces de gazon adaptées à l'ombre.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="ad-slot" aria-label="contenu sponsorisé">
+      <!-- Code publicitaire / bloc affiliation à insérer ici -->
+      Cet emplacement discret peut accueillir une bannière, un produit du moment ou une autre sélection Jardin
+      quand tu voudras pousser une offre particulière.
+    </div>
+  </div>
+
+  <footer>
+    Sélection Jardin – Zen Chez Toi • produits choisis et conseils naturels
+  </footer>
 
 </body>
 </html>

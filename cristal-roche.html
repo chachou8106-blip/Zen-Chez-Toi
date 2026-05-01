@@ -1,4 +1,5 @@
-DOCTYPE html>
+<!DOCTYPE html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -94,20 +95,6 @@ DOCTYPE html>
 
         .amazon-card.center-pilier { width: 45%; min-width: 320px; margin-top: 25px; border-color: var(--c7-couronne); border-width: 3px; }
 
-        /* Citrine Partner Card */
-        .citrine-partner { margin-top: 60px; padding-top: 50px; border-top: 2px dashed rgba(130,106,143,0.3); }
-        .citrine-partner p.label { font-variant: small-caps; letter-spacing: 4px; color: var(--eso); font-size: 0.95em; margin-bottom: 25px; opacity: 0.8; }
-        .citrine-link { display: inline-flex; align-items: center; gap: 25px; background: #fff; border: 3px solid var(--eso); border-radius: 20px; padding: 28px 50px; text-decoration: none; transition: 0.4s; box-shadow: 0 10px 30px rgba(130,106,143,0.12); }
-        .citrine-link:hover { transform: translateY(-6px); box-shadow: 0 20px 45px rgba(130,106,143,0.25); background: var(--eso); }
-        .citrine-link:hover .citrine-name { color: #fff; }
-        .citrine-link:hover .citrine-desc { color: rgba(255,255,255,0.8); }
-        .citrine-link:hover .citrine-cta { background: #fff; color: var(--eso); }
-        .citrine-icon { font-size: 2.8em; }
-        .citrine-text { text-align: left; }
-        .citrine-name { font-variant: small-caps; color: var(--eso); font-size: 1.4em; font-weight: bold; margin-bottom: 4px; transition: 0.4s; }
-        .citrine-desc { color: #777; font-size: 0.9em; transition: 0.4s; }
-        .citrine-cta { background: var(--eso); color: #fff; padding: 12px 28px; border-radius: 50px; font-weight: bold; font-size: 0.95em; transition: 0.4s; white-space: nowrap; }
-
         .expert-container { background: #fff; border: 1px solid #eee; padding: 50px; border-radius: 30px; margin: 80px 0; box-shadow: 0 15px 40px rgba(0,0,0,0.02); }
         .maitre-mot h3 { font-size: 1.8em; color: var(--eso); margin-bottom: 25px; font-variant: small-caps; letter-spacing: 2px; text-align: center; }
         .maitre-mot p { font-style: italic; font-size: 1.2em; color: #555; line-height: 2; border-left: 5px solid var(--eso); padding-left: 25px; }
@@ -132,14 +119,14 @@ DOCTYPE html>
         .footer-nav-compact a:hover { opacity: 1; color: var(--eso); }
         #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.7); font-size: 0.8rem; text-align: center; padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); }
 
-        @media (max-width: 1000px) { .hero h1 { font-size: 3.5em; } .histoire-section { padding: 40px; } .mondes-spider { grid-template-columns: 1fr; grid-template-rows: auto; gap: 20px; } .monde-card, .monde-card.secret { width: 100%; grid-area: auto; } .mondes-spider-logo { order: -1; width: 80px; } .amazon-card, .amazon-card.center-pilier { width: 100%; } .citrine-link { flex-direction: column; padding: 25px; gap: 15px; } }
+        @media (max-width: 1000px) { .hero h1 { font-size: 3.5em; } .histoire-section { padding: 40px; } .mondes-spider { grid-template-columns: 1fr; grid-template-rows: auto; gap: 20px; } .monde-card, .monde-card.secret { width: 100%; grid-area: auto; } .mondes-spider-logo { order: -1; width: 80px; } .amazon-card, .amazon-card.center-pilier { width: 100%; } }
     </style>
 </head>
 <body>
 
     <div class="scroll-nav">
-        <a href="binchotan.html" class="arrow-nav">&#10094;</a>
-        <a href="encyclopedie.html" class="arrow-nav">&#10095;</a>
+        <a href="binchotan.html" class="arrow-nav">❮</a>
+        <a href="encyclopedie.html" class="arrow-nav">❯</a>
     </div>
 
     <header>
@@ -212,7 +199,7 @@ DOCTYPE html>
                         </div>
                         <div class="monde-card temple">
                             <h4>Monde du Temple</h4>
-                            <p>L&apos;&eacute;lixir de cristal restructure l&apos;eau pour une hydratation cellulaire sacr&eacute;e.</p>
+                            <p>L&apos;&eacute;lixir de cristal restructure l&apos;eau pour une hydratation cellulaire sacrée.</p>
                         </div>
                         <div class="monde-card seve">
                             <h4>Monde de la S&egrave;ve</h4>
@@ -273,20 +260,6 @@ DOCTYPE html>
                     <a href="https://www.amazon.fr/Curawood-Bol-doffrande-sculpt%C3%A9-d%C3%A9coration/dp/B0CD63GBMF?tag=zencheztoi-21" class="amazon-btn btn-c7" target="_blank" rel="nofollow sponsored">Le Bol d&apos;Offrande Sacr&eacute;</a>
                 </div>
             </div>
-
-            <!-- Partenaire Citrine.fr -->
-            <div class="citrine-partner">
-                <p class="label">&#10022; Partenaire S&eacute;lectionn&eacute; &#10022;</p>
-                <a href="https://citrine.fr/?ref=byfrxpja" target="_blank" rel="nofollow sponsored" class="citrine-link">
-                    <span class="citrine-icon">&#128142;</span>
-                    <div class="citrine-text">
-                        <p class="citrine-name">Citrine.fr</p>
-                        <p class="citrine-desc">Cristaux &amp; pierres de lith&oacute;th&eacute;rapie s&eacute;lectionn&eacute;s</p>
-                    </div>
-                    <span class="citrine-cta">D&eacute;couvrir &rarr;</span>
-                </a>
-            </div>
-
         </div>
 
     </main>
@@ -308,7 +281,7 @@ DOCTYPE html>
     </section>
 
     <div id="disclaimer-bar">
-        &#128279; Liens affili&eacute;s Amazon : En tant que Partenaire Amazon, je r&eacute;alise un b&eacute;n&eacute;fice sur les achats remplissant les conditions requises. &nbsp;|&nbsp; &#128142; Partenaire Citrine.fr : ce lien est un lien affili&eacute;, je per&ccedil;ois une commission sans co&ucirc;t suppl&eacute;mentaire pour vous.
+        🔗 Liens affili&eacute;s Amazon : En tant que Partenaire Amazon, je r&eacute;alise un b&eacute;n&eacute;fice sur les achats remplissant les conditions requises.
     </div>
 
     <footer>

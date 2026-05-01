@@ -27,17 +27,20 @@
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.8; overflow-x: hidden; }
 
+        /* --- HEADER & LOGO SHINE ++ --- */
         header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; }
         .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
         
         .logo { display: inline-block; text-decoration: none; }
-        /* L'AURA DU LOGO BLANC PUR ++++ */
         .logo img { 
             max-height: 90px; 
-            filter: drop-shadow(0 0 20px rgba(255,255,255,1)) drop-shadow(0 0 10px rgba(255,255,255,0.9));
+            filter: drop-shadow(0 0 5px rgba(255,255,255,0.4));
             transition: all 0.5s ease; 
         }
-        .logo:hover img { filter: drop-shadow(0 0 30px #ffffff) drop-shadow(0 0 15px #ffffff); transform: scale(1.03); }
+        .logo:hover img { 
+            filter: drop-shadow(0 0 25px #ffffff) drop-shadow(0 0 10px #ffffff); 
+            transform: scale(1.03); 
+        }
 
         .header-right { display: flex; align-items: center; gap: 40px; }
         nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
@@ -45,39 +48,66 @@
         nav a:hover { color: var(--bienetre); }
 
         .dropdown { position: relative; display: inline-block; padding: 15px 0; cursor: pointer; }
-        .dropdown-content { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background-color: var(--brun-sombre); min-width: 200px; box-shadow: 0px 10px 25px rgba(0,0,0,0.3); z-index: 2100; border-radius: 8px; overflow: hidden; border: 1px solid var(--bienetre); }
-        .dropdown-content a { color: rgba(255,255,255,0.8) !important; padding: 12px 20px; text-decoration: none; display: block; font-size: 0.95em; text-shadow: none; font-weight: bold; border-bottom: 1px solid rgba(255,255,255,0.1); text-align: center; font-variant: small-caps; }
+        .dropdown-content { 
+            display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); 
+            background-color: var(--brun-sombre); min-width: 200px; box-shadow: 0px 10px 25px rgba(0,0,0,0.3); 
+            z-index: 2100; border-radius: 8px; overflow: hidden; border: 1px solid var(--bienetre);
+        }
+        .dropdown-content a { 
+            color: rgba(255,255,255,0.8) !important; padding: 12px 20px; text-decoration: none; 
+            display: block; font-size: 0.95em; text-shadow: none; font-weight: bold; 
+            border-bottom: 1px solid rgba(255,255,255,0.1); text-align: center; font-variant: small-caps; 
+        }
         .dropdown-content a:hover { background-color: var(--bienetre); color: #fff !important; }
         .dropdown:hover .dropdown-content { display: block; }
 
-        .pinterest-badge { display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; font-family: 'Georgia', serif; font-style: italic; font-size: 1.2rem; transition: all 0.4s ease; background: rgba(255,255,255,0.1); backdrop-filter: blur(2px); padding-bottom: 3px; }
+        .pinterest-badge { 
+            display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; 
+            border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; 
+            font-family: 'Georgia', serif; font-style: italic; font-size: 1.2rem; transition: all 0.4s ease; 
+            background: rgba(255,255,255,0.1); backdrop-filter: blur(2px); padding-bottom: 3px;
+        }
         .pinterest-badge:hover { background: var(--bienetre); border-color: var(--bienetre); transform: rotate(15deg) scale(1.1); color: #fff; }
 
-        .hero { height: 100vh; background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('assets/hero-bienetre.jpg') center/cover no-repeat fixed; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; }
-        .vol-phrase { font-size: 1.6em; font-variant: small-caps; letter-spacing: 6px; font-weight: bold; margin-bottom: 5px; text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
-        .hero h1 { font-size: clamp(3em, 8vw, 5.5em); font-weight: normal; margin-bottom: 20px; line-height: 1.1; font-variant: small-caps; text-shadow: 0 4px 15px rgba(0,0,0,0.6); }
-        .tagline { font-size: clamp(1.2em, 3vw, 1.8em); font-style: italic; opacity: 0.9; text-shadow: 0 2px 10px rgba(0,0,0,0.5); max-width: 900px; line-height: 1.4; }
+        /* --- HERO --- */
+        .hero { 
+            height: 100vh; background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url('assets/hero-bienetre.jpg') center/cover no-repeat fixed; 
+            display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; 
+        }
+        .vol-phrase { font-size: 2.2em; font-variant: small-caps; letter-spacing: 6px; font-weight: bold; margin-bottom: 15px; text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
+        .hero h1 { font-size: clamp(2.5em, 8vw, 5.5em); font-weight: normal; margin-bottom: 30px; line-height: 1.1; font-variant: small-caps; text-shadow: 0 4px 15px rgba(0,0,0,0.6); }
+        .tagline { font-size: clamp(1.1em, 3vw, 1.8em); font-style: italic; max-width: 900px; line-height: 1.4; text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
 
+        /* --- CONTENU --- */
         .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
-        .histoire-section { background: var(--blanc); padding: clamp(30px, 7vw, 80px); border-radius: 30px; margin-top: -120px; position: relative; z-index: 10; box-shadow: 0 25px 60px rgba(0,0,0,0.08); border-top: 4px solid var(--bienetre); }
-        .histoire-section h2 { font-size: 2.5em; color: var(--bienetre); margin-bottom: 40px; text-align: center; font-variant: small-caps; }
-        .histoire-text { column-count: 2; column-gap: 60px; text-align: justify; font-size: 1.15rem; color: #444; line-height: 2; }
+        .histoire-section { 
+            background: var(--blanc); padding: clamp(30px, 7vw, 80px); border-radius: 30px; margin-top: -120px; 
+            position: relative; z-index: 10; box-shadow: 0 25px 60px rgba(0,0,0,0.08); border-top: 4px solid var(--bienetre); 
+        }
+        .histoire-section h2 { font-size: 2.8em; color: var(--bienetre); margin-bottom: 40px; text-align: center; font-variant: small-caps; }
+        .histoire-text { column-count: 2; column-gap: 60px; text-align: justify; font-size: 1.15rem; color: #444; line-height: 2.2; }
 
+        /* --- ENCADRÉS HUB --- */
         .encadre-hero { margin: 80px 0; border-radius: 30px; overflow: hidden; border: 5px solid var(--bienetre); box-shadow: 0 20px 50px rgba(0,0,0,0.2); }
         .cadre-fond { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('assets/hero-bienetre.jpg') center/cover no-repeat fixed; padding: 80px 40px; text-align: center; }
         .encadre-titre { font-size: clamp(2em, 5vw, 2.8em); font-variant: small-caps; color: #fff; margin-bottom: 10px; text-shadow: 0 4px 10px rgba(0,0,0,0.5); }
         .encadre-sous-titre { font-style: italic; font-size: 1.1em; color: #fff; margin-bottom: 25px; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
         
-        .liste-selectionnable { display: flex; flex-direction: column; gap: 15px; max-width: 700px; margin: 40px auto 0; }
-        .item-link { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; padding: 18px 35px; display: flex; align-items: center; justify-content: space-between; text-decoration: none; color: #fff; transition: 0.3s; }
-        .item-link:hover { transform: scale(1.03); border-color: #fff; background: var(--bienetre); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+        .liste-selectionnable { display: flex; flex-direction: column; gap: 15px; max-width: 650px; margin: 40px auto 0; }
+        .item-link { 
+            background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; 
+            padding: 18px 35px; display: flex; align-items: center; justify-content: space-between; text-decoration: none; color: #fff; transition: 0.3s;
+        }
+        .item-link:hover { background: var(--bienetre); border-color: #fff; transform: scale(1.03); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
         .item-link span { font-weight: bold; font-variant: small-caps; font-size: 1.15em; }
 
+        /* --- TRANSITION --- */
         .msg-transition { text-align: center; margin: 100px 0; }
         .btn-selection { display: inline-block; padding: 22px 60px; background: var(--brun-sombre); color: #fff; text-decoration: none; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 1.3em; border: 2px solid var(--bienetre); transition: 0.3s; }
         .btn-selection:hover { background: var(--bienetre); transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
 
-        .encyclopedie-section { background-color: var(--blanc); padding: 80px 20px; text-align: center; border-top: 1px solid #eee; margin-top: 60px; }
+        /* --- ENCYCLOPÉDIE PILLS --- */
+        .encyclopedie-section { background-color: var(--blanc); padding: 80px 20px; text-align: center; border-top: 1px solid #eee; }
         .pills-row { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 30px; }
         .pill { padding: 10px 20px; border: 2px solid; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 0.9em; text-decoration: none; background: #fff; transition: 0.3s; }
         .p1 { border-color: var(--maison); color: var(--maison); } .p1:hover { background: var(--maison); color: #fff; }
@@ -86,30 +116,24 @@
         .p4 { border-color: var(--bienetre); color: #fff; background: var(--bienetre); }
         .p5 { border-color: var(--eso); color: var(--eso); } .p5:hover { background: var(--eso); color: #fff; }
 
+        /* --- FOOTER --- */
         footer { background: var(--brun-sombre); color: #fff; padding: 80px 20px; text-align: center; }
-        .footer-logo img { height: 60px; filter: drop-shadow(0 0 20px rgba(255,255,255,1)) drop-shadow(0 0 10px rgba(255,255,255,0.9)); transition: 0.5s; margin-bottom: 30px; }
-        .footer-logo:hover img { filter: drop-shadow(0 0 30px #ffffff) drop-shadow(0 0 15px #ffffff); }
+        .footer-logo img { height: 60px; filter: invert(1) grayscale(1) brightness(1.5) opacity(0.6); transition: 0.5s; margin-bottom: 30px; }
+        .footer-logo:hover img { filter: invert(1) grayscale(1) brightness(2.5) opacity(1) drop-shadow(0 0 15px #fff); }
         .footer-nav-compact { display: flex; gap: 30px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; flex-wrap: wrap; }
         .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.6; font-variant: small-caps; transition: 0.3s; }
         .footer-nav-compact a:hover { opacity: 1; color: var(--bienetre); }
 
         #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
 
+        /* --- RESPONSIVE --- */
         @media (max-width: 900px) { .histoire-text { column-count: 1; } }
         @media (max-width: 768px) {
-            .nav-container { flex-direction: column; gap: 15px; padding: 15px 20px; }
-            .header-right { flex-direction: column; gap: 15px; align-items: center; width: 100%; }
-            nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; }
-            .dropdown-content { left: 50%; transform: translateX(-50%); width: 90vw; }
-            
-            .hero { padding-top: 280px; justify-content: flex-start; height: auto; padding-bottom: 60px; }
-            .hero h1 { font-size: 2.2em; margin-bottom: 10px; }
-            .vol-phrase { font-size: 1.2em; margin-bottom: 10px; }
-            
-            .histoire-section { margin-top: -40px; padding: 40px 20px; }
-            .encadre-hero { border-width: 3px; margin: 40px 0; }
+            .nav-container { flex-direction: column; gap: 20px; }
+            .header-right { gap: 20px; }
+            .histoire-section { margin-top: -60px; padding: 40px 20px; }
+            .encadre-hero { border-width: 3px; }
             .cadre-fond { padding: 40px 20px; }
-            .item-link { flex-direction: column; text-align: center; gap: 10px; padding: 15px 20px; font-size: 0.9em; }
         }
     </style>
 </head>
@@ -125,7 +149,7 @@
                         <li class="dropdown">
                             <a href="grimoire.html">Grimoire</a>
                             <div class="dropdown-content">
-                                <a href="maison.html">Vol 1 : Les Fondations</a>
+                                <a href="maison.html">Vol 1 : Fondation</a>
                                 <a href="jardin.html">Vol 2 : Enracinement</a>
                                 <a href="corps.html">Vol 3 : Éclosion</a>
                                 <a href="bienetre.html">Vol 4 : Harmonie</a>
@@ -136,7 +160,7 @@
                         <li><a href="encyclopedie.html">Encyclopédie</a></li>
                     </ul>
                 </nav>
-                <a href="https://www.pinterest.com/VOTRE_PROFIL" class="pinterest-badge" target="_blank" title="Suivez nos inspirations">p</a>
+                <a href="https://www.pinterest.com/VOTRE_PROFIL" class="pinterest-badge" target="_blank">p</a>
             </div>
         </div>
     </header>
@@ -153,9 +177,12 @@
             <h2>L'Alchimie de la Sève Intérieure</h2>
             <div class="histoire-text">
                 <p>Le <strong>Monde du Bien-être</strong>, que nous aimons appeler <strong>l'Harmonie</strong>, est le quatrième pilier du Pentacle. Après avoir assaini l'âtre, nourri la terre et honoré le temple physique, nous pénétrons dans le domaine de l'équilibre subtil. C'est ici que se joue l'harmonie entre le corps et l'esprit, là où les énergies circulent comme la sève dans un arbre vigoureux. Comment prétendre à une vie rayonnante si nos fluides intérieurs sont stagnants et notre mental embrumé par le stress du monde moderne ? L'alchimie de l'Harmonie propose un retour aux essences vitales et aux rituels d'apaisement profonds.</p>
+                
                 <p>Dans ce volume de notre savoir, nous explorons la science des huiles essentielles, ces concentrés d'âme végétale capables d'agir sur nos émotions et notre physiologie en un souffle. Jadis, les anciens connaissaient le pouvoir de la Lavande Vraie pour sceller la paix intérieure, l'Eucalyptus pour libérer le souffle, et le Miel précieux pour nourrir et réparer les tissus lésés. Chaque essence est une clé, chaque infusion est un remède destiné à restaurer la fluidité et la clarté dans votre quotidien.</p>
+                
                 <p>Atteindre le bien-être avec Zen Chez Toi, c'est choisir de redevenir l'architecte de sa propre sérénité. C'est comprendre que chaque fatigue, chaque tension nerveuse est un signal de déséquilibre qu'il convient de traiter avec douceur et patience. En utilisant des huiles botaniques pures comme le Ravintsara pour fortifier l'immunité ou la Gaulthérie pour apaiser les flux trop ardents, vous offrez à votre système nerveux un sanctuaire de repos. Vous apprenez à écouter le murmure de votre propre sève intérieure.</p>
-                <p>Redécouvrir le Monde de l'Harmonie, c'est réapprendre à naviguer dans les cycles de la vie avec grâce. Que ce soit par une inhalation de Menthe Poivrée pour éclaircir l'esprit ou un massage à l'Ylang-Ylang pour libérer le cœur, chaque geste posé renforce votre résilience. Vous ne cherchez plus à fuir la réalité, mais à l'habiter pleinement, avec une force tranquille et un esprit apaisé. Bienvenue dans l'art de l'harmonie, là où chaque goutte d'essence devient une promesse de renouveau et chaque rituel une célébration de votre équilibre retrouvé.</p>
+
+                <p>Redécouvrir le Monde de l'Harmonie, c'est réapprendre à naviguer dans les cycles de la vie avec grâce. Que ce soit par une inhalation de Menthe Poivrée pour éclaircir l'esprit ou un massage à l'Ylang-Ylang pour libérer le cœur, chaque geste posé renforce votre résilience. Vous ne cherchez plus à fuir la réalité, mais à l'habiter pleinement, avec une force tranquille et un esprit apaisé. Bienvenue dans l'art de l'harmonie, là où chaque goutte d'essence devient une promesse de renouveau et chaque rituel une célébration de votre équilibre retrouvé à travers ce <strong>grimoire</strong>.</p>
             </div>
         </section>
 
@@ -164,22 +191,22 @@
                 <h3 class="encadre-titre">Les 10 Sagesses de la Sève</h3>
                 <p class="encadre-sous-titre">Maîtrisez les essences vitales pour harmoniser votre être.</p>
                 <div class="liste-selectionnable">
-                    <a href="tea-tree.html" class="item-link"><span>1. Le Bouclier Vert (Tea-Tree)</span> <span>→</span></a>
-                    <a href="lavande-vraie.html" class="item-link"><span>2. La Panacée Violette (Lavande)</span> <span>→</span></a>
-                    <a href="menthe-poivree.html" class="item-link"><span>3. Le Givre Alchimique (Menthe)</span> <span>→</span></a>
-                    <a href="eucalyptus.html" class="item-link"><span>4. L'Arbre de la Fièvre (Eucalyptus)</span> <span>→</span></a>
-                    <a href="ravintsara.html" class="item-link"><span>5. La Feuille Bonne à Tout (Ravintsara)</span> <span>→</span></a>
-                    <a href="gaultherie.html" class="item-link"><span>6. Le Baume de Feu (Gaulthérie)</span> <span>→</span></a>
-                    <a href="helichryse.html" class="item-link"><span>7. Le Sang Résorbé (Hélichryse)</span> <span>→</span></a>
-                    <a href="citron.html" class="item-link"><span>8. La Quintessence Solaire (Citron)</span> <span>→</span></a>
-                    <a href="ylang-ylang.html" class="item-link"><span>9. La Fleur des Fleurs (Ylang-Ylang)</span> <span>→</span></a>
-                    <a href="miel.html" class="item-link"><span>10. Le Baume des Dieux (Miel)</span> <span>→</span></a>
+                    <a href="tea-tree.html" class="item-link"><span>1. le bouclier vert (Tea-Tree)</span> <span>→</span></a>
+                    <a href="lavande-vraie.html" class="item-link"><span>2. la panacée violette (Lavande)</span> <span>→</span></a>
+                    <a href="menthe-poivree.html" class="item-link"><span>3. le givre alchimique (Menthe)</span> <span>→</span></a>
+                    <a href="eucalyptus.html" class="item-link"><span>4. l'arbre de la fievre (Eucalyptus)</span> <span>→</span></a>
+                    <a href="ravintsara.html" class="item-link"><span>5. la feuille bonne à tout (Ravintsara)</span> <span>→</span></a>
+                    <a href="gaultherie.html" class="item-link"><span>6. le baume de feu (Gaulthérie)</span> <span>→</span></a>
+                    <a href="helichryse.html" class="item-link"><span>7. le sang résorbé (Hélichryse)</span> <span>→</span></a>
+                    <a href="citron.html" class="item-link"><span>8. la quintessence solaire (Citron)</span> <span>→</span></a>
+                    <a href="ylang-ylang.html" class="item-link"><span>9. la fleur des fleurs (Ylang)</span> <span>→</span></a>
+                    <a href="miel.html" class="item-link"><span>10. le baume des dieux (Miel)</span> <span>→</span></a>
                 </div>
             </div>
         </section>
 
         <section class="msg-transition">
-            <p style="font-size: 1.4em; font-style: italic; margin-bottom: 30px; color: var(--brun-sombre); max-width: 800px; margin-left: auto; margin-right: auto;">« Un besoin de calme ou d'énergie immédiat ? Laissez l'alchimiste choisir l'essence la plus pure pour votre équilibre. »</p>
+            <p>« Un besoin de calme ou d'énergie immédiat ? Laissez l'alchimiste choisir l'essence la plus pure pour votre équilibre. »</p>
             <a href="bienetre-selection.html" class="btn-selection">Découvrir la Sélection</a>
         </section>
 
@@ -190,7 +217,7 @@
                 <div class="liste-selectionnable">
                     <a href="anti-stress.html" class="item-link"><span>Anti-Stress : Retrouver la Paix Intérieure</span> <span>→</span></a>
                     <a href="relaxation.html" class="item-link"><span>Relaxation : L'Art du Lâcher-prise</span> <span>→</span></a>
-                    <a href="immunite.html" class="item-link"><span>Immunité : Fortifier son Bouclier</span> <span>→</span></a>
+                    <a href="immunite.html" class="item-link"><span>Immunité : Fortifier son Bouclier Naturel</span> <span>→</span></a>
                     <a href="meditation.html" class="item-link"><span>Méditation : Clarté et Présence</span> <span>→</span></a>
                     <a href="digestion.html" class="item-link"><span>Digestion : La Fluidité Intérieure</span> <span>→</span></a>
                     <a href="sommeil-profond.html" class="item-link"><span>Sommeil : Nuits Réparatrices</span> <span>→</span></a>
@@ -205,7 +232,7 @@
     <section class="encyclopedie-section">
         <h2 style="font-variant: small-caps; font-size: 2.2em; color: var(--brun-sombre); margin-bottom:10px;">L'Encyclopédie des Solutions Nomades</h2>
         <div class="pills-row">
-            <a href="maison.html" class="pill p1">Vol 1 : Les Fondations</a>
+            <a href="maison.html" class="pill p1">Vol 1 : Fondation</a>
             <a href="jardin.html" class="pill p2">Vol 2 : Enracinement</a>
             <a href="corps.html" class="pill p3">Vol 3 : Éclosion</a>
             <a href="bienetre.html" class="pill p4">Vol 4 : Harmonie</a>

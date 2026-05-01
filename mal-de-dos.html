@@ -1,272 +1,230 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mal de Dos : l'Alchimie de la Libération Corporelle | Zen Chez Toi</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mal de dos : soulager et soutenir le corps | Zen Chez Toi</title>
+  <meta name="description" content="Mal de dos, tensions, inconfort lombaire : gestes simples, chaleur douce, soutien ergonomique et habitudes pour retrouver un peu plus de confort au quotidien.">
 
-    <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRV5YNRL57"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-JRV5YNRL57');
-    </script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7501098246029504" crossorigin="anonymous"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRV5YNRL57"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JRV5YNRL57');
+  </scripipt>
 
-    <meta name="description" content="Découvrez l'alchimie pour soulager le mal de dos. Libérez les tensions par le mouvement conscient, un soutien lombaire ergonomique et des assises sur-mesure.">
-    <link rel="icon" type="image/png" href="assets/logo.png">
+  //fonts.googleapis.comom">
+  //fonts.gstatic.com" crossorigigin>
+  //fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
 
-    <style>
-        :root {
-            --bg-sable: #f5f2ec; --blanc: #ffffff; --brun-sombre: #2b2622; --or-zen: #a67b51;
-            --maison: #6a7f8f; --jardin: #7b9074; --corps: #cca8a0; --bienetre: #d4a259; --eso: #826a8f;
-            
-            /* THÈME CORPS ACTIVÉ */
-            --theme-article: var(--corps);
-        }
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.8; overflow-x: hidden; }
+  <style>
+    :root {
+      --bg: #fff7f4;
+      --text: #3b221d;
+      --muted: #8a5c52;
+      --accent: #e27b63;
+      --dark: #2a1410;
+      --surface: rgba(255,255,255,.94);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.7;
+    }
+    a { text-decoration: none; color: var(--accent); transition: 0.3s; }
+    img { max-width: 100%; display: block; }
 
-        /* --- HEADER & NAVIGATION --- */
-        header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; }
-        .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
-        
-        /* AURA LOGO HEADER BLANC ++++ (EXCLUSIVEMENT ICI) */
-        .logo { display: inline-block; text-decoration: none; transition: 0.4s ease; }
-        .logo img { max-height: 90px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2)); transition: 0.5s ease; }
-        .logo:hover img { 
-            filter: drop-shadow(0 0 30px #ffffff) drop-shadow(0 0 15px #ffffff) drop-shadow(0 0 5px #ffffff); 
-            transform: scale(1.05); 
-        }
+    .main-nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(250,246,243,.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(0,0,0,.08);
+    }
+    .nav-wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 12px 16px;
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .nav-wrap a {
+      font-size: .8rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--muted);
+      letter-spacing: .1em;
+      padding: 4px 8px;
+    }
+    .nav-wrap a.active, .nav-wrap a:hover { color: var(--accent); }
+    .dot { color: rgba(0,0,0,.1); font-size: .7rem; }
 
-        .header-right { display: flex; align-items: center; gap: 40px; }
-        nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
-        nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
-        nav a:hover { color: var(--theme-article); text-shadow: 0 0 15px var(--theme-article); }
-
-        .dropdown { position: relative; display: inline-block; padding: 15px 0; cursor: pointer; }
-        .dropdown-content { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background-color: var(--brun-sombre); min-width: 200px; box-shadow: 0px 10px 25px rgba(0,0,0,0.3); z-index: 2100; border-radius: 8px; border: 1px solid var(--theme-article); overflow: hidden; }
-        .dropdown-content a { color: rgba(255,255,255,0.8) !important; padding: 12px 20px; display: block; font-size: 0.95em; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1); font-variant: small-caps; }
-        .dropdown-content a:hover { background-color: var(--theme-article); color: #fff !important; }
-        .dropdown:hover .dropdown-content { display: block; }
-
-        /* PINTEREST - SURVOL CLASSIQUE DANS LE THÈME */
-        .pinterest-badge { display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; font-style: italic; background: rgba(255,255,255,0.1); transition: 0.4s; }
-        .pinterest-badge:hover { 
-            background: var(--theme-article); 
-            border-color: var(--theme-article); 
-            transform: rotate(15deg) scale(1.1);
-            box-shadow: 0 0 15px var(--theme-article);
-        }
-
-        /* --- HERO ARTICLE --- */
-        .hero { height: 75vh; min-height: 500px; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('assets/mal-de-dos.jpg') center/cover no-repeat fixed; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; }
-        .vol-phrase { font-size: clamp(1.4em, 3vw, 2em); font-variant: small-caps; letter-spacing: 5px; font-weight: bold; margin-bottom: 15px; color: var(--theme-article); text-shadow: 0 4px 15px rgba(0,0,0,0.9), 0 2px 5px rgba(0,0,0,1); -webkit-text-stroke: 0.5px rgba(255,255,255,0.8); }
-        .hero h1 { font-size: clamp(2.5em, 6vw, 4.5em); font-weight: normal; margin-bottom: 20px; line-height: 1.2; font-variant: small-caps; text-shadow: 0 4px 15px rgba(0,0,0,0.8); max-width: 1000px; }
-        .tagline { font-size: clamp(1.1em, 2vw, 1.5em); font-style: italic; opacity: 0.9; max-width: 800px; line-height: 1.5; }
-
-        /* --- CORPS DU TEXTE --- */
-        .blog-container { max-width: 800px; margin: 60px auto 60px; padding: 0 20px; font-size: 1.15rem; color: #333; }
-        .blog-container h2 { font-size: 2.2em; color: var(--theme-article); margin: 60px 0 25px; font-variant: small-caps; text-align: center; font-weight: normal; }
-        .blog-container h3 { font-size: 1.5em; color: var(--brun-sombre); margin: 50px 0 15px; font-variant: small-caps; border-bottom: 1px solid rgba(204, 168, 160, 0.4); padding-bottom: 8px; }
-        .blog-container p { margin-bottom: 25px; text-align: justify; }
-        .blog-container ul, .blog-container ol { margin-bottom: 25px; padding-left: 20px; }
-        .blog-container li { margin-bottom: 10px; }
-
-        /* --- NOTES & ENCADRÉS --- */
-        .alchimiste-note { background: var(--blanc); border-left: 4px solid var(--theme-article); padding: 30px; margin: 50px 0; border-radius: 0 20px 20px 0; box-shadow: 0 15px 40px rgba(0,0,0,0.05); }
-        .note-titre { display: block; font-variant: small-caps; color: var(--theme-article); font-weight: bold; font-size: 1.3em; margin-bottom: 15px; }
-
-        .encadre-hero { margin: 80px 0; border-radius: 30px; overflow: hidden; border: 5px solid var(--theme-article); box-shadow: 0 20px 50px rgba(0,0,0,0.2); }
-        .cadre-fond { padding: 60px 40px; text-align: center; background-size: cover; background-position: center; background-attachment: fixed; }
-        .encadre-titre { font-size: 2.5em; font-variant: small-caps; color: var(--brun-sombre); -webkit-text-stroke: 0.5px #ffffff; margin-bottom: 10px; text-shadow: 0 4px 15px rgba(0,0,0,0.6); letter-spacing: 1px; }
-        .encadre-sous-titre { font-style: italic; font-size: 1.1em; color: #fff; margin-bottom: 30px; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
-        
-        .liste-selectionnable { display: flex; flex-direction: column; gap: 15px; max-width: 650px; margin: 0 auto; }
-        
-        /* LIENS PRODUITS - SURVOL CLASSIQUE DANS LE THÈME */
-        .item-link { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; padding: 18px 35px; display: flex; align-items: center; justify-content: space-between; text-decoration: none; color: #fff; transition: 0.4s ease; }
-        .item-link:hover { 
-            transform: scale(1.03); 
-            border-color: #fff; 
-            background: var(--theme-article); 
-            box-shadow: 0 0 25px var(--theme-article);
-        }
-        .item-link span { font-weight: bold; font-variant: small-caps; font-size: 1.1em; text-align: left; }
-        .item-link span small { display: block; font-size: 0.75em; font-family: 'Georgia', serif; font-style: italic; opacity: 0.8; text-transform: none; font-weight: normal; }
-
-        /* --- ENCYCLOPÉDIE --- */
-        .encyclopedie-section { background-color: var(--blanc); padding: 80px 20px; text-align: center; border-top: 1px solid #eee; }
-        .pills-row { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 30px; }
-        .pill { padding: 10px 20px; border: 2px solid; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 0.9em; text-decoration: none; background: #fff; transition: 0.3s; }
-        .p1 { border-color: var(--maison); color: var(--maison); } .p1:hover { background: var(--maison); color: #fff; box-shadow: 0 0 15px var(--maison); }
-        .p2 { border-color: var(--jardin); color: var(--jardin); } .p2:hover { background: var(--jardin); color: #fff; box-shadow: 0 0 15px var(--jardin); }
-        .p3 { border-color: var(--corps); color: var(--corps); } .p3:hover { background: var(--corps); color: #fff; box-shadow: 0 0 15px var(--corps); }
-        .p4 { border-color: var(--bienetre); color: var(--bienetre); } .p4:hover { background: var(--bienetre); color: #fff; box-shadow: 0 0 15px var(--bienetre); }
-        .p5 { border-color: var(--eso); color: var(--eso); } .p5:hover { background: var(--eso); color: #fff; box-shadow: 0 0 15px var(--eso); }
-
-        /* --- FOOTER --- */
-        footer { background: var(--brun-sombre); color: #fff; padding: 80px 20px; text-align: center; }
-        
-        /* AURA LOGO FOOTER BLANC ++++ (EXCLUSIVEMENT ICI) */
-        .footer-logo { display: inline-block; transition: 0.4s ease; margin-bottom: 30px; }
-        .footer-logo img { height: 60px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.4)); transition: 0.5s; }
-        .footer-logo:hover img { 
-            filter: drop-shadow(0 0 30px #ffffff) drop-shadow(0 0 15px #ffffff) drop-shadow(0 0 5px #ffffff); 
-            transform: scale(1.05); 
-        }
-        
-        .footer-nav-compact { display: flex; gap: 30px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; flex-wrap: wrap; }
-        .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.6; font-variant: small-caps; transition: 0.3s; }
-        .footer-nav-compact a:hover { opacity: 1; color: var(--theme-article); text-shadow: 0 0 15px var(--theme-article); }
-
-        #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
-
-        @media (max-width: 768px) {
-            header { padding: 15px 0; }
-            .logo img { max-height: 70px; } 
-            .nav-container { flex-direction: column; gap: 15px; padding: 10px 20px; }
-            .header-right { flex-direction: column; gap: 15px; align-items: center; width: 100%; }
-            nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; }
-            .hero { padding-top: 350px !important; justify-content: flex-start !important; height: auto !important; padding-bottom: 60px; }
-            .hero h1 { font-size: 2.2em; }
-            .item-link { flex-direction: column; text-align: center; padding: 15px; }
-            .item-link span { text-align: center; }
-            .encadre-titre { font-size: 2em; }
-        }
-    </style>
+    .hero {
+      position: relative;
+      background: #000;
+      line-height: 0;
+    }
+    .hero img {
+      width: 100%;
+      max-height: 460px;
+      min-height: 300px;
+      object-fit: cover;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,.28);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 24px;
+      line-height: 1.6;
+    }
+    .hero-content {
+      max-width: 860px;
+      color: white;
+    }
+    .hero-kicker {
+      text-transform: uppercase;
+      letter-spacing: .16em;
+      font-size: .8rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      opacity: .9;
+    }
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      margin: 0 0 14px;
+      line-height: 1.08;
+    }
+    .hero-sub {
+      font-size: 1.04rem;
+      max-width: 720px;
+      margin: 0 auto;
+      color: rgba(255,255,255,.92);
+    }
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 28px 20px 70px;
+    }
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem;
+      margin-top: 42px;
+      margin-bottom: 10px;
+    }
+    p { margin: 0 0 14px; }
+    ul { padding-left: 20px; margin: 0 0 14px; }
+    .box {
+      background: var(--surface);
+      border-radius: 18px;
+      padding: 18px;
+      margin: 26px 0;
+      box-shadow: 0 12px 28px rgba(0,0,0,.05);
+      border: 1px solid rgba(0,0,0,.03);
+    }
+    .cta-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 18px;
+      border: 1px solid var(--accent);
+      border-radius: 999px;
+      color: var(--accent);
+      font-weight: 700;
+      font-size: .95rem;
+    }
+    .cta-link:hover { background: var(--accent); color: white; }
+    .footer {
+      background: var(--dark);
+      color: #f3dfca;
+      padding: 60px 20px 80px;
+      text-align: center;
+      margin-top: 30px;
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <div class="nav-container">
-            <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
-            <div class="header-right">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li class="dropdown">
-                            <a href="grimoire.html">Grimoire</a>
-                            <div class="dropdown-content">
-                                <a href="maison.html">Vol 1 : Fondation</a>
-                                <a href="jardin.html">Vol 2 : Enracinement</a>
-                                <a href="corps.html">Vol 3 : Éclosion</a>
-                                <a href="bienetre.html">Vol 4 : Harmonie</a>
-                                <a href="eso.html">Vol 5 : Élévation</a>
-                            </div>
-                        </li>
-                        <li><a href="blog.html">Journal</a></li>
-                        <li><a href="encyclopedie.html">Encyclopédie</a></li>
-                        <li><a href="livre-or.html">Livre d'Or</a></li>
-                    </ul>
-                </nav>
-                <a href="https://www.pinterest.fr/zencheztoi/" class="pinterest-badge" target="_blank" title="Inspirations pour le Corps">p</a>
-            </div>
-        </div>
-    </header>
+  <nav class="main-nav" aria-label="Navigation principale">
+    <div class="nav-wrap">
+      <a href="index.html">Accueil</a><span class="dot">&bull;</span>
+      <a href="bienetre.html">Bien-être</a><span class="dot">&bull;</span>
+      <a href="corps.html" class="active">Corps</a><span class="dot">&bull;</span>
+      <a href="blog.html">Blog</a>
+    </div>
+  </nav>
 
-    <section class="hero">
-        <p class="vol-phrase">Volume 3 : Éclosion • Chronique</p>
-        <h1>Mal de Dos : l'Alchimie de la Libération Corporelle</h1>
-        <p class="tagline">« Le dos est le pilier central de votre temple intérieur. Apprenez à dissoudre les mémoires somatiques et à soutenir votre posture par le mouvement conscient et l'ergonomie. »</p>
+  <header class="hero">
+    <img src="assets/mal-de-dos.jpg" alt="Soulager le mal de dos">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <div class="hero-kicker">Corps · Dos</div>
+        <h1>Mal de dos : relâcher, soutenir et alléger le quotidien</h1>
+        <p class="hero-sub">
+          Le mal de dos peut être lié à des postures répétées, à une tension musculaire, à un effort ou à un manque de mouvement, et la chaleur douce ainsi que certains exercices simples sont souvent utilisés pour soulager l’inconfort.[web:50][web:52][web:55]
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Pourquoi le dos se crispe-t-il si facilement ?</h2>
+      <p>
+        Le dos supporte une grande partie des charges du quotidien : position assise prolongée, port de charges, stress, manque d’activité ou gestes répétitifs peuvent favoriser les douleurs et les tensions.[web:52][web:58]
+      </p>
+      <p>
+        Quand l’inconfort apparaît, l’objectif n’est pas toujours de “corriger” brutalement, mais souvent de redonner au corps un peu de mobilité, de soutien et de récupération.[web:50][web:53]
+      </p>
     </section>
 
-    <main class="blog-container">
-
-        <p>Dans l'alchimie du Corps, la colonne vertébrale est l'axe autour duquel circule toute votre énergie vitale. Mais sous le poids du quotidien, cette charpente silencieuse encaisse les chocs : position assise prolongée, stress accumulé ou manque de mouvement finissent par entraver le flux énergétique. Le mal de dos n'est pas qu'une simple "douleur mécanique", c'est une crispation, une mémoire somatique qui verrouille les tissus et réclame ardemment votre attention.</p>
-
-        <div class="alchimiste-note">
-            <span class="note-titre">L'Illusion de la Force</span>
-            <p>Quand l'inconfort lombaire ou dorsal apparaît, notre premier réflexe est souvent de vouloir "corriger" ou de "forcer" la posture brutalement pour se redresser. L'approche alchimique est inversée : il faut d'abord relâcher. L'objectif n'est pas la contrainte, mais de redonner au corps sa mobilité naturelle, des espaces de récupération et un soutien enveloppant.</p>
-        </div>
-
-        <h2>Les Gestes de la Libération</h2>
-        <p>Pour dénouer les fibres musculaires et relancer la sève corporelle, quelques rituels doux suffisent souvent à transformer le fardeau en légèreté :</p>
-        <ul>
-            <li><strong>Le Flux du Mouvement :</strong> La stagnation est la mère de la douleur. L'utilisation d'un tapis de yoga épais permet de s'allonger confortablement au sol pour étirer doucement la chaîne postérieure, soulageant ainsi instantanément la pression intervertébrale.</li>
-            <li><strong>La Conscience de l'Axe :</strong> Au bureau, la position assise prolongée écrase les disques lombaires. Un soutien ergonomique simple permet de maintenir la courbure naturelle du dos sans exiger d'effort musculaire constant.</li>
-            <li><strong>L'Assise Ancestrale :</strong> Pour la méditation ou le repos au sol, l'utilisation d'un Zafu (coussin rond) surélève le bassin, redresse la colonne naturellement et libère les tensions au niveau des genoux et des hanches.</li>
-        </ul>
-
-        <h2>L'Artisanat du Confort : Recharger ses Outils</h2>
-        <p>Dans la quête du bien-être absolu, l'alchimiste sait que chaque corps est unique. Avec le temps, un coussin de méditation ou un traversin de yoga s'affaisse. Plutôt que de le jeter, la sagesse consiste à le régénérer. L'utilisation d'un "sable végétal", comme les cosses de sarrasin ou les grains d'épeautre bio, permet de recharger vos coussins. Ces matières naturelles épousent parfaitement la courbure de votre colonne tout en offrant une fermeté inébranlable et modulable selon vos besoins exacts.</p>
-
-        <section class="encadre-hero">
-            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/hero-corps.jpg');">
-                <h3 class="encadre-titre">L'Arsenal du Soutien</h3>
-                <p class="encadre-sous-titre">Les tuteurs et matrices végétales pour alléger la charpente de votre temple.</p>
-                <div class="liste-selectionnable">
-                    <a href="https://www.amazon.fr/PROIRON-Yoga-Mat-Noir-Rouge/dp/B07BKQRWHT?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=PYT23K6I40LD&dib=eyJ2IjoiMSJ9.6B090wGWv-4bET2omxDCHri_R8Htq3zBv9lKEVA8s6vw-7_7NS3W1j-yRa6iX2thMa2T6st6FeU3UzNeCVSj98MJd49jweposxOx6jeybp0v15FGJx8mmz2JZx0J8iL4Fc1cXfmID0TREhBU8KsJnOLy-W2XqGJQQwLRNrdIxu7Nb0E6LbY6jzUbFIgh-2aB4vlaYTQ3e-hrO_bHaYRDikPZVdvb4Z-Qv6ARJWIljj4gLMBLWMPLWs0hvR9zedjvg_dfSpJ_RI8wTqY8xvY0dyKPl-UP6cVi2gCEFeCcN_I.MbS5nITwAqrslBBl-INtjnkMlpkXZAPH8f_hpxq_cZs&dib_tag=se&keywords=tapis%2Byoga&qid=1776174667&sprefix=tapis%2Byoga%2Caps%2C243&sr=8-6&th=1&linkCode=ll2&tag=zencheztoi-21&linkId=053689fe19365ee4e74a501ac2a158be&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="item-link">
-                        <span>La Matrice d'Étirement <small>Tapis de Yoga PROIRON : dense et confortable pour relâcher le dos au sol</small></span> <span>→</span>
-                    </a>
-                    <a href="https://www.amazon.fr/gp/aw/d/B0D4XZT763?th=1&linkCode=ll2&tag=zencheztoi-21&linkId=b310d65134d862a1f1185d577f2ab72b&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="item-link">
-                        <span>Le Tuteur Quotidien <small>Soutien Lombaire Ergonomique : un rappel postural doux pour la position assise</small></span> <span>→</span>
-                    </a>
-                    <a href="https://www.amazon.fr/Yoga-Studio-coussin-m%C3%A9ditation-Zabuton/dp/B0CHZ2PRRV?dib=eyJ2IjoiMSJ9.HgZJC7um9kSgcTxOgydjjQpmGtZrGhYIEkL41zkIMI2pegfCqkKanyePrbWlBLSZqVMmfFOAea-4IUnAtLawY33Ocno_0VKRL_HjgwDAzvB4LEc_TOrhBV1U4bM69jACG8vsxT2FlSRTpuSPv5rZag.MuHEG6vje7KDZM3-QktbFYGe39otqgBwt--9gO8FniA&dib_tag=se&qid=1777548093&refinements=p_89%3AYoga%2BStudio&sr=8-56&srs=20252371031&ufe=app_do%3Aamzn1.fos.49fccda8-a887-4188-817b-b9a64bb30e43&xpid=C-s8-isWiHBQr&th=1&linkCode=ll2&tag=zencheztoi-21&linkId=7100423a7f4803a132d386fe75f9ea3b&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="item-link">
-                        <span>Le Socle d'Alignement <small>Kit Yoga Studio (Zabuton & Zafu) : pour soulager les genoux et redresser le bassin</small></span> <span>→</span>
-                    </a>
-                    <a href="https://www.amazon.fr/DoYourYoga-sarrasin-remplissage-Poussi%C3%A8re-entstaubt/dp/B079WZ4Q6D?dib=eyJ2IjoiMSJ9.E_Dx_M1Aqh2kbzJl4WWTf4ZgUbnI9iFfJtKv-db1Tq43plKhFahBmr5qR5gGlmgI2SZNzlJH0ypxKDUgT_oCQC-LyM1i0ROFm2G_2-jlcfCtqA0Lm3zWnGjR84m3xGhpqlTZOPj6dMoPXHQ463L_ii7_NBflWDCJ5Ul9xD17iga1EwcFTOfyVl_6DP34ELn-2o1FrLp7GeK5GdhWMHodpcLG-qO1kDfV8REqoGsq9T4.wAZMjRqeTPu4zv8UOKrCion28WtHnV5ZIQCJ6X21Wnc&dib_tag=se&qid=1777545622&refinements=p_89%3A%23DoYourYoga&sr=8-6&srs=52333016031&th=1&linkCode=ll2&tag=zencheztoi-21&linkId=5dbef34ac3116d3dd07e30099675e8d0&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="item-link">
-                        <span>Le Sable Végétal <small>Cosses de Sarrasin Bio : pour recharger et moduler la fermeté de vos coussins</small></span> <span>→</span>
-                    </a>
-                    <a href="https://www.amazon.fr/DoYourSports-Remplissage-pour-Coussins-Traversins/dp/B076ZS3X2R?dib=eyJ2IjoiMSJ9.E_Dx_M1Aqh2kbzJl4WWTf4ZgUbnI9iFfJtKv-db1Tq43plKhFahBmr5qR5gGlmgI2SZNzlJH0ypxKDUgT_oCQC-LyM1i0ROFm2G_2-jlcfCtqA0Lm3zWnGjR84m3xGhpqlTZOPj6dMoPXHQ463L_ii7_NBflWDCJ5Ul9xD17iga1EwcFTOfyVl_6DP34ELn-2o1FrLp7GeK5GdhWMHodpcLG-qO1kDfV8REqoGsq9T4.wAZMjRqeTPu4zv8UOKrCion28WtHnV5ZIQCJ6X21Wnc&dib_tag=se&qid=1777545622&refinements=p_89%3A%23DoYourYoga&sr=8-4&srs=52333016031&th=1&linkCode=ll2&tag=zencheztoi-21&linkId=78125c0aa30fdebc415b8009bc6b8173&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="item-link">
-                        <span>Le Grain Résilient <small>Grains d'Épeautre Bio : une alternative douce et gonflante pour vos supports</small></span> <span>→</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <h2>Écouter le Langage du Corps</h2>
-        <p>Ne luttez pas contre votre propre organisme. En soutenant physiquement vos lombaires au quotidien, en libérant les articulations avec un Zafu ajusté à votre corps, et en cultivant le mouvement, vous ne vous contentez pas de soulager un symptôme : vous apprenez à honorer la fondation même de votre corps, lui rendant sa résilience et sa souplesse originelle.</p>
-
-        <section class="encadre-hero">
-            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/hero-accueil.jpg');">
-                <h3 class="encadre-titre">Continuer l'Éclosion</h3>
-                <p class="encadre-sous-titre">Explorez d'autres rituels pour soigner et honorer votre temple corporel.</p>
-                <div class="liste-selectionnable">
-                    <a href="sommeil-profond.html" class="item-link">
-                        <span>La Nuit Alchimique <small>Chronique : Rituels pour un sommeil profond et réparateur</small></span> <span>→</span>
-                    </a>
-                    <a href="immunite.html" class="item-link">
-                        <span>Le Bouclier Végétal <small>Chronique : Soutenir ses défenses naturelles en douceur</small></span> <span>→</span>
-                    </a>
-                    <a href="corps.html" class="item-link">
-                        <span>Le Volume 3 Complet <small>Découvrir tous les secrets de l'Éclosion</small></span> <span>→</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <section class="encyclopedie-section">
-        <h2 style="font-variant: small-caps; font-size: 2.2em; color: var(--brun-sombre); margin-bottom: 20px;">Emportez nos savoirs avec vous</h2>
-        <div class="pills-row">
-            <a href="encyclopedie.html#vol1" class="pill p1">Vol 1 : Fondation</a>
-            <a href="encyclopedie.html#vol2" class="pill p2">Vol 2 : Enracinement</a>
-            <a href="encyclopedie.html#vol3" class="pill p3">Vol 3 : Éclosion</a>
-            <a href="encyclopedie.html#vol4" class="pill p4">Vol 4 : Harmonie</a>
-            <a href="encyclopedie.html#vol5" class="pill p5">Vol 5 : Élévation</a>
-        </div>
-        <div style="margin-top: 40px; font-size: 1.2em; font-style: italic; color: var(--brun-sombre);">
-            Le Volume : <span style="color:var(--or-zen); font-weight:bold;">14.90€</span> — Pack Trio : <span style="color:var(--or-zen); font-weight:bold;">24.90€</span> — L'Intégrale : <span style="color:var(--or-zen); font-weight:bold;">39.90€</span>
-        </div>
+    <section>
+      <h2>Les gestes doux qui aident le plus</h2>
+      <u
+      <ul>
+        >Appliquer de la chaleur douce sur les zones contractées pour favoriser le relâchement musculaire.[web:50][web:56]</li>
+        >Revoir la posture au bureau ou à la maison pour limiter les tensions répétées.[web:52][web:55]</li>
+        >Alterner les périodes assises et les petits moments de mouvement dans la journée.[web:52][web:58]</li>
+      </ul>
+      <p>
+        Dans beaucoup de cas, un soutien ergonomique simple peut aussi aider à mieux répartir les pressions au niveau lombaire et à diminuer la sensation d’écrasement en position assise.[web:51][web:54][web:57]
+      </p>
     </section>
 
-    <footer>
-        <a href="index.html" class="footer-logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
-        <ul class="footer-nav-compact">
-            <li><a href="mentions-legales.html">Mentions légales</a></li>
-            <li><a href="confidentialite.html">Confidentialité</a></li>
-            <li><a href="cookies.html">Cookies</a></li>
-            <li><a href="a-propos.html">À Propos</a></li>
-            <li><a href="livre-or.html">Livre d'Or</a></li>
-        </ul>
-        <p style="font-size: 0.85em; opacity: 0.4;">&copy; 2026 Zen Chez Toi • L'Éclosion au Naturel.</p>
-    </footer>
+    <section>
+      <h2>Produit choisi pour cette page</h2>
+      <div class="box">
+        <strong>Produit associé – Coussin lombaire ergonomique</strong>
+        <p>
+          Un coussin lombaire peut aider à soutenir le bas du dos quand on reste longtemps assis, notamment au bureau, en voiture ou sur un fauteuil peu adapté. Il agit surtout comme rappel postural doux et comme soutien de confort au quotidien.[web:51][web:54][web:57]
+        </p>
+        <a class="cta-link"
+           href="https://www.amazon.fr/s?k=coussin+lombaire+ergonomique&tag=zencheztoi-21"
+           target="_blank" rel="nofollow sponsored">
+          Voir le coussin lombaire
+        </a>
+      </div>
+    </section>
+  </main>
 
-    <div id="disclaimer-bar">🔗 Liens affiliés Amazon : Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises. Bien-être : si la douleur persiste, consultez un professionnel de santé.</div>
+  <footer class="footer">
+    <div style="font-family:'Cormorant Garamond',serif;font-size:2.2rem;">
+      Zen <em style="color:var(--accent);font-style:italic;">Chez</em> Toi
+    </div>
+    <p style="opacity:.65;">© 2026 Zen Chez Toi — Tous droits réservés.</p>
+  </footer>
 
 </body>
 </html>

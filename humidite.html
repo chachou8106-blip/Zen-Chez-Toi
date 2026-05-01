@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Humidité : l'Alchimie du Souffle et de l'Air Purifié | Zen Chez Toi</title>
+    <title>Humidité : assainir la maison en douceur | Zen Chez Toi</title>
 
     <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
+    <meta name="p:domain_verify" content="549770272775"/>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRV5YNRL57"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -15,225 +16,187 @@
     </script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7501098246029504" crossorigin="anonymous"></script>
 
-    <meta name="description" content="Découvrez l'alchimie pour assainir votre maison. Transmutez l'air humide par la sagesse des minéraux et des rituels de ventilation naturelle.">
+    <meta name="description" content="Humidité dans la maison : gestes simples, astuces naturelles et pistes d’équipement pour assainir l’air au quotidien, sans dramatiser.">
     <link rel="icon" type="image/png" href="assets/logo.png">
 
     <style>
         :root {
             --bg-sable: #f5f2ec; --blanc: #ffffff; --brun-sombre: #2b2622; --or-zen: #a67b51;
-            --maison: #6a7f8f; --jardin: #7b9074; --corps: #cca8a0; --bienetre: #d4a259; --eso: #826a8f;
-            
-            /* THÈME MAISON ACTIVÉ */
-            --theme-article: var(--maison);
+            --maison: #6a7f8f; --maison-light: #e4e9ed;
         }
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.8; overflow-x: hidden; }
 
-        /* --- HEADER & NAVIGATION --- */
-        header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; }
+        /* HEADER IDENTIQUE A INDEX.HTML */
+        header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 1000; }
         .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
-        .logo { display: inline-block; text-decoration: none; }
-        .logo img { max-height: 90px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2)); transition: 0.5s ease; }
-        .logo:hover img { filter: drop-shadow(0 0 25px #ffffff) drop-shadow(0 0 10px #ffffff); transform: scale(1.03); }
-
-        .header-right { display: flex; align-items: center; gap: 40px; }
-        nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
-        nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
-        nav a:hover { color: var(--theme-article); }
-
-        .dropdown { position: relative; display: inline-block; padding: 15px 0; cursor: pointer; }
-        .dropdown-content { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background-color: var(--brun-sombre); min-width: 200px; box-shadow: 0px 10px 25px rgba(0,0,0,0.3); z-index: 2100; border-radius: 8px; border: 1px solid var(--theme-article); overflow: hidden; }
-        .dropdown-content a { color: rgba(255,255,255,0.8) !important; padding: 12px 20px; display: block; font-size: 0.95em; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1); font-variant: small-caps; }
-        .dropdown-content a:hover { background-color: var(--theme-article); color: #fff !important; }
-        .dropdown:hover .dropdown-content { display: block; }
-
-        .pinterest-badge { display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; font-style: italic; background: rgba(255,255,255,0.1); transition: 0.4s; }
-        .pinterest-badge:hover { background: var(--theme-article); border-color: var(--theme-article); transform: rotate(15deg); }
-
-        /* --- HERO ARTICLE --- */
-        .hero { height: 75vh; min-height: 500px; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('assets/hero-maison.jpg') center/cover no-repeat fixed; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; }
-        .vol-phrase { font-size: clamp(1.4em, 3vw, 2em); font-variant: small-caps; letter-spacing: 5px; font-weight: bold; margin-bottom: 15px; color: var(--theme-article); text-shadow: 0 4px 15px rgba(0,0,0,0.9), 0 2px 5px rgba(0,0,0,1); -webkit-text-stroke: 0.5px rgba(255,255,255,0.8); }
-        .hero h1 { font-size: clamp(2.5em, 6vw, 4.5em); font-weight: normal; margin-bottom: 20px; line-height: 1.2; font-variant: small-caps; text-shadow: 0 4px 15px rgba(0,0,0,0.8); max-width: 1000px; }
-        .tagline { font-size: clamp(1.1em, 2vw, 1.5em); font-style: italic; opacity: 0.9; max-width: 800px; line-height: 1.5; }
-
-        /* --- CORPS DU TEXTE --- */
-        .blog-container { max-width: 800px; margin: 60px auto 60px; padding: 0 20px; font-size: 1.15rem; color: #333; }
-        .blog-container h2 { font-size: 2.2em; color: var(--theme-article); margin: 60px 0 25px; font-variant: small-caps; text-align: center; font-weight: normal; }
-        .blog-container h3 { font-size: 1.5em; color: var(--brun-sombre); margin: 50px 0 15px; font-variant: small-caps; border-bottom: 1px solid rgba(106, 127, 143, 0.4); padding-bottom: 8px; }
-        .blog-container p { margin-bottom: 25px; text-align: justify; }
-        .blog-container ul { margin-bottom: 25px; padding-left: 20px; }
-        .blog-container li { margin-bottom: 10px; }
-
-        /* --- NOTES & ENCADRÉS --- */
-        .alchimiste-note { background: var(--blanc); border-left: 4px solid var(--theme-article); padding: 30px; margin: 50px 0; border-radius: 0 20px 20px 0; box-shadow: 0 15px 40px rgba(0,0,0,0.05); }
-        .note-titre { display: block; font-variant: small-caps; color: var(--theme-article); font-weight: bold; font-size: 1.3em; margin-bottom: 15px; }
-
-        .encadre-hero { margin: 80px 0; border-radius: 30px; overflow: hidden; border: 5px solid var(--theme-article); box-shadow: 0 20px 50px rgba(0,0,0,0.2); }
-        .cadre-fond { padding: 60px 40px; text-align: center; background-size: cover; background-position: center; background-attachment: fixed; }
-        .encadre-titre { font-size: 2.5em; font-variant: small-caps; color: var(--brun-sombre); -webkit-text-stroke: 0.5px #ffffff; margin-bottom: 10px; text-shadow: 0 4px 15px rgba(0,0,0,0.6); letter-spacing: 1px; }
-        .encadre-sous-titre { font-style: italic; font-size: 1.1em; color: #fff; margin-bottom: 30px; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
+        .logo-area { display: flex; align-items: center; gap: 25px; }
+        .logo img { max-height: 90px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); }
         
-        .liste-selectionnable { display: flex; flex-direction: column; gap: 15px; max-width: 650px; margin: 0 auto; }
-        .item-link { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; padding: 18px 35px; display: flex; align-items: center; justify-content: space-between; text-decoration: none; color: #fff; transition: 0.3s; }
-        .item-link:hover { transform: scale(1.03); border-color: #fff; background: var(--theme-article); }
-        .item-link span { font-weight: bold; font-variant: small-caps; font-size: 1.1em; text-align: left; }
-        .item-link span small { display: block; font-size: 0.75em; font-family: 'Georgia', serif; font-style: italic; opacity: 0.8; text-transform: none; font-weight: normal; }
-
-        /* --- ENCYCLOPÉDIE --- */
-        .encyclopedie-section { background-color: var(--blanc); padding: 80px 20px; text-align: center; border-top: 1px solid #eee; }
-        .pills-row { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 30px; }
-        .pill { padding: 10px 20px; border: 2px solid; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 0.9em; text-decoration: none; background: #fff; transition: 0.3s; }
-        .p1 { border-color: var(--maison); color: var(--maison); } .p1:hover { background: var(--maison); color: #fff; }
-        .p2 { border-color: var(--jardin); color: var(--jardin); } .p2:hover { background: var(--jardin); color: #fff; }
-        .p3 { border-color: var(--corps); color: var(--corps); } .p3:hover { background: var(--corps); color: #fff; }
-        .p4 { border-color: var(--bienetre); color: var(--bienetre); } .p4:hover { background: var(--bienetre); color: #fff; }
-        .p5 { border-color: var(--eso); color: var(--eso); } .p5:hover { background: var(--eso); color: #fff; }
-
-        /* --- FOOTER --- */
-        footer { background: var(--brun-sombre); color: #fff; padding: 80px 20px; text-align: center; }
-        .footer-logo img { height: 60px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.4)); transition: 0.5s; margin-bottom: 30px; }
-        .footer-logo:hover img { filter: drop-shadow(0 0 25px #ffffff); }
-        .footer-nav-compact { display: flex; gap: 30px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; flex-wrap: wrap; }
-        .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.6; font-variant: small-caps; transition: 0.3s; }
-        .footer-nav-compact a:hover { opacity: 1; color: var(--theme-article); }
-
-        #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
-
-        @media (max-width: 768px) {
-            header { padding: 15px 0; }
-            .logo img { max-height: 70px; } 
-            .nav-container { flex-direction: column; gap: 15px; padding: 10px 20px; }
-            .header-right { flex-direction: column; gap: 15px; align-items: center; width: 100%; }
-            nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; }
-            .hero { padding-top: 350px !important; justify-content: flex-start !important; height: auto !important; padding-bottom: 60px; }
-            .hero h1 { font-size: 2.2em; }
-            .item-link { flex-direction: column; text-align: center; padding: 15px; }
-            .item-link span { text-align: center; }
-            .encadre-titre { font-size: 2em; }
+        .pinterest-badge { 
+            display: inline-flex; align-items: center; justify-content: center; 
+            width: 32px; height: 32px; border: 1px solid rgba(255,255,255,0.4); 
+            border-radius: 50%; color: #ffffff; text-decoration: none; 
+            font-family: 'Georgia', serif; font-style: italic; font-size: 1.1rem;
+            transition: all 0.4s ease; background: rgba(255,255,255,0.1); backdrop-filter: blur(2px);
         }
+        .pinterest-badge:hover { background: var(--maison); border-color: var(--maison); transform: rotate(15deg) scale(1.1); box-shadow: 0 4px 15px rgba(106, 127, 143, 0.3); }
+
+        nav ul { list-style: none; display: flex; gap: 30px; align-items: center; flex-wrap: wrap; }
+        nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
+        nav a:hover { color: var(--maison); }
+
+        /* HERO MAISON */
+        .hero-article {
+            height: 60vh;
+            background: linear-gradient(rgba(24,18,14,0.5), rgba(24,18,14,0.6)), url('assets/hero-maison.jpg') center/cover no-repeat;
+            display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px;
+        }
+        .article-meta { font-variant: small-caps; letter-spacing: 2px; color: var(--maison); margin-bottom: 15px; font-weight: bold; text-shadow: 0 1px 3px rgba(0,0,0,0.8); }
+        .hero-article h1 { font-size: 3em; font-weight: normal; max-width: 900px; line-height: 1.2; text-shadow: 0 2px 5px rgba(0,0,0,0.6); }
+
+        /* CONTENU ARTICLE */
+        .article-container { max-width: 800px; margin: -50px auto 60px; background: var(--blanc); padding: 60px; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.05); position: relative; z-index: 10; }
+        .article-container h2 { font-size: 1.8em; color: var(--maison); margin: 40px 0 20px; font-weight: normal; font-variant: small-caps; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        .article-container h3 { font-size: 1.3em; color: var(--brun-sombre); margin: 30px 0 15px; }
+        .article-container p { font-size: 1.1em; color: #444; margin-bottom: 25px; text-align: justify; }
+        .article-container ul { margin: 0 0 25px 40px; font-size: 1.1em; color: #444; }
+        .article-container li { margin-bottom: 10px; }
+        .quote-block { border-left: 4px solid var(--maison); padding: 20px 30px; background: var(--maison-light); font-style: italic; font-size: 1.15em; color: #555; margin: 40px 0; border-radius: 0 12px 12px 0; }
+        
+        .lettrine::first-letter {
+            float: left; font-size: 3.5em; line-height: 0.8; padding-right: 8px; padding-top: 8px;
+            color: var(--maison); font-family: 'Georgia', serif;
+        }
+
+        /* ENCART PRODUIT AFFILIÉ IN-TEXT */
+        .product-highlight { display: flex; align-items: center; gap: 30px; padding: 30px; border: 1px dashed var(--maison); border-radius: 12px; background: #fdfdfc; margin: 40px 0; transition: transform 0.3s ease; }
+        .product-highlight:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(106,127,143,0.1); }
+        .product-highlight img { width: 120px; height: 120px; object-fit: cover; border-radius: 8px; }
+        .product-text h4 { font-size: 1.2em; color: var(--maison); margin-bottom: 10px; }
+        .product-text p { font-size: 0.95em; margin-bottom: 15px; }
+        .btn-amazon { display: inline-block; padding: 10px 25px; background: var(--maison); color: #fff; text-decoration: none; border-radius: 50px; font-weight: bold; font-variant: small-caps; transition: 0.3s; }
+        .btn-amazon:hover { background: var(--brun-sombre); }
+
+        /* ADSENSE & DISCLAIMER */
+        .ad-container { margin: 40px 0; text-align: center; }
+        #disclaimer-bar { background: var(--brun-sombre); color: rgba(255,255,255,0.7); font-size: 0.8rem; text-align: center; padding: 12px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+
+        /* FOOTER COMPLET */
+        footer { background: var(--brun-sombre); color: #fff; padding: 60px 20px; text-align: center; }
+        .footer-logo-small { height: 45px; margin-bottom: 25px; }
+        .footer-nav-compact { display: flex; gap: 25px; list-style: none; justify-content: center; margin-bottom: 25px; padding: 0; flex-wrap: wrap; }
+        .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.7; font-variant: small-caps; transition: 0.3s; }
+        .footer-nav-compact a:hover { opacity: 1; color: var(--or-zen); }
+
+        /* RESPONSIVE */
+        @media (max-width: 992px) { .nav-container { padding: 0 20px; } }
+        @media (max-width: 768px) { .article-container { padding: 30px; margin-top: -20px; } .hero-article h1 { font-size: 2.2em; } .product-highlight { flex-direction: column; text-align: center; } .nav-container { flex-direction: column; gap: 15px; } nav ul { justify-content: center; gap: 15px; } }
     </style>
 </head>
 <body>
 
     <header>
         <div class="nav-container">
-            <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
-            <div class="header-right">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li class="dropdown">
-                            <a href="grimoire.html">Grimoire</a>
-                            <div class="dropdown-content">
-                                <a href="maison.html">Vol 1 : Fondation</a>
-                                <a href="jardin.html">Vol 2 : Enracinement</a>
-                                <a href="corps.html">Vol 3 : Éclosion</a>
-                                <a href="bienetre.html">Vol 4 : Harmonie</a>
-                                <a href="eso.html">Vol 5 : Élévation</a>
-                            </div>
-                        </li>
-                        <li><a href="blog.html">Journal</a></li>
-                        <li><a href="encyclopedie.html">Encyclopédie</a></li>
-                        <li><a href="livre-or.html">Livre d'Or</a></li>
-                    </ul>
-                </nav>
-                <a href="https://www.pinterest.fr/zencheztoi/" class="pinterest-badge" target="_blank" title="Inspirations pour la Maison">p</a>
+            <div class="logo-area">
+                <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
+                <a href="https://www.pinterest.com/" class="pinterest-badge" target="_blank">p</a>
             </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="jardin.html">Jardin</a></li>
+                    <li><a href="maison.html">Maison</a></li>
+                    <li><a href="bienetre.html">Bien-être</a></li>
+                    <li><a href="corps.html">Corps</a></li>
+                    <li><a href="eso.html">Ésotérisme</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <section class="hero">
-        <p class="vol-phrase">Volume 1 : Fondation • Chronique</p>
-        <h1>Humidité : l'Alchimie du Souffle et de l'Air Purifié</h1>
-        <p class="tagline">« Libérer l'âtre des vapeurs stagnantes pour laisser le sanctuaire respirer. Apprenez à transmuter l'air lourd en une atmosphère légère et souveraine. »</p>
-    </section>
-
-    <main class="blog-container">
-
-        <p>Dans l'alchimie du foyer, l'air est l'élément qui transporte la vie. Mais lorsque l'eau cherche un chemin là où elle ne devrait pas être, l'équilibre vacille. Buée persistante, linge qui peine à sécher et odeurs de moisi sont les murmures d'une demeure dont le souffle est entravé. Retrouver un air sain sans corrompre votre sanctuaire par des agents chimiques est un art que nous cultivons dans ce Volume 1 : une marche vers un équilibre situé entre 40 et 60 % d’humidité relative.</p>
-
-        <div class="alchimiste-note">
-            <span class="note-titre">Le Secret du Flux Naturel</span>
-            <p>Le premier remède de l'alchimiste est la circulation. L'air doit bouger pour se purifier. Ouvrir les fenêtres 15 minutes chaque matin permet de transmuter l’air chargé de la nuit en une nouvelle vibration. Même au cœur de l'hiver, ce rituel de ventilation est la première marche vers la souveraineté de votre intérieur.</p>
-        </div>
-
-        <h2>Écouter les Signaux de l'Eau</h2>
-        <p>L'humidité excessive est un fléau silencieux qui finit toujours par altérer la matière. Soyez attentif aux traces sombres derrière les meubles, au froid pénétrant malgré le chauffage et aux joints qui s'obscurcissent dans les salles d'eau. Agir dès les premiers signaux permet d'éviter la stagnation des fluides et de maintenir l'aura protectrice de votre foyer. Limitez les sources de vapeur en couvrant vos chaudrons et en laissant la lumière pénétrer vos pièces les plus confinées.</p>
-
-        <h2>Les Éponges Minérales du Grimoire</h2>
-        <p>Pour réguler les espaces clos comme les penderies ou les placards sombres, la Nature offre des alliés hygroscopiques formidables :</p>
-        <ul>
-            <li><strong>Le Sel de Terre (Gros Sel & Bicarbonate) :</strong> Placés dans une coupe d'argile, ces minéraux capturent les molécules d'eau avant qu'elles ne s'incrustent dans le bois.</li>
-            <li><strong>Le Charbon Actif :</strong> Véritable piège naturel, sa structure extrêmement poreuse neutralise à la fois l'humidité et les effluves de stase, purifiant l'air sans aucun bruit.</li>
-        </ul>
-
-        <section class="encadre-hero">
-            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/hero-maison.jpg');">
-                <h3 class="encadre-titre">L'Arsenal du Souffle</h3>
-                <p class="encadre-sous-titre">Des instruments nobles et des onctions minérales piochés dans notre base pour assainir l'âtre.</p>
-                <div class="liste-selectionnable">
-                    <a href="https://www.amazon.fr/AbsoDry-Duo-Family-D%C3%A9shumidificateur-moisissure/dp/B0BLHJB1BQ?dib=eyJ2IjoiMSJ9.XZW7gjnID_fM3qfFJJX2TVyJN-2VzZcSm3hCtc9BgvYPMZ0rDNr9V96ypHsH4PGXygvR7l2vKlUZ3kZdKPyTnl8dPL-QBmHT23tKmZQ2NE4V9rm5DwlUGOyMPL8wkyj9V2-9Q_Oh6JTsLIq8pBhbdLTQ6K_4ta7oegLfd3r3fUasz1o5ZLE50eZb2aAyGMWq_-eAREIJ7QPCRhaDFh2Lm2KbvMckMugvi1zKEMT-8xya0OZmjE9GgC1xLEOKXIJildda2qI6bEYhz3bDED_dSaYq4ze1tcLPl2EkkRAH2VQ.u2AjU1xaGyk8mJN5DIXleMLMIPP11cFa-kwU3tw5iV8&dib_tag=se&keywords=d%C3%A9shumidificateur%2Bnaturel&qid=1776771994&sr=8-49-spons&aref=7aVAFdKVxn&sp_csd=d2lkZ2V0TmFtZT1zcF9idGY&th=1&linkCode=ll2&tag=zencheztoi-21&linkId=1b9be134e5fc1e007cd3f8c7c4a56478&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="item-link">
-                        <span>Le Puits Silencieux <small>Déshumidificateur AbsoDry sans électricité pour un équilibre constant</small></span> <span>→</span>
-                    </a>
-                    <a href="https://www.amazon.fr/absorbeurs-crochets-%C3%A9liminer-purifiants-dhumidit%C3%A9/dp/B0CQMS6QMS?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1Q242M4PG7QPT&dib=eyJ2IjoiMSJ9.vypIAjbL_7EH4fp3JC_Oq49_tNlar20UKt7bnnvzON6iYmGcHrDeYNLOlZ0GMQuG9fDXnhe5-MBrJUd91KKZ3aBP7l6UUSbSkDtbG6R3uSTRi8lzsjkE9yVGkT4uRD754qnZLjUvfHDJfRBQPQgG3CJOR2wrv1e2BXeIS5Y6bHZtVMTlJWmLQaRmbjd2QrG6Fue70-Bw5FXjJ41tF7Hf0HgZiFXc2Ul2-roGUe69NMFeejtqzh6raw-JCHa50sdnzEJGBAPdiHACG7B5cM_H2j4_dBwZO9eXEjsrKZuTy2c.2_1QNMNjTYkUinkczBj62Stq07Jhf5qRxbaco2sdszQ&dib_tag=se&keywords=charbon%2Bde%2Bbambou%2Banti%2Bhumidit%C3%A9%2Breutilisable%2Bpetite%2Bentreprise&qid=1776772830&sprefix=charbon%2Bde%2Bbambou%2Banti%2Bhumidit%C3%A9%2Breutilisable%2Bpetite%2Bentreprise%2Caps%2C222&sr=8-24&th=1&linkCode=ll2&tag=zencheztoi-21&linkId=f506ca29b0607c0508e8b11289a76ece&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="item-link">
-                        <span>Les Talismans de Carbone <small>Sachets de charbon de bambou réutilisables pour penderies et placards</small></span> <span>→</span>
-                    </a>
-                    <a href="https://www.amazon.fr/TFA-Dostmann-20-2047-52-Sputnik-Station-m%C3%A9t%C3%A9o/dp/B000JG4NS0?content-id=amzn1.sym.2b04206e-43f5-4bd8-b39d-d4671ceea54e%3Aamzn1.sym.2b04206e-43f5-4bd8-b39d-d4671ceea54e&crid=RP8ERRFVYMW&cv_ct_cx=station%2Bm%C3%A9t%C3%A9o%2Banalogique%2Bbois&keywords=station%2Bm%C3%A9t%C3%A9o%2Banalogique%2Bbois&pd_rd_i=B000JG2RQA&pd_rd_r=e64c840d-2d6e-4d91-8172-13688376414f&pd_rd_w=fYHO2&pd_rd_wg=UrY62&pf_rd_p=2b04206e-43f5-4bd8-b39d-d4671ceea54e&pf_rd_r=X7376QMR43JVK6AT88S8&qid=1776773160&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=station%2Bm%C3%A9t%C3%A9o%2Banalogique%2Caps%2C275&sr=1-4-1c0bc4f8-9a4b-47e4-b117-3d30b74c13f1-spons&ufe=app_do%3Aamzn1.fos.49fccda8-a887-4188-817b-b9a64bb30e43&aref=Ju9YmIda6L&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1&linkCode=ll2&tag=zencheztoi-21&linkId=28c2af13aa88f60eafd302ec9dd29488&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="item-link">
-                        <span>L'Oeil de l'Observateur <small>Station météo Sputnik en bois noble pour surveiller le taux d'hygrométrie</small></span> <span>→</span>
-                    </a>
-                </div>
-            </div>
+    <main>
+        <section class="hero-article">
+            <div class="article-meta">Maison • Humidité</div>
+            <h1>Humidité : assainir l’air sans se prendre la tête</h1>
         </section>
 
-        <h2>Restaurer l'Équilibre sans Panique</h2>
-        <p>Prendre l’humidité au sérieux ne signifie pas lutter contre la Nature, mais apprendre à danser avec ses flux. En alliant les gestes simples de la ventilation naturelle, la puissance des minéraux absorbants et l'observation précise grâce à vos instruments de mesure, vous bâtirez un sanctuaire où l'air circule librement. L'alchimie de l'entretien naturel est une marche vers la souveraineté de votre foyer, protégeant à la fois votre santé et l'intégrité de votre demeure.</p>
+        <article class="article-container">
+            <p class="lettrine"><strong>Buée sur les vitres au petit matin, odeur persistante de linge qui ne sèche pas, apparition de petites traces sombres derrière une commode…</strong> L’humidité excessive est le fléau silencieux de nombreux foyers. Au-delà de l'inconfort thermique qu'elle provoque, elle peut vite peser sur l’ambiance de votre sanctuaire et altérer la qualité de l'air que vous respirez. Il existe pourtant des rituels simples et des matières naturelles pour alléger cette atmosphère lourde.</p>
 
-        <section class="encadre-hero">
-            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/hero-accueil.jpg');">
-                <h3 class="encadre-titre">Continuer la Fondation</h3>
-                <p class="encadre-sous-titre">Explorez d'autres rituels pour purifier et protéger votre temple domestique.</p>
-                <div class="liste-selectionnable">
-                    <a href="canalisations.html" class="item-link">
-                        <span>Le Flux Libéré <small>Chronique : Entretien naturel des canalisations</small></span> <span>→</span>
-                    </a>
-                    <a href="mauvaises-odeurs.html" class="item-link">
-                        <span>Le Vent de Clarté <small>Chronique : Éliminer les odeurs du foyer au naturel</small></span> <span>→</span>
-                    </a>
-                    <a href="maison.html" class="item-link">
-                        <span>Le Volume 1 Complet <small>La Table des Matières du Grimoire de la Maison</small></span> <span>→</span>
-                    </a>
+            <div class="quote-block">
+                L’objectif de l'alchimiste n’est pas de tout assécher cliniquement, mais de retrouver l'équilibre. Un foyer sain respire généralement dans une zone de confort située entre 40 et 60 % d’humidité relative.
+            </div>
+
+            <h2>Écouter les murmures de l'eau : repérer les signes</h2>
+            <p>Il est primordial d'agir dès les premiers signaux subtils envoyés par votre maison. L'eau cherche toujours un chemin. Une buée qui refuse de disparaître sur le bas des fenêtres, une sensation de froid pénétrant malgré le chauffage allumé, ou de légères moisissures qui s'articulent sur les joints de la salle d'eau sont des indicateurs clairs. Si vos serviettes éponge mettent un temps infini à sécher, l'air de la pièce est saturé.</p>
+
+            <h2>Le rituel de l'air : les gestes du quotidien</h2>
+            <p>Avant d'invoquer la moindre matière, la première réponse demeure <strong>la ventilation naturelle</strong>. L'air doit circuler. Ouvrir les fenêtres 10 à 15 minutes chaque matin permet de renouveler l’air chargé de la nuit, et ce, même en plein cœur de l'hiver. Au quotidien, limitez ce qui charge inutilement l’air en vapeur : couvrez systématiquement vos casseroles en cuisine, utilisez votre hotte aspirante, et aérez généreusement la salle de bain après chaque douche.</p>
+
+            <h2>Les éponges minérales : remèdes d'alchimiste</h2>
+            <p>Pour réguler une chambre un peu trop confinée, un placard sombre ou une petite salle d’eau, Mère Nature a prévu des éponges hygroscopiques formidables :</p>
+            <ul>
+                <li><strong>Le duo Gros Sel & Bicarbonate :</strong> Placés dans un simple bol en argile, ils servent d'absorbeurs rustiques et redoutablement efficaces. Il suffit de les remplacer lorsqu'ils forment une croûte saturée d'eau.</li>
+                <li><strong>Le Charbon Actif :</strong> Véritable merveille de la nature, sa structure extrêmement poreuse en fait un piège naturel parfait pour capturer non seulement les molécules d'eau, mais également les mauvaises odeurs de moisi.</li>
+            </ul>
+
+            <h2>Les alliés discrets de la maison saine</h2>
+            <p>Sans multiplier les appareils complexes, quelques solutions physiques bien choisies peuvent vous soulager durablement et maintenir un air sain dans les pièces les plus sensibles.</p>
+
+            <div class="product-highlight">
+                <img src="assets/logo.png" alt="Déshumidificateur AbsoDry" style="background:#eee;"> <div class="product-text">
+                    <h4>Déshumidificateur d’air AbsoDry Duo Family</h4>
+                    <p>Un petit déshumidificateur esthétique et sans électricité, idéal pour les pièces gorgées de vapeur (salle de bain, buanderie). Il absorbe l’excès d’humidité en continu, sans émettre le moindre son, rétablissant la sérénité du lieu.</p>
+                    <a href="https://www.amazon.fr/AbsoDry-Duo-Family-D%C3%A9shumidificateur-moisissure/dp/B0BLHJB1BQ?dib=eyJ2IjoiMSJ9.XZW7gjnID_fM3qfFJJX2TVyJN-2VzZcSm3hCtc9BgvYPMZ0rDNr9V96ypHsH4PGXygvR7l2vKlUZ3kZdKPyTnl8dPL-QBmHT23tKmZQ2NE4V9rm5DwlUGOyMPL8wkyj9V2-9Q_Oh6JTsLIq8pBhbdLTQ6K_4ta7oegLfd3r3fUasz1o5ZLE50eZb2aAyGMWq_-eAREIJ7QPCRhaDFh2Lm2KbvMckMugvi1zKEMT-8xya0OZmjE9GgC1xLEOKXIJildda2qI6bEYhz3bDED_dSaYq4ze1tcLPl2EkkRAH2VQ.u2AjU1xaGyk8mJN5DIXleMLMIPP11cFa-kwU3tw5iV8&dib_tag=se&keywords=d%C3%A9shumidificateur%2Bnaturel&qid=1776771994&sr=8-49-spons&aref=7aVAFdKVxn&sp_csd=d2lkZ2V0TmFtZT1zcF9idGY&th=1&linkCode=ll2&tag=zencheztoi-21&linkId=1b9be134e5fc1e007cd3f8c7c4a56478&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="btn-amazon">Voir sur Amazon</a>
                 </div>
             </div>
-        </section>
 
+            <div class="product-highlight">
+                <img src="assets/logo.png" alt="Charbon de bambou" style="background:#eee;">
+                <div class="product-text">
+                    <h4>Sachets de charbon de bambou réutilisables</h4>
+                    <p>De véritables talismans naturels. À suspendre dans les placards, les penderies ou les chaussures. Ils neutralisent silencieusement l’humidité et les effluves, et se régénèrent comme par magie en les exposant quelques heures au soleil.</p>
+                    <a href="https://www.amazon.fr/absorbeurs-crochets-%C3%A9liminer-purifiants-dhumidit%C3%A9/dp/B0CQMS6QMS?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1Q242M4PG7QPT&dib=eyJ2IjoiMSJ9.vypIAjbL_7EH4fp3JC_Oq49_tNlar20UKt7bnnvzON6iYmGcHrDeYNLOlZ0GMQuG9fDXnhe5-MBrJUd91KKZ3aBP7l6UUSbSkDtbG6R3uSTRi8lzsjkE9yVGkT4uRD754qnZLjUvfHDJfRBQPQgG3CJOR2wrv1e2BXeIS5Y6bHZtVMTlJWmLQaRmbjd2QrG6Fue70-Bw5FXjJ41tF7Hf0HgZiFXc2Ul2-roGUe69NMFeejtqzh6raw-JCHa50sdnzEJGBAPdiHACG7B5cM_H2j4_dBwZO9eXEjsrKZuTy2c.2_1QNMNjTYkUinkczBj62Stq07Jhf5qRxbaco2sdszQ&dib_tag=se&keywords=charbon%2Bde%2Bbambou%2Banti%2Bhumidit%C3%A9%2Breutilisable%2Bpetite%2Bentreprise&qid=1776772830&sprefix=charbon%2Bde%2Bbambou%2Banti%2Bhumidit%C3%A9%2Breutilisable%2Bpetite%2Bentreprise%2Caps%2C222&sr=8-24&th=1&linkCode=ll2&tag=zencheztoi-21&linkId=f506ca29b0607c0508e8b11289a76ece&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="btn-amazon">Voir sur Amazon</a>
+                </div>
+            </div>
+
+            <div class="product-highlight">
+                <img src="assets/sputnik.jpg" alt="Station météo Sputnik">
+                <div class="product-text">
+                    <h4>Station météo analogique Sputnik</h4>
+                    <p>L'outil d'observation par excellence. Une superbe station mêlant le bois chaud et le métal froid, dotée d'un hygromètre de précision. Idéale pour surveiller le taux d'humidité ambiant et ne plus se fier uniquement à ses propres ressentis thermiques.</p>
+                    <a href="https://www.amazon.fr/TFA-Dostmann-20-2047-52-Sputnik-Station-m%C3%A9t%C3%A9o/dp/B000JG4NS0?content-id=amzn1.sym.2b04206e-43f5-4bd8-b39d-d4671ceea54e%3Aamzn1.sym.2b04206e-43f5-4bd8-b39d-d4671ceea54e&crid=RP8ERRFVYMW&cv_ct_cx=station%2Bm%C3%A9t%C3%A9o%2Banalogique%2Bbois&keywords=station%2Bm%C3%A9t%C3%A9o%2Banalogique%2Bbois&pd_rd_i=B000JG2RQA&pd_rd_r=e64c840d-2d6e-4d91-8172-13688376414f&pd_rd_w=fYHO2&pd_rd_wg=UrY62&pf_rd_p=2b04206e-43f5-4bd8-b39d-d4671ceea54e&pf_rd_r=X7376QMR43JVK6AT88S8&qid=1776773160&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=station%2Bm%C3%A9t%C3%A9o%2Banalogique%2Caps%2C275&sr=1-4-1c0bc4f8-9a4b-47e4-b117-3d30b74c13f1-spons&ufe=app_do%3Aamzn1.fos.49fccda8-a887-4188-817b-b9a64bb30e43&aref=Ju9YmIda6L&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1&linkCode=ll2&tag=zencheztoi-21&linkId=28c2af13aa88f60eafd302ec9dd29488&ref_=as_li_ss_tl" target="_blank" rel="nofollow sponsored" class="btn-amazon">Voir sur Amazon</a>
+                </div>
+            </div>
+
+            <h2>Prendre l’humidité au sérieux, sans panique</h2>
+            <p>Il ne faut pas laisser l’eau stagnante s’installer, car elle finit toujours par altérer la matière. Cependant, il est inutile de dramatiser chaque trace isolée. En alliant les gestes simples de la ventilation, la puissance des minéraux absorbants et une observation bienveillante, vous construirez un équilibre sain qui respectera à la fois l'intégrité de votre maison et votre propre énergie.</p>
+
+            <div class="ad-container">
+                <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-7501098246029504" data-ad-slot="YOUR_AD_SLOT"></ins>
+            </div>
+        </article>
     </main>
 
-    <section class="encyclopedie-section">
-        <h2 style="font-variant: small-caps; font-size: 2.2em; color: var(--brun-sombre); margin-bottom: 20px;">Emportez nos savoirs avec vous</h2>
-        <div class="pills-row">
-            <a href="encyclopedie.html#vol1" class="pill p1">Vol 1 : Fondation</a>
-            <a href="encyclopedie.html#vol2" class="pill p2">Vol 2 : Enracinement</a>
-            <a href="encyclopedie.html#vol3" class="pill p3">Vol 3 : Éclosion</a>
-            <a href="encyclopedie.html#vol4" class="pill p4">Vol 4 : Harmonie</a>
-            <a href="encyclopedie.html#vol5" class="pill p5">Vol 5 : Élévation</a>
-        </div>
-        <div style="margin-top: 40px; font-size: 1.2em; font-style: italic; color: var(--brun-sombre);">
-            Le Volume : <span style="color:var(--or-zen); font-weight:bold;">14.90€</span> — Pack Trio : <span style="color:var(--or-zen); font-weight:bold;">24.90€</span> — L'Intégrale : <span style="color:var(--or-zen); font-weight:bold;">39.90€</span>
-        </div>
-    </section>
+    <div id="disclaimer-bar">
+        🔗 Liens affiliés Amazon : En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.
+    </div>
 
     <footer>
-        <a href="index.html" class="footer-logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
+        <img src="assets/logo.png" class="footer-logo-small" alt="Zen">
         <ul class="footer-nav-compact">
             <li><a href="mentions-legales.html">Mentions légales</a></li>
             <li><a href="confidentialite.html">Confidentialité</a></li>
             <li><a href="cookies.html">Cookies</a></li>
             <li><a href="livre-or.html">Livre d'Or</a></li>
         </ul>
-        <p style="font-size: 0.85em; opacity: 0.4;">&copy; 2026 Zen Chez Toi • L'Harmonie au Naturel.</p>
+        <p style="font-size: 0.8em; opacity: 0.5;">&copy; 2026 Zen Chez Toi • Maison, Confort & Harmonie</p>
     </footer>
 
-    <div id="disclaimer-bar">🔗 Liens affiliés Amazon : Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises. Maison & Fondation : privilégiez toujours le test sur petite surface.</div>
-
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
 </body>
 </html>

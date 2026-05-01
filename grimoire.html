@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Le Grimoire des 50 Sagesses | Zen Chez Toi</title>
-
+    <title>Le Grimoire – Zen Chez Toi</title>
+    
     <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
     <meta name="p:domain_verify" content="549770272775"/>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRV5YNRL57"></script>
@@ -15,8 +15,8 @@
       gtag('config', 'G-JRV5YNRL57');
     </script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7501098246029504" crossorigin="anonymous"></script>
-    
-    <meta name="description" content="Découvrez le Grimoire des 50 Sagesses de Zen Chez Toi : l'intégralité de nos ingrédients alchimiques classés par univers.">
+
+    <meta name="description" content="Explorez le Grimoire de Zen Chez Toi. La table des matières sacrée de l'alchimie naturelle à travers nos 5 volumes.">
     <link rel="icon" type="image/png" href="assets/logo.png">
 
     <style>
@@ -27,82 +27,104 @@
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.8; overflow-x: hidden; }
 
-        /* --- HEADER --- */
+        /* --- HEADER & LOGO SHINE ++ --- */
         header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; }
         .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
         
-        /* AURA LOGO EXCLUSIVE */
-        .logo { display: inline-block; text-decoration: none; transition: 0.4s ease; }
-        .logo img { max-height: 90px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2)); transition: 0.5s ease; }
-        .logo:hover img { filter: drop-shadow(0 0 30px #ffffff) drop-shadow(0 0 15px #ffffff); transform: scale(1.05); }
+        .logo { display: inline-block; text-decoration: none; }
+        .logo img { 
+            max-height: 90px; 
+            filter: drop-shadow(0 0 5px rgba(255,255,255,0.4));
+            transition: all 0.5s ease; 
+        }
+        .logo:hover img { 
+            filter: drop-shadow(0 0 25px #ffffff) drop-shadow(0 0 10px #ffffff); 
+            transform: scale(1.03); 
+        }
 
         .header-right { display: flex; align-items: center; gap: 40px; }
         nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
         nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
-        nav a:hover { color: var(--or-zen); text-shadow: 0 0 15px var(--or-zen); }
+        nav a:hover { color: var(--or-zen); }
 
-        .pinterest-badge { display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; font-style: italic; background: rgba(255,255,255,0.1); transition: 0.4s; }
-        .pinterest-badge:hover { background: var(--or-zen); border-color: var(--or-zen); transform: rotate(15deg) scale(1.1); }
+        .dropdown { position: relative; display: inline-block; padding: 15px 0; cursor: pointer; }
+        .dropdown-content { 
+            display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); 
+            background-color: var(--brun-sombre); min-width: 200px; box-shadow: 0px 10px 25px rgba(0,0,0,0.3); 
+            z-index: 2100; border-radius: 8px; overflow: hidden; border: 1px solid var(--or-zen);
+        }
+        .dropdown-content a { 
+            color: rgba(255,255,255,0.8) !important; padding: 12px 20px; text-decoration: none; 
+            display: block; font-size: 0.95em; text-shadow: none; font-weight: bold; 
+            border-bottom: 1px solid rgba(255,255,255,0.1); text-align: center; font-variant: small-caps; 
+        }
+        .dropdown-content a:hover { background-color: var(--or-zen); color: #fff !important; }
+        .dropdown:hover .dropdown-content { display: block; }
+
+        .pinterest-badge { 
+            display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; 
+            border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; 
+            font-family: 'Georgia', serif; font-style: italic; font-size: 1.2rem; transition: all 0.4s ease; 
+            background: rgba(255,255,255,0.1); backdrop-filter: blur(2px); padding-bottom: 3px;
+        }
+        .pinterest-badge:hover { background: var(--or-zen); border-color: var(--or-zen); transform: rotate(15deg) scale(1.1); color: #fff; }
 
         /* --- HERO --- */
-        .hero { min-height: 55vh; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('assets/hero-accueil.jpg') center/cover no-repeat fixed; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; }
-        .hero h1 { font-size: clamp(3em, 8vw, 5.5em); font-weight: normal; margin-bottom: 20px; line-height: 1.1; font-variant: small-caps; text-shadow: 0 4px 15px rgba(0,0,0,0.6); }
-        .tagline { font-size: clamp(1.2em, 3vw, 1.8em); font-style: italic; opacity: 0.9; max-width: 900px; line-height: 1.4; }
+        .hero { 
+            height: 70vh; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('assets/hero-eso.jpg') center/cover no-repeat fixed; 
+            display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; 
+        }
+        .hero h1 { 
+            font-size: clamp(3em, 10vw, 6em); font-weight: normal; margin-bottom: 20px; line-height: 1.1; font-variant: small-caps;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.7); 
+        }
+        .tagline { font-size: clamp(1.2em, 3vw, 2em); font-style: italic; opacity: 0.9; text-shadow: 0 2px 10px rgba(0,0,0,0.6); }
 
-        /* --- RECHERCHE --- */
-        .search-section { margin-top: -50px; position: relative; z-index: 10; padding: 0 20px; }
-        .search-container { max-width: 700px; margin: 0 auto; position: relative; box-shadow: 0 15px 45px rgba(0,0,0,0.15); border-radius: 50px; overflow: hidden; }
-        .search-container input { width: 100%; padding: 25px 40px; border: none; font-size: 1.1em; outline: none; background: var(--blanc); font-family: 'Georgia', serif; }
-        .search-container button { position: absolute; right: 10px; top: 10px; bottom: 10px; padding: 0 30px; border-radius: 40px; border: none; background: var(--brun-sombre); color: white; cursor: pointer; font-variant: small-caps; font-weight: bold; transition: 0.3s; }
-        .search-container button:hover { background: var(--or-zen); }
-
-        /* --- CONTENU --- */
-        .container { max-width: 1100px; margin: 60px auto 40px; padding: 0 20px; }
-
-        .encadre-hero { margin: 80px 0; border-radius: 30px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.2); transition: 0.4s; }
-        .cadre-fond { padding: 80px 40px; text-align: center; background-size: cover; background-position: center; background-attachment: fixed; }
+        /* --- INTRODUCTION --- */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
         
-        .vol-num { font-size: 1.2em; font-variant: small-caps; letter-spacing: 5px; color: rgba(255,255,255,0.8); display: block; margin-bottom: 5px; }
-        .encadre-titre { font-size: clamp(2.5em, 5vw, 4em); font-variant: small-caps; color: #fff; margin-bottom: 10px; text-shadow: 0 4px 10px rgba(0,0,0,0.5); line-height: 1.1; }
-        .encadre-sous-titre { font-style: italic; font-size: 1.2em; color: rgba(255,255,255,0.9); margin-bottom: 50px; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
-        
-        .liste-selectionnable { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; max-width: 950px; margin: 0 auto; }
-        
-        .item-link { background: rgba(0,0,0,0.4); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.3); border-radius: 50px; padding: 18px 30px; display: flex; align-items: center; text-decoration: none; color: #fff; transition: 0.4s ease; font-size: 1.05em; text-align: left; }
-        .item-link:hover { transform: scale(1.03); border-color: #fff; background: rgba(255,255,255,0.1); }
-        
-        .item-text { display: flex; flex-direction: column; line-height: 1.4; }
-        .nom-alchimique { font-weight: bold; font-variant: small-caps; font-size: 1.1em; }
-        .nom-reel { font-size: 0.85em; font-weight: normal; opacity: 0.9; font-variant: small-caps; }
-        .arrow { margin-left: auto; opacity: 0.8; font-size: 1.2em; }
+        .intro-grimoire { 
+            background: var(--blanc); padding: clamp(40px, 8vw, 100px); border-radius: 30px; margin-top: -100px; 
+            position: relative; z-index: 10; box-shadow: 0 25px 60px rgba(0,0,0,0.08); border-top: 5px solid var(--or-zen); 
+            text-align: center;
+        }
+        .intro-grimoire h2 { font-size: 2.8em; color: var(--or-zen); margin-bottom: 30px; font-variant: small-caps; }
+        .intro-grimoire p { max-width: 900px; margin: 0 auto; font-size: 1.2rem; color: #444; line-height: 2; }
 
-        /* VARIANTES COULEURS BORDURES EXTÉRIEURES */
-        .journal-maison { border: 5px solid var(--maison); } .journal-maison .cadre-fond { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('assets/hero-maison.jpg'); } .journal-maison .item-link:hover { box-shadow: 0 0 20px var(--maison); }
-        .journal-jardin { border: 5px solid var(--jardin); } .journal-jardin .cadre-fond { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('assets/hero-jardin.jpg'); } .journal-jardin .item-link:hover { box-shadow: 0 0 20px var(--jardin); }
-        .journal-corps { border: 5px solid var(--corps); } .journal-corps .cadre-fond { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('assets/hero-corps.jpg'); } .journal-corps .item-link:hover { box-shadow: 0 0 20px var(--corps); }
-        .journal-bienetre { border: 5px solid var(--bienetre); } .journal-bienetre .cadre-fond { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('assets/hero-bienetre.jpg'); } .journal-bienetre .item-link:hover { box-shadow: 0 0 20px var(--bienetre); }
-        .journal-eso { border: 5px solid var(--eso); } .journal-eso .cadre-fond { background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('assets/hero-eso.jpg'); } .journal-eso .item-link:hover { box-shadow: 0 0 20px var(--eso); }
+        /* --- LES VOLUMES (ENCADRÉS HUB) --- */
+        .vol-section { margin: 80px 0; border-radius: 30px; overflow: hidden; border: 4px solid transparent; transition: 0.5s ease; box-shadow: 0 20px 50px rgba(0,0,0,0.1); }
+        .vol-card { padding: 80px 40px; text-align: center; background-size: cover; background-position: center; position: relative; display: block; text-decoration: none; color: #fff; }
+        
+        /* Filtre sombre sur les fonds pour lisibilité */
+        .vol-card::before { content: ''; position: absolute; inset: 0; background: rgba(0,0,0,0.4); transition: 0.5s; }
+        .vol-section:hover .vol-card::before { background: rgba(0,0,0,0.2); }
+        
+        .vol-content { position: relative; z-index: 5; }
+        .vol-number { font-size: 1.5em; font-variant: small-caps; letter-spacing: 4px; margin-bottom: 10px; display: block; opacity: 0.9; }
+        .vol-title { font-size: 3.5em; font-variant: small-caps; margin-bottom: 20px; text-shadow: 0 4px 15px rgba(0,0,0,0.6); }
+        .vol-desc { font-style: italic; font-size: 1.3em; max-width: 800px; margin: 0 auto; text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
 
-        /* --- ENCART DISCRET AFFILIATION --- */
-        .encadre-discret { border: 2px solid var(--eso); border-radius: 20px; overflow: hidden; margin: 40px auto 80px; max-width: 800px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
-        .encadre-discret .cadre-fond { padding: 40px 20px; background-attachment: scroll; }
-        .btn-citrine { display: inline-block; padding: 12px 30px; border: 1px solid var(--eso); border-radius: 50px; color: #fff; font-variant: small-caps; text-decoration: none; font-weight: bold; transition: 0.3s; margin-top: 10px; background: rgba(0,0,0,0.5); backdrop-filter: blur(5px); }
-        .btn-citrine:hover { background: var(--eso); box-shadow: 0 0 15px var(--eso); }
+        /* Couleurs et Hover par Volume */
+        .v1 { border-color: var(--maison); } .v1 .vol-card { background-image: url('assets/hero-maison.jpg'); } .v1:hover { box-shadow: 0 0 30px var(--maison); transform: scale(1.01); }
+        .v2 { border-color: var(--jardin); } .v2 .vol-card { background-image: url('assets/hero-jardin.jpg'); } .v2:hover { box-shadow: 0 0 30px var(--jardin); transform: scale(1.01); }
+        .v3 { border-color: var(--corps); } .v3 .vol-card { background-image: url('assets/hero-corps.jpg'); } .v3:hover { box-shadow: 0 0 30px var(--corps); transform: scale(1.01); }
+        .v4 { border-color: var(--bienetre); } .v4 .vol-card { background-image: url('assets/hero-bienetre.jpg'); } .v4:hover { box-shadow: 0 0 30px var(--bienetre); transform: scale(1.01); }
+        .v5 { border-color: var(--eso); } .v5 .vol-card { background-image: url('assets/hero-maison.jpg'); } .v5:hover { box-shadow: 0 0 30px var(--eso); transform: scale(1.01); }
 
-        /* --- ENCYCLOPÉDIE --- */
-        .encyclopedie-section { background-color: var(--blanc); padding: 80px 20px; text-align: center; border-top: 1px solid #eee; }
+        /* --- ENCYCLOPÉDIE SECTION --- */
+        .encyclopedie-section { background-color: var(--blanc); padding: 100px 20px; text-align: center; border-top: 1px solid #eee; }
         .pills-row { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 30px; }
         .pill { padding: 10px 20px; border: 2px solid; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 0.9em; text-decoration: none; background: #fff; transition: 0.3s; }
-        .p1 { border-color: var(--maison); color: var(--maison); } .p1:hover { background: var(--maison); color: #fff; box-shadow: 0 0 15px var(--maison); }
-        .p2 { border-color: var(--jardin); color: var(--jardin); } .p2:hover { background: var(--jardin); color: #fff; box-shadow: 0 0 15px var(--jardin); }
-        .p3 { border-color: var(--corps); color: var(--corps); } .p3:hover { background: var(--corps); color: #fff; box-shadow: 0 0 15px var(--corps); }
-        .p4 { border-color: var(--bienetre); color: var(--bienetre); } .p4:hover { background: var(--bienetre); color: #fff; box-shadow: 0 0 15px var(--bienetre); }
-        .p5 { border-color: var(--eso); color: var(--eso); } .p5:hover { background: var(--eso); color: #fff; box-shadow: 0 0 15px var(--eso); }
+        .p1 { border-color: var(--maison); color: var(--maison); } .p1:hover { background: var(--maison); color: #fff; }
+        .p2 { border-color: var(--jardin); color: var(--jardin); } .p2:hover { background: var(--jardin); color: #fff; }
+        .p3 { border-color: var(--corps); color: var(--corps); } .p3:hover { background: var(--corps); color: #fff; }
+        .p4 { border-color: var(--bienetre); color: var(--bienetre); } .p4:hover { background: var(--bienetre); color: #fff; }
+        .p5 { border-color: var(--eso); color: var(--eso); } .p5:hover { background: var(--eso); color: #fff; }
 
         /* --- FOOTER --- */
         footer { background: var(--brun-sombre); color: #fff; padding: 80px 20px; text-align: center; }
-        .footer-logo img { height: 60px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.4)); transition: 0.5s; margin-bottom: 30px; }
-        .footer-logo:hover img { filter: drop-shadow(0 0 30px #ffffff); transform: scale(1.05); }
+        .footer-logo img { height: 60px; filter: invert(1) grayscale(1) brightness(1.5) opacity(0.6); transition: 0.5s; margin-bottom: 30px; }
+        .footer-logo:hover img { filter: invert(1) grayscale(1) brightness(2.5) opacity(1) drop-shadow(0 0 15px #fff); }
         .footer-nav-compact { display: flex; gap: 30px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; flex-wrap: wrap; }
         .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.6; font-variant: small-caps; transition: 0.3s; }
         .footer-nav-compact a:hover { opacity: 1; color: var(--or-zen); }
@@ -110,10 +132,11 @@
         #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
 
         @media (max-width: 768px) {
-            .nav-container { flex-direction: column; gap: 15px; }
-            .hero { padding-top: 250px !important; justify-content: flex-start !important; height: auto !important; padding-bottom: 60px; }
-            .search-section { margin-top: -30px; }
-            .liste-selectionnable { grid-template-columns: 1fr; }
+            .nav-container { flex-direction: column; gap: 20px; }
+            .vol-title { font-size: 2.2em; }
+            .vol-desc { font-size: 1.1em; }
+            .vol-card { padding: 60px 20px; }
+            .intro-grimoire { margin-top: -60px; padding: 40px 20px; }
         }
     </style>
 </head>
@@ -126,460 +149,99 @@
                 <nav>
                     <ul>
                         <li><a href="index.html">Accueil</a></li>
+                        <li class="dropdown">
+                            <a href="grimoire.html" style="color: var(--or-zen);">Grimoire</a>
+                            <div class="dropdown-content">
+                                <a href="maison.html">Vol 1 : Fondation</a>
+                                <a href="jardin.html">Vol 2 : Enracinement</a>
+                                <a href="corps.html">Vol 3 : Éclosion</a>
+                                <a href="bienetre.html">Vol 4 : Harmonie</a>
+                                <a href="eso.html">Vol 5 : Élévation</a>
+                            </div>
+                        </li>
                         <li><a href="blog.html">Journal</a></li>
                         <li><a href="encyclopedie.html">Encyclopédie</a></li>
-                        <li><a href="a-propos.html">À Propos</a></li>
                     </ul>
                 </nav>
-                <a href="https://www.pinterest.fr/zencheztoi/" class="pinterest-badge" target="_blank">p</a>
+                <a href="https://www.pinterest.com/VOTRE_PROFIL" class="pinterest-badge" target="_blank">p</a>
             </div>
         </div>
     </header>
 
     <section class="hero">
-        <h1>Le Grimoire des 50 Sagesses</h1>
-        <p class="tagline">« L'intégralité de nos ingrédients alchimiques, classés dans leur ordre sacré. »</p>
-    </section>
-
-    <!-- BARRE DE RECHERCHE INTEGRÉE -->
-    <section class="search-section">
-        <div class="search-container">
-            <form action="recherche.html" method="GET">
-                <input type="text" name="q" placeholder="Interroger l'Oracle : Bicarbonate, Sauge, Argile..." required>
-                <button type="submit">Chercher</button>
-            </form>
-        </div>
+        <h1>Le Grand Grimoire</h1>
+        <p class="tagline">« Le chemin vers l'autonomie et l'harmonie intérieure. »</p>
     </section>
 
     <main class="container">
+        
+        <section class="intro-grimoire">
+            <h2>L'Architecture du Savoir</h2>
+            <p>
+                Bienvenue dans le cœur battant de Zen Chez Toi. Ce grimoire est le fruit d'années de recherche et de reconnexion avec les éléments simples et puissants de la nature. Il est structuré comme un Pentacle Sacré : cinq piliers indispensables pour transformer votre vie, de la matière la plus brute de votre foyer jusqu'aux énergies les plus subtiles de votre esprit. Explorez chaque volume pour bâtir votre propre sanctuaire à travers ce <strong>grimoire</strong>.
+            </p>
+        </section>
 
-        <!-- VOL 1 : MAISON (1 - 10) -->
-        <section class="encadre-hero journal-maison" id="vol1">
-            <div class="cadre-fond">
-                <span class="vol-num">VOLUME 1</span>
-                <h3 class="encadre-titre">LES FONDATIONS</h3>
-                <p class="encadre-sous-titre">L'alchimie de l'âtre et la purification domestique.</p>
-                <div class="liste-selectionnable">
-                    <a href="bicarbonate.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">1. L'Oxygène Solide</span>
-                            <span class="nom-reel">(Bicarbonate)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="vinaigre-blanc.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">2. L'Esprit de Clarté</span>
-                            <span class="nom-reel">(Vinaigre Blanc)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="savon-noir.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">3. L'Onguent d'Ébène</span>
-                            <span class="nom-reel">(Savon Noir)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="percarbonate.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">4. L'Éclat de la Neige</span>
-                            <span class="nom-reel">(Percarbonate)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="cristaux-soude.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">5. La Force Brute</span>
-                            <span class="nom-reel">(Cristaux)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="acide-citrique.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">6. Le Dissolvant Universel</span>
-                            <span class="nom-reel">(Acide Citrique)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="terre-sommieres.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">7. L'Aimant Minéral</span>
-                            <span class="nom-reel">(Terre Sommières)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="blanc-meudon.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">8. L'Éclat du Roi</span>
-                            <span class="nom-reel">(Blanc de Meudon)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="cendre-bois.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">9. Le Sel de Terre et de Feu</span>
-                            <span class="nom-reel">(Cendres)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="savon-marseille.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">10. Le Cube Purificateur</span>
-                            <span class="nom-reel">(Marseille)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
+        <div class="vol-section v1">
+            <a href="maison.html" class="vol-card">
+                <div class="vol-content">
+                    <span class="vol-number">Volume 1</span>
+                    <h3 class="vol-title">Fondation</h3>
+                    <p class="vol-desc">« Purifiez votre air, domptez la matière et bâtissez un foyer sain libéré des ombres chimiques. »</p>
                 </div>
-            </div>
-        </section>
+            </a>
+        </div>
 
-        <!-- VOL 2 : JARDIN (11 - 20) -->
-        <section class="encadre-hero journal-jardin" id="vol2">
-            <div class="cadre-fond">
-                <span class="vol-num">VOLUME 2</span>
-                <h3 class="encadre-titre">L'ENRACINEMENT</h3>
-                <p class="encadre-sous-titre">L'alchimie de la terre nourricière et du vivant.</p>
-                <div class="liste-selectionnable">
-                    <a href="huile-neem.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">11. La Sentinelle Amère</span>
-                            <span class="nom-reel">(Huile de Neem)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="huile-lin.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">12. La Sève de Protection</span>
-                            <span class="nom-reel">(Huile de Lin)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="terebenthine.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">13. Le Solvant de la Forêt</span>
-                            <span class="nom-reel">(Térébenthine)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="terre-diatomee.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">14. Le Bouclier Minéral</span>
-                            <span class="nom-reel">(Diatomée)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="pierre-argile.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">15. Le Polisseur Universel</span>
-                            <span class="nom-reel">(Pierre d'Argile)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="argile-verte.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">16. La Terre de Régénération</span>
-                            <span class="nom-reel">(Argile Verte)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="ortie.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">17. La Reine Sauvage</span>
-                            <span class="nom-reel">(Poudre d'Ortie)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="cire-abeille.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">18. L'Onguent Solaire</span>
-                            <span class="nom-reel">(Cire d'Abeille)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="charbon-actif.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">19. L'Éponge de l'Ombre</span>
-                            <span class="nom-reel">(Charbon Actif)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="ail.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">20. La Sentinelle des Sols</span>
-                            <span class="nom-reel">(Ail)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
+        <div class="vol-section v2">
+            <a href="jardin.html" class="vol-card">
+                <div class="vol-content">
+                    <span class="vol-number">Volume 2</span>
+                    <h3 class="vol-title">Enracinement</h3>
+                    <p class="vol-desc">« Renouez avec la terre, protégez le vivant et cultivez un jardin sauvage, nourricier et pur. »</p>
                 </div>
-            </div>
-        </section>
+            </a>
+        </div>
 
-        <!-- VOL 3 : CORPS (21 - 30) -->
-        <section class="encadre-hero journal-corps" id="vol3">
-            <div class="cadre-fond">
-                <span class="vol-num">VOLUME 3</span>
-                <h3 class="encadre-titre">L'ÉCLOSION</h3>
-                <p class="encadre-sous-titre">L'alchimie du temple physique et des sens.</p>
-                <div class="liste-selectionnable">
-                    <a href="aloe-vera.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">21. L'Élixir de Régénération</span>
-                            <span class="nom-reel">(Aloe)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="beurre-karite.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">22. L'Or des Femmes</span>
-                            <span class="nom-reel">(Karité)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="huile-coco.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">23. L'Élixir des Îles</span>
-                            <span class="nom-reel">(Coco)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="amande-douce.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">24. Le Murmure de Tendresse</span>
-                            <span class="nom-reel">(Amande)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="huile-jojoba.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">25. L'Élixir d'Équilibre</span>
-                            <span class="nom-reel">(Jojoba)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="huile-ricin.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">26. L'Élixir de Densité</span>
-                            <span class="nom-reel">(Ricin)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="pierre-alun.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">27. Le Cristal Régulateur</span>
-                            <span class="nom-reel">(Alun)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="argile-blanche.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">28. Le Sédiment de Douceur</span>
-                            <span class="nom-reel">(Argile Blanche)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="glycerine.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">29. L'Agent Liant</span>
-                            <span class="nom-reel">(Glycérine)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="savon-castille.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">30. La Base Originelle</span>
-                            <span class="nom-reel">(Castille)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
+        <div class="vol-section v3">
+            <a href="corps.html" class="vol-card">
+                <div class="vol-content">
+                    <span class="vol-number">Volume 3</span>
+                    <h3 class="vol-title">Éclosion</h3>
+                    <p class="vol-desc">« Honorez votre temple physique avec les onguents les plus précieux issus de l'alchimie naturelle. »</p>
                 </div>
-            </div>
-        </section>
+            </a>
+        </div>
 
-        <!-- VOL 4 : BIEN-ÊTRE (31 - 40) -->
-        <section class="encadre-hero journal-bienetre" id="vol4">
-            <div class="cadre-fond">
-                <span class="vol-num">VOLUME 4</span>
-                <h3 class="encadre-titre">L'HARMONIE</h3>
-                <p class="encadre-sous-titre">L'alchimie de la sève intérieure et des fluides.</p>
-                <div class="liste-selectionnable">
-                    <a href="tea-tree.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">31. Le Bouclier Vert</span>
-                            <span class="nom-reel">(Tea-Tree)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="lavande-vraie.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">32. La Panacée Violette</span>
-                            <span class="nom-reel">(Lavande)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="menthe-poivree.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">33. Le Givre Alchimique</span>
-                            <span class="nom-reel">(Menthe)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="eucalyptus.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">34. L'Arbre de la Fièvre</span>
-                            <span class="nom-reel">(Eucalyptus)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="ravintsara.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">35. La Feuille Bonne à Tout</span>
-                            <span class="nom-reel">(Ravintsara)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="gaultherie.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">36. Le Baume de Feu</span>
-                            <span class="nom-reel">(Gaulthérie)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="helichryse.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">37. Le Sang Résorbé</span>
-                            <span class="nom-reel">(Hélichryse)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="essence-citron.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">38. La Quintessence Solaire</span>
-                            <span class="nom-reel">(Citron)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="ylang-ylang.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">39. La Fleur des Fleurs</span>
-                            <span class="nom-reel">(Ylang)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="miel.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">40. Le Baume des Dieux</span>
-                            <span class="nom-reel">(Miel)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
+        <div class="vol-section v4">
+            <a href="bienetre.html" class="vol-card">
+                <div class="vol-content">
+                    <span class="vol-number">Volume 4</span>
+                    <h3 class="vol-title">Harmonie</h3>
+                    <p class="vol-desc">« Maîtrisez le souffle des essences et équilibrez votre sève intérieure pour une paix profonde. »</p>
                 </div>
-            </div>
-        </section>
+            </a>
+        </div>
 
-        <!-- VOL 5 : ÉSOTÉRISME (41 - 50) -->
-        <section class="encadre-hero journal-eso" id="vol5">
-            <div class="cadre-fond">
-                <span class="vol-num">VOLUME 5</span>
-                <h3 class="encadre-titre">L'ÉLÉVATION</h3>
-                <p class="encadre-sous-titre">L'alchimie du subtil et de la purification invisible.</p>
-                <div class="liste-selectionnable">
-                    <a href="sauge.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">41. La Grande Purificatrice</span>
-                            <span class="nom-reel">(Sauge)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="palo-santo.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">42. L'Aimant de Lumière</span>
-                            <span class="nom-reel">(Palo Santo)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="oliban.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">43. La Résine des Rois</span>
-                            <span class="nom-reel">(Oliban)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="myrrhe.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">44. La Larme de la Terre</span>
-                            <span class="nom-reel">(Myrrhe)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="benjoin.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">45. Le Fixateur Sacré</span>
-                            <span class="nom-reel">(Benjoin)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="sang-dragon.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">46. Le Sceau de Puissance</span>
-                            <span class="nom-reel">(Sang de Dragon)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="sel-himalaya.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">47. Les Cristaux de Lumière</span>
-                            <span class="nom-reel">(Sel de l'Himalaya)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="rose.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">48. La Rosée Sublimée</span>
-                            <span class="nom-reel">(Boutons de Rose)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="binchotan.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">49. L'Éponge de Lumière</span>
-                            <span class="nom-reel">(Charbon Binchotan)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
-                    <a href="cristal-roche.html" class="item-link">
-                        <div class="item-text">
-                            <span class="nom-alchimique">50. Le Maître Guérisseur</span>
-                            <span class="nom-reel">(Cristal de Roche)</span>
-                        </div>
-                        <span class="arrow">→</span>
-                    </a>
+        <div class="vol-section v5">
+            <a href="eso.html" class="vol-card">
+                <div class="vol-content">
+                    <span class="vol-number">Volume 5</span>
+                    <h3 class="vol-title">Élévation</h3>
+                    <p class="vol-desc">« Franchissez le voile de l'invisible, protégez votre aura et réenchantez la magie de votre quotidien. »</p>
                 </div>
-            </div>
-        </section>
-
-        <!-- ENCART DISCRET AFFILIATION CITRINE -->
-        <section class="encadre-discret">
-            <div class="cadre-fond" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1532692128919-61f22e8ec5d9?auto=format&fit=crop&w=1000&q=80');">
-                <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 2em; color: #fff; font-variant: small-caps; margin-bottom: 10px;">L'Atelier des Cristaux</h3>
-                <p style="color: rgba(255,255,255,0.9); font-style: italic; font-size: 1.1rem; max-width: 600px; margin: 0 auto 20px;">Pour enrichir votre pratique énergétique, découvrez des pierres et artefacts sourcés avec soin chez notre partenaire Citrine.</p>
-                <a href="https://citrine.fr/?ref=byfrxpja" target="_blank" rel="nofollow sponsored" class="btn-citrine">
-                    Visiter la boutique Citrine →
-                </a>
-            </div>
-        </section>
+            </a>
+        </div>
 
     </main>
 
-    <!-- ENCYCLOPÉDIE -->
     <section class="encyclopedie-section">
-        <h2 style="font-variant: small-caps; font-size: 2.2em; color: var(--brun-sombre); margin-bottom: 20px;">Emporte nos savoirs avec toi</h2>
+        <h2 style="font-variant: small-caps; font-size: 2.2em; color: var(--brun-sombre); margin-bottom:10px;">L'Encyclopédie des Solutions Nomades</h2>
         <div class="pills-row">
-            <a href="encyclopedie.html#vol1" class="pill p1">Vol 1 : Fondation</a>
-            <a href="encyclopedie.html#vol2" class="pill p2">Vol 2 : Enracinement</a>
-            <a href="encyclopedie.html#vol3" class="pill p3">Vol 3 : Éclosion</a>
-            <a href="encyclopedie.html#vol4" class="pill p4">Vol 4 : Harmonie</a>
-            <a href="encyclopedie.html#vol5" class="pill p5">Vol 5 : Élévation</a>
+            <a href="maison.html" class="pill p1">Vol 1 : Fondation</a>
+            <a href="jardin.html" class="pill p2">Vol 2 : Enracinement</a>
+            <a href="corps.html" class="pill p3">Vol 3 : Éclosion</a>
+            <a href="bienetre.html" class="pill p4">Vol 4 : Harmonie</a>
+            <a href="eso.html" class="pill p5">Vol 5 : Élévation</a>
         </div>
         <div style="margin-top: 40px; font-size: 1.2em; font-style: italic; color: var(--brun-sombre);">
             Le Volume : <span style="color:var(--or-zen); font-weight:bold;">14.90€</span> — Pack Trio : <span style="color:var(--or-zen); font-weight:bold;">24.90€</span> — L'Intégrale : <span style="color:var(--or-zen); font-weight:bold;">39.90€</span>
@@ -597,7 +259,7 @@
         <p style="font-size: 0.85em; opacity: 0.4;">&copy; 2026 Zen Chez Toi • L'Harmonie au Naturel.</p>
     </footer>
 
-    <div id="disclaimer-bar">🔗 Liens affiliés : Partenaire Amazon et Citrine.fr, je réalise un bénéfice sur les achats remplissant les conditions requises.</div>
+    <div id="disclaimer-bar">🔗 Liens affiliés Amazon : Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.</div>
 
 </body>
 </html>

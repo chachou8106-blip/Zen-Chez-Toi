@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sagesse n°9 : L'Acérola – L'Encyclopédie des Solutions Nomades</title>
+    <title>Sagesse n°9 : L'Acérola – Zen Chez Toi</title>
     
     <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
     <meta name="p:domain_verify" content="549770272775"/>
@@ -16,7 +16,7 @@
     </script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7501098246029504" crossorigin="anonymous"></script>
 
-    <meta name="description" content="Découvrez les pouvoirs de l'Acérola, le rubis de vitalité des terres amazoniennes pour renforcer votre immunité et votre énergie naturelle.">
+    <meta name="description" content="Découvrez les pouvoirs de l'Acérola, le rubis de vitalité pour renforcer votre immunité et votre énergie naturelle.">
     <link rel="icon" type="image/png" href="assets/logo.png">
 
     <style>
@@ -27,73 +27,132 @@
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.8; overflow-x: hidden; }
 
-        header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 1000; }
+        /* --- HEADER & NAVIGATION --- */
+        header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; }
         .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
-        .logo img { max-height: 90px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); }
-        .pinterest-badge { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; font-family: 'Georgia', serif; font-style: italic; font-size: 1.1rem; transition: 0.4s ease; background: rgba(255,255,255,0.1); backdrop-filter: blur(2px); }
-        .pinterest-badge:hover { background: var(--or-zen); border-color: var(--or-zen); transform: rotate(15deg) scale(1.1); }
-        nav ul { list-style: none; display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
+        
+        .logo { display: inline-block; text-decoration: none; }
+        .logo img { 
+            max-height: 90px; 
+            filter: drop-shadow(0 0 5px rgba(255,255,255,0.4));
+            transition: all 0.5s ease; 
+        }
+        .logo:hover img { 
+            filter: drop-shadow(0 0 25px #ffffff) drop-shadow(0 0 10px #ffffff); 
+            transform: scale(1.03); 
+        }
+
+        .header-right { display: flex; align-items: center; gap: 40px; }
+        nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
         nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
-        nav a:hover { color: var(--or-zen); }
+        nav a:hover { color: var(--bienetre); }
 
+        .dropdown { position: relative; display: inline-block; padding: 15px 0; cursor: pointer; }
+        .dropdown-content { 
+            display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); 
+            background-color: var(--brun-sombre); min-width: 200px; box-shadow: 0px 10px 25px rgba(0,0,0,0.3); 
+            z-index: 2100; border-radius: 8px; overflow: hidden; border: 1px solid var(--bienetre);
+        }
+        .dropdown-content a { 
+            color: rgba(255,255,255,0.8) !important; padding: 12px 20px; text-decoration: none; 
+            display: block; font-size: 0.95em; text-shadow: none; font-weight: bold; 
+            border-bottom: 1px solid rgba(255,255,255,0.1); text-align: center; font-variant: small-caps; 
+        }
+        .dropdown-content a:hover { background-color: var(--bienetre); color: #fff !important; }
+        .dropdown:hover .dropdown-content { display: block; }
+
+        .pinterest-badge { 
+            display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; 
+            border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; 
+            font-family: 'Georgia', serif; font-style: italic; font-size: 1.2rem; transition: all 0.4s ease; 
+            background: rgba(255,255,255,0.1); backdrop-filter: blur(2px); padding-bottom: 3px;
+        }
+        .pinterest-badge:hover { background: var(--bienetre); border-color: var(--bienetre); transform: rotate(15deg) scale(1.1); color: #fff; }
+
+        /* --- SCROLL NAV --- */
         .scroll-nav { position: fixed; top: 50%; width: 100%; display: flex; justify-content: space-between; transform: translateY(-50%); pointer-events: none; z-index: 1500; padding: 0 30px; }
-        .arrow-nav { pointer-events: auto; background: var(--blanc); width: 55px; height: 55px; display: flex; align-items: center; justify-content: center; border-radius: 50%; text-decoration: none; color: var(--or-zen); font-size: 1.5em; box-shadow: 0 5px 15px rgba(0,0,0,0.15); opacity: 0.6; transition: 0.3s; }
-        .arrow-nav:hover { opacity: 1; transform: scale(1.1); background: var(--or-zen); color: #fff; }
+        .arrow-nav { pointer-events: auto; background: var(--blanc); width: 55px; height: 55px; display: flex; align-items: center; justify-content: center; border-radius: 50%; text-decoration: none; color: var(--bienetre); font-size: 1.5em; box-shadow: 0 5px 15px rgba(0,0,0,0.1); opacity: 0.6; transition: 0.3s; border: 1px solid rgba(212, 162, 89, 0.2); }
+        .arrow-nav:hover { opacity: 1; transform: scale(1.1); background: var(--bienetre); color: #fff; }
 
-        .hero { height: 100vh; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/hero-bienetre.jpg') center/cover no-repeat; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; }
-        .maitre-phrase { font-size: 1.4em; font-variant: small-caps; letter-spacing: 5px; font-weight: bold; margin-bottom: 20px; text-shadow: -1px -1px 0 var(--bienetre), 1px -1px 0 var(--bienetre), -1px 1px 0 var(--bienetre), 1px 1px 0 var(--bienetre), 0 2px 4px rgba(0,0,0,0.5); }
-        .sagesse-num { font-size: 1.2em; text-transform: uppercase; letter-spacing: 4px; margin-bottom: 30px; font-weight: bold; text-shadow: -1px -1px 0 var(--bienetre), 1px -1px 0 var(--bienetre), -1px 1px 0 var(--bienetre), 1px 1px 0 var(--bienetre); }
-        .hero h1 { font-size: 5.5em; font-weight: normal; margin-bottom: 30px; line-height: 1.1; text-shadow: -2px -2px 0 var(--bienetre), 2px -2px 0 var(--bienetre), -2px 2px 0 var(--bienetre), 2px 2px 0 var(--bienetre), 0 5px 15px rgba(0,0,0,0.5); }
-        .tagline { font-size: 1.8em; font-style: italic; max-width: 900px; line-height: 1.4; text-shadow: -1px -1px 0 var(--bienetre), 1px -1px 0 var(--bienetre), -1px 1px 0 var(--bienetre), 1px 1px 0 var(--bienetre), 0 2px 10px rgba(0,0,0,0.5); }
+        /* --- HERO --- */
+        .hero { 
+            height: 100vh; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('assets/hero-bienetre.jpg') center/cover no-repeat fixed; 
+            display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; 
+        }
+        .maitre-phrase { font-size: 1.4em; font-variant: small-caps; letter-spacing: 5px; font-weight: bold; margin-bottom: 15px; color: var(--bienetre); text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
+        .sagesse-num { font-size: 1.1em; text-transform: uppercase; letter-spacing: 4px; margin-bottom: 25px; opacity: 0.9; }
+        .hero h1 { 
+            font-size: clamp(2.5em, 8vw, 5.5em); font-weight: normal; margin-bottom: 30px; line-height: 1.1; font-variant: small-caps;
+            text-shadow: 0 4px 15px rgba(0,0,0,0.6); 
+        }
+        .tagline { font-size: clamp(1.2em, 3vw, 1.8em); font-style: italic; max-width: 900px; line-height: 1.4; text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
 
+        /* --- CONTENU --- */
         .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
-        .histoire-section { background: var(--blanc); padding: 80px; border-radius: 30px; margin-top: -120px; position: relative; z-index: 10; box-shadow: 0 25px 60px rgba(0,0,0,0.08); }
-        .histoire-section h2 { font-size: 2.8em; color: var(--or-zen); margin-bottom: 40px; text-align: center; font-weight: normal; }
-        .histoire-text { column-count: 2; column-gap: 60px; text-align: justify; font-size: 1.15rem; color: #444; line-height: 2; }
+        .histoire-section { 
+            background: var(--blanc); padding: clamp(30px, 7vw, 80px); border-radius: 30px; margin-top: -120px; 
+            position: relative; z-index: 10; box-shadow: 0 25px 60px rgba(0,0,0,0.08); border-top: 4px solid var(--bienetre); 
+        }
+        .histoire-section h2 { font-size: 2.5em; color: var(--bienetre); margin-bottom: 40px; text-align: center; font-variant: small-caps; }
+        .histoire-text { column-count: 2; column-gap: 60px; text-align: justify; font-size: 1.1rem; color: #444; }
 
-        .mondes-container { margin: 60px 0; padding: 40px; background: var(--bg-sable); border-radius: 20px; border: 1px solid #ddd; }
-        .mondes-container h3 { font-size: 1.8em; color: var(--or-zen); margin-bottom: 25px; text-align: center; font-variant: small-caps; }
-        .mondes-list { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-        .mondes-list li { padding-left: 20px; position: relative; }
+        /* Mondes Container */
+        .mondes-container { margin: 60px 0; padding: 40px; background: var(--bg-sable); border-radius: 20px; border: 1px solid rgba(212, 162, 89, 0.2); }
+        .mondes-container h3 { font-size: 1.8em; color: var(--bienetre); margin-bottom: 25px; text-align: center; font-variant: small-caps; }
+        .mondes-list { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
+        .mondes-list li { padding-left: 25px; position: relative; font-size: 0.95em; }
         .mondes-list li::before { content: "◈"; position: absolute; left: 0; color: var(--bienetre); }
-        .mondes-list strong { color: var(--brun-sombre); font-variant: small-caps; }
+        .mondes-list strong { color: var(--brun-sombre); font-variant: small-caps; display: block; margin-bottom: 5px; }
 
+        /* Alliances Box */
         .allies-box { background: var(--bg-sable); padding: 50px; border-radius: 20px; margin: 80px 0; border-left: 8px solid var(--bienetre); }
-        .allies-box h3 { font-size: 2em; color: var(--brun-sombre); margin-bottom: 30px; font-weight: normal; }
+        .allies-box h3 { font-size: 2em; color: var(--brun-sombre); margin-bottom: 30px; font-variant: small-caps; }
         .allies-list { list-style: none; }
-        .allies-list li { background: var(--blanc); margin-bottom: 15px; padding: 20px 30px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4px 10px rgba(0,0,0,0.03); transition: 0.3s; }
-        .allies-list a { font-weight: bold; color: var(--brun-sombre); text-decoration: none; border-bottom: 2px solid var(--bienetre); font-size: 1.1em; }
-        .vol-tag { font-size: 0.8em; font-weight: bold; color: var(--bienetre); text-transform: uppercase; letter-spacing: 1px; border: 1px solid var(--bienetre); padding: 5px 15px; border-radius: 50px; }
+        .allies-list li { background: var(--blanc); margin-bottom: 15px; padding: 20px 30px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4px 10px rgba(0,0,0,0.03); }
+        .allies-list a { font-weight: bold; color: var(--brun-sombre); text-decoration: none; border-bottom: 2px solid var(--bienetre); transition: 0.3s; }
+        .allies-list a:hover { color: var(--bienetre); }
+        .vol-tag { font-size: 0.75em; font-weight: bold; color: var(--bienetre); border: 1px solid var(--bienetre); padding: 5px 15px; border-radius: 50px; font-variant: small-caps; }
 
-        .expert-container { background: #fff; border: 1px solid #eee; padding: 50px; border-radius: 30px; margin: 60px 0; box-shadow: 0 15px 40px rgba(0,0,0,0.02); }
-        .maitre-mot h3 { font-size: 1.6em; color: var(--or-zen); margin-bottom: 20px; font-variant: small-caps; letter-spacing: 2px; }
-        .maitre-mot p { font-style: italic; font-size: 1.1em; color: #666; line-height: 1.7; border-left: 3px solid var(--bienetre); padding-left: 20px; }
-        .expertise-list { list-style: none; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 30px; margin-top: 30px; border-top: 1px solid #eee; padding-top: 30px; }
-        .expertise-item h4 { font-size: 1.1em; color: var(--brun-sombre); margin-bottom: 10px; }
-        .expertise-item p { font-size: 0.95em; color: #777; line-height: 1.6; }
+        /* Expert Container */
+        .expert-container { background: #fff; border: 1px solid #eee; padding: clamp(30px, 5vw, 60px); border-radius: 30px; margin: 60px 0; box-shadow: 0 15px 40px rgba(0,0,0,0.02); }
+        .maitre-mot h3 { font-size: 1.6em; color: var(--bienetre); margin-bottom: 20px; font-variant: small-caps; }
+        .maitre-mot p { font-style: italic; font-size: 1.1em; color: #666; border-left: 3px solid var(--bienetre); padding-left: 20px; }
+        .expertise-list { list-style: none; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 30px; margin-top: 40px; border-top: 1px solid #eee; padding-top: 40px; }
+        .expertise-item h4 { font-size: 1.1em; color: var(--brun-sombre); margin-bottom: 10px; font-variant: small-caps; }
+        .expertise-item p { font-size: 0.9em; color: #777; line-height: 1.6; }
 
-        .amazon-section { text-align: center; margin: 60px 0; }
-        .amazon-btn { display: inline-block; padding: 20px 40px; background: var(--brun-sombre); color: #fff; text-decoration: none; border-radius: 60px; font-weight: bold; font-size: 1.1em; transition: 0.3s; box-shadow: 0 10px 25px rgba(0,0,0,0.1); margin: 10px; border: 1px solid transparent; }
-        .amazon-btn:hover { background: var(--bienetre); transform: translateY(-5px); box-shadow: 0 15px 30px rgba(212, 162, 89, 0.3); border-color: var(--bienetre); }
+        /* Amazon Section */
+        .amazon-section { text-align: center; margin: 80px 0; }
+        .amazon-btn { display: inline-block; padding: 20px 45px; background: var(--brun-sombre); color: #fff; text-decoration: none; border-radius: 60px; font-weight: bold; font-variant: small-caps; font-size: 1.1em; transition: 0.3s; border: 2px solid transparent; }
+        .amazon-btn:hover { background: var(--bienetre); transform: translateY(-5px); border-color: #fff; box-shadow: 0 10px 25px rgba(212, 162, 89, 0.3); }
 
-        .pricing-section { background-color: var(--blanc); padding: 120px 20px; text-align: center; border-top: 1px solid #eee; }
-        .pills-row { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-bottom: 60px; }
-        .pill { padding: 12px 25px; border: 2px solid; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 1em; text-decoration: none; background: var(--blanc); transition: 0.3s; }
+        /* --- ENCYCLOPÉDIE SECTION --- */
+        .encyclopedie-section { background-color: var(--blanc); padding: 100px 20px; text-align: center; border-top: 1px solid #eee; }
+        .pills-row { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 30px; }
+        .pill { padding: 10px 20px; border: 2px solid; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 0.9em; text-decoration: none; background: #fff; transition: 0.3s; }
         .p1 { border-color: var(--maison); color: var(--maison); } .p1:hover { background: var(--maison); color: #fff; }
         .p2 { border-color: var(--jardin); color: var(--jardin); } .p2:hover { background: var(--jardin); color: #fff; }
         .p3 { border-color: var(--corps); color: var(--corps); } .p3:hover { background: var(--corps); color: #fff; }
-        .p4 { border-color: var(--bienetre); color: var(--bienetre); } .p4:hover { background: var(--bienetre); color: #fff; }
+        .p4 { border-color: var(--bienetre); color: #fff; background: var(--bienetre); }
         .p5 { border-color: var(--eso); color: var(--eso); } .p5:hover { background: var(--eso); color: #fff; }
-        .pricing-grid { display: flex; justify-content: center; gap: 80px; max-width: 1200px; margin: 0 auto; flex-wrap: wrap; }
-        .amount { font-size: 2.8em; color: var(--or-zen); font-weight: bold; }
 
-        footer { background: var(--brun-sombre); color: #fff; padding: 60px 20px; text-align: center; }
-        .footer-logo-small { height: 45px; margin-bottom: 25px; }
-        .footer-nav-compact { display: flex; gap: 25px; list-style: none; justify-content: center; margin-bottom: 25px; padding: 0; flex-wrap: wrap; }
-        .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.7; font-variant: small-caps; transition: 0.3s; }
-        .footer-nav-compact a:hover { opacity: 1; color: var(--or-zen); }
+        /* --- FOOTER --- */
+        footer { background: var(--brun-sombre); color: #fff; padding: 80px 20px; text-align: center; }
+        .footer-logo img { height: 60px; filter: invert(1) grayscale(1) brightness(1.5) opacity(0.6); transition: 0.5s; margin-bottom: 30px; }
+        .footer-logo:hover img { filter: invert(1) grayscale(1) brightness(2.5) opacity(1) drop-shadow(0 0 15px #fff); }
+        .footer-nav-compact { display: flex; gap: 30px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; flex-wrap: wrap; }
+        .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.6; font-variant: small-caps; transition: 0.3s; }
+        .footer-nav-compact a:hover { opacity: 1; color: var(--bienetre); }
 
-        @media (max-width: 1000px) { .histoire-text { column-count: 1; } .hero h1 { font-size: 3.5em; } .expertise-list, .mondes-list { grid-template-columns: 1fr; } .nav-container { flex-direction: column; gap: 15px; } }
+        #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
+
+        @media (max-width: 900px) { .histoire-text { column-count: 1; } .expertise-list, .mondes-list { grid-template-columns: 1fr; } }
+        @media (max-width: 768px) {
+            .nav-container { flex-direction: column; gap: 20px; }
+            .header-right { gap: 20px; }
+            .histoire-section { margin-top: -60px; }
+            .scroll-nav { display: none; }
+        }
     </style>
 </head>
 <body>
@@ -105,19 +164,27 @@
 
     <header>
         <div class="nav-container">
-            <div class="logo-area">
-                <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
-                <a href="https://www.pinterest.com/" class="pinterest-badge" target="_blank">p</a>
+            <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
+            <div class="header-right">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li class="dropdown">
+                            <a href="grimoire.html">Grimoire</a>
+                            <div class="dropdown-content">
+                                <a href="maison.html">Vol 1 : Fondation</a>
+                                <a href="jardin.html">Vol 2 : Enracinement</a>
+                                <a href="corps.html">Vol 3 : Éclosion</a>
+                                <a href="bienetre.html">Vol 4 : Harmonie</a>
+                                <a href="eso.html">Vol 5 : Élévation</a>
+                            </div>
+                        </li>
+                        <li><a href="blog.html" style="color: var(--bienetre);">Journal</a></li>
+                        <li><a href="encyclopedie.html">Encyclopédie</a></li>
+                    </ul>
+                </nav>
+                <a href="https://www.pinterest.com/VOTRE_PROFIL" class="pinterest-badge" target="_blank">p</a>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="grimoire.html">Grimoire</a></li>
-                    <li><a href="maison.html">Maison</a></li>
-                    <li><a href="encyclopedie.html">Encyclopédie</a></li>
-                    <li><a href="blog.html">Journal</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
 
@@ -125,7 +192,7 @@
         <p class="maitre-phrase">Le Souffle de l'Amazonie</p>
         <p class="sagesse-num">Sagesse n°9 : Le Rubis de Vitalité</p>
         <h1>L'Acérola</h1>
-        <p class="tagline">"La lumière du soleil capturée dans une baie de sang. Pour que l'esprit ne vacille jamais devant la fatigue du monde."</p>
+        <p class="tagline">« La lumière du soleil capturée dans une baie de sang. Pour que l'esprit ne vacille jamais devant la fatigue du monde. »</p>
     </section>
 
     <main class="container">
@@ -134,7 +201,7 @@
             <h2>L'Origine du Cristal Pourpre</h2>
             <div class="histoire-text">
                 <p>Né au cœur des terres sacrées d'Amérique du Sud, l'Acérola est bien plus qu'une simple petite cerise. Pour les peuples de l'Amazonie, il représentait la force vitale concentrée, un fruit de protection capable de chasser les ombres de la maladie. Sa robe pourpre témoigne de la ferveur solaire qu'il emprisonne dans sa pulpe.</p>
-                <p>Découvert par les explorateurs pour sa richesse exceptionnelle en vitamine C (près de 30 fois supérieure à celle de l'orange), il est devenu le pilier de l'apothicaire moderne. Ce cristal organique ne se contente pas de nourrir ; il transmutte la fatigue en élan et restaure le bouclier protecteur de notre temple intérieur.</p>
+                <p>Découvert par les explorateurs pour sa richesse exceptionnelle en vitamine C (près de 30 fois supérieure à celle de l'orange), il est devenu le pilier de l'apothicaire moderne. Ce cristal organique ne se contente pas de nourrir ; il transmute la fatigue en élan et restaure le bouclier protecteur de votre temple intérieur à travers ce <strong>grimoire</strong>.</p>
             </div>
 
             <div class="mondes-container">
@@ -161,7 +228,7 @@
         <section class="expert-container">
             <div class="maitre-mot">
                 <h3>Le Mot du Maître</h3>
-                <p>"L'Acérola est le condensé de la ferveur solaire dont notre corps a besoin pour ne pas s'éteindre sous le poids de la modernité. J'ai choisi pour vous des extraits titrés à haute pureté, car seul le cristal le plus concentré peut opérer la véritable alchimie de la forme physique."</p>
+                <p>« L'Acérola est le condensé de la ferveur solaire dont notre corps a besoin pour ne pas s'éteindre sous le poids de la modernité. J'ai choisi pour vous des extraits titrés à haute pureté, car seul le cristal le plus concentré peut opérer la véritable alchimie de la forme physique. »</p>
             </div>
             
             <div class="expertise-list">
@@ -195,30 +262,32 @@
 
     </main>
 
-    <section class="pricing-section">
-        <h2 class="section-title" style="color:var(--brun-sombre); margin-bottom: 30px;">L'Encyclopédie des Solutions Nomades (PDF)</h2>
+    <section class="encyclopedie-section">
+        <h2 style="font-variant: small-caps; font-size: 2.2em; color: var(--brun-sombre); margin-bottom:10px;">L'Encyclopédie des Solutions Nomades</h2>
         <div class="pills-row">
-            <a href="encyclopedie.html" class="pill p1">Vol 1 : Maison</a>
-            <a href="encyclopedie.html" class="pill p2">Vol 2 : Jardin</a>
-            <a href="encyclopedie.html" class="pill p3">Vol 3 : Corps</a>
-            <a href="encyclopedie.html" class="pill p4">Vol 4 : Bien-être</a>
-            <a href="encyclopedie.html" class="pill p5">Vol 5 : Ésotérisme</a>
+            <a href="maison.html" class="pill p1">Vol 1 : Fondation</a>
+            <a href="jardin.html" class="pill p2">Vol 2 : Enracinement</a>
+            <a href="corps.html" class="pill p3">Vol 3 : Éclosion</a>
+            <a href="bienetre.html" class="pill p4">Vol 4 : Harmonie</a>
+            <a href="eso.html" class="pill p5">Vol 5 : Élévation</a>
         </div>
-        <div class="pricing-grid">
-            <div class="price-box"><h4>Un Volume de Savoir</h4><span class="amount">14,90 €</span></div>
-            <div class="price-box"><h4>Le Pack Trio Alchimique</h4><span class="amount">24,90 €</span></div>
-            <div class="price-box"><h4>L'Intégrale du Maître (5 Vol.)</h4><span class="amount">39,90 €</span></div>
+        <div style="margin-top: 40px; font-size: 1.2em; font-style: italic; color: var(--brun-sombre);">
+            Le Volume : <span style="color:var(--or-zen); font-weight:bold;">14.90€</span> — Pack Trio : <span style="color:var(--or-zen); font-weight:bold;">24.90€</span> — L'Intégrale : <span style="color:var(--or-zen); font-weight:bold;">39.90€</span>
         </div>
     </section>
 
     <footer>
+        <a href="index.html" class="footer-logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
         <ul class="footer-nav-compact">
             <li><a href="mentions-legales.html">Mentions légales</a></li>
             <li><a href="confidentialite.html">Confidentialité</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
             <li><a href="livre-or.html">Livre d'Or</a></li>
         </ul>
-        <p style="font-size: 0.8em; opacity: 0.5;">&copy; 2026 Zen Chez Toi • Transmettre pour Libérer</p>
+        <p style="font-size: 0.85em; opacity: 0.4;">&copy; 2026 Zen Chez Toi • Harmonie</p>
     </footer>
+
+    <div id="disclaimer-bar">🔗 Liens affiliés Amazon : Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.</div>
 
 </body>
 </html>

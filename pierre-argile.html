@@ -122,17 +122,21 @@
 
         footer { background: var(--brun-sombre); color: #fff; padding: 60px 20px; text-align: center; }
         
-        /* AURA SUR LE LOGO DU FOOTER */
-        .footer-logo-small { height: 45px; margin-bottom: 25px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); transition: 0.5s ease; cursor: pointer;}
-        .footer-logo-small:hover { filter: drop-shadow(0 0 25px #ffffff) drop-shadow(0 0 10px #ffffff); transform: scale(1.05); }
-        
-        .footer-nav-compact { display: flex; gap: 25px; list-style: none; justify-content: center; margin-bottom: 25px; padding: 0; flex-wrap: wrap; }
-        .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.7; font-variant: small-caps; transition: 0.3s; }
-        .footer-nav-compact a:hover { opacity: 1; color: var(--or-zen); }
-        #disclaimer-bar { background: var(--brun-sombre); color: rgba(255,255,255,0.7); font-size: 0.8rem; text-align: center; padding: 12px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        /* Aura Header */
+.logo img { transition: 0.5s ease; }
+.logo:hover img { filter: drop-shadow(0 0 25px #ffffff) drop-shadow(0 0 10px #ffffff); transform: scale(1.03); }
 
-        /* --- RESPONSIVE CORRIGÉ SANS CASSER LE SPIDER --- */
+/* Aura Footer */
+.footer-logo-small { transition: 0.5s ease; }
+.footer-logo-small:hover { filter: drop-shadow(0 0 25px #ffffff) drop-shadow(0 0 10px #ffffff); transform: scale(1.05); }
+
+        /* Décaler Pinterest à droite - Méthode sécurisée */
+.nav-container { position: relative; }
+.pinterest-badge { position: absolute; right: 50px; top: 50%; margin-top: -16px; }
+nav { margin-right: 45px; }
+
         @media (max-width: 1000px) { 
+            /* 1. TON CODE ORIGINAL INTACT POUR TA CARTE ET TON SPIDER */
             .histoire-text { column-count: 1; } 
             .hero h1 { font-size: 3.5em; } 
             .expertise-list { grid-template-columns: 1fr; } 
@@ -140,10 +144,15 @@
             .monde-card, .monde-card.secret { width: 100%; grid-area: auto; margin-top: 0; } 
             .mondes-spider-logo { order: -1; width: 80px; margin: 0 0 20px 0; } 
             
-            /* Ajustement pour que le header s'empile bien et ne casse pas le titre */
-            .nav-container { flex-direction: column; gap: 15px; } 
-            .header-right { flex-direction: column; gap: 15px; align-items: center; width: 100%; }
-            nav ul { justify-content: center; }
+            /* 2. RANGEMENT DU HEADER POUR LE MOBILE */
+            .nav-container { flex-direction: column; gap: 15px; padding: 15px; }
+            nav { margin-right: 0; width: 100%; }
+            nav ul { justify-content: center; gap: 10px; }
+            
+            /* On annule la position stricte de Pinterest pour le centrer sous le menu */
+            .pinterest-badge { position: static; margin-top: 5px; margin-left: 0; }
+            
+            /* 3. SÉCURITÉ POUR LE TITRE HERO (Fini le chevauchement) */
             .hero { padding-top: 260px; height: auto; min-height: 100vh; padding-bottom: 50px; }
         }
     </style>

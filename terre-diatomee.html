@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sagesse n&deg;14 : La Terre de Diatom&eacute;e &ndash; L&apos;Encyclop&eacute;die des Solutions Nomades</title>
+    <title>Sagesse n°14 : La Terre de Diatomée – L'Encyclopédie des Solutions Nomades</title>
     
     <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
     <meta name="p:domain_verify" content="549770272775"/>
@@ -16,7 +16,7 @@
     </script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7501098246029504" crossorigin="anonymous"></script>
 
-    <meta name="description" content="D&eacute;couvrez la Terre de Diatom&eacute;e, le bouclier min&eacute;ral de l&apos;enracinement. Une protection ancestrale contre les parasites et un tr&eacute;sor de silice pour vos 5 mondes.">
+    <meta name="description" content="Découvrez la Terre de Diatomée, le bouclier minéral de l'enracinement. Une protection ancestrale contre les parasites et un trésor de silice pour vos 5 mondes.">
     <link rel="icon" type="image/png" href="assets/logo.png">
 
     <style>
@@ -27,40 +27,68 @@
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.8; overflow-x: hidden; }
 
+        /* --- HEADER --- */
         header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; }
         .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
-        .logo-area { display: flex; align-items: center; gap: 20px; }
-        .logo img { max-height: 90px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); }
-        .pinterest-badge { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; font-family: 'Georgia', serif; font-style: italic; font-size: 1.1rem; transition: 0.4s ease; background: rgba(255,255,255,0.1); backdrop-filter: blur(2px); }
-        .pinterest-badge:hover { background: var(--jardin); border-color: var(--jardin); transform: rotate(15deg) scale(1.1); }
         
-        nav ul { list-style: none; display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
-        nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
-        nav a:hover { color: var(--jardin); }
+        .logo { display: inline-block; text-decoration: none; transition: 0.4s ease; }
+        .logo img { max-height: 90px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2)); transition: 0.5s ease; }
+        .logo:hover img { filter: drop-shadow(0 0 30px #ffffff) drop-shadow(0 0 15px #ffffff); transform: scale(1.05); }
 
+        .header-right { display: flex; align-items: center; gap: 40px; }
+        nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
+        nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
+        nav a:hover { color: var(--jardin); text-shadow: 0 0 15px var(--jardin); }
+
+        /* MENU DÉROULANT */
         .dropdown { position: relative; display: inline-block; padding: 15px 0; cursor: pointer; }
-        .dropdown-content { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background-color: var(--brun-sombre); min-width: 180px; box-shadow: 0px 8px 16px rgba(0,0,0,0.3); z-index: 2100; border-radius: 8px; overflow: hidden; }
-        .dropdown-content a { color: rgba(255,255,255,0.8) !important; padding: 12px 20px; text-decoration: none; display: block; font-size: 0.95em; text-shadow: none; font-weight: bold; border-bottom: 1px solid rgba(255,255,255,0.1); text-align: center; font-variant: small-caps; }
-        .dropdown-content a:last-child { border-bottom: none; }
+        .dropdown-content { 
+            display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); 
+            background-color: var(--brun-sombre); min-width: 200px; box-shadow: 0px 10px 25px rgba(0,0,0,0.3); 
+            z-index: 2100; border-radius: 8px; border: 1px solid var(--jardin); overflow: hidden;
+        }
+        .dropdown-content a { 
+            color: rgba(255,255,255,0.8) !important; padding: 12px 20px; text-decoration: none; 
+            display: block; font-size: 0.95em; text-shadow: none; font-weight: bold; 
+            border-bottom: 1px solid rgba(255,255,255,0.1); text-align: center; font-variant: small-caps; 
+        }
         .dropdown-content a:hover { background-color: var(--jardin); color: #fff !important; }
         .dropdown:hover .dropdown-content { display: block; }
 
-        .scroll-nav { position: fixed; top: 50%; width: 100%; display: flex; justify-content: space-between; transform: translateY(-50%); pointer-events: none; z-index: 1500; padding: 0 30px; }
+        .pinterest-badge { 
+            display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; 
+            border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; 
+            font-family: 'Georgia', serif; font-style: italic; font-size: 1.2rem; transition: all 0.4s ease; 
+            background: rgba(255,255,255,0.1); backdrop-filter: blur(2px); padding-bottom: 3px;
+        }
+        .pinterest-badge:hover { background: var(--jardin); border-color: var(--jardin); transform: rotate(15deg) scale(1.1); color: #fff; box-shadow: 0 0 15px var(--jardin); }
+
+        /* NAVIGATION FLOTTANTE */
+        .scroll-nav { position: fixed; top: 50%; width: 100%; display: flex; justify-content: space-between; transform: translateY(-50%); pointer-events: none; z-index: 1500; padding: 0 30px; box-sizing: border-box; }
         .arrow-nav { pointer-events: auto; background: var(--blanc); width: 55px; height: 55px; display: flex; align-items: center; justify-content: center; border-radius: 50%; text-decoration: none; color: var(--jardin); font-size: 1.5em; box-shadow: 0 5px 15px rgba(0,0,0,0.15); opacity: 0.6; transition: 0.3s; }
         .arrow-nav:hover { opacity: 1; transform: scale(1.1); background: var(--jardin); color: #fff; }
 
-        /* Correction du chemin URL et des guillemets ici */
-        .hero { height: 100vh; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url('assets/hero-jardin.jpg') center/cover no-repeat; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; }
-        .maitre-phrase { font-size: 1.4em; font-variant: small-caps; letter-spacing: 5px; font-weight: bold; margin-bottom: 20px; text-shadow: -1px -1px 0 var(--jardin), 1px -1px 0 var(--jardin), -1px 1px 0 var(--jardin), 1px 1px 0 var(--jardin); color: #ffebcd; }
-        .sagesse-num { font-size: 1.2em; text-transform: uppercase; letter-spacing: 4px; margin-bottom: 30px; font-weight: bold; text-shadow: -1px -1px 0 var(--jardin), 1px -1px 0 var(--jardin), -1px 1px 0 var(--jardin), 1px 1px 0 var(--jardin); color: #ffebcd;}
-        .hero h1 { font-size: 5.5em; font-weight: normal; margin-bottom: 30px; line-height: 1.1; text-shadow: -2px -2px 0 var(--jardin), 2px -2px 0 var(--jardin), -2px 2px 0 var(--jardin), 2px 2px 0 var(--jardin); }
-        .tagline { font-size: 1.8em; font-style: italic; max-width: 900px; line-height: 1.4; text-shadow: -1px -1px 0 var(--jardin), 1px -1px 0 var(--jardin), -1px 1px 0 var(--jardin), 1px 1px 0 var(--jardin); }
+        /* --- HERO (Blindé pour mobile) --- */
+        .hero { 
+            height: 100vh; min-height: 600px; position: relative; 
+            display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; overflow: hidden; 
+        }
+        .hero-img-fond { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
+        .hero-voile { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)); z-index: 2; }
+        .hero-contenu { position: relative; z-index: 3; width: 100%; max-width: 1000px; box-sizing: border-box; }
 
+        .maitre-phrase { font-size: clamp(1em, 2vw, 1.4em); font-variant: small-caps; letter-spacing: 5px; font-weight: bold; margin-bottom: 20px; text-shadow: -1px -1px 0 var(--jardin), 1px -1px 0 var(--jardin), -1px 1px 0 var(--jardin), 1px 1px 0 var(--jardin); color: #ffebcd; }
+        .sagesse-num { font-size: clamp(0.9em, 1.5vw, 1.2em); text-transform: uppercase; letter-spacing: 4px; margin-bottom: 30px; font-weight: bold; text-shadow: -1px -1px 0 var(--jardin), 1px -1px 0 var(--jardin), -1px 1px 0 var(--jardin), 1px 1px 0 var(--jardin); color: #ffebcd;}
+        .hero h1 { font-size: clamp(2.5em, 8vw, 5.5em); font-weight: normal; margin-bottom: 30px; line-height: 1.1; text-shadow: -2px -2px 0 var(--jardin), 2px -2px 0 var(--jardin), -2px 2px 0 var(--jardin), 2px 2px 0 var(--jardin); }
+        .tagline { font-size: clamp(1.1em, 3vw, 1.8em); font-style: italic; max-width: 900px; line-height: 1.4; text-shadow: -1px -1px 0 var(--jardin), 1px -1px 0 var(--jardin), -1px 1px 0 var(--jardin), 1px 1px 0 var(--jardin); margin: 0 auto; }
+
+        /* --- CONTENU --- */
         .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
-        .histoire-section { background: var(--blanc); padding: 80px; border-radius: 30px; margin-top: -120px; position: relative; z-index: 10; box-shadow: 0 25px 60px rgba(0,0,0,0.08); border-top: 4px solid var(--jardin);}
-        .histoire-section h2 { font-size: 2.8em; color: var(--jardin); margin-bottom: 40px; text-align: center; font-weight: normal; }
+        .histoire-section { background: var(--blanc); padding: 80px; border-radius: 30px; margin-top: -120px; position: relative; z-index: 10; box-shadow: 0 25px 60px rgba(0,0,0,0.08); border-top: 4px solid var(--jardin); }
+        .histoire-section h2 { font-size: 2.8em; color: var(--jardin); margin-bottom: 40px; text-align: center; font-weight: normal; font-family: 'Georgia', serif;}
         .histoire-text { column-count: 2; column-gap: 60px; text-align: justify; font-size: 1.15rem; color: #444; line-height: 2; }
 
+        /* --- LES 5 MONDES --- */
         .mondes-container { margin: 60px 0; }
         .mondes-encadre { border: 3px solid var(--jardin); padding: 50px; border-radius: 20px; position: relative; background: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.03); }
         .mondes-encadre h3 { font-size: 2.4em; color: var(--jardin); margin-bottom: 50px; text-align: center; font-weight: normal; font-family: 'Georgia', serif;}
@@ -69,7 +97,7 @@
         .mondes-spider-logo { grid-area: 2 / 2 / 3 / 3; position: relative; z-index: 2; margin: 0; }
         .mondes-spider-logo img { width: 120px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1)); }
 
-        .monde-card { background: var(--bg-sable); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; border-top: 4px solid; position: relative; z-index: 1; width: 100%; }
+        .monde-card { background: var(--bg-sable); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; border-top: 4px solid; position: relative; z-index: 1; width: 100%; box-sizing: border-box; }
         .monde-card h4 { font-variant: small-caps; font-size: 1.2em; margin-bottom: 10px; font-weight: bold; }
         .monde-card p { font-size: 0.95em; color: #444; line-height: 1.6; }
 
@@ -79,10 +107,11 @@
         .monde-card.seve { grid-area: 3 / 3 / 4 / 4; border-color: var(--bienetre); } .monde-card.seve h4 { color: var(--bienetre); }
         .monde-card.secret { grid-area: 4 / 1 / 5 / 4; justify-self: center; width: 60%; border-color: var(--eso); margin-top: 15px; } .monde-card.secret h4 { color: var(--eso); }
 
-        .picto-container { display: flex; justify-content: center; gap: 40px; margin: 40px 0; padding: 20px; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
+        .picto-container { display: flex; justify-content: center; flex-wrap: wrap; gap: 40px; margin: 40px 0; padding: 20px; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
         .picto-item { text-align: center; font-size: 0.75em; text-transform: uppercase; letter-spacing: 1px; color: var(--jardin); font-weight: bold; }
-        .picto-item img { height: 45px; display: block; margin: 0 auto 10px; opacity: 0.8; }
+        .picto-icon { font-size: 3em; display: block; margin-bottom: 10px; opacity: 0.9; }
 
+        /* --- ALLIANCES & EXPERTISE --- */
         .allies-box { background: var(--bg-sable); padding: 50px; border-radius: 20px; margin: 80px 0; border-left: 8px solid var(--jardin); }
         .allies-box h3 { font-size: 2em; color: var(--brun-sombre); margin-bottom: 30px; font-weight: normal; }
         .allies-list { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
@@ -97,15 +126,21 @@
         .expertise-item h4 { font-size: 1.1em; color: var(--brun-sombre); margin-bottom: 10px; }
         .expertise-item p { font-size: 0.95em; color: #777; line-height: 1.6; }
 
+        /* --- AMAZON --- */
         .amazon-section { text-align: center; margin: 60px 0; }
-        .amazon-btn { display: inline-block; padding: 18px 35px; background: var(--brun-sombre); color: #fff; text-decoration: none; border-radius: 60px; font-weight: bold; transition: 0.3s; box-shadow: 0 10px 25px rgba(0,0,0,0.1); margin: 10px; min-width: 250px; font-size: 1em; }
-        .amazon-btn:hover { background: var(--jardin); transform: translateY(-5px); box-shadow: 0 15px 30px rgba(123, 144, 116, 0.3); }
+        .amazon-btn { display: inline-block; padding: 18px 35px; background: var(--brun-sombre); color: #fff; text-decoration: none; border-radius: 60px; font-weight: bold; transition: 0.3s; box-shadow: 0 10px 25px rgba(0,0,0,0.1); margin: 10px; border: 1px solid transparent; min-width: 250px; font-size: 1em; }
+        .amazon-btn:hover { background: var(--jardin); transform: translateY(-5px); box-shadow: 0 15px 30px rgba(123, 144, 116, 0.3); border-color: var(--jardin); }
+        .ad-container { margin: 40px 0 80px; text-align: center; }
 
+        /* --- PRICING --- */
         .pricing-section { background-color: var(--blanc); padding: 120px 20px; text-align: center; border-top: 1px solid #eee; }
         .pills-row { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-bottom: 60px; }
         .pill { padding: 12px 25px; border: 2px solid; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 1em; text-decoration: none; background: var(--blanc); transition: 0.3s; }
         .p1 { border-color: var(--maison); color: var(--maison); } .p1:hover { background: var(--maison); color: #fff; }
-        .p2 { border-color: var(--jardin); color: var(--jardin); } .p2:hover { background: var(--jardin); color: #fff; }
+        
+        /* ACTIF SUR LE VOLUME 2 */
+        .p2 { border-color: var(--jardin); background: var(--jardin); color: #fff; } 
+        
         .p3 { border-color: var(--corps); color: var(--corps); } .p3:hover { background: var(--corps); color: #fff; }
         .p4 { border-color: var(--bienetre); color: var(--bienetre); } .p4:hover { background: var(--bienetre); color: #fff; }
         .p5 { border-color: var(--eso); color: var(--eso); } .p5:hover { background: var(--eso); color: #fff; }
@@ -114,176 +149,237 @@
         .price-box h4 { font-weight: normal; color: #777; margin-bottom: 10px; font-size: 1.1em; }
         .price-box .amount { font-size: 2.8em; color: var(--jardin); font-weight: bold; }
 
-        footer { background: var(--brun-sombre); color: #fff; padding: 60px 20px; text-align: center; }
-        .footer-logo-small { height: 45px; margin-bottom: 25px; }
-        .footer-nav-compact { display: flex; gap: 25px; list-style: none; justify-content: center; margin-bottom: 25px; padding: 0; flex-wrap: wrap; }
-        .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.7; font-variant: small-caps; transition: 0.3s; }
-        .footer-nav-compact a:hover { color: var(--jardin); opacity: 1; }
-        
-        #disclaimer-bar { background: var(--brun-sombre); color: rgba(255,255,255,0.7); font-size: 0.8rem; text-align: center; padding: 12px; border-bottom: 1px solid rgba(255,255,255,0.1); border-top: 1px solid rgba(255,255,255,0.1); }
+        /* --- FOOTER --- */
+        footer { background: var(--brun-sombre); color: #fff; padding: 80px 20px 40px; text-align: center; }
+        .footer-logo-small { height: 60px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.4)); transition: 0.5s; margin-bottom: 30px; }
+        .footer-logo-small:hover { filter: drop-shadow(0 0 30px #ffffff); transform: scale(1.05); }
+        .footer-nav-compact { display: flex; gap: 30px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; flex-wrap: wrap; }
+        .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.6; font-variant: small-caps; transition: 0.3s; }
+        .footer-nav-compact a:hover { opacity: 1; color: var(--jardin); }
+        #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
 
-        @media (max-width: 1000px) { .histoire-text { column-count: 1; } .hero h1 { font-size: 3.5em; } .expertise-list { grid-template-columns: 1fr; } .mondes-spider { grid-template-columns: 1fr; grid-template-rows: auto; gap: 20px; } .monde-card, .monde-card.secret { width: 100%; grid-area: auto; margin-top: 0; } .mondes-spider-logo { order: -1; width: 80px; margin: 0 0 20px 0; } .nav-container { flex-direction: column; gap: 15px; } }
+        /* --- RESPONSIVE MOBILE SÉCURISÉ --- */
+        @media (max-width: 1000px) { 
+            .histoire-text { column-count: 1; } 
+            .expertise-list { grid-template-columns: 1fr; } 
+            .mondes-spider { display: flex; flex-direction: column; gap: 20px; width: 100%; box-sizing: border-box; overflow: hidden; } 
+            .monde-card, .monde-card.secret { width: 100% !important; max-width: 100%; margin: 0 !important; box-sizing: border-box; } 
+            .mondes-spider-logo { order: -1; width: 80px; margin: 0 auto 20px auto; } 
+        }
+        @media (max-width: 768px) {
+            .nav-container { flex-direction: column; gap: 15px; padding: 15px 20px; }
+            .header-right { flex-direction: column; gap: 15px; align-items: center; width: 100%; }
+            nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; }
+            
+            .dropdown { position: static; }
+            .dropdown-content { 
+                left: 0; right: 0; margin: 10px auto 0; 
+                transform: none; width: 280px; max-width: 90vw; top: auto; 
+            }
+            
+            .hero { padding-top: 360px !important; padding-bottom: 150px !important; height: auto !important; min-height: auto !important; justify-content: flex-start !important; box-sizing: border-box; }
+            .hero h1 { font-size: 2.2em; } 
+            
+            .histoire-section, .allies-box, .expert-container { padding: 30px 20px; }
+            .mondes-encadre { padding: 25px 15px; border-width: 2px; width: 100%; box-sizing: border-box; overflow: hidden; }
+            .picto-container { gap: 15px; flex-direction: column; }
+            
+            /* RESTAURATION DU SCROLL SUR MOBILE */
+            .scroll-nav { 
+                display: flex; 
+                top: auto; 
+                bottom: 30px; 
+                transform: none; 
+                padding: 0 20px; 
+                position: fixed;
+                justify-content: space-between;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            .arrow-nav { 
+                width: 45px; 
+                height: 45px; 
+                font-size: 1.2em; 
+                background: var(--jardin); 
+                color: #fff;
+                opacity: 0.8;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            }
+        }
     </style>
 </head>
 <body>
 
     <div class="scroll-nav">
-        <a href="terebenthine.html" class="arrow-nav">❮</a>
-        <a href="pierre-argile.html" class="arrow-nav">❯</a>
+        <a href="terebenthine.html" class="arrow-nav" aria-label="Sagesse Précédente">❮</a>
+        <a href="argile-verte.html" class="arrow-nav" aria-label="Sagesse Suivante">❯</a>
     </div>
 
     <header>
         <div class="nav-container">
-            <div class="logo-area">
-                <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
-                <a href="https://www.pinterest.com/" class="pinterest-badge" target="_blank">p</a>
+            <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
+            <div class="header-right">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li class="dropdown">
+                            <a href="grimoire.html">Grimoire</a>
+                            <div class="dropdown-content">
+                                <a href="maison.html">Vol 1 : Fondation</a>
+                                <a href="jardin.html">Vol 2 : Enracinement</a>
+                                <a href="corps.html">Vol 3 : Éclosion</a>
+                                <a href="bienetre.html">Vol 4 : Harmonie</a>
+                                <a href="eso.html">Vol 5 : Élévation</a>
+                            </div>
+                        </li>
+                        <li><a href="blog.html">Journal</a></li>
+                        <li><a href="encyclopedie.html">Encyclopédie</a></li>
+                    </ul>
+                </nav>
+                <a href="https://www.pinterest.fr/zencheztoi/" class="pinterest-badge" target="_blank" title="Suivez nos inspirations">p</a>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li class="dropdown">
-                        <a href="grimoire.html">Grimoire</a>
-                        <div class="dropdown-content">
-                            <a href="maison.html">Monde &Acirc;tre</a>
-                            <a href="jardin.html">Monde Terre</a>
-                            <a href="corps.html">Monde Temple</a>
-                            <a href="bienetre.html">Monde S&egrave;ve</a>
-                            <a href="eso.html">Monde Secret</a>
-                        </div>
-                    </li>
-                    <li><a href="encyclopedie.html">L&apos;Encyclop&eacute;die</a></li>
-                    <li><a href="blog.html">Le Journal</a></li>
-                    <li class="menu-livre-or"><a href="livre-or.html">Livre d&apos;Or</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
 
     <section class="hero">
-        <p class="maitre-phrase">Gardien de l&apos;Enracinement</p>
-        <p class="sagesse-num">Sagesse n&deg;14 : Le Bouclier Min&eacute;ral</p>
-        <h1>Terre de Diatom&eacute;e</h1>
-        <p class="tagline">&quot;Le savoir n&apos;est pas une arme, c&apos;est une lumi&egrave;re. Apprenez &agrave; dresser le rempart l&agrave; o&ugrave; la poussi&egrave;re des &acirc;ges se fait armure.&quot;</p>
+        <img src="assets/hero-jardin.jpg" class="hero-img-fond" alt="Terre de Diatomée">
+        <div class="hero-voile"></div>
+        <div class="hero-contenu">
+            <p class="maitre-phrase">Gardien de l'Enracinement</p>
+            <p class="sagesse-num">Sagesse n°14 : Le Bouclier Minéral</p>
+            <h1>Terre de Diatomée</h1>
+            <p class="tagline">« Le savoir n'est pas une arme, c'est une lumière. Apprenez à dresser le rempart là où la poussière des âges se fait armure. »</p>
+        </div>
     </section>
 
     <main class="container">
         
         <section class="histoire-section">
-            <h2>L&apos;H&eacute;ritage des Oc&eacute;ans et le Secret de la Silice Organique</h2>
+            <h2>L'Héritage des Océans et le Secret de la Silice Organique</h2>
             <div class="histoire-text">
-                <p>La <b>Terre de Diatom&eacute;e</b>, &eacute;galement connue sous le nom de Kieselguhr, est un tr&eacute;sor g&eacute;ologique form&eacute; il y a des millions d&apos;ann&eacute;es. Elle n&apos;est pas une terre ordinaire, mais le r&eacute;sultat de la fossilisation de micro-algues marines appel&eacute;es diatom&eacute;es. Ces organismes poss&eacute;daient un squelette de silice pure d&apos;une finesse inou&iuml;e, constituant ce que les anciens alchimistes nommaient la m&eacute;moire min&eacute;rale de l&apos;eau. Historiquement, elle fut utilis&eacute;e par les Grecs pour fabriquer des briques l&eacute;g&egrave;res, puis par Alfred Nobel pour stabiliser la nitroglyc&eacute;rine. Pour l&apos;Alchimiste du Domaine, elle repr&eacute;sente la structure et l&apos;immuabilit&eacute; : elle est la matrice qui prot&egrave;ge le vivant du parasitage et de la d&eacute;composition, liant la m&eacute;moire des oc&eacute;ans &agrave; la solidit&eacute; de la terre ferme.</p>
-                <p>Scientifiquement, la force de la Terre de Diatom&eacute;e r&eacute;side dans sa structure physique plut&ocirc;t que dans une r&eacute;action chimique. Compos&eacute;e &agrave; pr&egrave;s de 90% de silice amorphe, chaque particule ressemble sous microscope &agrave; un &eacute;clat de verre aux bords tranchants. C&apos;est un insecticide m&eacute;canique radical : elle perfore la carapace des insectes rampants (puces, punaises, blattes) et les dess&egrave;che en quelques heures par absorption r&eacute;p&eacute;t&eacute;e des lipides. Parce qu&apos;il s&apos;agit d&apos;une solution de pure m&eacute;canique physique, elle ne g&eacute;n&egrave;re absolument aucune accoutumance ni r&eacute;sistance biologique. Elle offre ainsi une protection infaillible et non-toxique pour votre environnement domestique, assainissant les sols et prot&eacute;geant vos animaux de compagnie sans jamais alt&eacute;rer l&apos;&eacute;quilibre chimique de votre foyer.</p>
+                <p>La <b>Terre de Diatomée</b>, également connue sous le nom de Kieselguhr, est un trésor géologique formé il y a des millions d'années. Elle n'est pas une terre ordinaire, mais le résultat de la fossilisation de micro-algues marines appelées diatomées. Ces organismes possédaient un squelette de silice pure d'une finesse inouïe, constituant ce que les anciens alchimistes nommaient la mémoire minérale de l'eau. Historiquement, elle fut utilisée par les Grecs pour fabriquer des briques légères, puis par Alfred Nobel pour stabiliser la nitroglycérine. Pour l'Alchimiste du Domaine, elle représente la structure et l'immuabilité : elle est la matrice qui protège le vivant du parasitage et de la décomposition, liant la mémoire des océans à la solidité de la terre ferme.</p>
+                <p>Scientifiquement, la force de la Terre de Diatomée réside dans sa structure physique plutôt que dans une réaction chimique. Composée à près de 90% de silice amorphe, chaque particule ressemble sous microscope à un éclat de verre aux bords tranchants. C'est un insecticide mécanique radical : elle perfore la carapace des insectes rampants (puces, punaises, blattes) et les dessèche en quelques heures par absorption répétée des lipides. Parce qu'il s'agit d'une solution de pure mécanique physique, elle ne génère absolument aucune accoutumance ni résistance biologique. Elle offre ainsi une protection infaillible et non-toxique pour votre environnement domestique, assainissant les sols et protégeant vos animaux de compagnie sans jamais altérer l'équilibre chimique de votre foyer.</p>
             </div>
 
             <div class="mondes-container">
                 <div class="mondes-encadre">
-                    <h3>La R&eacute;sonance Alchimique</h3>
+                    <h3>La Résonance Alchimique</h3>
                     <div class="mondes-spider">
                         <div class="monde-card atre">
-                            <h4>Monde de l&apos;&Acirc;tre</h4>
-                            <p>Assainissez vos liti&egrave;res, tapis et recoins contre les puces et punaises sans aucun produit chimique nocif.</p>
+                            <h4>Monde de l'Âtre</h4>
+                            <p>Assainissez vos litières, tapis et recoins contre les puces et punaises sans aucun produit chimique nocif.</p>
                         </div>
                         <div class="monde-card terre">
                             <h4>Monde de la Terre</h4>
-                            <p>Dressez une barri&egrave;re protectrice autour de vos jeunes pousses contre les limaces et les insectes du sol.</p>
+                            <p>Dressez une barrière protectrice autour de vos jeunes pousses contre les limaces et les insectes du sol.</p>
                         </div>
                         <div class="mondes-spider-logo">
                             <img src="assets/logo.png" alt="Logo Zen Chez Toi">
                         </div>
                         <div class="monde-card temple">
                             <h4>Monde du Temple</h4>
-                            <p>Utilis&eacute;e en grade alimentaire purifi&eacute;, elle agit comme un vermifuge naturel s&eacute;curitaire pour vos compagnons.</p>
+                            <p>Utilisée en grade alimentaire purifié, elle agit comme un vermifuge naturel sécuritaire pour vos compagnons.</p>
                         </div>
                         <div class="monde-card seve">
-                            <h4>Monde de la S&egrave;ve</h4>
-                            <p>Apportez une source de silice biodisponible &agrave; vos sols pour renforcer la r&eacute;sistance et la vitalit&eacute; des plantes.</p>
+                            <h4>Monde de la Sève</h4>
+                            <p>Apportez une source de silice biodisponible à vos sols pour renforcer la résistance et la vitalité des plantes.</p>
                         </div>
                         <div class="monde-card secret">
                             <h4>Monde du Secret</h4>
-                            <p>Le sceau de stabilit&eacute; : elle fixe les &eacute;nergies erratiques et purifie les espaces cl&ocirc;s par son pouvoir adsorbant.</p>
+                            <p>Le sceau de stabilité : elle fixe les énergies erratiques et purifie les espaces clôs par son pouvoir adsorbant.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="picto-container">
-                <div class="picto-item"><img src="assets/picto-food.png" alt="">Grade Alimentaire</div>
-                <div class="picto-item"><img src="assets/picto-bio.png" alt="">100% Naturelle</div>
-                <div class="picto-item"><img src="assets/picto-france.png" alt="">Z&eacute;ro Toxine</div>
-                <div class="picto-item"><img src="assets/picto-recycle.png" alt="">Durable</div>
+                <div class="picto-item"><span class="picto-icon">🛡️</span>Grade Alimentaire</div>
+                <div class="picto-item"><span class="picto-icon">🌿</span>100% Naturelle</div>
+                <div class="picto-item"><span class="picto-icon">🇫🇷</span>Zéro Toxine</div>
+                <div class="picto-item"><span class="picto-icon">♻️</span>Durable</div>
             </div>
         </section>
 
         <section class="allies-box">
             <h3>Les Alliances et les Correspondances</h3>
             <ul class="allies-list">
-                <li><a href="huile-neem.html">L&apos;Huile de Neem</a> <span class="vol-tag">Volume 2</span></li>
-                <li><a href="pierre-argile.html">La Pierre d&apos;Argile</a> <span class="vol-tag">Volume 2</span></li>
+                <li><a href="huile-neem.html">L'Huile de Neem</a> <span class="vol-tag">Volume 2</span></li>
+                <li><a href="pierre-argile.html">La Pierre d'Argile</a> <span class="vol-tag">Volume 2</span></li>
                 <li><a href="charbon-actif.html">Le Charbon Actif</a> <span class="vol-tag">Volume 2</span></li>
             </ul>
         </section>
 
         <section class="expert-container">
             <div class="maitre-mot">
-                <h3>Le Mot du Ma&icirc;tre</h3>
-                <p>&quot;La Terre de Diatom&eacute;e est l&apos;alchimie parfaite de l&apos;Enracinement, rayonnant &agrave; travers vos cinq mondes. Dans l&apos;<b>&Acirc;tre</b>, elle dresse un rempart m&eacute;canique invisible ; sur la <b>Terre</b>, elle nourrit la s&egrave;ve et prot&egrave;ge les racines. Pour le <b>Temple</b>, elle agit en grade alimentaire comme un nettoyage int&eacute;rieur pour vos alli&eacute;s &agrave; quatre pattes, purifiant la <b>S&egrave;ve</b> des &eacute;nergies parasitaires. Enfin, dans le <b>Secret</b>, elle scelle l&apos;espace rituel en fixant les vibrations erratiques gr&acirc;ce &agrave; son pouvoir d&apos;adsorption in&eacute;gal&eacute;. Travaillez-la toujours &agrave; sec, car l&apos;eau &eacute;teint son tranchant min&eacute;ral.&quot;</p>
+                <h3>Le Mot du Maître</h3>
+                <p>"La Terre de Diatomée est l'alchimie parfaite de l'Enracinement, rayonnant à travers vos cinq mondes. Dans l'<b>Âtre</b>, elle dresse un rempart mécanique invisible ; sur la <b>Terre</b>, elle nourrit la sève et protège les racines. Pour le <b>Temple</b>, elle agit en grade alimentaire comme un nettoyage intérieur pour vos alliés à quatre pattes, purifiant la <b>Sève</b> des énergies parasitaires. Enfin, dans le <b>Secret</b>, elle scelle l'espace rituel en fixant les vibrations erratiques grâce à son pouvoir d'adsorption inégalé. Travaillez-la toujours à sec, car l'eau éteint son tranchant minéral."</p>
             </div>
             
             <div class="expertise-list">
                 <div class="expertise-item">
-                    <h4>Action M&eacute;canique</h4>
-                    <p>D&eacute;shydrate et perfore les parasites par pur contact physique, &eacute;vitant toute accoutumance ou r&eacute;sistance biologique au fil du temps.</p>
+                    <h4>Action Mécanique</h4>
+                    <p>Déshydrate et perfore les parasites par pur contact physique, évitant toute accoutumance ou résistance biologique au fil du temps.</p>
                 </div>
                 <div class="expertise-item">
-                    <h4>Richesse Min&eacute;rale</h4>
-                    <p>Source in&eacute;puisable de silice naturelle, elle fortifie les tissus cellulaires des plantes et structure les carapaces saines des sols appauvris.</p>
+                    <h4>Richesse Minérale</h4>
+                    <p>Source inépuisable de silice naturelle, elle fortifie les tissus cellulaires des plantes et structure les carapaces saines des sols appauvris.</p>
                 </div>
                 <div class="expertise-item">
                     <h4>Pouvoir Adsorbant</h4>
-                    <p>Capte les mauvaises odeurs et l&apos;humidit&eacute; excessive des sous-sols, assainissant les zones de stockage et les liti&egrave;res de fa&ccedil;on durable.</p>
+                    <p>Capte les mauvaises odeurs et l'humidité excessive des sous-sols, assainissant les zones de stockage et les litières de façon durable.</p>
                 </div>
             </div>
         </section>
 
         <div class="amazon-section">
-            <a href="https://www.amazon.fr/Terre-Diatom%C3%A9e-Alimentaire-Purifi%C3%A9e-Naturelle/dp/B00V6I4XG8?tag=zencheztoi-21" class="amazon-btn" target="_blank" rel="nofollow sponsored">Le Sceau de Puret&eacute; (1kg)</a>
-            <a href="https://www.amazon.fr/Terre-Diatom%C3%A9e-Alimentaire-Purifi%C3%A9e-Naturelle/dp/B01HBTG0R8?tag=zencheztoi-21" class="amazon-btn" target="_blank" rel="nofollow sponsored">Le Bouclier de Terre (5kg)</a>
-            <a href="https://www.amazon.fr/Applicateur-terre-diatom%C3%A9e-dextension-distribution/dp/B0GW88XSPD?crid=3MIFUVSRIRRO&dib=eyJ2IjoiMSJ9.yiPmBlvhwyacMZuXwFyaZON58HsD4-fkxDhxYJle4S1jYX6AgbtzCldhRhRrp_wNI8uBz2o_NqgpWZUy4H-PRbn06i8q2zBwUn8waMAsMeahvMW01aUq8IsSpLG-5Qgex31W1kpMLAZrnH2FbK4BXMXhK5aM_NPsjB6Ig01Q4a-LYryyF6qeJ3HUe-IARmuEK42RAiR9K1IIL-n54Jt33rAcdjUMZwaDarD6dlu7pc9awFejUzI3CMkCaUStnKo3UzJSrxUcNCCAC2NC2oFd3DLP1xqeInMtf5yZlMJF3tk.I1o3piNKKnMyJV7OitUY2EZZqzi8ItYqNuAH5Nw9pe8&dib_tag=se&keywords=epandeur%2Bde%2Bterre&qid=1777297483&sprefix=epandeur%2Bde%2Bterre%2Caps%2C300&sr=8-9&th=1&linkCode=ll2&tag=zencheztoi-21&linkId=d93454a6bc0ac339c1d4b8003c3eef3b&ref_=as_li_ss_tl" class="amazon-btn" target="_blank" rel="nofollow sponsored">L&apos;&Eacute;pandeur de Ma&icirc;tre</a>
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <div>
+                    <a href="https://www.amazon.fr/Terre-Diatom%C3%A9e-Alimentaire-Purifi%C3%A9e-Naturelle/dp/B00V6I4XG8?tag=zencheztoi-21" class="amazon-btn" target="_blank" rel="nofollow sponsored">Le Sceau de Pureté (1kg)</a>
+                </div>
+                <div>
+                    <a href="https://www.amazon.fr/Terre-Diatom%C3%A9e-Alimentaire-Purifi%C3%A9e-Naturelle/dp/B01HBTG0R8?tag=zencheztoi-21" class="amazon-btn" target="_blank" rel="nofollow sponsored">Le Bouclier de Terre (5kg)</a>
+                </div>
+                <div>
+                    <a href="https://www.amazon.fr/Applicateur-terre-diatom%C3%A9e-dextension-distribution/dp/B0GW88XSPD?crid=3MIFUVSRIRRO&dib=eyJ2IjoiMSJ9.yiPmBlvhwyacMZuXwFyaZON58HsD4-fkxDhxYJle4S1jYX6AgbtzCldhRhRrp_wNI8uBz2o_NqgpWZUy4H-PRbn06i8q2zBwUn8waMAsMeahvMW01aUq8IsSpLG-5Qgex31W1kpMLAZrnH2FbK4BXMXhK5aM_NPsjB6Ig01Q4a-LYryyF6qeJ3HUe-IARmuEK42RAiR9K1IIL-n54Jt33rAcdjUMZwaDarD6dlu7pc9awFejUzI3CMkCaUStnKo3UzJSrxUcNCCAC2NC2oFd3DLP1xqeInMtf5yZlMJF3tk.I1o3piNKKnMyJV7OitUY2EZZqzi8ItYqNuAH5Nw9pe8&dib_tag=se&keywords=epandeur%2Bde%2Bterre&qid=1777297483&sprefix=epandeur%2Bde%2Bterre%2Caps%2C300&sr=8-9&th=1&linkCode=ll2&tag=zencheztoi-21&linkId=d93454a6bc0ac339c1d4b8003c3eef3b&ref_=as_li_ss_tl" class="amazon-btn" target="_blank" rel="nofollow sponsored">L'Épandeur de Maître</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="ad-container">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7501098246029504" data-ad-slot="YOUR_AD_SLOT" data-ad-format="auto" data-full-width-responsive="true"></ins>
         </div>
 
     </main>
 
     <section class="pricing-section">
-        <h2 class="section-title" style="color:var(--brun-sombre); margin-bottom: 30px;">L&apos;Encyclop&eacute;die des Solutions Nomades (PDF)</h2>
+        <h2 class="section-title" style="color:var(--brun-sombre); margin-bottom: 30px;">L'Encyclopédie des Solutions Nomades (PDF)</h2>
         <div class="pills-row">
-            <a href="encyclopedie.html" class="pill p1">Vol 1 : Les Fondations</a>
-            <a href="encyclopedie.html" class="pill p2">Vol 2 : L&apos;Enracinement</a>
-            <a href="encyclopedie.html" class="pill p3">Vol 3 : L&apos;&Eacute;closion</a>
-            <a href="encyclopedie.html" class="pill p4">Vol 4 : L&apos;Harmonie</a>
-            <a href="encyclopedie.html" class="pill p5">Vol 5 : L&apos;&Eacute;l&eacute;vation</a>
+            <a href="encyclopedie.html#vol1" class="pill p1">Vol 1 : Fondation</a>
+            <a href="encyclopedie.html#vol2" class="pill p2">Vol 2 : Enracinement</a>
+            <a href="encyclopedie.html#vol3" class="pill p3">Vol 3 : Éclosion</a>
+            <a href="encyclopedie.html#vol4" class="pill p4">Vol 4 : Harmonie</a>
+            <a href="encyclopedie.html#vol5" class="pill p5">Vol 5 : Élévation</a>
         </div>
         <div class="pricing-grid">
-            <div class="price-box"><h4>Un Volume de Savoir</h4><span class="amount">14,90 &euro;</span></div>
-            <div class="price-box"><h4>Le Pack Trio Alchimique</h4><span class="amount">24,90 &euro;</span></div>
-            <div class="price-box"><h4>L&apos;Int&eacute;grale du Ma&icirc;tre (5 Vol.)</h4><span class="amount">39,90 &euro;</span></div>
+            <div class="price-box"><h4>Un Volume de Savoir</h4><span class="amount">14,90 €</span></div>
+            <div class="price-box"><h4>Pack Trio Alchimique</h4><span class="amount">24,90 €</span></div>
+            <div class="price-box"><h4>L'Intégrale (5 Vol.)</h4><span class="amount">39,90 €</span></div>
         </div>
     </section>
 
-    <div id="disclaimer-bar">
-        🔗 Liens affili&eacute;s Amazon : En tant que Partenaire Amazon, je r&eacute;alise un b&eacute;n&eacute;fice sur les achats remplissant les conditions requises.
-    </div>
-
     <footer>
-        <img src="assets/logo.png" class="footer-logo-small" alt="Zen Chez Toi">
-        <p style="font-style: italic; font-size: 1.1em; color: rgba(255,255,255,0.9); margin-bottom: 25px;">L&apos;Harmonie au Naturel.</p>
+        <a href="index.html" class="footer-logo"><img src="assets/logo.png" class="footer-logo-small" alt="Zen Chez Toi"></a>
         <ul class="footer-nav-compact">
-            <li><a href="mentions-legales.html">Mentions l&eacute;gales</a></li>
-            <li><a href="confidentialite.html">Confidentialit&eacute;</a></li>
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+            <li><a href="confidentialite.html">Confidentialité</a></li>
             <li><a href="cookies.html">Cookies</a></li>
-            <li><a href="livre-or.html">Livre d&apos;Or</a></li>
+            <li><a href="a-propos.html">À Propos</a></li>
+            <li><a href="livre-or.html">Livre d'Or</a></li>
         </ul>
-        <p style="font-size: 0.8em; opacity: 0.5;">&copy; 2026 Zen Chez Toi &bull; L&apos;Enracinement Accompli.</p>
+        <p style="font-size: 0.8em; opacity: 0.5;">&copy; 2026 Zen Chez Toi • La terre se souvient de ce qui est pur et protège ce qui l'honore.</p>
     </footer>
+
+    <div id="disclaimer-bar">🔗 Liens affiliés : Partenaire Amazon, Citrine.fr et Sept-Chakras.com, je réalise un bénéfice sur les achats remplissant les conditions requises.</div>
 
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({});

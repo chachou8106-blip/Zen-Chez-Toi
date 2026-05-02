@@ -27,7 +27,7 @@
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.8; overflow-x: hidden; }
 
-        /* --- HEADER VALIDÉ --- */
+        /* --- HEADER (Basé sur ton modèle validé) --- */
         header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; }
         .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
         
@@ -64,7 +64,7 @@
         .pinterest-badge:hover { background: var(--jardin); border-color: var(--jardin); transform: rotate(15deg) scale(1.1); color: #fff; box-shadow: 0 0 15px var(--jardin); }
 
         /* NAVIGATION FLOTTANTE */
-        .scroll-nav { position: fixed; top: 50%; width: 100%; display: flex; justify-content: space-between; transform: translateY(-50%); pointer-events: none; z-index: 1500; padding: 0 30px; box-sizing: border-box; }
+        .scroll-nav { position: fixed; top: 50%; width: 100%; display: flex; justify-content: space-between; transform: translateY(-50%); pointer-events: none; z-index: 1500; padding: 0 30px; box-sizing: border-box;}
         .arrow-nav { pointer-events: auto; background: var(--blanc); width: 55px; height: 55px; display: flex; align-items: center; justify-content: center; border-radius: 50%; text-decoration: none; color: var(--jardin); font-size: 1.5em; box-shadow: 0 5px 15px rgba(0,0,0,0.15); opacity: 0.6; transition: 0.3s; }
         .arrow-nav:hover { opacity: 1; transform: scale(1.1); background: var(--jardin); color: #fff; }
 
@@ -101,11 +101,10 @@
         .monde-card h4 { font-variant: small-caps; font-size: 1.2em; margin-bottom: 10px; font-weight: bold; }
         .monde-card p { font-size: 0.95em; color: #444; line-height: 1.6; }
 
-        /* SPIDER CORRIGÉ */
-        .monde-card.atre { grid-area: 1 / 1 / 2 / 2; border-color: var(--maison); } .monde-card.atre h4 { color: var(--maison); }
-        .monde-card.terre { grid-area: 1 / 3 / 2 / 4; border-color: var(--jardin); } .monde-card.terre h4 { color: var(--jardin); }
-        .monde-card.temple { grid-area: 3 / 1 / 4 / 2; border-color: var(--corps); } .monde-card.temple h4 { color: var(--corps); }
-        .monde-card.seve { grid-area: 3 / 3 / 4 / 4; border-color: var(--bienetre); } .monde-card.seve h4 { color: var(--bienetre); }
+        .monde-card.atre { border-color: var(--maison); } .monde-card.atre h4 { color: var(--maison); }
+        .monde-card.terre { border-color: var(--jardin); } .monde-card.terre h4 { color: var(--jardin); }
+        .monde-card.temple { border-color: var(--corps); } .monde-card.temple h4 { color: var(--corps); }
+        .monde-card.seve { border-color: var(--bienetre); } .monde-card.seve h4 { color: var(--bienetre); }
         .monde-card.secret { grid-area: 4 / 1 / 5 / 4; justify-self: center; width: 60%; border-color: var(--eso); margin-top: 15px; } .monde-card.secret h4 { color: var(--eso); }
 
         .picto-container { display: flex; justify-content: center; flex-wrap: wrap; gap: 40px; margin: 40px 0; padding: 20px; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
@@ -148,7 +147,7 @@
         .price-box .amount { font-size: 2.8em; color: var(--jardin); font-weight: bold; }
 
         /* --- FOOTER --- */
-        footer { background: var(--brun-sombre); color: #fff; padding: 80px 20px 40px; text-align: center; }
+        footer { background: var(--brun-sombre); color: #fff; padding: 60px 20px; text-align: center; }
         .footer-logo-small { height: 60px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.4)); transition: 0.5s; margin-bottom: 30px; }
         .footer-logo-small:hover { filter: drop-shadow(0 0 30px #ffffff); transform: scale(1.05); }
         .footer-nav-compact { display: flex; gap: 30px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; flex-wrap: wrap; }
@@ -170,10 +169,7 @@
             nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; }
             
             .dropdown { position: static; }
-            .dropdown-content { 
-                left: 0; right: 0; margin: 10px auto 0; 
-                transform: none; width: 280px; max-width: 90vw; top: auto; 
-            }
+            .dropdown-content { left: 0; right: 0; margin: 10px auto 0; transform: none; width: 280px; max-width: 90vw; top: auto; }
             
             .hero { padding-top: 360px !important; padding-bottom: 150px !important; height: auto !important; min-height: auto !important; justify-content: flex-start !important; box-sizing: border-box; }
             .hero h1 { font-size: 2.2em; } 
@@ -183,26 +179,8 @@
             .picto-container { gap: 15px; flex-direction: column; }
             
             /* RESTAURATION DU SCROLL SUR MOBILE */
-            .scroll-nav { 
-                display: flex; 
-                top: auto; 
-                bottom: 30px; 
-                transform: none; 
-                padding: 0 20px; 
-                position: fixed;
-                justify-content: space-between;
-                width: 100%;
-                box-sizing: border-box;
-            }
-            .arrow-nav { 
-                width: 45px; 
-                height: 45px; 
-                font-size: 1.2em; 
-                background: var(--jardin); 
-                color: #fff;
-                opacity: 0.8;
-                box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            }
+            .scroll-nav { display: flex; top: auto; bottom: 30px; transform: none; padding: 0 20px; position: fixed; justify-content: space-between; width: 100%; box-sizing: border-box; }
+            .arrow-nav { width: 45px; height: 45px; font-size: 1.2em; background: var(--jardin); color: #fff; opacity: 0.8; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
         }
     </style>
 </head>
@@ -213,6 +191,7 @@
         <a href="argile-verte.html" class="arrow-nav" aria-label="Sagesse Suivante">❯</a>
     </div>
 
+    <!-- HEADER VALIDÉ -->
     <header>
         <div class="nav-container">
             <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
@@ -350,7 +329,7 @@
     </main>
 
     <section class="pricing-section">
-        <h2 class="section-title" style="color:var(--brun-sombre); margin-bottom: 30px;">L'Encyclopédie des Solutions Nomades (PDF)</h2>
+        <h2 class="section-title" style="color:var(--brun-sombre); margin-bottom: 30px;">Encyclopédie des Solutions Nomades (PDF)</h2>
         <div class="pills-row">
             <a href="encyclopedie.html#vol1" class="pill p1">Vol 1 : Fondation</a>
             <a href="encyclopedie.html#vol2" class="pill p2">Vol 2 : Enracinement</a>

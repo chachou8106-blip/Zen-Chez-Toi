@@ -54,9 +54,6 @@
         }
         .dropdown-content a:hover { background-color: var(--jardin); color: #fff !important; }
         .dropdown:hover .dropdown-content { display: block; }
-        
-        .menu-livre-or a { color: #ffffff !important; opacity: 0.6; font-size: 0.95em; }
-        .menu-livre-or a:hover { opacity: 1; color: var(--jardin) !important; }
 
         .pinterest-badge { 
             display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; 
@@ -67,12 +64,19 @@
         .pinterest-badge:hover { background: var(--jardin); border-color: var(--jardin); transform: rotate(15deg) scale(1.1); color: #fff; box-shadow: 0 0 15px var(--jardin); }
 
         /* NAVIGATION FLOTTANTE */
-        .scroll-nav { position: fixed; top: 50%; width: 100%; display: flex; justify-content: space-between; transform: translateY(-50%); pointer-events: none; z-index: 1500; padding: 0 30px; box-sizing: border-box;}
+        .scroll-nav { position: fixed; top: 50%; width: 100%; display: flex; justify-content: space-between; transform: translateY(-50%); pointer-events: none; z-index: 1500; padding: 0 30px; box-sizing: border-box; }
         .arrow-nav { pointer-events: auto; background: var(--blanc); width: 55px; height: 55px; display: flex; align-items: center; justify-content: center; border-radius: 50%; text-decoration: none; color: var(--jardin); font-size: 1.5em; box-shadow: 0 5px 15px rgba(0,0,0,0.15); opacity: 0.6; transition: 0.3s; }
         .arrow-nav:hover { opacity: 1; transform: scale(1.1); background: var(--jardin); color: #fff; }
 
         /* --- HERO --- */
-        .hero { height: 100vh; min-height: 600px; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('assets/hero-jardin.jpg') center/cover no-repeat; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; position: relative; }
+        .hero { 
+            height: 100vh; min-height: 600px; position: relative; 
+            display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; overflow: hidden; 
+        }
+        .hero-img-fond { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
+        .hero-voile { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)); z-index: 2; }
+        .hero-contenu { position: relative; z-index: 3; width: 100%; max-width: 1000px; box-sizing: border-box; }
+
         .maitre-phrase { font-size: clamp(1em, 2vw, 1.4em); font-variant: small-caps; letter-spacing: 5px; font-weight: bold; margin-bottom: 20px; text-shadow: -1px -1px 0 var(--jardin), 1px -1px 0 var(--jardin), -1px 1px 0 var(--jardin), 1px 1px 0 var(--jardin); }
         .sagesse-num { font-size: clamp(0.9em, 1.5vw, 1.2em); text-transform: uppercase; letter-spacing: 4px; margin-bottom: 30px; font-weight: bold; text-shadow: -1px -1px 0 var(--jardin), 1px -1px 0 var(--jardin), -1px 1px 0 var(--jardin), 1px 1px 0 var(--jardin); }
         .hero h1 { font-size: clamp(2.5em, 8vw, 5.5em); font-weight: normal; margin-bottom: 30px; line-height: 1.1; text-shadow: -2px -2px 0 var(--jardin), 2px -2px 0 var(--jardin), -2px 2px 0 var(--jardin), 2px 2px 0 var(--jardin); }
@@ -97,10 +101,11 @@
         .monde-card h4 { font-variant: small-caps; font-size: 1.2em; margin-bottom: 10px; font-weight: bold; }
         .monde-card p { font-size: 0.95em; color: #444; line-height: 1.6; }
 
-        .monde-card.atre { border-color: var(--maison); } .monde-card.atre h4 { color: var(--maison); }
-        .monde-card.terre { border-color: var(--jardin); } .monde-card.terre h4 { color: var(--jardin); }
-        .monde-card.temple { border-color: var(--corps); } .monde-card.temple h4 { color: var(--corps); }
-        .monde-card.seve { border-color: var(--bienetre); } .monde-card.seve h4 { color: var(--bienetre); }
+        /* SPIDER CORRIGÉ */
+        .monde-card.atre { grid-area: 1 / 1 / 2 / 2; border-color: var(--maison); } .monde-card.atre h4 { color: var(--maison); }
+        .monde-card.terre { grid-area: 1 / 3 / 2 / 4; border-color: var(--jardin); } .monde-card.terre h4 { color: var(--jardin); }
+        .monde-card.temple { grid-area: 3 / 1 / 4 / 2; border-color: var(--corps); } .monde-card.temple h4 { color: var(--corps); }
+        .monde-card.seve { grid-area: 3 / 3 / 4 / 4; border-color: var(--bienetre); } .monde-card.seve h4 { color: var(--bienetre); }
         .monde-card.secret { grid-area: 4 / 1 / 5 / 4; justify-self: center; width: 60%; border-color: var(--eso); margin-top: 15px; } .monde-card.secret h4 { color: var(--eso); }
 
         .picto-container { display: flex; justify-content: center; flex-wrap: wrap; gap: 40px; margin: 40px 0; padding: 20px; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
@@ -142,13 +147,13 @@
         .price-box h4 { font-weight: normal; color: #777; margin-bottom: 10px; font-size: 1.1em; }
         .price-box .amount { font-size: 2.8em; color: var(--jardin); font-weight: bold; }
 
-        /* --- FOOTER RESTAURÉ --- */
-        footer { background: var(--brun-sombre); color: #fff; padding: 60px 20px; text-align: center; }
-        .footer-logo-small { height: 60px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.4)); transition: 0.5s;}
+        /* --- FOOTER --- */
+        footer { background: var(--brun-sombre); color: #fff; padding: 80px 20px 40px; text-align: center; }
+        .footer-logo-small { height: 60px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.4)); transition: 0.5s; margin-bottom: 30px; }
         .footer-logo-small:hover { filter: drop-shadow(0 0 30px #ffffff); transform: scale(1.05); }
-        .footer-nav-compact { display: flex; gap: 25px; list-style: none; justify-content: center; margin-bottom: 25px; padding: 0; flex-wrap: wrap; }
-        .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.7; font-variant: small-caps; transition: 0.3s; }
-        .footer-nav-compact a:hover { color: var(--jardin); opacity: 1; }
+        .footer-nav-compact { display: flex; gap: 30px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; flex-wrap: wrap; }
+        .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.6; font-variant: small-caps; transition: 0.3s; }
+        .footer-nav-compact a:hover { opacity: 1; color: var(--jardin); }
         #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
 
         /* --- RESPONSIVE MOBILE SÉCURISÉ --- */
@@ -165,7 +170,10 @@
             nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; }
             
             .dropdown { position: static; }
-            .dropdown-content { left: 0; right: 0; margin: 10px auto 0; transform: none; width: 280px; max-width: 90vw; top: auto; }
+            .dropdown-content { 
+                left: 0; right: 0; margin: 10px auto 0; 
+                transform: none; width: 280px; max-width: 90vw; top: auto; 
+            }
             
             .hero { padding-top: 360px !important; padding-bottom: 150px !important; height: auto !important; min-height: auto !important; justify-content: flex-start !important; box-sizing: border-box; }
             .hero h1 { font-size: 2.2em; } 
@@ -175,8 +183,26 @@
             .picto-container { gap: 15px; flex-direction: column; }
             
             /* RESTAURATION DU SCROLL SUR MOBILE */
-            .scroll-nav { display: flex; top: auto; bottom: 30px; transform: none; padding: 0 20px; position: fixed; justify-content: space-between; width: 100%; box-sizing: border-box; }
-            .arrow-nav { width: 45px; height: 45px; font-size: 1.2em; background: var(--jardin); color: #fff; opacity: 0.8; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+            .scroll-nav { 
+                display: flex; 
+                top: auto; 
+                bottom: 30px; 
+                transform: none; 
+                padding: 0 20px; 
+                position: fixed;
+                justify-content: space-between;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            .arrow-nav { 
+                width: 45px; 
+                height: 45px; 
+                font-size: 1.2em; 
+                background: var(--jardin); 
+                color: #fff;
+                opacity: 0.8;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            }
         }
     </style>
 </head>
@@ -187,7 +213,6 @@
         <a href="argile-verte.html" class="arrow-nav" aria-label="Sagesse Suivante">❯</a>
     </div>
 
-    <!-- HEADER VALIDÉ -->
     <header>
         <div class="nav-container">
             <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
@@ -325,18 +350,18 @@
     </main>
 
     <section class="pricing-section">
-        <h2 class="section-title" style="color:var(--brun-sombre); margin-bottom: 30px;">Encyclopédie des Solutions Nomades (PDF)</h2>
+        <h2 class="section-title" style="color:var(--brun-sombre); margin-bottom: 30px;">L'Encyclopédie des Solutions Nomades (PDF)</h2>
         <div class="pills-row">
-            <a href="encyclopedie.html#vol1" class="pill p1">Vol 1 : Fondations</a>
+            <a href="encyclopedie.html#vol1" class="pill p1">Vol 1 : Fondation</a>
             <a href="encyclopedie.html#vol2" class="pill p2">Vol 2 : Enracinement</a>
             <a href="encyclopedie.html#vol3" class="pill p3">Vol 3 : Éclosion</a>
             <a href="encyclopedie.html#vol4" class="pill p4">Vol 4 : Harmonie</a>
             <a href="encyclopedie.html#vol5" class="pill p5">Vol 5 : Élévation</a>
         </div>
         <div class="pricing-grid">
-            <div class="price-box"><h4>Volume de Savoir</h4><span class="amount">14,90 €</span></div>
+            <div class="price-box"><h4>Un Volume de Savoir</h4><span class="amount">14,90 €</span></div>
             <div class="price-box"><h4>Pack Trio Alchimique</h4><span class="amount">24,90 €</span></div>
-            <div class="price-box"><h4>Intégrale du Maître (5 Vol.)</h4><span class="amount">39,90 €</span></div>
+            <div class="price-box"><h4>L'Intégrale (5 Vol.)</h4><span class="amount">39,90 €</span></div>
         </div>
     </section>
 

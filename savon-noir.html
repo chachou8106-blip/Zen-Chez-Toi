@@ -64,7 +64,7 @@
         .pinterest-badge:hover { background: var(--or-zen); border-color: var(--or-zen); transform: rotate(15deg) scale(1.1); color: #fff; box-shadow: 0 0 15px var(--or-zen); }
 
         /* NAVIGATION FLOTTANTE */
-        .scroll-nav { position: fixed; top: 50%; width: 100%; display: flex; justify-content: space-between; transform: translateY(-50%); pointer-events: none; z-index: 1500; padding: 0 30px; }
+        .scroll-nav { position: fixed; top: 50%; width: 100%; display: flex; justify-content: space-between; transform: translateY(-50%); pointer-events: none; z-index: 1500; padding: 0 30px; box-sizing: border-box; }
         .arrow-nav { pointer-events: auto; background: var(--blanc); width: 55px; height: 55px; display: flex; align-items: center; justify-content: center; border-radius: 50%; text-decoration: none; color: var(--maison); font-size: 1.5em; box-shadow: 0 5px 15px rgba(0,0,0,0.15); opacity: 0.6; transition: 0.3s; }
         .arrow-nav:hover { opacity: 1; transform: scale(1.1); background: var(--maison); color: #fff; }
 
@@ -180,15 +180,36 @@
             .histoire-section, .allies-box, .expert-container { padding: 30px 20px; }
             .mondes-encadre { padding: 25px 15px; border-width: 2px; width: 100%; box-sizing: border-box; overflow: hidden; }
             .picto-container { gap: 15px; flex-direction: column; }
-            .scroll-nav { display: none; } 
+            
+            /* RESTAURATION DU SCROLL SUR MOBILE */
+            .scroll-nav { 
+                display: flex; 
+                top: auto; 
+                bottom: 30px; 
+                transform: none; 
+                padding: 0 20px; 
+                position: fixed;
+                justify-content: space-between;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            .arrow-nav { 
+                width: 45px; 
+                height: 45px; 
+                font-size: 1.2em; 
+                background: var(--maison); 
+                color: #fff;
+                opacity: 0.8;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            }
         }
     </style>
 </head>
 <body>
 
     <div class="scroll-nav">
-        <a href="vinaigre-blanc.html" class="arrow-nav">❮</a>
-        <a href="percarbonate.html" class="arrow-nav">❯</a>
+        <a href="vinaigre-blanc.html" class="arrow-nav" aria-label="Sagesse Précédente">❮</a>
+        <a href="percarbonate.html" class="arrow-nav" aria-label="Sagesse Suivante">❯</a>
     </div>
 
     <header>

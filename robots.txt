@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
-
+User-agent: Mediapartners-Google
+Allow: /
 Sitemap: https://www.zencheztoi.fr/sitemap.xml

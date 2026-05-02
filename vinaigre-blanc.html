@@ -64,11 +64,11 @@
         .pinterest-badge:hover { background: var(--or-zen); border-color: var(--or-zen); transform: rotate(15deg) scale(1.1); color: #fff; box-shadow: 0 0 15px var(--or-zen); }
 
         /* NAVIGATION FLOTTANTE */
-        .scroll-nav { position: fixed; top: 50%; width: 100%; display: flex; justify-content: space-between; transform: translateY(-50%); pointer-events: none; z-index: 1500; padding: 0 30px; }
+        .scroll-nav { position: fixed; top: 50%; width: 100%; display: flex; justify-content: space-between; transform: translateY(-50%); pointer-events: none; z-index: 1500; padding: 0 30px; box-sizing: border-box; }
         .arrow-nav { pointer-events: auto; background: var(--blanc); width: 55px; height: 55px; display: flex; align-items: center; justify-content: center; border-radius: 50%; text-decoration: none; color: var(--maison); font-size: 1.5em; box-shadow: 0 5px 15px rgba(0,0,0,0.15); opacity: 0.6; transition: 0.3s; }
         .arrow-nav:hover { opacity: 1; transform: scale(1.1); background: var(--maison); color: #fff; }
 
-        /* --- HERO (Blindé pour mobile) --- */
+        /* --- HERO --- */
         .hero { 
             height: 100vh; min-height: 600px; position: relative; 
             display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; overflow: hidden; 
@@ -159,7 +159,6 @@
         @media (max-width: 1000px) { 
             .histoire-text { column-count: 1; } 
             .expertise-list { grid-template-columns: 1fr; } 
-            /* LA CORRECTION DU SPIDER : Flexbox empêche les boîtes de déborder */
             .mondes-spider { display: flex; flex-direction: column; gap: 20px; width: 100%; box-sizing: border-box; overflow: hidden; } 
             .monde-card, .monde-card.secret { width: 100% !important; max-width: 100%; margin: 0 !important; box-sizing: border-box; } 
             .mondes-spider-logo { order: -1; width: 80px; margin: 0 auto 20px auto; } 
@@ -175,29 +174,42 @@
                 transform: none; width: 280px; max-width: 90vw; top: auto; 
             }
             
-            /* LA CORRECTION DU HERO MOBILE : Hauteur automatique avec des gros coussins (paddings) */
-            .hero { 
-                padding-top: 360px !important; 
-                padding-bottom: 150px !important; 
-                height: auto !important; 
-                min-height: auto !important; 
-                justify-content: flex-start !important; 
-                box-sizing: border-box;
-            }
+            .hero { padding-top: 360px !important; padding-bottom: 150px !important; height: auto !important; min-height: auto !important; justify-content: flex-start !important; box-sizing: border-box; }
             .hero h1 { font-size: 2.2em; } 
             
             .histoire-section, .allies-box, .expert-container { padding: 30px 20px; }
             .mondes-encadre { padding: 25px 15px; border-width: 2px; width: 100%; box-sizing: border-box; overflow: hidden; }
             .picto-container { gap: 15px; flex-direction: column; }
-            .scroll-nav { display: none; } 
+            
+            /* RESTAURATION DU SCROLL SUR MOBILE */
+            .scroll-nav { 
+                display: flex; 
+                top: auto; 
+                bottom: 30px; 
+                transform: none; 
+                padding: 0 20px; 
+                position: fixed;
+                justify-content: space-between;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            .arrow-nav { 
+                width: 45px; 
+                height: 45px; 
+                font-size: 1.2em; 
+                background: var(--maison); 
+                color: #fff;
+                opacity: 0.8;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            }
         }
     </style>
 </head>
 <body>
 
     <div class="scroll-nav">
-        <a href="bicarbonate.html" class="arrow-nav">❮</a>
-        <a href="savon-noir.html" class="arrow-nav">❯</a>
+        <a href="bicarbonate.html" class="arrow-nav" aria-label="Sagesse Précédente">❮</a>
+        <a href="savon-noir.html" class="arrow-nav" aria-label="Sagesse Suivante">❯</a>
     </div>
 
     <header>

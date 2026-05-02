@@ -174,20 +174,47 @@
                 transform: none; width: 280px; max-width: 90vw; top: auto; 
             }
             
-            .hero { padding-top: 360px !important; padding-bottom: 150px !important; height: auto !important; min-height: auto !important; justify-content: flex-start !important; box-sizing: border-box; }
+            .hero { 
+                padding-top: 360px !important; 
+                padding-bottom: 150px !important; 
+                height: auto !important; 
+                min-height: auto !important; 
+                justify-content: flex-start !important; 
+                box-sizing: border-box;
+            }
             .hero h1 { font-size: 2.2em; } 
             
             .histoire-section, .allies-box, .expert-container { padding: 30px 20px; }
             .mondes-encadre { padding: 25px 15px; border-width: 2px; width: 100%; box-sizing: border-box; overflow: hidden; }
             .picto-container { gap: 15px; flex-direction: column; }
-            .scroll-nav { display: none; } 
+            
+            /* RESTAURATION DU SCROLL SUR MOBILE */
+            .scroll-nav { 
+                display: flex; 
+                top: auto; 
+                bottom: 30px; 
+                transform: none; 
+                padding: 0 20px; 
+                position: fixed;
+                justify-content: flex-end; /* Pour Bicarbonate, on a que la flèche de droite */
+            }
+            .arrow-nav { 
+                width: 45px; 
+                height: 45px; 
+                font-size: 1.2em; 
+                background: var(--maison); 
+                color: #fff;
+                opacity: 0.8;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            }
         }
     </style>
 </head>
 <body>
 
     <div class="scroll-nav">
-        <a href="vinaigre-blanc.html" class="arrow-nav">❯</a>
+        <!-- Bicarbonate étant la Sagesse n°1, il ne pointe que vers la suivante -->
+        <a href="vinaigre-blanc.html" class="arrow-nav" aria-label="Sagesse Suivante">❯</a>
     </div>
 
     <header>
@@ -232,9 +259,9 @@
         <section class="histoire-section">
             <h2>Le Médiateur Cristallin et le Souffle du Natron</h2>
             <div class="histoire-text">
-                <p>Bien avant de remplir nos officines modernes, le bicarbonate existait sous une forme sauvage et sacrée : le Natron[cite: 1]. Récolté par les anciens alchimistes égyptiens sur les rives des lacs salés évaporés, il était le pilier incontesté de la purification rituelle et de la préservation du temple corporel[cite: 1]. Pour les scribes et les pharaons, ce sédiment n'était pas une simple poudre, mais un morceau de ciel cristallisé sur Terre, capable de neutraliser les empreintes du temps et de la corruption[cite: 1]. Ce n'est qu'en 1846 que la science moderne a stabilisé cette force tranquille, offrant au monde une substance d'une pureté absolue, capable de rééquilibrer tout environnement qu'elle touche sans jamais agresser le vivant[cite: 1].</p>
+                <p>Bien avant de remplir nos officines modernes, le bicarbonate existait sous une forme sauvage et sacrée : le Natron. Récolté par les anciens alchimistes égyptiens sur les rives des lacs salés évaporés, il était le pilier incontesté de la purification rituelle et de la préservation du temple corporel. Pour les scribes et les pharaons, ce sédiment n'était pas une simple poudre, mais un morceau de ciel cristallisé sur Terre, capable de neutraliser les empreintes du temps et de la corruption. Ce n'est qu'en 1846 que la science moderne a stabilisé cette force tranquille, offrant au monde une substance d'une pureté absolue, capable de rééquilibrer tout environnement qu'elle touche sans jamais agresser le vivant.</p>
                 
-                <p>Sur le plan scientifique, le bicarbonate de sodium est une substance amphotère remarquable, agissant comme un tampon de pH universel[cite: 1]. Sa structure moléculaire lui permet de neutraliser aussi bien les acides que les bases excessives, transformant le chaos chimique en une neutralité stable et apaisée[cite: 1]. Au contact de l'eau ou de la chaleur, il libère du dioxyde de carbone sous forme de micro-bulles effervescentes, créant une action mécanique douce mais radicale pour désincruster la matière[cite: 1]. Cette intelligence ionique lui confère également un pouvoir désodorisant absolu : plutôt que de masquer les effluves, il capture les molécules acides et basiques responsables des mémoires olfactives pour les dissoudre définitivement[cite: 1].</p>
+                <p>Sur le plan scientifique, le bicarbonate de sodium est une substance amphotère remarquable, agissant comme un tampon de pH universel. Sa structure moléculaire lui permet de neutraliser aussi bien les acides que les bases excessives, transformant le chaos chimique en une neutralité stable et apaisée. Au contact de l'eau ou de la chaleur, il libère du dioxyde de carbone sous forme de micro-bulles effervescentes, créant une action mécanique douce mais radicale pour désincruster la matière. Cette intelligence ionique lui confère également un pouvoir désodorisant absolu : plutôt que de masquer les effluves, il capture les molécules acides et basiques responsables des mémoires olfactives pour les dissoudre définitivement.</p>
             </div>
 
             <div class="mondes-container">
@@ -243,26 +270,26 @@
                     <div class="mondes-spider">
                         <div class="monde-card atre">
                             <h4>Monde de l'Âtre</h4>
-                            <p>Saupoudrez ce cristal sur vos surfaces et dans vos récipients pour neutraliser les mémoires acides et restaurer la clarté de votre foyer[cite: 1].</p>
+                            <p>Saupoudrez ce cristal sur vos surfaces et dans vos récipients pour neutraliser les mémoires acides et restaurer la clarté de votre foyer.</p>
                         </div>
                         <div class="monde-card terre">
                             <h4>Monde de la Terre</h4>
-                            <p>Équilibrez le pH de vos sols et érigez un bouclier minéral protecteur sur vos feuillages pour dissiper les ombres blanches (oïdium) et parasites[cite: 1].</p>
+                            <p>Équilibrez le pH de vos sols et érigez un bouclier minéral protecteur sur vos feuillages pour dissiper les ombres blanches (oïdium) et parasites.</p>
                         </div>
                         <div class="mondes-spider-logo">
                             <img src="assets/logo.png" alt="Logo Zen Chez Toi">
                         </div>
                         <div class="monde-card temple">
                             <h4>Monde du Temple</h4>
-                            <p>Massez vos gencives et polissez l'émail de votre temple avec cette nacre fine pour retrouver un sourire étincelant et une haleine pure[cite: 1].</p>
+                            <p>Massez vos gencives et polissez l'émail de votre temple avec cette nacre fine pour retrouver un sourire étincelant et une haleine pure.</p>
                         </div>
                         <div class="monde-card seve">
                             <h4>Monde de la Sève</h4>
-                            <p>Incorporez un souffle de cette poudre à vos préparations culinaires pour libérer les saveurs et insuffler une légèreté aérienne à vos mets[cite: 1].</p>
+                            <p>Incorporez un souffle de cette poudre à vos préparations culinaires pour libérer les saveurs et insuffler une légèreté aérienne à vos mets.</p>
                         </div>
                         <div class="monde-card secret">
                             <h4>Monde du Secret</h4>
-                            <p>Baignez vos textiles précieux et objets rituels dans cette eau cristalline pour effacer les empreintes énergétiques et olfactives du passé[cite: 1].</p>
+                            <p>Baignez vos textiles précieux et objets rituels dans cette eau cristalline pour effacer les empreintes énergétiques et olfactives du passé.</p>
                         </div>
                     </div>
                 </div>
@@ -288,21 +315,21 @@
         <section class="expert-container">
             <div class="maitre-mot">
                 <h3>Mot du Maître</h3>
-                <p>"Le Bicarbonate de Soude est la pierre angulaire de votre temple matériel et vibratoire. Il est le grand médiateur : dans l'Âtre, il purifie ; sur la Terre, il équilibre ; au Temple, il lustre ; dans la Sève, il allège ; et dans le Secret, il blanchit les mémoires. Pour l'Apprentissage Alchimique, j'ai sélectionné la Goutte d'Argent, un format d'un kilo en grain extra-fin, idéal pour la précision des rituels de soin et de bouche. Pour la Souveraineté du Domaine, la Réserve Sacrée de 5kg s'impose comme le magistère indispensable pour la tenue pérenne de vos fondations ménagères. Ce choix philosophique garantit que la pureté ne soit jamais une option, mais une base immuable de votre autonomie."[cite: 1]</p>
+                <p>"Le Bicarbonate de Soude est la pierre angulaire de votre temple matériel et vibratoire. Il est le grand médiateur : dans l'Âtre, il purifie ; sur la Terre, il équilibre ; au Temple, il lustre ; dans la Sève, il allège ; et dans le Secret, il blanchit les mémoires. Pour l'Apprentissage Alchimique, j'ai sélectionné la Goutte d'Argent, un format d'un kilo en grain extra-fin, idéal pour la précision des rituels de soin et de bouche. Pour la Souveraineté du Domaine, la Réserve Sacrée de 5kg s'impose comme le magistère indispensable pour la tenue pérenne de vos fondations ménagères. Ce choix philosophique garantit que la pureté ne soit jamais une option, mais une base immuable de votre autonomie."</p>
             </div>
             
             <div class="expertise-list">
                 <div class="expertise-item">
                     <h4>Neutralité Radicale</h4>
-                    <p>Un tampon de pH exceptionnel capable d'apaiser toutes les acidités pour restaurer un équilibre parfait et sain dans vos préparations[cite: 1].</p>
+                    <p>Un tampon de pH exceptionnel capable d'apaiser toutes les acidités pour restaurer un équilibre parfait et sain dans vos préparations.</p>
                 </div>
                 <div class="expertise-item">
                     <h4>Action Effervescente</h4>
-                    <p>Une libération de gaz noble (CO2) au contact de l'acidité qui désagrège les impuretés par un massage mécanique microscopique et respectueux[cite: 1].</p>
+                    <p>Une libération de gaz noble (CO2) au contact de l'acidité qui désagrège les impuretés par un massage mécanique microscopique et respectueux.</p>
                 </div>
                 <div class="expertise-item">
                     <h4>Médiateur Olfactif</h4>
-                    <p>Une capacité rare à piéger les molécules d'odeur dans sa structure cristalline (dans le réfrigérateur ou les chaussures) plutôt que de simplement les masquer[cite: 1].</p>
+                    <p>Une capacité rare à piéger les molécules d'odeur dans sa structure cristalline (dans le réfrigérateur ou les chaussures) plutôt que de simplement les masquer.</p>
                 </div>
             </div>
         </section>
@@ -311,7 +338,7 @@
             <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
                 <div>
                     <p style="font-style: italic; margin-bottom: 10px; color: #777; font-size: 0.9em;">Apprentissage Alchimique (Extra-Fin)</p>
-                    <a href="https://www.amazon.fr/Bicarbonate-Soude-3kg-alimentaire-lint%C3%A9rieur/dp/B005WXXUZW?tag=zencheztoi-21" class="amazon-btn" target="_blank" rel="nofollow sponsored">Goutte d'Argent (1kg)</a>
+                    <a href="https://www.amazon.fr/Bicarbonate-Soude-DOYPACK-50kg-zipp%C3%A9/dp/B08T7DLBX9?tag=zencheztoi-21" class="amazon-btn" target="_blank" rel="nofollow sponsored">Goutte d'Argent (1kg)</a>
                 </div>
                 <div>
                     <p style="font-style: italic; margin-bottom: 10px; color: #777; font-size: 0.9em;">Souveraineté du Domaine (Technique)</p>

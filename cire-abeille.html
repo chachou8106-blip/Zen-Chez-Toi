@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sagesse n°18 : La Cire d'Abeille – Encyclopédie des Solutions Nomades</title>
 
-    <!-- ✅ SEO : Canonical -->
     <link rel="canonical" href="https://zencheztoi.fr/cire-abeille" />
 
-    <!-- ✅ SEO : Open Graph (partage social & Pinterest) -->
     <meta property="og:type"        content="article" />
     <meta property="og:title"       content="Sagesse n°18 : La Cire d'Abeille – Zen Chez Toi" />
     <meta property="og:description" content="Découvrez la Cire d'Abeille, l'onguent solaire du domaine. Protecteur naturel ancestral pour imperméabiliser, nourrir et sceller l'éclat des matériaux." />
@@ -17,7 +15,6 @@
     <meta property="og:site_name"   content="Zen Chez Toi" />
     <meta property="og:locale"      content="fr_FR" />
 
-    <!-- ✅ SEO : Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -27,19 +24,8 @@
       "image": "https://zencheztoi.fr/assets/hero-jardin.jpg",
       "url": "https://zencheztoi.fr/cire-abeille",
       "dateModified": "2026-04-30",
-      "author": {
-        "@type": "Organization",
-        "name": "Zen Chez Toi",
-        "url": "https://zencheztoi.fr"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Zen Chez Toi",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://zencheztoi.fr/assets/logo.png"
-        }
-      }
+      "author": { "@type": "Organization", "name": "Zen Chez Toi", "url": "https://zencheztoi.fr" },
+      "publisher": { "@type": "Organization", "name": "Zen Chez Toi", "logo": { "@type": "ImageObject", "url": "https://zencheztoi.fr/assets/logo.png" } }
     }
     </script>
 
@@ -78,7 +64,6 @@
         nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
         nav a:hover { color: var(--jardin); text-shadow: 0 0 15px var(--jardin); }
 
-        /* MENU DÉROULANT */
         .dropdown { position: relative; display: inline-block; padding: 15px 0; cursor: pointer; }
         .dropdown-content {
             display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
@@ -98,6 +83,7 @@
             border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none;
             font-family: 'Georgia', serif; font-style: italic; font-size: 1.2rem; transition: all 0.4s ease;
             background: rgba(255,255,255,0.1); backdrop-filter: blur(2px); padding-bottom: 3px;
+            flex-shrink: 0;
         }
         .pinterest-badge:hover { background: var(--jardin); border-color: var(--jardin); transform: rotate(15deg) scale(1.1); color: #fff; box-shadow: 0 0 15px var(--jardin); }
 
@@ -109,7 +95,8 @@
         /* --- HERO (Blindé) --- */
         .hero {
             height: 100vh; min-height: 600px; position: relative;
-            display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; overflow: hidden;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            text-align: center; color: #ffffff; padding: 0 20px; overflow: hidden;
         }
         .hero-img-fond { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
         .hero-voile { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)); z-index: 2; }
@@ -123,33 +110,35 @@
         /* --- CONTENU --- */
         .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
         .histoire-section { background: var(--blanc); padding: 80px; border-radius: 30px; margin-top: -120px; position: relative; z-index: 10; box-shadow: 0 25px 60px rgba(0,0,0,0.08); border-top: 4px solid var(--jardin); }
-        .histoire-section h2 { font-size: 2.8em; color: var(--jardin); margin-bottom: 40px; text-align: center; font-weight: normal; font-family: 'Georgia', serif;}
+        .histoire-section h2 { font-size: clamp(1.5em, 3vw, 2.8em); color: var(--jardin); margin-bottom: 40px; text-align: center; font-weight: normal; font-family: 'Georgia', serif; }
         .histoire-text { column-count: 2; column-gap: 60px; text-align: justify; font-size: 1.15rem; color: #444; line-height: 2; }
 
         /* --- LES 5 MONDES --- */
         .mondes-container { margin: 60px 0; }
         .mondes-encadre { border: 3px solid var(--jardin); padding: 50px; border-radius: 20px; position: relative; background: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.03); }
-        .mondes-encadre h3 { font-size: 2.4em; color: var(--jardin); margin-bottom: 50px; text-align: center; font-weight: normal; font-family: 'Georgia', serif;}
+        .mondes-encadre h3 { font-size: clamp(1.4em, 3vw, 2.4em); color: var(--jardin); margin-bottom: 50px; text-align: center; font-weight: normal; font-family: 'Georgia', serif; }
 
+        /* SPIDER — desktop */
         .mondes-spider { display: grid; grid-template-columns: 1fr auto 1fr; grid-template-rows: auto auto auto; gap: 30px 40px; align-items: center; justify-items: center; }
-        .mondes-spider-logo { grid-area: 2 / 2 / 3 / 3; position: relative; z-index: 2; margin: 0; }
+        .mondes-spider-logo { grid-area: 2 / 2 / 3 / 3; position: relative; z-index: 2; }
         .mondes-spider-logo img { width: 120px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1)); }
 
         .monde-card { background: var(--bg-sable); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; border-top: 4px solid; position: relative; z-index: 1; width: 100%; box-sizing: border-box; }
         .monde-card h4 { font-variant: small-caps; font-size: 1.2em; margin-bottom: 10px; font-weight: bold; }
         .monde-card p { font-size: 0.95em; color: #444; line-height: 1.6; }
 
-        .monde-card.atre { grid-area: 1 / 1 / 2 / 2; border-color: var(--maison); } .monde-card.atre h4 { color: var(--maison); }
-        .monde-card.terre { grid-area: 1 / 3 / 2 / 4; border-color: var(--jardin); } .monde-card.terre h4 { color: var(--jardin); }
-        .monde-card.temple { grid-area: 3 / 1 / 4 / 2; border-color: var(--corps); } .monde-card.temple h4 { color: var(--corps); }
-        .monde-card.seve { grid-area: 3 / 3 / 4 / 4; border-color: var(--bienetre); } .monde-card.seve h4 { color: var(--bienetre); }
+        .monde-card.atre   { grid-area: 1 / 1 / 2 / 2; border-color: var(--maison); }  .monde-card.atre h4   { color: var(--maison); }
+        .monde-card.terre  { grid-area: 1 / 3 / 2 / 4; border-color: var(--jardin); }  .monde-card.terre h4  { color: var(--jardin); }
+        .monde-card.temple { grid-area: 3 / 1 / 4 / 2; border-color: var(--corps); }   .monde-card.temple h4 { color: var(--corps); }
+        .monde-card.seve   { grid-area: 3 / 3 / 4 / 4; border-color: var(--bienetre); }.monde-card.seve h4   { color: var(--bienetre); }
         .monde-card.secret { grid-area: 4 / 1 / 5 / 4; justify-self: center; width: 60%; border-color: var(--eso); margin-top: 15px; } .monde-card.secret h4 { color: var(--eso); }
 
+        /* --- PICTOS (émojis) --- */
         .picto-container { display: flex; justify-content: center; flex-wrap: wrap; gap: 40px; margin: 40px 0; padding: 20px; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
         .picto-item { text-align: center; font-size: 0.75em; text-transform: uppercase; letter-spacing: 1px; color: var(--jardin); font-weight: bold; }
-        .picto-item img { height: 45px; display: block; margin: 0 auto 10px; opacity: 0.8; }
+        .picto-icon { font-size: 3em; display: block; margin-bottom: 10px; line-height: 1; }
 
-        /* --- ALLIANCES & EXPERTISE --- */
+        /* --- ALLIANCES --- */
         .allies-box { background: var(--bg-sable); padding: 50px; border-radius: 20px; margin: 80px 0; border-left: 8px solid var(--jardin); }
         .allies-box h3 { font-size: 2em; color: var(--brun-sombre); margin-bottom: 30px; font-weight: normal; }
         .allies-list { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
@@ -157,6 +146,7 @@
         .allies-list a { font-weight: bold; color: var(--brun-sombre); text-decoration: none; border-bottom: 2px solid var(--jardin); font-size: 1.1em; }
         .vol-tag { font-size: 0.8em; font-weight: bold; color: var(--jardin); text-transform: uppercase; letter-spacing: 1px; }
 
+        /* --- EXPERTISE --- */
         .expert-container { background: #fff; border: 1px solid #eee; padding: 50px; border-radius: 30px; margin: 60px 0; box-shadow: 0 15px 40px rgba(0,0,0,0.02); }
         .maitre-mot h3 { font-size: 1.6em; color: var(--jardin); margin-bottom: 20px; font-variant: small-caps; letter-spacing: 2px; }
         .maitre-mot p { font-style: italic; font-size: 1.1em; color: #666; line-height: 1.7; border-left: 3px solid #eee; padding-left: 20px; }
@@ -170,7 +160,6 @@
         .amazon-btn { display: inline-block; padding: 18px 35px; background: var(--brun-sombre); color: #fff; text-decoration: none; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 1.1em; border: 2px solid var(--jardin); transition: 0.3s; margin: 5px; }
         .amazon-btn:hover { background: var(--jardin); transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
 
-        /* --- ADSENSE --- */
         .ad-container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
 
         /* --- PRICING --- */
@@ -178,11 +167,11 @@
         .section-title { font-variant: small-caps; font-size: 2.2em; color: var(--brun-sombre); margin-bottom: 20px; }
         .pills-row { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 40px; }
         .pill { padding: 12px 20px; border: 2px solid; border-radius: 50px; text-decoration: none; font-variant: small-caps; font-size: 1em; font-weight: bold; transition: 0.3s; background: var(--blanc); }
-        .p1 { border-color: var(--maison); color: var(--maison); } .p1:hover { background: var(--maison); color: #fff; }
-        .p2 { border-color: var(--jardin); color: var(--jardin); } .p2:hover { background: var(--jardin); color: #fff; }
-        .p3 { border-color: var(--corps); color: var(--corps); } .p3:hover { background: var(--corps); color: #fff; }
+        .p1 { border-color: var(--maison); color: var(--maison); }  .p1:hover { background: var(--maison); color: #fff; }
+        .p2 { border-color: var(--jardin); color: var(--jardin); }  .p2:hover { background: var(--jardin); color: #fff; }
+        .p3 { border-color: var(--corps); color: var(--corps); }    .p3:hover { background: var(--corps); color: #fff; }
         .p4 { border-color: var(--bienetre); color: var(--bienetre); } .p4:hover { background: var(--bienetre); color: #fff; }
-        .p5 { border-color: var(--eso); color: var(--eso); } .p5:hover { background: var(--eso); color: #fff; }
+        .p5 { border-color: var(--eso); color: var(--eso); }        .p5:hover { background: var(--eso); color: #fff; }
         .pricing-grid { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
         .price-box { background: var(--bg-sable); padding: 30px 40px; border-radius: 20px; border: 2px solid var(--jardin); min-width: 200px; }
         .price-box h4 { font-variant: small-caps; margin-bottom: 10px; color: var(--brun-sombre); }
@@ -195,32 +184,71 @@
         .footer-nav-compact { display: flex; gap: 30px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; flex-wrap: wrap; }
         .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.6; font-variant: small-caps; transition: 0.3s; }
         .footer-nav-compact a:hover { opacity: 1; color: var(--jardin); }
-
         #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
 
-        /* --- RESPONSIVE MOBILE --- */
+        /* ===================== */
+        /* RESPONSIVE TABLETTE   */
+        /* ===================== */
         @media (max-width: 900px) {
             .histoire-text { column-count: 1; }
             .expertise-list { grid-template-columns: 1fr; }
             .mondes-encadre { padding: 30px 20px; }
         }
+
+        /* ===================== */
+        /* RESPONSIVE MOBILE     */
+        /* ===================== */
         @media (max-width: 768px) {
-            .nav-container { flex-direction: column; gap: 15px; padding: 15px 20px; }
-            .header-right { flex-direction: column; gap: 15px; align-items: center; width: 100%; }
-            nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; }
-            .dropdown { position: static; }
-            .dropdown-content {
-                left: 0; right: 0; margin: 10px auto 0;
-                transform: none; width: 280px; max-width: 90vw; top: auto;
+
+            /* Header : fond sombre pour lisibilité, plus de position absolute */
+            header { position: relative; background: rgba(43,38,34,0.95); padding: 15px 0; }
+            .nav-container { flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 0 15px; gap: 10px; }
+            .logo img { max-height: 55px; }
+
+            /* Nav et Pinterest sur la même ligne en bas du logo */
+            .header-right { flex-direction: row; flex-wrap: wrap; align-items: center; gap: 10px; justify-content: center; width: 100%; }
+            nav ul { flex-wrap: wrap; justify-content: center; gap: 8px; }
+            nav a { font-size: 0.95em; }
+
+            /* Pinterest ne chevauche plus rien */
+            .pinterest-badge { width: 30px; height: 30px; font-size: 1rem; }
+
+            /* Hero : plus de décalage puisque le header n'est plus absolu */
+            .hero { height: 70vh; min-height: 400px; }
+            .hero h1 { font-size: clamp(2em, 10vw, 3em); }
+            .tagline { font-size: clamp(1em, 4vw, 1.3em); }
+
+            .histoire-section { padding: 30px 15px; margin-top: 0; }
+
+            /* Spider : colonne unique sur mobile */
+            .mondes-spider {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
             }
-            .hero { padding-top: 200px !important; justify-content: flex-start !important; height: auto !important; padding-bottom: 60px; }
-            .hero h1 { font-size: 2.2em; }
-            .histoire-section { padding: 40px 20px; margin-top: -60px; }
-            .allies-box { padding: 30px 20px; }
-            .expert-container { padding: 30px 20px; }
-            .monde-card.secret { width: 100%; }
-            .scroll-nav { position: fixed; top: auto; bottom: 30px; transform: none; padding: 0 20px; }
-            .arrow-nav { width: 45px; height: 45px; font-size: 1.2em; background: var(--jardin); color: #fff; opacity: 0.8; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+            .monde-card.atre,
+            .monde-card.terre,
+            .monde-card.temple,
+            .monde-card.seve,
+            .monde-card.secret {
+                grid-area: auto;
+                width: 100%;
+            }
+            .mondes-spider-logo { order: -1; margin-bottom: 10px; }
+            .mondes-spider-logo img { width: 80px; }
+            .mondes-encadre { padding: 20px 15px; }
+            .mondes-encadre h3 { margin-bottom: 25px; }
+
+            .allies-box { padding: 25px 15px; margin: 40px 0; }
+            .expert-container { padding: 25px 15px; }
+            .picto-container { gap: 20px; }
+
+            /* Flèches en bas sur mobile */
+            .scroll-nav { position: fixed; top: auto; bottom: 20px; transform: none; padding: 0 15px; }
+            .arrow-nav { width: 45px; height: 45px; font-size: 1.2em; background: var(--jardin); color: #fff; opacity: 0.9; }
+
+            .dropdown { position: static; }
+            .dropdown-content { left: 0; right: 0; transform: none; width: 260px; max-width: 90vw; margin: 5px auto 0; top: auto; }
         }
     </style>
 </head>
@@ -308,10 +336,10 @@
             </div>
 
             <div class="picto-container">
-                <div class="picto-item"><img src="assets/picto-food.png" alt="Grade Alimentaire" loading="lazy">Grade Alimentaire</div>
-                <div class="picto-item"><img src="assets/picto-bio.png" alt="100% Naturelle" loading="lazy">100% Naturelle</div>
-                <div class="picto-item"><img src="assets/picto-france.png" alt="Purifiée" loading="lazy">Purifiée</div>
-                <div class="picto-item"><img src="assets/picto-recycle.png" alt="Sans Paraffine" loading="lazy">Sans Paraffine</div>
+                <div class="picto-item"><span class="picto-icon">🍯</span>Grade Alimentaire</div>
+                <div class="picto-item"><span class="picto-icon">🌿</span>100% Naturelle</div>
+                <div class="picto-item"><span class="picto-icon">✨</span>Purifiée</div>
+                <div class="picto-item"><span class="picto-icon">🐝</span>Sans Paraffine</div>
             </div>
         </section>
 
@@ -329,7 +357,6 @@
                 <h3>Mot du Maître</h3>
                 <p>"La Cire d'Abeille est l'alchimie parfaite de l'Enracinement, rayonnant à travers vos cinq mondes. Dans l'<b>Âtre</b>, elle nourrit et sublime les bois nobles ; sur la <b>Terre</b>, elle protège vos outils des intempéries. Pour le <b>Temple</b>, elle se fait baume protecteur réparateur pour la peau, tandis qu'elle préserve la <b>Sève</b> de vos aliments grâce aux tissus cirés. Enfin, dans le <b>Secret</b>, elle scelle l'espace rituel en se consumant dans des cierges purs, exempts de toxines. Travaillez-la toujours au bain-marie, car la flamme directe détruit son essence solaire."</p>
             </div>
-
             <div class="expertise-list">
                 <div class="expertise-item">
                     <h4>Bouclier Hydrofuge</h4>

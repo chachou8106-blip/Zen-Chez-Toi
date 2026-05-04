@@ -123,7 +123,7 @@
         /* --- CONTENU --- */
         .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
         .histoire-section { background: var(--blanc); padding: 80px; border-radius: 30px; margin-top: -120px; position: relative; z-index: 10; box-shadow: 0 25px 60px rgba(0,0,0,0.08); border-top: 4px solid var(--jardin); }
-        .histoire-section h2 { font-size: 2.8em; color: var(--jardin); margin-bottom: 40px; text-align: center; font-weight: normal; font-family: 'Georgia', serif;}
+        .histoire-section h2 { font-size: clamp(1.4em, 5vw, 2.8em); color: var(--jardin); margin-bottom: 40px; text-align: center; font-weight: normal; font-family: 'Georgia', serif; overflow-wrap: break-word; hyphens: auto; word-break: break-word; }
         .histoire-text { column-count: 2; column-gap: 60px; text-align: justify; font-size: 1.15rem; color: #444; line-height: 2; }
 
         /* --- LES 5 MONDES --- */
@@ -148,6 +148,7 @@
         .picto-container { display: flex; justify-content: center; flex-wrap: wrap; gap: 40px; margin: 40px 0; padding: 20px; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
         .picto-item { text-align: center; font-size: 0.75em; text-transform: uppercase; letter-spacing: 1px; color: var(--jardin); font-weight: bold; }
         .picto-emoji { font-size: 2.2em; display: block; margin: 0 auto 10px; line-height: 1; }
+
         /* --- ALLIANCES & EXPERTISE --- */
         .allies-box { background: var(--bg-sable); padding: 50px; border-radius: 20px; margin: 80px 0; border-left: 8px solid var(--jardin); }
         .allies-box h3 { font-size: 2em; color: var(--brun-sombre); margin-bottom: 30px; font-weight: normal; }

@@ -11,7 +11,7 @@
     <!-- ✅ SEO : Open Graph -->
     <meta property="og:type"        content="article" />
     <meta property="og:title"       content="Sagesse n°5 : Cristaux de Soude – Zen Chez Toi" />
-    <meta property="og:description" content="Découvrez les cristaux de soude, force brute minérale pour dégraisser et purifier. L'allié alchimique indispensable pour restaurer l'éclat originel de votre domaine." />
+    <meta property="og:description" content="Découvrez les cristaux de soude, force alcaline minérale pour dégraisser, déboucher et purifier en profondeur les fondations de votre domaine." />
     <meta property="og:url"         content="https://zencheztoi.fr/cristaux-soude" />
     <meta property="og:image"       content="https://zencheztoi.fr/assets/hero-maison.jpg" />
     <meta property="og:site_name"   content="Zen Chez Toi" />
@@ -23,7 +23,7 @@
       "@context": "https://schema.org",
       "@type": "Article",
       "headline": "Sagesse n°5 : Cristaux de Soude – Encyclopédie des Solutions Nomades",
-      "description": "Découvrez les cristaux de soude, force brute minérale pour dégraisser et purifier. L'allié alchimique indispensable pour restaurer l'éclat originel de votre domaine.",
+      "description": "Découvrez les cristaux de soude, force alcaline minérale pour dégraisser, déboucher et purifier en profondeur les fondations de votre domaine.",
       "image": "https://zencheztoi.fr/assets/hero-maison.jpg",
       "url": "https://zencheztoi.fr/cristaux-soude",
       "dateModified": "2026-04-30",
@@ -43,6 +43,7 @@
     }
     </script>
 
+    <!-- GA / Pinterest / AdSense -->
     <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
     <meta name="p:domain_verify" content="549770272775"/>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRV5YNRL57"></script>
@@ -52,9 +53,9 @@
       gtag('js', new Date());
       gtag('config', 'G-JRV5YNRL57');
     </script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js?client=ca-pub-7501098246029504" crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7501098246029504" crossorigin="anonymous"></script>
 
-    <meta name="description" content="Découvrez les cristaux de soude, force brute minérale pour dégraisser et purifier. L'allié alchimique indispensable pour restaurer l'éclat originel de votre domaine.">
+    <meta name="description" content="Découvrez les cristaux de soude, force alcaline minérale pour dégraisser, déboucher et purifier en profondeur les fondations de votre domaine.">
     <link rel="icon" type="image/png" href="assets/logo.png">
 
     <style>
@@ -65,52 +66,50 @@
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.8; overflow-x: hidden; }
 
-        /* --- HEADER --- */
+        /* HEADER (aligné sur percarbonate) */
         header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; }
         .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
-        
+
         .logo { display: inline-block; text-decoration: none; transition: 0.4s ease; }
-        .logo img { max-height: 90px; filter: drop-shadow(0 0 5px rgba(0,0,0,0.2)); transition: 0.5s ease; }
+        .logo img { max-height: 90px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2)); transition: 0.5s ease; }
         .logo:hover img { filter: drop-shadow(0 0 30px #ffffff) drop-shadow(0 0 15px #ffffff); transform: scale(1.05); }
 
         .header-right { display: flex; align-items: center; gap: 40px; }
-        nav ul { list-style: none; display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
+        nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
         nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
-        nav a:hover { color: var(--or-zen); text-shadow: 0 0 15px var(--or-zen); }
+        nav a:hover { color: var(--maison); text-shadow: 0 0 15px var(--maison); }
 
-        /* MENU DÉROULANT */
         .dropdown { position: relative; display: inline-block; padding: 15px 0; cursor: pointer; }
-        .dropdown-content { 
-            display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); 
-            background-color: var(--brun-sombre); min-width: 200px; box-shadow: 0px 10px 25px rgba(0,0,0,0.3); 
-            z-index: 2100; border-radius: 8px; border: 1px solid var(--or-zen); overflow: hidden;
+        .dropdown-content {
+            display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
+            background-color: var(--brun-sombre); min-width: 200px; box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
+            z-index: 2100; border-radius: 8px; border: 1px solid var(--maison); overflow: hidden;
         }
-        .dropdown-content a { 
-            color: rgba(255,255,255,0.8) !important; padding: 12px 20px; text-decoration: none; 
-            display: block; font-size: 0.95em; text-shadow: none; font-weight: bold; 
-            border-bottom: 1px solid rgba(255,255,255,0.1); text-align: center; font-variant: small-caps; 
+        .dropdown-content a {
+            color: rgba(255,255,255,0.8) !important; padding: 12px 20px; text-decoration: none;
+            display: block; font-size: 0.95em; text-shadow: none; font-weight: bold;
+            border-bottom: 1px solid rgba(255,255,255,0.1); text-align: center; font-variant: small-caps;
         }
-        .dropdown-content a:last-child { border-bottom: none; }
-        .dropdown-content a:hover { background-color: var(--or-zen); color: #fff !important; }
+        .dropdown-content a:hover { background-color: var(--maison); color: #fff !important; }
         .dropdown:hover .dropdown-content { display: block; }
 
-        .pinterest-badge { 
-            display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; 
-            border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; 
-            font-family: 'Georgia', serif; font-style: italic; font-size: 1.2rem; transition: all 0.4s ease; 
+        .pinterest-badge {
+            display: flex; align-items: center; justify-content: center; width: 35px; height: 35px;
+            border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none;
+            font-family: 'Georgia', serif; font-style: italic; font-size: 1.2rem; transition: all 0.4s ease;
             background: rgba(255,255,255,0.1); backdrop-filter: blur(2px); padding-bottom: 3px;
         }
-        .pinterest-badge:hover { background: var(--or-zen); border-color: var(--or-zen); transform: rotate(15deg) scale(1.1); color: #fff; box-shadow: 0 0 15px var(--or-zen); }
+        .pinterest-badge:hover { background: var(--maison); border-color: var(--maison); transform: rotate(15deg) scale(1.1); color: #fff; box-shadow: 0 0 15px var(--maison); }
 
-        /* NAVIGATION FLOTTANTE */
+        /* NAV FLOTTANTE */
         .scroll-nav { position: fixed; top: 50%; width: 100%; display: flex; justify-content: space-between; transform: translateY(-50%); pointer-events: none; z-index: 1500; padding: 0 30px; box-sizing: border-box; }
         .arrow-nav { pointer-events: auto; background: var(--blanc); width: 55px; height: 55px; display: flex; align-items: center; justify-content: center; border-radius: 50%; text-decoration: none; color: var(--maison); font-size: 1.5em; box-shadow: 0 5px 15px rgba(0,0,0,0.15); opacity: 0.6; transition: 0.3s; }
         .arrow-nav:hover { opacity: 1; transform: scale(1.1); background: var(--maison); color: #fff; }
 
-        /* --- HERO --- */
-        .hero { 
-            height: 100vh; min-height: 600px; position: relative; 
-            display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; overflow: hidden; 
+        /* HERO Maison */
+        .hero {
+            height: 100vh; min-height: 600px; position: relative;
+            display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; overflow: hidden;
         }
         .hero-img-fond { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
         .hero-voile { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)); z-index: 2; }
@@ -121,52 +120,16 @@
         .hero h1 { font-size: clamp(2.5em, 8vw, 5.5em); font-weight: normal; margin-bottom: 30px; line-height: 1.1; text-shadow: -2px -2px 0 var(--maison), 2px -2px 0 var(--maison), -2px 2px 0 var(--maison), 2px 2px 0 var(--maison); }
         .tagline { font-size: clamp(1.1em, 3vw, 1.8em); font-style: italic; max-width: 900px; line-height: 1.4; text-shadow: -1px -1px 0 var(--maison), 1px -1px 0 var(--maison), -1px 1px 0 var(--maison), 1px 1px 0 var(--maison); margin: 0 auto; }
 
-        /* --- CONTENU --- */
+        /* CONTENU */
         .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
-        .histoire-section { background: var(--blanc); padding: 80px; border-radius: 30px; margin-top: -120px; position: relative; z-index: 10; box-shadow: 0 25px 60px rgba(0,0,0,0.08); }
-        .histoire-section h2 { font-size: 2.8em; color: var(--or-zen); margin-bottom: 40px; text-align: center; font-weight: normal; font-family: 'Georgia', serif;}
-        .histoire-text { column-count: 2; column-gap: 60px; text-align: justify; font-size: 1.15rem; color: #444; line-height: 2; }
 
-        /* --- PRODUIT VEDETTE (structure Cire) --- */
-        .produit-vedette { margin: 40px 0 50px; }
-        .produit-vedette-inner { 
-            background: linear-gradient(135deg, #f9f6f0, #fff); 
-            border: 1px solid var(--or-zen); 
-            border-left: 6px solid var(--or-zen); 
-            border-radius: 16px; 
-            padding: 30px 35px; 
-            display: flex; 
-            flex-direction: column; 
-            align-items: flex-start; 
-            gap: 12px; 
-            box-shadow: 0 8px 25px rgba(166,123,81,0.1); 
-        }
-        .produit-vedette-label { font-variant: small-caps; font-size: 0.85em; letter-spacing: 2px; color: var(--or-zen); font-weight: bold; }
-        .produit-vedette-desc { font-size: 1em; color: #555; line-height: 1.6; max-width: 700px; }
-        .produit-vedette-btn { 
-            display: inline-block; 
-            padding: 14px 32px; 
-            background: var(--maison); 
-            color: #fff; 
-            text-decoration: none; 
-            border-radius: 50px; 
-            font-variant: small-caps; 
-            font-weight: bold; 
-            font-size: 1.05em; 
-            transition: 0.3s; 
-            align-self: flex-start; 
-            border: 2px solid var(--or-zen);
-        }
-        .produit-vedette-btn:hover { 
-            background: var(--brun-sombre); 
-            transform: translateY(-2px); 
-            box-shadow: 0 6px 18px rgba(0,0,0,0.15); 
-        }
+        .histoire-section { background: var(--blanc); padding: 80px; border-radius: 30px; margin-top: -120px; position: relative; z-index: 10; box-shadow: 0 25px 60px rgba(0,0,0,0.08); border-top: 4px solid var(--maison); }
+        .histoire-section h2 { font-size: clamp(1.4em, 5vw, 2.8em); color: var(--maison); margin-bottom: 40px; text-align: center; font-weight: normal; font-family: 'Georgia', serif; overflow-wrap: break-word; hyphens: auto; word-break: break-word; }
+        .histoire-text { column-count: 2; column-gap: 60px; text-align: justify; font-size: 1.05rem; color: #444; line-height: 2; }
 
-        /* --- LES 5 MONDES --- */
         .mondes-container { margin: 60px 0; }
-        .mondes-encadre { border: 3px solid var(--or-zen); padding: 50px; border-radius: 20px; position: relative; background: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.03); }
-        .mondes-encadre h3 { font-size: 2.4em; color: var(--or-zen); margin-bottom: 50px; text-align: center; font-weight: normal; font-family: 'Georgia', serif;}
+        .mondes-encadre { border: 3px solid var(--maison); padding: 50px; border-radius: 20px; position: relative; background: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.03); }
+        .mondes-encadre h3 { font-size: 2.4em; color: var(--maison); margin-bottom: 50px; text-align: center; font-weight: normal; font-family: 'Georgia', serif;}
 
         .mondes-spider { display: grid; grid-template-columns: 1fr auto 1fr; grid-template-rows: auto auto auto; gap: 30px 40px; align-items: center; justify-items: center; }
         .mondes-spider-logo { grid-area: 2 / 2 / 3 / 3; position: relative; z-index: 2; margin: 0; }
@@ -183,166 +146,208 @@
         .monde-card.secret { grid-area: 4 / 1 / 5 / 4; justify-self: center; width: 60%; border-color: var(--eso); margin-top: 15px; } .monde-card.secret h4 { color: var(--eso); }
 
         .picto-container { display: flex; justify-content: center; flex-wrap: wrap; gap: 40px; margin: 40px 0; padding: 20px; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
-        .picto-item { text-align: center; font-size: 0.75em; text-transform: uppercase; letter-spacing: 1px; color: var(--or-zen); font-weight: bold; }
-        .picto-icon { font-size: 3em; display: block; margin-bottom: 10px; opacity: 0.9; }
+        .picto-item { text-align: center; font-size: 0.75em; text-transform: uppercase; letter-spacing: 1px; color: var(--maison); font-weight: bold; }
+        .picto-emoji { font-size: 2.2em; display: block; margin: 0 auto 10px; line-height: 1; }
 
-        /* --- ALLIANCES & EXPERTISE --- */
-        .allies-box { background: var(--bg-sable); padding: 50px; border-radius: 20px; margin: 80px 0; border-left: 8px solid var(--or-zen); }
+        .allies-box { background: var(--bg-sable); padding: 50px; border-radius: 20px; margin: 80px 0; border-left: 8px solid var(--maison); }
         .allies-box h3 { font-size: 2em; color: var(--brun-sombre); margin-bottom: 30px; font-weight: normal; }
         .allies-list { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
         .allies-list li { background: var(--blanc); padding: 15px 30px; border-radius: 50px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.03); transition: 0.3s; }
-        .allies-list a { font-weight: bold; color: var(--brun-sombre); text-decoration: none; border-bottom: 2px solid var(--or-zen); font-size: 1.1em; }
-        .vol-tag { font-size: 0.8em; font-weight: bold; color: var(--or-zen); text-transform: uppercase; letter-spacing: 1px; }
+        .allies-list a { font-weight: bold; color: var(--brun-sombre); text-decoration: none; border-bottom: 2px solid var(--maison); font-size: 1.1em; }
+        .vol-tag { font-size: 0.8em; font-weight: bold; color: var(--maison); text-transform: uppercase; letter-spacing: 1px; }
 
         .expert-container { background: #fff; border: 1px solid #eee; padding: 50px; border-radius: 30px; margin: 60px 0; box-shadow: 0 15px 40px rgba(0,0,0,0.02); }
-        .maitre-mot h3 { font-size: 1.6em; color: var(--or-zen); margin-bottom: 20px; font-variant: small-caps; letter-spacing: 2px; }
-        .maitre-mot p { font-style: italic; font-size: 1.1em; color: #666; line-height: 1.7; border-left: 3px solid #eee; padding-left: 20px; }
-        .expertise-list { list-style: none; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 30px; margin-top: 30px; border-top: 1px solid #eee; padding-top: 30px; }
-        .expertise-item h4 { font-size: 1.1em; color: var(--brun-sombre); margin-bottom: 10px; }
-        .expertise-item p { font-size: 0.95em; color: #777; line-height: 1.6; }
+        .maitre-mot h3 { font-size: 1.6em; color: var(--maison); margin-bottom: 20px; font-variant: small-caps; letter-spacing: 2px; }
+        .maitre-mot p { font-style: italic; font-size: 1.1em; color: #666; line-height: 1.7; border-left: 3px solid #eee; padding-left: 20px; margin-bottom: 1em; }
+        .expertise-list { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 30px; margin-top: 40px; }
+        .expertise-item { background: var(--bg-sable); padding: 30px; border-radius: 12px; }
+        .expertise-item h4 { font-variant: small-caps; font-size: 1.2em; margin-bottom: 10px; color: var(--maison); }
+        .expertise-item p { font-size: 0.95em; color: #555; line-height: 1.7; }
 
-        /* --- AMAZON (structure Cire) --- */
+        .produit-vedette { margin: 40px 0 50px; }
+        .produit-vedette-inner { background: linear-gradient(135deg, #f9f6f0, #fff); border: 1px solid var(--maison); border-left: 6px solid var(--maison); border-radius: 16px; padding: 30px 35px; display: flex; flex-direction: column; align-items: flex-start; gap: 12px; box-shadow: 0 8px 25px rgba(106,127,143,0.1); }
+        .produit-vedette-label { font-variant: small-caps; font-size: 0.85em; letter-spacing: 2px; color: var(--maison); font-weight: bold; }
+        .produit-vedette-desc { font-size: 1em; color: #555; line-height: 1.6; max-width: 700px; }
+        .produit-vedette-btn { display: inline-block; padding: 14px 32px; background: var(--maison); color: #fff; text-decoration: none; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 1.05em; transition: 0.3s; align-self: flex-start; }
+        .produit-vedette-btn:hover { background: var(--brun-sombre); transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.15); }
+
         .amazon-section { text-align: center; padding: 60px 20px; }
         .amazon-titre { font-variant: small-caps; font-size: 1.8em; color: var(--brun-sombre); margin-bottom: 30px; text-align: center; font-weight: normal; }
-        .amazon-cartes { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; max-width: 900px; margin: 0 auto; }
+        .amazon-cartes { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
         .amazon-carte { background: var(--blanc); border: 1px solid #e8e2d9; border-radius: 16px; padding: 28px 24px; display: flex; flex-direction: column; gap: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.04); transition: 0.3s; }
-        .amazon-carte:hover { box-shadow: 0 10px 30px rgba(166,123,81,0.15); transform: translateY(-3px); border-color: var(--or-zen); }
-        .amazon-carte-badge { font-size: 0.72em; text-transform: uppercase; letter-spacing: 2px; color: var(--or-zen); font-weight: bold; }
+        .amazon-carte:hover { box-shadow: 0 10px 30px rgba(106,127,143,0.15); transform: translateY(-3px); border-color: var(--maison); }
+        .amazon-carte-badge { font-size: 0.72em; text-transform: uppercase; letter-spacing: 2px; color: var(--maison); font-weight: bold; }
         .amazon-carte-nom { font-size: 1.2em; font-variant: small-caps; color: var(--brun-sombre); font-weight: bold; }
         .amazon-carte-desc { font-size: 0.9em; color: #666; line-height: 1.6; flex-grow: 1; }
-        .amazon-carte-format { font-size: 0.8em; color: var(--or-zen); font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
-        .amazon-carte-btn { display: block; text-align: center; padding: 13px 20px; background: var(--brun-sombre); color: #fff; text-decoration: none; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 1em; border: 2px solid var(--or-zen); transition: 0.3s; margin-top: 5px; }
-        .amazon-carte-btn:hover { background: var(--or-zen); }
+        .amazon-carte-format { font-size: 0.8em; color: var(--maison); font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+        .amazon-carte-btn { display: block; text-align: center; padding: 13px 20px; background: var(--brun-sombre); color: #fff; text-decoration: none; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 1em; border: 2px solid var(--maison); transition: 0.3s; margin-top: 5px; }
+        .amazon-carte-btn:hover { background: var(--maison); }
 
         .ad-zen { max-width: 900px; margin: 50px auto; padding: 0 20px; text-align: center; }
         .ad-zen-inline { margin: 30px 0 10px; }
         .ad-zen-label { font-size: 0.7em; text-transform: uppercase; letter-spacing: 3px; color: #bbb; margin-bottom: 10px; font-variant: small-caps; }
 
-        /* --- PRICING --- */
-        .pricing-section { background-color: var(--blanc); padding: 120px 20px; text-align: center; border-top: 1px solid #eee; }
+        .pricing-section { background: var(--blanc); padding: 80px 20px; text-align: center; border-top: 1px solid #eee; margin-top: 60px; }
         .section-title { font-variant: small-caps; font-size: 2.2em; color: var(--brun-sombre); margin-bottom: 20px; }
-        .pills-row { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-bottom: 60px; }
-        .pill { padding: 12px 25px; border: 2px solid; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 1em; text-decoration: none; background: var(--blanc); transition: 0.3s; }
+        .pills-row { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 40px; }
+        .pill { padding: 12px 20px; border: 2px solid; border-radius: 50px; text-decoration: none; font-variant: small-caps; font-size: 1em; font-weight: bold; transition: 0.3s; background: var(--blanc); }
         .p1 { border-color: var(--maison); color: var(--maison); } .p1:hover { background: var(--maison); color: #fff; }
         .p2 { border-color: var(--jardin); color: var(--jardin); } .p2:hover { background: var(--jardin); color: #fff; }
         .p3 { border-color: var(--corps); color: var(--corps); } .p3:hover { background: var(--corps); color: #fff; }
         .p4 { border-color: var(--bienetre); color: var(--bienetre); } .p4:hover { background: var(--bienetre); color: #fff; }
         .p5 { border-color: var(--eso); color: var(--eso); } .p5:hover { background: var(--eso); color: #fff; }
-        
-        .pricing-grid { display: flex; justify-content: center; gap: 80px; max-width: 1200px; margin: 0 auto; flex-wrap: wrap; }
-        .price-box h4 { font-weight: normal; color: #777; margin-bottom: 10px; font-size: 1.1em; }
-        .price-box .amount { font-size: 2.8em; color: var(--or-zen); font-weight: bold; }
+        .pricing-grid { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .price-box { background: var(--bg-sable); padding: 30px 40px; border-radius: 20px; border: 2px solid var(--maison); min-width: 200px; }
+        .price-box h4 { font-variant: small-caps; margin-bottom: 10px; color: var(--brun-sombre); }
+        .amount { font-size: 2em; font-weight: bold; color: var(--maison); }
 
-        /* --- FOOTER --- */
-        footer { background: var(--brun-sombre); color: #fff; padding: 80px 20px 40px; text-align: center; }
-        .footer-logo-small { height: 45px; margin-bottom: 25px; }
-        .footer-nav-compact { display: flex; gap: 25px; list-style: none; justify-content: center; margin-bottom: 25px; padding: 0; flex-wrap: wrap; }
-        .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.7; font-variant: small-caps; transition: 0.3s; }
-        .footer-nav-compact a:hover { opacity: 1; color: var(--or-zen); }
-        #disclaimer-bar { background: var(--brun-sombre); color: rgba(255,255,255,0.7); font-size: 0.8rem; text-align: center; padding: 12px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        footer { background: var(--brun-sombre); color: #fff; padding: 80px 20px; text-align: center; }
+        .footer-logo img { height: 60px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.4)); transition: 0.5s; margin-bottom: 30px; }
+        .footer-logo:hover img { filter: drop-shadow(0 0 25px #ffffff) drop-shadow(0 0 10px #ffffff); }
+        .footer-nav-compact { display: flex; gap: 30px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; flex-wrap: wrap; }
+        .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.6; font-variant: small-caps; transition: 0.3s; }
+        .footer-nav-compact a:hover { opacity: 1; color: var(--maison); }
+        #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
 
-        /* --- RESPONSIVE MOBILE SÉCURISÉ --- */
-        @media (max-width: 1000px) { 
-            .histoire-text { column-count: 1; } 
-            .expertise-list { grid-template-columns: 1fr; } 
-            .mondes-spider { display: flex; flex-direction: column; gap: 20px; width: 100%; box-sizing: border-box; overflow: hidden; } 
-            .monde-card, .monde-card.secret { width: 100% !important; max-width: 100%; margin: 0 !important; box-sizing: border-box; } 
-            .mondes-spider-logo { order: -1; width: 80px; margin: 0 auto 20px auto; } 
+        @media (max-width: 900px) {
+            .histoire-text { column-count: 1; }
+            .expertise-list { grid-template-columns: 1fr; }
+            .mondes-encadre { padding: 30px 20px; }
         }
         @media (max-width: 768px) {
-            .nav-container { flex-direction: column; gap: 15px; padding: 15px 20px; }
-            .header-right { flex-direction: column; gap: 15px; align-items: center; width: 100%; }
-            nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; }
-            
+            header { padding: 15px 0; }
+            .nav-container { flex-direction: column; align-items: center; padding: 15px 20px; gap: 12px; }
+            .logo img { max-height: 65px; }
+            .header-right { flex-direction: column; align-items: center; gap: 12px; width: 100%; }
+            nav ul { flex-wrap: wrap; justify-content: center; gap: 8px; width: 100%; }
+            nav a { font-size: 0.95em; }
             .dropdown { position: static; }
-            .dropdown-content { 
-                left: 0; right: 0; margin: 10px auto 0; 
-                transform: none; width: 280px; max-width: 90vw; top: auto; 
-            }
-            
-            .hero { padding-top: 360px !important; padding-bottom: 150px !important; height: auto !important; min-height: 100vh !important; justify-content: flex-start !important; box-sizing: border-box; }
-            .hero h1 { font-size: 2.2em; } 
-            
-            .histoire-section, .allies-box, .expert-container { padding: 30px 20px; }
-            .mondes-encadre { padding: 25px 15px; border-width: 2px; width: 100%; box-sizing: border-box; overflow: hidden; }
-            .picto-container { gap: 15px; flex-direction: column; }
-            
-            .scroll-nav { display: flex; top: auto; bottom: 30px; transform: none; padding: 0 20px; position: fixed; justify-content: space-between; width: 100%; box-sizing: border-box; }
-            .arrow-nav { width: 45px; height: 45px; font-size: 1.2em; background: var(--maison); color: #fff; opacity: 0.8; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+            .dropdown-content { left: 0; right: 0; transform: none; width: 260px; max-width: 90vw; margin: 5px auto 0; top: auto; }
 
+            .hero { padding-top: 320px !important; justify-content: flex-start !important; height: auto !important; min-height: 100vh; padding-bottom: 60px; }
+            .hero h1 { font-size: clamp(2em, 10vw, 3em); }
+            .tagline { font-size: clamp(1em, 4vw, 1.3em); }
+
+            .histoire-section { padding: 25px 15px; margin-top: -20px; border-radius: 20px; }
+
+            .mondes-spider { display: flex; flex-direction: column; gap: 15px; }
+            .monde-card.atre,
+            .monde-card.terre,
+            .monde-card.temple,
+            .monde-card.seve,
+            .monde-card.secret { grid-area: auto; width: 100%; }
+            .mondes-spider-logo { order: -1; margin-bottom: 10px; }
+            .mondes-spider-logo img { width: 80px; }
+            .mondes-encadre { padding: 20px 15px; }
+            .mondes-encadre h3 { margin-bottom: 25px; }
+
+            .allies-box { padding: 25px 15px; margin: 40px 0; }
+            .expert-container { padding: 25px 15px; }
+            .picto-container { gap: 20px; }
             .produit-vedette-inner { padding: 20px 18px; }
             .produit-vedette-btn { width: 100%; text-align: center; }
-
             .amazon-cartes { grid-template-columns: 1fr; }
+
+            .scroll-nav { position: fixed; top: auto; bottom: 20px; transform: none; padding: 0 15px; }
+            .arrow-nav { width: 45px; height: 45px; font-size: 1.2em; background: var(--maison); color: #fff; opacity: 0.9; }
         }
     </style>
 </head>
 <body>
 
     <div class="scroll-nav">
-        <a href="percarbonate.html" class="arrow-nav" aria-label="Sagesse Précédente">❮</a>
-        <a href="acide-citrique.html" class="arrow-nav" aria-label="Sagesse Suivante">❯</a>
+        <a aria-label="Sagesse Précédente" class="arrow-nav" href="/percarbonate">❮</a>
+        <a aria-label="Sagesse Suivante" class="arrow-nav" href="/acide-citrique">❯</a>
     </div>
 
     <header>
         <div class="nav-container">
-            <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
+            <a class="logo" href="/"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
             <div class="header-right">
                 <nav>
                     <ul>
-                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="/">Accueil</a></li>
                         <li class="dropdown">
-                            <a href="grimoire.html">Grimoire</a>
+                            <a href="/grimoire">Grimoire</a>
                             <div class="dropdown-content">
-                                <a href="maison.html">Vol 1 : Fondation</a>
-                                <a href="jardin.html">Vol 2 : Enracinement</a>
-                                <a href="corps.html">Vol 3 : Éclosion</a>
-                                <a href="bienetre.html">Vol 4 : Harmonie</a>
-                                <a href="eso.html">Vol 5 : Élévation</a>
+                                <a href="/maison">Vol 1 : Fondation</a>
+                                <a href="/jardin">Vol 2 : Enracinement</a>
+                                <a href="/corps">Vol 3 : Éclosion</a>
+                                <a href="/bienetre">Vol 4 : Harmonie</a>
+                                <a href="/eso">Vol 5 : Élévation</a>
                             </div>
                         </li>
-                        <li><a href="blog.html">Journal</a></li>
-                        <li><a href="encyclopedie.html">Encyclopédie</a></li>
+                        <li><a href="/blog">Journal</a></li>
+                        <li><a href="/encyclopedie">Encyclopédie</a></li>
                     </ul>
                 </nav>
-                <a href="https://www.pinterest.fr/zencheztoi/" class="pinterest-badge" target="_blank" title="Suivez nos inspirations">p</a>
+                <a href="https://www.pinterest.fr/zencheztoi/" class="pinterest-badge" target="_blank" title="Suivez nos inspirations sur Pinterest">p</a>
             </div>
         </div>
     </header>
 
     <section class="hero">
-        <img src="assets/hero-maison.jpg" class="hero-img-fond" alt="Cristaux de Soude">
+        <img src="assets/hero-maison.jpg" class="hero-img-fond" alt="Cristaux de Soude" loading="eager">
         <div class="hero-voile"></div>
         <div class="hero-contenu">
             <p class="maitre-phrase">Maître des Fondations</p>
-            <p class="sagesse-num">Sagesse n°5 : Force Brute Naturelle</p>
+            <p class="sagesse-num">Sagesse n°5 : Force Brute Alcaline</p>
             <h1>Cristaux de Soude</h1>
-            <p class="tagline">"Le dégraisseur lourd : la force brute naturelle pour redonner vie à vos mondes."</p>
+            <p class="tagline">« La force n’est pas dans la violence, mais dans la capacité à délier ce qui bloque pour que l’eau et la lumière retrouvent leur chemin. »</p>
         </div>
     </section>
 
     <main class="container">
-        
+
+        <!-- HISTOIRE + PRODUIT + MONDES -->
         <section class="histoire-section">
-            <h2>De l'Aube des Pyramides à la Révolution Solvay</h2>
+            <h2>Le Bras Minéral qui Rompt les Graisses</h2>
             <div class="histoire-text">
-                <p>Connus depuis la nuit des temps sous le nom de Natron, les cristaux de soude étaient récoltés par les anciens alchimistes égyptiens sur les rives des lacs asséchés pour purifier les temples et préparer les onguents sacrés. Durant des millénaires, ce sel alcalin fut le pilier de l'artisanat noble, indispensable à la création du verre et à la naissance du véritable savon de Marseille. Ce n'est qu'au XIXe siècle que le procédé Solvay permit de stabiliser cette force minérale, offrant aux gardiens du foyer un allié souverain capable de dissoudre les graisses les plus rebelles sans jamais altérer l'âme des matériaux nobles qu'il touche.</p>
-                
-                <p>Scientifiquement, le carbonate de sodium (Na<sub>2</sub>CO<sub>3</sub>) agit par une réaction de saponification immédiate des corps gras, les transformant en sels solubles. Avec un pH puissant avoisinant 11, il brise les liaisons moléculaires des huiles cuites et des dépôts carbonisés que les fluides classiques ne peuvent atteindre. Sa structure anhydre lui confère une efficacité radicale pour déloger les mousses minérales et neutraliser les acidités organiques, agissant comme un médiateur impitoyable entre le chaos de l'encrassement et l'ordre de la clarté originelle de la matière.</p>
+                <p>
+                    Sous le nom de <b>Cristaux de Soude</b>, on désigne le carbonate de sodium,
+                    sel alcalin que les anciens connaissaient déjà sous la forme de Natron,
+                    récolté sur les bords de lacs asséchés pour purifier temples, linges
+                    et objets rituels. Du verre antique aux premiers savons durs,
+                    cette base minérale a servi de colonne vertébrale à d’innombrables
+                    arts de la matière, bien avant de rejoindre les étagères des gardiens
+                    modernes du foyer.
+                </p>
+                <p>
+                    Sur le plan chimique, le carbonate de sodium (Na<sub>2</sub>CO<sub>3</sub>)
+                    est un alcali fort, dont le pH en solution avoisine 11. Cette alcalinité
+                    permet une <b>saponification</b> des corps gras&nbsp;: les graisses se transforment
+                    en sels solubles que l’eau peut emporter. C’est ce qui lui donne sa réputation
+                    de « dégraissant lourd » capable de décrocher les films collés sur les hottes,
+                    les graisses cuites sur les platines et les dépôts stagnants dans certaines canalisations.
+                </p>
+                <p>
+                    Sa puissance exige cependant un geste précis. Utilisé trop concentré
+                    ou sur des supports inadaptés, il peut ternir l’aluminium, fragiliser
+                    certaines finitions, ou agresser la peau nue. D’où les transmissions
+                    de maître à disciple&nbsp;: toujours diluer, protéger les mains, éviter
+                    la laine et la soie, ne pas l’appliquer sur les bois cirés, et préférer
+                    des temps de contact courts suivis d’un rinçage abondant. Entre des mains
+                    attentives, les cristaux de soude ne sont plus une poudre brutale,
+                    mais un outil de libération ciblé, qui dénoue les blocages sans
+                    hurlement chimique inutile.
+                </p>
             </div>
 
-            <!-- ✅ AdSense slot 1 : In-Article — entre texte et produit vedette -->
+            <!-- AdSense in-article -->
             <div class="ad-zen ad-zen-inline">
                 <p class="ad-zen-label">— Partenaires du Sanctuaire —</p>
                 <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-7501098246029504" data-ad-slot="YOUR_AD_SLOT_INARTICLE"></ins>
             </div>
 
-            <!-- ✅ Produit vedette -->
+            <!-- Produit vedette -->
             <div class="produit-vedette">
                 <div class="produit-vedette-inner">
                     <span class="produit-vedette-label">✦ L'Essentiel de cette Sagesse</span>
                     <p class="produit-vedette-desc">
-                        Pour l'Apprentissage Alchimique, <b>Force de Transmutation</b> – les cristaux de soude en Doypack de 1kg – offrent une puissance de décrassage idéale pour apprivoiser la force alcaline sans dominer encore tout le domaine.
+                        Pour l’Apprentissage Alchimique, <b>Force de Transmutation</b> – des cristaux de soude
+                        en Doypack hermétique de 1 kg – offre la puissance alcaline idéale pour apprivoiser
+                        le dégraissage lourd&nbsp;: hottes, plats, casseroles, joints gras et traces tenaces
+                        autour de l’Âtre, sans encore dominer tout le domaine.
                     </p>
                     <a href="https://www.amazon.fr/Cristaux-Carbonate-sodium-Doypack-EluOecolo/dp/B09NBXR7BB?tag=zencheztoi-21" class="produit-vedette-btn" target="_blank" rel="nofollow sponsored">
                         Découvrir Force de Transmutation (1kg) →
@@ -350,97 +355,162 @@
                 </div>
             </div>
 
+            <!-- 5 Mondes -->
             <div class="mondes-container">
                 <div class="mondes-encadre">
                     <h3>Résonance Alchimique</h3>
                     <div class="mondes-spider">
                         <div class="monde-card atre">
                             <h4>Monde de l'Âtre</h4>
-                            <p>Pulvérisez cet agent sur vos hottes et plats carbonisés pour consumer les scories de cuisson et libérer le souffle pur de votre foyer.</p>
+                            <p>
+                                Dans la Maison, les cristaux de soude sont le bras armé de l’alchimiste.
+                                Ils décrochent les graisses cuites des plats, des fours et des grilles,
+                                libèrent les hottes engluées et dissolvent les films collants qui étouffent
+                                les surfaces, pour que le foyer respire à nouveau.
+                            </p>
                         </div>
                         <div class="monde-card terre">
                             <h4>Monde de la Terre</h4>
-                            <p>Déracinez les mousses envahissantes de vos allées de pierre et préparez les bois extérieurs à une nouvelle vie protectrice.</p>
+                            <p>
+                                Sur la Terre, ils assistent les grands nettoyages. Dalles, terrasses,
+                                pas japonais, mobiliers de jardin&nbsp;: dilués et dirigés avec précision,
+                                ils aident à déraciner les mousses grasses, à rompre les dépôts
+                                de pollution, et à préparer les supports à recevoir une nouvelle protection.
+                            </p>
                         </div>
                         <div class="mondes-spider-logo">
-                            <img src="assets/logo.png" alt="Logo Zen Chez Toi">
+                            <img src="assets/logo.png" alt="Logo Zen Chez Toi" loading="lazy">
                         </div>
                         <div class="monde-card temple">
                             <h4>Monde du Temple</h4>
-                            <p>Lustrez vos instruments de soin en acier et purifiez vos brosses des mémoires grasses accumulées par le passage du temps.</p>
+                            <p>
+                                Au Temple, ils ne touchent pas la peau, mais les outils.
+                                Brosses, peignes, bols, instruments de soin en acier ou en verre&nbsp;:
+                                un bain alcalin bien dosé lève les graisses, les résidus de produits
+                                et les accumulations silencieuses, pour que chaque outil retrouve
+                                une neutralité sereine au contact du corps.
+                            </p>
                         </div>
                         <div class="monde-card seve">
                             <h4>Monde de la Sève</h4>
-                            <p>Détartrez les fibres de vos textiles saturés par l'effort intense et régénérez vos bassins de détente par une purification minérale.</p>
+                            <p>
+                                Dans la Sève, ils épaulent le linge soumis aux efforts intenses&nbsp;:
+                                tenues de travail très grasses, torchons saturés, serpillières lourdes.
+                                En prélavage ou en trempage, ils décollent ces charges accumulées,
+                                afin que les fibres puissent à nouveau bouger, absorber et se régénérer.
+                            </p>
                         </div>
                         <div class="monde-card secret">
                             <h4>Monde du Secret</h4>
-                            <p>Baignez vos calices et brûleurs d'encens voilés par les résines antiques pour restaurer une vibration sacrée et sans empreinte.</p>
+                            <p>
+                                Dans le Secret, ils veillent sur les supports de feu et de fumigation.
+                                Calices, brûleurs d’encens, verreries marquées par les résines
+                                et les suies anciennes&nbsp;: un passage soigneux dans la force alcaline
+                                aide à délier ces mémoires matérielles, pour que le sacré retrouve
+                                une vibration nette, sans empreinte collante.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="picto-container">
-                <div class="picto-item"><span class="picto-icon">💥</span>Dégraissant Radical</div>
-                <div class="picto-item"><span class="picto-icon">🌿</span>100% Naturel</div>
-                <div class="picto-item"><span class="picto-icon">💎</span>Anhydre</div>
-                <div class="picto-item"><span class="picto-icon">🔄</span>Multi-usages</div>
+                <div class="picto-item"><span class="picto-emoji">💥</span>Dégraissant Lourd</div>
+                <div class="picto-item"><span class="picto-emoji">🌿</span>Base Minérale</div>
+                <div class="picto-item"><span class="picto-emoji">💧</span>Préparation des Supports</div>
+                <div class="picto-item"><span class="picto-emoji">⚠️</span>Puissance à Maîtriser</div>
             </div>
         </section>
 
+        <!-- ALLIANCES -->
         <section class="allies-box">
             <h3>Alliances Correspondances</h3>
             <ul class="allies-list">
-                <li><a href="bicarbonate.html">Bicarbonate</a> <span class="vol-tag">Vol 1</span></li>
-                <li><a href="vinaigre-blanc.html">Vinaigre Blanc</a> <span class="vol-tag">Vol 1</span></li>
-                <li><a href="percarbonate.html">Percarbonate</a> <span class="vol-tag">Vol 1</span></li>
+                <li><a href="/bicarbonate">Bicarbonate de Soude</a> <span class="vol-tag">Vol 1</span></li>
+                <li><a href="/vinaigre-blanc">Vinaigre Blanc</a> <span class="vol-tag">Vol 1</span></li>
+                <li><a href="/percarbonate">Percarbonate de Soude</a> <span class="vol-tag">Vol 1</span></li>
             </ul>
         </section>
 
+        <!-- MOT DU MAÎTRE + EXPERTISE -->
         <section class="expert-container">
             <div class="maitre-mot">
                 <h3>Mot du Maître</h3>
-                <p>"Cristaux de Soude sont le bras armé de l'alchimiste face à l'obstruction matérielle. Dans l'Âtre, ils consument les scories ; sur la Terre, ils purifient le passage ; au Temple, ils lustrent l'acier ; dans la Sève, il libèrent les fibres saturées ; et dans le Secret, ils lavent les mémoires des fumigations. Pour l'Apprentissage Alchimique, j'ai scellé le format de 1kg en Doypack, protecteur contre l'humidité du monde. Pour la Souveraineté du Gardien, le format de 5kg s'impose comme le magistère indispensable pour la tenue du domaine. Ces choix philosophiques garantissent une puissance de transmutation constante pour quiconque souhaite régner sur la clarté de son espace vital."</p>
+                <p>
+                    Les cristaux de soude ne sont pas une poudre à jeter pour « tout décaper ».
+                    Ils sont une force de rupture, à manier comme un levier&nbsp;: on l’applique
+                    là où la matière est engluée, puis on laisse l’eau emporter ce qui s’est délié.
+                </p>
+                <p>
+                    Dans l’Âtre, ils rompent les pactes gras scellés par la chaleur&nbsp;:
+                    fonds de casseroles, fours oubliés, hottes saturées. Ils ne négocient pas,
+                    mais ils ne hurlent pas non plus&nbsp;: ils travaillent en profondeur,
+                    à condition qu’on respecte leurs dosages et leurs temps de passage.
+                </p>
+                <p>
+                    Sur la Terre, ils préparent le terrain pour de nouvelles protections.
+                    Utilisés en dilution, ils lèvent les croûtes grasses et les crasses
+                    qui empêchent les sols, les terrasses et les bois extérieurs de respirer,
+                    avant un huilage, un brossage ou une simple mise au repos.
+                </p>
+                <p>
+                    Au Temple et dans la Sève, ils interviennent en coulisse, dans les seaux
+                    et les bassines, sur ce qui porte nos gestes et notre sueur. Ils n’ont pas
+                    vocation à toucher le corps, mais à soulager ce qui soutient le corps,
+                    en extrayant les charges accumulées.
+                </p>
+                <p>
+                    Dans le Secret enfin, ils sont un grand nettoyage de coulisses&nbsp;:
+                    les supports de feu, les verreries d’encens, les bols noircis,
+                    ces objets qui portent encore des histoires de fumée et de gras.
+                    Après leur passage, il ne reste que le support, prêt à accueillir
+                    un nouveau récit.
+                </p>
+                <p>
+                    C’est pour cette capacité à rompre les blocages matériels les plus lourds,
+                    puis à se laisser rincer sans laisser d’aromatiques ni de parfums intrusifs,
+                    que cette Force de Transmutation a été scellée dans les Essentiels du Sanctuaire.
+                </p>
             </div>
-            
+
             <div class="expertise-list">
                 <div class="expertise-item">
-                    <h4>Force Alcaline</h4>
-                    <p>Un pH élevé qui transforme instantanément les graisses en savon soluble, permettant un décrassage sans effort mécanique excessif.</p>
+                    <h4>Saponification Instantanée</h4>
+                    <p>Transforme les graisses en sels solubles grâce à un pH élevé, ce qui permet un décrassage puissant avec moins d’effort mécanique sur les surfaces encrassées.</p>
                 </div>
                 <div class="expertise-item">
-                    <h4>Action Anhydre</h4>
-                    <p>Une structure déshydratée offrant une concentration minérale supérieure aux cristaux classiques pour une efficacité décuplée.</p>
+                    <h4>Dégraissage Structurant</h4>
+                    <p>Cible les graisses lourdes de l’Âtre et de la Terre (fours, hottes, sols, terrasses) en préparant les supports à recevoir une nouvelle protection ou un simple repos.</p>
                 </div>
                 <div class="expertise-item">
-                    <h4>Respect Intrinsèque</h4>
-                    <p>Une puissance qui restaure sans corrompre, idéale pour l'entretien des matériaux nobles comme l'émail, le verre et les aciers.</p>
+                    <h4>Minéral Sans Parfum</h4>
+                    <p>Sel alcalin simple, sans tensioactifs ni odeurs ajoutées, compatible avec les autres sages de la Maison (Savon Noir, Percarbonate, Bicarbonate) dans une alchimie graduée.</p>
                 </div>
             </div>
         </section>
 
+        <!-- AMAZON (2 cartes) -->
         <div class="amazon-section">
             <h3 class="amazon-titre">La Sélection du Maître</h3>
             <div class="amazon-cartes">
                 <div class="amazon-carte">
                     <span class="amazon-carte-badge">Apprentissage Alchimique</span>
                     <p class="amazon-carte-nom">Force de Transmutation</p>
-                    <p class="amazon-carte-desc">Cristaux de soude en Doypack hermétique de 1kg, pour apprivoiser la force alcaline et libérer hottes, plats et supports des graisses figées.</p>
+                    <p class="amazon-carte-desc">Cristaux de soude en Doypack hermétique de 1 kg, pour apprivoiser le dégraissage lourd de l’Âtre et des supports très marqués.</p>
                     <p class="amazon-carte-format">1 kg</p>
                     <a href="https://www.amazon.fr/Cristaux-Carbonate-sodium-Doypack-EluOecolo/dp/B09NBXR7BB?tag=zencheztoi-21" class="amazon-carte-btn" target="_blank" rel="nofollow sponsored">Voir sur Amazon →</a>
                 </div>
                 <div class="amazon-carte">
                     <span class="amazon-carte-badge">Souveraineté du Gardien</span>
                     <p class="amazon-carte-nom">Magistère de Purification</p>
-                    <p class="amazon-carte-desc">Cristaux de soude en format 5kg pour entretenir durablement un domaine entier : sols, terrasses, bassins et infrastructures d’Âtre.</p>
+                    <p class="amazon-carte-desc">Format 5 kg pour les Gardien·nes qui ont choisi les cristaux de soude comme base majeure de leur alchimie de décrassage des fondations.</p>
                     <p class="amazon-carte-format">5 kg</p>
-                    <a href="https://www.amazon.fr/dp/B015T7F5C6?tag=zencheztoi-21" class="amazon-carte-btn" target="_blank" rel="nofollow sponsored">Voir sur Amazon →</a>
+                    <a href="https://www.amazon.fr/Cristaux-Soude-herm%C3%A9tique-doseur-lint%C3%A9rieur/dp/B015T7F5C6?tag=zencheztoi-21" class="amazon-carte-btn" target="_blank" rel="nofollow sponsored">Voir sur Amazon →</a>
                 </div>
             </div>
         </div>
 
-        <!-- ✅ AdSense slot 2 : Responsive auto — après les cartes Amazon -->
+        <!-- AdSense après Amazon -->
         <div class="ad-zen">
             <p class="ad-zen-label">— Partenaires du Sanctuaire —</p>
             <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7501098246029504" data-ad-slot="YOUR_AD_SLOT_AUTO" data-ad-format="auto" data-full-width-responsive="true"></ins>
@@ -448,34 +518,36 @@
 
     </main>
 
+    <!-- PRICING PDF -->
     <section class="pricing-section">
         <h2 class="section-title" style="color:var(--brun-sombre); margin-bottom: 30px;">L'Encyclopédie des Solutions Nomades (PDF)</h2>
         <div class="pills-row">
-            <a href="encyclopedie.html#vol1" class="pill p1">Vol 1 : Fondation</a>
-            <a href="encyclopedie.html#vol2" class="pill p2">Vol 2 : Enracinement</a>
-            <a href="encyclopedie.html#vol3" class="pill p3">Vol 3 : Éclosion</a>
-            <a href="encyclopedie.html#vol4" class="pill p4">Vol 4 : Harmonie</a>
-            <a href="encyclopedie.html#vol5" class="pill p5">Vol 5 : Élévation</a>
+            <a class="pill p1" href="/encyclopedie#vol1">Vol 1 : Fondation</a>
+            <a class="pill p2" href="/encyclopedie#vol2">Vol 2 : Enracinement</a>
+            <a class="pill p3" href="/encyclopedie#vol3">Vol 3 : Éclosion</a>
+            <a class="pill p4" href="/encyclopedie#vol4">Vol 4 : Harmonie</a>
+            <a class="pill p5" href="/encyclopedie#vol5">Vol 5 : Élévation</a>
         </div>
         <div class="pricing-grid">
             <div class="price-box"><h4>Un Volume de Savoir</h4><span class="amount">14,90 €</span></div>
             <div class="price-box"><h4>Pack Trio Alchimique</h4><span class="amount">24,90 €</span></div>
-            <div class="price-box"><h4>L'Intégrale (5 Vol.)</h4><span class="amount">39,90 €</span></div>
+            <div class="price-box"><h4>Intégrale du Maître (5 Vol.)</h4><span class="amount">39,90 €</span></div>
         </div>
     </section>
 
     <footer>
-        <a href="index.html" class="footer-logo"><img src="assets/logo.png" class="footer-logo-small" alt="Zen Chez Toi"></a>
+        <a class="footer-logo" href="/"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
         <ul class="footer-nav-compact">
-            <li><a href="mentions-legales.html">Mentions légales</a></li>
-            <li><a href="confidentialite.html">Confidentialité</a></li>
-            <li><a href="cookies.html">Cookies</a></li>
-            <li><a href="livre-or.html">Livre d'Or</a></li>
+            <li><a href="/mentions-legales">Mentions légales</a></li>
+            <li><a href="/confidentialite">Confidentialité</a></li>
+            <li><a href="/cookies">Cookies</a></li>
+            <li><a href="/a-propos">À Propos</a></li>
+            <li><a href="/livre-or">Livre d'Or</a></li>
         </ul>
-        <p style="font-size: 0.8em; opacity: 0.5;">&copy; 2026 Zen Chez Toi • La force ne réside pas dans l'agression, mais dans la capacité à dissoudre l'ancien pour laisser place au renouveau.</p>
+        <p style="font-size: 0.8em; opacity: 0.5;">&copy; 2026 Zen Chez Toi • La force ne réside pas dans l’agression, mais dans la capacité à dissoudre l’ancien pour laisser place au renouveau.</p>
     </footer>
 
-    <div id="disclaimer-bar">🔗 Liens affiliés : Partenaire Amazon, Citrine.fr et Sept-Chakras.com, je réalise un bénéfice sur les achats remplissant les conditions requises.</div>
+    <div id="disclaimer-bar">🔗 Liens affiliés Amazon : En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.</div>
 
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({});

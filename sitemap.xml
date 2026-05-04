@@ -4,184 +4,184 @@
     <!-- ========================================== -->
     <!-- 1. L'OSSATURE DU SANCTUAIRE (Priorité Max) -->
     <!-- ========================================== -->
-    <url><loc>https://www.zencheztoi.fr/index.html</loc><lastmod>2026-04-30</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.zencheztoi.fr/grimoire.html</loc><lastmod>2026-04-30</lastmod><priority>0.9</priority></url>
-    <url><loc>https://www.zencheztoi.fr/blog.html</loc><lastmod>2026-04-30</lastmod><priority>0.9</priority></url>
-    <url><loc>https://www.zencheztoi.fr/encyclopedie.html</loc><lastmod>2026-04-30</lastmod><priority>0.9</priority></url>
-    <url><loc>https://www.zencheztoi.fr/recherche.html</loc><lastmod>2026-04-30</lastmod><priority>0.8</priority></url>
+    <url><loc>https://zencheztoi.fr/</loc><lastmod>2026-04-30</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+    <url><loc>https://zencheztoi.fr/grimoire</loc><lastmod>2026-04-30</lastmod><priority>0.9</priority></url>
+    <url><loc>https://zencheztoi.fr/blog</loc><lastmod>2026-04-30</lastmod><priority>0.9</priority></url>
+    <url><loc>https://zencheztoi.fr/encyclopedie</loc><lastmod>2026-04-30</lastmod><priority>0.9</priority></url>
+    <url><loc>https://zencheztoi.fr/recherche</loc><lastmod>2026-04-30</lastmod><priority>0.8</priority></url>
 
     <!-- ========================================== -->
     <!-- 2. LES 5 PILIERS & SÉLECTIONS (Hubs)       -->
     <!-- ========================================== -->
-    <url><loc>https://www.zencheztoi.fr/maison.html</loc><lastmod>2026-04-30</lastmod><priority>0.8</priority></url>
-    <url><loc>https://www.zencheztoi.fr/jardin.html</loc><lastmod>2026-04-30</lastmod><priority>0.8</priority></url>
-    <url><loc>https://www.zencheztoi.fr/corps.html</loc><lastmod>2026-04-30</lastmod><priority>0.8</priority></url>
-    <url><loc>https://www.zencheztoi.fr/bienetre.html</loc><lastmod>2026-04-30</lastmod><priority>0.8</priority></url>
-    <url><loc>https://www.zencheztoi.fr/eso.html</loc><lastmod>2026-04-30</lastmod><priority>0.8</priority></url>
+    <url><loc>https://zencheztoi.fr/maison</loc><lastmod>2026-04-30</lastmod><priority>0.8</priority></url>
+    <url><loc>https://zencheztoi.fr/jardin</loc><lastmod>2026-04-30</lastmod><priority>0.8</priority></url>
+    <url><loc>https://zencheztoi.fr/corps</loc><lastmod>2026-04-30</lastmod><priority>0.8</priority></url>
+    <url><loc>https://zencheztoi.fr/bienetre</loc><lastmod>2026-04-30</lastmod><priority>0.8</priority></url>
+    <url><loc>https://zencheztoi.fr/eso</loc><lastmod>2026-04-30</lastmod><priority>0.8</priority></url>
     
-    <url><loc>https://www.zencheztoi.fr/maison-selection.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/jardin-selection.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/corps-selection.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/bienetre-selection.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/eso-selection.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/maison-selection</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/jardin-selection</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/corps-selection</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/bienetre-selection</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/eso-selection</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
 
     <!-- ========================================== -->
     <!-- 3. L'INTÉGRALITÉ DES CHRONIQUES (Blog)     -->
     <!-- ========================================== -->
     <!-- Volume 1 : Maison -->
-    <url><loc>https://www.zencheztoi.fr/vitres-eclatantes.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/taches-difficiles.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/soin-bois.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/mauvaises-odeurs.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/linge-frais.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/humidite.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/canalisations.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/vaisselle.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/sols-naturels.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/soins-cuir.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/degraissant.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/insectes.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/lessive-cendre.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/vitres-eclatantes</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/taches-difficiles</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/soin-bois</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/mauvaises-odeurs</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/linge-frais</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/humidite</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/canalisations</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/vaisselle</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/sols-naturels</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/soins-cuir</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/degraissant</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/lessive-cendre</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
 
+    
     <!-- Volume 2 : Jardin -->
-    <url><loc>https://www.zencheztoi.fr/pucerons.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/oidium.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/mildiou.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/limaces.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/araignees.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/cochenilles-thrips.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/rouille.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/feuilles-jaunes.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/fourmis.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/sol-epuise.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/tavelure.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/mousse.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/pucerons</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/oidium</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/mildiou</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/limaces</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/araignees</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/cochenilles-thrips</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/rouille</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/feuilles-jaunes</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/fourmis</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/sol-epuise</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/tavelure</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/insectes</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/mousse</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
 
     <!-- Volume 3 : Corps -->
-    <url><loc>https://www.zencheztoi.fr/mal-de-dos.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/cellulite.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/peau-seche.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/fatigue.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/jambes-lourdes.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/chute-cheveux.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/tensions-musculaires.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/articulations.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/odeurs-corps.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/pieds-fatigues.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/eclat-peau.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/posture.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/varices.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/mal-de-dos</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/cellulite</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/peau-seche</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/fatigue</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/jambes-lourdes</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/chute-cheveux</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/tensions-musculaires</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/articulations</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/odeurs-corps</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/pieds-fatigues</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/eclat-peau</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/posture</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/varices</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
 
     <!-- Volume 4 : Bien-Être -->
-    <url><loc>https://www.zencheztoi.fr/anti-stress.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/relaxation.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/immunite.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/meditation.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/digestion.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/sommeil-profond.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/energie-vitalite.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/focus.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/memoire.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/yoga-etirements.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/anti-stress</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/relaxation</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/immunite</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/meditation</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/digestion</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/sommeil-profond</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/energie-vitalite</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/focus</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/memoire</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/yoga-etirements</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
 
     <!-- Volume 5 : Élévation (Eso) -->
-    <url><loc>https://www.zencheztoi.fr/purification.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/cristaux-chakras.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/lithotherapie.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/pendule.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/tarot.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/instru-rituel.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/rituels-lune.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/geometrie-sacree.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/signes-univers.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/intuition.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
-    <url><loc>https://www.zencheztoi.fr/ancrage-spirituel.html</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/purification</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/cristaux-chakras</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/lithotherapie</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/pendule</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/tarot</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/instru-rituel</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/rituels-lune</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/geometrie-sacree</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/signes-univers</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/intuition</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
+    <url><loc>https://zencheztoi.fr/ancrage-spirituel</loc><lastmod>2026-04-30</lastmod><priority>0.7</priority></url>
 
     <!-- ========================================== -->
     <!-- 4. L'ENCYCLOPÉDIE DES INGRÉDIENTS          -->
     <!-- ========================================== -->
-    <url><loc>https://www.zencheztoi.fr/acerola.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/acide-citrique.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/ail.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/aloe-vera.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/alun.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/argan.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/argile-blanche.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/argile-jaune.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/argile-rouge.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/argile-verte.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/argile-violette.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/benjoin.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/beurre-karite.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/bicarbonate.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/binchotan.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/blanc-meudon.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/bois-santal.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/bougies.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/canelle.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/cendre-bois.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/charbon-actif.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/cire-abeille.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/ciste.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/citron.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/cristal-roche.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/cristaux-soude.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/elixir-cristal.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/encens.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/eucalyptus.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/fecule-mais.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/gaultherie.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/glycerine.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/gros-sel.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/helichryse.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/huile-amande.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/huile-coco.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/huile-jojoba.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/huile-lin.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/huile-neem.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/huile-nigelle.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/huile-ricin.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/lavande-vraie.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/marc-cafe.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/menthe-poivree.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/miel.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/myrrhe.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/nigari.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/oliban.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/palo-santo.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/percarbonate.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/petitgrain.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/pierre-argile.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/poudre-ortie.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/ravintsara.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/rose.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/runes.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/sang-dragon.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/sauge.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/sauge-sclaree.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/savon-castille.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/savon-marseille.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/savon-noir.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/sel-epsom.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/sel-himalaya.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/sel-mer-gris.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/sel-mer-morte.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/soufre.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/tea-tree.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/terebenthine.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/terre-diatomee.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/terre-sommieres.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/vinaigre-blanc.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
-    <url><loc>https://www.zencheztoi.fr/ylang-ylang.html</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/acerola</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/acide-citrique</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/ail</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/aloe-vera</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/alun</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/argan</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/argile-blanche</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/argile-jaune</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/argile-rouge</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/argile-verte</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/argile-violette</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/benjoin</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/beurre-karite</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/bicarbonate</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/binchotan</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/blanc-meudon</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/bois-santal</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/bougies</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/canelle</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/charbon-actif</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/cire-abeille</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/ciste</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/citron</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/cristal-roche</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/cristaux-soude</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/elixir-cristal</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/encens</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/eucalyptus</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/fecule-mais</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/gaultherie</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/glycerine</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/gros-sel</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/helichryse</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/huile-amande</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/huile-coco</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/huile-jojoba</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/huile-lin</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/huile-neem</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/huile-nigelle</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/huile-ricin</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/lavande-vraie</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/marc-cafe</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/menthe-poivree</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/miel</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/myrrhe</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/nigari</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/oliban</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/palo-santo</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/percarbonate</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/petitgrain</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/pierre-argile</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/poudre-ortie</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/ravintsara</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/rose</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/runes</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/sang-dragon</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/sauge</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/sauge-sclaree</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/savon-castille</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/savon-marseille</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/savon-noir</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/sel-epsom</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/sel-himalaya</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/sel-mer-gris</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/sel-mer-morte</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/soufre</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/tea-tree</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/terebenthine</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/terre-diatomee</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/terre-sommieres</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/vinaigre-blanc</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
+    <url><loc>https://zencheztoi.fr/ylang-ylang</loc><lastmod>2026-04-30</lastmod><priority>0.5</priority></url>
 
     <!-- ========================================== -->
     <!-- 5. PAGES LÉGALES & INFOS (Priorité Basse)  -->
     <!-- ========================================== -->
-    <url><loc>https://www.zencheztoi.fr/a-propos.html</loc><lastmod>2026-04-30</lastmod><priority>0.3</priority></url>
-    <url><loc>https://www.zencheztoi.fr/livre-or.html</loc><lastmod>2026-04-30</lastmod><priority>0.3</priority></url>
-    <url><loc>https://www.zencheztoi.fr/merci.html</loc><lastmod>2026-04-30</lastmod><priority>0.2</priority></url>
-    <url><loc>https://www.zencheztoi.fr/mentions-legales.html</loc><lastmod>2026-04-30</lastmod><priority>0.2</priority></url>
-    <url><loc>https://www.zencheztoi.fr/confidentialite.html</loc><lastmod>2026-04-30</lastmod><priority>0.2</priority></url>
-    <url><loc>https://www.zencheztoi.fr/cookies.html</loc><lastmod>2026-04-30</lastmod><priority>0.2</priority></url>
+    <url><loc>https://zencheztoi.fr/a-propos</loc><lastmod>2026-04-30</lastmod><priority>0.3</priority></url>
+    <url><loc>https://zencheztoi.fr/livre-or</loc><lastmod>2026-04-30</lastmod><priority>0.3</priority></url>
+    <url><loc>https://zencheztoi.fr/merci</loc><lastmod>2026-04-30</lastmod><priority>0.2</priority></url>
+    <url><loc>https://zencheztoi.fr/mentions-legales</loc><lastmod>2026-04-30</lastmod><priority>0.2</priority></url>
+    <url><loc>https://zencheztoi.fr/confidentialite</loc><lastmod>2026-04-30</lastmod><priority>0.2</priority></url>
+    <url><loc>https://zencheztoi.fr/cookies</loc><lastmod>2026-04-30</lastmod><priority>0.2</priority></url>
 
 </urlset>

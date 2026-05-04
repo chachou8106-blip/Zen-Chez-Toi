@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sagesse n°1 : Bicarbonate de Soude – Encyclopédie des Solutions Nomades</title>
 
-    <!-- ✅ SEO : Canonical -->
+    <!-- SEO : Canonical -->
     <link rel="canonical" href="https://zencheztoi.fr/bicarbonate-soude" />
 
-    <!-- ✅ SEO : Open Graph -->
+    <!-- SEO : Open Graph -->
     <meta property="og:type"        content="article" />
     <meta property="og:title"       content="Sagesse n°1 : Bicarbonate de Soude – Zen Chez Toi" />
     <meta property="og:description" content="Découvrez le Bicarbonate de Soude, le médiateur alchimique universel. Une poudre pure pour équilibrer, purifier et restaurer l'harmonie de votre foyer." />
@@ -17,7 +17,7 @@
     <meta property="og:site_name"   content="Zen Chez Toi" />
     <meta property="og:locale"      content="fr_FR" />
 
-    <!-- ✅ SEO : Schema.org JSON-LD Article -->
+    <!-- SEO : Schema.org JSON-LD Article -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -43,6 +43,7 @@
     }
     </script>
     
+    <!-- GA / Pinterest / AdSense -->
     <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
     <meta name="p:domain_verify" content="549770272775"/>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRV5YNRL57"></script>
@@ -52,7 +53,7 @@
       gtag('js', new Date());
       gtag('config', 'G-JRV5YNRL57');
     </script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7501098246029504" crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js?client=ca-pub-7501098246029504" crossorigin="anonymous"></script>
 
     <meta name="description" content="Découvrez le Bicarbonate de Soude, le médiateur alchimique universel. Une poudre pure pour équilibrer, purifier et restaurer l'harmonie de votre foyer.">
     <link rel="icon" type="image/png" href="assets/logo.png">
@@ -65,7 +66,7 @@
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.8; overflow-x: hidden; }
 
-        /* --- HEADER --- */
+        /* HEADER (modèle validé) */
         header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; }
         .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
         
@@ -76,21 +77,20 @@
         .header-right { display: flex; align-items: center; gap: 40px; }
         nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
         nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
-        nav a:hover { color: var(--or-zen); text-shadow: 0 0 15px var(--or-zen); }
+        nav a:hover { color: var(--maison); text-shadow: 0 0 15px var(--maison); }
 
-        /* MENU DÉROULANT */
         .dropdown { position: relative; display: inline-block; padding: 15px 0; cursor: pointer; }
         .dropdown-content { 
             display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); 
             background-color: var(--brun-sombre); min-width: 200px; box-shadow: 0px 10px 25px rgba(0,0,0,0.3); 
-            z-index: 2100; border-radius: 8px; border: 1px solid var(--or-zen); overflow: hidden;
+            z-index: 2100; border-radius: 8px; border: 1px solid var(--maison); overflow: hidden;
         }
         .dropdown-content a { 
             color: rgba(255,255,255,0.8) !important; padding: 12px 20px; text-decoration: none; 
             display: block; font-size: 0.95em; text-shadow: none; font-weight: bold; 
             border-bottom: 1px solid rgba(255,255,255,0.1); text-align: center; font-variant: small-caps; 
         }
-        .dropdown-content a:hover { background-color: var(--or-zen); color: #fff !important; }
+        .dropdown-content a:hover { background-color: var(--maison); color: #fff !important; }
         .dropdown:hover .dropdown-content { display: block; }
 
         .pinterest-badge { 
@@ -99,14 +99,14 @@
             font-family: 'Georgia', serif; font-style: italic; font-size: 1.2rem; transition: all 0.4s ease; 
             background: rgba(255,255,255,0.1); backdrop-filter: blur(2px); padding-bottom: 3px;
         }
-        .pinterest-badge:hover { background: var(--or-zen); border-color: var(--or-zen); transform: rotate(15deg) scale(1.1); color: #fff; box-shadow: 0 0 15px var(--or-zen); }
+        .pinterest-badge:hover { background: var(--maison); border-color: var(--maison); transform: rotate(15deg) scale(1.1); color: #fff; box-shadow: 0 0 15px var(--maison); }
 
-        /* NAVIGATION FLOTTANTE */
-        .scroll-nav { position: fixed; top: 50%; width: 100%; display: flex; justify-content: flex-end; transform: translateY(-50%); pointer-events: none; z-index: 1500; padding: 0 30px; }
+        /* NAV FLOTTANTE (une seule flèche, comme tu l'as) */
+        .scroll-nav { position: fixed; top: 50%; width: 100%; display: flex; justify-content: flex-end; transform: translateY(-50%); pointer-events: none; z-index: 1500; padding: 0 30px; box-sizing: border-box; }
         .arrow-nav { pointer-events: auto; background: var(--blanc); width: 55px; height: 55px; display: flex; align-items: center; justify-content: center; border-radius: 50%; text-decoration: none; color: var(--maison); font-size: 1.5em; box-shadow: 0 5px 15px rgba(0,0,0,0.15); opacity: 0.6; transition: 0.3s; }
         .arrow-nav:hover { opacity: 1; transform: scale(1.1); background: var(--maison); color: #fff; }
 
-        /* --- HERO --- */
+        /* HERO */
         .hero { 
             height: 100vh; min-height: 600px; position: relative; 
             display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; overflow: hidden; 
@@ -120,52 +120,16 @@
         .hero h1 { font-size: clamp(2.5em, 8vw, 5.5em); font-weight: normal; margin-bottom: 30px; line-height: 1.1; text-shadow: -2px -2px 0 var(--maison), 2px -2px 0 var(--maison), -2px 2px 0 var(--maison), 2px 2px 0 var(--maison); }
         .tagline { font-size: clamp(1.1em, 3vw, 1.8em); font-style: italic; max-width: 900px; line-height: 1.4; text-shadow: -1px -1px 0 var(--maison), 1px -1px 0 var(--maison), -1px 1px 0 var(--maison), 1px 1px 0 var(--maison); margin: 0 auto; }
 
-        /* --- CONTENU --- */
+        /* CONTENU */
         .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
-        .histoire-section { background: var(--blanc); padding: 80px; border-radius: 30px; margin-top: -120px; position: relative; z-index: 10; box-shadow: 0 25px 60px rgba(0,0,0,0.08); }
-        .histoire-section h2 { font-size: 2.8em; color: var(--or-zen); margin-bottom: 40px; text-align: center; font-weight: normal; font-family: 'Georgia', serif;}
-        .histoire-text { column-count: 2; column-gap: 60px; text-align: justify; font-size: 1.15rem; color: #444; line-height: 2; }
 
-        /* --- PRODUIT VEDETTE (structure Cire) --- */
-        .produit-vedette { margin: 40px 0 50px; }
-        .produit-vedette-inner { 
-            background: linear-gradient(135deg, #f9f6f0, #fff); 
-            border: 1px solid var(--or-zen); 
-            border-left: 6px solid var(--or-zen); 
-            border-radius: 16px; 
-            padding: 30px 35px; 
-            display: flex; 
-            flex-direction: column; 
-            align-items: flex-start; 
-            gap: 12px; 
-            box-shadow: 0 8px 25px rgba(166,123,81,0.1); 
-        }
-        .produit-vedette-label { font-variant: small-caps; font-size: 0.85em; letter-spacing: 2px; color: var(--or-zen); font-weight: bold; }
-        .produit-vedette-desc { font-size: 1em; color: #555; line-height: 1.6; max-width: 700px; }
-        .produit-vedette-btn { 
-            display: inline-block; 
-            padding: 14px 32px; 
-            background: var(--maison); 
-            color: #fff; 
-            text-decoration: none; 
-            border-radius: 50px; 
-            font-variant: small-caps; 
-            font-weight: bold; 
-            font-size: 1.05em; 
-            transition: 0.3s; 
-            align-self: flex-start; 
-            border: 2px solid var(--or-zen);
-        }
-        .produit-vedette-btn:hover { 
-            background: var(--brun-sombre); 
-            transform: translateY(-2px); 
-            box-shadow: 0 6px 18px rgba(0,0,0,0.15); 
-        }
+        .histoire-section { background: var(--blanc); padding: 80px; border-radius: 30px; margin-top: -120px; position: relative; z-index: 10; box-shadow: 0 25px 60px rgba(0,0,0,0.08); border-top: 4px solid var(--maison); }
+        .histoire-section h2 { font-size: clamp(1.4em, 5vw, 2.8em); color: var(--maison); margin-bottom: 40px; text-align: center; font-weight: normal; font-family: 'Georgia', serif; }
+        .histoire-text { column-count: 2; column-gap: 60px; text-align: justify; font-size: 1.05rem; color: #444; line-height: 2; }
 
-        /* --- LES 5 MONDES --- */
         .mondes-container { margin: 60px 0; }
-        .mondes-encadre { border: 3px solid var(--or-zen); padding: 50px; border-radius: 20px; position: relative; background: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.03); }
-        .mondes-encadre h3 { font-size: 2.4em; color: var(--or-zen); margin-bottom: 50px; text-align: center; font-weight: normal; font-family: 'Georgia', serif;}
+        .mondes-encadre { border: 3px solid var(--maison); padding: 50px; border-radius: 20px; position: relative; background: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.03); }
+        .mondes-encadre h3 { font-size: 2.4em; color: var(--maison); margin-bottom: 50px; text-align: center; font-weight: normal; font-family: 'Georgia', serif;}
 
         .mondes-spider { display: grid; grid-template-columns: 1fr auto 1fr; grid-template-rows: auto auto auto; gap: 30px 40px; align-items: center; justify-items: center; }
         .mondes-spider-logo { grid-area: 2 / 2 / 3 / 3; position: relative; z-index: 2; margin: 0; }
@@ -182,42 +146,40 @@
         .monde-card.secret { grid-area: 4 / 1 / 5 / 4; justify-self: center; width: 60%; border-color: var(--eso); margin-top: 15px; } .monde-card.secret h4 { color: var(--eso); }
 
         .picto-container { display: flex; justify-content: center; flex-wrap: wrap; gap: 40px; margin: 40px 0; padding: 20px; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
-        .picto-item { text-align: center; font-size: 0.75em; text-transform: uppercase; letter-spacing: 1px; color: var(--or-zen); font-weight: bold; }
+        .picto-item { text-align: center; font-size: 0.75em; text-transform: uppercase; letter-spacing: 1px; color: var(--maison); font-weight: bold; }
         .picto-icon { font-size: 3em; display: block; margin-bottom: 10px; opacity: 0.9; }
 
-        /* --- ALLIANCES & EXPERTISE --- */
-        .allies-box { background: var(--bg-sable); padding: 50px; border-radius: 20px; margin: 80px 0; border-left: 8px solid var(--or-zen); }
+        .allies-box { background: var(--bg-sable); padding: 50px; border-radius: 20px; margin: 80px 0; border-left: 8px solid var(--maison); }
         .allies-box h3 { font-size: 2em; color: var(--brun-sombre); margin-bottom: 30px; font-weight: normal; }
         .allies-list { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
         .allies-list li { background: var(--blanc); padding: 15px 30px; border-radius: 50px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.03); transition: 0.3s; }
-        .allies-list a { font-weight: bold; color: var(--brun-sombre); text-decoration: none; border-bottom: 2px solid var(--or-zen); font-size: 1.1em; }
-        .vol-tag { font-size: 0.8em; font-weight: bold; color: var(--or-zen); text-transform: uppercase; letter-spacing: 1px; }
+        .allies-list a { font-weight: bold; color: var(--brun-sombre); text-decoration: none; border-bottom: 2px solid var(--maison); font-size: 1.1em; }
+        .vol-tag { font-size: 0.8em; font-weight: bold; color: var(--maison); text-transform: uppercase; letter-spacing: 1px; }
 
         .expert-container { background: #fff; border: 1px solid #eee; padding: 50px; border-radius: 30px; margin: 60px 0; box-shadow: 0 15px 40px rgba(0,0,0,0.02); }
-        .maitre-mot h3 { font-size: 1.6em; color: var(--or-zen); margin-bottom: 20px; font-variant: small-caps; letter-spacing: 2px; }
-        .maitre-mot p { font-style: italic; font-size: 1.1em; color: #666; line-height: 1.7; border-left: 3px solid #eee; padding-left: 20px; }
-        .expertise-list { list-style: none; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 30px; margin-top: 30px; border-top: 1px solid #eee; padding-top: 30px; }
-        .expertise-item h4 { font-size: 1.1em; color: var(--brun-sombre); margin-bottom: 10px; }
-        .expertise-item p { font-size: 0.95em; color: #777; line-height: 1.6; }
+        .maitre-mot h3 { font-size: 1.6em; color: var(--maison); margin-bottom: 20px; font-variant: small-caps; letter-spacing: 2px; }
+        .maitre-mot p { font-style: italic; font-size: 1.1em; color: #666; line-height: 1.7; border-left: 3px solid #eee; padding-left: 20px; margin-bottom: 1em; }
+        .expertise-list { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 30px; margin-top: 40px; }
+        .expertise-item { background: var(--bg-sable); padding: 30px; border-radius: 12px; }
+        .expertise-item h4 { font-variant: small-caps; font-size: 1.2em; margin-bottom: 10px; color: var(--maison); }
+        .expertise-item p { font-size: 0.95em; color: #555; line-height: 1.7; }
 
-        /* --- AMAZON (structure Cire) --- */
         .amazon-section { text-align: center; padding: 60px 20px; }
         .amazon-titre { font-variant: small-caps; font-size: 1.8em; color: var(--brun-sombre); margin-bottom: 30px; text-align: center; font-weight: normal; }
         .amazon-cartes { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; max-width: 900px; margin: 0 auto; }
         .amazon-carte { background: var(--blanc); border: 1px solid #e8e2d9; border-radius: 16px; padding: 28px 24px; display: flex; flex-direction: column; gap: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.04); transition: 0.3s; }
-        .amazon-carte:hover { box-shadow: 0 10px 30px rgba(166,123,81,0.15); transform: translateY(-3px); border-color: var(--or-zen); }
-        .amazon-carte-badge { font-size: 0.72em; text-transform: uppercase; letter-spacing: 2px; color: var(--or-zen); font-weight: bold; }
+        .amazon-carte:hover { box-shadow: 0 10px 30px rgba(106,127,143,0.15); transform: translateY(-3px); border-color: var(--maison); }
+        .amazon-carte-badge { font-size: 0.72em; text-transform: uppercase; letter-spacing: 2px; color: var(--maison); font-weight: bold; }
         .amazon-carte-nom { font-size: 1.2em; font-variant: small-caps; color: var(--brun-sombre); font-weight: bold; }
         .amazon-carte-desc { font-size: 0.9em; color: #666; line-height: 1.6; flex-grow: 1; }
-        .amazon-carte-format { font-size: 0.8em; color: var(--or-zen); font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
-        .amazon-carte-btn { display: block; text-align: center; padding: 13px 20px; background: var(--brun-sombre); color: #fff; text-decoration: none; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 1em; border: 2px solid var(--or-zen); transition: 0.3s; margin-top: 5px; }
-        .amazon-carte-btn:hover { background: var(--or-zen); }
+        .amazon-carte-format { font-size: 0.8em; color: var(--maison); font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+        .amazon-carte-btn { display: block; text-align: center; padding: 13px 20px; background: var(--brun-sombre); color: #fff; text-decoration: none; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 1em; border: 2px solid var(--maison); transition: 0.3s; margin-top: 5px; }
+        .amazon-carte-btn:hover { background: var(--maison); }
 
         .ad-zen { max-width: 900px; margin: 50px auto; padding: 0 20px; text-align: center; }
         .ad-zen-inline { margin: 30px 0 10px; }
         .ad-zen-label { font-size: 0.7em; text-transform: uppercase; letter-spacing: 3px; color: #bbb; margin-bottom: 10px; font-variant: small-caps; }
 
-        /* --- PRICING --- */
         .pricing-section { background-color: var(--blanc); padding: 120px 20px; text-align: center; border-top: 1px solid #eee; }
         .section-title { font-variant: small-caps; font-size: 2.2em; color: var(--brun-sombre); margin-bottom: 20px; }
         .pills-row { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-bottom: 60px; }
@@ -230,18 +192,16 @@
         
         .pricing-grid { display: flex; justify-content: center; gap: 80px; max-width: 1200px; margin: 0 auto; flex-wrap: wrap; }
         .price-box h4 { font-weight: normal; color: #777; margin-bottom: 10px; font-size: 1.1em; }
-        .price-box .amount { font-size: 2.8em; color: var(--or-zen); font-weight: bold; }
+        .price-box .amount { font-size: 2.8em; color: var(--maison); font-weight: bold; }
 
-        /* --- FOOTER --- */
         footer { background: var(--brun-sombre); color: #fff; padding: 80px 20px 40px; text-align: center; }
         .footer-logo-small { height: 60px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.4)); transition: 0.5s; margin-bottom: 30px; }
         .footer-logo-small:hover { filter: drop-shadow(0 0 30px #ffffff); transform: scale(1.05); }
         .footer-nav-compact { display: flex; gap: 30px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; flex-wrap: wrap; }
         .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.6; font-variant: small-caps; transition: 0.3s; }
-        .footer-nav-compact a:hover { opacity: 1; color: var(--or-zen); }
+        .footer-nav-compact a:hover { opacity: 1; color: var(--maison); }
         #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
 
-        /* --- RESPONSIVE MOBILE SÉCURISÉ --- */
         @media (max-width: 1000px) { 
             .histoire-text { column-count: 1; } 
             .expertise-list { grid-template-columns: 1fr; } 
@@ -253,49 +213,17 @@
             .nav-container { flex-direction: column; gap: 15px; padding: 15px 20px; }
             .header-right { flex-direction: column; gap: 15px; align-items: center; width: 100%; }
             nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; }
-            
             .dropdown { position: static; }
-            .dropdown-content { 
-                left: 0; right: 0; margin: 10px auto 0; 
-                transform: none; width: 280px; max-width: 90vw; top: auto; 
-            }
-            
-            .hero { 
-                padding-top: 360px !important; 
-                padding-bottom: 150px !important; 
-                height: auto !important; 
-                min-height: auto !important; 
-                justify-content: flex-start !important; 
-                box-sizing: border-box;
-            }
+            .dropdown-content { left: 0; right: 0; margin: 10px auto 0; transform: none; width: 280px; max-width: 90vw; top: auto; }
+            .hero { padding-top: 360px !important; padding-bottom: 150px !important; height: auto !important; min-height: auto !important; justify-content: flex-start !important; box-sizing: border-box; }
             .hero h1 { font-size: 2.2em; } 
-            
             .histoire-section, .allies-box, .expert-container { padding: 30px 20px; }
             .mondes-encadre { padding: 25px 15px; border-width: 2px; width: 100%; box-sizing: border-box; overflow: hidden; }
             .picto-container { gap: 15px; flex-direction: column; }
-            
-            .scroll-nav { 
-                display: flex; 
-                top: auto; 
-                bottom: 30px; 
-                transform: none; 
-                padding: 0 20px; 
-                position: fixed;
-                justify-content: flex-end;
-            }
-            .arrow-nav { 
-                width: 45px; 
-                height: 45px; 
-                font-size: 1.2em; 
-                background: var(--maison); 
-                color: #fff;
-                opacity: 0.8;
-                box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            }
-
+            .scroll-nav { display: flex; top: auto; bottom: 30px; transform: none; padding: 0 20px; position: fixed; justify-content: flex-end; }
+            .arrow-nav { width: 45px; height: 45px; font-size: 1.2em; background: var(--maison); color: #fff; opacity: 0.8; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
             .produit-vedette-inner { padding: 20px 18px; }
             .produit-vedette-btn { width: 100%; text-align: center; }
-
             .amazon-cartes { grid-template-columns: 1fr; }
         }
     </style>
@@ -303,7 +231,7 @@
 <body>
 
     <div class="scroll-nav">
-        <!-- Bicarbonate étant la Sagesse n°1, il ne pointe que vers la suivante -->
+        <!-- Sagesse n°1 : uniquement suivante -->
         <a href="vinaigre-blanc.html" class="arrow-nav" aria-label="Sagesse Suivante">❯</a>
     </div>
 
@@ -346,21 +274,25 @@
 
     <main class="container">
         
+        <!-- HISTOIRE -->
         <section class="histoire-section">
             <h2>Le Médiateur Cristallin et le Souffle du Natron</h2>
             <div class="histoire-text">
-                <p>Bien avant de remplir nos officines modernes, le bicarbonate existait sous une forme sauvage et sacrée : le Natron. Récolté par les anciens alchimistes égyptiens sur les rives des lacs salés évaporés, il était le pilier incontesté de la purification rituelle et de la préservation du temple corporel. Pour les scribes et les pharaons, ce sédiment n'était pas une simple poudre, mais un morceau de ciel cristallisé sur Terre, capable de neutraliser les empreintes du temps et de la corruption. Ce n'est qu'en 1846 que la science moderne a stabilisé cette force tranquille, offrant au monde une substance d'une pureté absolue, capable de rééquilibrer tout environnement qu'elle touche sans jamais agresser le vivant.</p>
-                
-                <p>Sur le plan scientifique, le bicarbonate de sodium est une substance amphotère remarquable, agissant comme un tampon de pH universel. Sa structure moléculaire lui permet de neutraliser aussi bien les acides que les bases excessives, transformant le chaos chimique en une neutralité stable et apaisée. Au contact de l'eau ou de la chaleur, il libère du dioxyde de carbone sous forme de micro-bulles effervescentes, créant une action mécanique douce mais radicale pour désincruster la matière. Cette intelligence ionique lui confère également un pouvoir désodorisant absolu : plutôt que de masquer les effluves, il capture les molécules acides et basiques responsables des mémoires olfactives pour les dissoudre définitivement.</p>
+                <p>
+                    Bien avant de remplir nos officines modernes, le bicarbonate existait sous une forme sauvage&nbsp;: le natron, mélange de sels de sodium recueilli sur les rives de lacs salés évaporés en Égypte antique. Les prêtres et guérisseurs l’utilisaient pour les soins du corps, le brossage des dents, la purification des lieux et les rituels d’embaumement, tant il semblait suspendre les processus de décomposition et d’odeur. Au XIX<sup>e</sup> siècle, la chimie a permis d’isoler et de produire de manière contrôlée le bicarbonate de sodium, offrant au foyer une version stable de cette poudre de purification ancestrale.
+                </p>
+                <p>
+                    Sur le plan scientifique, le bicarbonate de sodium est un sel faiblement alcalin dont l’ion hydrogénocarbonate est amphotère&nbsp;: il peut réagir avec les acides comme avec les bases, ce qui en fait un remarquable tampon de pH autour de 8. Cette propriété lui permet de calmer les acidités gastriques, d’adoucir une eau trop acide et de stabiliser des préparations ménagères ou cosmétiques. Au contact d’un acide ou d’une forte chaleur, il libère du dioxyde de carbone en fines bulles qui aident à décoller salissures et graisses, tandis que sa légère alcalinité neutralise les molécules responsables des mauvaises odeurs au lieu de simplement les masquer.
+                </p>
             </div>
 
-            <!-- ✅ AdSense slot 1 : In-Article — entre texte et produit vedette -->
+            <!-- AdSense in-article -->
             <div class="ad-zen ad-zen-inline">
                 <p class="ad-zen-label">— Partenaires du Sanctuaire —</p>
                 <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-7501098246029504" data-ad-slot="YOUR_AD_SLOT_INARTICLE"></ins>
             </div>
 
-            <!-- ✅ Produit vedette (structure Cire, contenu Bicarbonate) -->
+            <!-- PRODUIT VEDETTE (liens conservés à l’identique) -->
             <div class="produit-vedette">
                 <div class="produit-vedette-inner">
                     <span class="produit-vedette-label">✦ L'Essentiel de cette Sagesse</span>
@@ -373,6 +305,7 @@
                 </div>
             </div>
 
+            <!-- RÉSONANCE ALCHIMIQUE (ton original conservé) -->
             <div class="mondes-container">
                 <div class="mondes-encadre">
                     <h3>Résonance Alchimique</h3>
@@ -404,6 +337,7 @@
                 </div>
             </div>
 
+            <!-- PICTOS -->
             <div class="picto-container">
                 <div class="picto-item"><span class="picto-icon">🍽️</span>Grade Alimentaire</div>
                 <div class="picto-item"><span class="picto-icon">🌿</span>100% Naturel</div>
@@ -412,6 +346,7 @@
             </div>
         </section>
 
+        <!-- ALLIANCES -->
         <section class="allies-box">
             <h3>Alliances Correspondances</h3>
             <ul class="allies-list">
@@ -421,6 +356,7 @@
             </ul>
         </section>
 
+        <!-- MOT DU MAÎTRE + EXPERTISE -->
         <section class="expert-container">
             <div class="maitre-mot">
                 <h3>Mot du Maître</h3>
@@ -443,6 +379,7 @@
             </div>
         </section>
 
+        <!-- AMAZON (liens conservés) -->
         <div class="amazon-section">
             <h3 class="amazon-titre">La Sélection du Maître</h3>
             <div class="amazon-cartes">
@@ -463,7 +400,7 @@
             </div>
         </div>
 
-        <!-- ✅ AdSense slot 2 : Responsive auto — après les cartes Amazon -->
+        <!-- AdSense après Amazon -->
         <div class="ad-zen">
             <p class="ad-zen-label">— Partenaires du Sanctuaire —</p>
             <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7501098246029504" data-ad-slot="YOUR_AD_SLOT_AUTO" data-ad-format="auto" data-full-width-responsive="true"></ins>
@@ -471,6 +408,7 @@
 
     </main>
 
+    <!-- PRICING PDF -->
     <section class="pricing-section">
         <h2 class="section-title">L'Encyclopédie des Solutions Nomades (PDF)</h2>
         <div class="pills-row">

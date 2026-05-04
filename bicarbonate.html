@@ -6,7 +6,7 @@
     <title>Sagesse n°1 : Bicarbonate de Soude – Encyclopédie des Solutions Nomades</title>
 
     <!-- SEO : Canonical -->
-    <link rel="canonical" href="https://zencheztoi.fr/bicarbonate-soude" />
+    <link rel="canonical" href="https://zencheztoi.fr/bicarbonate" />
 
     <!-- SEO : Open Graph -->
     <meta property="og:type"        content="article" />
@@ -163,7 +163,51 @@
         .expertise-item { background: var(--bg-sable); padding: 30px; border-radius: 12px; }
         .expertise-item h4 { font-variant: small-caps; font-size: 1.2em; margin-bottom: 10px; color: var(--maison); }
         .expertise-item p { font-size: 0.95em; color: #555; line-height: 1.7; }
-
+/* --- PRODUIT VEDETTE --- */
+.produit-vedette { margin: 40px 0 50px; }
+.produit-vedette-inner {
+    background: linear-gradient(135deg, #f9f6f0, #fff);
+    border: 1px solid var(--jardin);
+    border-left: 6px solid var(--maison);
+    border-radius: 16px;
+    padding: 30px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    box-shadow: 0 8px 25px rgba(123,144,116,0.1);
+}
+.produit-vedette-label {
+    font-variant: small-caps;
+    font-size: 0.85em;
+    letter-spacing: 2px;
+    color: var(--maison);
+    font-weight: bold;
+}
+.produit-vedette-desc {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    max-width: 700px;
+}
+.produit-vedette-btn {
+    display: inline-block;
+    padding: 14px 32px;
+    background: var(--maison);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 1.05em;
+    transition: 0.3s;
+    align-self: flex-start;
+}
+.produit-vedette-btn:hover {
+    background: var(--brun-sombre);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
         .amazon-section { text-align: center; padding: 60px 20px; }
         .amazon-titre { font-variant: small-caps; font-size: 1.8em; color: var(--brun-sombre); margin-bottom: 30px; text-align: center; font-weight: normal; }
         .amazon-cartes { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; max-width: 900px; margin: 0 auto; }

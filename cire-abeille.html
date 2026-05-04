@@ -122,7 +122,7 @@
 
         /* --- CONTENU --- */
         .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; overflow-x: hidden; }
-        .histoire-section { background: var(--blanc); padding: 80px; border-radius: 30px; margin-top: -120px; position: relative; z-index: 10; box-shadow: 0 25px 60px rgba(0,0,0,0.08); border-top: 4px solid var(--jardin); overflow: hidden; }
+        .histoire-section { background: var(--blanc); padding: 80px 80px 60px; border-radius: 30px; margin-top: -60px; position: relative; z-index: 10; box-shadow: 0 25px 60px rgba(0,0,0,0.08); border-top: 4px solid var(--jardin); overflow: hidden; }
         .histoire-section h2 { font-size: clamp(1.2em, 3.5vw, 2.8em); color: var(--jardin); margin-bottom: 40px; text-align: center; font-weight: normal; font-family: 'Georgia', serif; overflow-wrap: break-word; hyphens: auto; word-break: break-word; }
         .histoire-text { column-count: 2; column-gap: 60px; text-align: justify; font-size: 1.15rem; color: #444; line-height: 2; }
 
@@ -198,6 +198,31 @@
 
         #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
 
+        /* --- PRODUIT VEDETTE --- */
+        .produit-vedette { margin: 40px 0 50px; }
+        .produit-vedette-inner { background: linear-gradient(135deg, #f9f6f0, #fff); border: 1px solid var(--jardin); border-left: 6px solid var(--jardin); border-radius: 16px; padding: 30px 35px; display: flex; flex-direction: column; align-items: flex-start; gap: 12px; box-shadow: 0 8px 25px rgba(123,144,116,0.1); }
+        .produit-vedette-label { font-variant: small-caps; font-size: 0.85em; letter-spacing: 2px; color: var(--jardin); font-weight: bold; }
+        .produit-vedette-desc { font-size: 1em; color: #555; line-height: 1.6; max-width: 700px; }
+        .produit-vedette-btn { display: inline-block; padding: 14px 32px; background: var(--jardin); color: #fff; text-decoration: none; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 1.05em; transition: 0.3s; align-self: flex-start; }
+        .produit-vedette-btn:hover { background: var(--brun-sombre); transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.15); }
+
+        /* --- CARTES AMAZON --- */
+        .amazon-titre { font-variant: small-caps; font-size: 1.8em; color: var(--brun-sombre); margin-bottom: 30px; text-align: center; font-weight: normal; }
+        .amazon-cartes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .amazon-carte { background: var(--blanc); border: 1px solid #e8e2d9; border-radius: 16px; padding: 28px 24px; display: flex; flex-direction: column; gap: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.04); transition: 0.3s; }
+        .amazon-carte:hover { box-shadow: 0 10px 30px rgba(123,144,116,0.15); transform: translateY(-3px); border-color: var(--jardin); }
+        .amazon-carte-badge { font-size: 0.72em; text-transform: uppercase; letter-spacing: 2px; color: var(--jardin); font-weight: bold; }
+        .amazon-carte-nom { font-size: 1.2em; font-variant: small-caps; color: var(--brun-sombre); font-weight: bold; }
+        .amazon-carte-desc { font-size: 0.9em; color: #666; line-height: 1.6; flex-grow: 1; }
+        .amazon-carte-format { font-size: 0.8em; color: var(--jardin); font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+        .amazon-carte-btn { display: block; text-align: center; padding: 13px 20px; background: var(--brun-sombre); color: #fff; text-decoration: none; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 1em; border: 2px solid var(--jardin); transition: 0.3s; margin-top: 5px; }
+        .amazon-carte-btn:hover { background: var(--jardin); }
+
+        /* --- ADSENSE ZEN --- */
+        .ad-zen { max-width: 900px; margin: 50px auto; padding: 0 20px; text-align: center; }
+        .ad-zen-inline { margin: 30px 0 10px; }
+        .ad-zen-label { font-size: 0.7em; text-transform: uppercase; letter-spacing: 3px; color: #bbb; margin-bottom: 10px; font-variant: small-caps; }
+
         /* --- RESPONSIVE MOBILE --- */
         @media (max-width: 900px) {
             .histoire-text { column-count: 1; }
@@ -238,6 +263,9 @@
             .allies-box { padding: 25px 15px; margin: 40px 0; }
             .expert-container { padding: 25px 15px; }
             .picto-container { gap: 20px; }
+            .produit-vedette-inner { padding: 20px 18px; }
+            .produit-vedette-btn { width: 100%; text-align: center; }
+            .amazon-cartes { grid-template-columns: 1fr; }
 
             /* Flèches en bas */
             .scroll-nav { position: fixed; top: auto; bottom: 20px; transform: none; padding: 0 15px; }
@@ -297,6 +325,23 @@
                 <p>Née au cœur des alvéoles géométriquement parfaites, la <b>Cire d'Abeille</b> est l'une des substances les plus nobles offertes par le vivant, constituant depuis la haute Antiquité le sceau final des artisans sacrés : là où les Égyptiens l'utilisaient pour l'embaumement et la protection des manuscrits, les Romains en enduisaient leurs navires pour défier la corrosion saline, établissant ainsi la cire comme le médiateur absolu entre la matière et les éléments. Scientifiquement, ce mélange complexe d'esters, de cérides et d'acides gras libres possède une affinité naturelle unique avec les surfaces poreuses comme le bois, le cuir ou l'épiderme humain ; lorsqu'elle est chauffée, elle sature les fibres pour former une barrière hydrofuge radicale tout en créant une protection vivante qui se patine magnifiquement avec le temps. Contrairement aux paraffines pétrochimiques qui étouffent les supports d'un film plastique inerte, la cire d'abeille permet à la matière de respirer son propre souffle originel tout en apportant une résistance exceptionnelle aux liquides et aux moisissures, transformant ainsi chaque objet traité en une relique durable. Dans notre cycle de l'Enracinement, elle transforme l'huile en baume et la simple mèche en pilier de lumière, vous offrant la capacité de sceller votre souveraineté sur votre environnement immédiat en utilisant le labeur sacré du peuple de l'air pour fortifier votre ancrage terrestre et la beauté de votre domaine.</p>
             </div>
 
+            <!-- ✅ AdSense slot 1 : In-Article — entre texte et produit vedette -->
+            <div class="ad-zen ad-zen-inline">
+                <p class="ad-zen-label">— Partenaires du Sanctuaire —</p>
+                <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-7501098246029504" data-ad-slot="YOUR_AD_SLOT_INARTICLE"></ins>
+            </div>
+
+            <!-- ✅ Produit mis en avant — placement naturel à chaud -->
+            <div class="produit-vedette">
+                <div class="produit-vedette-inner">
+                    <span class="produit-vedette-label">✦ L'Essentiel de cette Sagesse</span>
+                    <p class="produit-vedette-desc">La Cire d'Abeille pure en pastilles — grade alimentaire, sans paraffine. L'ingrédient de base pour tous vos rituels de l'Enracinement.</p>
+                    <a href="https://www.amazon.fr/Cire-dabeille-naturelle-100-pure/dp/B0FYYWM6MT?tag=zencheztoi-21" class="produit-vedette-btn" target="_blank" rel="nofollow sponsored">
+                        Découvrir l'Offrande Solaire (500g) →
+                    </a>
+                </div>
+            </div>
+
             <div class="mondes-container">
                 <div class="mondes-encadre">
                     <h3>Résonance Alchimique</h3>
@@ -338,6 +383,9 @@
 
         <section class="allies-box">
             <h3>Alliances Correspondances</h3>
+            <p style="text-align:center; margin-bottom: 20px; font-style: italic; color: #666; font-size:0.95em;">
+                Explorez toute la <a href="/jardin-selection" style="color:var(--jardin); font-weight:bold; text-decoration:none; border-bottom: 1px solid var(--jardin);">Sélection du Vol 2 : Enracinement →</a>
+            </p>
             <ul class="allies-list">
                 <li><a href="/terebenthine">L'Essence de Térébenthine</a> <span class="vol-tag">Vol 2</span></li>
                 <li><a href="/huile-lin">L'Huile de Lin</a> <span class="vol-tag">Vol 2</span></li>
@@ -368,24 +416,36 @@
         </section>
 
         <div class="amazon-section">
-            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-                <div>
-                    <p style="font-style: italic; margin-bottom: 10px; color: #777; font-size: 0.9em;">Apprentissage Alchimique</p>
-                    <a href="https://www.amazon.fr/Cire-dabeille-naturelle-100-pure/dp/B0FYYWM6MT?tag=zencheztoi-21" class="amazon-btn" target="_blank" rel="nofollow sponsored">L'Offrande Solaire (500g)</a>
+            <h3 class="amazon-titre">La Sélection du Maître</h3>
+            <div class="amazon-cartes">
+                <div class="amazon-carte">
+                    <span class="amazon-carte-badge">Apprentissage Alchimique</span>
+                    <p class="amazon-carte-nom">L'Offrande Solaire</p>
+                    <p class="amazon-carte-desc">Cire pure en pastilles, grade alimentaire. Idéale pour débuter baumes, bougies et encaustiques.</p>
+                    <p class="amazon-carte-format">500 g</p>
+                    <a href="https://www.amazon.fr/Cire-dabeille-naturelle-100-pure/dp/B0FYYWM6MT?tag=zencheztoi-21" class="amazon-carte-btn" target="_blank" rel="nofollow sponsored">Voir sur Amazon →</a>
                 </div>
-                <div>
-                    <p style="font-style: italic; margin-bottom: 10px; color: #777; font-size: 0.9em;">Souveraineté du Domaine</p>
-                    <a href="https://www.amazon.fr/dp/B0FGHYGK9S?tag=zencheztoi-21" class="amazon-btn" target="_blank" rel="nofollow sponsored">Le Magistère du Sceau (2kg)</a>
+                <div class="amazon-carte">
+                    <span class="amazon-carte-badge">Souveraineté du Domaine</span>
+                    <p class="amazon-carte-nom">Le Magistère du Sceau</p>
+                    <p class="amazon-carte-desc">Le format du maître artisan — pour traiter meubles, outils, cuirs et fabriquer en grande quantité.</p>
+                    <p class="amazon-carte-format">2 kg</p>
+                    <a href="https://www.amazon.fr/dp/B0FGHYGK9S?tag=zencheztoi-21" class="amazon-carte-btn" target="_blank" rel="nofollow sponsored">Voir sur Amazon →</a>
                 </div>
-                <div>
-                    <p style="font-style: italic; margin-bottom: 10px; color: #777; font-size: 0.9em;">L'Outil de l'Artisan</p>
-                    <a href="https://www.amazon.fr/Fondeur-cire-%C3%A9lectrique-bougies-savons/dp/B0DNFBHZD5?tag=zencheztoi-21" class="amazon-btn" target="_blank" rel="nofollow sponsored">Le Fondeur de Maître</a>
+                <div class="amazon-carte">
+                    <span class="amazon-carte-badge">L'Outil de l'Artisan</span>
+                    <p class="amazon-carte-nom">Le Fondeur de Maître</p>
+                    <p class="amazon-carte-desc">Fondoir électrique à température contrôlée — la sécurité du bain-marie sans la contrainte.</p>
+                    <p class="amazon-carte-format">Accessoire</p>
+                    <a href="https://www.amazon.fr/Fondeur-cire-%C3%A9lectrique-bougies-savons/dp/B0DNFBHZD5?tag=zencheztoi-21" class="amazon-carte-btn" target="_blank" rel="nofollow sponsored">Voir sur Amazon →</a>
                 </div>
             </div>
         </div>
 
-        <div class="ad-container">
-            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7501098246029504" data-ad-slot="YOUR_AD_SLOT" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <!-- ✅ AdSense slot 2 : Responsive auto — après les cartes Amazon -->
+        <div class="ad-zen">
+            <p class="ad-zen-label">— Partenaires du Sanctuaire —</p>
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7501098246029504" data-ad-slot="YOUR_AD_SLOT_AUTO" data-ad-format="auto" data-full-width-responsive="true"></ins>
         </div>
 
     </main>
@@ -421,6 +481,7 @@
     <div id="disclaimer-bar">🔗 Liens affiliés Amazon : En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.</div>
 
     <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </body>

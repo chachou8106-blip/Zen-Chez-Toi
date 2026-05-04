@@ -121,15 +121,15 @@
         .tagline { font-size: clamp(1.1em, 3vw, 1.8em); font-style: italic; max-width: 900px; line-height: 1.4; text-shadow: -1px -1px 0 var(--jardin), 1px -1px 0 var(--jardin), -1px 1px 0 var(--jardin), 1px 1px 0 var(--jardin); margin: 0 auto; }
 
         /* --- CONTENU --- */
-        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
-        .histoire-section { background: var(--blanc); padding: 80px; border-radius: 30px; margin-top: -120px; position: relative; z-index: 10; box-shadow: 0 25px 60px rgba(0,0,0,0.08); border-top: 4px solid var(--jardin); }
-        .histoire-section h2 { font-size: 2.8em; color: var(--jardin); margin-bottom: 40px; text-align: center; font-weight: normal; font-family: 'Georgia', serif;}
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; overflow-x: hidden; }
+        .histoire-section { background: var(--blanc); padding: 80px; border-radius: 30px; margin-top: -120px; position: relative; z-index: 10; box-shadow: 0 25px 60px rgba(0,0,0,0.08); border-top: 4px solid var(--jardin); overflow: hidden; }
+        .histoire-section h2 { font-size: clamp(1.2em, 3.5vw, 2.8em); color: var(--jardin); margin-bottom: 40px; text-align: center; font-weight: normal; font-family: 'Georgia', serif; overflow-wrap: break-word; hyphens: auto; word-break: break-word; }
         .histoire-text { column-count: 2; column-gap: 60px; text-align: justify; font-size: 1.15rem; color: #444; line-height: 2; }
 
         /* --- LES 5 MONDES --- */
         .mondes-container { margin: 60px 0; }
         .mondes-encadre { border: 3px solid var(--jardin); padding: 50px; border-radius: 20px; position: relative; background: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.03); }
-        .mondes-encadre h3 { font-size: 2.4em; color: var(--jardin); margin-bottom: 50px; text-align: center; font-weight: normal; font-family: 'Georgia', serif;}
+        .mondes-encadre h3 { font-size: clamp(1.2em, 3.5vw, 2.4em); color: var(--jardin); margin-bottom: 50px; text-align: center; font-weight: normal; font-family: 'Georgia', serif; overflow-wrap: break-word; hyphens: auto; }
 
         .mondes-spider { display: grid; grid-template-columns: 1fr auto 1fr; grid-template-rows: auto auto auto; gap: 30px 40px; align-items: center; justify-items: center; }
         .mondes-spider-logo { grid-area: 2 / 2 / 3 / 3; position: relative; z-index: 2; margin: 0; }
@@ -217,11 +217,11 @@
             .dropdown-content { left: 0; right: 0; transform: none; width: 260px; max-width: 90vw; margin: 5px auto 0; top: auto; }
 
             /* Hero : padding-top pour absorber la hauteur du header empilé */
-            .hero { padding-top: 340px !important; justify-content: flex-start !important; height: auto !important; min-height: 100vh; padding-bottom: 60px; }
+            .hero { padding-top: 320px !important; justify-content: flex-start !important; height: auto !important; min-height: 100vh; padding-bottom: 60px; }
             .hero h1 { font-size: clamp(2em, 10vw, 3em); }
             .tagline { font-size: clamp(1em, 4vw, 1.3em); }
 
-            .histoire-section { padding: 30px 15px; margin-top: -40px; }
+            .histoire-section { padding: 25px 15px; margin-top: -20px; border-radius: 20px; }
 
             /* Spider : colonne unique */
             .mondes-spider { display: flex; flex-direction: column; gap: 15px; }

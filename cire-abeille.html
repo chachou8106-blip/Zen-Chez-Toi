@@ -5,6 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sagesse n°18 : La Cire d'Abeille – Encyclopédie des Solutions Nomades</title>
 
+    <!-- ✅ SEO : Canonical -->
+    <link rel="canonical" href="https://zencheztoi.fr/cire-abeille" />
+
+    <!-- ✅ SEO : Open Graph (partage social & Pinterest) -->
+    <meta property="og:type"        content="article" />
+    <meta property="og:title"       content="Sagesse n°18 : La Cire d'Abeille – Zen Chez Toi" />
+    <meta property="og:description" content="Découvrez la Cire d'Abeille, l'onguent solaire du domaine. Protecteur naturel ancestral pour imperméabiliser, nourrir et sceller l'éclat des matériaux." />
+    <meta property="og:url"         content="https://zencheztoi.fr/cire-abeille" />
+    <meta property="og:image"       content="https://zencheztoi.fr/assets/hero-jardin.jpg" />
+    <meta property="og:site_name"   content="Zen Chez Toi" />
+    <meta property="og:locale"      content="fr_FR" />
+
+    <!-- ✅ SEO : Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Sagesse n°18 : La Cire d'Abeille – Encyclopédie des Solutions Nomades",
+      "description": "Découvrez la Cire d'Abeille, l'onguent solaire du domaine. Protecteur naturel ancestral pour imperméabiliser, nourrir et sceller l'éclat des matériaux.",
+      "image": "https://zencheztoi.fr/assets/hero-jardin.jpg",
+      "url": "https://zencheztoi.fr/cire-abeille",
+      "dateModified": "2026-04-30",
+      "author": {
+        "@type": "Organization",
+        "name": "Zen Chez Toi",
+        "url": "https://zencheztoi.fr"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Zen Chez Toi",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://zencheztoi.fr/assets/logo.png"
+        }
+      }
+    }
+    </script>
+
     <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
     <meta name="p:domain_verify" content="549770272775"/>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRV5YNRL57"></script>
@@ -27,55 +65,77 @@
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Georgia', serif; background-color: var(--bg-sable); color: var(--brun-sombre); line-height: 1.8; overflow-x: hidden; }
 
+        /* --- HEADER --- */
         header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; }
         .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
-        .logo-area { display: flex; align-items: center; gap: 20px; }
 
-        /* AURA BLANCHE ++++ SUR LE LOGO */
-        .logo img { max-height: 90px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); transition: filter 0.4s ease; }
-        .logo:hover img { filter: drop-shadow(0 0 25px rgba(255,255,255,1)) drop-shadow(0 0 10px rgba(255,255,255,1)) !important; }
+        .logo { display: inline-block; text-decoration: none; transition: 0.4s ease; }
+        .logo img { max-height: 90px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2)); transition: 0.5s ease; }
+        .logo:hover img { filter: drop-shadow(0 0 30px #ffffff) drop-shadow(0 0 15px #ffffff); transform: scale(1.05); }
 
-        .pinterest-badge { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; font-family: 'Georgia', serif; font-style: italic; font-size: 1.1rem; transition: 0.4s ease; background: rgba(255,255,255,0.1); backdrop-filter: blur(2px); }
-        .pinterest-badge:hover { background: var(--or-zen); border-color: var(--or-zen); transform: rotate(15deg) scale(1.1); }
-
-        nav ul { list-style: none; display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
+        .header-right { display: flex; align-items: center; gap: 40px; }
+        nav ul { list-style: none; display: flex; gap: 25px; align-items: center; }
         nav a { text-decoration: none; color: #ffffff; font-variant: small-caps; font-size: 1.1em; text-shadow: 0 2px 5px rgba(0,0,0,0.6); transition: 0.3s; }
-        nav a:hover { color: var(--or-zen); }
+        nav a:hover { color: var(--jardin); text-shadow: 0 0 15px var(--jardin); }
 
+        /* MENU DÉROULANT */
         .dropdown { position: relative; display: inline-block; padding: 15px 0; cursor: pointer; }
-        .dropdown-content { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background-color: var(--brun-sombre); min-width: 180px; box-shadow: 0px 8px 16px rgba(0,0,0,0.3); z-index: 2100; border-radius: 8px; overflow: hidden; }
-        .dropdown-content a { color: rgba(255,255,255,0.8) !important; padding: 12px 20px; text-decoration: none; display: block; font-size: 0.95em; text-shadow: none; font-weight: bold; border-bottom: 1px solid rgba(255,255,255,0.1); text-align: center; font-variant: small-caps; }
-        .dropdown-content a:last-child { border-bottom: none; }
-        .dropdown-content a:hover { background-color: var(--or-zen); color: #fff !important; }
+        .dropdown-content {
+            display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
+            background-color: var(--brun-sombre); min-width: 200px; box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
+            z-index: 2100; border-radius: 8px; border: 1px solid var(--jardin); overflow: hidden;
+        }
+        .dropdown-content a {
+            color: rgba(255,255,255,0.8) !important; padding: 12px 20px; text-decoration: none;
+            display: block; font-size: 0.95em; text-shadow: none; font-weight: bold;
+            border-bottom: 1px solid rgba(255,255,255,0.1); text-align: center; font-variant: small-caps;
+        }
+        .dropdown-content a:hover { background-color: var(--jardin); color: #fff !important; }
         .dropdown:hover .dropdown-content { display: block; }
 
-        .menu-livre-or a { color: #ffffff !important; opacity: 0.6; font-size: 0.95em; }
-        .menu-livre-or a:hover { opacity: 1; }
+        .pinterest-badge {
+            display: flex; align-items: center; justify-content: center; width: 35px; height: 35px;
+            border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none;
+            font-family: 'Georgia', serif; font-style: italic; font-size: 1.2rem; transition: all 0.4s ease;
+            background: rgba(255,255,255,0.1); backdrop-filter: blur(2px); padding-bottom: 3px;
+        }
+        .pinterest-badge:hover { background: var(--jardin); border-color: var(--jardin); transform: rotate(15deg) scale(1.1); color: #fff; box-shadow: 0 0 15px var(--jardin); }
 
-        .scroll-nav { position: fixed; top: 50%; width: 100%; display: flex; justify-content: space-between; transform: translateY(-50%); pointer-events: none; z-index: 1500; padding: 0 30px; }
+        /* NAVIGATION FLOTTANTE */
+        .scroll-nav { position: fixed; top: 50%; width: 100%; display: flex; justify-content: space-between; transform: translateY(-50%); pointer-events: none; z-index: 1500; padding: 0 30px; box-sizing: border-box; }
         .arrow-nav { pointer-events: auto; background: var(--blanc); width: 55px; height: 55px; display: flex; align-items: center; justify-content: center; border-radius: 50%; text-decoration: none; color: var(--jardin); font-size: 1.5em; box-shadow: 0 5px 15px rgba(0,0,0,0.15); opacity: 0.6; transition: 0.3s; }
         .arrow-nav:hover { opacity: 1; transform: scale(1.1); background: var(--jardin); color: #fff; }
 
-        .hero { height: 100vh; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('assets/hero-jardin.jpg') center/cover no-repeat; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; }
-        .maitre-phrase { font-size: 1.4em; font-variant: small-caps; letter-spacing: 5px; font-weight: bold; margin-bottom: 20px; text-shadow: -1px -1px 0 var(--jardin), 1px -1px 0 var(--jardin), -1px 1px 0 var(--jardin), 1px 1px 0 var(--jardin); }
-        .sagesse-num { font-size: 1.2em; text-transform: uppercase; letter-spacing: 4px; margin-bottom: 30px; font-weight: bold; text-shadow: -1px -1px 0 var(--jardin), 1px -1px 0 var(--jardin), -1px 1px 0 var(--jardin), 1px 1px 0 var(--jardin); }
-        .hero h1 { font-size: 5.5em; font-weight: normal; margin-bottom: 30px; line-height: 1.1; text-shadow: -2px -2px 0 var(--jardin), 2px -2px 0 var(--jardin), -2px 2px 0 var(--jardin), 2px 2px 0 var(--jardin); }
-        .tagline { font-size: 1.8em; font-style: italic; max-width: 900px; line-height: 1.4; text-shadow: -1px -1px 0 var(--jardin), 1px -1px 0 var(--jardin), -1px 1px 0 var(--jardin), 1px 1px 0 var(--jardin); }
+        /* --- HERO (Blindé) --- */
+        .hero {
+            height: 100vh; min-height: 600px; position: relative;
+            display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; overflow: hidden;
+        }
+        .hero-img-fond { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
+        .hero-voile { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)); z-index: 2; }
+        .hero-contenu { position: relative; z-index: 3; width: 100%; max-width: 1000px; box-sizing: border-box; }
 
-        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
-        .histoire-section { background: var(--blanc); padding: 80px; border-radius: 30px; margin-top: -120px; position: relative; z-index: 10; box-shadow: 0 25px 60px rgba(0,0,0,0.08); }
-        .histoire-section h2 { font-size: 2.8em; color: var(--or-zen); margin-bottom: 40px; text-align: center; font-weight: normal; }
+        .maitre-phrase { font-size: clamp(1em, 2vw, 1.4em); font-variant: small-caps; letter-spacing: 5px; font-weight: bold; margin-bottom: 20px; text-shadow: -1px -1px 0 var(--jardin), 1px -1px 0 var(--jardin), -1px 1px 0 var(--jardin), 1px 1px 0 var(--jardin); }
+        .sagesse-num { font-size: clamp(0.9em, 1.5vw, 1.2em); text-transform: uppercase; letter-spacing: 4px; margin-bottom: 30px; font-weight: bold; text-shadow: -1px -1px 0 var(--jardin), 1px -1px 0 var(--jardin), -1px 1px 0 var(--jardin), 1px 1px 0 var(--jardin); }
+        .hero h1 { font-size: clamp(2.5em, 8vw, 5.5em); font-weight: normal; margin-bottom: 30px; line-height: 1.1; text-shadow: -2px -2px 0 var(--jardin), 2px -2px 0 var(--jardin), -2px 2px 0 var(--jardin), 2px 2px 0 var(--jardin); }
+        .tagline { font-size: clamp(1.1em, 3vw, 1.8em); font-style: italic; max-width: 900px; line-height: 1.4; text-shadow: -1px -1px 0 var(--jardin), 1px -1px 0 var(--jardin), -1px 1px 0 var(--jardin), 1px 1px 0 var(--jardin); margin: 0 auto; }
+
+        /* --- CONTENU --- */
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; overflow-x: hidden; }
+        .histoire-section { background: var(--blanc); padding: 80px 80px 60px; border-radius: 30px; margin-top: -60px; position: relative; z-index: 10; box-shadow: 0 25px 60px rgba(0,0,0,0.08); border-top: 4px solid var(--jardin); overflow: hidden; }
+        .histoire-section h2 { font-size: clamp(1.2em, 3.5vw, 2.8em); color: var(--jardin); margin-bottom: 40px; text-align: center; font-weight: normal; font-family: 'Georgia', serif; overflow-wrap: break-word; hyphens: auto; word-break: break-word; }
         .histoire-text { column-count: 2; column-gap: 60px; text-align: justify; font-size: 1.15rem; color: #444; line-height: 2; }
 
+        /* --- LES 5 MONDES --- */
         .mondes-container { margin: 60px 0; }
-        .mondes-encadre { border: 3px solid var(--or-zen); padding: 50px; border-radius: 20px; position: relative; background: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.03); }
-        .mondes-encadre h3 { font-size: 2.4em; color: var(--or-zen); margin-bottom: 50px; text-align: center; font-weight: normal; font-family: 'Georgia', serif;}
+        .mondes-encadre { border: 3px solid var(--jardin); padding: 50px; border-radius: 20px; position: relative; background: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.03); }
+        .mondes-encadre h3 { font-size: clamp(1.2em, 3.5vw, 2.4em); color: var(--jardin); margin-bottom: 50px; text-align: center; font-weight: normal; font-family: 'Georgia', serif; overflow-wrap: break-word; hyphens: auto; }
 
         .mondes-spider { display: grid; grid-template-columns: 1fr auto 1fr; grid-template-rows: auto auto auto; gap: 30px 40px; align-items: center; justify-items: center; }
         .mondes-spider-logo { grid-area: 2 / 2 / 3 / 3; position: relative; z-index: 2; margin: 0; }
         .mondes-spider-logo img { width: 120px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1)); }
 
-        .monde-card { background: var(--bg-sable); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; border-top: 4px solid; position: relative; z-index: 1; width: 100%; }
+        .monde-card { background: var(--bg-sable); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; border-top: 4px solid; position: relative; z-index: 1; width: 100%; box-sizing: border-box; }
         .monde-card h4 { font-variant: small-caps; font-size: 1.2em; margin-bottom: 10px; font-weight: bold; }
         .monde-card p { font-size: 0.95em; color: #444; line-height: 1.6; }
 
@@ -85,116 +145,176 @@
         .monde-card.seve { grid-area: 3 / 3 / 4 / 4; border-color: var(--bienetre); } .monde-card.seve h4 { color: var(--bienetre); }
         .monde-card.secret { grid-area: 4 / 1 / 5 / 4; justify-self: center; width: 60%; border-color: var(--eso); margin-top: 15px; } .monde-card.secret h4 { color: var(--eso); }
 
-        .picto-container { display: flex; justify-content: center; gap: 40px; margin: 40px 0; padding: 20px; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
-        .picto-item { text-align: center; font-size: 0.75em; text-transform: uppercase; letter-spacing: 1px; color: var(--or-zen); font-weight: bold; }
+        .picto-container { display: flex; justify-content: center; flex-wrap: wrap; gap: 40px; margin: 40px 0; padding: 20px; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
+        .picto-item { text-align: center; font-size: 0.75em; text-transform: uppercase; letter-spacing: 1px; color: var(--jardin); font-weight: bold; }
         .picto-item img { height: 45px; display: block; margin: 0 auto 10px; opacity: 0.8; }
 
-        .allies-box { background: var(--bg-sable); padding: 50px; border-radius: 20px; margin: 80px 0; border-left: 8px solid var(--or-zen); }
+        /* --- ALLIANCES & EXPERTISE --- */
+        .allies-box { background: var(--bg-sable); padding: 50px; border-radius: 20px; margin: 80px 0; border-left: 8px solid var(--jardin); }
         .allies-box h3 { font-size: 2em; color: var(--brun-sombre); margin-bottom: 30px; font-weight: normal; }
         .allies-list { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
         .allies-list li { background: var(--blanc); padding: 15px 30px; border-radius: 50px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.03); transition: 0.3s; }
-        .allies-list a { font-weight: bold; color: var(--brun-sombre); text-decoration: none; border-bottom: 2px solid var(--or-zen); font-size: 1.1em; }
-        .vol-tag { font-size: 0.8em; font-weight: bold; color: var(--or-zen); text-transform: uppercase; letter-spacing: 1px; }
+        .allies-list a { font-weight: bold; color: var(--brun-sombre); text-decoration: none; border-bottom: 2px solid var(--jardin); font-size: 1.1em; }
+        .vol-tag { font-size: 0.8em; font-weight: bold; color: var(--jardin); text-transform: uppercase; letter-spacing: 1px; }
 
         .expert-container { background: #fff; border: 1px solid #eee; padding: 50px; border-radius: 30px; margin: 60px 0; box-shadow: 0 15px 40px rgba(0,0,0,0.02); }
-        .maitre-mot h3 { font-size: 1.6em; color: var(--or-zen); margin-bottom: 20px; font-variant: small-caps; letter-spacing: 2px; }
+        .maitre-mot h3 { font-size: 1.6em; color: var(--jardin); margin-bottom: 20px; font-variant: small-caps; letter-spacing: 2px; }
         .maitre-mot p { font-style: italic; font-size: 1.1em; color: #666; line-height: 1.7; border-left: 3px solid #eee; padding-left: 20px; }
-        .expertise-list { list-style: none; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 30px; margin-top: 30px; border-top: 1px solid #eee; padding-top: 30px; }
-        .expertise-item h4 { font-size: 1.1em; color: var(--brun-sombre); margin-bottom: 10px; }
-        .expertise-item p { font-size: 0.95em; color: #777; line-height: 1.6; }
+        .expertise-list { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 30px; margin-top: 40px; }
+        .expertise-item { background: var(--bg-sable); padding: 30px; border-radius: 12px; }
+        .expertise-item h4 { font-variant: small-caps; font-size: 1.2em; margin-bottom: 10px; color: var(--jardin); }
+        .expertise-item p { font-size: 0.95em; color: #555; line-height: 1.7; }
 
-        .amazon-section { text-align: center; margin: 60px 0; }
-        .amazon-btn { display: inline-block; padding: 18px 35px; background: var(--brun-sombre); color: #fff; text-decoration: none; border-radius: 60px; font-weight: bold; transition: 0.3s; box-shadow: 0 10px 25px rgba(0,0,0,0.1); margin: 10px; border: 1px solid transparent; min-width: 250px; font-size: 1em; }
-        .amazon-btn:hover { background: var(--or-zen); transform: translateY(-5px); box-shadow: 0 15px 30px rgba(166, 123, 81, 0.3); border-color: var(--or-zen); }
+        /* --- AMAZON --- */
+        .amazon-section { text-align: center; padding: 60px 20px; }
+        .amazon-btn { display: inline-block; padding: 18px 35px; background: var(--brun-sombre); color: #fff; text-decoration: none; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 1.1em; border: 2px solid var(--jardin); transition: 0.3s; margin: 5px; }
+        .amazon-btn:hover { background: var(--jardin); transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
 
-        .ad-container { margin: 40px 0 80px; text-align: center; }
+        /* --- ADSENSE --- */
+        .ad-container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
 
-        .pricing-section { background-color: var(--blanc); padding: 120px 20px; text-align: center; border-top: 1px solid #eee; }
-        .pills-row { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-bottom: 60px; }
-        .pill { padding: 12px 25px; border: 2px solid; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 1em; text-decoration: none; background: var(--blanc); transition: 0.3s; }
+        /* --- PRICING --- */
+        .pricing-section { background: var(--blanc); padding: 80px 20px; text-align: center; border-top: 1px solid #eee; margin-top: 60px; }
+        .section-title { font-variant: small-caps; font-size: 2.2em; color: var(--brun-sombre); margin-bottom: 20px; }
+        .pills-row { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 40px; }
+        .pill { padding: 12px 20px; border: 2px solid; border-radius: 50px; text-decoration: none; font-variant: small-caps; font-size: 1em; font-weight: bold; transition: 0.3s; background: var(--blanc); }
         .p1 { border-color: var(--maison); color: var(--maison); } .p1:hover { background: var(--maison); color: #fff; }
         .p2 { border-color: var(--jardin); color: var(--jardin); } .p2:hover { background: var(--jardin); color: #fff; }
         .p3 { border-color: var(--corps); color: var(--corps); } .p3:hover { background: var(--corps); color: #fff; }
         .p4 { border-color: var(--bienetre); color: var(--bienetre); } .p4:hover { background: var(--bienetre); color: #fff; }
         .p5 { border-color: var(--eso); color: var(--eso); } .p5:hover { background: var(--eso); color: #fff; }
+        .pricing-grid { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .price-box { background: var(--bg-sable); padding: 30px 40px; border-radius: 20px; border: 2px solid var(--jardin); min-width: 200px; }
+        .price-box h4 { font-variant: small-caps; margin-bottom: 10px; color: var(--brun-sombre); }
+        .amount { font-size: 2em; font-weight: bold; color: var(--jardin); }
 
-        .pricing-grid { display: flex; justify-content: center; gap: 80px; max-width: 1200px; margin: 0 auto; flex-wrap: wrap; }
-        .price-box h4 { font-weight: normal; color: #777; margin-bottom: 10px; font-size: 1.1em; }
-        .price-box .amount { font-size: 2.8em; color: var(--or-zen); font-weight: bold; }
+        /* --- FOOTER --- */
+        footer { background: var(--brun-sombre); color: #fff; padding: 80px 20px; text-align: center; }
+        .footer-logo img { height: 60px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.4)); transition: 0.5s; margin-bottom: 30px; }
+        .footer-logo:hover img { filter: drop-shadow(0 0 25px #ffffff) drop-shadow(0 0 10px #ffffff); }
+        .footer-nav-compact { display: flex; gap: 30px; list-style: none; justify-content: center; margin-bottom: 40px; padding: 0; flex-wrap: wrap; }
+        .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.6; font-variant: small-caps; transition: 0.3s; }
+        .footer-nav-compact a:hover { opacity: 1; color: var(--jardin); }
 
-        footer { background: var(--brun-sombre); color: #fff; padding: 60px 20px; text-align: center; }
+        #disclaimer-bar { background: #1a1714; color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center; padding: 15px; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; }
 
-        /* AURA BLANCHE ++++ SUR LE LOGO FOOTER */
-        .footer-logo-small { height: 45px; margin-bottom: 25px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); transition: filter 0.4s ease; }
-        .footer-logo-small:hover { filter: drop-shadow(0 0 25px rgba(255,255,255,1)) drop-shadow(0 0 10px rgba(255,255,255,1)) !important; }
+        /* --- PRODUIT VEDETTE --- */
+        .produit-vedette { margin: 40px 0 50px; }
+        .produit-vedette-inner { background: linear-gradient(135deg, #f9f6f0, #fff); border: 1px solid var(--jardin); border-left: 6px solid var(--jardin); border-radius: 16px; padding: 30px 35px; display: flex; flex-direction: column; align-items: flex-start; gap: 12px; box-shadow: 0 8px 25px rgba(123,144,116,0.1); }
+        .produit-vedette-label { font-variant: small-caps; font-size: 0.85em; letter-spacing: 2px; color: var(--jardin); font-weight: bold; }
+        .produit-vedette-desc { font-size: 1em; color: #555; line-height: 1.6; max-width: 700px; }
+        .produit-vedette-btn { display: inline-block; padding: 14px 32px; background: var(--jardin); color: #fff; text-decoration: none; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 1.05em; transition: 0.3s; align-self: flex-start; }
+        .produit-vedette-btn:hover { background: var(--brun-sombre); transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.15); }
 
-        .footer-nav-compact { display: flex; gap: 25px; list-style: none; justify-content: center; margin-bottom: 25px; padding: 0; flex-wrap: wrap; }
-        .footer-nav-compact a { color: #fff; text-decoration: none; opacity: 0.7; font-variant: small-caps; transition: 0.3s; }
-        #disclaimer-bar { background: var(--brun-sombre); color: rgba(255,255,255,0.7); font-size: 0.8rem; text-align: center; padding: 12px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        /* --- CARTES AMAZON --- */
+        .amazon-titre { font-variant: small-caps; font-size: 1.8em; color: var(--brun-sombre); margin-bottom: 30px; text-align: center; font-weight: normal; }
+        .amazon-cartes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .amazon-carte { background: var(--blanc); border: 1px solid #e8e2d9; border-radius: 16px; padding: 28px 24px; display: flex; flex-direction: column; gap: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.04); transition: 0.3s; }
+        .amazon-carte:hover { box-shadow: 0 10px 30px rgba(123,144,116,0.15); transform: translateY(-3px); border-color: var(--jardin); }
+        .amazon-carte-badge { font-size: 0.72em; text-transform: uppercase; letter-spacing: 2px; color: var(--jardin); font-weight: bold; }
+        .amazon-carte-nom { font-size: 1.2em; font-variant: small-caps; color: var(--brun-sombre); font-weight: bold; }
+        .amazon-carte-desc { font-size: 0.9em; color: #666; line-height: 1.6; flex-grow: 1; }
+        .amazon-carte-format { font-size: 0.8em; color: var(--jardin); font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+        .amazon-carte-btn { display: block; text-align: center; padding: 13px 20px; background: var(--brun-sombre); color: #fff; text-decoration: none; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 1em; border: 2px solid var(--jardin); transition: 0.3s; margin-top: 5px; }
+        .amazon-carte-btn:hover { background: var(--jardin); }
 
-        /* --- LE CORRECTIF POUR SAUVER LE TEXTE ET LA PHRASE SUR MOBILE --- */
-        @media (max-width: 1000px) { 
-            .histoire-text { column-count: 1; } 
-            .hero h1 { font-size: 3em; } 
-            .expertise-list { grid-template-columns: 1fr; } 
-            .mondes-spider { grid-template-columns: 1fr; grid-template-rows: auto; gap: 20px; } 
-            .monde-card, .monde-card.secret { width: 100%; grid-area: auto; margin-top: 0; } 
-            .mondes-spider-logo { order: -1; width: 80px; margin: 0 auto 20px auto; display: block; } 
-            .nav-container { flex-direction: column; gap: 15px; } 
+        /* --- ADSENSE ZEN --- */
+        .ad-zen { max-width: 900px; margin: 50px auto; padding: 0 20px; text-align: center; }
+        .ad-zen-inline { margin: 30px 0 10px; }
+        .ad-zen-label { font-size: 0.7em; text-transform: uppercase; letter-spacing: 3px; color: #bbb; margin-bottom: 10px; font-variant: small-caps; }
 
-            /* LA SOLUTION : Forcer l'image de fond à s'agrandir et dégager le texte */
-            .hero { 
-                padding-top: 320px !important; /* Dégage le texte loin sous le header */
-                height: auto !important; 
-                min-height: 100vh !important; 
-                padding-bottom: 100px !important; /* Laisse la place à la phrase du bas */
-                justify-content: flex-start !important; 
-            }
+        /* --- RESPONSIVE MOBILE --- */
+        @media (max-width: 900px) {
+            .histoire-text { column-count: 1; }
+            .expertise-list { grid-template-columns: 1fr; }
+            .mondes-encadre { padding: 30px 20px; }
+        }
+        @media (max-width: 768px) {
 
-            /* Flèches rabaissées proprement */
-            .scroll-nav { position: fixed; top: auto; bottom: 30px; transform: none; padding: 0 20px; }
+            /* Header absolu conservé — pile : Logo → Nav → Pinterest */
+            header { padding: 15px 0; }
+            .nav-container { flex-direction: column; align-items: center; padding: 15px 20px; gap: 12px; }
+            .logo img { max-height: 65px; }
+            .header-right { flex-direction: column; align-items: center; gap: 12px; width: 100%; }
+            nav ul { flex-wrap: wrap; justify-content: center; gap: 8px; width: 100%; }
+            nav a { font-size: 0.95em; }
+            .dropdown { position: static; }
+            .dropdown-content { left: 0; right: 0; transform: none; width: 260px; max-width: 90vw; margin: 5px auto 0; top: auto; }
+
+            /* Hero : padding-top pour absorber la hauteur du header empilé */
+            .hero { padding-top: 320px !important; justify-content: flex-start !important; height: auto !important; min-height: 100vh; padding-bottom: 60px; }
+            .hero h1 { font-size: clamp(2em, 10vw, 3em); }
+            .tagline { font-size: clamp(1em, 4vw, 1.3em); }
+
+            .histoire-section { padding: 25px 15px; margin-top: -20px; border-radius: 20px; }
+
+            /* Spider : colonne unique */
+            .mondes-spider { display: flex; flex-direction: column; gap: 15px; }
+            .monde-card.atre,
+            .monde-card.terre,
+            .monde-card.temple,
+            .monde-card.seve,
+            .monde-card.secret { grid-area: auto; width: 100%; }
+            .mondes-spider-logo { order: -1; margin-bottom: 10px; }
+            .mondes-spider-logo img { width: 80px; }
+            .mondes-encadre { padding: 20px 15px; }
+            .mondes-encadre h3 { margin-bottom: 25px; }
+
+            .allies-box { padding: 25px 15px; margin: 40px 0; }
+            .expert-container { padding: 25px 15px; }
+            .picto-container { gap: 20px; }
+            .produit-vedette-inner { padding: 20px 18px; }
+            .produit-vedette-btn { width: 100%; text-align: center; }
+            .amazon-cartes { grid-template-columns: 1fr; }
+
+            /* Flèches en bas */
+            .scroll-nav { position: fixed; top: auto; bottom: 20px; transform: none; padding: 0 15px; }
+            .arrow-nav { width: 45px; height: 45px; font-size: 1.2em; background: var(--jardin); color: #fff; opacity: 0.9; }
         }
     </style>
 </head>
 <body>
 
     <div class="scroll-nav">
-        <a href="poudre-ortie.html" class="arrow-nav">❮</a>
-        <a href="charbon-actif.html" class="arrow-nav">❯</a>
+        <a aria-label="Sagesse Précédente" class="arrow-nav" href="/poudre-ortie">❮</a>
+        <a aria-label="Sagesse Suivante" class="arrow-nav" href="/charbon-actif">❯</a>
     </div>
 
     <header>
         <div class="nav-container">
-            <div class="logo-area">
-                <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
-                <a href="https://www.pinterest.com/" class="pinterest-badge" target="_blank">p</a>
+            <a class="logo" href="/"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
+            <div class="header-right">
+                <nav>
+                    <ul>
+                        <li><a href="/">Accueil</a></li>
+                        <li class="dropdown">
+                            <a href="/grimoire">Grimoire</a>
+                            <div class="dropdown-content">
+                                <a href="/maison">Vol 1 : Fondation</a>
+                                <a href="/jardin">Vol 2 : Enracinement</a>
+                                <a href="/corps">Vol 3 : Éclosion</a>
+                                <a href="/bienetre">Vol 4 : Harmonie</a>
+                                <a href="/eso">Vol 5 : Élévation</a>
+                            </div>
+                        </li>
+                        <li><a href="/blog">Journal</a></li>
+                        <li><a href="/encyclopedie">Encyclopédie</a></li>
+                    </ul>
+                </nav>
+                <a href="https://www.pinterest.fr/zencheztoi/" class="pinterest-badge" target="_blank" title="Suivez nos inspirations sur Pinterest">p</a>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li class="dropdown">
-                        <a href="grimoire.html">Grimoire</a>
-                        <div class="dropdown-content">
-                            <a href="maison.html">Monde Âtre</a>
-                            <a href="jardin.html">Monde Terre</a>
-                            <a href="corps.html">Monde Temple</a>
-                            <a href="bienetre.html">Monde Sève</a>
-                            <a href="eso.html">Monde Secret</a>
-                        </div>
-                    </li>
-                    <li><a href="encyclopedie.html">L'Intégrale</a></li>
-                    <li><a href="blog.html">Journal</a></li>
-                    <li class="menu-livre-or"><a href="livre-or.html">Livre d'Or</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
 
     <section class="hero">
-        <p class="maitre-phrase">Gardien de l'Enracinement</p>
-        <p class="sagesse-num">Sagesse n°18 : L'Onguent Solaire</p>
-        <h1>Cire d'Abeille</h1>
-        <p class="tagline">"Le savoir n'est pas une arme, c'est une lumière. Apprenez à sceller la protection là où le labeur de l'abeille s'est fait bouclier."</p>
+        <img src="assets/hero-jardin.jpg" class="hero-img-fond" alt="Cire d'Abeille" loading="eager">
+        <div class="hero-voile"></div>
+        <div class="hero-contenu">
+            <p class="maitre-phrase">Gardien de l'Enracinement</p>
+            <p class="sagesse-num">Sagesse n°18 : L'Onguent Solaire</p>
+            <h1>Cire d'Abeille</h1>
+            <p class="tagline">« Le savoir n'est pas une arme, c'est une lumière. Apprenez à sceller la protection là où le labeur de l'abeille s'est fait bouclier. »</p>
+        </div>
     </section>
 
     <main class="container">
@@ -203,6 +323,23 @@
             <h2>L'Offrande de la Ruche et le Secret de l'Imperméabilisation</h2>
             <div class="histoire-text">
                 <p>Née au cœur des alvéoles géométriquement parfaites, la <b>Cire d'Abeille</b> est l'une des substances les plus nobles offertes par le vivant, constituant depuis la haute Antiquité le sceau final des artisans sacrés : là où les Égyptiens l'utilisaient pour l'embaumement et la protection des manuscrits, les Romains en enduisaient leurs navires pour défier la corrosion saline, établissant ainsi la cire comme le médiateur absolu entre la matière et les éléments. Scientifiquement, ce mélange complexe d'esters, de cérides et d'acides gras libres possède une affinité naturelle unique avec les surfaces poreuses comme le bois, le cuir ou l'épiderme humain ; lorsqu'elle est chauffée, elle sature les fibres pour former une barrière hydrofuge radicale tout en créant une protection vivante qui se patine magnifiquement avec le temps. Contrairement aux paraffines pétrochimiques qui étouffent les supports d'un film plastique inerte, la cire d'abeille permet à la matière de respirer son propre souffle originel tout en apportant une résistance exceptionnelle aux liquides et aux moisissures, transformant ainsi chaque objet traité en une relique durable. Dans notre cycle de l'Enracinement, elle transforme l'huile en baume et la simple mèche en pilier de lumière, vous offrant la capacité de sceller votre souveraineté sur votre environnement immédiat en utilisant le labeur sacré du peuple de l'air pour fortifier votre ancrage terrestre et la beauté de votre domaine.</p>
+            </div>
+
+            <!-- ✅ AdSense slot 1 : In-Article — entre texte et produit vedette -->
+            <div class="ad-zen ad-zen-inline">
+                <p class="ad-zen-label">— Partenaires du Sanctuaire —</p>
+                <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-7501098246029504" data-ad-slot="YOUR_AD_SLOT_INARTICLE"></ins>
+            </div>
+
+            <!-- ✅ Produit mis en avant — placement naturel à chaud -->
+            <div class="produit-vedette">
+                <div class="produit-vedette-inner">
+                    <span class="produit-vedette-label">✦ L'Essentiel de cette Sagesse</span>
+                    <p class="produit-vedette-desc">La Cire d'Abeille pure en pastilles — grade alimentaire, sans paraffine. L'ingrédient de base pour tous vos rituels de l'Enracinement.</p>
+                    <a href="https://www.amazon.fr/Cire-dabeille-naturelle-100-pure/dp/B0FYYWM6MT?tag=zencheztoi-21" class="produit-vedette-btn" target="_blank" rel="nofollow sponsored">
+                        Découvrir l'Offrande Solaire (500g) →
+                    </a>
+                </div>
             </div>
 
             <div class="mondes-container">
@@ -218,7 +355,7 @@
                             <p>Enduisez vos manches d'outils en bois pour les rendre hydrofuges et éviter les échardes.</p>
                         </div>
                         <div class="mondes-spider-logo">
-                            <img src="assets/logo.png" alt="Logo Zen Chez Toi">
+                            <img src="assets/logo.png" alt="Logo Zen Chez Toi" loading="lazy">
                         </div>
                         <div class="monde-card temple">
                             <h4>Monde du Temple</h4>
@@ -237,19 +374,22 @@
             </div>
 
             <div class="picto-container">
-                <div class="picto-item"><img src="assets/picto-food.png" alt="">Grade Alimentaire</div>
-                <div class="picto-item"><img src="assets/picto-bio.png" alt="">100% Naturelle</div>
-                <div class="picto-item"><img src="assets/picto-france.png" alt="">Purifiée</div>
-                <div class="picto-item"><img src="assets/picto-recycle.png" alt="">Sans Paraffine</div>
+                <div class="picto-item"><img src="assets/picto-food.png" alt="Grade Alimentaire" loading="lazy">Grade Alimentaire</div>
+                <div class="picto-item"><img src="assets/picto-bio.png" alt="100% Naturelle" loading="lazy">100% Naturelle</div>
+                <div class="picto-item"><img src="assets/picto-france.png" alt="Purifiée" loading="lazy">Purifiée</div>
+                <div class="picto-item"><img src="assets/picto-recycle.png" alt="Sans Paraffine" loading="lazy">Sans Paraffine</div>
             </div>
         </section>
 
         <section class="allies-box">
             <h3>Alliances Correspondances</h3>
+            <p style="text-align:center; margin-bottom: 20px; font-style: italic; color: #666; font-size:0.95em;">
+                Explorez toute la <a href="/jardin-selection" style="color:var(--jardin); font-weight:bold; text-decoration:none; border-bottom: 1px solid var(--jardin);">Sélection du Vol 2 : Enracinement →</a>
+            </p>
             <ul class="allies-list">
-                <li><a href="terebenthine.html">L'Essence de Térébenthine</a> <span class="vol-tag">Vol 2</span></li>
-                <li><a href="huile-lin.html">L'Huile de Lin</a> <span class="vol-tag">Vol 2</span></li>
-                <li><a href="beurre-karite.html">Le Beurre de Karité</a> <span class="vol-tag">Vol 3</span></li>
+                <li><a href="/terebenthine">L'Essence de Térébenthine</a> <span class="vol-tag">Vol 2</span></li>
+                <li><a href="/huile-lin">L'Huile de Lin</a> <span class="vol-tag">Vol 2</span></li>
+                <li><a href="/beurre-karite">Le Beurre de Karité</a> <span class="vol-tag">Vol 3</span></li>
             </ul>
         </section>
 
@@ -276,24 +416,36 @@
         </section>
 
         <div class="amazon-section">
-            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-                <div>
-                    <p style="font-style: italic; margin-bottom: 10px; color: #777; font-size: 0.9em;">Apprentissage Alchimique</p>
-                    <a href="https://www.amazon.fr/Cire-dabeille-naturelle-100-pure/dp/B0FYYWM6MT?tag=zencheztoi-21" class="amazon-btn" target="_blank" rel="nofollow sponsored">L'Offrande Solaire (500g)</a>
+            <h3 class="amazon-titre">La Sélection du Maître</h3>
+            <div class="amazon-cartes">
+                <div class="amazon-carte">
+                    <span class="amazon-carte-badge">Apprentissage Alchimique</span>
+                    <p class="amazon-carte-nom">L'Offrande Solaire</p>
+                    <p class="amazon-carte-desc">Cire pure en pastilles, grade alimentaire. Idéale pour débuter baumes, bougies et encaustiques.</p>
+                    <p class="amazon-carte-format">500 g</p>
+                    <a href="https://www.amazon.fr/Cire-dabeille-naturelle-100-pure/dp/B0FYYWM6MT?tag=zencheztoi-21" class="amazon-carte-btn" target="_blank" rel="nofollow sponsored">Voir sur Amazon →</a>
                 </div>
-                <div>
-                    <p style="font-style: italic; margin-bottom: 10px; color: #777; font-size: 0.9em;">Souveraineté du Domaine</p>
-                    <a href="https://www.amazon.fr/dp/B0FGHYGK9S?tag=zencheztoi-21" class="amazon-btn" target="_blank" rel="nofollow sponsored">Le Magistère du Sceau (2kg)</a>
+                <div class="amazon-carte">
+                    <span class="amazon-carte-badge">Souveraineté du Domaine</span>
+                    <p class="amazon-carte-nom">Le Magistère du Sceau</p>
+                    <p class="amazon-carte-desc">Le format du maître artisan — pour traiter meubles, outils, cuirs et fabriquer en grande quantité.</p>
+                    <p class="amazon-carte-format">2 kg</p>
+                    <a href="https://www.amazon.fr/dp/B0FGHYGK9S?tag=zencheztoi-21" class="amazon-carte-btn" target="_blank" rel="nofollow sponsored">Voir sur Amazon →</a>
                 </div>
-                <div>
-                    <p style="font-style: italic; margin-bottom: 10px; color: #777; font-size: 0.9em;">L'Outil de l'Artisan</p>
-                    <a href="https://www.amazon.fr/Fondeur-cire-%C3%A9lectrique-bougies-savons/dp/B0DNFBHZD5?tag=zencheztoi-21" class="amazon-btn" target="_blank" rel="nofollow sponsored">Le Fondeur de Maître</a>
+                <div class="amazon-carte">
+                    <span class="amazon-carte-badge">L'Outil de l'Artisan</span>
+                    <p class="amazon-carte-nom">Le Fondeur de Maître</p>
+                    <p class="amazon-carte-desc">Fondoir électrique à température contrôlée — la sécurité du bain-marie sans la contrainte.</p>
+                    <p class="amazon-carte-format">Accessoire</p>
+                    <a href="https://www.amazon.fr/Fondeur-cire-%C3%A9lectrique-bougies-savons/dp/B0DNFBHZD5?tag=zencheztoi-21" class="amazon-carte-btn" target="_blank" rel="nofollow sponsored">Voir sur Amazon →</a>
                 </div>
             </div>
         </div>
 
-        <div class="ad-container">
-            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7501098246029504" data-ad-slot="YOUR_AD_SLOT" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <!-- ✅ AdSense slot 2 : Responsive auto — après les cartes Amazon -->
+        <div class="ad-zen">
+            <p class="ad-zen-label">— Partenaires du Sanctuaire —</p>
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7501098246029504" data-ad-slot="YOUR_AD_SLOT_AUTO" data-ad-format="auto" data-full-width-responsive="true"></ins>
         </div>
 
     </main>
@@ -301,11 +453,11 @@
     <section class="pricing-section">
         <h2 class="section-title" style="color:var(--brun-sombre); margin-bottom: 30px;">L'Encyclopédie des Solutions Nomades (PDF)</h2>
         <div class="pills-row">
-            <a href="encyclopedie.html" class="pill p1">Vol 1 : Fondations</a>
-            <a href="encyclopedie.html" class="pill p2">Vol 2 : Enracinement</a>
-            <a href="encyclopedie.html" class="pill p3">Vol 3 : Éclosion</a>
-            <a href="encyclopedie.html" class="pill p4">Vol 4 : Harmonie</a>
-            <a href="encyclopedie.html" class="pill p5">Vol 5 : Élévation</a>
+            <a class="pill p1" href="/encyclopedie#vol1">Vol 1 : Fondation</a>
+            <a class="pill p2" href="/encyclopedie#vol2">Vol 2 : Enracinement</a>
+            <a class="pill p3" href="/encyclopedie#vol3">Vol 3 : Éclosion</a>
+            <a class="pill p4" href="/encyclopedie#vol4">Vol 4 : Harmonie</a>
+            <a class="pill p5" href="/encyclopedie#vol5">Vol 5 : Élévation</a>
         </div>
         <div class="pricing-grid">
             <div class="price-box"><h4>Un Volume de Savoir</h4><span class="amount">14,90 €</span></div>
@@ -314,22 +466,22 @@
         </div>
     </section>
 
-
     <footer>
-        <img src="assets/logo.png" class="footer-logo-small" alt="Zen Chez Toi">
+        <a class="footer-logo" href="/"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
         <ul class="footer-nav-compact">
-            <li><a href="mentions-legales.html">Mentions légales</a></li>
-            <li><a href="confidentialite.html">Confidentialité</a></li>
-            <li><a href="cookies.html">Cookies</a></li>
-            <li><a href="livre-or.html">Livre d'Or</a></li>
+            <li><a href="/mentions-legales">Mentions légales</a></li>
+            <li><a href="/confidentialite">Confidentialité</a></li>
+            <li><a href="/cookies">Cookies</a></li>
+            <li><a href="/a-propos">À Propos</a></li>
+            <li><a href="/livre-or">Livre d'Or</a></li>
         </ul>
         <p style="font-size: 0.8em; opacity: 0.5;">&copy; 2026 Zen Chez Toi • La terre se souvient de ce qui est pur et protège ce qui l'honore.</p>
     </footer>
-<div id="disclaimer-bar">
-        🔗 Liens affiliés Amazon : En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.
-    </div>
+
+    <div id="disclaimer-bar">🔗 Liens affiliés Amazon : En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.</div>
 
     <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </body>

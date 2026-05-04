@@ -5,6 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sagesse n°5 : Cristaux de Soude – Encyclopédie des Solutions Nomades</title>
     
+    <!-- ✅ SEO : Canonical -->
+    <link rel="canonical" href="https://zencheztoi.fr/cristaux-soude" />
+
+    <!-- ✅ SEO : Open Graph -->
+    <meta property="og:type"        content="article" />
+    <meta property="og:title"       content="Sagesse n°5 : Cristaux de Soude – Zen Chez Toi" />
+    <meta property="og:description" content="Découvrez les cristaux de soude, force brute minérale pour dégraisser et purifier. L'allié alchimique indispensable pour restaurer l'éclat originel de votre domaine." />
+    <meta property="og:url"         content="https://zencheztoi.fr/cristaux-soude" />
+    <meta property="og:image"       content="https://zencheztoi.fr/assets/hero-maison.jpg" />
+    <meta property="og:site_name"   content="Zen Chez Toi" />
+    <meta property="og:locale"      content="fr_FR" />
+
+    <!-- ✅ SEO : Schema.org JSON-LD Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Sagesse n°5 : Cristaux de Soude – Encyclopédie des Solutions Nomades",
+      "description": "Découvrez les cristaux de soude, force brute minérale pour dégraisser et purifier. L'allié alchimique indispensable pour restaurer l'éclat originel de votre domaine.",
+      "image": "https://zencheztoi.fr/assets/hero-maison.jpg",
+      "url": "https://zencheztoi.fr/cristaux-soude",
+      "dateModified": "2026-04-30",
+      "author": {
+        "@type": "Organization",
+        "name": "Zen Chez Toi",
+        "url": "https://zencheztoi.fr"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Zen Chez Toi",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://zencheztoi.fr/assets/logo.png"
+        }
+      }
+    }
+    </script>
+
     <meta name="google-site-verification" content="JA8FAatlZ7okqYdp8jg8ZBfI5PxUIZEpxKNs8aKrJRs">
     <meta name="p:domain_verify" content="549770272775"/>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JRV5YNRL57"></script>
@@ -14,7 +52,7 @@
       gtag('js', new Date());
       gtag('config', 'G-JRV5YNRL57');
     </script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7501098246029504" crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js?client=ca-pub-7501098246029504" crossorigin="anonymous"></script>
 
     <meta name="description" content="Découvrez les cristaux de soude, force brute minérale pour dégraisser et purifier. L'allié alchimique indispensable pour restaurer l'éclat originel de votre domaine.">
     <link rel="icon" type="image/png" href="assets/logo.png">
@@ -30,8 +68,9 @@
         /* --- HEADER --- */
         header { position: absolute; top: 0; width: 100%; padding: 25px 0; z-index: 2000; }
         .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; }
-        .logo-area { display: flex; align-items: center; gap: 20px; }
-        .logo img { max-height: 90px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); transition: 0.5s ease; }
+        
+        .logo { display: inline-block; text-decoration: none; transition: 0.4s ease; }
+        .logo img { max-height: 90px; filter: drop-shadow(0 0 5px rgba(0,0,0,0.2)); transition: 0.5s ease; }
         .logo:hover img { filter: drop-shadow(0 0 30px #ffffff) drop-shadow(0 0 15px #ffffff); transform: scale(1.05); }
 
         .header-right { display: flex; align-items: center; gap: 40px; }
@@ -41,16 +80,26 @@
 
         /* MENU DÉROULANT */
         .dropdown { position: relative; display: inline-block; padding: 15px 0; cursor: pointer; }
-        .dropdown-content { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background-color: var(--brun-sombre); min-width: 180px; box-shadow: 0px 8px 16px rgba(0,0,0,0.3); z-index: 2100; border-radius: 8px; overflow: hidden; }
-        .dropdown-content a { color: rgba(255,255,255,0.8) !important; padding: 12px 20px; text-decoration: none; display: block; font-size: 0.95em; text-shadow: none; font-weight: bold; border-bottom: 1px solid rgba(255,255,255,0.1); text-align: center; font-variant: small-caps; }
+        .dropdown-content { 
+            display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); 
+            background-color: var(--brun-sombre); min-width: 200px; box-shadow: 0px 10px 25px rgba(0,0,0,0.3); 
+            z-index: 2100; border-radius: 8px; border: 1px solid var(--or-zen); overflow: hidden;
+        }
+        .dropdown-content a { 
+            color: rgba(255,255,255,0.8) !important; padding: 12px 20px; text-decoration: none; 
+            display: block; font-size: 0.95em; text-shadow: none; font-weight: bold; 
+            border-bottom: 1px solid rgba(255,255,255,0.1); text-align: center; font-variant: small-caps; 
+        }
         .dropdown-content a:last-child { border-bottom: none; }
         .dropdown-content a:hover { background-color: var(--or-zen); color: #fff !important; }
         .dropdown:hover .dropdown-content { display: block; }
-        
-        .menu-livre-or a { color: #ffffff !important; opacity: 0.6; font-size: 0.95em; }
-        .menu-livre-or a:hover { opacity: 1; }
 
-        .pinterest-badge { display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; font-family: 'Georgia', serif; font-style: italic; font-size: 1.2rem; transition: all 0.4s ease; background: rgba(255,255,255,0.1); backdrop-filter: blur(2px); padding-bottom: 3px; }
+        .pinterest-badge { 
+            display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; 
+            border: 1px solid rgba(255,255,255,0.4); border-radius: 50%; color: #ffffff; text-decoration: none; 
+            font-family: 'Georgia', serif; font-style: italic; font-size: 1.2rem; transition: all 0.4s ease; 
+            background: rgba(255,255,255,0.1); backdrop-filter: blur(2px); padding-bottom: 3px;
+        }
         .pinterest-badge:hover { background: var(--or-zen); border-color: var(--or-zen); transform: rotate(15deg) scale(1.1); color: #fff; box-shadow: 0 0 15px var(--or-zen); }
 
         /* NAVIGATION FLOTTANTE */
@@ -59,7 +108,14 @@
         .arrow-nav:hover { opacity: 1; transform: scale(1.1); background: var(--maison); color: #fff; }
 
         /* --- HERO --- */
-        .hero { height: 100vh; min-height: 600px; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('assets/hero-maison.jpg') center/cover no-repeat; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; position: relative; }
+        .hero { 
+            height: 100vh; min-height: 600px; position: relative; 
+            display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #ffffff; padding: 0 20px; overflow: hidden; 
+        }
+        .hero-img-fond { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
+        .hero-voile { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)); z-index: 2; }
+        .hero-contenu { position: relative; z-index: 3; width: 100%; max-width: 1000px; box-sizing: border-box; }
+
         .maitre-phrase { font-size: clamp(1em, 2vw, 1.4em); font-variant: small-caps; letter-spacing: 5px; font-weight: bold; margin-bottom: 20px; text-shadow: -1px -1px 0 var(--maison), 1px -1px 0 var(--maison), -1px 1px 0 var(--maison), 1px 1px 0 var(--maison); }
         .sagesse-num { font-size: clamp(0.9em, 1.5vw, 1.2em); text-transform: uppercase; letter-spacing: 4px; margin-bottom: 30px; font-weight: bold; text-shadow: -1px -1px 0 var(--maison), 1px -1px 0 var(--maison), -1px 1px 0 var(--maison), 1px 1px 0 var(--maison); }
         .hero h1 { font-size: clamp(2.5em, 8vw, 5.5em); font-weight: normal; margin-bottom: 30px; line-height: 1.1; text-shadow: -2px -2px 0 var(--maison), 2px -2px 0 var(--maison), -2px 2px 0 var(--maison), 2px 2px 0 var(--maison); }
@@ -70,6 +126,42 @@
         .histoire-section { background: var(--blanc); padding: 80px; border-radius: 30px; margin-top: -120px; position: relative; z-index: 10; box-shadow: 0 25px 60px rgba(0,0,0,0.08); }
         .histoire-section h2 { font-size: 2.8em; color: var(--or-zen); margin-bottom: 40px; text-align: center; font-weight: normal; font-family: 'Georgia', serif;}
         .histoire-text { column-count: 2; column-gap: 60px; text-align: justify; font-size: 1.15rem; color: #444; line-height: 2; }
+
+        /* --- PRODUIT VEDETTE (structure Cire) --- */
+        .produit-vedette { margin: 40px 0 50px; }
+        .produit-vedette-inner { 
+            background: linear-gradient(135deg, #f9f6f0, #fff); 
+            border: 1px solid var(--or-zen); 
+            border-left: 6px solid var(--or-zen); 
+            border-radius: 16px; 
+            padding: 30px 35px; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: flex-start; 
+            gap: 12px; 
+            box-shadow: 0 8px 25px rgba(166,123,81,0.1); 
+        }
+        .produit-vedette-label { font-variant: small-caps; font-size: 0.85em; letter-spacing: 2px; color: var(--or-zen); font-weight: bold; }
+        .produit-vedette-desc { font-size: 1em; color: #555; line-height: 1.6; max-width: 700px; }
+        .produit-vedette-btn { 
+            display: inline-block; 
+            padding: 14px 32px; 
+            background: var(--maison); 
+            color: #fff; 
+            text-decoration: none; 
+            border-radius: 50px; 
+            font-variant: small-caps; 
+            font-weight: bold; 
+            font-size: 1.05em; 
+            transition: 0.3s; 
+            align-self: flex-start; 
+            border: 2px solid var(--or-zen);
+        }
+        .produit-vedette-btn:hover { 
+            background: var(--brun-sombre); 
+            transform: translateY(-2px); 
+            box-shadow: 0 6px 18px rgba(0,0,0,0.15); 
+        }
 
         /* --- LES 5 MONDES --- */
         .mondes-container { margin: 60px 0; }
@@ -109,15 +201,26 @@
         .expertise-item h4 { font-size: 1.1em; color: var(--brun-sombre); margin-bottom: 10px; }
         .expertise-item p { font-size: 0.95em; color: #777; line-height: 1.6; }
 
-        /* --- AMAZON --- */
-        .amazon-section { text-align: center; margin: 60px 0; }
-        .amazon-btn { display: inline-block; padding: 18px 35px; background: var(--brun-sombre); color: #fff; text-decoration: none; border-radius: 60px; font-weight: bold; transition: 0.3s; box-shadow: 0 10px 25px rgba(0,0,0,0.1); margin: 10px; border: 1px solid transparent; min-width: 250px; font-size: 1em; }
-        .amazon-btn:hover { background: var(--or-zen); transform: translateY(-5px); box-shadow: 0 15px 30px rgba(166, 123, 81, 0.3); border-color: var(--or-zen); }
+        /* --- AMAZON (structure Cire) --- */
+        .amazon-section { text-align: center; padding: 60px 20px; }
+        .amazon-titre { font-variant: small-caps; font-size: 1.8em; color: var(--brun-sombre); margin-bottom: 30px; text-align: center; font-weight: normal; }
+        .amazon-cartes { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; max-width: 900px; margin: 0 auto; }
+        .amazon-carte { background: var(--blanc); border: 1px solid #e8e2d9; border-radius: 16px; padding: 28px 24px; display: flex; flex-direction: column; gap: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.04); transition: 0.3s; }
+        .amazon-carte:hover { box-shadow: 0 10px 30px rgba(166,123,81,0.15); transform: translateY(-3px); border-color: var(--or-zen); }
+        .amazon-carte-badge { font-size: 0.72em; text-transform: uppercase; letter-spacing: 2px; color: var(--or-zen); font-weight: bold; }
+        .amazon-carte-nom { font-size: 1.2em; font-variant: small-caps; color: var(--brun-sombre); font-weight: bold; }
+        .amazon-carte-desc { font-size: 0.9em; color: #666; line-height: 1.6; flex-grow: 1; }
+        .amazon-carte-format { font-size: 0.8em; color: var(--or-zen); font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+        .amazon-carte-btn { display: block; text-align: center; padding: 13px 20px; background: var(--brun-sombre); color: #fff; text-decoration: none; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 1em; border: 2px solid var(--or-zen); transition: 0.3s; margin-top: 5px; }
+        .amazon-carte-btn:hover { background: var(--or-zen); }
 
-        .ad-container { margin: 40px 0 80px; text-align: center; }
+        .ad-zen { max-width: 900px; margin: 50px auto; padding: 0 20px; text-align: center; }
+        .ad-zen-inline { margin: 30px 0 10px; }
+        .ad-zen-label { font-size: 0.7em; text-transform: uppercase; letter-spacing: 3px; color: #bbb; margin-bottom: 10px; font-variant: small-caps; }
 
         /* --- PRICING --- */
         .pricing-section { background-color: var(--blanc); padding: 120px 20px; text-align: center; border-top: 1px solid #eee; }
+        .section-title { font-variant: small-caps; font-size: 2.2em; color: var(--brun-sombre); margin-bottom: 20px; }
         .pills-row { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-bottom: 60px; }
         .pill { padding: 12px 25px; border: 2px solid; border-radius: 50px; font-variant: small-caps; font-weight: bold; font-size: 1em; text-decoration: none; background: var(--blanc); transition: 0.3s; }
         .p1 { border-color: var(--maison); color: var(--maison); } .p1:hover { background: var(--maison); color: #fff; }
@@ -152,7 +255,10 @@
             nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; width: 100%; }
             
             .dropdown { position: static; }
-            .dropdown-content { left: 0; right: 0; margin: 10px auto 0; transform: none; width: 280px; max-width: 90vw; top: auto; }
+            .dropdown-content { 
+                left: 0; right: 0; margin: 10px auto 0; 
+                transform: none; width: 280px; max-width: 90vw; top: auto; 
+            }
             
             .hero { padding-top: 360px !important; padding-bottom: 150px !important; height: auto !important; min-height: 100vh !important; justify-content: flex-start !important; box-sizing: border-box; }
             .hero h1 { font-size: 2.2em; } 
@@ -161,9 +267,13 @@
             .mondes-encadre { padding: 25px 15px; border-width: 2px; width: 100%; box-sizing: border-box; overflow: hidden; }
             .picto-container { gap: 15px; flex-direction: column; }
             
-            /* RESTAURATION DU SCROLL SUR MOBILE */
             .scroll-nav { display: flex; top: auto; bottom: 30px; transform: none; padding: 0 20px; position: fixed; justify-content: space-between; width: 100%; box-sizing: border-box; }
             .arrow-nav { width: 45px; height: 45px; font-size: 1.2em; background: var(--maison); color: #fff; opacity: 0.8; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+
+            .produit-vedette-inner { padding: 20px 18px; }
+            .produit-vedette-btn { width: 100%; text-align: center; }
+
+            .amazon-cartes { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -176,36 +286,39 @@
 
     <header>
         <div class="nav-container">
-            <div class="logo-area">
-                <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
+            <a href="index.html" class="logo"><img src="assets/logo.png" alt="Zen Chez Toi"></a>
+            <div class="header-right">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li class="dropdown">
+                            <a href="grimoire.html">Grimoire</a>
+                            <div class="dropdown-content">
+                                <a href="maison.html">Vol 1 : Fondation</a>
+                                <a href="jardin.html">Vol 2 : Enracinement</a>
+                                <a href="corps.html">Vol 3 : Éclosion</a>
+                                <a href="bienetre.html">Vol 4 : Harmonie</a>
+                                <a href="eso.html">Vol 5 : Élévation</a>
+                            </div>
+                        </li>
+                        <li><a href="blog.html">Journal</a></li>
+                        <li><a href="encyclopedie.html">Encyclopédie</a></li>
+                    </ul>
+                </nav>
                 <a href="https://www.pinterest.fr/zencheztoi/" class="pinterest-badge" target="_blank" title="Suivez nos inspirations">p</a>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li class="dropdown">
-                        <a href="grimoire.html">Grimoire</a>
-                        <div class="dropdown-content">
-                            <a href="maison.html">Monde Âtre</a>
-                            <a href="jardin.html">Monde Terre</a>
-                            <a href="corps.html">Monde Temple</a>
-                            <a href="bienetre.html">Monde Sève</a>
-                            <a href="eso.html">Monde Secret</a>
-                        </div>
-                    </li>
-                    <li><a href="encyclopedie.html">L'Intégrale</a></li>
-                    <li><a href="blog.html">Journal</a></li>
-                    <li class="menu-livre-or"><a href="livre-or.html">Livre d'Or</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
 
     <section class="hero">
-        <p class="maitre-phrase">Maître des Fondations</p>
-        <p class="sagesse-num">Sagesse n°5 : Force Brute Naturelle</p>
-        <h1>Cristaux de Soude</h1>
-        <p class="tagline">"Le dégraisseur lourd : la force brute naturelle pour redonner vie à vos mondes."</p>
+        <img src="assets/hero-maison.jpg" class="hero-img-fond" alt="Cristaux de Soude">
+        <div class="hero-voile"></div>
+        <div class="hero-contenu">
+            <p class="maitre-phrase">Maître des Fondations</p>
+            <p class="sagesse-num">Sagesse n°5 : Force Brute Naturelle</p>
+            <h1>Cristaux de Soude</h1>
+            <p class="tagline">"Le dégraisseur lourd : la force brute naturelle pour redonner vie à vos mondes."</p>
+        </div>
     </section>
 
     <main class="container">
@@ -216,6 +329,25 @@
                 <p>Connus depuis la nuit des temps sous le nom de Natron, les cristaux de soude étaient récoltés par les anciens alchimistes égyptiens sur les rives des lacs asséchés pour purifier les temples et préparer les onguents sacrés. Durant des millénaires, ce sel alcalin fut le pilier de l'artisanat noble, indispensable à la création du verre et à la naissance du véritable savon de Marseille. Ce n'est qu'au XIXe siècle que le procédé Solvay permit de stabiliser cette force minérale, offrant aux gardiens du foyer un allié souverain capable de dissoudre les graisses les plus rebelles sans jamais altérer l'âme des matériaux nobles qu'il touche.</p>
                 
                 <p>Scientifiquement, le carbonate de sodium (Na<sub>2</sub>CO<sub>3</sub>) agit par une réaction de saponification immédiate des corps gras, les transformant en sels solubles. Avec un pH puissant avoisinant 11, il brise les liaisons moléculaires des huiles cuites et des dépôts carbonisés que les fluides classiques ne peuvent atteindre. Sa structure anhydre lui confère une efficacité radicale pour déloger les mousses minérales et neutraliser les acidités organiques, agissant comme un médiateur impitoyable entre le chaos de l'encrassement et l'ordre de la clarté originelle de la matière.</p>
+            </div>
+
+            <!-- ✅ AdSense slot 1 : In-Article — entre texte et produit vedette -->
+            <div class="ad-zen ad-zen-inline">
+                <p class="ad-zen-label">— Partenaires du Sanctuaire —</p>
+                <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-7501098246029504" data-ad-slot="YOUR_AD_SLOT_INARTICLE"></ins>
+            </div>
+
+            <!-- ✅ Produit vedette -->
+            <div class="produit-vedette">
+                <div class="produit-vedette-inner">
+                    <span class="produit-vedette-label">✦ L'Essentiel de cette Sagesse</span>
+                    <p class="produit-vedette-desc">
+                        Pour l'Apprentissage Alchimique, <b>Force de Transmutation</b> – les cristaux de soude en Doypack de 1kg – offrent une puissance de décrassage idéale pour apprivoiser la force alcaline sans dominer encore tout le domaine.
+                    </p>
+                    <a href="https://www.amazon.fr/Cristaux-Carbonate-sodium-Doypack-EluOecolo/dp/B09NBXR7BB?tag=zencheztoi-21" class="produit-vedette-btn" target="_blank" rel="nofollow sponsored">
+                        Découvrir Force de Transmutation (1kg) →
+                    </a>
+                </div>
             </div>
 
             <div class="mondes-container">
@@ -289,20 +421,29 @@
         </section>
 
         <div class="amazon-section">
-            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-                <div>
-                    <p style="font-style: italic; margin-bottom: 10px; color: #777; font-size: 0.9em;">Apprentissage Alchimique</p>
-                    <a href="https://www.amazon.fr/Cristaux-Carbonate-sodium-Doypack-EluOecolo/dp/B09NBXR7BB?tag=zencheztoi-21" class="amazon-btn" target="_blank" rel="nofollow sponsored">Force de Transmutation (1kg)</a>
+            <h3 class="amazon-titre">La Sélection du Maître</h3>
+            <div class="amazon-cartes">
+                <div class="amazon-carte">
+                    <span class="amazon-carte-badge">Apprentissage Alchimique</span>
+                    <p class="amazon-carte-nom">Force de Transmutation</p>
+                    <p class="amazon-carte-desc">Cristaux de soude en Doypack hermétique de 1kg, pour apprivoiser la force alcaline et libérer hottes, plats et supports des graisses figées.</p>
+                    <p class="amazon-carte-format">1 kg</p>
+                    <a href="https://www.amazon.fr/Cristaux-Carbonate-sodium-Doypack-EluOecolo/dp/B09NBXR7BB?tag=zencheztoi-21" class="amazon-carte-btn" target="_blank" rel="nofollow sponsored">Voir sur Amazon →</a>
                 </div>
-                <div>
-                    <p style="font-style: italic; margin-bottom: 10px; color: #777; font-size: 0.9em;">Souveraineté du Gardien</p>
-                    <a href="https://www.amazon.fr/dp/B015T7F5C6?tag=zencheztoi-21" class="amazon-btn" target="_blank" rel="nofollow sponsored">Magistère de Purification (5kg)</a>
+                <div class="amazon-carte">
+                    <span class="amazon-carte-badge">Souveraineté du Gardien</span>
+                    <p class="amazon-carte-nom">Magistère de Purification</p>
+                    <p class="amazon-carte-desc">Cristaux de soude en format 5kg pour entretenir durablement un domaine entier : sols, terrasses, bassins et infrastructures d’Âtre.</p>
+                    <p class="amazon-carte-format">5 kg</p>
+                    <a href="https://www.amazon.fr/dp/B015T7F5C6?tag=zencheztoi-21" class="amazon-carte-btn" target="_blank" rel="nofollow sponsored">Voir sur Amazon →</a>
                 </div>
             </div>
         </div>
 
-        <div class="ad-container">
-            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7501098246029504" data-ad-slot="YOUR_AD_SLOT" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <!-- ✅ AdSense slot 2 : Responsive auto — après les cartes Amazon -->
+        <div class="ad-zen">
+            <p class="ad-zen-label">— Partenaires du Sanctuaire —</p>
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7501098246029504" data-ad-slot="YOUR_AD_SLOT_AUTO" data-ad-format="auto" data-full-width-responsive="true"></ins>
         </div>
 
     </main>
@@ -337,6 +478,7 @@
     <div id="disclaimer-bar">🔗 Liens affiliés : Partenaire Amazon, Citrine.fr et Sept-Chakras.com, je réalise un bénéfice sur les achats remplissant les conditions requises.</div>
 
     <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </body>
